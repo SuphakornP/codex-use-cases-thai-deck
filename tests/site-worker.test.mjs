@@ -1,53 +1,36 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import worker from "../worker/index.js";
+async function render() {
+  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
+  workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
+  const { default: worker } = await import(workerUrl.href);
 
-function environment() {
-  return {
-    ASSETS: {
-      async fetch(request) {
-        const path = new URL(request.url).pathname;
-        if (path === "/index.html") {
-          return new Response("<!doctype html><title>Codex Use Cases</title>", {
-            headers: { "content-type": "text/html; charset=utf-8" },
-          });
-        }
-        if (path === "/styles.css") {
-          return new Response("body{}", {
-            headers: { "content-type": "text/css" },
-          });
-        }
-        return new Response("Not found", { status: 404 });
-      },
-    },
-  };
-}
-
-test("serves static assets", async () => {
-  const response = await worker.fetch(
-    new Request("https://example.com/styles.css"),
-    environment(),
-  );
-  assert.equal(response.status, 200);
-  assert.match(response.headers.get("content-type"), /^text\/css/);
-});
-
-test("falls back to the deck for page routes", async () => {
-  const response = await worker.fetch(
-    new Request("https://example.com/automation-bug-triage", {
+  return worker.fetch(
+    new Request("http://localhost/", {
       headers: { accept: "text/html" },
     }),
-    environment(),
+    {
+      ASSETS: {
+        fetch: async () => new Response("Not found", { status: 404 }),
+      },
+    },
+    {
+      waitUntil() {},
+      passThroughOnException() {},
+    },
   );
-  assert.equal(response.status, 200);
-  assert.match(await response.text(), /Codex Use Cases/);
-});
+}
 
-test("preserves missing asset responses", async () => {
-  const response = await worker.fetch(
-    new Request("https://example.com/missing.webp"),
-    environment(),
-  );
-  assert.equal(response.status, 404);
+test("server-renders the complete Thai presentation shell", async () => {
+  const response = await render();
+  assert.equal(response.status, 200);
+  assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
+
+  const html = await response.text();
+  assert.match(html, /<html lang="th"/i);
+  assert.match(html, /id="deck-shell"/i);
+  assert.match(html, /Codex Field Guide/i);
+  assert.match(html, /เลือก use case ที่ใช่/);
+  assert.doesNotMatch(html, /codex-preview/i);
 });

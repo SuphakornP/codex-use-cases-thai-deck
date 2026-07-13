@@ -1,5 +1,10 @@
 .DS_Store
+.next/
+.wrangler/
+node_modules/
+public/
 dist/
 output/
 scripts/__pycache__/
+tsconfig.tsbuildinfo
 *.tgz
