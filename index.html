@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="คู่มือ Codex ฉบับคนทำงาน: 99 use cases จากเอกสารทางการ พร้อม workflow ภาษาไทยที่นำไปใช้ได้จริง"
+    >
+    <meta name="theme-color" content="#17221b">
+    <title>Codex Field Guide — 99 Use Cases สำหรับคนทำงาน</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="data/usecases-data.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#deck-stage">ข้ามไปยังเนื้อหาสไลด์</a>
+
+    <div class="deck-shell" id="deck-shell">
+      <header class="topbar">
+        <button class="wordmark" id="home-button" type="button" aria-label="กลับไปสไลด์แรก">
+          <span>CODEX</span>
+          <span class="wordmark__edition">FIELD GUIDE / TH</span>
+        </button>
+
+        <div class="topbar__status" aria-live="polite">
+          <span class="eyebrow" id="chapter-label">เปิดเรื่อง</span>
+          <span class="topbar__divider" aria-hidden="true"></span>
+          <span class="slide-count" id="slide-count">01 / 103</span>
+        </div>
+
+        <nav class="topbar__actions" aria-label="เครื่องมือนำเสนอ">
+          <button class="text-button" id="toc-button" type="button" aria-haspopup="dialog">
+            <span class="text-button__key">O</span>
+            สารบัญ
+          </button>
+          <button class="icon-button" id="fullscreen-button" type="button" aria-label="แสดงเต็มจอ" title="เต็มจอ (F)">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5" />
+            </svg>
+          </button>
+        </nav>
+      </header>
+
+      <main class="deck-stage" id="deck-stage" tabindex="-1" aria-live="polite"></main>
+
+      <footer class="controlbar">
+        <div class="progress" aria-hidden="true">
+          <span class="progress__fill" id="progress-fill"></span>
+        </div>
+        <p class="controlbar__hint" id="control-hint">ใช้ปุ่มลูกศร, Space หรือปัดหน้าจอ</p>
+        <div class="controlbar__buttons">
+          <button class="nav-button" id="prev-button" type="button" aria-label="สไลด์ก่อนหน้า">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7" /></svg>
+            <span>ก่อนหน้า</span>
+          </button>
+          <button class="nav-button nav-button--next" id="next-button" type="button" aria-label="สไลด์ถัดไป">
+            <span>ถัดไป</span>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7" /></svg>
+          </button>
+        </div>
+      </footer>
+    </div>
+
+    <aside class="toc" id="toc" role="dialog" aria-modal="true" aria-labelledby="toc-title" hidden>
+      <div class="toc__header">
+        <div>
+          <p class="eyebrow eyebrow--light">NAVIGATE THE FIELD GUIDE</p>
+          <h2 id="toc-title">เลือก use case ที่ใช่</h2>
+        </div>
+        <button class="icon-button icon-button--light" id="toc-close" type="button" aria-label="ปิดสารบัญ">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19" /></svg>
+        </button>
+      </div>
+
+      <div class="toc__tools">
+        <label class="search-field">
+          <span class="sr-only">ค้นหา use case</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6" /><path d="m16 16 5 5" /></svg>
+          <input id="toc-search" type="search" placeholder="ค้นหา เช่น รายงาน, ข้อมูล, ประชุม…" autocomplete="off">
+        </label>
+        <div class="category-filter" id="category-filter" role="group" aria-label="กรองตามหมวด"></div>
+      </div>
+
+      <div class="toc__meta">
+        <span id="toc-result-count">99 USE CASES</span>
+        <span>คลิกเพื่อไปยังสไลด์</span>
+      </div>
+      <div class="toc__list" id="toc-list"></div>
+    </aside>
+
+    <section class="prompt-drawer" id="prompt-drawer" role="dialog" aria-modal="true" aria-labelledby="prompt-title" hidden>
+      <button class="prompt-drawer__backdrop" id="prompt-backdrop" type="button" tabindex="-1" aria-hidden="true"></button>
+      <div class="prompt-drawer__panel">
+        <div class="prompt-drawer__header">
+          <div>
+            <p class="eyebrow">PROMPT STARTER</p>
+            <h2 id="prompt-title">เริ่มคุยกับ Codex แบบนี้</h2>
+          </div>
+          <button class="icon-button" id="prompt-close" type="button" aria-label="ปิดตัวอย่าง prompt">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19" /></svg>
+          </button>
+        </div>
+        <blockquote id="prompt-copy"></blockquote>
+        <div class="prompt-drawer__actions">
+          <p>ปรับชื่อไฟล์ ช่วงเวลา และผลลัพธ์ให้ตรงกับงานของคุณ</p>
+          <button class="copy-button" id="copy-prompt" type="button">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="8" y="8" width="11" height="11" rx="2" /><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3" /></svg>
+            <span>คัดลอก Prompt</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden>คัดลอกแล้ว</div>
+    <div class="print-deck" id="print-deck" aria-hidden="true"></div>
+
+    <noscript>กรุณาเปิด JavaScript เพื่อดู presentation นี้</noscript>
+  </body>
+</html>

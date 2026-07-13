@@ -1,0 +1,926 @@
+[
+  {
+    "index": 0,
+    "slug": "daily-work-brief",
+    "titleTh": "สรุปแผนงานประจำวัน",
+    "titleEn": "Create a daily work brief",
+    "summaryTh": "ให้ ChatGPT รวบรวมปฏิทิน อีเมล ข้อความ และงานค้างเป็นสรุปสั้น ๆ เพื่อช่วยเลือกสิ่งที่ควรทำก่อนในแต่ละวัน",
+    "categoryTh": "งานประจำ",
+    "workflow": [
+      {
+        "label": "ระบุแหล่งข้อมูล",
+        "detail": "บอกวันที่ เวลาทำงาน และแหล่งข้อมูลที่อนุญาตให้ ChatGPT อ่าน"
+      },
+      {
+        "label": "สร้างสรุปวันนี้",
+        "detail": "ขอรายการลำดับความสำคัญ การเตรียมประชุม ข้อความที่ต้องตอบ และการตัดสินใจที่ค้างอยู่"
+      },
+      {
+        "label": "ตรวจที่มา",
+        "detail": "เปิดลิงก์ต้นทางและแยกข้อเท็จจริงออกจากข้อสันนิษฐานหรือข้อมูลที่ยังเข้าถึงไม่ได้"
+      },
+      {
+        "label": "ปรับและทำซ้ำ",
+        "detail": "บอกสิ่งที่มีประโยชน์หรือเป็นสัญญาณรบกวน แล้วจึงตั้งให้สรุปเป็นกิจวัตร"
+      }
+    ],
+    "promptTh": "ช่วยทำสรุปงานของฉันสำหรับ [วันที่] จากปฏิทิน อีเมล ข้อความ และรายการติดตาม โดยแยกเรื่องเร่งด่วน สิ่งที่ต้องเตรียม และข้อมูลที่ยังไม่แน่ชัด ห้ามส่งหรือแก้ไขสิ่งใด",
+    "checkTh": "ตรวจแหล่งอ้างอิงและรายการที่ ChatGPT คาดเดาก่อนใช้วางแผนหรือมอบหมายงาน"
+  },
+  {
+    "index": 1,
+    "slug": "discover-protein-folding-architectures",
+    "titleTh": "ค้นคว้าโมเดลการพับโปรตีน",
+    "titleEn": "Discover protein folding models",
+    "summaryTh": "ใช้ Codex Goal Mode ช่วยเปลี่ยนสมมติฐานด้านโครงสร้างโมเดลโปรตีนให้เป็นวงจรทดลองที่สร้างโค้ด วัดผล และบันทึกหลักฐานอย่างต่อเนื่อง",
+    "categoryTh": "วิทยาศาสตร์และความปลอดภัย",
+    "workflow": [
+      {
+        "label": "ตั้งสมมติฐาน",
+        "detail": "ให้นักวิจัยกำหนดคำถามที่พิสูจน์หรือหักล้างได้ พร้อม baseline และ benchmark ที่วัดผลได้"
+      },
+      {
+        "label": "สร้างต้นแบบเล็ก",
+        "detail": "ให้ Codex ทำการเปลี่ยนแปลงที่เล็กที่สุดและตรวจด้วย unit test กับ microbenchmark ก่อนฝึกจริง"
+      },
+      {
+        "label": "ทดลองเป็นรอบ",
+        "detail": "รัน benchmark บันทึก metric เวลา หน่วยความจำ และ failure mode ในไฟล์ติดตามทุกครั้ง"
+      },
+      {
+        "label": "ทบทวนหลักฐาน",
+        "detail": "นักวิจัยตัดสินใจว่าจะเก็บ ย้อนกลับ หรือปรับแนวทางโดยไม่สรุปเกินข้อมูลที่ทดลองได้"
+      }
+    ],
+    "promptTh": "ใช้ Goal Mode ทดสอบสมมติฐาน [อธิบายสมมติฐาน] กับโมเดล AlphaFold2-style บน [benchmark] โดยเปลี่ยนทีละส่วน รันการทดสอบ และบันทึกแผนกับผลทดลองอย่างครบถ้วน",
+    "checkTh": "ให้ผู้เชี่ยวชาญตรวจวิธีทดลอง การเปรียบเทียบแบบ matched และการทำซ้ำก่อนอ้างว่าผลใช้ได้ทั่วไป"
+  },
+  {
+    "index": 2,
+    "slug": "feedback-synthesis",
+    "titleTh": "เปลี่ยนเสียงสะท้อนเป็นงานที่ทำต่อได้",
+    "titleEn": "Turn feedback into actions",
+    "summaryTh": "ให้ ChatGPT รวม feedback จากหลายแหล่ง จัดกลุ่มเรื่องซ้ำ พร้อมหลักฐานและคำถาม เพื่อให้ทีมตัดสินใจและติดตามงานต่อได้ง่าย",
+    "categoryTh": "ข้อมูลและการตัดสินใจ",
+    "workflow": [
+      {
+        "label": "รวบรวมแหล่งเสียง",
+        "detail": "ระบุ Slack, GitHub, แบบสำรวจ หรือเอกสารที่ต้องการให้ ChatGPT วิเคราะห์"
+      },
+      {
+        "label": "จัดกลุ่มประเด็น",
+        "detail": "ขอ Sheet หรือ Doc ที่รวมเรื่องซ้ำ หลักฐาน ระดับความมั่นใจ และคำถามที่ยังเปิดอยู่"
+      },
+      {
+        "label": "ทบทวนร่วมกัน",
+        "detail": "ให้ทีมตรวจการตีความ แยกประเด็น และเลือกเรื่องที่ควรส่งต่อให้ product หรือ engineering"
+      },
+      {
+        "label": "สร้างงานติดตาม",
+        "detail": "ใช้ task เดิมร่างอัปเดตหรือ issue และตั้งตรวจซ้ำเมื่อแหล่ง feedback มีข้อมูลใหม่"
+      }
+    ],
+    "promptTh": "ช่วยสังเคราะห์ feedback เรื่อง [หัวข้อ] จาก [แหล่งข้อมูล] เป็น review sheet โดยรวมเรื่องซ้ำ ใส่ลิงก์หลักฐาน ระดับความมั่นใจ และงานที่ควรติดตาม ห้ามโพสต์หรือสร้าง issue",
+    "checkTh": "ตรวจว่าการสรุปไม่เปิดเผยชื่อหรือคำพูดส่วนตัว และทุกประเด็นสำคัญย้อนกลับไปยังแหล่งข้อมูลได้"
+  },
+  {
+    "index": 3,
+    "slug": "clean-messy-data",
+    "titleTh": "ทำความสะอาดข้อมูลที่ไม่เป็นระเบียบ",
+    "titleEn": "Clean and prepare messy data",
+    "summaryTh": "ให้ ChatGPT ทำสำเนา CSV หรือ spreadsheet ที่สะอาดขึ้น โดยแก้รูปแบบไม่ตรงกัน ข้อมูลซ้ำ และแถวผิดปกติแต่เก็บต้นฉบับไว้เสมอ",
+    "categoryTh": "ข้อมูลและการตัดสินใจ",
+    "workflow": [
+      {
+        "label": "แนบไฟล์ต้นฉบับ",
+        "detail": "แนบหรืออ้างถึง CSV หรือ spreadsheet ที่ต้องการทำความสะอาด"
+      },
+      {
+        "label": "บอกปัญหาที่พบ",
+        "detail": "ระบุรูปแบบวันที่ สกุลเงิน ค่าที่หาย ข้อมูลซ้ำ หรือแถวสรุปที่ปะปนอยู่"
+      },
+      {
+        "label": "สร้างไฟล์ใหม่",
+        "detail": "ขอไฟล์ที่สะอาดพร้อม data-quality note โดยห้ามแก้ต้นฉบับ"
+      },
+      {
+        "label": "เทียบผลลัพธ์",
+        "detail": "สุ่มตรวจแถวที่เปลี่ยน ถูกลบ หรือยังทำความสะอาดไม่ได้อย่างมั่นใจ"
+      }
+    ],
+    "promptTh": "ทำความสะอาดไฟล์ @[ชื่อไฟล์] โดยแก้ [ปัญหาที่พบ] สร้างเป็นไฟล์ใหม่ เก็บต้นฉบับไว้ และสรุปแถวที่แก้ ลบ หรือไม่แน่ใจ",
+    "checkTh": "ตรวจยอดรวม จำนวนแถว รหัสต้นทาง และค่าที่เว้นว่างเทียบกับไฟล์เดิมก่อนนำไปใช้ต่อ"
+  },
+  {
+    "index": 4,
+    "slug": "analyze-data-export",
+    "titleTh": "ถามคำถามจากข้อมูลตาราง",
+    "titleEn": "Query tabular data",
+    "summaryTh": "ใช้ ChatGPT ตอบคำถามจาก CSV, spreadsheet หรือ dashboard export พร้อมสร้างกราฟที่เปิดดูและปรับต่อได้",
+    "categoryTh": "ข้อมูลและการตัดสินใจ",
+    "workflow": [
+      {
+        "label": "แนบข้อมูล",
+        "detail": "แนบไฟล์หรือระบุ Google Sheet ที่มีข้อมูลดิบสำหรับคำถามนี้"
+      },
+      {
+        "label": "ตั้งคำถามเดียว",
+        "detail": "เริ่มจากคำถามธุรกิจที่ชัดเจนและขอให้ตรวจชื่อคอลัมน์ก่อนคำนวณ"
+      },
+      {
+        "label": "สร้างคำตอบภาพ",
+        "detail": "ให้ ChatGPT คำนวณ สรุป และทำ visualization แบบ HTML ที่อ่านง่าย"
+      },
+      {
+        "label": "เจาะต่ออย่างมีเหตุผล",
+        "detail": "เปิดกราฟแล้วขอเปรียบเทียบช่วงเวลา กลุ่ม หรือเงื่อนไขเพิ่มเติมใน task เดิม"
+      }
+    ],
+    "promptTh": "วิเคราะห์ @[ชื่อไฟล์] เพื่อตอบว่า [คำถาม] ตรวจคอลัมน์ก่อนคำนวณ และสร้าง visualization แบบ HTML ที่อธิบายผลเป็นภาษาง่าย",
+    "checkTh": "ตรวจนิยามตัวชี้วัด ตัวกรอง ช่วงเวลา และจำนวนข้อมูลก่อนนำข้อสรุปไปตัดสินใจ"
+  },
+  {
+    "index": 5,
+    "slug": "target-prioritization",
+    "titleTh": "จัดลำดับเป้าหมายทางชีวภาพสำหรับพัฒนายา",
+    "titleEn": "Prioritize drug targets",
+    "summaryTh": "ใช้ ChatGPT และ Life Science Research plugin รวบรวมหลักฐานหลายด้าน ให้คะแนนอย่างเป็นระบบ และเปรียบเทียบเป้าหมายยาพร้อมข้อจำกัดที่ตรวจสอบได้",
+    "categoryTh": "วิทยาศาสตร์และความปลอดภัย",
+    "workflow": [
+      {
+        "label": "กำหนดตัวเลือก",
+        "detail": "ระบุโรค เป้าหมายยาที่ต้องเปรียบเทียบ และชุดหลักฐานที่ต้องการอย่างชัดเจน"
+      },
+      {
+        "label": "ค้นหลักฐานขนาน",
+        "detail": "แยกค้น genetics, cohorts, clinical, literature และ expression เป็นงานย่อยอิสระ"
+      },
+      {
+        "label": "ให้คะแนนคงที่",
+        "detail": "ให้คะแนนแต่ละ evidence lane ด้วยเกณฑ์เดียวกันและแยกหลักฐานตรงออกจากโรคใกล้เคียง"
+      },
+      {
+        "label": "สังเคราะห์อันดับ",
+        "detail": "รวมเป็นตาราง heatmap อันดับสุดท้าย ความมั่นใจ และข้อจำกัดพร้อม raw payload ที่ตรวจได้"
+      }
+    ],
+    "promptTh": "ใช้ Life Science Research plugin เปรียบเทียบ [เป้าหมาย A, B, C] สำหรับ [โรค] จาก genetics, clinical, literature และ expression ให้คะแนน 1–5 แล้วสรุปอันดับ ความมั่นใจ และข้อจำกัด",
+    "checkTh": "ให้นักวิทยาศาสตร์ตรวจเกณฑ์คะแนน แหล่งข้อมูล และความแตกต่างระหว่างความสัมพันธ์กับเหตุเป็นผลก่อนตัดสินใจ"
+  },
+  {
+    "index": 6,
+    "slug": "scrna-seq-post-count-qc",
+    "titleTh": "ระบุชนิดเซลล์จากข้อมูล scRNA-seq",
+    "titleEn": "Annotate scRNA-seq data",
+    "summaryTh": "ใช้ ChatGPT และ NGS Analysis plugin ตรวจคุณภาพ กรอง และ annotate ข้อมูล single-cell พร้อม UMAP และเหตุผลของ threshold ที่ย้อนดูได้",
+    "categoryTh": "วิทยาศาสตร์และความปลอดภัย",
+    "workflow": [
+      {
+        "label": "ชี้ชุดข้อมูล",
+        "detail": "ระบุ matrix, barcodes, features, manifest และ metadata ของชุดทดลองให้ครบ"
+      },
+      {
+        "label": "เลือกเกณฑ์จากข้อมูล",
+        "detail": "ให้ plugin สำรวจ distribution แล้วเสนอ QC threshold พร้อมเหตุผลแทนการใช้ค่าตายตัว"
+      },
+      {
+        "label": "ตรวจภาพและจำนวน",
+        "detail": "เปิด threshold plots, QC summary และ UMAP เพื่อดูเซลล์ที่ถูกตัดและกลุ่มที่น่าสงสัย"
+      },
+      {
+        "label": "ปรับและรันใหม่",
+        "detail": "แก้ threshold หรือเพิ่ม reference atlas ใน task เดิมโดยเก็บ raw counts และบันทึกเหตุผลเดิมไว้"
+      }
+    ],
+    "promptTh": "ใช้ NGS Analysis plugin ทำ QC และ annotation ให้ชุดข้อมูล scRNA-seq @[พาธ] เลือก threshold จาก distribution เก็บ raw counts และส่ง QC summary, UMAP กับ filtered .h5ad",
+    "checkTh": "ให้นักชีวสารสนเทศตรวจ threshold, batch effect และความน่าเชื่อถือของ annotation ก่อนใช้ผลทางชีววิทยา"
+  },
+  {
+    "index": 7,
+    "slug": "bulk-rna-seq-fastq-qc",
+    "titleTh": "ตรวจความพร้อมข้อมูล bulk RNA-seq",
+    "titleEn": "Validate bulk RNA-seq inputs",
+    "summaryTh": "ใช้ ChatGPT และ NGS Analysis plugin ตรวจ sample sheet, FASTQ และ reference ก่อนสร้าง QC report กับ count matrix สำหรับการวิเคราะห์ขั้นต่อไป",
+    "categoryTh": "วิทยาศาสตร์และความปลอดภัย",
+    "workflow": [
+      {
+        "label": "เตรียมอินพุต",
+        "detail": "ระบุ sample sheet, FASTQ, transcriptome, genome และ GTF ที่เป็นชุดเดียวกัน"
+      },
+      {
+        "label": "ตรวจความสอดคล้อง",
+        "detail": "ให้ plugin ตรวจ strandedness, reference consistency และความพร้อมของเครื่องมือก่อนรัน"
+      },
+      {
+        "label": "อ่านผล QC",
+        "detail": "ทบทวน MultiQC โดยเน้น mapping rate, duplication, library type และตัวอย่างที่ผิดปกติ"
+      },
+      {
+        "label": "ยืนยันไฟล์ส่งต่อ",
+        "detail": "ตรวจ gene-level matrix และ provenance ก่อนส่งไปทำ differential expression"
+      }
+    ],
+    "promptTh": "ใช้ NGS Analysis plugin ตรวจ bulk RNA-seq จาก @[พาธ] และส่ง run manifest, MultiQC, Salmon matrices พร้อมสรุปปัญหาที่อาจขวาง differential expression",
+    "checkTh": "ให้ผู้เชี่ยวชาญตรวจคุณภาพไลบรารี sample metadata และ reference version ก่อนวิเคราะห์ผลต่างการแสดงออก"
+  },
+  {
+    "index": 8,
+    "slug": "cash-flow-forecast",
+    "titleTh": "พยากรณ์กระแสเงินสด",
+    "titleEn": "Forecast cash flow",
+    "summaryTh": "ให้ ChatGPT สร้าง workbook กระแสเงินสดที่แก้สมมติฐานได้ เห็นจุดเงินสดต่ำสุด และเตือนเมื่อยอดต่ำกว่าระดับปลอดภัย",
+    "categoryTh": "การเงินและกลยุทธ์",
+    "workflow": [
+      {
+        "label": "รวมข้อมูลเงินสด",
+        "detail": "แนบยอดต้นงวด รายรับ เงินเดือน เจ้าหนี้ หนี้ ภาษี capex และสมมติฐานเวลา"
+      },
+      {
+        "label": "สร้างโมเดลแก้ได้",
+        "detail": "ขอ workbook ที่ใช้สูตรและรักษาความถี่รายสัปดาห์หรือรายเดือนตามต้นฉบับ"
+      },
+      {
+        "label": "ตรวจจุดเสี่ยง",
+        "detail": "ดูยอดต่ำสุด ช่วงที่ผิดเกณฑ์เงินสดปลอดภัย และสมมติฐานที่ยังขาด"
+      },
+      {
+        "label": "ทดสอบสถานการณ์",
+        "detail": "เปลี่ยนตัวขับทีละตัว เช่น การเก็บเงินหรือกำหนดจ่าย เพื่อเห็นผลกระทบอย่างชัดเจน"
+      }
+    ],
+    "promptTh": "ใช้ $spreadsheets สร้าง cash-flow forecast จากไฟล์แนบเป็น .xlsx ที่แก้สมมติฐานได้ พร้อมชี้จุดเงินสดต่ำสุด การผิด safety threshold และข้อมูลเวลาที่ขาด",
+    "checkTh": "ให้ฝ่ายการเงิน tie-out ยอดกับแหล่งข้อมูลและอนุมัติสมมติฐานก่อนใช้วางแผนสภาพคล่อง"
+  },
+  {
+    "index": 9,
+    "slug": "dcf-model",
+    "titleTh": "ประเมินมูลค่าด้วย DCF",
+    "titleEn": "Model a DCF valuation",
+    "summaryTh": "ให้ ChatGPT เปลี่ยนงบการเงินและสมมติฐานเป็น DCF workbook ที่ตรวจสูตร ปรับตัวขับ และดู sensitivity ได้",
+    "categoryTh": "การเงินและกลยุทธ์",
+    "workflow": [
+      {
+        "label": "แนบข้อมูลฐาน",
+        "detail": "ให้ historical financials สมมติฐานมูลค่า และ modeling notes ที่ระบุแหล่งชัดเจน"
+      },
+      {
+        "label": "สร้างแบบจำลอง",
+        "detail": "คำนวณ operating drivers, unlevered free cash flow, WACC, terminal value และ enterprise value"
+      },
+      {
+        "label": "ตรวจความเชื่อมโยง",
+        "detail": "ทบทวน source tie-out สูตร hardcode สมมติฐาน และ sensitivity table ใน workbook"
+      },
+      {
+        "label": "ปรับทีละตัว",
+        "detail": "เปลี่ยน growth, margin, capex หรือ working capital ทีละสมมติฐานเพื่อดูผลต่อมูลค่า"
+      }
+    ],
+    "promptTh": "ใช้ $spreadsheets สร้าง DCF workbook จากไฟล์แนบ โดยแยก assumptions ชัดเจน คำนวณ FCF, WACC และ terminal value พร้อม sensitivity และ flag ข้อมูลที่ขาด",
+    "checkTh": "ให้ผู้เชี่ยวชาญการเงินตรวจสูตร แหล่งสมมติฐาน WACC และ terminal value ก่อนใช้ประกอบคำแนะนำลงทุน"
+  },
+  {
+    "index": 10,
+    "slug": "budget-vs-actuals-review",
+    "titleTh": "ทบทวนงบประมาณเทียบผลจริง",
+    "titleEn": "Review budget vs. actuals",
+    "summaryTh": "ให้ ChatGPT จับคู่ผลจริงทั้งรายรับและรายจ่ายกับงบประมาณ คำนวณส่วนต่าง และแยกคำอธิบายที่มีหลักฐานออกจากคำถามที่ฝ่ายการเงินต้องตอบ",
+    "categoryTh": "การเงินและกลยุทธ์",
+    "workflow": [
+      {
+        "label": "แนบแผนและผลจริง",
+        "detail": "ให้ budget plan, actuals export และ close notes ที่ใช้ในรอบเดียวกัน"
+      },
+      {
+        "label": "จับคู่หมวดบัญชี",
+        "detail": "ให้ ChatGPT map รายการกับหมวดงบและ flag รายการที่ไม่ชัดแทนการฝืนจับคู่"
+      },
+      {
+        "label": "คำนวณส่วนต่าง",
+        "detail": "สร้างสูตรทั้งจำนวนเงินและร้อยละพร้อมตีความ favorable หรือ unfavorable ตามประเภทบัญชี"
+      },
+      {
+        "label": "ตรวจและสื่อสาร",
+        "detail": "ทบทวน tie-out กับคำอธิบายก่อนร่างสรุปสำหรับผู้บริหาร"
+      }
+    ],
+    "promptTh": "ใช้ $spreadsheets เปรียบเทียบ budget กับ actuals จากไฟล์แนบ สร้าง .xlsx ที่เก็บ raw data ใช้สูตรคำนวณ variance และ flag หมวดที่ map ไม่ได้",
+    "checkTh": "ให้ฝ่ายการเงินตรวจ category mapping, tie-out และคำอธิบายส่วนต่างที่ยังไม่มีหลักฐานก่อนแชร์"
+  },
+  {
+    "index": 11,
+    "slug": "generate-slide-decks",
+    "titleTh": "สร้างและปรับสไลด์นำเสนอ",
+    "titleEn": "Generate slide decks",
+    "summaryTh": "ใช้ ChatGPT แก้หรือสร้าง PowerPoint จากเนื้อหาและแบรนด์เดิม โดยคงข้อความกับกราฟให้แก้ไขได้และตรวจภาพทุกสไลด์ก่อนส่ง",
+    "categoryTh": "ออกแบบและสร้าง",
+    "workflow": [
+      {
+        "label": "ตรวจต้นฉบับ",
+        "detail": "ให้ ChatGPT ดู deck, PDF หรือภาพอ้างอิงและจับสัดส่วน สี ฟอนต์ และรูปแบบก่อนแก้"
+      },
+      {
+        "label": "กำหนดบทบาทสไลด์",
+        "detail": "ระบุว่าสไลด์ใดต้องคงเดิม เขียนใหม่ เพิ่มภาพ หรือสร้างใหม่พร้อมกติกา layout"
+      },
+      {
+        "label": "สร้างแบบแก้ได้",
+        "detail": "คงข้อความเป็น text และกราฟง่ายเป็น native chart พร้อมใช้ภาพที่มีทิศทางเดียวกัน"
+      },
+      {
+        "label": "เรนเดอร์ตรวจจริง",
+        "detail": "เรนเดอร์เป็นภาพ ตรวจข้อความล้น ฟอนต์แทนที่ และระยะจัดวางทุกหน้าแล้วแก้ก่อนส่ง"
+      }
+    ],
+    "promptTh": "ใช้ $slides และ $imagegen ปรับ deck นี้ตาม [เป้าหมาย] โดยรักษาแบรนด์เดิม คง text กับ chart ให้แก้ได้ และเรนเดอร์ตรวจ overflow กับ font substitution ก่อนส่ง",
+    "checkTh": "ตรวจความถูกต้องของสาร ตัวเลข ลิขสิทธิ์ภาพ และการแสดงผลทุกสไลด์บนจอจริง"
+  },
+  {
+    "index": 12,
+    "slug": "manage-your-inbox",
+    "titleTh": "จัดการกล่องอีเมล",
+    "titleEn": "Manage your inbox",
+    "summaryTh": "ใช้ ChatGPT คัดอีเมลที่ต้องตอบ ร่างคำตอบในน้ำเสียงของคุณ และดึงบริบทจากเครื่องมือทำงานมาเติมโดยยังให้คุณเป็นผู้กดส่ง",
+    "categoryTh": "งานประจำ",
+    "workflow": [
+      {
+        "label": "กำหนดขอบเขตอีเมล",
+        "detail": "ระบุช่วงเวลา label หรือประเภทข้อความที่ต้องการให้ Gmail plugin ตรวจ"
+      },
+      {
+        "label": "เติมตัวอย่างน้ำเสียง",
+        "detail": "ให้ดูอีเมลที่เคยส่งหรือเอกสารตัวอย่างเพื่อเลียนแบบสไตล์อย่างเหมาะสม"
+      },
+      {
+        "label": "สร้างคิวร่าง",
+        "detail": "แยกอีเมลที่ควรตอบ รอได้ และต้องใช้บริบทจาก Slack หรือเอกสารเพิ่ม"
+      },
+      {
+        "label": "ปรับเกณฑ์และติดตาม",
+        "detail": "บอกฉบับที่มีประโยชน์หรือเป็น noise แล้วค่อยตั้งการตรวจตามเวลา"
+      }
+    ],
+    "promptTh": "ช่วยตรวจ @gmail ในช่วง [เวลา] หาอีเมลที่ต้องตอบ และร่างคำตอบในน้ำเสียงของฉัน โดยใช้ [แหล่งตัวอย่าง] และดึงบริบทจาก [แหล่งงาน] เมื่อจำเป็น ห้ามส่ง",
+    "checkTh": "อ่านผู้รับ เนื้อหา ไฟล์แนบ และข้อมูลลับทุกฉบับก่อนกดส่งด้วยตนเอง"
+  },
+  {
+    "index": 13,
+    "slug": "github-code-reviews",
+    "titleTh": "ตรวจสอบ GitHub pull request",
+    "titleEn": "Review GitHub pull requests",
+    "summaryTh": "ใช้ Codex ช่วยตรวจ pull request หา regression, test ที่ขาด และปัญหาเอกสาร เพื่อเพิ่มข้อมูลประกอบการตรวจสอบก่อนทีมตัดสินใจ merge",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      {
+        "label": "เชื่อม repository",
+        "detail": "ติดตั้ง Codex code review และกำหนด repo หรือองค์กรที่อนุญาต"
+      },
+      {
+        "label": "กำหนดเกณฑ์ตรวจ",
+        "detail": "ใส่แนวทางเฉพาะโปรเจกต์ใน AGENTS.md เช่น security, tests และ behavior ที่ห้ามเปลี่ยน"
+      },
+      {
+        "label": "เรียกตรวจ PR",
+        "detail": "ตั้งตรวจอัตโนมัติหรือพิมพ์ @codex review พร้อมจุดที่ต้องเน้นใน comment"
+      },
+      {
+        "label": "ประเมินและแก้",
+        "detail": "ให้นักพัฒนาตรวจข้อค้นพบแล้วจึงสั่งแก้เฉพาะประเด็นพร้อมรัน regression tests"
+      }
+    ],
+    "promptTh": "@codex review pull request นี้ โดยเน้น security regression, behavior change, test ที่ขาด และเอกสารที่ต้องอัปเดต พร้อมอ้างไฟล์และบรรทัด",
+    "checkTh": "มนุษย์ต้องยืนยันทุก finding และผล test ก่อนอนุมัติ merge"
+  },
+  {
+    "index": 14,
+    "slug": "macos-sidebar-detail-inspector",
+    "titleTh": "สร้างโครงแอป Mac แบบเนทีฟ",
+    "titleEn": "Build a Mac app shell",
+    "summaryTh": "ใช้ Codex สร้างโครงแอป Mac ด้วย sidebar, detail, inspector, menu และ Settings ที่ทำงานตามรูปแบบเดสก์ท็อปจริง",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      {
+        "label": "อธิบายงานหลัก",
+        "detail": "ระบุชนิดข้อมูล หน้าหลัก และ action สำคัญที่ผู้ใช้ต้องทำในแอป"
+      },
+      {
+        "label": "วางโครงหน้าต่าง",
+        "detail": "ให้ Codex เลือก scene model และสร้าง NavigationSplitView ที่มี selection state ชัดเจน"
+      },
+      {
+        "label": "เพิ่มคำสั่งเดสก์ท็อป",
+        "detail": "เชื่อม action เดียวกันกับ menu, toolbar, keyboard shortcut และ Settings"
+      },
+      {
+        "label": "สร้างและทดสอบ",
+        "detail": "รัน build/run check และใช้ AppKit bridge เฉพาะพฤติกรรมที่ SwiftUI ทำไม่ได้จริง"
+      }
+    ],
+    "promptTh": "ใช้ Build macOS Apps plugin สร้าง app shell สำหรับ [ไอเดีย] ด้วย SwiftUI sidebar, detail, inspector, commands และ Settings พร้อม build/run check",
+    "checkTh": "ทดสอบ selection, menu, shortcut, settings persistence และ accessibility บน macOS จริงก่อนปล่อย"
+  },
+  {
+    "index": 15,
+    "slug": "frontend-designs",
+    "titleTh": "สร้างหน้าเว็บ responsive จากแบบอ้างอิง",
+    "titleEn": "Build responsive front-end designs",
+    "summaryTh": "ใช้ Codex เปลี่ยน screenshot และ design brief เป็นหน้าเว็บที่เข้ากับ design system เดิม แล้วตรวจทั้ง desktop และ mobile ใน browser",
+    "categoryTh": "ออกแบบและสร้าง",
+    "workflow": [
+      {
+        "label": "ให้ภาพอ้างอิง",
+        "detail": "แนบ screenshot หลายขนาดและ state ที่สำคัญพร้อมบอกพฤติกรรมที่คาดหวัง"
+      },
+      {
+        "label": "สำรวจระบบเดิม",
+        "detail": "ให้ Codex หา component, token, routing และ data pattern ที่ต้องนำกลับมาใช้"
+      },
+      {
+        "label": "ลงมือสร้าง",
+        "detail": "แปลงลำดับชั้น ระยะ และ responsive behavior ให้ตรงภาพโดยไม่สร้าง design system ซ้ำ"
+      },
+      {
+        "label": "เทียบใน browser",
+        "detail": "ใช้ Playwright ตรวจ desktop และ mobile แล้วปรับจนรูปลักษณ์กับการใช้งานใกล้เคียงต้นฉบับ"
+      }
+    ],
+    "promptTh": "สร้าง UI นี้จาก screenshot และ notes โดยใช้ component กับ token เดิม รองรับ desktop/mobile และใช้ Playwright เทียบกับภาพอ้างอิงจนตรง",
+    "checkTh": "ตรวจ responsive, keyboard navigation, contrast และพฤติกรรมหลักด้วยสายตาและการใช้งานจริง"
+  },
+  {
+    "index": 16,
+    "slug": "use-your-computer-with-codex",
+    "titleTh": "ให้ ChatGPT ช่วยทำงานบนคอมพิวเตอร์",
+    "titleEn": "Use your computer with ChatGPT",
+    "summaryTh": "ใช้ Computer Use ให้ ChatGPT ทำงานหลายขั้นข้ามแอป หน้าต่าง และไฟล์บน Mac พร้อมดูความคืบหน้าผ่านภาพตัวอย่าง",
+    "categoryTh": "งานประจำ",
+    "workflow": [
+      {
+        "label": "เตรียมแอป",
+        "detail": "เปิดและเข้าสู่ระบบแอปที่เกี่ยวข้อง พร้อมหลีกเลี่ยงการรันสองงานในแอปเดียวกัน"
+      },
+      {
+        "label": "บอกผลลัพธ์",
+        "detail": "เริ่มด้วย @Computer แล้วอธิบายงาน แอปที่ใช้ และสิ่งที่ต้องการให้เสร็จ"
+      },
+      {
+        "label": "ติดตามการทำงาน",
+        "detail": "ดู picture-in-picture และอนุมัติการเข้าถึงเมื่อระบบร้องขอ"
+      },
+      {
+        "label": "ตรวจสิ่งที่เปลี่ยน",
+        "detail": "ให้ ChatGPT สรุปการกระทำและตรวจผลในแต่ละแอปหลังงานเสร็จ"
+      }
+    ],
+    "promptTh": "@Computer ช่วย [อธิบายงาน] โดยใช้ [รายชื่อแอป] ให้เสร็จเป็น [ผลลัพธ์] และหยุดเพื่อขออนุมัติก่อนส่ง ซื้อ จอง หรือลบข้อมูล",
+    "checkTh": "เฝ้าดูขั้นตอนที่มีข้อมูลลับหรือผลย้อนกลับไม่ได้ และตรวจผลลัพธ์ในแอปต้นทาง"
+  },
+  {
+    "index": 17,
+    "slug": "codebase-onboarding",
+    "titleTh": "ทำความเข้าใจ codebase ขนาดใหญ่",
+    "titleEn": "Understand large codebases",
+    "summaryTh": "ใช้ Codex ทำแผนที่ codebase ที่ไม่คุ้นเคย อธิบายเส้นทางข้อมูล เจ้าของแต่ละส่วน และจุดเสี่ยงก่อนเริ่มแก้โค้ด",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      {
+        "label": "กำหนดขอบเขต",
+        "detail": "ชี้ feature, directory หรือ request flow ที่ต้องการเข้าใจแทนการถามทั้งระบบแบบกว้าง"
+      },
+      {
+        "label": "ไล่เส้นทางข้อมูล",
+        "detail": "ให้ Codex อธิบายจากจุดรับคำขอผ่าน business logic, persistence และ UI"
+      },
+      {
+        "label": "ชี้จุดสำคัญ",
+        "detail": "ถามตำแหน่ง validation, side effect, state transition และ dependency ที่มักถูกมองข้าม"
+      },
+      {
+        "label": "สร้างรายการอ่านต่อ",
+        "detail": "ขอไฟล์ที่ควรอ่านต่อ จุดเสี่ยง และ test ที่ต้องรันก่อนลงมือแก้"
+      }
+    ],
+    "promptTh": "อธิบาย request flow ของ [ส่วนระบบ] ใน codebase นี้ ระบุว่า module ใดรับผิดชอบอะไร validation อยู่ที่ไหน จุดเสี่ยงคืออะไร และจบด้วยไฟล์ที่ควรอ่านต่อ",
+    "checkTh": "ยืนยันคำอธิบายกับโค้ด test และเจ้าของระบบก่อนเปลี่ยนส่วนที่มี side effect"
+  },
+  {
+    "index": 18,
+    "slug": "automation-bug-triage",
+    "titleTh": "คัดแยกบั๊กอัตโนมัติ",
+    "titleEn": "Automate bug triage",
+    "summaryTh": "ให้ Codex รวม alert, issue, log และรายงานจากแชต จัดกลุ่มเรื่องซ้ำและเรียงความเร่งด่วน ก่อนตั้งให้กวาดตรวจเป็นประจำ",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      {
+        "label": "ระบุแหล่งบั๊ก",
+        "detail": "ให้ลิงก์หรือขอบเขต Sentry, Slack, Linear, GitHub, logs และ support queue ที่ต้องตรวจ"
+      },
+      {
+        "label": "กวาดตรวจครั้งแรก",
+        "detail": "ขอรายการ P0–P3 ที่รวมรายงานซ้ำและแยกหลักฐานที่สังเกตได้จากการคาดเดา"
+      },
+      {
+        "label": "ปรับคุณภาพรายการ",
+        "detail": "ตัด alert ที่ทีมรู้แล้ว เพิ่มแหล่งที่ขาด และกำหนดหลักฐานขั้นต่ำสำหรับแต่ละบั๊ก"
+      },
+      {
+        "label": "ตั้งงานประจำ",
+        "detail": "เมื่อรายงานน่าเชื่อถือแล้วจึง schedule task และร่าง handoff หรือ issue ให้ทีมตรวจ"
+      }
+    ],
+    "promptTh": "กวาด bug ของ [ทีม/บริการ] ในช่วง [เวลา] จาก [แหล่ง] จัด P0–P3 รวมรายงานซ้ำ ใส่หลักฐานและ next action โดยห้ามสร้าง แก้ หรือ assign issue",
+    "checkTh": "ให้เจ้าของระบบยืนยัน severity, duplicate grouping และหลักฐานก่อนสร้าง issue หรือแจ้งเตือนทีม"
+  },
+  {
+    "index": 19,
+    "slug": "make-granular-ui-changes",
+    "titleTh": "ปรับ UI ทีละจุดอย่างรวดเร็ว",
+    "titleEn": "Make granular UI changes",
+    "summaryTh": "ใช้ Codex แก้ UI จุดเล็ก ๆ ครั้งละเรื่องในแอปเดิม แล้วตรวจผลใน browser โดยไม่ขยายเป็นการออกแบบใหม่ทั้งระบบ",
+    "categoryTh": "ออกแบบและสร้าง",
+    "workflow": [
+      {
+        "label": "เปิดจุดที่จะแก้",
+        "detail": "เปิด route หรือ component ที่เกี่ยวข้องและเตรียม viewport หรือภาพเป้าหมาย"
+      },
+      {
+        "label": "สั่งเปลี่ยนเรื่องเดียว",
+        "detail": "ระบุ spacing, alignment, color, copy หรือ state เพียงหนึ่งรายการต่อรอบ"
+      },
+      {
+        "label": "แก้ให้น้อยที่สุด",
+        "detail": "ให้ Codex ใช้ component และ token เดิมโดยไม่แตะ routing หรือ data flow ที่ไม่เกี่ยวข้อง"
+      },
+      {
+        "label": "ตรวจและวนรอบ",
+        "detail": "ดูผลใน browser แล้วส่งคำปรับถัดไปที่เจาะจงใน task เดิม"
+      }
+    ],
+    "promptTh": "แก้ UI จุดนี้: [รายละเอียดเดียว] ที่ [route/component] โดยเปลี่ยนเฉพาะไฟล์จำเป็น ใช้ token เดิม และตรวจผลใน browser ก่อนหยุด",
+    "checkTh": "ตรวจว่าการแก้ไม่กระทบ state อื่น breakpoint อื่น หรือ accessibility ของ component"
+  },
+  {
+    "index": 20,
+    "slug": "slack-coding-tasks",
+    "titleTh": "เริ่มงานเขียนโค้ดจาก Slack",
+    "titleEn": "Kick off coding tasks from Slack",
+    "summaryTh": "เรียก @Codex ใน Slack เพื่อส่งต่องานที่มีบริบทจาก thread ไปยัง repository และ environment ที่ถูกต้อง แล้วกลับมาตรวจผลในที่เดิม",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      {
+        "label": "เชื่อมทีมกับ repo",
+        "detail": "ติดตั้ง Slack app แล้ว map channel, repository และ environment ให้ถูกโครงการ"
+      },
+      {
+        "label": "มอบหมายใน thread",
+        "detail": "mention @Codex พร้อมปัญหา ขอบเขต ข้อจำกัด และผลลัพธ์ที่คาดหวัง"
+      },
+      {
+        "label": "ติดตามผ่านลิงก์",
+        "detail": "เปิด task link เพื่อดูการวิเคราะห์ การเปลี่ยนแปลง และการตรวจสอบที่ Codex ทำ"
+      },
+      {
+        "label": "ทบทวนและต่อยอด",
+        "detail": "ตรวจ diff และ test แล้วตอบกลับใน thread หากต้องการให้แก้เฉพาะจุดเพิ่ม"
+      }
+    ],
+    "promptTh": "@Codex วิเคราะห์ปัญหาใน thread นี้และแก้ใน environment [ชื่อ] ของ repo [ชื่อ] โดยเน้นไฟล์ [ขอบเขต] พร้อมรัน test ที่เกี่ยวข้อง",
+    "checkTh": "ตรวจว่า repo/environment ถูกต้อง และ review diff กับผล test ก่อน merge"
+  },
+  {
+    "index": 21,
+    "slug": "new-hire-onboarding",
+    "titleTh": "ประสานงานพนักงานใหม่",
+    "titleEn": "Coordinate new-hire onboarding",
+    "summaryTh": "ใช้ ChatGPT รวบรวมข้อมูลพนักงานใหม่จากแหล่งที่ได้รับอนุมัติ ร่าง tracker สรุปให้แต่ละทีม และเตรียม welcome space โดยยังไม่ส่งหรือสร้างสิ่งใดก่อนอนุมัติ",
+    "categoryTh": "การขายและปฏิบัติการ",
+    "workflow": [
+      {
+        "label": "กำหนดข้อมูลที่อนุญาต",
+        "detail": "ระบุแหล่งข้อมูล ช่วงวันเริ่มงาน ฟิลด์ที่ใช้ได้ และข้อมูลอ่อนไหวที่ห้ามใช้"
+      },
+      {
+        "label": "สำรวจ cohort",
+        "detail": "ให้ ChatGPT นับและจัดกลุ่มตามทีมกับผู้จัดการ พร้อม flag ข้อมูลความพร้อมที่ขาด"
+      },
+      {
+        "label": "ร่างแพ็กเกจ",
+        "detail": "สร้าง tracker draft, team summary, welcome-space plan และข้อความต้อนรับเพื่อการตรวจ"
+      },
+      {
+        "label": "อนุมัติทีละการกระทำ",
+        "detail": "ตรวจรายชื่อ สิทธิ์ ความเป็นส่วนตัว และข้อความก่อนอนุญาตให้เขียน เชิญ หรือโพสต์"
+      }
+    ],
+    "promptTh": "ช่วยเตรียม onboarding packet จาก [แหล่งที่อนุมัติ] สำหรับผู้เริ่มงานช่วง [วันที่] โดยเริ่ม read-only ร่าง tracker และ welcome plan ห้ามสร้างช่อง เชิญ หรือส่งข้อความ",
+    "checkTh": "ตรวจสิทธิ์การเข้าถึง สถานะประกาศ และข้อมูลส่วนบุคคลทุกช่องก่อนดำเนินการจริง"
+  },
+  {
+    "index": 22,
+    "slug": "zoom-meeting-follow-ups",
+    "titleTh": "เปลี่ยนการประชุมเป็นงานติดตาม",
+    "titleEn": "Turn meetings into follow-ups",
+    "summaryTh": "ใช้ ChatGPT เปลี่ยน Zoom transcript เป็นสรุปการตัดสินใจ งานติดตาม อีเมลลูกค้า CRM update และข้อความทีมที่พร้อมให้ตรวจ",
+    "categoryTh": "การขายและปฏิบัติการ",
+    "workflow": [
+      {
+        "label": "เลือกการประชุม",
+        "detail": "ระบุลูกค้า วันที่ หรือชื่อการประชุมและให้ดึง transcript กับ AI Companion summary"
+      },
+      {
+        "label": "สกัดสิ่งสำคัญ",
+        "detail": "แยกข้อสรุป การตัดสินใจ ความเสี่ยง โอกาส ผู้รับผิดชอบ และกำหนดเวลาโดยอ้างหลักฐาน"
+      },
+      {
+        "label": "ร่างงานปลายทาง",
+        "detail": "เตรียม customer email, account plan, CRM note และ Slack message โดยแยกข้อมูลภายใน"
+      },
+      {
+        "label": "ตรวจแล้วค่อยส่ง",
+        "detail": "ให้เจ้าของบัญชีตรวจทุกฉบับและอนุมัติการส่ง โพสต์ หรือบันทึกแยกกัน"
+      }
+    ],
+    "promptTh": "ใช้ Zoom meeting ล่าสุดกับ [ลูกค้า] สรุป decision, risk และ action item แล้วร่างอีเมลลูกค้า account plan, CRM update และ Slack message โดยยังไม่ส่งหรือบันทึก",
+    "checkTh": "ตรวจ commitment, owner, date, ข้อมูลลูกค้า และรายละเอียดภายในก่อนเผยแพร่แต่ละปลายทาง"
+  },
+  {
+    "index": 23,
+    "slug": "learn-a-new-concept",
+    "titleTh": "เรียนรู้แนวคิดใหม่อย่างเป็นระบบ",
+    "titleEn": "Learn a new concept",
+    "summaryTh": "ใช้ ChatGPT แบ่งอ่านเอกสารยากเป็นงานย่อย แล้วรวมเป็นรายงานที่มีคำศัพท์ แผนภาพ หลักฐาน ข้อจำกัด และคำถามสำหรับเรียนต่อ",
+    "categoryTh": "การศึกษาและอาชีพ",
+    "workflow": [
+      {
+        "label": "ตั้งเป้าการเรียน",
+        "detail": "ระบุแนวคิด เอกสาร และคำถามเฉพาะที่ต้องการเข้าใจแทนการขอสรุปกว้าง ๆ"
+      },
+      {
+        "label": "แบ่งงานอ่าน",
+        "detail": "ให้ subagents แยกอ่านโครงเรื่อง พื้นฐาน รูปและสมการ รวมถึงตรวจความแข็งแรงของหลักฐาน"
+      },
+      {
+        "label": "สังเคราะห์รายงาน",
+        "detail": "รวมเป็น Markdown ที่มี executive summary, glossary, concept map, evidence table และ caveats"
+      },
+      {
+        "label": "ทบทวนและทดลอง",
+        "detail": "ถามต่อในจุดที่ยังไม่เข้าใจและเพิ่มตัวอย่างเล็กหรือ notebook เมื่อแนวคิดต้องเห็นการทำงานจริง"
+      }
+    ],
+    "promptTh": "ช่วยให้ฉันเข้าใจ [แนวคิด] จาก [ไฟล์/URL] โดยแบ่ง subagents อ่านคนละมุม แล้วสร้าง Markdown report พร้อม glossary, diagrams, evidence table, limitations และสิ่งที่ควรอ่านต่อ",
+    "checkTh": "ตรวจว่ารายงานแยกข้ออ้างของต้นฉบับออกจากการตีความและอ้างหน้า รูป หรือตารางได้จริง"
+  },
+  {
+    "index": 24,
+    "slug": "idea-to-proof-of-concept",
+    "titleTh": "เปลี่ยนไอเดียเป็นต้นแบบใช้งานได้",
+    "titleEn": "Get from idea to proof of concept",
+    "summaryTh": "ใช้ Codex และ ImageGen เปลี่ยนไอเดียคร่าว ๆ เป็นทิศทางภาพและ prototype ขนาดเล็กที่เปิดทดลองใน browser ได้จริง",
+    "categoryTh": "ออกแบบและสร้าง",
+    "workflow": [
+      {
+        "label": "นิยามปัญหา",
+        "detail": "ระบุกลุ่มผู้ใช้ ปัญหาหลัก และ workflow เดียวที่ต้นแบบต้องพิสูจน์"
+      },
+      {
+        "label": "สำรวจทิศทางภาพ",
+        "detail": "ใช้ ImageGen ทำ mockup และเลือกแนวที่สื่อคุณค่าของไอเดียได้ชัด"
+      },
+      {
+        "label": "สร้าง MVP",
+        "detail": "ให้ Codex ลงมือทำ prototype ที่เล็กที่สุดด้วย plugin ที่เหมาะกับเว็บหรือเกม"
+      },
+      {
+        "label": "ทดลองใน browser",
+        "detail": "ใช้ Playwright ตรวจ workflow หลักแล้วปรับเป็นรอบจาก feedback ของทีม"
+      }
+    ],
+    "promptTh": "ใช้ ImageGen สร้าง UI mockup สำหรับ [ไอเดีย/ผู้ใช้/workflow] แล้วใช้ [Build Web Apps หรือ Game Studio] ทำ MVP ที่ทดสอบได้ใน browser",
+    "checkTh": "ให้ผู้ใช้เป้าหมายทดลอง workflow หลักและแยกสิ่งที่ต้นแบบพิสูจน์ได้จากสิ่งที่ยังเป็นสมมติฐาน"
+  },
+  {
+    "index": 25,
+    "slug": "deploy-app-or-website",
+    "titleTh": "นำแอปหรือเว็บไซต์ขึ้นใช้งาน",
+    "titleEn": "Deploy an app or website",
+    "summaryTh": "ใช้ Codex สร้างหรือปรับเว็บ ตรวจ build และ deploy เป็น Vercel preview ที่แชร์ให้ทีมทดลองได้",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      {
+        "label": "ให้ต้นทางชัดเจน",
+        "detail": "ระบุ repo, screenshot, design brief, data source และสิ่งที่ห้ามเปลี่ยน"
+      },
+      {
+        "label": "สร้างและตรวจในเครื่อง",
+        "detail": "ให้ Build Web Apps ปรับโปรเจกต์และรัน build หรือ checks ที่โครงการกำหนด"
+      },
+      {
+        "label": "deploy แบบ preview",
+        "detail": "ใช้ Vercel plugin สร้าง preview และรายงาน environment variable หรือขั้นตอน login ที่ยังขาด"
+      },
+      {
+        "label": "เปิดลิงก์ตรวจจริง",
+        "detail": "ตรวจ URL บน desktop และ mobile แล้วแก้จาก build log หรือปัญหาหน้าเว็บใน task เดิม"
+      }
+    ],
+    "promptTh": "ใช้ @build-web-apps ทำ [repo/แบบ] ให้เป็นเว็บไซต์ที่ใช้งานได้ รัน local build แล้วใช้ @vercel deploy เป็น preview พร้อมส่ง live URL และข้อจำกัดที่ยังเหลือ",
+    "checkTh": "ตรวจ preview, environment variables, ข้อมูลลับ และขออนุมัติแยกก่อน deploy production"
+  },
+  {
+    "index": 26,
+    "slug": "qa-your-app-with-computer-use",
+    "titleTh": "ทดสอบคุณภาพแอปด้วย Computer Use",
+    "titleEn": "QA your app with Computer Use",
+    "summaryTh": "ใช้ Computer Use ทดลองเส้นทางผู้ใช้จริงในแอปและสรุปบั๊กพร้อมขั้นตอนทำซ้ำ ผลที่คาดหวัง ผลจริง และความรุนแรง",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      {
+        "label": "เตรียมสภาพแวดล้อม",
+        "detail": "ระบุ local, staging หรือ production-like พร้อม account, test data และ feature flag ที่ต้องใช้"
+      },
+      {
+        "label": "กำหนดเส้นทางหลัก",
+        "detail": "เลือก hero flows ที่สำคัญที่สุดและบอกว่าจะหยุดเมื่อเจอ blocker หรือทดสอบต่อ"
+      },
+      {
+        "label": "ให้ระบบทดลอง",
+        "detail": "ใช้ @Computer คลิก กรอก และตรวจทั้ง functional, layout และข้อความตามขอบเขต"
+      },
+      {
+        "label": "รับรายงานคัดแยก",
+        "detail": "รวม bug เป็นรายการที่มี repro, expected, actual, severity และสรุปลำดับแก้"
+      }
+    ],
+    "promptTh": "@Computer ทดสอบแอปใน [environment] ผ่าน flow [1, 2, 3] และรายงานทุกบั๊กด้วย repro steps, expected, actual และ severity โดยทดสอบต่อเมื่อไม่ใช่ blocker",
+    "checkTh": "มนุษย์ควรทำซ้ำบั๊กสำคัญและตรวจว่า test account ไม่กระทบข้อมูลจริงก่อนส่งต่อทีม"
+  },
+  {
+    "index": 27,
+    "slug": "api-integration-migrations",
+    "titleTh": "อัปเกรดการเชื่อมต่อ API",
+    "titleEn": "Upgrade your API integration",
+    "summaryTh": "ใช้ Codex และ OpenAI Docs ปรับ integration ไปยัง model กับ API ที่แนะนำล่าสุด โดยรักษาพฤติกรรมเดิมและตรวจ regression ก่อนปล่อย",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      {
+        "label": "สำรวจของเดิม",
+        "detail": "ให้ Codex inventory model, endpoint, prompt, tool และ response shape ที่ใช้อยู่ใน repo"
+      },
+      {
+        "label": "อ่านคำแนะนำล่าสุด",
+        "detail": "ใช้ $openai-docs ตรวจ model guidance, API features และแนวทาง prompt ของรุ่นเป้าหมาย"
+      },
+      {
+        "label": "ย้ายแบบจำกัดขอบเขต",
+        "detail": "เปลี่ยนเฉพาะส่วนจำเป็นและระบุ behavior หรือ schema ที่ต้องให้มนุษย์พิจารณา"
+      },
+      {
+        "label": "วัดผลก่อนปล่อย",
+        "detail": "รัน tests และ evals เทียบ baseline เพื่อหาการถดถอยด้านคุณภาพ ความเร็ว และต้นทุน"
+      }
+    ],
+    "promptTh": "ใช้ $openai-docs อัปเกรด OpenAI integration นี้ไปยัง model และ API ที่แนะนำล่าสุด เริ่มจาก inventory แล้วทำ migration ที่เล็กที่สุดพร้อม tests และ evals",
+    "checkTh": "ตรวจ official docs, response shape, tool behavior, คุณภาพ eval และต้นทุนก่อนเปิดใช้จริง"
+  },
+  {
+    "index": 28,
+    "slug": "complete-tasks-from-messages",
+    "titleTh": "ทำงานต่อจากข้อความให้เสร็จ",
+    "titleEn": "Complete tasks from messages",
+    "summaryTh": "ใช้ Computer Use อ่าน thread ที่ระบุ เข้าใจสิ่งที่ต้องทำ ลงมือข้ามแอปที่เกี่ยวข้อง และร่างคำตอบกลับโดยหยุดก่อนขั้นตอนย้อนกลับไม่ได้",
+    "categoryTh": "งานประจำ",
+    "workflow": [
+      {
+        "label": "เลือกบทสนทนา",
+        "detail": "ระบุชื่อผู้ส่งหรือ thread ที่ต้องการให้ ChatGPT อ่านอย่างเจาะจง"
+      },
+      {
+        "label": "สกัดสิ่งที่ต้องทำ",
+        "detail": "ให้ระบบสรุปคำขอ ข้อมูลที่ขาด และแอปที่ต้องใช้ก่อนลงมือ"
+      },
+      {
+        "label": "ทำงานข้ามแอป",
+        "detail": "ค้นข้อมูล เช็กปฏิทิน หรือเตรียมรายการตามคำขอโดยใช้ session ที่เข้าสู่ระบบแล้ว"
+      },
+      {
+        "label": "ร่างคำตอบและหยุด",
+        "detail": "ร่างข้อความใน thread เดิมและขออนุมัติก่อนซื้อ จอง จ่ายเงิน หรือยืนยันเวลา"
+      }
+    ],
+    "promptTh": "@Computer อ่าน Messages จาก [ชื่อ] ทำความเข้าใจคำขอ ช่วยทำงานผ่าน [แอป] และร่างคำตอบใน thread เดิม โดยหยุดก่อนการจอง ซื้อ จ่าย หรือยืนยัน",
+    "checkTh": "ตรวจผู้รับ รายละเอียดสุดท้าย ราคา เวลา และเงื่อนไขยกเลิกก่อนอนุมัติการกระทำ"
+  },
+  {
+    "index": 29,
+    "slug": "figma-designs-to-code",
+    "titleTh": "เปลี่ยน Figma เป็นโค้ด",
+    "titleEn": "Turn Figma designs into code",
+    "summaryTh": "ใช้ Codex ดึงโครงสร้าง asset และ variant จาก Figma มาแปลงเป็นโค้ดที่เข้ากับ design system เดิม แล้วเทียบผลใน browser",
+    "categoryTh": "ออกแบบและสร้าง",
+    "workflow": [
+      {
+        "label": "เลือก frame ที่แน่นอน",
+        "detail": "ส่งลิงก์ตรงไปยัง frame, component หรือ variant ที่เป็น source of truth"
+      },
+      {
+        "label": "ดึงบริบทการออกแบบ",
+        "detail": "ใช้ Figma skill อ่าน design context, variables, assets และ screenshot ของ variant นั้น"
+      },
+      {
+        "label": "แปลงเข้าระบบเดิม",
+        "detail": "ใช้ component, token, routing และ data pattern ของ repo แทนการคัดลอกโค้ดอ้างอิงตรง ๆ"
+      },
+      {
+        "label": "เทียบและปรับ",
+        "detail": "ใช้ Playwright ตรวจ spacing, hierarchy, interaction และ responsive behavior เทียบ Figma"
+      }
+    ],
+    "promptTh": "นำ Figma frame จาก [ลิงก์] มาสร้างเป็น UI ในโปรเจกต์นี้ด้วย Figma skill ใช้ component/token เดิม รองรับ desktop/mobile และใช้ Playwright เทียบกับ variant ต้นฉบับ",
+    "checkTh": "ตรวจ variant, asset license, responsive states และ accessibility เทียบกับ Figma และ design system"
+  },
+  {
+    "index": 30,
+    "slug": "deep-security-scan",
+    "titleTh": "สแกนความปลอดภัยเชิงลึก",
+    "titleEn": "Run a deep security scan",
+    "summaryTh": "ใช้ Codex Security plugin ตรวจ repository ที่ได้รับอนุญาตหลายรอบ ยืนยันช่องโหว่ที่เป็นไปได้ และจัดทำรายงานพร้อมหลักฐานกับจุดที่ยังต้องพิสูจน์",
+    "categoryTh": "วิทยาศาสตร์และความปลอดภัย",
+    "workflow": [
+      {
+        "label": "ยืนยันสิทธิ์และขอบเขต",
+        "detail": "ระบุ repository หรือ folder ที่ได้รับอนุญาตและห้ามขยายออกนอกพื้นที่นั้น"
+      },
+      {
+        "label": "เติมบริบทระบบ",
+        "detail": "บันทึก architecture, trust boundary, build และ validation guidance ใน AGENTS.md เมื่อมี"
+      },
+      {
+        "label": "รันการสแกนลึก",
+        "detail": "ให้ plugin ทำ discovery หลายรอบ validation และ attack-path analysis จนได้รายงาน"
+      },
+      {
+        "label": "ทบทวนก่อนแก้",
+        "detail": "ตรวจ affected locations, reachability, evidence และ proof gaps แล้วเลือกแก้ทีละ finding"
+      }
+    ],
+    "promptTh": "ใช้ $codex-security:deep-security-scan ตรวจ [repository/folder] ที่ฉันได้รับอนุญาต โดยคงขอบเขตนี้และส่ง report path พร้อม findings, coverage และ proof gaps",
+    "checkTh": "ผู้เชี่ยวชาญความปลอดภัยต้องยืนยัน reachability, severity และผลกระทบก่อนเผยแพร่หรือแก้ไข finding"
+  },
+  {
+    "index": 31,
+    "slug": "browser-games",
+    "titleTh": "สร้างเกมบนเว็บเบราว์เซอร์",
+    "titleEn": "Create browser-based games",
+    "summaryTh": "ใช้ Codex เปลี่ยน game brief เป็นแผนและเกมที่เล่นได้จริง พร้อมสร้าง asset และทดลองการควบคุมกับ UI ใน browser อย่างต่อเนื่อง",
+    "categoryTh": "ออกแบบและสร้าง",
+    "workflow": [
+      {
+        "label": "เขียนแผนเกม",
+      "detail": "กำหนด core loop, controls, win/fail, difficulty และ milestones ใน PLAN.md"
+      },
+      {
+        "label": "ตั้งกติกาการทำงาน",
+        "detail": "ใช้ AGENTS.md ระบุให้ Codex ทำตามแผน บันทึกงาน และเรียก skill ที่ต้องใช้"
+      },
+      {
+        "label": "สร้างเกมและภาพ",
+        "detail": "ลงมือทำ gameplay, UI และ asset ด้วย prompt ภาพที่บันทึกไว้เพื่อรักษาสไตล์"
+      },
+      {
+        "label": "เล่นทดสอบซ้ำ",
+        "detail": "ใช้ Playwright เล่นใน browser แล้วปรับ controls, feedback, difficulty และ layout จากผลจริง"
+      }
+    ],
+    "promptTh": "ใช้ $playwright-interactive, $imagegen และ $openai-docs วางแผนและสร้างเกม browser ตาม [แนวคิด] บันทึก PLAN.md กับ logs และทดสอบ core loop ใน browser",
+    "checkTh": "ให้คนเล่นจริงตรวจ controls, win/fail state, accessibility, performance และความเหมาะสมของ asset ก่อนเผยแพร่"
+  },
+  {
+    "index": 32,
+    "slug": "datasets-and-reports",
+    "titleTh": "วิเคราะห์ข้อมูลและจัดทำรายงาน",
+    "titleEn": "Analyze datasets and ship reports",
+    "summaryTh": "ใช้ Codex ทำความสะอาด เชื่อม และวิเคราะห์ข้อมูลอย่างทำซ้ำได้ ก่อนส่งเป็นกราฟ dashboard หรือรายงานที่ผู้อื่นตรวจและนำไปใช้ต่อได้",
+    "categoryTh": "ข้อมูลและการตัดสินใจ",
+    "workflow": [
+      {
+        "label": "ตั้งคำถามธุรกิจ",
+        "detail": "เริ่มจากคำถามที่เจาะจงและผลลัพธ์ที่ผู้รับจะใช้ตัดสินใจ"
+      },
+      {
+        "label": "สำรวจและทำความสะอาด",
+        "detail": "ตรวจไฟล์ คอลัมน์ คุณภาพข้อมูล candidate key และ match rate ก่อน join จริง"
+      },
+      {
+        "label": "วิเคราะห์แบบทำซ้ำได้",
+        "detail": "ใช้ scripts และ artifact ที่บันทึกไว้เพื่อแปลงข้อมูล สร้างภาพ และเริ่มจากโมเดลที่อธิบายได้"
+      },
+      {
+        "label": "จัดแพ็กผลลัพธ์",
+        "detail": "ส่งเป็น memo, spreadsheet, report หรือ dashboard พร้อมข้อจำกัดและวิธีรันซ้ำ"
+      }
+    ],
+    "promptTh": "ช่วยวิเคราะห์ข้อมูลที่ [พาธ] เพื่อตอบว่า [คำถาม] เริ่มจาก data inventory และคุณภาพข้อมูล เสนอ workflow ที่ทำซ้ำได้ แล้วสร้าง visualization กับรายงานสำหรับ [ผู้รับ]",
+    "checkTh": "ตรวจ join key, missing data, leakage, สมมติฐานของโมเดล และความหมายทางธุรกิจก่อนเผยแพร่ข้อสรุป"
+  }
+]

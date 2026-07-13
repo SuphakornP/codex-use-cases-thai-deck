@@ -1,0 +1,10 @@
+{
+  "name": "codex-use-cases-thai-deck",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-site.mjs",
+    "test": "node --test tests/site-worker.test.mjs"
+  }
+}

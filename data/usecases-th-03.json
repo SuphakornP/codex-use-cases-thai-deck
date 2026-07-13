@@ -1,0 +1,530 @@
+[
+  {
+    "index": 66,
+    "slug": "create-lesson-deck",
+    "titleTh": "สร้างสไลด์บทเรียน",
+    "titleEn": "Create a lesson deck",
+    "summaryTh": "ใช้ ChatGPT เปลี่ยนแผนการสอนและสื่อที่ผ่านการตรวจแล้วให้เป็นสไลด์แก้ไขได้ พร้อมบันทึกผู้สอน คำถามวัดความเข้าใจ และแหล่งอ้างอิง",
+    "categoryTh": "การศึกษาและอาชีพ",
+    "workflow": [
+      { "label": "รวบรวมสื่อ", "detail": "เตรียมแผนการสอน แม่แบบ รูปที่อนุมัติ และข้อกำหนดด้านการเข้าถึง" },
+      { "label": "กำหนดลำดับ", "detail": "ระบุช่วงเปิดบทเรียน เนื้อหา ตัวอย่าง แบบฝึก และ Exit Ticket ที่ต้องการ" },
+      { "label": "สร้างสไลด์", "detail": "ให้ ChatGPT ทำไฟล์สไลด์ที่แก้ไขได้พร้อม speaker notes และ citation" },
+      { "label": "ทบทวนและปรับ", "detail": "เปิดดูสไลด์จริงแล้วแก้ความอ่านง่าย จังหวะการสอน และความสอดคล้องกับแผน" }
+    ],
+    "promptTh": "สร้าง Google Slides สำหรับบทเรียน [หัวข้อ] จากแผนและสื่อที่อนุมัติในโฟลเดอร์นี้ ใส่คำถามเปิด ตัวอย่าง แบบตรวจความเข้าใจ 2 จุด Exit Ticket, speaker notes และแหล่งอ้างอิง โดยคงไฟล์ให้แก้ไขได้และติดป้าย Draft",
+    "checkTh": "ให้ผู้สอนตรวจความถูกต้อง ลำดับการเรียน การเข้าถึง และสิทธิ์ใช้รูปก่อนนำไปสอน"
+  },
+  {
+    "index": 67,
+    "slug": "stalled-deal-diagnosis",
+    "titleTh": "หาสาเหตุที่ดีลหยุดชะงัก",
+    "titleEn": "Diagnose a stalled deal",
+    "summaryTh": "ใช้ ChatGPT อ่านประวัติดีล การสื่อสาร และข้อจำกัดต่าง ๆ เพื่อหาตัวขัดขวางที่เป็นไปได้มากที่สุดจากหลักฐานและเสนอการเดินหน้ากับลูกค้าครั้งถัดไป",
+    "categoryTh": "การขายและปฏิบัติการ",
+    "workflow": [
+      { "label": "รวบรวมประวัติ", "detail": "นำเข้า stage history บันทึกการโทร อีเมล และเรื่อง security, legal หรือ procurement" },
+      { "label": "สร้างไทม์ไลน์", "detail": "ให้ ChatGPT เรียงเหตุการณ์และแยกข้อเท็จจริงออกจากข้อสันนิษฐาน" },
+      { "label": "หาตัวขัดขวาง", "detail": "ระบุสาเหตุที่เป็นไปได้ หลักฐาน ความพยายามก่อนหน้า และผู้เกี่ยวข้อง" },
+      { "label": "วางแผนกู้ดีล", "detail": "กำหนด next action เจ้าของงาน เงื่อนไข และร่างข้อความติดต่อลูกค้า" }
+    ],
+    "promptTh": "วิเคราะห์ว่าทำไมดีล [ชื่อดีล] จึงหยุดชะงักจากข้อมูลที่ให้มา สรุป blocker พร้อมหลักฐาน สิ่งที่เคยลอง dependencies ผู้รับผิดชอบ และ next customer-facing move โดยแยกข้อเท็จจริงจากการอนุมานและร่างข้อความเท่านั้น",
+    "checkTh": "ให้เจ้าของดีลยืนยันหลักฐานและอนุมัติข้อความทุกครั้งก่อนติดต่อลูกค้าหรือแก้ CRM"
+  },
+  {
+    "index": 68,
+    "slug": "business-impact-readout",
+    "titleTh": "วัดผลกระทบทางธุรกิจ",
+    "titleEn": "Measure business impact",
+    "summaryTh": "ใช้ ChatGPT รวมผลการทดลองหรือการเปิดตัวเพื่อวัดการเปลี่ยนแปลง ตรวจ guardrail และเสนอว่าจะขยาย ปรับ หรือหยุดโครงการ",
+    "categoryTh": "ข้อมูลและการตัดสินใจ",
+    "workflow": [
+      { "label": "ตั้งคำถาม", "detail": "ระบุโครงการ ผลลัพธ์เป้าหมาย ช่วงวัดผล และการตัดสินใจที่ต้องการ" },
+      { "label": "เตรียมข้อมูล", "detail": "แนบแผนทดลอง นิยาม metric ข้อมูล cohort dashboard และบันทึกการเปิดตัว" },
+      { "label": "วิเคราะห์ผล", "detail": "ให้ ChatGPT คำนวณ lift ตรวจ guardrail และเปรียบเทียบความต่างระหว่าง segment" },
+      { "label": "จัดทำรายงาน", "detail": "สร้าง impact readout พร้อมกราฟ วิธีวิเคราะห์ ข้อจำกัด และคำแนะนำ" }
+    ],
+    "promptTh": "ประเมินว่า [โครงการ] ช่วยให้ [ผลลัพธ์เป้าหมาย] ดีขึ้นหรือไม่จากแผน ข้อมูล cohort, dashboard และ customer signals ที่แนบมา สรุป lift, guardrails, segment differences และคำแนะนำ scale, change หรือ stop พร้อมแหล่งข้อมูลและข้อจำกัด",
+    "checkTh": "ให้นักวิเคราะห์หรือเจ้าของการทดลองตรวจตัวเลข วิธีคำนวณ และระดับความมั่นใจก่อนใช้ตัดสินใจ"
+  },
+  {
+    "index": 69,
+    "slug": "scenario-tradeoff-model",
+    "titleTh": "จำลองทางเลือกและข้อแลกเปลี่ยนเชิงกลยุทธ์",
+    "titleEn": "Model strategic scenarios and tradeoffs",
+    "summaryTh": "ใช้ ChatGPT เปรียบเทียบทางเลือกเชิงกลยุทธ์ด้วยเกณฑ์เดียวกัน ทั้งต้นทุน เวลา ความเสี่ยง ขีดความสามารถในการดำเนินงาน และผลกระทบทางธุรกิจ",
+    "categoryTh": "การเงินและกลยุทธ์",
+    "workflow": [
+      { "label": "กำหนดทางเลือก", "detail": "ระบุการตัดสินใจ ตัวเลือก ระยะเวลา และเกณฑ์เปรียบเทียบที่สำคัญ" },
+      { "label": "รวมข้อมูล", "detail": "แนบ financial model, KPI, แผนงาน บริบทตลาด และข้อจำกัดของผู้เกี่ยวข้อง" },
+      { "label": "สร้างสถานการณ์", "detail": "ให้ ChatGPT เปรียบเทียบต้นทุน เวลา ความเสี่ยง เจ้าของงาน และผลกระทบของแต่ละทางเลือก" },
+      { "label": "ทดสอบสมมติฐาน", "detail": "ปรับตัวแปรสำคัญเพื่อดูว่าจุดใดทำให้คำแนะนำเปลี่ยนไป" }
+    ],
+    "promptTh": "เปรียบเทียบทางเลือกสำหรับ [การตัดสินใจ] จาก model, KPI, แผนงาน และข้อจำกัดที่แนบมา จัดทำ prioritization matrix พร้อมคำแนะนำ ต้นทุน เวลา ความเสี่ยง ผู้รับผิดชอบ ผลกระทบ และสมมติฐานที่แก้ไขได้ โดยไม่เปลี่ยนไฟล์ต้นฉบับ",
+    "checkTh": "ให้เจ้าของตัวเลขยืนยันสมมติฐานและต้นทุนทุกข้อก่อนนำผลเปรียบเทียบเข้าที่ประชุม"
+  },
+  {
+    "index": 70,
+    "slug": "organize-lesson-unit-folder",
+    "titleTh": "จัดระเบียบโฟลเดอร์บทเรียนหรือหน่วยการเรียน",
+    "titleEn": "Organize a lesson or unit folder",
+    "summaryTh": "ใช้ ChatGPT สำรวจไฟล์การสอนที่กระจัดกระจาย เสนอโครงสร้างที่ค้นง่าย แยกไฟล์ซ้ำ และเก็บฉบับเก่าโดยไม่ทำลายต้นฉบับ",
+    "categoryTh": "การศึกษาและอาชีพ",
+    "workflow": [
+      { "label": "ระบุไฟล์หลัก", "detail": "บอกว่าไฟล์ใดเป็นฉบับอ้างอิง ฉบับร่าง และไฟล์ที่ห้ามย้าย" },
+      { "label": "สำรวจโฟลเดอร์", "detail": "ให้ ChatGPT ทำ inventory พร้อมชี้ไฟล์ซ้ำ ชื่อไม่ชัด และเวอร์ชันเก่า" },
+      { "label": "เสนอแผนจัดเก็บ", "detail": "ออกแบบ subfolder ชื่อไฟล์มาตรฐาน Archive และ README ก่อนลงมือ" },
+      { "label": "จัดและตรวจ", "detail": "หลังอนุมัติจึงย้ายหรือเปลี่ยนชื่อ แล้วตรวจลิงก์และสรุปทุกการเปลี่ยนแปลง" }
+    ],
+    "promptTh": "ช่วยจัดโฟลเดอร์ [บทเรียน/หน่วยการเรียน] ให้เป็นหมวดหมู่ที่ชัดเจน เก็บต้นฉบับไว้ ระบุไฟล์ซ้ำและเวอร์ชันเก่า เสนอ Archive ชื่อไฟล์มาตรฐาน และ README โดยแสดงโครงสร้างให้ฉันอนุมัติก่อนเปลี่ยนแปลง",
+    "checkTh": "ตรวจว่าไม่มีไฟล์ถูกลบ ลิงก์ยังใช้ได้ และไฟล์ฉบับปัจจุบันยังค้นพบง่ายหลังจัดระเบียบ"
+  },
+  {
+    "index": 71,
+    "slug": "organize-semester-workspace",
+    "titleTh": "จัดระเบียบพื้นที่ทำงานตลอดภาคเรียน",
+    "titleEn": "Organize a semester workspace",
+    "summaryTh": "ใช้ ChatGPT จัดไฟล์รายวิชาตามโครงสร้างเดียวกันและสร้างตัวติดตามกำหนดส่งที่เชื่อมกลับไปยังเอกสารทางการ",
+    "categoryTh": "การศึกษาและอาชีพ",
+    "workflow": [
+      { "label": "รวมเอกสารทางการ", "detail": "รวบรวม syllabus ใบงาน รายการอ่าน ปฏิทิน และโฟลเดอร์เดิมของแต่ละวิชา" },
+      { "label": "สำรวจและแยก", "detail": "ให้ ChatGPT แยกเอกสารทางการ โน้ตส่วนตัว งานที่กำลังทำ และงานที่ส่งแล้ว" },
+      { "label": "สร้างโครงสร้าง", "detail": "เสนอหนึ่งโฟลเดอร์ต่อวิชา ชื่อไฟล์มาตรฐาน course index และพื้นที่ Archive" },
+      { "label": "ทำตัวติดตาม", "detail": "ดึง deadline จากแหล่งทางการพร้อมลิงก์และทำเครื่องหมายวันที่ที่ขัดแย้งกัน" }
+    ],
+    "promptTh": "จัดไฟล์ภาคเรียนนี้ตามรายวิชา แยก official materials, readings, notes, assignments และ submitted work พร้อม course index และ deadline tracker ที่ลิงก์กลับไปยัง syllabus หรือใบงาน เก็บต้นฉบับและแสดงแผนก่อนย้ายไฟล์",
+    "checkTh": "ตรวจทุกกำหนดส่งกับเอกสารทางการและอย่าเลือกวันที่เองเมื่อพบข้อมูลขัดแย้ง"
+  },
+  {
+    "index": 72,
+    "slug": "plan-budget-and-schedule",
+    "titleTh": "วางแผนงบประมาณและตารางเวลา",
+    "titleEn": "Plan a budget and schedule",
+    "summaryTh": "ใช้ ChatGPT มองตารางเรียน งาน ภาระประจำ รายรับ และบิลในภาพเดียวเพื่อเห็นเวลาชนกัน งานกระจุก และทางเลือกด้านงบประมาณ",
+    "categoryTh": "การเงินและกลยุทธ์",
+    "workflow": [
+      { "label": "เตรียมข้อมูล", "detail": "รวมปฏิทิน กะงาน ภาระประจำ รายรับ รายจ่าย และบิลเฉพาะช่วงที่ต้องการวางแผน" },
+      { "label": "กำหนดข้อจำกัด", "detail": "ระบุสกุลเงิน รอบรับเงิน และรายการที่ตายตัวหรือยืดหยุ่นได้" },
+      { "label": "สร้างแดชบอร์ด", "detail": "ให้ ChatGPT แสดงเวลาชน งานกระจุก บิลใกล้ถึง และงบประมาณที่ปรับได้" },
+      { "label": "เปรียบเทียบทางเลือก", "detail": "ทดลองเปลี่ยนเวลาหรือรายจ่ายที่ยืดหยุ่นเพื่อหาแผนสัปดาห์ถัดไป" }
+    ],
+    "promptTh": "สร้าง planning dashboard จากปฏิทินเรียน กะงาน ภาระประจำ รายรับ หมวดรายจ่าย และบิลของฉัน แสดง time conflicts, workload clusters, upcoming payments, budget ที่ปรับได้ และทางเลือกสำหรับสัปดาห์หน้า โดยไม่แก้ปฏิทินหรือทำธุรกรรม",
+    "checkTh": "ตรวจยอดและวันครบกำหนดจากแหล่งจริง พร้อมลบเลขบัญชีและข้อมูลการเงินที่ไม่จำเป็นก่อนอัปโหลด"
+  },
+  {
+    "index": 73,
+    "slug": "prepare-committee-packet",
+    "titleTh": "เตรียมชุดเอกสารสำหรับคณะกรรมการ",
+    "titleEn": "Prepare a committee packet",
+    "summaryTh": "ใช้ ChatGPT เปลี่ยนรายงานการประชุม ร่างนโยบาย ความเห็น และข้อมูลโครงการให้เป็นชุดเอกสารตัดสินใจที่มีหลักฐานครบ",
+    "categoryTh": "การศึกษาและอาชีพ",
+    "workflow": [
+      { "label": "กำหนดกรอบการตัดสินใจ", "detail": "ระบุคำถาม กติกากำกับ เกณฑ์พิจารณา เจ้าของการตัดสินใจ และกำหนดเวลา" },
+      { "label": "รวบรวมหลักฐาน", "detail": "แนบ minutes เดิม ร่างนโยบาย feedback และ program data พร้อมบอกสถานะของแต่ละแหล่ง" },
+      { "label": "จัดทำเอกสาร", "detail": "ให้ ChatGPT สรุปหลักฐาน ตัวเลือก ข้อแลกเปลี่ยน ประเด็นค้าง และ agenda" },
+      { "label": "เตรียมบันทึก", "detail": "สร้าง minutes template ที่เก็บมติ เจ้าของงาน และสิ่งที่ต้องติดตามได้ชัดเจน" }
+    ],
+    "promptTh": "จัดทำ committee packet จาก minutes ร่างนโยบาย feedback ข้อมูลโครงการ กติกา และเกณฑ์ที่ให้มา โดยแยกคำถามที่ต้องตัดสิน หลักฐาน ตัวเลือก ข้อแลกเปลี่ยน ประเด็นค้าง agenda และ minutes template และเว้นมติสุดท้ายให้คณะกรรมการ",
+    "checkTh": "ตรวจ citation กติกากำกับ ข้อมูลลับ และการนำเสนอมุมมองที่เห็นต่างอย่างเป็นธรรมก่อนแจกเอกสาร"
+  },
+  {
+    "index": 74,
+    "slug": "refresh-forecast-and-plan",
+    "titleTh": "อัปเดตประมาณการและแผน",
+    "titleEn": "Refresh a forecast and plan",
+    "summaryTh": "ใช้ ChatGPT อัปเดต forecast ด้วยผลจริงและสมมติฐานที่อนุมัติ แล้วเปรียบเทียบกรณีฐาน ขาขึ้น และขาลงอย่างตรวจสอบได้",
+    "categoryTh": "การเงินและกลยุทธ์",
+    "workflow": [
+      { "label": "เตรียมแบบจำลอง", "detail": "แนบ operating model ผลจริงล่าสุด สมมติฐานที่อนุมัติ owner inputs และ forecast เดิม" },
+      { "label": "กำหนดกติกา", "detail": "ระบุ driver ที่เปลี่ยนได้ สมมติฐานที่ห้ามแก้ และนิยาม base, upside, downside" },
+      { "label": "อัปเดตสถานการณ์", "detail": "ให้ ChatGPT ปรับ model แยกไฟล์และทำให้ทุกการเปลี่ยนสมมติฐานมองเห็นได้" },
+      { "label": "อ่านผลกระทบ", "detail": "เปรียบเทียบรายได้ margin การจ้าง cash, sensitivity และ trigger point ของแต่ละกรณี" }
+    ],
+    "promptTh": "ใช้ $spreadsheets อัปเดต [forecast/operating plan] จาก model ผลจริงล่าสุดและสมมติฐานที่อนุมัติ สร้าง base, downside และ upside พร้อมผลต่อ revenue, margin, hiring และ cash รวม sensitivity table, trigger points และรายการสมมติฐานที่ต้องอนุมัติ โดยเก็บต้นฉบับไว้",
+    "checkTh": "ให้เจ้าของแผนตรวจสูตร ลิงก์ข้อมูล และอนุมัติสมมติฐานที่เปลี่ยนทุกข้อก่อนแชร์ forecast"
+  },
+  {
+    "index": 75,
+    "slug": "strategic-account-plan",
+    "titleTh": "อัปเดตแผนบริหารลูกค้ารายสำคัญ",
+    "titleEn": "Refresh a strategic account plan",
+    "summaryTh": "ใช้ ChatGPT รวมสัญญาณล่าสุดจากลูกค้าและข้อมูลโอกาสขายเพื่ออัปเดตผู้มีส่วนได้ส่วนเสีย ความเสี่ยง คุณค่าที่เสนอ และ next action",
+    "categoryTh": "การขายและปฏิบัติการ",
+    "workflow": [
+      { "label": "รวมสัญญาณลูกค้า", "detail": "แนบ account records การโทร อีเมล threads, usage notes และแผนเดิม" },
+      { "label": "ตรวจความสดใหม่", "detail": "ให้ ChatGPT ชี้ข้อมูลเก่า stakeholder ที่เปลี่ยน discovery gaps และความเสี่ยงที่ยังเปิดอยู่" },
+      { "label": "อัปเดตกลยุทธ์", "detail": "สร้าง stakeholder map, value hypothesis, objections และ proof points จากหลักฐาน" },
+      { "label": "กำหนดการเดินหน้า", "detail": "ผูก next-best action แต่ละข้อกับหลักฐาน เจ้าของงาน และระยะเวลา" }
+    ],
+    "promptTh": "อัปเดต strategic account plan สำหรับ [ลูกค้า] จาก CRM การสื่อสาร usage notes แผนเดิม และบริบทบริษัท สร้าง stakeholder map, discovery gaps, risks, value hypothesis, objections, proof points และ next-best actions พร้อมทำเครื่องหมายข้อมูลเก่าและข้อสันนิษฐาน",
+    "checkTh": "ให้ account owner ยืนยันข้อมูลและเนื้อหาที่ใช้กับลูกค้าได้ก่อนแก้ CRM หรือส่งต่อภายนอก"
+  },
+  {
+    "index": 76,
+    "slug": "refresh-course-materials",
+    "titleTh": "ปรับปรุงสื่อการสอน",
+    "titleEn": "Refresh course materials",
+    "summaryTh": "ใช้ ChatGPT ทบทวน syllabus สไลด์ เอกสารอ่าน งาน และ rubric ร่วมกัน เพื่อวางแผนปรับรายวิชาจากหลักฐานก่อนแก้ไฟล์จริง",
+    "categoryTh": "การศึกษาและอาชีพ",
+    "workflow": [
+      { "label": "กำหนดแหล่งหลัก", "detail": "รวบรวม syllabus, outcomes, slides, readings, assignments, rubrics และปฏิทินพร้อมระบุฉบับทางการ" },
+      { "label": "ตรวจทั้งรายวิชา", "detail": "ให้ ChatGPT เชื่อมผลลัพธ์การเรียนกับบทเรียน งานประเมิน และภาระงานรายสัปดาห์" },
+      { "label": "จัดลำดับปรับปรุง", "detail": "ชี้เนื้อหาเก่า ซ้ำ หรือไม่สอดคล้อง พร้อมหลักฐาน ผลกระทบ และ effort" },
+      { "label": "แก้ทีละชุด", "detail": "หลังผู้สอนอนุมัติจึงปรับไฟล์เป็นกลุ่มโดยเก็บต้นฉบับและ change summary" }
+    ],
+    "promptTh": "ทบทวน syllabus สไลด์ รายการอ่าน assignments, rubrics, course outcomes และปฏิทินที่ให้มา ระบุเนื้อหาล้าสมัยหรือซ้ำ ช่องว่างด้าน alignment คำแนะนำที่ไม่สอดคล้อง และสัปดาห์งานหนัก แล้วจัดลำดับแผนแก้ไขพร้อมหลักฐาน โดยหยุดรออนุมัติก่อนแก้ไฟล์",
+    "checkTh": "ให้ผู้สอนตรวจแหล่งอ้างอิง นโยบาย การเข้าถึง และทุกข้อเสนอที่ต้องใช้ดุลยพินิจทางวิชาการ"
+  },
+  {
+    "index": 77,
+    "slug": "revise-lesson-package",
+    "titleTh": "แก้ไขชุดสื่อบทเรียน",
+    "titleEn": "Revise a lesson package",
+    "summaryTh": "ใช้ ChatGPT นำ feedback ไปปรับสไลด์ คู่มือ ใบงาน และเฉลยให้สอดคล้องกัน พร้อมเก็บเวอร์ชันเดิมและบันทึกการเปลี่ยนแปลง",
+    "categoryTh": "การศึกษาและอาชีพ",
+    "workflow": [
+      { "label": "แยกข้อเสนอแนะ", "detail": "รวบรวม feedback รายชื่อไฟล์ที่อนุมัติ และจุดที่ต้องขอคำยืนยันก่อนแก้" },
+      { "label": "วางแผนรายไฟล์", "detail": "ให้ ChatGPT ผูก feedback แต่ละข้อกับไฟล์และส่วนเนื้อหาที่ได้รับผล" },
+      { "label": "แก้แบบประสาน", "detail": "หลังอนุมัติจึงอัปเดต deck, guide, handout และ answer key ในรอบเดียว" },
+      { "label": "ตรวจความสอดคล้อง", "detail": "เทียบคำสั่ง ตัวอย่าง เฉลย เวลา และแหล่งอ้างอิงพร้อมสร้าง change log" }
+    ],
+    "promptTh": "ใช้ feedback นี้จัดทำแผนแก้ไฟล์บทเรียนที่อนุมัติแบบรายไฟล์ หลังฉันอนุมัติแล้วจึงอัปเดต lesson deck, teacher guide, student handout และ answer key ให้สอดคล้องกัน เก็บเวอร์ชันเดิมใน Archive พร้อม change log และคำถามค้าง",
+    "checkTh": "ให้ผู้สอนตรวจว่าตัวอย่าง คำสั่ง และเฉลยตรงกันทุกไฟล์ก่อนใช้ฉบับใหม่"
+  },
+  {
+    "index": 78,
+    "slug": "synthesize-research-evidence",
+    "titleTh": "สังเคราะห์หลักฐานงานวิจัย",
+    "titleEn": "Synthesize research evidence",
+    "summaryTh": "ใช้ ChatGPT จัดกลุ่มงานวิจัยตามประเด็น ความเห็นต่าง ข้อจำกัดของวิธีวิจัย และความเกี่ยวข้องกับเป้าหมาย โดยคงเส้นทางกลับสู่แหล่งต้นฉบับ",
+    "categoryTh": "วิทยาศาสตร์และความปลอดภัย",
+    "workflow": [
+      { "label": "กำหนดชุดหลักฐาน", "detail": "รวบรวม papers, notes, methods, ข้อเสนอเดิม และแนวทางผู้ให้ทุนที่อนุมัติ" },
+      { "label": "ตรวจรายการ", "detail": "ให้ ChatGPT ทำ inventory เพื่อหาไฟล์หาย เอกสารซ้ำ และแหล่งที่เปิดไม่ได้" },
+      { "label": "สังเคราะห์ประเด็น", "detail": "จัด evidence ตามธีม ข้อโต้แย้ง limitations เป้าหมายวิจัย และคำถามเปิด" },
+      { "label": "ทำตารางหลักฐาน", "detail": "เชื่อม substantive claim แต่ละข้อกับ source และทำเครื่องหมายจุดที่อาจารย์ต้องยืนยัน" }
+    ],
+    "promptTh": "สังเคราะห์ papers, research notes, methods documents, ข้อเสนอเดิม funding guidance และ grant aims ที่ให้มา แยกตาม theme, disagreement, methods limitation, relevance และ open question พร้อม source links และทำเครื่องหมาย claims ที่ต้องตรวจ โดยห้ามสร้าง citation ขึ้นเอง",
+    "checkTh": "ตรวจทุก citation กับต้นฉบับและรักษาขอบเขต ประชากร วิธีวิจัย และความไม่แน่นอนของผลไว้ครบ"
+  },
+  {
+    "index": 79,
+    "slug": "track-course-engagement",
+    "titleTh": "ติดตามการมีส่วนร่วมในรายวิชา",
+    "titleEn": "Track course engagement",
+    "summaryTh": "ใช้ ChatGPT รวมข้อมูล LMS เกรด การเข้าเรียน และงานที่มอบหมายเป็น dashboard เพื่อเห็นแนวโน้มและจุดข้อมูลผิดปกติโดยไม่ตีตราผู้เรียน",
+    "categoryTh": "ข้อมูลและการตัดสินใจ",
+    "workflow": [
+      { "label": "เตรียมข้อมูลปลอดตัวตน", "detail": "ใช้เฉพาะ export ที่อนุมัติและ de-identified พร้อมนิยาม metric และช่วงรายงาน" },
+      { "label": "กำหนดการเชื่อม", "detail": "ให้ ChatGPT แสดง join ระหว่าง LMS การเข้าเรียน gradebook และ assignment ก่อนทำกราฟ" },
+      { "label": "สร้างแดชบอร์ด", "detail": "แสดง engagement trends, completion gaps, assessment patterns และคำเตือน data quality" },
+      { "label": "ตั้งคิวทบทวน", "detail": "สร้างคำถามให้ผู้สอนตรวจแทนการวินิจฉัยหรือสั่งการกับผู้เรียนอัตโนมัติ" }
+    ],
+    "promptTh": "สร้าง course engagement dashboard จากข้อมูล LMS, gradebook, attendance, assignment metadata และ course calendar แบบ de-identified แสดงแนวโน้ม ช่องว่างการส่งงาน รูปแบบการประเมิน ปัญหาคุณภาพข้อมูล และ faculty review queue โดยไม่วินิจฉัยผู้เรียนหรือทำ outreach อัตโนมัติ",
+    "checkTh": "เทียบยอดรวมและสุ่มตรวจระเบียนกับต้นทาง รวมทั้งยืนยันช่วงวันที่ section และนิยาม metric ก่อนใช้ผล"
+  },
+  {
+    "index": 80,
+    "slug": "track-job-applications",
+    "titleTh": "ติดตามการสมัครงาน",
+    "titleEn": "Track job applications",
+    "summaryTh": "ใช้ ChatGPT เปรียบเทียบคุณสมบัติงานกับประสบการณ์จริง จัดลำดับการสมัคร ร่างเอกสารเฉพาะตำแหน่ง และติดตามกำหนดเวลา",
+    "categoryTh": "การศึกษาและอาชีพ",
+    "workflow": [
+      { "label": "รวมหลักฐานตนเอง", "detail": "เตรียม resume, portfolio และบันทึกประสบการณ์ที่ตรวจสอบได้โดยตัดข้อมูลอ่อนไหว" },
+      { "label": "วิเคราะห์ตำแหน่ง", "detail": "ให้ ChatGPT แยกข้อกำหนดหลัก ข้อพึงประสงค์ หลักฐานความเหมาะสม และช่องว่าง" },
+      { "label": "สร้างตัวติดตาม", "detail": "ทำหนึ่งแถวต่อตำแหน่งพร้อม deadline, status, next action และ source link" },
+      { "label": "ร่างและเตรียมตัว", "detail": "จัดโฟลเดอร์รายตำแหน่งและร่าง resume, cover letter กับคำถามสัมภาษณ์ให้ตรวจ" }
+    ],
+    "promptTh": "เปรียบเทียบประกาศงานเหล่านี้กับ resume ประสบการณ์ที่ยืนยันได้ และ portfolio ของฉัน สร้าง application tracker ที่มี requirements, evidence of fit, gaps, status, deadline และ next action พร้อมร่างเอกสารรายตำแหน่ง โดยห้ามแต่งคุณสมบัติหรือส่งใบสมัครแทน",
+    "checkTh": "ตรวจทุกข้อความใน resume และคำตอบสัมภาษณ์กับประสบการณ์จริงก่อนใช้หรือส่งสมัคร"
+  },
+  {
+    "index": 81,
+    "slug": "ios-swiftui-view-refactor",
+    "titleTh": "ปรับโครงสร้างหน้าจอ SwiftUI",
+    "titleEn": "Refactor SwiftUI screens",
+    "summaryTh": "ใช้ Codex แยกหน้าจอ SwiftUI ที่ยาวเป็นส่วนย่อย จัดการ state และ side effects ให้ชัดขึ้น โดยคงหน้าตาและพฤติกรรมเดิม",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      { "label": "กำหนดขอบเขต", "detail": "เลือกหนึ่งไฟล์หน้าจอและระบุพฤติกรรม layout navigation และ business rules ที่ต้องคงเดิม" },
+      { "label": "วิเคราะห์โครงสร้าง", "detail": "ให้ Codex หา section ที่ควรเป็น View ย่อยและจุดที่ side effect ปะปนใน body" },
+      { "label": "แยกและจัด state", "detail": "ใช้ input, @Binding และ callback ที่ชัด พร้อมย้าย logic ไป service หรือ model ที่เหมาะสม" },
+      { "label": "ตรวจทีละช่วง", "detail": "รัน build, preview หรือ focused test หลังการแยกแต่ละส่วนที่สำคัญ" }
+    ],
+    "promptTh": "ใช้ Build iOS Apps plugin ปรับโครงสร้าง [Screen.swift] โดยคง behavior, layout และ navigation เดิม แยก section เป็น View ย่อยด้วย inputs, @Binding และ callbacks ที่ชัด ย้าย side effects ออกจาก body และใช้แนวทาง MV-first แล้วรัน validation ที่เล็กที่สุดหลังแต่ละขั้น",
+    "checkTh": "ทบทวน diff และผล build/test เพื่อยืนยันว่า business logic การนำทาง analytics และหน้าตาไม่เปลี่ยน"
+  },
+  {
+    "index": 82,
+    "slug": "build-student-website",
+    "titleTh": "สร้างเว็บไซต์สำหรับนักเรียนหรือนักศึกษา",
+    "titleEn": "Build a student website",
+    "summaryTh": "ใช้ Sites สร้างเว็บไซต์ฉบับแรกจากเนื้อหาและเป้าหมายของโครงการ แล้วทดสอบการใช้งาน การแสดงผล และ accessibility ก่อนเผยแพร่",
+    "categoryTh": "ออกแบบและสร้าง",
+    "workflow": [
+      { "label": "กำหนดผู้ใช้", "detail": "ระบุกลุ่มเป้าหมาย งานหลักของเว็บไซต์ เนื้อหาที่มี และเกณฑ์ความสำเร็จ" },
+      { "label": "จำกัดเวอร์ชันแรก", "detail": "เลือกเฉพาะหน้าและ interaction ที่จำเป็นต่อเส้นทางหลักของผู้ใช้" },
+      { "label": "สร้างและทดสอบ", "detail": "ให้ Sites ทำเว็บไซต์ responsive แล้วตรวจ navigation, links, forms และ keyboard access" },
+      { "label": "เตรียมเผยแพร่", "detail": "จัดทำ checklist เรื่องเนื้อหาขาด สิทธิ์ Privacy accessibility และการอนุมัติ" }
+    ],
+    "promptTh": "ใช้ @sites สร้างเว็บไซต์สำหรับ [โครงการ/ผู้ชม] จากเนื้อหา รูป และแนวทางดีไซน์ ทำเวอร์ชันแรกให้ responsive และ accessible ทดสอบ navigation กับ forms แล้วทำ checklist ก่อนเผยแพร่",
+    "checkTh": "ให้เจ้าของโครงการตรวจเนื้อหา ลิงก์ สิทธิ์รูป ความเป็นส่วนตัว และปลายทางของข้อมูลแบบฟอร์มก่อน publish"
+  },
+  {
+    "index": 83,
+    "slug": "build-exam-study-system",
+    "titleTh": "สร้างระบบเตรียมสอบ",
+    "titleEn": "Build an exam study system",
+    "summaryTh": "ใช้ ChatGPT เปลี่ยนแหล่งเรียนทางการและเวลาที่มีให้เป็นแผนทบทวนแบบเว้นระยะ concept map ชุดคำถาม และตัวติดตามความก้าวหน้า",
+    "categoryTh": "การศึกษาและอาชีพ",
+    "workflow": [
+      { "label": "กำหนดขอบเขตสอบ", "detail": "รวบรวม learning objectives คำแนะนำผู้สอน โน้ต readings แบบฝึก และ quiz เดิม" },
+      { "label": "ประเมินเวลา", "detail": "ระบุวันสอบ เวลาว่าง และหัวข้อที่ตนเองยังไม่มั่นใจ" },
+      { "label": "สร้างระบบฝึก", "detail": "ให้ ChatGPT ทำ concept map, study guide, spaced-practice calendar และ question bank" },
+      { "label": "ปรับตามผล", "detail": "อัปเดต tracker หลังฝึกแต่ละครั้งและปรับรอบถัดไปตามช่องว่างที่พบ" }
+    ],
+    "promptTh": "สร้างระบบเตรียมสอบ 2 สัปดาห์สำหรับ [วิชา/การสอบ] จาก learning objectives โน้ต readings แบบฝึก quiz เดิม และเวลาว่างของฉัน ทำ concept map, study guide, spaced-practice calendar, question bank, เฉลยอธิบาย และ progress tracker พร้อมอ้างอิงแหล่งรายวิชา",
+    "checkTh": "ตรวจขอบเขตข้อสอบ คำถาม และเฉลยกับเอกสารทางการ และทำเครื่องหมายหัวข้อที่ผู้สอนยังไม่ยืนยัน"
+  },
+  {
+    "index": 84,
+    "slug": "draft-prds-from-sources",
+    "titleTh": "ร่าง PRD จากบริบทภายในองค์กร",
+    "titleEn": "Draft PRDs from internal context",
+    "summaryTh": "ใช้ ChatGPT รวบรวมบริบทจาก Linear, Slack และเอกสารภายในเพื่อร่าง PRD ที่มีข้อกำหนด การตัดสินใจ คำถามเปิด และแหล่งที่มาตรวจสอบได้",
+    "categoryTh": "งานประจำ",
+    "workflow": [
+      { "label": "ชี้แหล่งข้อมูล", "detail": "ระบุ Linear project, Slack thread, Drive หรือ Notion ที่ควรใช้เป็นหลักฐาน" },
+      { "label": "กำหนดโครง PRD", "detail": "บอกหัวข้อที่ต้องมี เช่น problem, users, requirements, metrics, launch และ risks" },
+      { "label": "ร่างพร้อมอ้างอิง", "detail": "ให้ ChatGPT สร้างเอกสารด้วย $documents และ citation ระดับ requirement" },
+      { "label": "ปิดช่องว่าง", "detail": "ตรวจ source appendix ข้อขัดแย้ง คำถามเปิด และข้อความที่หลักฐานยังไม่พอ" }
+    ],
+    "promptTh": "ใช้ $documents ร่าง PRD สำหรับ [ฟีเจอร์] จาก @linear, @slack และ [Drive/Notion] ให้มีปัญหา ผู้ใช้ เป้าหมาย requirements, UX, metrics, launch, risks, timeline และ source appendix โดยชี้ข้อมูลขัดแย้งแทนการเดา",
+    "checkTh": "ให้ PM และเจ้าของเรื่องยืนยัน requirements การตัดสินใจ และแหล่งอ้างอิงก่อนแชร์หรืออัปเดตระบบงาน"
+  },
+  {
+    "index": 85,
+    "slug": "follow-goals",
+    "titleTh": "ให้ Codex ทำงานต่อเนื่องจนบรรลุเป้าหมาย",
+    "titleEn": "Follow a goal",
+    "summaryTh": "ใช้ /goal ให้ Codex ทำงานหลายช่วงต่อเนื่องกับเป้าหมายที่ตรวจสอบได้ จนผ่านเงื่อนไขหยุดที่กำหนดไว้ล่วงหน้า",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      { "label": "นิยามผลลัพธ์", "detail": "กำหนด objective ขอบเขตที่ห้ามเปลี่ยน และเงื่อนไขที่พิสูจน์ว่าเสร็จ" },
+      { "label": "ชี้บริบท", "detail": "ระบุไฟล์ issue เอกสาร logs หรือ PLAN.md ที่ Codex ต้องอ่านก่อนเริ่ม" },
+      { "label": "ตั้งจุดตรวจ", "detail": "กำหนด commands หรือ artifacts สำหรับวัดความคืบหน้าในแต่ละ checkpoint" },
+      { "label": "ติดตามเป้าหมาย", "detail": "ใช้ /goal ดูสถานะ และ pause, resume หรือ clear เมื่อจำเป็น" }
+    ],
+    "promptTh": "/goal ทำ [เป้าหมาย] ให้เสร็จโดยไม่หยุดจนกว่า [เงื่อนไขที่ตรวจสอบได้] โดยอ่าน [ไฟล์/เอกสาร] ก่อน ห้ามเปลี่ยน [ขอบเขต] ทำงานเป็น checkpoints และรายงานผลการตรวจแต่ละช่วงแบบสั้น",
+    "checkTh": "ตั้ง stopping condition และหลักฐานทดสอบให้ชัดก่อนเริ่ม และตรวจสถานะเมื่อ scope หรือความเสี่ยงเปลี่ยน"
+  },
+  {
+    "index": 86,
+    "slug": "ai-app-evals",
+    "titleTh": "เพิ่ม Evals ให้แอป AI",
+    "titleEn": "Add evals to your AI application",
+    "summaryTh": "ใช้ Codex เพิ่มชุดทดสอบ Promptfoo ที่รันซ้ำได้เพื่อวัดพฤติกรรมสำคัญของแอป AI และจับ regression ก่อนปล่อย",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      { "label": "เลือกพฤติกรรม", "detail": "กำหนดคำมั่นต่อผู้ใช้หนึ่งเรื่อง เช่น answer quality, grounding หรือ tool-call correctness" },
+      { "label": "สำรวจเส้นทางจริง", "detail": "ให้ Codex ตรวจ app path, prompts, adapters และ tests เดิมก่อนเสนอ eval plan" },
+      { "label": "สร้างชุดทดสอบ", "detail": "เพิ่ม Promptfoo config, sanitized fixtures, assertions และคำสั่งรันในเครื่อง" },
+      { "label": "รันฐานเปรียบเทียบ", "detail": "รัน eval ก่อนแก้ behavior แล้วรายงานเคสผ่าน ล้มเหลว และข้อเสนอทดสอบถัดไป" }
+    ],
+    "promptTh": "ใช้ $promptfoo-evals เพิ่ม Promptfoo eval suite สำหรับ [พฤติกรรม] ของแอปนี้ ตรวจเส้นทางที่ผู้ใช้ใช้งานจริงก่อน เสนอ target, seed cases, assertions, files และ commands แล้วจึงสร้าง suite ที่ไม่มี secrets หรือข้อมูลลูกค้า พร้อมรัน baseline โดยยังไม่แก้ production prompt",
+    "checkTh": "ตรวจว่า fixtures ไม่มีข้อมูลอ่อนไหว assertions วัดพฤติกรรมจริง และความล้มเหลวของผลิตภัณฑ์ไม่ถูกซ่อนด้วยการปรับเกณฑ์"
+  },
+  {
+    "index": 87,
+    "slug": "user-stories-to-ui-mocks",
+    "titleTh": "เปลี่ยน User Story เป็นแบบร่าง UI",
+    "titleEn": "Turn user stories into UI mocks",
+    "summaryTh": "ใช้ ChatGPT สังเคราะห์ feedback ที่กระจัดกระจายเป็น user story และข้อจำกัด แล้วสร้าง UI mock หลายแนวทางก่อนให้ Codex ทำต้นแบบจริง",
+    "categoryTh": "ออกแบบและสร้าง",
+    "workflow": [
+      { "label": "รวบรวมเสียงผู้ใช้", "detail": "ชี้ Slack, Linear, Drive และบันทึกวิจัยที่อธิบายปัญหาและบริบท" },
+      { "label": "สรุปเรื่องราว", "detail": "ให้ ChatGPT แปลงข้อมูลเป็น user story, needs, constraints และ success criteria" },
+      { "label": "สำรวจแบบ", "detail": "สร้าง mock หลายทิศทางด้วย ImageGen โดยยึด design system และโครงข้อมูลเดิม" },
+      { "label": "ทำต้นแบบ", "detail": "เลือก mock ที่ผ่านการทบทวนแล้วส่งให้ Codex พัฒนาเป็น prototype ที่ใช้งานได้" }
+    ],
+    "promptTh": "เปลี่ยน feedback และ user story เรื่อง [ปัญหา] จาก @slack, @linear และ @google-drive ให้เป็น UI mock ที่แก้ปัญหา โดยรักษา design system และ information architecture จาก [Figma/ภาพหน้าจอ] สร้างหลายแนวทางพร้อมอธิบายข้อแตกต่างเพื่อให้เลือก",
+    "checkTh": "ให้ผู้ใช้และทีม design ยืนยันว่า mock สะท้อนปัญหาจริงและไม่ขัด design system ก่อนเริ่มพัฒนา"
+  },
+  {
+    "index": 88,
+    "slug": "build-and-deploy-internal-apps",
+    "titleTh": "สร้างและเผยแพร่แอปภายในองค์กร",
+    "titleEn": "Build and deploy internal apps",
+    "summaryTh": "ใช้ Sites สร้าง ทดสอบ และ deploy แอปภายในสำหรับ workflow ที่ชัดเจน พร้อม storage และขอบเขตการเข้าถึงที่เหมาะสม",
+    "categoryTh": "ออกแบบและสร้าง",
+    "workflow": [
+      { "label": "เลือกงานหลัก", "detail": "ระบุผู้ใช้ งานหนึ่งอย่างที่แอปต้องช่วย และแหล่งข้อมูลที่ควรตรวจ" },
+      { "label": "กำหนดการจัดเก็บ", "detail": "เลือก D1 สำหรับข้อมูลมีโครงสร้างและ R2 สำหรับไฟล์ที่ผู้ใช้อัปโหลดเมื่อจำเป็น" },
+      { "label": "สร้างและทดสอบ", "detail": "ให้ Sites ทำแอปแล้วทดสอบ main flow, persistence และ responsive layout" },
+      { "label": "กำหนดการเข้าถึง", "detail": "เก็บเป็น private ระหว่างตรวจและเลือกแชร์เฉพาะผู้ได้รับเชิญ workspace หรือผู้มีลิงก์" }
+    ],
+    "promptTh": "สร้างและ deploy internal app สำหรับ [ทีม/workflow] ให้ผู้ใช้ [กลุ่ม] ทำ [งานหลัก] ได้ โดยเริ่มจากเวอร์ชันแรกที่แคบ ใช้ D1 เก็บ structured data และ R2 เก็บ uploaded files เมื่อจำเป็น ทดสอบ main flow, persistence และ responsive layout ก่อนเปิดให้ [ขอบเขตผู้ใช้]",
+    "checkTh": "ตรวจข้อมูลที่จัดเก็บ สิทธิ์เข้าถึง และผู้ชมที่ตั้งค่าไว้ก่อน deploy หรือเปลี่ยนจาก private"
+  },
+  {
+    "index": 89,
+    "slug": "slack-action-triage",
+    "titleTh": "จัดลำดับงานที่ต้องทำจาก Slack",
+    "titleEn": "Prioritize Slack action items",
+    "summaryTh": "ใช้ ChatGPT อ่าน DM, mention และ thread ล่าสุดเพื่อแยกคำขอที่ยังต้องทำออกจากเรื่องที่ปิดแล้ว แล้วเรียง action ตามผลกระทบ",
+    "categoryTh": "งานประจำ",
+    "workflow": [
+      { "label": "กำหนดขอบเขต", "detail": "ระบุช่วงเวลา workstream บุคคล หรือ channels ที่ต้องการตรวจ" },
+      { "label": "ค้นหาคำขอ", "detail": "ให้ ChatGPT อ่าน DMs, group DMs, mentions และ thread replies ที่เกี่ยวข้อง" },
+      { "label": "ตรวจสถานะล่าสุด", "detail": "อ่านท้าย thread เพื่อข้ามคำขอที่ตอบหรือจัดการไปแล้ว" },
+      { "label": "จัดคิวการลงมือ", "detail": "เรียงรายการตาม urgency และ impact พร้อมหลักฐาน next step และร่างคำตอบ" }
+    ],
+    "promptTh": "ตรวจ @slack เรื่อง [workstream] ในช่วง [เวลา] จาก DMs, group DMs, mentions และ threads แล้วจัด ranked action queue ระบุ source link สิ่งที่ขอ เหตุผลที่ยังค้าง ผลกระทบ และ next step โดยอ่าน replies ล่าสุดและร่างข้อความให้ตรวจเท่านั้น",
+    "checkTh": "เปิด thread ต้นทางยืนยันว่ารายการยังไม่ถูกแก้ และตรวจผู้รับกับน้ำเสียงก่อนส่งข้อความใด ๆ"
+  },
+  {
+    "index": 90,
+    "slug": "react-native-expo-apps",
+    "titleTh": "สร้างแอป React Native ด้วย Expo",
+    "titleEn": "Build React Native apps with Expo",
+    "summaryTh": "ใช้ Codex กับ Expo plugin สร้างแอปมือถือด้วย Expo Router ทดสอบเร็วผ่าน Expo Go และค่อยใช้ dev client หรือ EAS เมื่อจำเป็น",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      { "label": "ตรวจโปรเจกต์", "detail": "ให้ Codex ดูว่าเป็นแอป Expo ใหม่หรือโปรเจกต์เดิมและระบุ workflow หลักหนึ่งเส้นทาง" },
+      { "label": "สร้างตามมาตรฐาน", "detail": "ใช้ Expo Router และ npx expo install เพื่อรักษาความเข้ากันได้ของ packages" },
+      { "label": "ทำประสบการณ์ครบ", "detail": "เพิ่ม navigation, forms, lists, loading, empty และ error states แบบ native-feeling" },
+      { "label": "ทดสอบทางเร็ว", "detail": "เริ่มด้วย Expo Go หรือ simulator แล้วค่อยขยับไป dev client หรือ EAS เมื่อมีเหตุผล" }
+    ],
+    "promptTh": "ใช้ Expo plugin สร้าง React Native app สำหรับ [ไอเดีย ผู้ใช้ และ workflow] ด้วย Expo Router และ Expo-native conventions เริ่มทดสอบด้วย npx expo start และ Expo Go ใช้ npx expo install สำหรับ dependencies และส่งมอบ working slice พร้อม run command กับ verification path",
+    "checkTh": "ยืนยันผลบนอุปกรณ์หรือ simulator และตรวจ package compatibility ก่อนสร้าง dev client หรือ production build"
+  },
+  {
+    "index": 91,
+    "slug": "agent-friendly-clis",
+    "titleTh": "สร้าง CLI ที่ Codex ใช้งานได้",
+    "titleEn": "Create a CLI Codex can use",
+    "summaryTh": "ใช้ Codex สร้าง CLI แบบประกอบคำสั่งได้สำหรับงานที่ทำซ้ำ พร้อม skill คู่กันเพื่อจำวิธีใช้ รูปแบบผลลัพธ์ และขอบเขตการอนุมัติ",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      { "label": "เลือกงานซ้ำ", "detail": "ระบุงานแรกที่ CLI ต้องทำและแหล่งจริง เช่น API docs, export, database หรือ script" },
+      { "label": "ออกแบบคำสั่ง", "detail": "ให้ Codex เสนอ command surface ที่ค้น อ่าน ดาวน์โหลด หรือร่างการเปลี่ยนแปลงได้อย่างแคบ" },
+      { "label": "สร้างพร้อม skill", "detail": "ใช้ $cli-creator ทำคำสั่งและ $skill-creator บันทึกวิธีใช้ auth และ approval boundary" },
+      { "label": "ทดสอบเหมือนผู้ใช้จริง", "detail": "ติดตั้งแล้วเรียก CLI จากอีกโฟลเดอร์ พร้อมตรวจ JSON, pagination และ error messages" }
+    ],
+    "promptTh": "ใช้ $cli-creator สร้าง CLI จาก [source] สำหรับ [งาน] และ $skill-creator ทำ companion skill เสนอ commands ก่อนเขียน รองรับ auth ผ่าน [env/config] จำกัด output และให้ write action รออนุมัติ แล้วทดสอบจากอีกโฟลเดอร์",
+    "checkTh": "อย่าใส่ secret ใน task และตรวจว่า write command ต้องขออนุมัติชัดเจนก่อนใช้กับข้อมูลจริง"
+  },
+  {
+    "index": 92,
+    "slug": "verified-operations-workflows",
+    "titleTh": "ดำเนินงานแบบตรวจสอบย้อนกลับได้",
+    "titleEn": "Run verified operations",
+    "summaryTh": "ใช้ ChatGPT ทำงานปฏิบัติการที่ทำซ้ำตามขอบเขตอนุมัติ พร้อม dry run ผลรายรายการ การลองทำซ้ำเฉพาะข้อผิดพลาดชั่วคราวโดยจำกัดจำนวนครั้ง และหลักฐานยืนยันผล",
+    "categoryTh": "การขายและปฏิบัติการ",
+    "workflow": [
+      { "label": "กำหนดขอบเขต", "detail": "ระบุ goal, inputs, approval source, runner และ artifact ที่ใช้พิสูจน์ผล" },
+      { "label": "ตรวจและปรับข้อมูล", "detail": "ให้ ChatGPT ตรวจ required fields และ normalize วันที่ จำนวนเงิน owner กับ IDs โดยไม่เดา" },
+      { "label": "ทดลองก่อนรัน", "detail": "ทำ dry run เมื่อรองรับ แล้วดำเนินการเฉพาะรายการที่ได้รับอนุมัติ" },
+      { "label": "บันทึกและยืนยัน", "detail": "บันทึกผลสำเร็จหรือล้มเหลวต่อรายการ ลองซ้ำหนึ่งครั้งเมื่อเป็นข้อผิดพลาดชั่วคราว แล้วสรุปหลักฐาน" }
+    ],
+    "promptTh": "รัน workflow [งาน] จาก [CSV/Sheet/ticket] ตามขอบเขตใน [แหล่งอนุมัติ] ด้วย [script/API/CLI] ตรวจ required fields และ normalize ข้อมูลก่อน ทำ dry run แล้วรันเฉพาะ scope ที่อนุมัติ บันทึกผลต่อรายการ retry transient failure หนึ่งครั้ง และส่ง [artifact] เป็นหลักฐาน",
+    "checkTh": "หยุดก่อน irreversible action หรือการขยาย scope และให้เจ้าของงานตรวจหลักฐานผลลัพธ์หลังรัน"
+  },
+  {
+    "index": 93,
+    "slug": "event-launch-playbooks",
+    "titleTh": "จัดทำ Playbook สำหรับอีเวนต์",
+    "titleEn": "Run event playbooks",
+    "summaryTh": "ใช้ ChatGPT รวมข้อมูลวางงานจาก Slack, Drive และ Calendar เป็น playbook ที่แยกข้อความสำหรับผู้เข้าร่วมออกจาก checklist ปฏิบัติการภายใน",
+    "categoryTh": "การขายและปฏิบัติการ",
+    "workflow": [
+      { "label": "รวมแหล่งวางงาน", "detail": "ระบุ planning threads เอกสารที่อนุมัติ templates และ calendar deadlines" },
+      { "label": "กำหนดข้อมูลจำเป็น", "detail": "บอก audience, venue, timing, owners, support และ approval ที่ทุกงานต้องมี" },
+      { "label": "สร้างสองส่วน", "detail": "ให้ ChatGPT แยก attendee-facing copy จาก private operating checklist อย่างชัดเจน" },
+      { "label": "ปิดคำถามค้าง", "detail": "ทำ owner map, approvals, open questions และ source appendix ก่อนเริ่มงานจริง" }
+    ],
+    "promptTh": "สร้าง source-backed playbook สำหรับ [อีเวนต์] จาก Slack threads เอกสาร Drive และ Calendar ที่ระบุ แยก attendee-facing copy, private operating checklist, owner map, support plan, approvals, open questions และ source appendix โดยไม่เติมรายละเอียดที่ไม่มีหรือเผยแพร่เอง",
+    "checkTh": "ตรวจว่าเนื้อหาสาธารณะไม่มีข้อมูลปฏิบัติการภายใน และทุกวันเวลา owner กับ approval มีแหล่งยืนยัน"
+  },
+  {
+    "index": 94,
+    "slug": "chatgpt-apps",
+    "titleTh": "นำแอปของคุณมาใช้ใน ChatGPT",
+    "titleEn": "Bring your app to ChatGPT",
+    "summaryTh": "ใช้ Codex สร้าง ChatGPT app จากผลลัพธ์หลักหนึ่งอย่าง โดยออกแบบ tools, MCP server และ widget เท่าที่จำเป็น แล้วทดสอบใน ChatGPT จริง",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      { "label": "เลือกผลลัพธ์หลัก", "detail": "กำหนดงานหนึ่งอย่างที่ผู้ใช้ควรทำสำเร็จใน ChatGPT และวาง tools เพียง 3–5 ตัว" },
+      { "label": "ออกแบบสัญญา", "detail": "ระบุ tool names, metadata, inputs, outputs และตัดสินใจว่า v1 ต้องมี widget หรือไม่" },
+      { "label": "สร้างแกนระบบ", "detail": "ให้ Codex scaffold MCP server และ widget ตาม pattern ของ repo ก่อนเพิ่ม auth" },
+      { "label": "ทดสอบใน ChatGPT", "detail": "เปิดผ่าน HTTPS ใน developer mode แล้วลอง direct, indirect และ negative prompts" }
+    ],
+    "promptTh": "ใช้ $chatgpt-apps กับ $openai-docs วางแผน ChatGPT app สำหรับ [use case] โดยเริ่มจาก outcome เดียว เสนอ tools 3–5 ตัวพร้อม metadata, inputs และ outputs แนะนำว่า v1 ต้องมี widget หรือไม่ ใช้ TypeScript กับ React และสรุป auth, deployment, tests, file tree และ risks",
+    "checkTh": "ทดสอบ tool payload และ conversation flow ใน ChatGPT จริง และเพิ่ม OAuth เฉพาะเมื่อมีข้อมูลผู้ใช้หรือ write action"
+  },
+  {
+    "index": 95,
+    "slug": "audit-workflow",
+    "titleTh": "ตรวจสอบกระบวนการทำงาน",
+    "titleEn": "Audit a workflow",
+    "summaryTh": "ใช้ ChatGPT ทำแผนที่กระบวนการจริงจากเอกสาร tracker และการส่งต่องาน เพื่อหาจุดติดขัดและร่างข้อกำหนดงานอัตโนมัติแบบจำกัดขอบเขตที่ตรวจสอบได้",
+    "categoryTh": "การขายและปฏิบัติการ",
+    "workflow": [
+      { "label": "ตีกรอบกระบวนการ", "detail": "ระบุผู้ใช้ inputs, outputs ขอบเขต วันที่ทบทวน และข้อจำกัดของ workflow" },
+      { "label": "รวมหลักฐานการทำงาน", "detail": "แนบ process docs, tracker, handoff notes, tickets, KPI และ team discussions" },
+      { "label": "ทำแผนที่จริง", "detail": "ให้ ChatGPT เทียบกระบวนการที่เขียนไว้กับสิ่งที่เกิดขึ้นเพื่อหา owners, stuck points และ missing data" },
+      { "label": "คัดงานอัตโนมัติ", "detail": "จัดอันดับขั้นตอนที่ซ้ำตามความเสี่ยง data quality และ verification cost แล้วร่าง spec สองจุด" }
+    ],
+    "promptTh": "ตรวจ workflow [ชื่อ] จาก process docs, tracker, handoff notes, KPI, ticket history และ discussions ที่ให้มา สร้าง audit brief พร้อมขั้นตอน owners จุดติด คำถามซ้ำ และข้อมูลขาด จากนั้นอัปเดต process doc และร่าง automation spec แคบ ๆ สำหรับสองขั้นตอนที่ซ้ำ โดยไม่ implement",
+    "checkTh": "ให้เจ้าของกระบวนการตรวจ permissions, exception paths, irreversible actions และ ownership ก่อนทำ automation"
+  },
+  {
+    "index": 96,
+    "slug": "launch-campaign-kit",
+    "titleTh": "สร้างชุดแคมเปญเปิดตัว",
+    "titleEn": "Build a launch campaign kit",
+    "summaryTh": "ใช้ ChatGPT รวมแผนเปิดตัว ข้อมูลผลิตภัณฑ์ และแนวทางสร้างสรรค์เป็นร่างชุดแคมเปญที่สอดคล้องกัน พร้อมชี้คำกล่าวอ้างและการอนุมัติที่ยังไม่พร้อม",
+    "categoryTh": "การขายและปฏิบัติการ",
+    "workflow": [
+      { "label": "รวมข้อมูลเปิดตัว", "detail": "แนบ launch plan, product notes, tracker, creative brief, pages และ discussions ที่อนุมัติ" },
+      { "label": "ชี้ช่องว่าง", "detail": "ให้ ChatGPT ระบุ claims, assets, audiences และ destinations ที่ยังขาดหรือรอตรวจ" },
+      { "label": "ร่างชุดแคมเปญ", "detail": "สร้าง email, internal announcement, social post, content plan, briefs และ status update" },
+      { "label": "ทำรายการอนุมัติ", "detail": "ผูกแต่ละ asset กับการตรวจ product, legal, brand และปัญหา staging ที่เกี่ยวข้อง" }
+    ],
+    "promptTh": "ร่าง campaign kit สำหรับ [ผลิตภัณฑ์] จาก launch plan, product notes, tracker และ creative brief ให้มี email, internal announcement, social post, content plan และ approval checklist ทำเครื่องหมาย claims หรือ asset ที่ยังไม่ยืนยัน และห้ามเผยแพร่",
+    "checkTh": "ตรวจ claims กับแหล่งผลิตภัณฑ์ แยกข้อความสาธารณะจากข้อมูลภายใน และให้ product/legal/brand อนุมัติก่อนเผยแพร่"
+  },
+  {
+    "index": 97,
+    "slug": "consolidate-spreadsheets",
+    "titleTh": "รวมสเปรดชีต",
+    "titleEn": "Consolidate spreadsheets",
+    "summaryTh": "ใช้ ChatGPT รวมไฟล์ export หลายชุดเป็น workbook ที่รีเฟรชได้ พร้อมการเชื่อมข้อมูลที่ทำความสะอาดแล้ว dashboard, assumptions และพื้นที่ตรวจรายการที่เชื่อมไม่สำเร็จ",
+    "categoryTh": "ข้อมูลและการตัดสินใจ",
+    "workflow": [
+      { "label": "กำหนดกติกาเชื่อม", "detail": "ระบุ join key, duplicate rule, period definitions, targets และ output views ที่ต้องการ" },
+      { "label": "แนบต้นทาง", "detail": "เตรียม exports, mapping notes และ reporting requirements โดยเก็บไฟล์เดิมไว้" },
+      { "label": "สร้าง workbook", "detail": "ให้ ChatGPT ทำ joins, formulas, charts และ insights พร้อม review section สำหรับ mismatch" },
+      { "label": "ทดสอบการรีเฟรช", "detail": "จำลองรอบข้อมูลถัดไปและแยกขั้นตอนที่ทำซ้ำได้จากจุดที่ยังต้องตัดสินใจเอง" }
+    ],
+    "promptTh": "รวม spreadsheet เป็น workbook ที่อัปเดตได้ด้วย [key] ล้างข้อมูลซ้ำ คำนวณ [metrics] เทียบ target และสร้าง dashboard พร้อม assumptions, refresh steps และรายการที่เชื่อมไม่สำเร็จ โดยห้ามเดา key",
+    "checkTh": "ตรวจสูตร join mismatches และสมมติฐานกับต้นฉบับทุกครั้งที่ source files หรือ reporting rules เปลี่ยน"
+  },
+  {
+    "index": 98,
+    "slug": "weekly-work-summary",
+    "titleTh": "เขียนสรุปงานประจำสัปดาห์",
+    "titleEn": "Write a weekly work summary",
+    "summaryTh": "ใช้ ChatGPT รวบรวมกิจกรรมจากปฏิทิน เอกสาร ข้อความ และตัวติดตามงาน เป็นรายงานผู้จัดการที่แยกผลงานจริง การตัดสินใจ อุปสรรค และลำดับงานถัดไป",
+    "categoryTh": "งานประจำ",
+    "workflow": [
+      { "label": "กำหนดสัปดาห์", "detail": "ระบุช่วงวันที่ ผู้อ่าน และระดับรายละเอียดของรายงาน" },
+      { "label": "ชี้แหล่งงาน", "detail": "ระบุตัวติดตามงาน เอกสาร ปฏิทิน และช่องทางสนทนาที่ครอบคลุมงานในช่วงนั้น" },
+      { "label": "ร่างสรุป", "detail": "ให้ ChatGPT สรุปงานที่เสร็จ การตัดสินใจ อุปสรรค งานติดตาม และลำดับถัดไป พร้อมลิงก์" },
+      { "label": "ตรวจและปรับน้ำเสียง", "detail": "เทียบข้อสำคัญกับบทสนทนาต้นทาง แล้วปรับความยาวให้เหมาะกับผู้อ่าน" }
+    ],
+    "promptTh": "เขียนสรุปรายสัปดาห์สำหรับ [ช่วงวันที่] จากปฏิทิน เอกสารที่แก้ ข้อความใน [ช่องทาง] และ [ตัวติดตามงาน] สรุปงานที่เสร็จ การตัดสินใจ การเปลี่ยนแปลง อุปสรรค งานติดตาม และสิ่งสำคัญของสัปดาห์หน้า พร้อมลิงก์ต้นทาง แยกข้อเท็จจริงจากการอนุมาน และยังไม่ต้องส่งหรือเผยแพร่",
+    "checkTh": "ตรวจการตัดสินใจ อุปสรรค และงานติดตามกับแหล่งต้นทาง พร้อมลบข้อมูลอ่อนไหวก่อนแชร์รายงาน"
+  }
+]

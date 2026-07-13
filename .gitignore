@@ -1,0 +1,5 @@
+.DS_Store
+dist/
+output/
+scripts/__pycache__/
+*.tgz

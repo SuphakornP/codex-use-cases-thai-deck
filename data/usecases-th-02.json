@@ -1,0 +1,926 @@
+[
+  {
+    "index": 33,
+    "slug": "reusable-codex-skills",
+    "titleTh": "บันทึกเวิร์กโฟลว์เป็น Skill",
+    "titleEn": "Save workflows as skills",
+    "summaryTh": "เปลี่ยนงานที่ทำซ้ำ กฎการตรวจ หรือแม่แบบที่ใช้ได้ผล ให้เป็น Skill ที่ Codex เรียกใช้ในงานครั้งต่อไปได้ทันที",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      {
+        "label": "เลือกงานซ้ำ",
+        "detail": "เลือกงานหนึ่งอย่างที่มีตัวอย่างผลลัพธ์ดีและต้องทำเป็นประจำ"
+      },
+      {
+        "label": "รวบรวมต้นแบบ",
+        "detail": "แนบตัวอย่าง กฎ เอกสาร และคำสั่งที่ทำให้งานนั้นสำเร็จ"
+      },
+      {
+        "label": "สร้าง Skill",
+        "detail": "ให้ $skill-creator สร้างและตรวจโครงสร้าง Skill พร้อมเงื่อนไขการเรียกใช้"
+      },
+      {
+        "label": "ทดลองแล้วปรับ",
+        "detail": "เรียก Skill ในงานจริงและเพิ่มข้อแก้ไขจากผลที่ยังไม่ตรงมาตรฐาน"
+      }
+    ],
+    "promptTh": "ใช้ $skill-creator สร้าง Skill สำหรับ [งานที่ทำซ้ำ] จากตัวอย่าง [งานหรือไฟล์] กฎ [รายการ] และคำสั่ง [คำสั่งที่ใช้] พร้อมตรวจว่าเรียกใช้ได้จริง",
+    "checkTh": "ทดลอง Skill กับงานจริงหนึ่งครั้ง และตรวจว่าไม่มีข้อมูลลับหรือคำสั่งที่ไม่ควรรันก่อนแชร์"
+  },
+  {
+    "index": 34,
+    "slug": "iterate-on-difficult-problems",
+    "titleTh": "แก้โจทย์ยากด้วยวงจรปรับปรุง",
+    "titleEn": "Iterate on difficult problems",
+    "summaryTh": "ให้ Codex ปรับงานยากทีละรอบด้วยเกณฑ์วัดผลและหลักฐานที่ตรวจได้ จนผ่านเป้าหมายคุณภาพที่กำหนด",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      {
+        "label": "กำหนดเกณฑ์",
+        "detail": "ระบุคะแนนเป้าหมาย วิธีประเมิน และเงื่อนไขหยุดให้ชัดเจน"
+      },
+      {
+        "label": "วัดค่าตั้งต้น",
+        "detail": "รัน Eval กับผลงานปัจจุบันและบันทึกคะแนนพร้อมจุดอ่อนหลัก"
+      },
+      {
+        "label": "ปรับทีละจุด",
+        "detail": "แก้ปัญหาสำคัญหนึ่งเรื่องแล้วประเมินซ้ำเพื่อเห็นผลของการเปลี่ยนแปลง"
+      },
+      {
+        "label": "วนจนถึงเป้า",
+        "detail": "เก็บประวัติแต่ละรอบและทำต่อจนคะแนนทุกเกณฑ์ผ่านระดับที่กำหนด"
+      }
+    ],
+    "promptTh": "ทำงาน [โจทย์] เป็น eval-driven improvement loop โดยวัดค่าตั้งต้น ปรับทีละเรื่อง บันทึกคะแนนทุกครั้ง และทำต่อจนคะแนนรวมกับ LLM judge สูงกว่า [เป้าหมาย]",
+    "checkTh": "ตรวจทั้งคะแนนและชิ้นงานจริงด้วยมนุษย์ เพราะ Eval อาจไม่ครอบคลุมคุณภาพทุกด้าน"
+  },
+  {
+    "index": 35,
+    "slug": "monthly-business-review-narrative",
+    "titleTh": "เตรียมรายงานทบทวนธุรกิจ",
+    "titleEn": "Prepare a business review",
+    "summaryTh": "รวม KPI ผลจริง Forecast และบันทึกจากเจ้าของงาน ให้เป็นเรื่องเล่าที่อธิบายความเปลี่ยนแปลง ความเสี่ยง และสิ่งที่ต้องตัดสินใจพร้อมแหล่งอ้างอิง",
+    "categoryTh": "ข้อมูลและการตัดสินใจ",
+    "workflow": [
+      {
+        "label": "กำหนดรอบรายงาน",
+        "detail": "ระบุช่วงเวลา ผู้ฟัง และระดับความเปลี่ยนแปลงที่ถือว่าสำคัญ"
+      },
+      {
+        "label": "รวมข้อมูลหลัก",
+        "detail": "แนบ Dashboard นิยาม KPI Workbook Forecast รายงานเดิม และบันทึกเจ้าของงาน"
+      },
+      {
+        "label": "ตรวจและร่าง",
+        "detail": "ให้ ChatGPT ตรวจคุณภาพข้อมูลก่อนสรุปการเปลี่ยนแปลงและสาเหตุที่มีหลักฐาน"
+      },
+      {
+        "label": "ยืนยันการติดตาม",
+        "detail": "ตรวจตัวเลข แหล่งอ้างอิง คำถาม และผู้รับผิดชอบก่อนเข้าประชุม"
+      }
+    ],
+    "promptTh": "ใช้ $documents และ $spreadsheets เตรียม Business Review ของ [ทีม] ช่วง [เวลา] จากไฟล์ที่แนบ พร้อมสรุป KPI สำคัญ Variance ความเสี่ยง คำถาม และงานติดตามโดยอ้างอิงแหล่งของทุกตัวเลข",
+    "checkTh": "ห้ามเติมตัวเลขที่ไม่มีหลักฐาน และให้เจ้าของข้อมูลยืนยันตัวเลขสำคัญก่อนนำเสนอ"
+  },
+  {
+    "index": 36,
+    "slug": "cfo-board-reporting-pack",
+    "titleTh": "เตรียมชุดรายงานสำหรับผู้บริหาร",
+    "titleEn": "Prepare a leadership reporting pack",
+    "summaryTh": "อัปเดตชุดรายงานผู้บริหารจากแบบเดิมด้วยความคืบหน้า ตัวชี้วัด Forecast ความเสี่ยง และเหตุผลเชื่อมโยงที่ตรวจสอบย้อนกลับได้",
+    "categoryTh": "การเงินและกลยุทธ์",
+    "workflow": [
+      {
+        "label": "ตั้งขอบเขต",
+        "detail": "ระบุรอบรายงาน ผู้ฟัง Workstream และสไลด์ที่ต้องอัปเดต"
+      },
+      {
+        "label": "แนบหลักฐาน",
+        "detail": "ให้ชุดรายงานเดิม Tracker KPI Forecast กระแสเงินสด และความเห็นเจ้าของงาน"
+      },
+      {
+        "label": "สร้างเรื่องราว",
+        "detail": "ให้ ChatGPT เชื่อมความคืบหน้า หลักฐาน ความเสี่ยง และเป้าหมายถัดไปใน Deck เดิม"
+      },
+      {
+        "label": "ตรวจชุดรายงาน",
+        "detail": "ตรวจที่มาของทุกตัวเลขและ Render สไลด์เพื่อแก้ข้อความล้นหรือรูปแบบเพี้ยน"
+      }
+    ],
+    "promptTh": "ใช้ $slides และ $spreadsheets อัปเดต Leadership Reporting Pack สำหรับ [ช่วงเวลา] จาก Deck เดิมและแหล่งข้อมูลที่แนบ โดยรักษารูปแบบเดิมและระบุสิ่งที่เปลี่ยน ตัวเลขที่ยังไม่ยืนยัน และสไลด์ที่ต้องให้ผู้บริหารทบทวน",
+    "checkTh": "ให้เจ้าของข้อมูลยืนยันตัวเลข สมมติฐาน และความเสี่ยงทุกจุดก่อนเผยแพร่ชุดรายงาน"
+  },
+  {
+    "index": 37,
+    "slug": "remediate-vulnerability-backlog",
+    "titleTh": "จัดการรายการช่องโหว่ค้างแก้",
+    "titleEn": "Remediate a vulnerability backlog",
+    "summaryTh": "แก้ช่องโหว่ที่ผ่านการทบทวนทีละรายการด้วย Patch ขนาดเล็ก พร้อมหลักฐานว่าปัญหาเดิมไม่เกิดซ้ำและระบบปกติยังทำงานได้",
+    "categoryTh": "วิทยาศาสตร์และความปลอดภัย",
+    "workflow": [
+      {
+        "label": "เลือกหนึ่งช่องโหว่",
+        "detail": "นำรายงานหรือ Ticket ที่ได้รับอนุญาตพร้อมขอบเขตและผลกระทบมาใช้"
+      },
+      {
+        "label": "ยืนยันปัญหา",
+        "detail": "ให้ Codex ตรวจเส้นทางที่มีช่องโหว่หรือยืนยันว่าปัญหาถูกแก้แล้วก่อนเปลี่ยนโค้ด"
+      },
+      {
+        "label": "แก้เท่าที่จำเป็น",
+        "detail": "ใช้ $codex-security:fix-finding ทำ Patch ที่เล็กที่สุดและเพิ่ม Regression Test"
+      },
+      {
+        "label": "พิสูจน์ผล",
+        "detail": "รันทดสอบทั้งเส้นทางโจมตีเดิมและการใช้งานปกติพร้อมบันทึกความไม่แน่นอน"
+      }
+    ],
+    "promptTh": "ใช้ $codex-security:fix-finding แก้ช่องโหว่ [ชื่อ] จาก [แหล่งที่ได้รับอนุญาต] โดยยืนยันปัญหาก่อน ทำ Patch ที่เล็กที่สุด เพิ่ม Regression Test และรายงานหลักฐานว่าปัญหาไม่เกิดซ้ำ",
+    "checkTh": "ทำเฉพาะระบบที่ได้รับอนุญาต และให้ผู้เชี่ยวชาญความปลอดภัยทบทวน Patch กับหลักฐานก่อนนำขึ้นระบบ"
+  },
+  {
+    "index": 38,
+    "slug": "scan-code-changes-for-security",
+    "titleTh": "ตรวจความปลอดภัยของการเปลี่ยนแปลงโค้ด",
+    "titleEn": "Scan code changes for security",
+    "summaryTh": "ตรวจ PR, Commit หรือ Patch เฉพาะส่วนที่เปลี่ยน เพื่อค้นหาและยืนยันความเสี่ยงด้านความปลอดภัยก่อน Merge",
+    "categoryTh": "วิทยาศาสตร์และความปลอดภัย",
+    "workflow": [
+      {
+        "label": "ระบุชุดการเปลี่ยน",
+        "detail": "กำหนด PR, Commit, Branch diff หรือ Working Tree ที่ได้รับอนุญาตให้ตรวจ"
+      },
+      {
+        "label": "ชี้จุดเสี่ยง",
+        "detail": "บอกพื้นผิวสำคัญ เช่น Auth ข้อมูลนำเข้า File path Network หรือ Secret"
+      },
+      {
+        "label": "สแกนและยืนยัน",
+        "detail": "ใช้ $codex-security:security-diff-scan แยกช่องโหว่ที่มีหลักฐานออกจากข้อสงสัย"
+      },
+      {
+        "label": "ทบทวนก่อนแก้",
+        "detail": "ตรวจบรรทัดที่ได้รับผล หลักฐาน และช่องว่างการพิสูจน์ก่อนเปิดงานแก้แยกต่างหาก"
+      }
+    ],
+    "promptTh": "ใช้ $codex-security:security-diff-scan ตรวจ [PR หรือ Diff] โดยเน้น [พื้นผิวเสี่ยง] และส่งรายงานพร้อม Inline comments สำหรับประเด็นที่ต้องให้มนุษย์ทบทวน โดยยังไม่แก้โค้ด",
+    "checkTh": "มนุษย์ต้องยืนยันการเข้าถึงได้จริงและผลกระทบของแต่ละ Finding ก่อนจัดลำดับหรือแก้ไข"
+  },
+  {
+    "index": 39,
+    "slug": "dependency-incident-audits",
+    "titleTh": "ตรวจสอบเหตุการณ์จาก Dependency",
+    "titleEn": "Audit dependency incidents",
+    "summaryTh": "ตรวจประกาศช่องโหว่ของ Package และ Supply chain แบบ read-only เพื่อดูว่าระบบได้รับผลจริงหรือไม่ โดยไม่รันโค้ดที่ไม่น่าเชื่อถือ",
+    "categoryTh": "วิทยาศาสตร์และความปลอดภัย",
+    "workflow": [
+      {
+        "label": "ยืนยันประกาศ",
+        "detail": "แยกข้อมูลจากแหล่งทางการออกจากรายงานหรือความเห็นที่ยังไม่ยืนยัน"
+      },
+      {
+        "label": "ตั้งเกณฑ์หลักฐาน",
+        "detail": "ระบุสิ่งที่จะพิสูจน์หรือหักล้างว่าระบบใช้ Package และ Version ที่ได้รับผล"
+      },
+      {
+        "label": "ตรวจแบบอ่านอย่างเดียว",
+        "detail": "ค้น Manifest, Lock file, CI workflow และ Script โดยไม่ติดตั้งหรือรัน Lifecycle"
+      },
+      {
+        "label": "สรุประดับหลักฐาน",
+        "detail": "จัดผลเป็นยืนยันแล้ว ต้องตรวจเพิ่ม หรือไม่เข้าข่าย พร้อมความรุนแรงและขั้นตอนถัดไป"
+      }
+    ],
+    "promptTh": "ตรวจ Repository นี้ต่อประกาศ [URL] แบบ read-only โดยสรุป Package และ Version ที่ได้รับผล ตรวจ Manifest, Lock file, CI และ Script แล้วจัดสถานะหลักฐานพร้อม File reference โดยห้ามติดตั้งหรือรันโค้ด",
+    "checkTh": "อย่ารัน Package หรือ Script ที่อาจปนเปื้อน และขออนุมัติแยกก่อนอัปเดต Dependency หรือล้าง Credential"
+  },
+  {
+    "index": 40,
+    "slug": "meeting-prep-briefs",
+    "titleTh": "เตรียมสรุปก่อนประชุม",
+    "titleEn": "Prepare meeting briefs",
+    "summaryTh": "รวบรวมบริบทจากปฏิทิน เอกสาร อีเมล และบทสนทนาที่อนุมัติแล้ว เป็นสรุปเป้าหมาย วาระ คำถาม และแบบจดบันทึกก่อนประชุม",
+    "categoryTh": "งานประจำ",
+    "workflow": [
+      {
+        "label": "ระบุการประชุม",
+        "detail": "บอกชื่อ วันที่ ผู้เข้าร่วม และผลลัพธ์ที่ต้องการจากการประชุม"
+      },
+      {
+        "label": "ชี้แหล่งข้อมูล",
+        "detail": "ระบุ Calendar event เอกสาร Slack หรือ Email thread ที่อนุญาตให้ใช้"
+      },
+      {
+        "label": "ทำสรุปเตรียมตัว",
+        "detail": "ให้ ChatGPT แยกข้อเท็จจริง ช่องว่าง วาระ คำถาม และสิ่งที่เราค้างตอบ"
+      },
+      {
+        "label": "ตรวจความเหมาะสม",
+        "detail": "ตัดข้อมูลละเอียดอ่อนที่ไม่จำเป็นและปรับ Notes template ให้เหมาะกับวงประชุม"
+      }
+    ],
+    "promptTh": "ช่วยเตรียม Meeting Brief สำหรับ [ชื่อประชุม] วันที่ [วัน] โดยใช้เฉพาะ [แหล่งข้อมูล] และสรุปเป้าหมาย บริบท วาระ คำถาม งานค้าง และ Notes template พร้อมแยก Source gaps",
+    "checkTh": "ตรวจสิทธิ์และข้อมูลอ่อนไหวก่อนแชร์ Brief และอย่าให้ระบบส่งข้อความหรือแก้เอกสารโดยไม่ได้อนุมัติ"
+  },
+  {
+    "index": 41,
+    "slug": "update-documentation",
+    "titleTh": "อัปเดตเอกสารให้ทันการเปลี่ยนแปลง",
+    "titleEn": "Keep documentation up-to-date",
+    "summaryTh": "เทียบการเปลี่ยนแปลงของโค้ดกับเอกสารและบริบทที่เชื่อถือได้ แล้วอัปเดตเฉพาะส่วนที่ผู้ใช้ต้องรู้พร้อมขั้นตอนตรวจสอบ",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      {
+        "label": "ชี้การเปลี่ยนแปลง",
+        "detail": "ให้ Branch, PR, Commit หรือไฟล์ที่เป็นต้นเหตุของพฤติกรรมใหม่"
+      },
+      {
+        "label": "ค้นเอกสารที่เกี่ยวข้อง",
+        "detail": "ค้นชื่อ Feature, Config, Command และตัวอย่างเพื่อกำหนดหน้าที่ได้รับผล"
+      },
+      {
+        "label": "แก้เฉพาะจำเป็น",
+        "detail": "รักษาโครงสร้าง คำศัพท์ และลิงก์เดิม พร้อมกันข้อมูลภายในออกจากเอกสารสาธารณะ"
+      },
+      {
+        "label": "ตรวจคำกล่าวอ้าง",
+        "detail": "รัน Docs checks และสรุปหลักฐานของทุกพฤติกรรมที่บอกผู้ใช้"
+      }
+    ],
+    "promptTh": "อัปเดตเอกสาร [ส่วน] จากการเปลี่ยนแปลงใน [PR หรือไฟล์] โดยค้นหน้าที่เกี่ยวข้อง แก้เฉพาะสิ่งที่ผู้ใช้ต้องรู้ รักษารูปแบบเดิม และรัน Docs checks พร้อมระบุข้ออ้างที่ยังพิสูจน์ไม่ได้",
+    "checkTh": "ตรวจว่าไม่มี Roadmap ที่ยังไม่ประกาศหรือข้อมูลลูกค้าภายในหลุดสู่เอกสารสาธารณะ"
+  },
+  {
+    "index": 42,
+    "slug": "native-ios-apps",
+    "titleTh": "สร้างแอปสำหรับ iOS",
+    "titleEn": "Build for iOS",
+    "summaryTh": "ให้ Codex สร้างหรือพัฒนาแอป SwiftUI ด้วยวงจร Build และทดสอบผ่าน Command line พร้อมตรวจบน Simulator อย่างเป็นขั้นตอน",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      {
+        "label": "กำหนดจุดเริ่ม",
+        "detail": "บอกว่าเป็นโปรเจกต์ใหม่หรือของเดิม พร้อมอุปกรณ์และ Deployment target ที่รองรับ"
+      },
+      {
+        "label": "วาง Build loop",
+        "detail": "ให้ Codex สร้าง SwiftUI scaffold และ Script ที่ใช้ xcodebuild หรือ Tuist"
+      },
+      {
+        "label": "พัฒนาเป็นส่วน",
+        "detail": "ทำ Feature ทีละส่วนโดยใช้ Model, Navigation และ Utility เดิมเมื่อมีอยู่"
+      },
+      {
+        "label": "ทดสอบบนเครื่องจำลอง",
+        "detail": "Build, Launch และเก็บ Screenshot ด้วย Scheme และ Simulator ที่ระบุชัด"
+      }
+    ],
+    "promptTh": "สร้าง [แอปหรือ Feature] ด้วย SwiftUI สำหรับ iPhone และ iPad โดยคง Build loop แบบ CLI-first ใช้ xcodebuild และตรวจบน [Simulator] พร้อมรายงาน Scheme กับคำสั่งที่ใช้",
+    "checkTh": "ตรวจ Build และเส้นทางใช้งานหลักบน Simulator จริง รวมถึง Accessibility และอุปกรณ์เป้าหมายก่อนส่งมอบ"
+  },
+  {
+    "index": 43,
+    "slug": "kpi-root-cause-analysis",
+    "titleTh": "วิเคราะห์ต้นเหตุของ KPI",
+    "titleEn": "Analyze KPI root causes",
+    "summaryTh": "อธิบายการเปลี่ยนแปลงของ KPI จากนิยามและข้อมูลต้นทาง โดยแยกสาเหตุที่มีหลักฐานออกจากสมมติฐานที่ต้องตรวจเพิ่ม",
+    "categoryTh": "ข้อมูลและการตัดสินใจ",
+    "workflow": [
+      {
+        "label": "ตรึงนิยาม KPI",
+        "detail": "กำหนดสูตร ช่วงเปรียบเทียบ ทิศทางที่คาด และการตัดสินใจที่จะใช้ผลวิเคราะห์"
+      },
+      {
+        "label": "รวมบริบท",
+        "detail": "แนบ Dashboard, Export, Segment cut และข้อมูล Launch หรือ Campaign ที่เกี่ยวข้อง"
+      },
+      {
+        "label": "แยกตัวขับเคลื่อน",
+        "detail": "วิเคราะห์ตาม Segment, Cohort, Channel หรือ Product พร้อมค้นหลักฐานหักล้าง"
+      },
+      {
+        "label": "สรุปอย่างระมัดระวัง",
+        "detail": "นำเสนอ Driver ที่ยืนยันแล้ว สมมติฐาน Caveat คำถาม และการดำเนินการถัดไป"
+      }
+    ],
+    "promptTh": "อธิบายว่าเหตุใด [KPI] จึงเปลี่ยนในช่วง [เวลา] จาก Dashboard นิยาม Metric และข้อมูลที่แนบ โดยแยก Confirmed drivers จาก Hypotheses พร้อม Chart, Caveat, Source link และคำถามเปิด",
+    "checkTh": "อย่าสรุปว่าความสัมพันธ์คือเหตุและผล และให้ Metric owner ตรวจนิยามกับข้อมูลก่อนใช้ตัดสินใจ"
+  },
+  {
+    "index": 44,
+    "slug": "dashboard-builder-monitor",
+    "titleTh": "วางแผน Dashboard และการติดตามผล",
+    "titleEn": "Plan a dashboard and monitoring workflow",
+    "summaryTh": "ออกแบบ Dashboard จากการตัดสินใจที่ผู้ใช้ต้องทำ พร้อมนิยาม KPI รูปแบบกราฟ ตัวกรอง การตรวจคุณภาพ และแผนติดตามที่มีเจ้าของชัดเจน",
+    "categoryTh": "ข้อมูลและการตัดสินใจ",
+    "workflow": [
+      {
+        "label": "เริ่มจากการตัดสินใจ",
+        "detail": "ระบุผู้ใช้ คำถาม การตัดสินใจ และรอบการทบทวนก่อนเลือกกราฟ"
+      },
+      {
+        "label": "รวบรวมคำจำกัดความ",
+        "detail": "แนบ Metric glossary, Export, Dashboard ตัวอย่าง และ Feedback ของผู้เกี่ยวข้อง"
+      },
+      {
+        "label": "ร่างข้อกำหนด",
+        "detail": "กำหนด KPI hierarchy, Chart, Filter, Owner และเงื่อนไขที่ข้อมูลเชื่อถือได้"
+      },
+      {
+        "label": "วางระบบติดตาม",
+        "detail": "สร้าง QA checklist จุดแจ้งเตือน และขอบเขตการ Escalate ก่อนเผยแพร่"
+      }
+    ],
+    "promptTh": "ร่าง Dashboard specification สำหรับ [คำถามธุรกิจ] จากแหล่งข้อมูลที่แนบ โดยระบุการตัดสินใจ KPI hierarchy นิยาม Metric, Chart, Filter, QA checks, Owner และ Monitoring plan",
+    "checkTh": "ทดสอบนิยามและตัวเลขกับข้อมูลต้นทางก่อนอ้างว่า Dashboard พร้อมใช้งานจริง"
+  },
+  {
+    "index": 45,
+    "slug": "strategic-initiative-health-update",
+    "titleTh": "สรุปสถานะโครงการเชิงกลยุทธ์",
+    "titleEn": "Prepare an initiative health update",
+    "summaryTh": "สรุปความคืบหน้า การเปลี่ยนแปลง อุปสรรค ความเสี่ยง การตัดสินใจ และงานค้างของโครงการในรูปแบบที่เทียบกับรอบก่อนได้ง่าย",
+    "categoryTh": "การเงินและกลยุทธ์",
+    "workflow": [
+      {
+        "label": "ตั้งรอบรายงาน",
+        "detail": "กำหนดช่วงเวลา ผู้ฟัง และคำสถานะมาตรฐานที่ใช้เหมือนกันทุกครั้ง"
+      },
+      {
+        "label": "รวมบันทึกโครงการ",
+        "detail": "แนบ Tracker, Initiative docs, KPI, Brief เดิม, Decision log และ Owner notes"
+      },
+      {
+        "label": "หา Delta",
+        "detail": "เทียบข้อมูลล่าสุดกับรอบก่อนและแยกสถานะยืนยันแล้วออกจากการอนุมาน"
+      },
+      {
+        "label": "สรุปสิ่งที่ต้องทำ",
+        "detail": "ระบุความเสี่ยง การตัดสินใจ งานถัดไป เจ้าของ และรายการเก่าที่ต้องติดตาม"
+      }
+    ],
+    "promptTh": "เตรียม Strategic Initiative Update ของ [โครงการ] สำหรับ [รอบ] จาก Tracker, KPI, Brief เดิม และบันทึกที่แนบ โดยสรุป Delta, Blocker, Risk, Decision, Next action, Owner และ Stale items",
+    "checkTh": "ให้หัวหน้าโครงการยืนยันสถานะ เจ้าของ และรายการค้างก่อนแชร์กับผู้บริหาร"
+  },
+  {
+    "index": 46,
+    "slug": "prioritize-accounts",
+    "titleTh": "จัดลำดับความสำคัญของบัญชีลูกค้า",
+    "titleEn": "Prioritize accounts",
+    "summaryTh": "รวมข้อมูลบัญชี บทสนทนาลูกค้า การใช้งาน และบริบท Renewal หรือ Growth เพื่อจัดอันดับบัญชีพร้อมเหตุผล ความเสี่ยง และขั้นตอนถัดไป",
+    "categoryTh": "การขายและปฏิบัติการ",
+    "workflow": [
+      {
+        "label": "กำหนดเกณฑ์",
+        "detail": "ระบุ Segment ช่วงเวลา และน้ำหนักของความเร่งด่วน ความเสี่ยง หรือโอกาสเติบโต"
+      },
+      {
+        "label": "รวมสัญญาณลูกค้า",
+        "detail": "แนบ CRM export, Call, Email, Usage dashboard, Account plan และกฎการทบทวน"
+      },
+      {
+        "label": "จัดอันดับพร้อมเหตุผล",
+        "detail": "ให้ ChatGPT แสดงหลักฐาน ความเสี่ยง Upside ข้อมูลที่ขาด และ Next action ของแต่ละบัญชี"
+      },
+      {
+        "label": "อนุมัติการติดตาม",
+        "detail": "ให้ Account owner ตรวจอันดับและร่างข้อความก่อนอัปเดต CRM หรือติดต่อลูกค้า"
+      }
+    ],
+    "promptTh": "จัดอันดับ [จำนวน] บัญชีที่ควรโฟกัสในสัปดาห์นี้สำหรับ [Renewal, Growth หรือ Pipeline] จากข้อมูลที่แนบ พร้อมเหตุผล Risk/Upside, Next action, Source และบริบทที่ยังขาด โดยห้ามแก้ CRM",
+    "checkTh": "ให้เจ้าของบัญชียืนยันบริบทและอนุมัติข้อความทุกฉบับก่อนติดต่อกับลูกค้า"
+  },
+  {
+    "index": 47,
+    "slug": "forecast-risk-review",
+    "titleTh": "ทบทวนความเสี่ยงของ Forecast",
+    "titleEn": "Review forecast risk",
+    "summaryTh": "ตรวจ Forecast ของแต่ละ Deal เทียบกับกิจกรรมลูกค้า อุปสรรค และเส้นทางปิดการขาย เพื่อแนะนำ Commit, Upside หรือ Pull พร้อมเหตุผลจากแหล่งข้อมูล",
+    "categoryTh": "การขายและปฏิบัติการ",
+    "workflow": [
+      {
+        "label": "กำหนดรอบ Forecast",
+        "detail": "ระบุช่วงเวลา Deal ที่อยู่ในขอบเขต และความหมายของ Commit กับ Upside"
+      },
+      {
+        "label": "รวมบันทึก Deal",
+        "detail": "แนบ CRM, Forecast snapshot, Call, Email, Legal, Support, Usage และ Owner notes"
+      },
+      {
+        "label": "ประเมินราย Deal",
+        "detail": "แยกข้อเท็จจริงออกจากความเสี่ยงที่อนุมาน พร้อม Blocker และข้อมูลที่ยังขาด"
+      },
+      {
+        "label": "ยืนยันก่อนปรับ",
+        "detail": "ทบทวนคำแนะนำกับ Sales owner แล้วจึงเปลี่ยน Forecast ในระบบหลัก"
+      }
+    ],
+    "promptTh": "ทบทวน Deal สำหรับ Forecast ช่วง [เวลา] จากข้อมูลที่แนบ และแนะนำว่าแต่ละรายการควรอยู่ Commit, Upside หรือ Pull พร้อมหลักฐาน Blocker, Missing context และ Owner follow-up โดยห้ามแก้ CRM",
+    "checkTh": "อย่าใช้ Stage เพียงอย่างเดียวตัดสินความมั่นใจ และให้ Sales owner อนุมัติก่อนเปลี่ยน Forecast"
+  },
+  {
+    "index": 48,
+    "slug": "run-student-club-project",
+    "titleTh": "บริหารโครงการชมรมนักศึกษา",
+    "titleEn": "Run a student club project",
+    "summaryTh": "รวมไฟล์ การตัดสินใจ งบประมาณ สมาชิก และเส้นตายที่กระจัดกระจาย ให้เป็นศูนย์กลางโครงการที่มีแผนงาน เจ้าของ และความเสี่ยงชัดเจน",
+    "categoryTh": "การศึกษาและอาชีพ",
+    "workflow": [
+      {
+        "label": "รวบรวมข้อมูลโครงการ",
+        "detail": "นำ Brief, Shared folder, Meeting notes, Budget, เวลาของสมาชิก และกฎมหาวิทยาลัยมารวมกัน"
+      },
+      {
+        "label": "ตรวจสภาพปัจจุบัน",
+        "detail": "ให้ ChatGPT ระบุแหล่งจริงของวันที่ การอนุมัติ และงบก่อนจัดระเบียบ"
+      },
+      {
+        "label": "สร้างศูนย์กลางงาน",
+        "detail": "จัดทำ Milestone, Owner tracker, Budget sheet, Agenda, Draft การสื่อสาร และ Risk log"
+      },
+      {
+        "label": "ยืนยันกับทีม",
+        "detail": "อนุมัติเจ้าของ วันที่ และค่าใช้จ่ายร่วมกันก่อนแก้ไฟล์หรือส่งข้อความ"
+      }
+    ],
+    "promptTh": "สร้าง Operating hub สำหรับ [โครงการชมรม] จาก Folder, Notes, Budget, เวลาสมาชิก และข้อกำหนดที่แนบ โดยมี Milestone, Owner tracker, Budget, Agenda, Communication drafts และ Risk log",
+    "checkTh": "ทีมต้องยืนยันผู้รับผิดชอบ วันที่ และงบประมาณก่อนมอบหมายงาน ส่งข้อความ หรือใช้จ่ายเงินจริง"
+  },
+  {
+    "index": 49,
+    "slug": "analytics-request-agent",
+    "titleTh": "กำหนดขอบเขตคำขอวิเคราะห์ข้อมูล",
+    "titleEn": "Scope an analytics request",
+    "summaryTh": "เปลี่ยนคำขอวิเคราะห์ที่กว้างให้เป็นโจทย์ นิยามข้อมูล และแผนงานที่ตรวจได้ ก่อนสร้างคำตอบพร้อมกราฟสำหรับผู้มีส่วนได้ส่วนเสีย",
+    "categoryTh": "ข้อมูลและการตัดสินใจ",
+    "workflow": [
+      {
+        "label": "ถอดคำถามธุรกิจ",
+        "detail": "แยกสิ่งที่ผู้ขอต้องตัดสินใจออกจากรูปแบบกราฟหรือคำตอบที่เสนอมา"
+      },
+      {
+        "label": "ยืนยันนิยามข้อมูล",
+        "detail": "ตรวจ Metric, Join logic, ช่วงเวลา แหล่งข้อมูล และค่าที่ขาดก่อนวิเคราะห์"
+      },
+      {
+        "label": "ทำ First pass",
+        "detail": "วิเคราะห์ข้อมูลที่มีและสร้างกราฟพร้อม Caveat, Source และคำถามเปิด"
+      },
+      {
+        "label": "ให้นักวิเคราะห์ตรวจ",
+        "detail": "ตรวจการคำนวณ กราฟ และข้อสรุปก่อนส่งคำตอบให้ผู้ขอ"
+      }
+    ],
+    "promptTh": "เปลี่ยนคำขอนี้เป็น Scoped analysis: [คำขอ] โดยระบุ Business question, Metric definition, Source, Join, Missing input และแผนวิเคราะห์ จากนั้นทำ First pass พร้อม Chart, Caveat และคำถามที่ต้องยืนยัน",
+    "checkTh": "อย่าสมมตินิยาม Metric หรือ Join logic และให้นักวิเคราะห์ตรวจผลก่อนถือเป็นคำตอบสุดท้าย"
+  },
+  {
+    "index": 50,
+    "slug": "research-to-decision-memo",
+    "titleTh": "เปลี่ยนงานวิจัยเป็นบันทึกเพื่อการตัดสินใจ",
+    "titleEn": "Turn research into a decision memo",
+    "summaryTh": "สังเคราะห์ข้อมูลภายใน งานวิจัยภายนอก งบประมาณ และข้อแลกเปลี่ยน เป็น Decision memo ที่แยกหลักฐานออกจากการตีความอย่างชัดเจน",
+    "categoryTh": "การเงินและกลยุทธ์",
+    "workflow": [
+      {
+        "label": "กำหนดการตัดสินใจ",
+        "detail": "ระบุตัวเลือก ผู้ตัดสินใจ กำหนดเวลา เกณฑ์ และขอบเขตอำนาจอนุมัติ"
+      },
+      {
+        "label": "จัดชั้นหลักฐาน",
+        "detail": "แยกข้อมูลภายใน งานวิจัยภายนอก และการตีความออกจากกัน"
+      },
+      {
+        "label": "ร่าง Decision memo",
+        "detail": "สรุปข้อเสนอ ทางเลือก Trade-off ต้นทุน ความเสี่ยง Decision log และคำถามเปิด"
+      },
+      {
+        "label": "ท้าทายข้อเสนอ",
+        "detail": "ทดสอบสมมติฐานและระบุเงื่อนไขที่จะทำให้คำแนะนำเปลี่ยนก่อนเข้าประชุม"
+      }
+    ],
+    "promptTh": "เขียน Decision memo ว่า [องค์กร] ควร [การตัดสินใจ] หรือไม่ จากแหล่งข้อมูลที่แนบ โดยแยก Internal evidence, External research และ Interpretation พร้อม Recommendation, Alternatives, Trade-offs, Risks และ Open questions",
+    "checkTh": "ตรวจที่มาของทุกข้อเท็จจริงสำคัญและให้ผู้มีอำนาจตัดสินใจเป็นผู้อนุมัติ ไม่ให้ AI ตัดสินใจแทน"
+  },
+  {
+    "index": 51,
+    "slug": "initiative-off-track-brief",
+    "titleTh": "เขียนสรุปโครงการที่หลุดแผน",
+    "titleEn": "Write an initiative off-track brief",
+    "summaryTh": "อธิบายช่องว่างระหว่างแผนกับสถานการณ์จริงของโครงการ พร้อมสาเหตุ ความเสี่ยง ทางเลือก ผู้รับผิดชอบ และประเด็นที่ต้องการการตัดสินใจจากผู้บริหาร",
+    "categoryTh": "การเงินและกลยุทธ์",
+    "workflow": [
+      {
+        "label": "เทียบแผนกับผลจริง",
+        "detail": "รวม Initiative plan, Tracker, KPI, Model, Notes และ Owner updates เพื่อหา Gap"
+      },
+      {
+        "label": "แยกเหตุและสมมติฐาน",
+        "detail": "ระบุสิ่งที่มีหลักฐานแล้ว สิ่งที่น่าจะเป็น และข้อมูลที่ยังต้องยืนยัน"
+      },
+      {
+        "label": "วางทางเลือก",
+        "detail": "สรุป Option, Trade-off, Risk, Owner และการตัดสินใจที่ต้องได้ในเวลานี้"
+      },
+      {
+        "label": "ทบทวนกับเจ้าของงาน",
+        "detail": "ให้ทีมโครงการยืนยันตัวเลข สาเหตุ และข้อเสนอแนะก่อนส่งผู้บริหาร"
+      }
+    ],
+    "promptTh": "ร่าง Off-track brief สำหรับ [โครงการ] จาก Plan, Tracker, KPI, Model และบันทึกที่แนบ โดยอธิบายสิ่งที่เปลี่ยน Confirmed causes, Hypotheses, Execution gaps, Options, Trade-offs, Owner และ Decision needed",
+    "checkTh": "ให้เจ้าของโครงการยืนยันข้อเท็จจริงและผลกระทบก่อนเปลี่ยนแผนหรือสถานะในระบบ"
+  },
+  {
+    "index": 52,
+    "slug": "refactor-your-codebase",
+    "titleTh": "ปรับโครงสร้าง Codebase",
+    "titleEn": "Refactor your codebase",
+    "summaryTh": "ลดหนี้ทางวิศวกรรมด้วยการลบโค้ดที่ไม่ใช้ แยกไฟล์ใหญ่ และรวมตรรกะซ้ำเป็นรอบเล็กที่ตรวจสอบได้โดยคงพฤติกรรมเดิม",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      {
+        "label": "สำรวจพื้นที่รก",
+        "detail": "หา Dead code, Logic ซ้ำ, Module ใหญ่ และ Pattern เก่าพร้อม Contract ที่ต้องคงไว้"
+      },
+      {
+        "label": "เลือกหนึ่งธีม",
+        "detail": "ทำทีละเรื่อง เช่น ลบโค้ดไม่ใช้ ลด Control flow หรือแยก Helper"
+      },
+      {
+        "label": "แก้เป็นรอบเล็ก",
+        "detail": "ให้ Codex ระบุพฤติกรรมเดิม การปรับโครงสร้าง และ Check ก่อนแก้แต่ละรอบ"
+      },
+      {
+        "label": "พิสูจน์ความคงเดิม",
+        "detail": "รัน Test ที่เล็กแต่ตรงจุดและตรวจ Diff ก่อนเริ่มรอบถัดไป"
+      }
+    ],
+    "promptTh": "Refactor Codebase นี้โดยคงพฤติกรรมเดิม เริ่มจากทำแผนที่ Dead code, Duplication, Large modules และ Legacy patterns แล้วเสนอรอบเล็กพร้อม Validation check ของแต่ละรอบ",
+    "checkTh": "แยก Framework migration, Dependency upgrade และการเปลี่ยน Public API เป็นงานต่างหากเพื่อควบคุมความเสี่ยง"
+  },
+  {
+    "index": 53,
+    "slug": "ios-liquid-glass",
+    "titleTh": "ปรับใช้ Liquid Glass",
+    "titleEn": "Adopt liquid glass",
+    "summaryTh": "ปรับหน้าจอ SwiftUI ให้ใช้ Liquid Glass แบบ Native ทีละ Flow พร้อมทางเลือกสำหรับ iOS รุ่นเก่าและการตรวจภาพบน Simulator",
+    "categoryTh": "ออกแบบและสร้าง",
+    "workflow": [
+      {
+        "label": "ตั้ง Platform baseline",
+        "detail": "กำหนด iOS 26, Xcode 26 และ Fallback สำหรับอุปกรณ์รุ่นก่อนหน้า"
+      },
+      {
+        "label": "ตรวจหนึ่ง Flow",
+        "detail": "หา Custom blur, Card, Button, Sheet และ Toolbar ที่ควรใช้ System material"
+      },
+      {
+        "label": "ย้ายสู่ Native API",
+        "detail": "ใช้ glassEffect, GlassEffectContainer และ Glass button style เฉพาะพื้นผิวควบคุมที่เหมาะสม"
+      },
+      {
+        "label": "ตรวจภาพจริง",
+        "detail": "Build และเก็บ Screenshot หลายสถานะบน iOS 26 Simulator พร้อมทดสอบ Fallback"
+      }
+    ],
+    "promptTh": "ใช้ Build iOS Apps plugin ย้าย Flow [ชื่อ] ไปเป็น Liquid Glass โดย Audit ก่อน ใช้ Native API รักษา #available(iOS 26, *) fallback และตรวจด้วย Screenshot บน Simulator",
+    "checkTh": "ตรวจความอ่านง่าย ความสม่ำเสมอ และ Fallback บนอุปกรณ์รุ่นเก่า อย่าเปลี่ยนทุกพื้นผิวให้เป็น Glass"
+  },
+  {
+    "index": 54,
+    "slug": "native-macos-apps",
+    "titleTh": "สร้างแอปสำหรับ macOS",
+    "titleEn": "Build for macOS",
+    "summaryTh": "สร้างแอป macOS ด้วย SwiftUI และวงจร Build แบบ Shell-first โดยออกแบบ Window, Menu, Sidebar และ Settings ให้เป็นธรรมชาติของเดสก์ท็อป",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      {
+        "label": "เลือก Scene model",
+        "detail": "กำหนด Main window, Settings, MenuBarExtra หรือ Utility window ตามลักษณะผลิตภัณฑ์"
+      },
+      {
+        "label": "สร้าง Build loop",
+        "detail": "ใช้ xcodebuild หรือ swift build ผ่าน Script ที่ Build และ Launch ซ้ำได้"
+      },
+      {
+        "label": "ทำ UI แบบ Mac",
+        "detail": "ใช้ Sidebar, Toolbar, Menu, Keyboard shortcut และ AppKit bridge เท่าที่จำเป็น"
+      },
+      {
+        "label": "ตรวจ Runtime",
+        "detail": "Build, Launch, ทดสอบ Flow และตรวจ Log ก่อนขยายไปสู่ Signing หรือ Notarization"
+      }
+    ],
+    "promptTh": "ใช้ Build macOS Apps plugin สร้าง [แอปหรือ Feature] ด้วย SwiftUI แบบ Shell-first พร้อม script/build_and_run.sh และ UI ที่เป็น Mac-native โดยรายงาน Build, Launch และ Log checks ที่ใช้",
+    "checkTh": "ตรวจ Window, Menu, Keyboard, Accessibility และการ Launch จริงก่อนถือว่า Feature พร้อมใช้งาน"
+  },
+  {
+    "index": 55,
+    "slug": "ios-simulator-bug-debugging",
+    "titleTh": "แก้บั๊กด้วย iOS Simulator",
+    "titleEn": "Debug in iOS simulator",
+    "summaryTh": "ให้ Codex ทำวงจรจำลองปัญหา เก็บหลักฐาน แก้โค้ด และทดสอบซ้ำบน iOS Simulator จนพิสูจน์ได้ว่าบั๊กหายไป",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      {
+        "label": "เลือกสภาพแวดล้อม",
+        "detail": "ค้น Project, Scheme และ Simulator ที่ถูกต้องแล้วใช้ชุดเดิมตลอดงาน"
+      },
+      {
+        "label": "ทำซ้ำปัญหา",
+        "detail": "Build, Launch และเดินตามขั้นตอนจริงโดยอ่าน Accessibility tree ก่อนแตะหน้าจอ"
+      },
+      {
+        "label": "เก็บหลักฐานและแก้",
+        "detail": "ใช้ Screenshot, Log หรือ LLDB หา Root cause แล้วแก้เฉพาะจุด"
+      },
+      {
+        "label": "พิสูจน์หลังแก้",
+        "detail": "รันเส้นทางเดิมอีกครั้งและบันทึกผลบน Simulator กับ Scheme เดิม"
+      }
+    ],
+    "promptTh": "ใช้ Build iOS Apps plugin และ XcodeBuildMCP ทำซ้ำบั๊ก [อาการ] บน Simulator เก็บ Screenshot, Log หรือ LLDB หา Root cause แก้ให้น้อยที่สุด และรันเส้นทางเดิมเพื่อยืนยันผล",
+    "checkTh": "อย่าแก้จากการคาดเดา ต้องมีหลักฐานก่อนและหลังแก้ พร้อมทดสอบพฤติกรรมที่เกี่ยวข้องไม่ให้ถดถอย"
+  },
+  {
+    "index": 56,
+    "slug": "ios-app-intents",
+    "titleTh": "เพิ่ม App Intents สำหรับ iOS",
+    "titleEn": "Add iOS app intents",
+    "summaryTh": "ทำให้คำสั่งและข้อมูลสำคัญของแอปเรียกใช้ได้จาก Shortcuts, Siri, Spotlight และส่วนต่าง ๆ ของระบบผ่าน App Intents ที่มีขอบเขตเหมาะสม",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      {
+        "label": "หา Action ที่มีคุณค่า",
+        "detail": "เลือกงานที่ผู้ใช้ควรทำได้โดยไม่ต้องเปิดและไล่แตะทั้งแอป"
+      },
+      {
+        "label": "จำกัด Entity surface",
+        "detail": "เปิดเฉพาะข้อมูลที่ระบบต้องใช้เข้าใจและส่งต่อ Action โดยไม่คัดลอก Model ทั้งหมด"
+      },
+      {
+        "label": "สร้าง Intent และ Shortcut",
+        "detail": "กำหนด App Intents, AppEntity และ AppShortcutsProvider พร้อมชื่อที่ผู้ใช้เข้าใจ"
+      },
+      {
+        "label": "ทดสอบการส่งต่อ",
+        "detail": "Build และตรวจว่า Intent ทำงานหรือเปิดแอปไปยัง Screen ที่ถูกต้อง"
+      }
+    ],
+    "promptTh": "ใช้ Build iOS Apps plugin ตรวจแอปนี้และเพิ่ม App Intents ชุดแรกสำหรับ [Action หลัก] โดยเปิด Entity เท่าที่จำเป็น เพิ่ม App Shortcuts และทดสอบ Runtime routing",
+    "checkTh": "ตรวจสิทธิ์และข้อมูลที่เปิดให้ระบบภายนอกเห็น พร้อมทดสอบทุก Intent ก่อนเผยแพร่"
+  },
+  {
+    "index": 57,
+    "slug": "macos-telemetry-logs",
+    "titleTh": "เพิ่ม Telemetry ให้แอป Mac",
+    "titleEn": "Add Mac telemetry",
+    "summaryTh": "เพิ่ม Unified logging ที่สั้นและมีสัญญาณสูงรอบ Flow สำคัญ แล้วรันแอปเพื่อพิสูจน์ลำดับเหตุการณ์จาก Console หรือ log stream",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      {
+        "label": "เลือกหนึ่ง Flow",
+        "detail": "กำหนด Window, Sidebar, Command หรือ Sync path ที่ยังวิเคราะห์จากโค้ดได้ไม่ชัด"
+      },
+      {
+        "label": "เพิ่ม Logger",
+        "detail": "ใช้ OSLog Logger กับ Subsystem และ Category ชัดเจนเพื่อบันทึก Action boundary"
+      },
+      {
+        "label": "รันและเก็บ Trace",
+        "detail": "เปิดแอป ทำ Flow และกรองเหตุการณ์ด้วย Console หรือ log stream predicate"
+      },
+      {
+        "label": "ปรับจากหลักฐาน",
+        "detail": "ย้ายจุด Log หรือแก้โค้ดแล้วรันซ้ำจน Timeline อธิบายสิ่งที่เกิดขึ้นได้"
+      }
+    ],
+    "promptTh": "ใช้ Build macOS Apps plugin เพิ่ม OSLog Logger รอบ [Flow] ให้บันทึก State transition สำคัญ จากนั้น Build, Run, ทำ Flow และส่ง Filter predicate กับตัวอย่าง Log ที่ยืนยันลำดับเหตุการณ์",
+    "checkTh": "ห้ามบันทึก Secret, Token, ข้อมูลส่วนบุคคล หรือเนื้อหาเอกสารดิบลง Log"
+  },
+  {
+    "index": 58,
+    "slug": "code-migrations",
+    "titleTh": "ย้ายระบบโค้ดอย่างเป็นขั้นตอน",
+    "titleEn": "Run code migrations",
+    "summaryTh": "ย้ายระบบ Legacy ไปยัง Stack ใหม่เป็น Milestone โดยทำแผนที่สิ่งเดิม รักษาความเข้ากันได้ และตรวจว่าพฤติกรรมเทียบเท่าระบบเดิมก่อนผ่านแต่ละช่วง",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      {
+        "label": "สำรวจระบบเดิม",
+        "detail": "รวบรวม Routing, Data, Auth, Config, Build, Test, Deployment และ External contract"
+      },
+      {
+        "label": "จับคู่ Stack ใหม่",
+        "detail": "เทียบแนวคิดเดิมกับระบบเป้าหมายและชี้ส่วนที่ไม่มีสิ่งทดแทนตรงตัว"
+      },
+      {
+        "label": "ย้ายเป็น Milestone",
+        "detail": "ใช้ Compatibility layer หรือย้ายทีละ Module พร้อมเก็บทางย้อนกลับ"
+      },
+      {
+        "label": "ตรวจ Parity",
+        "detail": "รัน Lint, Type-check, Test และ Side-by-side check ก่อนเริ่มช่วงถัดไป"
+      }
+    ],
+    "promptTh": "ย้าย Codebase จาก [Legacy stack] ไป [Target stack] โดยสำรวจสมมติฐานเดิม จับคู่แนวคิด เสนอ Milestone พร้อม Compatibility และ Rollback แล้วตรวจ Parity หลังแต่ละช่วง",
+    "checkTh": "อย่ารวมเป็น Big-bang rewrite และต้องแก้ Validation ที่ไม่ผ่านก่อนเดินหน้าสู่ Milestone ถัดไป"
+  },
+  {
+    "index": 59,
+    "slug": "audit-course-section-consistency",
+    "titleTh": "ตรวจความสอดคล้องของรายวิชาหลายกลุ่ม",
+    "titleEn": "Audit course section consistency",
+    "summaryTh": "เปรียบเทียบ Syllabus ตาราง งาน นโยบาย และ LMS ของหลายกลุ่มเรียน เพื่อแยกข้อกำหนดร่วมออกจากดุลยพินิจของผู้สอนและชี้ข้อขัดแย้งที่กระทบนักศึกษา",
+    "categoryTh": "การศึกษาและอาชีพ",
+    "workflow": [
+      {
+        "label": "ตั้งมาตรฐานร่วม",
+        "detail": "รวบรวมผลลัพธ์การเรียนรู้ ข้อกำหนดภาควิชา และนโยบายที่ใช้กับทุกกลุ่ม"
+      },
+      {
+        "label": "รวมข้อมูลแต่ละกลุ่ม",
+        "detail": "แนบ Syllabus, Schedule, Assignment, Grading, LMS และ Instructor notes"
+      },
+      {
+        "label": "ตรวจความขัดแย้ง",
+        "detail": "แยก Required alignment จาก Instructor discretion พร้อมอ้างแหล่งและผลต่อนักศึกษา"
+      },
+      {
+        "label": "ทบทวนกับคณาจารย์",
+        "detail": "จัดลำดับการแก้และสร้าง Baseline checklist หลังผู้สอนยืนยันแต่ละประเด็น"
+      }
+    ],
+    "promptTh": "เปรียบเทียบเอกสารของกลุ่มเรียนเหล่านี้และสร้าง Consistency audit ที่แยกข้อกำหนดร่วมจากดุลยพินิจผู้สอน ชี้ Conflict พร้อม Source, Student impact, Priority และ Owner",
+    "checkTh": "ให้ผู้สอนยืนยันว่าความต่างเป็นข้อผิดพลาดหรือทางเลือกที่อนุมัติแล้วก่อนแก้เอกสารต้นฉบับ"
+  },
+  {
+    "index": 60,
+    "slug": "build-unit-plan-from-sources",
+    "titleTh": "สร้างแผนหน่วยการเรียนจากไฟล์ต้นฉบับ",
+    "titleEn": "Build a unit plan from source files",
+    "summaryTh": "เปลี่ยนมาตรฐาน หลักสูตร ปฏิทิน บทเรียนเดิม และความต้องการผู้เรียน ให้เป็นแผนหน่วยการเรียนที่แก้ไขได้พร้อมที่มาและจุดให้ครูทบทวน",
+    "categoryTh": "การศึกษาและอาชีพ",
+    "workflow": [
+      {
+        "label": "คัดแหล่งที่อนุมัติ",
+        "detail": "รวบรวม Standards, Pacing guide, Calendar, Prior lessons และ Assessment guidance ที่เป็นปัจจุบัน"
+      },
+      {
+        "label": "ผูกการตัดสินใจกับแหล่ง",
+        "detail": "ให้ ChatGPT อ้างเอกสารที่รองรับเป้าหมาย ลำดับบทเรียน และการประเมินแต่ละจุด"
+      },
+      {
+        "label": "ร่างหน่วยการเรียน",
+        "detail": "สร้าง Learning goals, Lesson sequence, Materials, Formative checks และ Misconceptions"
+      },
+      {
+        "label": "ให้ครูทบทวน",
+        "detail": "ตรวจมาตรฐาน เวลา ภาระประเมิน Accessibility และความเหมาะสมตามวัยก่อนอนุมัติ"
+      }
+    ],
+    "promptTh": "จาก Standards, Pacing guide, Calendar, Prior lessons และ Learner needs ที่แนบ สร้างแผนหน่วยการเรียน [ระยะเวลา] สำหรับ [ระดับ/วิชา/หัวข้อ] พร้อม Source link, Formative checks, Misconceptions และ Review flags",
+    "checkTh": "อย่าแต่งข้อกำหนดโรงเรียนหรือข้อมูลผู้เรียนที่ไม่มีในแหล่ง และให้ครูอนุมัติก่อนนำไปใช้"
+  },
+  {
+    "index": 61,
+    "slug": "variance-driver-bridge",
+    "titleTh": "สร้าง Variance Bridge อธิบายส่วนต่าง",
+    "titleEn": "Build a variance driver bridge",
+    "summaryTh": "เชื่อมการเปลี่ยนแปลงระหว่าง Actual, Budget และ Forecast กับ Driver เชิงปฏิบัติการที่มีหลักฐาน พร้อมจัดอันดับผลกระทบและคำถามถึงเจ้าของข้อมูล",
+    "categoryTh": "การเงินและกลยุทธ์",
+    "workflow": [
+      {
+        "label": "กำหนดการเปรียบเทียบ",
+        "detail": "ระบุ Version, Period, Materiality threshold, Sign convention และบรรทัดการเงินที่ต้องดู"
+      },
+      {
+        "label": "แนบข้อมูลการเงิน",
+        "detail": "รวม Actual, Budget, Forecast, KPI, Expense tracker, Cash view และ Owner notes"
+      },
+      {
+        "label": "สร้าง Driver bridge",
+        "detail": "จัดอันดับ Driver ตามผลกระทบ กระทบยอดแหล่งข้อมูล และแยกข้อเท็จจริงจากสมมติฐาน"
+      },
+      {
+        "label": "ปิดคำถามกับเจ้าของ",
+        "detail": "ตรวจ Source break, เครื่องหมาย และคำอธิบายกับ Finance owner ก่อนใช้รายงาน"
+      }
+    ],
+    "promptTh": "ใช้ $spreadsheets อธิบายความเปลี่ยนแปลง [ช่วงเวลา] ระหว่าง [Actual/Budget/Forecast] สร้าง Editable variance bridge จัดอันดับ Driver, Reconcile source breaks และอ้าง Tab หรือ Note ของแต่ละ Driver",
+    "checkTh": "อย่าเขียนคำอธิบายเป็นข้อสรุปเมื่อข้อมูลรองรับเพียงสมมติฐาน และให้ Finance owner ยืนยันก่อนเผยแพร่"
+  },
+  {
+    "index": 62,
+    "slug": "build-interactive-lesson-resource",
+    "titleTh": "สร้างสื่อบทเรียนแบบโต้ตอบ",
+    "titleEn": "Build an interactive lesson resource",
+    "summaryTh": "เปลี่ยนชุดบทเรียนที่ผ่านการทบทวนเป็นสื่อโต้ตอบที่มีตัวอย่าง แบบฝึก Feedback และ Self-check พร้อมทดสอบการเข้าถึงก่อนให้นักเรียนใช้",
+    "categoryTh": "การศึกษาและอาชีพ",
+    "workflow": [
+      {
+        "label": "ยืนยันเนื้อหาต้นทาง",
+        "detail": "ใช้ Lesson package, Practice questions, Feedback rules และ Accessibility requirements ที่อนุมัติแล้ว"
+      },
+      {
+        "label": "ออกแบบฉบับเล็ก",
+        "detail": "เริ่มจาก Introduction, Guided example, Practice interactions, Feedback และ Final self-check"
+      },
+      {
+        "label": "สร้างและ Preview",
+        "detail": "ใช้ Sites ทำประสบการณ์ที่เรียบง่ายและทดสอบเส้นทางตอบถูกกับตอบผิด"
+      },
+      {
+        "label": "ตรวจการเข้าถึง",
+        "detail": "ตรวจ Keyboard, Label, Contrast, Responsive, Logic และเนื้อหาก่อนให้ครูอนุมัติ"
+      }
+    ],
+    "promptTh": "ใช้ @sites สร้าง Interactive lesson สำหรับ [ระดับ/วิชา/หัวข้อ] จากชุดบทเรียนที่อนุมัติ โดยมี Introduction, Guided example, Practice 3 ข้อพร้อม Feedback, Final self-check และ Teacher notes",
+    "checkTh": "ครูต้องตรวจเนื้อหาและ Accessibility ทั้งคำตอบถูกและผิดก่อน Publish หรือแชร์กับนักเรียน"
+  },
+  {
+    "index": 63,
+    "slug": "calibrate-assessments",
+    "titleTh": "ปรับมาตรฐานการประเมินให้สอดคล้อง",
+    "titleEn": "Calibrate assessments",
+    "summaryTh": "ใช้ผลงานที่ลบตัวตน Rubric และข้อมูลการให้คะแนน เพื่อตรวจรูปแบบที่อาจไม่สอดคล้องและเสนอการทำ Rubric ให้ชัดขึ้นโดยไม่ตัดสินเกรดแทนครู",
+    "categoryTh": "การศึกษาและอาชีพ",
+    "workflow": [
+      {
+        "label": "ลบข้อมูลระบุตัวตน",
+        "detail": "นำชื่อและข้อมูลส่วนบุคคลออกจาก Submission กับ Grading export ก่อนใช้งาน"
+      },
+      {
+        "label": "กำหนดขอบเขตทบทวน",
+        "detail": "แนบ Rubric, Course outcomes, Calibration rules และ Feedback ตัวอย่าง"
+      },
+      {
+        "label": "สร้าง Calibration workbook",
+        "detail": "ชี้ Score pattern, Inconsistency, Strength, Gap และ Feedback theme พร้อมหลักฐาน"
+      },
+      {
+        "label": "ให้คณาจารย์ตัดสิน",
+        "detail": "ตรวจบริบทและใช้ Pattern ที่ยืนยันแล้วเสนอ Rubric clarification โดยคงกรณีไม่แน่ชัดไว้"
+      }
+    ],
+    "promptTh": "ตรวจ Submission ที่ลบตัวตนแล้วกับ Rubric และ Grading export เพื่อสร้าง Calibration workbook ที่ชี้ Scoring inconsistency, Common strengths/gaps, Feedback themes และ Rubric clarifications พร้อม Evidence",
+    "checkTh": "ห้ามให้ AI กำหนดหรือเปลี่ยนเกรด ทุกข้อสังเกตต้องผ่านการตัดสินของคณาจารย์"
+  },
+  {
+    "index": 64,
+    "slug": "finance-model-cleanup",
+    "titleTh": "ทำความสะอาดและตรวจโมเดลการเงิน",
+    "titleEn": "Clean and review a financial model",
+    "summaryTh": "ตรวจสูตร ลิงก์ การกระทบยอด และสมมติฐานในโมเดลการเงิน พร้อมแก้เฉพาะจุดที่ปลอดภัยและจัดทำ QA memo เรียงตามความรุนแรง",
+    "categoryTh": "การเงินและกลยุทธ์",
+    "workflow": [
+      {
+        "label": "เก็บต้นฉบับ",
+        "detail": "แนบโมเดลและแหล่งข้อมูลโดยรักษาไฟล์เดิมไว้เพื่อเทียบทุกการแก้ไข"
+      },
+      {
+        "label": "ตรวจโครงสร้าง",
+        "detail": "หา Formula risk, Hardcode, Broken link, Circular reference, Period และ Source tie-out"
+      },
+      {
+        "label": "แก้เฉพาะที่ชัด",
+        "detail": "ทำความสะอาดและซ่อมสูตรเมื่อเจตนาแน่นอน โดยไม่เปลี่ยน Business assumption"
+      },
+      {
+        "label": "ส่ง QA memo",
+        "detail": "จัดอันดับปัญหา ระบุ Cell หรือ Tab และส่งคำถามที่ต้องให้ Finance owner ตัดสิน"
+      }
+    ],
+    "promptTh": "ใช้ $spreadsheets ทำความสะอาดและตรวจ [ชื่อโมเดล] โดยตรวจ Formula, Hardcode, Link, Sign, Period, Source tie-out และ Output tabs แก้เฉพาะจุดที่ชัด แล้วส่งไฟล์สำเนากับ QA memo เรียงตาม Severity",
+    "checkTh": "ห้ามเปลี่ยน Business assumption โดยไม่ได้อนุมัติ และให้ Finance owner ตรวจสูตรกับผลลัพธ์สำคัญทุกจุด"
+  },
+  {
+    "index": 65,
+    "slug": "create-classroom-materials-pack",
+    "titleTh": "สร้างชุดสื่อการสอนครบชุด",
+    "titleEn": "Create a classroom materials pack",
+    "summaryTh": "สร้างคู่มือครู ใบงาน เฉลย สรุปสำหรับครอบครัว และรายการอุปกรณ์จากบทเรียนเดียวกัน โดยรักษาคำศัพท์ ตัวอย่าง เวลา และคำสั่งให้ตรงกันทุกไฟล์",
+    "categoryTh": "การศึกษาและอาชีพ",
+    "workflow": [
+      {
+        "label": "ตั้งแหล่งจริงร่วม",
+        "detail": "ใช้ Lesson deck และ Unit plan ที่ทบทวนแล้วร่วมกับ School guidance และ Accessibility needs"
+      },
+      {
+        "label": "สร้างเอกสารทั้งชุด",
+        "detail": "จัดทำ Teacher guide, Student handout, Answer key, Family overview และ Materials checklist"
+      },
+      {
+        "label": "ตรวจความสอดคล้อง",
+        "detail": "เปรียบเทียบคำศัพท์ ตัวอย่าง เวลา คำสั่ง และคำตอบข้ามทุกไฟล์"
+      },
+      {
+        "label": "ให้ครูอนุมัติ",
+        "detail": "ตรวจความถูกต้อง การใช้งาน Accessibility ภาษา และนโยบายก่อนนำไปใช้"
+      }
+    ],
+    "promptTh": "จาก Lesson deck และ Unit plan ที่ทบทวนแล้ว สร้าง Classroom materials pack ได้แก่ Teacher guide, Student handout, Answer key, Family overview และ Materials checklist โดยรักษาคำศัพท์ เวลา และคำสั่งให้ตรงกัน",
+    "checkTh": "เก็บทุกไฟล์เป็น Draft จนกว่าครูจะตรวจความถูกต้อง Accessibility ภาษา และนโยบายครบถ้วน"
+  }
+]
