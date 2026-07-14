@@ -1,6 +1,6 @@
-# Codex Field Guide — 99 Use Cases สำหรับคนทำงาน
+# Codex Field Guide — 99 Use Cases | TH / EN
 
-Web presentation ภาษาไทยที่สรุป use case ทั้งหมด 99 รายการจาก [OpenAI Learn: Use cases](https://learn.chatgpt.com/use-cases) ณ วันที่ 13 กรกฎาคม 2026 แต่ละ use case มีสไลด์เฉพาะ พร้อม workflow 4 ขั้น, Prompt เริ่มต้น, Human checkpoint และลิงก์กลับไปยัง official source
+Web presentation สองภาษา ไทย/อังกฤษ ที่สรุป use case ทั้งหมด 99 รายการจาก [OpenAI Learn: Use cases](https://learn.chatgpt.com/use-cases) ณ วันที่ 13 กรกฎาคม 2026 แต่ละ use case มีสไลด์เฉพาะ พร้อม workflow 4 ขั้น, Prompt เริ่มต้น, Human checkpoint และลิงก์กลับไปยัง official source
 
 > หน้า official รวมทั้ง ChatGPT และ Codex workflows งานนี้จึงคงชื่อเครื่องมือในแต่ละ use case ให้ตรงกับต้นฉบับ แม้ชื่อ presentation จะเน้น Codex
 
@@ -21,17 +21,19 @@ python3 -m http.server 4173
 - `O` — เปิดสารบัญ ค้นหา และกรอง 8 หมวด
 - `P` — เปิด Prompt ของ use case ปัจจุบัน
 - `F` — เข้า/ออกโหมดเต็มจอ
+- `L` หรือ toggle `TH / EN` ด้านขวาบน — สลับภาษาไทยและอังกฤษ
 - `Home` / `End` — ไปสไลด์แรก/สุดท้าย
 - `Esc` — ปิดสารบัญหรือ Prompt
 - มือถือ/แท็บเล็ต — ปัดซ้ายขวาเพื่อเปลี่ยนสไลด์ และเลื่อนขึ้นลงเพื่ออ่าน workflow
 
-แต่ละ URL มี hash ของ use case เช่น `#daily-work-brief` จึงส่งลิงก์ตรงไปยังสไลด์ที่ต้องการได้
+แต่ละ URL มี hash ของ use case เช่น `#daily-work-brief` จึงส่งลิงก์ตรงไปยังสไลด์ที่ต้องการได้ และระบุภาษาเริ่มต้นด้วย query parameter เช่น `?lang=en#daily-work-brief` หรือ `?lang=th#daily-work-brief`
 
 ## เนื้อหาในโฟลเดอร์
 
 - `index.html`, `styles.css`, `script.js` — presentation แบบ static ไม่มี runtime dependency
 - `data/usecases-data.js` — ข้อมูล 99 สไลด์ที่ build แล้ว
 - `data/usecases-th-01.json` ถึง `data/usecases-th-03.json` — เนื้อหาไทยที่เรียบเรียงสำหรับสไลด์
+- `data/usecases-en-01.json` ถึง `data/usecases-en-03.json` — workflow และ Human checkpoint ภาษาอังกฤษที่เรียบเรียงคู่กัน
 - `data/source-usecases.json` — inventory จาก official pages พร้อม source URL
 - `assets/use-cases/` — ภาพประกอบจากหน้า official use cases จำนวน 99 ภาพ
 - `assets/fonts/` — IBM Plex Sans Thai และ Chakra Petch สำหรับใช้งานแบบ offline

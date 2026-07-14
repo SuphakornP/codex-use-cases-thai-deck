@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-The presentation source lives at the repository root: `index.html`, `styles.css`, and `script.js`. The Vinext/Sites wrapper is under `app/`, with the Cloudflare worker entry point in `worker/` and build integration in `build/`. Thai slide content is maintained in `data/usecases-th-*.json`; `data/usecases-data.js` is generated output. Source-refresh and packaging helpers live in `scripts/`. Tests are in `tests/`, fonts and official use-case artwork are in `assets/`, and generated `public/` and `dist/` directories must not be edited by hand.
+The presentation source lives at the repository root: `index.html`, `styles.css`, and `script.js`. The Vinext/Sites wrapper is under `app/`, with the Cloudflare worker entry point in `worker/` and build integration in `build/`. Thai slide copy is maintained in `data/usecases-th-*.json`, while `data/usecases-en-*.json` contains the reviewed English workflow and checkpoint copy; `data/usecases-data.js` is generated output. Source-refresh and packaging helpers live in `scripts/`. Tests are in `tests/`, fonts and official use-case artwork are in `assets/`, and generated `public/` and `dist/` directories must not be edited by hand.
 
 ## Build, Test, and Development Commands
 
@@ -10,7 +10,7 @@ The presentation source lives at the repository root: `index.html`, `styles.css`
 - `npm run dev` — prepare public assets and start the Vinext development server.
 - `npm run build` — create the production Sites bundle in `dist/`.
 - `npm test` — run a production build followed by the Node worker test suite.
-- `python3 scripts/build_deck_data.py` — validate and rebuild the 99-use-case JavaScript dataset after editing Thai JSON files.
+- `python3 scripts/build_deck_data.py` — validate and rebuild the 99-use-case JavaScript dataset after editing Thai or English JSON files.
 - `python3 -m http.server 4173` — preview the static deck directly without the Sites wrapper.
 
 ## Coding Style & Naming Conventions

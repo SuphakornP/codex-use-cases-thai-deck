@@ -10,7 +10,8 @@ function showLoadError() {
   stage.replaceChildren();
   const message = document.createElement("p");
   message.setAttribute("role", "alert");
-  message.textContent = "ไม่สามารถโหลด presentation ได้ กรุณารีเฟรชหน้าแล้วลองอีกครั้ง";
+  message.textContent =
+    "Unable to load the presentation. Please refresh and try again. / ไม่สามารถโหลด presentation ได้ กรุณารีเฟรชหน้าแล้วลองอีกครั้ง";
   stage.append(message);
 }
 

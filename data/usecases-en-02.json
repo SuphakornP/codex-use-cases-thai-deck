@@ -1,0 +1,365 @@
+[
+  {
+    "index": 33,
+    "slug": "reusable-codex-skills",
+    "workflowEn": [
+      { "label": "Choose repeatable work", "detail": "Pick one recurring task with a strong example of the desired output." },
+      { "label": "Gather the pattern", "detail": "Attach examples, rules, documents, and commands that make the task successful." },
+      { "label": "Create the Skill", "detail": "Use $skill-creator to build and validate the Skill, including when it should trigger." },
+      { "label": "Test and refine", "detail": "Run the Skill on real work and add corrections wherever its output misses the standard." }
+    ],
+    "checkEn": "Test the Skill on one real task and remove secrets or unsafe commands before sharing it."
+  },
+  {
+    "index": 34,
+    "slug": "iterate-on-difficult-problems",
+    "workflowEn": [
+      { "label": "Define success", "detail": "Set the target score, evaluation method, and stopping conditions." },
+      { "label": "Measure the baseline", "detail": "Run an eval on the current output and record scores and major weaknesses." },
+      { "label": "Improve one issue", "detail": "Fix the most important problem, then evaluate again to isolate its effect." },
+      { "label": "Repeat to the target", "detail": "Keep each iteration's history and continue until every criterion meets its threshold." }
+    ],
+    "checkEn": "Review both the scores and the real output; an eval may not cover every aspect of quality."
+  },
+  {
+    "index": 35,
+    "slug": "monthly-business-review-narrative",
+    "workflowEn": [
+      { "label": "Set the reporting period", "detail": "Define the date range, audience, and what counts as a material change." },
+      { "label": "Gather core inputs", "detail": "Attach dashboards, KPI definitions, workbooks, forecasts, prior reports, and owner notes." },
+      { "label": "Validate and draft", "detail": "Check data quality, then summarize changes and evidence-backed drivers." },
+      { "label": "Confirm follow-ups", "detail": "Review numbers, sources, open questions, and owners before the meeting." }
+    ],
+    "checkEn": "Do not invent missing numbers; data owners must confirm material figures before presentation."
+  },
+  {
+    "index": 36,
+    "slug": "cfo-board-reporting-pack",
+    "workflowEn": [
+      { "label": "Set the scope", "detail": "Define the reporting period, audience, workstreams, and slides to update." },
+      { "label": "Attach the evidence", "detail": "Provide the prior pack, trackers, KPIs, forecast, cash flow, and owner commentary." },
+      { "label": "Build the narrative", "detail": "Connect progress, evidence, risks, and next targets inside the existing deck." },
+      { "label": "Inspect the pack", "detail": "Trace every number to its source and render slides to catch overflow or formatting issues." }
+    ],
+    "checkEn": "Data owners must confirm every key figure, assumption, and risk before the reporting pack is published."
+  },
+  {
+    "index": 37,
+    "slug": "remediate-vulnerability-backlog",
+    "workflowEn": [
+      { "label": "Choose one finding", "detail": "Use an authorized report or ticket with clear scope and impact." },
+      { "label": "Confirm the issue", "detail": "Verify the vulnerable path, or prove it is already fixed, before changing code." },
+      { "label": "Make the smallest fix", "detail": "Use $codex-security:fix-finding for a focused patch and add a regression test." },
+      { "label": "Prove the result", "detail": "Test the original attack path and normal behavior, and document remaining uncertainty." }
+    ],
+    "checkEn": "Work only on authorized systems, and have a security expert review the patch and evidence before release."
+  },
+  {
+    "index": 38,
+    "slug": "scan-code-changes-for-security",
+    "workflowEn": [
+      { "label": "Define the change set", "detail": "Choose the authorized PR, commit, branch diff, or working tree to review." },
+      { "label": "Name risk areas", "detail": "Highlight surfaces such as auth, user input, file paths, networking, or secrets." },
+      { "label": "Scan and validate", "detail": "Use $codex-security:security-diff-scan to separate evidenced flaws from suspicions." },
+      { "label": "Review before fixing", "detail": "Inspect affected lines, evidence, and proof gaps before opening separate remediation work." }
+    ],
+    "checkEn": "A person must confirm real reachability and impact before prioritizing or fixing each finding."
+  },
+  {
+    "index": 39,
+    "slug": "dependency-incident-audits",
+    "workflowEn": [
+      { "label": "Verify the advisory", "detail": "Separate official-source facts from unconfirmed reports or commentary." },
+      { "label": "Set evidence criteria", "detail": "Define what would prove or disprove use of an affected package and version." },
+      { "label": "Audit read-only", "detail": "Inspect manifests, lockfiles, CI workflows, and scripts without installing or running lifecycle code." },
+      { "label": "Classify the evidence", "detail": "Mark results confirmed, needs review, or not affected, with severity and next steps." }
+    ],
+    "checkEn": "Do not run a possibly compromised package or script; seek approval before updates or credential cleanup."
+  },
+  {
+    "index": 40,
+    "slug": "meeting-prep-briefs",
+    "workflowEn": [
+      { "label": "Identify the meeting", "detail": "Provide the meeting name, date, attendees, and desired outcome." },
+      { "label": "Name allowed sources", "detail": "Point to the calendar event, documents, Slack, or email threads that may be used." },
+      { "label": "Build the prep brief", "detail": "Separate facts, gaps, agenda items, questions, and commitments you still owe." },
+      { "label": "Check suitability", "detail": "Remove unnecessary sensitive detail and fit the notes template to the audience." }
+    ],
+    "checkEn": "Check permissions and sensitive information before sharing; do not send messages or edit documents without approval."
+  },
+  {
+    "index": 41,
+    "slug": "update-documentation",
+    "workflowEn": [
+      { "label": "Point to the change", "detail": "Provide the branch, PR, commit, or files that introduced the new behavior." },
+      { "label": "Find affected docs", "detail": "Search feature names, config, commands, and examples to identify impacted pages." },
+      { "label": "Edit only what changed", "detail": "Preserve structure, terminology, and links while keeping internal details out of public docs." },
+      { "label": "Verify every claim", "detail": "Run documentation checks and list the evidence for each user-facing behavior." }
+    ],
+    "checkEn": "Ensure unreleased roadmap details and internal customer information do not enter public documentation."
+  },
+  {
+    "index": 42,
+    "slug": "native-ios-apps",
+    "workflowEn": [
+      { "label": "Define the starting point", "detail": "State whether the project is new or existing, plus devices and deployment target." },
+      { "label": "Create the build loop", "detail": "Scaffold SwiftUI and add a repeatable xcodebuild or Tuist script." },
+      { "label": "Build in slices", "detail": "Implement one feature at a time, reusing existing models, navigation, and utilities." },
+      { "label": "Test in Simulator", "detail": "Build, launch, and capture screenshots with an explicit scheme and Simulator." }
+    ],
+    "checkEn": "Verify the build and core flows in Simulator, including accessibility and target-device behavior."
+  },
+  {
+    "index": 43,
+    "slug": "kpi-root-cause-analysis",
+    "workflowEn": [
+      { "label": "Lock the KPI definition", "detail": "Set the formula, comparison period, expected direction, and decision this analysis supports." },
+      { "label": "Gather context", "detail": "Attach dashboards, exports, segment cuts, and relevant launch or campaign data." },
+      { "label": "Separate the drivers", "detail": "Analyze segments, cohorts, channels, or products and look for disconfirming evidence." },
+      { "label": "Conclude carefully", "detail": "Report confirmed drivers, hypotheses, caveats, open questions, and next actions." }
+    ],
+    "checkEn": "Do not treat correlation as causation; the metric owner must validate definitions and data before decisions."
+  },
+  {
+    "index": 44,
+    "slug": "dashboard-builder-monitor",
+    "workflowEn": [
+      { "label": "Start with the decision", "detail": "Define the user, question, decision, and review cadence before choosing charts." },
+      { "label": "Gather definitions", "detail": "Attach the metric glossary, exports, example dashboards, and stakeholder feedback." },
+      { "label": "Draft the specification", "detail": "Define KPI hierarchy, charts, filters, owners, and when the data is trustworthy." },
+      { "label": "Plan monitoring", "detail": "Create a QA checklist, alert thresholds, and escalation boundaries before release." }
+    ],
+    "checkEn": "Test metric definitions and numbers against source data before calling the dashboard production-ready."
+  },
+  {
+    "index": 45,
+    "slug": "strategic-initiative-health-update",
+    "workflowEn": [
+      { "label": "Set the reporting cadence", "detail": "Define the period, audience, and standard status language used each time." },
+      { "label": "Gather project records", "detail": "Attach trackers, initiative docs, KPIs, prior briefs, the decision log, and owner notes." },
+      { "label": "Find the delta", "detail": "Compare with the prior period and separate confirmed status from inference." },
+      { "label": "List required action", "detail": "Capture risks, decisions, next actions, owners, and stale items needing follow-up." }
+    ],
+    "checkEn": "The initiative lead should confirm statuses, owners, and open items before sharing with leadership."
+  },
+  {
+    "index": 46,
+    "slug": "prioritize-accounts",
+    "workflowEn": [
+      { "label": "Set the criteria", "detail": "Define the segment, time horizon, and weights for urgency, risk, or growth potential." },
+      { "label": "Gather customer signals", "detail": "Attach CRM exports, calls, emails, usage data, account plans, and review rules." },
+      { "label": "Rank with reasons", "detail": "Show evidence, risk, upside, missing context, and the next action for each account." },
+      { "label": "Approve follow-up", "detail": "Have account owners review rankings and draft messages before CRM updates or outreach." }
+    ],
+    "checkEn": "Account owners must confirm context and approve every message before contacting customers."
+  },
+  {
+    "index": 47,
+    "slug": "forecast-risk-review",
+    "workflowEn": [
+      { "label": "Set the forecast period", "detail": "Define the time window, deals in scope, and meanings of Commit and Upside." },
+      { "label": "Gather deal records", "detail": "Attach CRM, forecast snapshots, calls, emails, legal, support, usage, and owner notes." },
+      { "label": "Assess each deal", "detail": "Separate facts from inferred risks, with blockers and missing information." },
+      { "label": "Confirm before changing", "detail": "Review recommendations with the sales owner before updating the system of record." }
+    ],
+    "checkEn": "Do not judge confidence from stage alone; the sales owner must approve every forecast change."
+  },
+  {
+    "index": 48,
+    "slug": "run-student-club-project",
+    "workflowEn": [
+      { "label": "Gather project inputs", "detail": "Bring together the brief, shared folder, notes, budget, member availability, and university rules." },
+      { "label": "Confirm current state", "detail": "Find the source of truth for dates, approvals, and budget before organizing the work." },
+      { "label": "Build the project hub", "detail": "Create milestones, an owner tracker, budget sheet, agenda, message drafts, and risk log." },
+      { "label": "Confirm with the team", "detail": "Agree on owners, dates, and expenses before editing files or sending messages." }
+    ],
+    "checkEn": "The team must confirm owners, dates, and budget before assigning work, messaging, or spending."
+  },
+  {
+    "index": 49,
+    "slug": "analytics-request-agent",
+    "workflowEn": [
+      { "label": "Extract the business question", "detail": "Separate the decision the requester faces from their suggested chart or answer." },
+      { "label": "Confirm data definitions", "detail": "Verify metrics, join logic, date ranges, sources, and missing values before analysis." },
+      { "label": "Run a first pass", "detail": "Analyze available data and build charts with caveats, sources, and open questions." },
+      { "label": "Have an analyst review", "detail": "Check calculations, charts, and conclusions before answering the requester." }
+    ],
+    "checkEn": "Do not assume metric definitions or join logic; an analyst must review the final result."
+  },
+  {
+    "index": 50,
+    "slug": "research-to-decision-memo",
+    "workflowEn": [
+      { "label": "Define the decision", "detail": "Name the options, decision maker, deadline, criteria, and approval boundary." },
+      { "label": "Layer the evidence", "detail": "Keep internal evidence, external research, and interpretation separate." },
+      { "label": "Draft the decision memo", "detail": "Summarize the recommendation, alternatives, trade-offs, costs, risks, log, and open questions." },
+      { "label": "Challenge the recommendation", "detail": "Test assumptions and identify what would change the recommendation before the meeting." }
+    ],
+    "checkEn": "Verify every material fact and leave the final approval to the authorized decision maker, not the AI."
+  },
+  {
+    "index": 51,
+    "slug": "initiative-off-track-brief",
+    "workflowEn": [
+      { "label": "Compare plan and actuals", "detail": "Combine the plan, tracker, KPIs, model, notes, and owner updates to find the gap." },
+      { "label": "Separate causes and guesses", "detail": "Mark what is evidenced, what is likely, and what still needs confirmation." },
+      { "label": "Frame the options", "detail": "Summarize options, trade-offs, risks, owners, and decisions needed now." },
+      { "label": "Review with owners", "detail": "Have the project team confirm figures, causes, and recommendations before leadership review." }
+    ],
+    "checkEn": "Project owners must confirm facts and impact before changing the plan or system status."
+  },
+  {
+    "index": 52,
+    "slug": "refactor-your-codebase",
+    "workflowEn": [
+      { "label": "Map the problem areas", "detail": "Find dead code, duplication, large modules, and legacy patterns, plus contracts to preserve." },
+      { "label": "Choose one theme", "detail": "Handle one concern at a time, such as dead code, control flow, or helper extraction." },
+      { "label": "Refactor in small rounds", "detail": "State current behavior, the structural change, and checks before each edit." },
+      { "label": "Prove behavior is stable", "detail": "Run the smallest relevant test and inspect the diff before the next round." }
+    ],
+    "checkEn": "Keep framework migrations, dependency upgrades, and public API changes as separate risk-controlled work."
+  },
+  {
+    "index": 53,
+    "slug": "ios-liquid-glass",
+    "workflowEn": [
+      { "label": "Set the platform baseline", "detail": "Define iOS 26, Xcode 26, and fallback behavior for older devices." },
+      { "label": "Review one flow", "detail": "Find custom blurs, cards, buttons, sheets, and toolbars that should use system materials." },
+      { "label": "Move to native APIs", "detail": "Use glassEffect, GlassEffectContainer, and Glass styles only on suitable control surfaces." },
+      { "label": "Inspect real renders", "detail": "Build and capture key iOS 26 Simulator states, then test the fallback." }
+    ],
+    "checkEn": "Check readability, consistency, and older-device fallbacks; do not turn every surface into glass."
+  },
+  {
+    "index": 54,
+    "slug": "native-macos-apps",
+    "workflowEn": [
+      { "label": "Choose the scene model", "detail": "Select a main window, Settings, MenuBarExtra, or utility window to fit the product." },
+      { "label": "Create a build loop", "detail": "Use xcodebuild or swift build in a repeatable build-and-launch script." },
+      { "label": "Build Mac-native UI", "detail": "Use sidebars, toolbars, menus, shortcuts, and an AppKit bridge only where needed." },
+      { "label": "Verify runtime behavior", "detail": "Build, launch, test the flow, and inspect logs before signing or notarization work." }
+    ],
+    "checkEn": "Verify windows, menus, keyboard use, accessibility, and real launch behavior before calling the feature ready."
+  },
+  {
+    "index": 55,
+    "slug": "ios-simulator-bug-debugging",
+    "workflowEn": [
+      { "label": "Fix the environment", "detail": "Select the correct project, scheme, and Simulator and keep them consistent throughout." },
+      { "label": "Reproduce the issue", "detail": "Build, launch, and follow the real steps, reading the accessibility tree before tapping." },
+      { "label": "Collect evidence and fix", "detail": "Use screenshots, logs, or LLDB to find the root cause, then make a focused change." },
+      { "label": "Prove the fix", "detail": "Run the same path again and record the result on the same Simulator and scheme." }
+    ],
+    "checkEn": "Do not fix by guesswork; capture before-and-after evidence and test related behavior for regressions."
+  },
+  {
+    "index": 56,
+    "slug": "ios-app-intents",
+    "workflowEn": [
+      { "label": "Choose a valuable action", "detail": "Pick a task users should complete without opening and tapping through the whole app." },
+      { "label": "Limit the entity surface", "detail": "Expose only the data the system needs to understand and pass the action." },
+      { "label": "Build intents and shortcuts", "detail": "Define App Intents, AppEntity, and AppShortcutsProvider with user-friendly names." },
+      { "label": "Test the handoff", "detail": "Build and verify the intent completes or opens the app on the correct screen." }
+    ],
+    "checkEn": "Review permissions and exposed data, then test every intent before publishing."
+  },
+  {
+    "index": 57,
+    "slug": "macos-telemetry-logs",
+    "workflowEn": [
+      { "label": "Choose one flow", "detail": "Select a window, sidebar, command, or sync path that code inspection cannot fully explain." },
+      { "label": "Add a Logger", "detail": "Use OSLog Logger with clear subsystem and category names at action boundaries." },
+      { "label": "Run and capture a trace", "detail": "Exercise the flow and filter events with Console or a log stream predicate." },
+      { "label": "Refine from evidence", "detail": "Move logs or fix code, then rerun until the timeline explains what happened." }
+    ],
+    "checkEn": "Never log secrets, tokens, personal data, or raw document contents."
+  },
+  {
+    "index": 58,
+    "slug": "code-migrations",
+    "workflowEn": [
+      { "label": "Map the current system", "detail": "Inventory routing, data, auth, config, builds, tests, deployment, and external contracts." },
+      { "label": "Map the target stack", "detail": "Match old concepts to the new system and flag anything without a direct replacement." },
+      { "label": "Migrate by milestone", "detail": "Use a compatibility layer or move one module at a time with a rollback path." },
+      { "label": "Verify parity", "detail": "Run lint, type checks, tests, and side-by-side checks before the next phase." }
+    ],
+    "checkEn": "Avoid a big-bang rewrite and resolve failed validation before moving to the next milestone."
+  },
+  {
+    "index": 59,
+    "slug": "audit-course-section-consistency",
+    "workflowEn": [
+      { "label": "Set shared standards", "detail": "Gather learning outcomes, department requirements, and policies that apply to all sections." },
+      { "label": "Gather each section", "detail": "Attach syllabi, schedules, assignments, grading, LMS content, and instructor notes." },
+      { "label": "Find conflicts", "detail": "Separate required alignment from instructor discretion, citing sources and student impact." },
+      { "label": "Review with faculty", "detail": "Prioritize fixes and create a baseline checklist after instructors confirm each issue." }
+    ],
+    "checkEn": "Instructors must decide whether each difference is an error or an approved choice before source files change."
+  },
+  {
+    "index": 60,
+    "slug": "build-unit-plan-from-sources",
+    "workflowEn": [
+      { "label": "Select approved sources", "detail": "Gather current standards, pacing guides, calendars, prior lessons, and assessment guidance." },
+      { "label": "Link choices to sources", "detail": "Cite the document supporting each goal, lesson sequence, and assessment decision." },
+      { "label": "Draft the unit", "detail": "Create learning goals, lesson sequence, materials, formative checks, and misconceptions." },
+      { "label": "Have the teacher review", "detail": "Check standards, timing, assessment load, accessibility, and age fit before approval." }
+    ],
+    "checkEn": "Do not invent school requirements or student facts; the teacher must approve the plan before use."
+  },
+  {
+    "index": 61,
+    "slug": "variance-driver-bridge",
+    "workflowEn": [
+      { "label": "Define the comparison", "detail": "Set versions, periods, materiality, sign convention, and financial lines in scope." },
+      { "label": "Attach finance inputs", "detail": "Combine actuals, budget, forecast, KPIs, expense tracking, cash view, and owner notes." },
+      { "label": "Build the driver bridge", "detail": "Rank drivers by impact, reconcile sources, and separate facts from hypotheses." },
+      { "label": "Close questions with owners", "detail": "Review source breaks, signs, and explanations with finance owners before reporting." }
+    ],
+    "checkEn": "Do not present a hypothesis as a conclusion; finance owners must confirm explanations before publication."
+  },
+  {
+    "index": 62,
+    "slug": "build-interactive-lesson-resource",
+    "workflowEn": [
+      { "label": "Confirm source content", "detail": "Use an approved lesson package, practice questions, feedback rules, and accessibility requirements." },
+      { "label": "Design a small first version", "detail": "Start with an introduction, guided example, practice, feedback, and final self-check." },
+      { "label": "Build and preview", "detail": "Use Sites for a simple experience and test both correct and incorrect answer paths." },
+      { "label": "Check accessibility", "detail": "Review keyboard use, labels, contrast, responsiveness, logic, and content before approval." }
+    ],
+    "checkEn": "The teacher must review content and accessibility for correct and incorrect paths before publishing or sharing."
+  },
+  {
+    "index": 63,
+    "slug": "calibrate-assessments",
+    "workflowEn": [
+      { "label": "Remove identifying data", "detail": "Strip names and personal information from submissions and grading exports." },
+      { "label": "Set the review scope", "detail": "Attach the rubric, course outcomes, calibration rules, and example feedback." },
+      { "label": "Build a calibration workbook", "detail": "Show score patterns, inconsistencies, strengths, gaps, and feedback themes with evidence." },
+      { "label": "Let faculty decide", "detail": "Review context and propose rubric clarification only from confirmed patterns." }
+    ],
+    "checkEn": "AI must not assign or change grades; faculty must judge every observation."
+  },
+  {
+    "index": 64,
+    "slug": "finance-model-cleanup",
+    "workflowEn": [
+      { "label": "Preserve the original", "detail": "Attach the model and sources while keeping the original file for comparison." },
+      { "label": "Audit the structure", "detail": "Find risky formulas, hardcodes, broken links, circular references, period issues, and tie-outs." },
+      { "label": "Fix only clear issues", "detail": "Clean and repair formulas only when intent is certain, without changing business assumptions." },
+      { "label": "Deliver a QA memo", "detail": "Prioritize issues, name cells or tabs, and list questions for the finance owner." }
+    ],
+    "checkEn": "Never change business assumptions without approval; finance owners must review formulas and key outputs."
+  },
+  {
+    "index": 65,
+    "slug": "create-classroom-materials-pack",
+    "workflowEn": [
+      { "label": "Set shared source material", "detail": "Use a reviewed lesson deck and unit plan with school guidance and accessibility needs." },
+      { "label": "Create the full pack", "detail": "Draft a teacher guide, student handout, answer key, family overview, and materials checklist." },
+      { "label": "Check consistency", "detail": "Compare terminology, examples, timing, instructions, and answers across every file." },
+      { "label": "Have the teacher approve", "detail": "Review accuracy, usability, accessibility, language, and policy before use." }
+    ],
+    "checkEn": "Keep every file as a draft until a teacher has reviewed accuracy, accessibility, language, and policy."
+  }
+]

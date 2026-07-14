@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="คู่มือ Codex ฉบับคนทำงาน: 99 use cases จากเอกสารทางการ พร้อม workflow ภาษาไทยที่นำไปใช้ได้จริง"
+      content="Thai/English guide to 99 official OpenAI use cases with practical four-step workflows for knowledge workers."
     >
     <meta name="theme-color" content="#17221b">
-    <title>Codex Field Guide — 99 Use Cases สำหรับคนทำงาน</title>
+    <title>Codex Field Guide — 99 Use Cases | TH / EN</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
     <script src="data/usecases-data.js" defer></script>
     <script src="script.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#deck-stage">ข้ามไปยังเนื้อหาสไลด์</a>
+    <a class="skip-link" id="skip-link" href="#deck-stage">ข้ามไปยังเนื้อหาสไลด์</a>
 
     <div class="deck-shell" id="deck-shell">
       <header class="topbar">
         <button class="wordmark" id="home-button" type="button" aria-label="กลับไปสไลด์แรก">
           <span>CODEX</span>
-          <span class="wordmark__edition">FIELD GUIDE / TH</span>
+          <span class="wordmark__edition" id="wordmark-edition">FIELD GUIDE / TH</span>
         </button>
 
         <div class="topbar__status" aria-live="polite">
@@ -30,10 +30,14 @@
           <span class="slide-count" id="slide-count">01 / 103</span>
         </div>
 
-        <nav class="topbar__actions" aria-label="เครื่องมือนำเสนอ">
+        <nav class="topbar__actions" id="topbar-actions" aria-label="เครื่องมือนำเสนอ">
+          <div class="language-switch" id="language-switch" role="group" aria-label="ภาษา / Language" title="สลับภาษา / Switch language (L)">
+            <button class="language-switch__option" type="button" data-language="th" aria-pressed="true" aria-label="ภาษาไทย / Thai">TH</button>
+            <button class="language-switch__option" type="button" data-language="en" aria-pressed="false" aria-label="English / ภาษาอังกฤษ">EN</button>
+          </div>
           <button class="text-button" id="toc-button" type="button" aria-haspopup="dialog">
             <span class="text-button__key">O</span>
-            สารบัญ
+            <span id="toc-button-label">สารบัญ</span>
           </button>
           <button class="icon-button" id="fullscreen-button" type="button" aria-label="แสดงเต็มจอ" title="เต็มจอ (F)">
             <svg aria-hidden="true" viewBox="0 0 24 24">
@@ -53,10 +57,10 @@
         <div class="controlbar__buttons">
           <button class="nav-button" id="prev-button" type="button" aria-label="สไลด์ก่อนหน้า">
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7" /></svg>
-            <span>ก่อนหน้า</span>
+            <span id="prev-label">ก่อนหน้า</span>
           </button>
           <button class="nav-button nav-button--next" id="next-button" type="button" aria-label="สไลด์ถัดไป">
-            <span>ถัดไป</span>
+            <span id="next-label">ถัดไป</span>
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7" /></svg>
           </button>
         </div>
@@ -66,7 +70,7 @@
     <aside class="toc" id="toc" role="dialog" aria-modal="true" aria-labelledby="toc-title" hidden>
       <div class="toc__header">
         <div>
-          <p class="eyebrow eyebrow--light">NAVIGATE THE FIELD GUIDE</p>
+          <p class="eyebrow eyebrow--light" id="toc-kicker">NAVIGATE THE FIELD GUIDE</p>
           <h2 id="toc-title">เลือก use case ที่ใช่</h2>
         </div>
         <button class="icon-button icon-button--light" id="toc-close" type="button" aria-label="ปิดสารบัญ">
@@ -76,7 +80,7 @@
 
       <div class="toc__tools">
         <label class="search-field">
-          <span class="sr-only">ค้นหา use case</span>
+          <span class="sr-only" id="toc-search-label">ค้นหา use case</span>
           <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6" /><path d="m16 16 5 5" /></svg>
           <input id="toc-search" type="search" placeholder="ค้นหา เช่น รายงาน, ข้อมูล, ประชุม…" autocomplete="off">
         </label>
@@ -85,7 +89,7 @@
 
       <div class="toc__meta">
         <span id="toc-result-count">99 USE CASES</span>
-        <span>คลิกเพื่อไปยังสไลด์</span>
+        <span id="toc-meta-action">คลิกเพื่อไปยังสไลด์</span>
       </div>
       <div class="toc__list" id="toc-list"></div>
     </aside>
@@ -95,7 +99,7 @@
       <div class="prompt-drawer__panel">
         <div class="prompt-drawer__header">
           <div>
-            <p class="eyebrow">PROMPT STARTER</p>
+            <p class="eyebrow" id="prompt-kicker">PROMPT STARTER</p>
             <h2 id="prompt-title">เริ่มคุยกับ Codex แบบนี้</h2>
           </div>
           <button class="icon-button" id="prompt-close" type="button" aria-label="ปิดตัวอย่าง prompt">
@@ -104,10 +108,10 @@
         </div>
         <blockquote id="prompt-copy"></blockquote>
         <div class="prompt-drawer__actions">
-          <p>ปรับชื่อไฟล์ ช่วงเวลา และผลลัพธ์ให้ตรงกับงานของคุณ</p>
+          <p id="prompt-help">ปรับชื่อไฟล์ ช่วงเวลา และผลลัพธ์ให้ตรงกับงานของคุณ</p>
           <button class="copy-button" id="copy-prompt" type="button">
             <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="8" y="8" width="11" height="11" rx="2" /><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3" /></svg>
-            <span>คัดลอก Prompt</span>
+            <span id="copy-prompt-label">คัดลอก Prompt</span>
           </button>
         </div>
       </div>

@@ -1,0 +1,365 @@
+[
+  {
+    "index": 66,
+    "slug": "create-lesson-deck",
+    "workflowEn": [
+      { "label": "Gather materials", "detail": "Prepare the lesson plan, template, approved images, and accessibility requirements." },
+      { "label": "Set the sequence", "detail": "Define the lesson opener, content, examples, practice, and desired Exit Ticket." },
+      { "label": "Create slides", "detail": "Have ChatGPT create an editable slide deck with speaker notes and citations." },
+      { "label": "Review and refine", "detail": "Open the deck and improve its readability, teaching pace, and alignment with the plan." }
+    ],
+    "checkEn": "Have the instructor verify accuracy, learning sequence, accessibility, and image rights before teaching."
+  },
+  {
+    "index": 67,
+    "slug": "stalled-deal-diagnosis",
+    "workflowEn": [
+      { "label": "Gather the history", "detail": "Import stage history, call notes, emails, and any security, legal, or procurement issues." },
+      { "label": "Build a timeline", "detail": "Have ChatGPT order the events and separate facts from assumptions." },
+      { "label": "Identify blockers", "detail": "List likely causes, supporting evidence, prior attempts, and involved stakeholders." },
+      { "label": "Plan deal recovery", "detail": "Define the next action, owner, conditions, and a draft customer message." }
+    ],
+    "checkEn": "Have the deal owner validate the evidence and approve every message before customer contact or CRM changes."
+  },
+  {
+    "index": 68,
+    "slug": "business-impact-readout",
+    "workflowEn": [
+      { "label": "Frame the question", "detail": "State the initiative, target outcome, measurement period, and decision to be made." },
+      { "label": "Prepare the data", "detail": "Attach the experiment plan, metric definitions, cohort data, dashboard, and launch notes." },
+      { "label": "Analyze results", "detail": "Have ChatGPT calculate lift, check guardrails, and compare differences across segments." },
+      { "label": "Create the readout", "detail": "Build an impact readout with charts, methods, limitations, and a recommendation." }
+    ],
+    "checkEn": "Have an analyst or experiment owner verify the figures, calculations, and confidence level before deciding."
+  },
+  {
+    "index": 69,
+    "slug": "scenario-tradeoff-model",
+    "workflowEn": [
+      { "label": "Define the options", "detail": "State the decision, available options, time horizon, and key comparison criteria." },
+      { "label": "Gather inputs", "detail": "Attach the financial model, KPIs, plans, market context, and stakeholder constraints." },
+      { "label": "Model scenarios", "detail": "Have ChatGPT compare each option's cost, timing, risk, ownership, and impact." },
+      { "label": "Test assumptions", "detail": "Change key variables to find the points where the recommendation would change." }
+    ],
+    "checkEn": "Have the data owners confirm every assumption and cost before presenting the comparison in a meeting."
+  },
+  {
+    "index": 70,
+    "slug": "organize-lesson-unit-folder",
+    "workflowEn": [
+      { "label": "Identify core files", "detail": "Mark which files are authoritative, which are drafts, and which must not be moved." },
+      { "label": "Inventory the folder", "detail": "Have ChatGPT flag duplicates, unclear names, and outdated versions." },
+      { "label": "Propose a filing plan", "detail": "Design subfolders, naming rules, an Archive, and a README before making changes." },
+      { "label": "Organize and verify", "detail": "After approval, move or rename files, check links, and summarize every change." }
+    ],
+    "checkEn": "Confirm no files were deleted, links still work, and current versions remain easy to find after organizing."
+  },
+  {
+    "index": 71,
+    "slug": "organize-semester-workspace",
+    "workflowEn": [
+      { "label": "Gather official materials", "detail": "Collect each course's syllabus, assignments, readings, calendar, and existing folders." },
+      { "label": "Audit and separate", "detail": "Have ChatGPT separate official documents, personal notes, work in progress, and submitted work." },
+      { "label": "Create the structure", "detail": "Propose one folder per course, standard file names, a course index, and an Archive." },
+      { "label": "Build a tracker", "detail": "Extract deadlines from official sources with links and flag conflicting dates." }
+    ],
+    "checkEn": "Verify every deadline against official documents, and do not choose a date when sources conflict."
+  },
+  {
+    "index": 72,
+    "slug": "plan-budget-and-schedule",
+    "workflowEn": [
+      { "label": "Prepare the inputs", "detail": "Gather calendars, work shifts, commitments, income, expenses, and bills for the planning period." },
+      { "label": "Set constraints", "detail": "Specify the currency, pay cycle, and which commitments or expenses are fixed or flexible." },
+      { "label": "Build the dashboard", "detail": "Have ChatGPT show time conflicts, workload clusters, upcoming bills, and flexible spending." },
+      { "label": "Compare options", "detail": "Test changes to flexible time or spending to find a workable plan for the next week." }
+    ],
+    "checkEn": "Verify amounts and due dates at the source, and remove account numbers or unnecessary financial details before uploading."
+  },
+  {
+    "index": 73,
+    "slug": "prepare-committee-packet",
+    "workflowEn": [
+      { "label": "Frame the decision", "detail": "State the question, governing rules, evaluation criteria, decision owner, and deadline." },
+      { "label": "Gather evidence", "detail": "Attach prior minutes, policy drafts, feedback, and program data, noting each source's status." },
+      { "label": "Assemble the packet", "detail": "Have ChatGPT summarize evidence, options, tradeoffs, open issues, and the agenda." },
+      { "label": "Prepare the minutes", "detail": "Create a minutes template that clearly captures decisions, owners, and follow-up items." }
+    ],
+    "checkEn": "Verify citations, governing rules, confidential data, and fair treatment of differing views before distribution."
+  },
+  {
+    "index": 74,
+    "slug": "refresh-forecast-and-plan",
+    "workflowEn": [
+      { "label": "Prepare the model", "detail": "Attach the operating model, latest actuals, approved assumptions, owner inputs, and prior forecast." },
+      { "label": "Set the rules", "detail": "Identify changeable drivers, fixed assumptions, and definitions for base, upside, and downside." },
+      { "label": "Update scenarios", "detail": "Have ChatGPT update a separate model copy and make every assumption change visible." },
+      { "label": "Assess the impact", "detail": "Compare revenue, margin, hiring, cash, sensitivity, and trigger points across scenarios." }
+    ],
+    "checkEn": "Have the plan owner verify formulas and data links, then approve every changed assumption before sharing the forecast."
+  },
+  {
+    "index": 75,
+    "slug": "strategic-account-plan",
+    "workflowEn": [
+      { "label": "Gather account signals", "detail": "Attach account records, calls, email threads, usage notes, and the previous plan." },
+      { "label": "Check freshness", "detail": "Have ChatGPT flag stale data, changed stakeholders, discovery gaps, and open risks." },
+      { "label": "Refresh the strategy", "detail": "Build a stakeholder map, value hypothesis, objections, and proof points from the evidence." },
+      { "label": "Set next moves", "detail": "Tie each next-best action to supporting evidence, an owner, and a time frame." }
+    ],
+    "checkEn": "Have the account owner confirm the data and customer-safe content before updating CRM or sharing externally."
+  },
+  {
+    "index": 76,
+    "slug": "refresh-course-materials",
+    "workflowEn": [
+      { "label": "Set sources of truth", "detail": "Gather the syllabus, outcomes, slides, readings, assignments, rubrics, and calendar; mark official versions." },
+      { "label": "Audit the course", "detail": "Have ChatGPT map learning outcomes to lessons, assessments, and weekly workload." },
+      { "label": "Prioritize updates", "detail": "Flag outdated, duplicate, or misaligned content with evidence, impact, and effort." },
+      { "label": "Revise in batches", "detail": "After instructor approval, update files in groups while preserving originals and a change summary." }
+    ],
+    "checkEn": "Have the instructor verify sources, policies, accessibility, and every recommendation requiring academic judgment."
+  },
+  {
+    "index": 77,
+    "slug": "revise-lesson-package",
+    "workflowEn": [
+      { "label": "Sort the feedback", "detail": "Gather feedback, the approved file list, and any points needing confirmation before edits." },
+      { "label": "Plan by file", "detail": "Have ChatGPT map each feedback item to the affected file and content section." },
+      { "label": "Revise together", "detail": "After approval, update the deck, guide, handout, and answer key in one coordinated pass." },
+      { "label": "Check consistency", "detail": "Compare instructions, examples, answers, timing, and sources, then create a change log." }
+    ],
+    "checkEn": "Have the instructor confirm that examples, instructions, and answers match across all files before using the new version."
+  },
+  {
+    "index": 78,
+    "slug": "synthesize-research-evidence",
+    "workflowEn": [
+      { "label": "Define the evidence set", "detail": "Gather approved papers, notes, methods, prior proposals, and funder guidance." },
+      { "label": "Audit the inventory", "detail": "Have ChatGPT identify missing files, duplicates, and sources that cannot be opened." },
+      { "label": "Synthesize themes", "detail": "Organize evidence by theme, disagreement, methods limitations, research aims, and open questions." },
+      { "label": "Build an evidence table", "detail": "Link each substantive claim to its source and flag points needing faculty confirmation." }
+    ],
+    "checkEn": "Verify every citation against the original and preserve the study scope, population, methods, and uncertainty."
+  },
+  {
+    "index": 79,
+    "slug": "track-course-engagement",
+    "workflowEn": [
+      { "label": "Prepare de-identified data", "detail": "Use only approved, de-identified exports with metric definitions and a reporting period." },
+      { "label": "Define the joins", "detail": "Have ChatGPT show how LMS, attendance, gradebook, and assignment data will join before charting." },
+      { "label": "Build the dashboard", "detail": "Show engagement trends, completion gaps, assessment patterns, and data-quality warnings." },
+      { "label": "Create a review queue", "detail": "Draft questions for faculty review instead of diagnosing students or automating outreach." }
+    ],
+    "checkEn": "Reconcile totals and spot-check source records; confirm date range, section, and metric definitions before use."
+  },
+  {
+    "index": 80,
+    "slug": "track-job-applications",
+    "workflowEn": [
+      { "label": "Gather your evidence", "detail": "Prepare your resume, portfolio, and verified experience notes after removing sensitive details." },
+      { "label": "Analyze each role", "detail": "Have ChatGPT separate core and preferred requirements, evidence of fit, and gaps." },
+      { "label": "Build the tracker", "detail": "Create one row per role with its deadline, status, next action, and source link." },
+      { "label": "Draft and prepare", "detail": "Create a folder per role and draft a resume, cover letter, and interview questions for review." }
+    ],
+    "checkEn": "Verify every resume statement and interview answer against your real experience before using or submitting it."
+  },
+  {
+    "index": 81,
+    "slug": "ios-swiftui-view-refactor",
+    "workflowEn": [
+      { "label": "Set the scope", "detail": "Choose one screen file and note the behavior, layout, navigation, and business rules to preserve." },
+      { "label": "Analyze the structure", "detail": "Have Codex find sections suited to child Views and side effects mixed into the body." },
+      { "label": "Extract and manage state", "detail": "Use clear inputs, @Binding, and callbacks; move logic to the right service or model." },
+      { "label": "Validate each stage", "detail": "Run a build, preview, or focused test after each significant extraction." }
+    ],
+    "checkEn": "Review the diff and build or test results to confirm business logic, navigation, analytics, and appearance are unchanged."
+  },
+  {
+    "index": 82,
+    "slug": "build-student-website",
+    "workflowEn": [
+      { "label": "Define the users", "detail": "State the target audience, the site's main job, available content, and success criteria." },
+      { "label": "Limit the first version", "detail": "Choose only the pages and interactions required for the user's main journey." },
+      { "label": "Build and test", "detail": "Have Sites build a responsive site, then test navigation, links, forms, and keyboard access." },
+      { "label": "Prepare to publish", "detail": "Create a checklist for missing content, rights, privacy, accessibility, and approvals." }
+    ],
+    "checkEn": "Have the project owner verify content, links, image rights, privacy, and form-data destinations before publishing."
+  },
+  {
+    "index": 83,
+    "slug": "build-exam-study-system",
+    "workflowEn": [
+      { "label": "Define the exam scope", "detail": "Gather learning objectives, instructor guidance, notes, readings, exercises, and past quizzes." },
+      { "label": "Assess your time", "detail": "State the exam date, available study time, and topics where you lack confidence." },
+      { "label": "Build the practice system", "detail": "Have ChatGPT create a concept map, study guide, spaced-practice calendar, and question bank." },
+      { "label": "Adapt to results", "detail": "Update the tracker after each practice session and adjust the next round to address gaps." }
+    ],
+    "checkEn": "Verify exam scope, questions, and answers against official materials, and flag topics the instructor has not confirmed."
+  },
+  {
+    "index": 84,
+    "slug": "draft-prds-from-sources",
+    "workflowEn": [
+      { "label": "Identify the sources", "detail": "Point to the Linear project, Slack thread, Drive, or Notion content to use as evidence." },
+      { "label": "Define the PRD structure", "detail": "List required sections such as problem, users, requirements, metrics, launch, and risks." },
+      { "label": "Draft with citations", "detail": "Have ChatGPT use $documents to create the PRD with requirement-level citations." },
+      { "label": "Close the gaps", "detail": "Review the source appendix, conflicts, open questions, and claims lacking evidence." }
+    ],
+    "checkEn": "Have the PM and subject owners confirm requirements, decisions, and sources before sharing or updating work systems."
+  },
+  {
+    "index": 85,
+    "slug": "follow-goals",
+    "workflowEn": [
+      { "label": "Define the outcome", "detail": "Set the objective, boundaries that must not change, and verifiable completion criteria." },
+      { "label": "Point to context", "detail": "List the files, issue, documents, logs, or PLAN.md that Codex must read first." },
+      { "label": "Set checkpoints", "detail": "Define commands or artifacts that measure progress at each checkpoint." },
+      { "label": "Track the goal", "detail": "Use /goal to view status and pause, resume, or clear the goal when needed." }
+    ],
+    "checkEn": "Set a clear stopping condition and test evidence before starting, and review status when scope or risk changes."
+  },
+  {
+    "index": 86,
+    "slug": "ai-app-evals",
+    "workflowEn": [
+      { "label": "Choose one behavior", "detail": "Define one user promise, such as answer quality, grounding, or tool-call correctness." },
+      { "label": "Trace the real path", "detail": "Have Codex inspect the app path, prompts, adapters, and existing tests before proposing an eval plan." },
+      { "label": "Build the test set", "detail": "Add a Promptfoo config, sanitized fixtures, assertions, and a local run command." },
+      { "label": "Run a baseline", "detail": "Run the eval before changing behavior, then report passes, failures, and next tests." }
+    ],
+    "checkEn": "Ensure fixtures contain no sensitive data, assertions test real behavior, and product failures are not hidden by relaxed thresholds."
+  },
+  {
+    "index": 87,
+    "slug": "user-stories-to-ui-mocks",
+    "workflowEn": [
+      { "label": "Gather user voices", "detail": "Point to Slack, Linear, Drive, and research notes that explain the problem and context." },
+      { "label": "Synthesize the story", "detail": "Have ChatGPT turn the evidence into a user story, needs, constraints, and success criteria." },
+      { "label": "Explore designs", "detail": "Create several mock directions with ImageGen using the design system and existing information structure." },
+      { "label": "Build a prototype", "detail": "Choose a reviewed mock and have Codex turn it into a working prototype." }
+    ],
+    "checkEn": "Have users and the design team confirm the mock reflects the real problem and follows the design system before development."
+  },
+  {
+    "index": 88,
+    "slug": "build-and-deploy-internal-apps",
+    "workflowEn": [
+      { "label": "Choose the core task", "detail": "Identify the user, one task the app should support, and the data sources it should check." },
+      { "label": "Define storage", "detail": "Use D1 for structured data and R2 for user-uploaded files when needed." },
+      { "label": "Build and test", "detail": "Have Sites build the app, then test the main flow, persistence, and responsive layout." },
+      { "label": "Set access", "detail": "Keep it private during review, then choose invited users, the workspace, or anyone with the link." }
+    ],
+    "checkEn": "Review stored data, access permissions, and the selected audience before deploying or changing the app from private."
+  },
+  {
+    "index": 89,
+    "slug": "slack-action-triage",
+    "workflowEn": [
+      { "label": "Set the scope", "detail": "Specify the time period, workstream, people, or channels to review." },
+      { "label": "Find requests", "detail": "Have ChatGPT read relevant DMs, group DMs, mentions, and thread replies." },
+      { "label": "Check current status", "detail": "Read the end of each thread to skip requests already answered or handled." },
+      { "label": "Build the action queue", "detail": "Rank items by urgency and impact with evidence, a next step, and a draft reply." }
+    ],
+    "checkEn": "Open the source thread to confirm the item remains unresolved, then check the recipient and tone before sending any message."
+  },
+  {
+    "index": 90,
+    "slug": "react-native-expo-apps",
+    "workflowEn": [
+      { "label": "Inspect the project", "detail": "Have Codex determine whether this is a new Expo app or existing project and define one core workflow." },
+      { "label": "Build to standards", "detail": "Use Expo Router and npx expo install to maintain package compatibility." },
+      { "label": "Complete the experience", "detail": "Add native-feeling navigation, forms, lists, and loading, empty, and error states." },
+      { "label": "Test the fastest path", "detail": "Start with Expo Go or a simulator; move to a dev client or EAS only when needed." }
+    ],
+    "checkEn": "Verify results on a device or simulator and check package compatibility before creating a dev client or production build."
+  },
+  {
+    "index": 91,
+    "slug": "agent-friendly-clis",
+    "workflowEn": [
+      { "label": "Choose a repeat task", "detail": "Define the CLI's first task and its source of truth, such as API docs, an export, database, or script." },
+      { "label": "Design the commands", "detail": "Have Codex propose a narrow command surface for search, read, download, or drafting changes." },
+      { "label": "Build with a skill", "detail": "Use $cli-creator for commands and $skill-creator to document auth and approval boundaries." },
+      { "label": "Test like a user", "detail": "Install and call the CLI from another folder; check JSON, pagination, and error messages." }
+    ],
+    "checkEn": "Do not put secrets in the task, and ensure write commands require explicit approval before use on real data."
+  },
+  {
+    "index": 92,
+    "slug": "verified-operations-workflows",
+    "workflowEn": [
+      { "label": "Define the scope", "detail": "Specify the goal, inputs, approval source, runner, and artifact that will prove the result." },
+      { "label": "Validate and normalize", "detail": "Have ChatGPT check required fields and normalize dates, amounts, owners, and IDs without guessing." },
+      { "label": "Dry-run first", "detail": "Run a dry run when supported, then process only approved items." },
+      { "label": "Record and verify", "detail": "Log each success or failure, retry transient errors once, and summarize the evidence." }
+    ],
+    "checkEn": "Stop before irreversible actions or scope expansion, and have the owner review outcome evidence after the run."
+  },
+  {
+    "index": 93,
+    "slug": "event-launch-playbooks",
+    "workflowEn": [
+      { "label": "Gather planning sources", "detail": "Identify planning threads, approved documents, templates, and calendar deadlines." },
+      { "label": "Define required details", "detail": "List the audience, venue, timing, owners, support, and approvals each task needs." },
+      { "label": "Create two sections", "detail": "Have ChatGPT clearly separate attendee-facing copy from the private operating checklist." },
+      { "label": "Close open questions", "detail": "Complete the owner map, approvals, open questions, and source appendix before execution." }
+    ],
+    "checkEn": "Ensure public content contains no internal operational details and every date, owner, and approval has a verified source."
+  },
+  {
+    "index": 94,
+    "slug": "chatgpt-apps",
+    "workflowEn": [
+      { "label": "Choose the core outcome", "detail": "Define one task users should complete in ChatGPT and limit the app to 3-5 tools." },
+      { "label": "Design the contract", "detail": "Define tool names, metadata, inputs, outputs, and whether v1 needs a widget." },
+      { "label": "Build the core", "detail": "Have Codex scaffold the MCP server and widget using repo patterns before adding auth." },
+      { "label": "Test in ChatGPT", "detail": "Open it over HTTPS in developer mode and try direct, indirect, and negative prompts." }
+    ],
+    "checkEn": "Test tool payloads and conversation flow in ChatGPT; add OAuth only for user data or write actions."
+  },
+  {
+    "index": 95,
+    "slug": "audit-workflow",
+    "workflowEn": [
+      { "label": "Frame the process", "detail": "Define users, inputs, outputs, scope, review date, and workflow constraints." },
+      { "label": "Gather work evidence", "detail": "Attach process docs, trackers, handoff notes, tickets, KPIs, and team discussions." },
+      { "label": "Map the real process", "detail": "Have ChatGPT compare the documented and actual process to find owners, stuck points, and missing data." },
+      { "label": "Select automation targets", "detail": "Rank repeated steps by risk, data quality, and verification cost, then draft two specs." }
+    ],
+    "checkEn": "Have process owners review permissions, exception paths, irreversible actions, and ownership before automation."
+  },
+  {
+    "index": 96,
+    "slug": "launch-campaign-kit",
+    "workflowEn": [
+      { "label": "Gather launch inputs", "detail": "Attach approved launch plans, product notes, trackers, creative briefs, pages, and discussions." },
+      { "label": "Identify gaps", "detail": "Have ChatGPT flag claims, assets, audiences, and destinations that are missing or awaiting review." },
+      { "label": "Draft the campaign kit", "detail": "Create email, internal announcement, social post, content plan, briefs, and status update." },
+      { "label": "Build the approval list", "detail": "Map each asset to product, legal, and brand reviews and any related staging issues." }
+    ],
+    "checkEn": "Verify claims against product sources, separate public copy from internal data, and get product, legal, and brand approval."
+  },
+  {
+    "index": 97,
+    "slug": "consolidate-spreadsheets",
+    "workflowEn": [
+      { "label": "Define joining rules", "detail": "Specify the join key, duplicate rule, period definitions, targets, and required output views." },
+      { "label": "Attach source files", "detail": "Prepare exports, mapping notes, and reporting requirements while preserving the originals." },
+      { "label": "Build the workbook", "detail": "Have ChatGPT create joins, formulas, charts, and insights with a review section for mismatches." },
+      { "label": "Test the refresh", "detail": "Simulate the next data cycle and separate repeatable steps from decisions that still need a person." }
+    ],
+    "checkEn": "Verify formulas, join mismatches, and assumptions against originals whenever source files or reporting rules change."
+  },
+  {
+    "index": 98,
+    "slug": "weekly-work-summary",
+    "workflowEn": [
+      { "label": "Define the week", "detail": "Specify the date range, audience, and level of detail for the report." },
+      { "label": "Identify work sources", "detail": "List the trackers, documents, calendars, and discussion channels covering that period." },
+      { "label": "Draft the summary", "detail": "Have ChatGPT summarize completed work, decisions, blockers, follow-ups, and next priorities with links." },
+      { "label": "Verify and tune", "detail": "Check key points against source discussions and adjust the length for the audience." }
+    ],
+    "checkEn": "Verify decisions, blockers, and follow-ups against source materials, and remove sensitive information before sharing."
+  }
+]

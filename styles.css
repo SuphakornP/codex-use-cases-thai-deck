@@ -261,6 +261,44 @@ svg {
   gap: 8px;
 }
 
+.language-switch {
+  display: inline-grid;
+  flex: 0 0 auto;
+  padding: 2px;
+  grid-template-columns: repeat(2, 30px);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: rgba(255, 253, 247, 0.42);
+}
+
+.language-switch__option {
+  display: grid;
+  width: 30px;
+  height: 28px;
+  padding: 0;
+  place-items: center;
+  color: var(--ink-soft);
+  background: transparent;
+  border-radius: 999px;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  transition:
+    color 160ms ease,
+    background 160ms ease;
+}
+
+.language-switch__option:hover {
+  color: var(--ink);
+}
+
+.language-switch__option[aria-pressed="true"] {
+  color: var(--paper-bright);
+  background: var(--ink);
+}
+
 .text-button,
 .icon-button,
 .nav-button,
@@ -324,6 +362,7 @@ svg {
 .copy-button:focus-visible,
 .prompt-button:focus-visible,
 .wordmark:focus-visible,
+.language-switch__option:focus-visible,
 .toc-item:focus-visible,
 .category-chip:focus-visible,
 .map-item:focus-visible {
@@ -365,6 +404,10 @@ svg {
   animation: slide-in-backward 560ms var(--ease-out) both;
 }
 
+.slide.is-language-changing {
+  animation: language-change 220ms var(--ease-out) both;
+}
+
 .slide.is-entering .reveal {
   animation: reveal-up 640ms var(--ease-out) both;
   animation-delay: calc(120ms + var(--reveal-order, 0) * 70ms);
@@ -386,6 +429,13 @@ svg {
   from {
     opacity: 0;
     transform: translateX(-3.5%);
+  }
+}
+
+@keyframes language-change {
+  from {
+    opacity: 0.55;
+    transform: translateY(4px);
   }
 }
 
@@ -467,7 +517,7 @@ svg {
 
 .cover h1 span {
   display: block;
-  margin-top: 0.08em;
+  margin-top: 0.16em;
   color: #ff7950;
 }
 
@@ -546,6 +596,11 @@ svg {
   margin-top: 0.16em;
   color: var(--accent);
   font-style: normal;
+}
+
+html[lang="en"] .closing-copy h2 {
+  font-size: clamp(2.5rem, 3.8vw, 4.6rem);
+  line-height: 1.16;
 }
 
 .framing-copy > p,
@@ -841,7 +896,7 @@ svg {
   text-wrap: balance;
 }
 
-.case-heading__en {
+.case-heading__secondary {
   display: block;
   margin-top: clamp(12px, 1.8vh, 18px);
   color: var(--ink-soft);
@@ -1258,7 +1313,7 @@ svg {
   transition: color 160ms ease;
 }
 
-.toc-item__en {
+.toc-item__secondary {
   display: block;
   overflow: hidden;
   margin-top: 6px;
@@ -1517,6 +1572,21 @@ svg {
     margin-right: 8px;
   }
 
+  .topbar__actions {
+    gap: 5px;
+  }
+
+  .language-switch {
+    padding: 1px;
+    grid-template-columns: repeat(2, 27px);
+  }
+
+  .language-switch__option {
+    width: 27px;
+    height: 27px;
+    font-size: 0.58rem;
+  }
+
   .text-button {
     padding-inline: 7px;
   }
@@ -1616,7 +1686,7 @@ svg {
     font-size: clamp(2rem, 10.5vw, 3.35rem);
   }
 
-  .case-heading__en {
+  .case-heading__secondary {
     margin-top: 12px;
     font-size: 0.68rem;
   }
