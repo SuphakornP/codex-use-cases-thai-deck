@@ -51,3 +51,7 @@ python3 scripts/build_deck_data.py
 ## Source และการใช้งานภาพ
 
 เนื้อหาเป็นบทสรุปภาษาไทยเพื่อการเรียนรู้ ไม่ใช่สื่อทางการของ OpenAI ทุกสไลด์มีลิงก์ไปยังหน้าต้นฉบับ ภาพประกอบถูกเก็บจากหน้า official use cases เพื่อใช้ใน presentation นี้ ควรตรวจเงื่อนไขการใช้งานของ OpenAI ก่อนเผยแพร่ต่อสาธารณะหรือใช้เชิงพาณิชย์
+
+## License
+
+โค้ดต้นฉบับของโปรเจกต์เผยแพร่ภายใต้ [MIT License](LICENSE) ส่วนภาพ เนื้อหาที่อ้างอิงแหล่งข้อมูลภายนอก และฟอนต์ไม่อยู่ภายใต้ MIT License โปรดดู [Third-party notices](THIRD_PARTY_NOTICES.md) และ [SIL Open Font License 1.1](assets/fonts/OFL-1.1.txt) สำหรับรายละเอียด
