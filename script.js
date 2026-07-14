@@ -110,7 +110,7 @@
           <div class="cover__kicker reveal" style="--reveal-order: 0">
             <p class="eyebrow eyebrow--light">99 OFFICIAL USE CASES · THAI EDITION</p>
           </div>
-          <h1 class="reveal" style="--reveal-order: 1">Codex<br /><span>ฉบับคนทำงาน</span></h1>
+          <h1 class="reveal" style="--reveal-order: 1">Codex<span>ฉบับคนทำงาน</span></h1>
           <p class="cover__subhead reveal" style="--reveal-order: 2">
             จาก “อยากให้งานเสร็จ” สู่ workflow ที่มอบหมาย ตรวจสอบ และนำไปใช้ได้จริง — โดยไม่ต้องเป็นคนเขียนโค้ด
           </p>
@@ -132,7 +132,7 @@
         <div class="framing-grid">
           <section class="framing-copy">
             <p class="eyebrow reveal" style="--reveal-order: 0">THE WORKING LOOP</p>
-            <h2 class="reveal" style="--reveal-order: 1">Codex ไม่ใช่ช่องถามตอบ<br /><em>แต่คือพื้นที่ทำงานร่วมกัน</em></h2>
+            <h2 class="reveal" style="--reveal-order: 1">Codex ไม่ใช่ช่องถามตอบ<em>แต่คือพื้นที่ทำงานร่วมกัน</em></h2>
             <p class="reveal" style="--reveal-order: 2">เริ่มจากงานเล็กที่มีคำตอบให้ตรวจได้ แล้วค่อยเพิ่มสิทธิ์ แหล่งข้อมูล และความถี่เมื่อ workflow เชื่อถือได้</p>
           </section>
           <section class="work-loop" aria-label="วงจรการทำงาน 4 ขั้น">
@@ -159,7 +159,7 @@
         <div class="map-layout">
           <section class="map-heading">
             <p class="eyebrow reveal" style="--reveal-order: 0">8 ROUTES · 99 USE CASES</p>
-            <h2 class="reveal" style="--reveal-order: 1">เริ่มจาก<br /><em>งานที่คุณมีอยู่แล้ว</em></h2>
+            <h2 class="reveal" style="--reveal-order: 1">เริ่มจาก<em>งานที่คุณมีอยู่แล้ว</em></h2>
             <p class="reveal" style="--reveal-order: 2">เลือกหมวดเพื่อเปิดสารบัญ หรือเลื่อนไปตามลำดับจากเอกสารทางการ ซึ่งรวมทั้ง Codex และ ChatGPT workflows</p>
           </section>
           <section class="map-list" aria-label="หมวด use case">
@@ -246,7 +246,7 @@
         <div class="closing-layout">
           <section class="closing-copy">
             <p class="eyebrow eyebrow--light reveal" style="--reveal-order: 0">YOUR FIRST WORKFLOW</p>
-            <h2 class="reveal" style="--reveal-order: 1">อย่าเริ่มจาก “Codex ทำอะไรได้?”<br /><em>เริ่มจาก “งานไหนควรดีขึ้น?”</em></h2>
+            <h2 class="reveal" style="--reveal-order: 1">อย่าเริ่มจาก “Codex ทำอะไรได้?”<em>เริ่มจาก “งานไหนควรดีขึ้น?”</em></h2>
             <p class="reveal" style="--reveal-order: 2">เลือกหนึ่ง use case ทำรอบแรกแบบมีคนตรวจ แล้วเก็บ prompt และเกณฑ์คุณภาพไว้ใช้ซ้ำ</p>
           </section>
           <section class="closing-questions" aria-label="คำถามก่อนเริ่ม">

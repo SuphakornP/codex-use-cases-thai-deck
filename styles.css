@@ -460,12 +460,14 @@ svg {
   font-family: "Chakra Petch", sans-serif;
   font-size: clamp(3.7rem, 7.1vw, 7.8rem);
   font-weight: 600;
-  letter-spacing: -0.065em;
-  line-height: 0.9;
+  letter-spacing: -0.035em;
+  line-height: 1.12;
+  text-wrap: balance;
 }
 
 .cover h1 span {
   display: block;
+  margin-top: 0.08em;
   color: #ff7950;
 }
 
@@ -532,13 +534,16 @@ svg {
   font-family: "Chakra Petch", sans-serif;
   font-size: clamp(2.65rem, 5vw, 5.8rem);
   font-weight: 600;
-  letter-spacing: -0.055em;
-  line-height: 0.98;
+  letter-spacing: -0.025em;
+  line-height: 1.22;
+  text-wrap: balance;
 }
 
 .framing-copy h2 em,
 .map-heading h2 em,
 .closing-copy h2 em {
+  display: block;
+  margin-top: 0.16em;
   color: var(--accent);
   font-style: normal;
 }
@@ -831,18 +836,19 @@ svg {
   font-family: "Chakra Petch", sans-serif;
   font-size: clamp(2.6rem, 4.15vw, 5.1rem);
   font-weight: 600;
-  letter-spacing: -0.055em;
-  line-height: 0.98;
+  letter-spacing: -0.025em;
+  line-height: 1.18;
+  text-wrap: balance;
 }
 
 .case-heading__en {
   display: block;
-  margin-top: 12px;
+  margin-top: clamp(12px, 1.8vh, 18px);
   color: var(--ink-soft);
   font-size: clamp(0.72rem, 0.9vw, 0.9rem);
   font-weight: 500;
   letter-spacing: 0.025em;
-  line-height: 1.35;
+  line-height: 1.45;
 }
 
 .prompt-button {
@@ -1128,8 +1134,9 @@ svg {
   font-family: "Chakra Petch", sans-serif;
   font-size: clamp(2rem, 4vw, 4.5rem);
   font-weight: 600;
-  letter-spacing: -0.05em;
-  line-height: 1;
+  letter-spacing: -0.02em;
+  line-height: 1.18;
+  text-wrap: balance;
 }
 
 .toc__tools {
@@ -1254,9 +1261,10 @@ svg {
 .toc-item__en {
   display: block;
   overflow: hidden;
-  margin-top: 3px;
+  margin-top: 6px;
   color: rgba(255, 255, 255, 0.46);
   font-size: 0.7rem;
+  line-height: 1.35;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -1370,6 +1378,8 @@ svg {
   margin: 0;
   font-family: "Chakra Petch", sans-serif;
   font-size: clamp(2rem, 6vw, 5rem);
+  line-height: 1.2;
+  text-wrap: balance;
 }
 
 .empty-state p {
@@ -1607,7 +1617,7 @@ svg {
   }
 
   .case-heading__en {
-    margin-top: 8px;
+    margin-top: 12px;
     font-size: 0.68rem;
   }
 
@@ -1666,6 +1676,12 @@ svg {
 }
 
 @media (max-height: 820px) and (min-width: 901px) {
+  .slide--framing,
+  .slide--map,
+  .slide--closing {
+    overflow-y: auto;
+  }
+
   .case-main {
     padding-top: 24px;
     padding-bottom: 22px;
