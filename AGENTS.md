@@ -19,7 +19,7 @@ Use two-space indentation for HTML, CSS, JavaScript, TypeScript, and JSON; use f
 
 ## Testing Guidelines
 
-Tests use Node's built-in `node:test` framework and follow the `*.test.mjs` naming pattern. Add focused assertions for worker rendering or hosting behavior in `tests/site-worker.test.mjs`. There is no numeric coverage threshold. For visual changes, manually verify desktop and mobile layouts, keyboard navigation, prompt drawers, and direct hash links.
+Tests use Node's built-in `node:test` framework and follow the `*.test.mjs` naming pattern. Add focused assertions for worker rendering or hosting behavior in `tests/site-worker.test.mjs`. There is no numeric coverage threshold. For visual changes, verify desktop and mobile layouts, keyboard navigation, prompt drawers, and direct hash links. If standalone Playwright is unavailable or fails, switch directly to the in-app Browser plugin for visual QA; do not let Playwright setup block testing.
 
 ## Change Documentation
 
