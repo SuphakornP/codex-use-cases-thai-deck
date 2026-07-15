@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-The presentation source lives at the repository root: `index.html`, `styles.css`, and `script.js`. The Vinext/Sites wrapper is under `app/`, with the Cloudflare worker entry point in `worker/` and build integration in `build/`. Thai slide copy is maintained in `data/usecases-th-*.json`, while `data/usecases-en-*.json` contains the reviewed English workflow and checkpoint copy; `data/usecases-data.js` is generated output. Source-refresh and packaging helpers live in `scripts/`. Tests are in `tests/`, fonts and official use-case artwork are in `assets/`, and generated `public/` and `dist/` directories must not be edited by hand.
+Core presentation files live at the repository root: `index.html`, `styles.css`, and `script.js`. The Vinext/Sites wrapper is in `app/`, with worker and build integration in `worker/` and `build/`. Thai copy is maintained in `data/usecases-th-*.json`; reviewed English workflow copy is in `data/usecases-en-*.json`; `data/usecases-data.js` is generated. Helpers live in `scripts/`, tests in `tests/`, and fonts and artwork in `assets/`. Never edit generated `public/` or `dist/` files by hand.
 
 ## Build, Test, and Development Commands
 
@@ -15,11 +15,15 @@ The presentation source lives at the repository root: `index.html`, `styles.css`
 
 ## Coding Style & Naming Conventions
 
-Use two-space indentation for HTML, CSS, JavaScript, TypeScript, and JSON; use four spaces for Python. Prefer double quotes in JavaScript/TypeScript, semicolons, `camelCase` functions and variables, `PascalCase` React components, and kebab-case use-case slugs such as `daily-work-brief`. Preserve Thai copy as Unicode, but keep identifiers and technical comments in English. Reuse existing helpers and avoid unsafe casts or silent error handling. No formatter or linter is currently configured, so follow nearby code and run `npx tsc --noEmit` before submitting TypeScript changes.
+Use two-space indentation for HTML, CSS, JavaScript, TypeScript, and JSON; use four spaces for Python. Prefer double quotes, semicolons, `camelCase` functions and variables, `PascalCase` React components, and kebab-case slugs such as `daily-work-brief`. Preserve Thai copy as Unicode, but keep identifiers and technical comments in English. Reuse helpers and avoid unsafe casts or silent error handling. Follow nearby code and run `npx tsc --noEmit` for TypeScript changes.
 
 ## Testing Guidelines
 
 Tests use Node's built-in `node:test` framework and follow the `*.test.mjs` naming pattern. Add focused assertions for worker rendering or hosting behavior in `tests/site-worker.test.mjs`. There is no numeric coverage threshold. For visual changes, manually verify desktop and mobile layouts, keyboard navigation, prompt drawers, and direct hash links.
+
+## Change Documentation
+
+Update `CHANGELOG.md` in the same change whenever source, content, configuration, or documentation changes. Add one concise bullet under `Unreleased`; group related edits and omit rebuild-only changes to generated files.
 
 ## Commit & Pull Request Guidelines
 

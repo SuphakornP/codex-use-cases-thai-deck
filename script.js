@@ -138,6 +138,8 @@
         accent: "ฉบับคนทำงาน",
         subhead:
           "จาก “อยากให้งานเสร็จ” สู่ workflow ที่มอบหมาย ตรวจสอบ และนำไปใช้ได้จริง — โดยไม่ต้องเป็นคนเขียนโค้ด",
+        authorLabel: "ผู้จัดทำ",
+        author: "Suphakorn P.",
         footer: "สรุปจากเอกสารทางการ ณ 13 ก.ค. 2026 · เอกสารเพื่อการเรียนรู้ ไม่ใช่สื่อทางการของ OpenAI",
       },
       framing: {
@@ -183,6 +185,8 @@
         accent: "for knowledge work",
         subhead:
           "Move from “I need this done” to a workflow you can delegate, review, and reuse — no coding background required.",
+        authorLabel: "Created by",
+        author: "Suphakorn P.",
         footer:
           "Summarized from official documentation as of July 13, 2026 · For learning; not official OpenAI material",
       },
@@ -368,7 +372,11 @@
           <h1 class="reveal" style="--reveal-order: 1">${escapeHTML(content.title)}<span>${escapeHTML(content.accent)}</span></h1>
           <p class="cover__subhead reveal" style="--reveal-order: 2">${escapeHTML(content.subhead)}</p>
         </div>
-        <div class="cover__stamp reveal" style="--reveal-order: 3">SOURCE<br />OPENAI<br />USE CASES</div>
+        <p class="cover__author reveal" style="--reveal-order: 3">
+          <span>${escapeHTML(content.authorLabel)}</span>
+          <strong>${escapeHTML(content.author)}</strong>
+        </p>
+        <div class="cover__stamp reveal" style="--reveal-order: 4">SOURCE<br />OPENAI<br />USE CASES</div>
         <p class="cover__footer">${escapeHTML(content.footer)}</p>
       </article>`;
   }

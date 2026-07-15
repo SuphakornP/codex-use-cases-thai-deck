@@ -529,6 +529,33 @@ svg {
   line-height: 1.55;
 }
 
+.cover__author {
+  position: absolute;
+  z-index: 3;
+  bottom: clamp(24px, 4vh, 48px);
+  left: clamp(30px, 5.5vw, 90px);
+  display: flex;
+  margin: 0;
+  gap: 12px;
+  align-items: baseline;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.cover__author span {
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.cover__author strong {
+  color: var(--paper-bright);
+  font-size: 0.98rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
 .cover__footer {
   position: absolute;
   z-index: 3;
@@ -1630,6 +1657,11 @@ html[lang="en"] .closing-copy h2 {
 
   .cover__footer {
     display: none;
+  }
+
+  .cover__author {
+    bottom: 24px;
+    left: 22px;
   }
 
   .slide--framing,

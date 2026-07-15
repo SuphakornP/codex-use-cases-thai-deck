@@ -1,5 +1,6 @@
 .DS_Store
 .playwright-cli/
+.openai/hosting.json
 .next/
 .wrangler/
 node_modules/
