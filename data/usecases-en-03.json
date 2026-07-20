@@ -283,7 +283,7 @@
       { "label": "Build with a skill", "detail": "Use $cli-creator for commands and $skill-creator to document auth and approval boundaries." },
       { "label": "Test like a user", "detail": "Install and call the CLI from another folder; check JSON, pagination, and error messages." }
     ],
-    "checkEn": "Do not put secrets in the task, and ensure write commands require explicit approval before use on real data."
+    "checkEn": "Do not put secrets in the chat, and ensure write commands require explicit approval before use on real data."
   },
   {
     "index": 92,

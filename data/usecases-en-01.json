@@ -28,7 +28,7 @@
       { "label": "Gather feedback", "detail": "Name the Slack, GitHub, survey, or document sources ChatGPT should review." },
       { "label": "Cluster the themes", "detail": "Create a Sheet or Doc with repeated themes, evidence, confidence, and open questions." },
       { "label": "Review as a team", "detail": "Check the interpretation, split mixed themes, and select items for product or engineering." },
-      { "label": "Create follow-ups", "detail": "Draft updates or issues in the same task and revisit them when new feedback arrives." }
+      { "label": "Create follow-ups", "detail": "Draft updates or issues in the same chat and revisit them when new feedback arrives." }
     ],
     "checkEn": "Remove names and private quotes, and make sure every important theme links back to its source."
   },
@@ -50,7 +50,7 @@
       { "label": "Attach the data", "detail": "Attach the raw file or point to the Google Sheet for this question." },
       { "label": "Ask one question", "detail": "Start with one clear business question and verify column names before calculating." },
       { "label": "Create a visual answer", "detail": "Ask ChatGPT to calculate, summarize, and build a clear HTML visualization." },
-      { "label": "Drill down", "detail": "Open the chart and compare another period, group, or condition in the same task." }
+      { "label": "Drill down", "detail": "Open the chart and compare another period, group, or condition in the same chat." }
     ],
     "checkEn": "Verify metric definitions, filters, date ranges, and record counts before using the findings to decide."
   },
@@ -179,7 +179,7 @@
     "index": 16,
     "slug": "use-your-computer-with-codex",
     "workflowEn": [
-      { "label": "Prepare the apps", "detail": "Open and sign in to the required apps, and avoid two tasks using the same app at once." },
+      { "label": "Prepare the apps", "detail": "Open and sign in to the required apps, and avoid two chats controlling the same app at once." },
       { "label": "State the outcome", "detail": "Start with @Computer and describe the task, apps, and completed result you expect." },
       { "label": "Monitor the work", "detail": "Watch picture-in-picture and approve access only when requested." },
       { "label": "Verify the changes", "detail": "Ask for an action summary and inspect the final state in each source app." }
@@ -215,7 +215,7 @@
       { "label": "Open the target", "detail": "Open the relevant route or component and prepare the target viewport or reference image." },
       { "label": "Request one change", "detail": "Change only one item per round: spacing, alignment, color, copy, or state." },
       { "label": "Keep the edit small", "detail": "Reuse existing components and tokens without touching unrelated routing or data flow." },
-      { "label": "Review and iterate", "detail": "Inspect the browser result, then give the next focused adjustment in the same task." }
+      { "label": "Review and iterate", "detail": "Inspect the browser result, then give the next focused adjustment in the same chat." }
     ],
     "checkEn": "Check other states, breakpoints, and the component's accessibility for unintended effects."
   },
@@ -225,7 +225,7 @@
     "workflowEn": [
       { "label": "Connect Slack and the repo", "detail": "Install the Slack app and map the correct channel, repository, and environment." },
       { "label": "Assign work in a thread", "detail": "Mention @Codex with the problem, scope, constraints, and expected output." },
-      { "label": "Follow the task link", "detail": "Review Codex's analysis, changes, and verification from the linked task." },
+      { "label": "Follow the chat link", "detail": "Review Codex's analysis, changes, and verification from the linked chat." },
       { "label": "Review and refine", "detail": "Check the diff and tests, then request focused follow-up changes in the thread." }
     ],
     "checkEn": "Confirm the repository and environment, then review the diff and test results before merging."
@@ -334,9 +334,9 @@
     "slug": "deep-security-scan",
     "workflowEn": [
       { "label": "Confirm scope and access", "detail": "Name the authorized repository or folder and do not expand beyond it." },
-      { "label": "Add system context", "detail": "Document architecture, trust boundaries, build steps, and validation guidance in AGENTS.md." },
-      { "label": "Run a deep scan", "detail": "Let the plugin perform repeated discovery, validation, and attack-path analysis." },
-      { "label": "Review before fixing", "detail": "Inspect affected locations, reachability, evidence, and proof gaps, then fix one finding at a time." }
+      { "label": "Set security context", "detail": "Put architecture, trust boundaries, invariants, exclusions, and severity rules in SECURITY.md; keep build and test commands in AGENTS.md." },
+      { "label": "Run a deep scan", "detail": "Let the plugin repeat discovery, validation, and attack-path analysis, then produce finding reports and hardening guidance." },
+      { "label": "Review before fixing", "detail": "Inspect the scan directory, report.md, detailed findings, hardening portfolio, and proof gaps before fixing one finding." }
     ],
     "checkEn": "A security expert must confirm reachability, severity, and impact before disclosure or remediation."
   },

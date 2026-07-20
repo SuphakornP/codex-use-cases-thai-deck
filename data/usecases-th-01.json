@@ -77,7 +77,7 @@
       },
       {
         "label": "สร้างงานติดตาม",
-        "detail": "ใช้ task เดิมร่างอัปเดตหรือ issue และตั้งตรวจซ้ำเมื่อแหล่ง feedback มีข้อมูลใหม่"
+        "detail": "ใช้แชตเดิมร่างอัปเดตหรือ issue และตั้งตรวจซ้ำเมื่อแหล่ง feedback มีข้อมูลใหม่"
       }
     ],
     "promptTh": "ช่วยสังเคราะห์ feedback เรื่อง [หัวข้อ] จาก [แหล่งข้อมูล] เป็น review sheet โดยรวมเรื่องซ้ำ ใส่ลิงก์หลักฐาน ระดับความมั่นใจ และงานที่ควรติดตาม ห้ามโพสต์หรือสร้าง issue",
@@ -133,7 +133,7 @@
       },
       {
         "label": "เจาะต่ออย่างมีเหตุผล",
-        "detail": "เปิดกราฟแล้วขอเปรียบเทียบช่วงเวลา กลุ่ม หรือเงื่อนไขเพิ่มเติมใน task เดิม"
+        "detail": "เปิดกราฟแล้วขอเปรียบเทียบช่วงเวลา กลุ่ม หรือเงื่อนไขเพิ่มเติมในแชตเดิม"
       }
     ],
     "promptTh": "วิเคราะห์ @[ชื่อไฟล์] เพื่อตอบว่า [คำถาม] ตรวจคอลัมน์ก่อนคำนวณ และสร้าง visualization แบบ HTML ที่อธิบายผลเป็นภาษาง่าย",
@@ -189,7 +189,7 @@
       },
       {
         "label": "ปรับและรันใหม่",
-        "detail": "แก้ threshold หรือเพิ่ม reference atlas ใน task เดิมโดยเก็บ raw counts และบันทึกเหตุผลเดิมไว้"
+        "detail": "แก้ threshold หรือเพิ่ม reference atlas ในแชตเดิมโดยเก็บ raw counts และบันทึกเหตุผลเดิมไว้"
       }
     ],
     "promptTh": "ใช้ NGS Analysis plugin ทำ QC และ annotation ให้ชุดข้อมูล scRNA-seq @[พาธ] เลือก threshold จาก distribution เก็บ raw counts และส่ง QC summary, UMAP กับ filtered .h5ad",
@@ -553,7 +553,7 @@
       },
       {
         "label": "ตรวจและวนรอบ",
-        "detail": "ดูผลใน browser แล้วส่งคำปรับถัดไปที่เจาะจงใน task เดิม"
+        "detail": "ดูผลใน browser แล้วส่งคำปรับถัดไปที่เจาะจงในแชตเดิม"
       }
     ],
     "promptTh": "แก้ UI จุดนี้: [รายละเอียดเดียว] ที่ [route/component] โดยเปลี่ยนเฉพาะไฟล์จำเป็น ใช้ token เดิม และตรวจผลใน browser ก่อนหยุด",
@@ -577,7 +577,7 @@
       },
       {
         "label": "ติดตามผ่านลิงก์",
-        "detail": "เปิด task link เพื่อดูการวิเคราะห์ การเปลี่ยนแปลง และการตรวจสอบที่ Codex ทำ"
+        "detail": "เปิดลิงก์แชตเพื่อดูการวิเคราะห์ การเปลี่ยนแปลง และการตรวจสอบที่ Codex ทำ"
       },
       {
         "label": "ทบทวนและต่อยอด",
@@ -721,7 +721,7 @@
       },
       {
         "label": "เปิดลิงก์ตรวจจริง",
-        "detail": "ตรวจ URL บน desktop และ mobile แล้วแก้จาก build log หรือปัญหาหน้าเว็บใน task เดิม"
+        "detail": "ตรวจ URL บน desktop และ mobile แล้วแก้จาก build log หรือปัญหาหน้าเว็บในแชตเดิม"
       }
     ],
     "promptTh": "ใช้ @build-web-apps ทำ [repo/แบบ] ให้เป็นเว็บไซต์ที่ใช้งานได้ รัน local build แล้วใช้ @vercel deploy เป็น preview พร้อมส่ง live URL และข้อจำกัดที่ยังเหลือ",
@@ -844,7 +844,7 @@
     "slug": "deep-security-scan",
     "titleTh": "สแกนความปลอดภัยเชิงลึก",
     "titleEn": "Run a deep security scan",
-    "summaryTh": "ใช้ Codex Security plugin ตรวจ repository ที่ได้รับอนุญาตหลายรอบ ยืนยันช่องโหว่ที่เป็นไปได้ และจัดทำรายงานพร้อมหลักฐานกับจุดที่ยังต้องพิสูจน์",
+    "summaryTh": "ใช้ Codex Security plugin ตรวจ repository ที่ได้รับอนุญาตหลายรอบ ยืนยันช่องโหว่ที่เป็นไปได้ และจัดทำรายงาน finding โดยละเอียดพร้อมแนวทาง hardening เชิงโครงสร้าง",
     "categoryTh": "วิทยาศาสตร์และความปลอดภัย",
     "workflow": [
       {
@@ -852,19 +852,19 @@
         "detail": "ระบุ repository หรือ folder ที่ได้รับอนุญาตและห้ามขยายออกนอกพื้นที่นั้น"
       },
       {
-        "label": "เติมบริบทระบบ",
-        "detail": "บันทึก architecture, trust boundary, build และ validation guidance ใน AGENTS.md เมื่อมี"
+        "label": "กำหนดบริบทความปลอดภัย",
+        "detail": "บันทึก architecture, trust boundary, invariant, exclusion และเกณฑ์ severity ใน SECURITY.md ส่วนคำสั่ง build/test เก็บใน AGENTS.md"
       },
       {
         "label": "รันการสแกนลึก",
-        "detail": "ให้ plugin ทำ discovery หลายรอบ validation และ attack-path analysis จนได้รายงาน"
+        "detail": "ให้ plugin ทำ discovery, validation และ attack-path analysis หลายรอบ พร้อมรายงานราย finding และแนวทาง hardening"
       },
       {
-        "label": "ทบทวนก่อนแก้",
-        "detail": "ตรวจ affected locations, reachability, evidence และ proof gaps แล้วเลือกแก้ทีละ finding"
+        "label": "ทบทวนผลก่อนแก้",
+        "detail": "ตรวจ scan directory, report.md, รายงาน finding, hardening portfolio และ proof gaps แล้วเลือกแก้ทีละรายการ"
       }
     ],
-    "promptTh": "ใช้ $codex-security:deep-security-scan ตรวจ [repository/folder] ที่ฉันได้รับอนุญาต โดยคงขอบเขตนี้และส่ง report path พร้อม findings, coverage และ proof gaps",
+    "promptTh": "ใช้ $codex-security:deep-security-scan ตรวจ [repository/folder] ที่ฉันได้รับอนุญาต โดยคงขอบเขตนี้และส่ง scan directory กับ report.md path พร้อม findings, coverage, structural hardening guidance และ proof gaps",
     "checkTh": "ผู้เชี่ยวชาญความปลอดภัยต้องยืนยัน reachability, severity และผลกระทบก่อนเผยแพร่หรือแก้ไข finding"
   },
   {

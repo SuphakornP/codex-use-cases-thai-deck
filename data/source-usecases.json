@@ -1,6 +1,6 @@
 {
   "source": "https://learn.chatgpt.com/use-cases",
-  "retrievedAt": "2026-07-13T06:45:48Z",
+  "retrievedAt": "2026-07-20T02:58:00Z",
   "count": 99,
   "useCases": [
     {
@@ -30,7 +30,7 @@
           "paragraphs": [
             "ChatGPT is most useful when it can see the calendar, messages, email, follow-ups, and notes that shape the day. Give it the sources it is allowed to use and ask it to distinguish urgent work from useful context.",
             "Keep the brief short enough to use at the start of the day. Do not give ChatGPT permission to send messages or update source systems until you have reviewed the proposed actions.",
-            "Start with one manual brief. After the structure reliably surfaces the right priorities, schedule work from the same task so ChatGPT can return to the approved sources each morning and compare the new brief with the previous one. Keep correcting the task when it overweights noise or misses an important source.",
+            "Start with one manual brief. After the structure reliably surfaces the right priorities, schedule a task from the same chat so ChatGPT can return to the approved sources each morning and compare the new brief with the previous one. Keep correcting the chat when it overweights noise or misses an important source.",
             "Ask ChatGPT to compare a new pass with the previous brief so you can focus on newly arrived messages, changed meetings, and follow-ups that now need attention."
           ],
           "items": [
@@ -38,7 +38,7 @@
             "Ask it to inventory access gaps before drawing conclusions.",
             "Run the starter prompt to create priorities, meeting preparation, replies, decisions, and FYIs.",
             "Review the source links, move uncertain items into an open-questions list, and tell ChatGPT which items were useful or noisy.",
-            "Continue in the same task when a priority needs a draft, a deeper source review, or a recurring check."
+            "Continue in the same chat when a priority needs a draft, a deeper source review, or a recurring check."
           ]
         }
       ],
@@ -125,14 +125,14 @@
           "paragraphs": [
             "When feedback is spread across a Slack channel, a survey export, and a few issue threads, ChatGPT can pull it together into a Google Sheet or Doc that the team can review.",
             "Use the starter prompt on this page for the first pass. The sources can be plugin links, attached files, or files in Google Drive.",
-            "Once the sheet exists, use the same task to make it useful for the next person. Ask ChatGPT to add a column, split a theme, draft a Slack update, or turn a reviewed theme into an issue draft.",
-            "For a Slack channel or issue queue that keeps getting new reports, pin the task and ask ChatGPT to check it on a schedule."
+            "Once the sheet exists, use the same chat to make it useful for the next person. Ask ChatGPT to add a column, split a theme, draft a Slack update, or turn a reviewed theme into an issue draft.",
+            "For a Slack channel or issue queue that keeps getting new reports, pin the chat and ask ChatGPT to schedule a task inside it."
           ],
           "items": [
             "Give ChatGPT the feedback sources and one sentence of context.",
             "Ask for a Google Sheet or Doc with themes, evidence links, questions, and follow-ups.",
-            "Use the same task to turn the reviewed sheet into a Slack update or issue draft.",
-            "Pin the task and schedule work from it if the feedback source keeps changing."
+            "Use the same chat to turn the reviewed sheet into a Slack update or issue draft.",
+            "Pin the chat and schedule a task from it if the feedback source keeps changing."
           ]
         }
       ],
@@ -163,7 +163,7 @@
           "title": "Introduction",
           "paragraphs": [
             "ChatGPT is great at cleaning systematically tabular data. When a CSV or spreadsheet has mixed dates, duplicate rows, currency strings, blank cells, aliases, or pasted summary rows, ask ChatGPT to clean a copy and leave the original file unchanged.",
-            "Use the starter prompt on this page for the first cleaning pass. Replace the file name and bullets with your own. The useful details are the problems you already see and the file you need next: a cleaned CSV, a clean spreadsheet tab, or an upload-ready file. After ChatGPT writes the clean copy, open the cleaned file and the data-quality note from the task before using the data downstream."
+            "Use the starter prompt on this page for the first cleaning pass. Replace the file name and bullets with your own. The useful details are the problems you already see and the file you need next: a cleaned CSV, a clean spreadsheet tab, or an upload-ready file. After ChatGPT writes the clean copy, open the cleaned file and the data-quality note from the chat before using the data downstream."
           ],
           "items": [
             "Drag the file into ChatGPT or mention it in your prompt, such as @customer-export.csv .",
@@ -202,13 +202,13 @@
             "Use ChatGPT when you have a CSV, spreadsheet, dashboard export, Google Sheet, or local data file and want to answer a question from it. Start with the file and the question. ChatGPT can inspect the columns, run the analysis, and create a browser visualization you can open in the ChatGPT desktop app.",
             "Use @ to attach the CSV or mention the Google Sheet. If the data came from a dashboard, export the rows first so ChatGPT can inspect the raw columns.",
             "After ChatGPT gives you the first answer, ask for the next comparison you would normally check.",
-            "You can keep going in the same task: clean a column, exclude a test segment, compare two time windows, make the chart easier to read, or turn the result into a short note for a meeting."
+            "You can keep going in the same chat: clean a column, exclude a test segment, compare two time windows, make the chart easier to read, or turn the result into a short note for a meeting."
           ],
           "items": [
             "Attach the file or mention the connected data source.",
             "Ask the question you want answered.",
             "Have ChatGPT inspect the columns, run the calculation, and create an HTML visualization.",
-            "Open the local preview in the built-in browser, then continue in the same task to adjust the chart or slice the data another way."
+            "Open the local preview in the built-in browser, then continue in the same chat to adjust the chart or slice the data another way."
           ]
         }
       ],
@@ -252,7 +252,7 @@
             "Start with a concrete comparison question and the exact targets, disease, and evidence lanes you want ChatGPT to cover.",
             "Invoke the Life Science Research plugin and tell ChatGPT to run the lanes in parallel with subagents so each evidence family stays bounded.",
             "Ask ChatGPT to score each lane on a fixed 1-5 scale and to keep direct disease evidence separate from adjacent phenotypes.",
-            "Review the saved raw payloads, the lane-by-target score table, and the synthesized rank in the same task."
+            "Review the saved raw payloads, the lane-by-target score table, and the synthesized rank in the same chat."
           ]
         }
       ],
@@ -262,7 +262,7 @@
       "index": 6,
       "slug": "scrna-seq-post-count-qc",
       "title": "Annotate scRNA-seq data",
-      "tagline": "Review single-cell QC, annotations, and UMAPs in one task.",
+      "tagline": "Review single-cell QC, annotations, and UMAPs in one chat.",
       "tags": [
         "Sciences",
         "Data"
@@ -270,7 +270,7 @@
       "url": "https://learn.chatgpt.com/use-cases/scrna-seq-post-count-qc",
       "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/scrna-seq-post-count-qc",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/scrna-seq-post-count-qc.webp",
-      "summary": "Use ChatGPT with the NGS Analysis plugin to turn a 10x-style matrix bundle into QC-filtered single-cell artifacts, threshold-justified filtering summaries, annotations, and UMAPs you can inspect and revise in the same task.",
+      "summary": "Use ChatGPT with the NGS Analysis plugin to turn a 10x-style matrix bundle into QC-filtered single-cell artifacts, threshold-justified filtering summaries, annotations, and UMAPs you can inspect and revise in the same chat.",
       "difficulty": "Intermediate",
       "time": "1h",
       "bestFor": [
@@ -289,7 +289,7 @@
             "",
             "Then inspect the generated UMAPs by coarse label and Leiden cluster. These views make it easier to identify annotation gaps, suspicious clusters, or threshold choices that need another pass.",
             "",
-            "Finally, review the cell-level metrics and filtering outcomes. ChatGPT preserves this table with the filtered .h5ad and visualization artifacts so you can revise the thresholds in the same task without losing the rationale for the first pass.",
+            "Finally, review the cell-level metrics and filtering outcomes. ChatGPT preserves this table with the filtered .h5ad and visualization artifacts so you can revise the thresholds in the same chat without losing the rationale for the first pass.",
             ""
           ],
           "items": [
@@ -299,7 +299,7 @@
             "Point ChatGPT to the appropriate matrix, barcodes, genes or features, manifest, and dataset metadata, or provide exact file references.",
             "Run the starter prompt so ChatGPT can choose QC thresholds from the observed distributions and record the rationale in the run artifacts.",
             "Open the visualization index and review notebook or app to inspect QC pass or fail counts, UMAPs, and annotation confidence.",
-            "Continue in the same task to refine thresholds, supply a matched reference atlas, or rerun after unblocking doublet detection."
+            "Continue in the same chat to refine thresholds, supply a matched reference atlas, or rerun after unblocking doublet detection."
           ]
         }
       ],
@@ -322,7 +322,7 @@
       "time": "Long-running",
       "bestFor": [
         "Bioinformatics teams validating bulk RNA-seq inputs before differential expression.",
-        "Researchers who want transcript and gene-level quantification plus QC in one task.",
+        "Researchers who want transcript and gene-level quantification plus QC in one chat.",
         "Teams that need mapping-rate, duplication, library-type, and resource-readiness review."
       ],
       "starterPrompt": "Use the NGS Analysis plugin.\n\nRun bulk RNA-seq FASTQ-to-count QC on the provided sample sheet, FASTQ root, transcriptome FASTA, genome FASTA, and GTF.\n\nReturn:\n- run_manifest.json\n- MultiQC plus browser-safe review links\n- Salmon transcript- and gene-level matrices\n- validation and resource-readiness artifacts\n- a short QC interpretation that calls out mapping rate, duplication, library-type agreement, outlier samples, and anything that would block downstream differential expression",
@@ -346,7 +346,7 @@
             "Point ChatGPT to a directory with the sample sheet, FASTQs, transcriptome FASTA, genome FASTA, and GTF, or provide exact file references.",
             "Run the starter prompt so ChatGPT can validate strandedness, reference consistency, and tool readiness before execution.",
             "Open the generated MultiQC and matrix artifacts in ChatGPT to review mapping rate, duplication, library-type agreement, and resource readiness.",
-            "Continue in the same task to fix blockers, rerun with updated metadata, or hand the resulting gene-level matrices into downstream differential expression."
+            "Continue in the same chat to fix blockers, rerun with updated metadata, or hand the resulting gene-level matrices into downstream differential expression."
           ]
         }
       ],
@@ -378,7 +378,7 @@
           "title": "Introduction",
           "paragraphs": [
             "When you are building a cash-flow forecast, you want to make sure it is accurate and reflects the reality of your business. You can use ChatGPT to help you create a forecast workbook that you can inspect and revise in ChatGPT. Attach the cash-flow inputs, operating assumptions, and model constraints. You can also use file references when the inputs live in Google Drive or another connected source.",
-            "When the workbook appears in the task, open it and expand it full-screen. Review the timing assumptions, formulas, scenarios, and summary tab, then ask ChatGPT to revise the same workbook from there.",
+            "When the workbook appears in the chat, open it and expand it full-screen. Review the timing assumptions, formulas, scenarios, and summary tab, then ask ChatGPT to revise the same workbook from there.",
             "Before using the forecast, ask ChatGPT to identify the low point, tie the workbook back to the source inputs, and list assumptions that need review.",
             "After reviewing the workbook in ChatGPT, use follow-up prompts to change one scenario driver at a time."
           ],
@@ -386,7 +386,7 @@
             "Attach the cash-flow inputs, operating assumptions, and model constraints.",
             "Run the starter prompt and ask for an editable .xlsx workbook.",
             "Open the workbook in ChatGPT. Expand it into the full-screen view to inspect assumptions, formulas, scenarios, and the summary tab.",
-            "Continue in the same task to change collections, payroll, vendor payment, growth, or safety-balance assumptions."
+            "Continue in the same chat to change collections, payroll, vendor payment, growth, or safety-balance assumptions."
           ]
         }
       ],
@@ -419,15 +419,15 @@
           "paragraphs": [
             "ChatGPT can help you create a fully functional DCF workbook that you can inspect and revise.",
             "It can use multiple files as context, including the historical financials, valuation assumptions, and any modeling notes. You can provide these files directly, or use file references when the inputs live in Google Drive or another connected source. If so, provide the exact file references, as it will be more effective than asking ChatGPT to search through all of your files.",
-            "When the workbook appears in the task, open it and expand it full-screen. Review the source inputs, forecast drivers, valuation outputs, and sensitivity tables, then ask ChatGPT to revise the same workbook from there.",
+            "When the workbook appears in the chat, open it and expand it full-screen. Review the source inputs, forecast drivers, valuation outputs, and sensitivity tables, then ask ChatGPT to revise the same workbook from there.",
             "Before using the workbook, ask ChatGPT to review the model like a finance teammate would: source tie-outs, formulas, hardcoded assumptions, and valuation outputs.",
-            "After reviewing the workbook, ask for targeted revisions in the same task. Change one driver at a time so the impact is easy to inspect."
+            "After reviewing the workbook, ask for targeted revisions in the same chat. Change one driver at a time so the impact is easy to inspect."
           ],
           "items": [
             "Attach the historical financials, valuation assumptions, and any modeling notes, or provide exact file references along with the source.",
             "Run the starter prompt and ask for an editable .xlsx workbook.",
             "Open the generated workbook in ChatGPT. Expand it into the full-screen view to inspect the model tabs, formulas, assumptions, and valuation summary.",
-            "Continue in the same task to check formula links, change assumptions, add scenarios, or tighten the model."
+            "Continue in the same chat to check formula links, change assumptions, add scenarios, or tighten the model."
           ]
         }
       ],
@@ -459,15 +459,15 @@
           "title": "Introduction",
           "paragraphs": [
             "If you’re working on a budget and want to review the variances or inspect any issues, ChatGPT can help you create a fully functional review workbook you can work with.",
-            "Attach the budget plan, actuals export, and close notes, then ask ChatGPT for an editable review workbook. ChatGPT can preserve the raw inputs, map actuals to plan, calculate variances, and create a summary view you can inspect in the task.",
-            "If the source files are in a connected app, mention the exact files or folder. Avoid asking ChatGPT to search a broad Drive or workspace when the review should use specific finance sources. When the workbook appears in the task, open it and expand it full-screen to review the raw inputs, mappings, variance formulas, and summary tab before asking for revisions.",
+            "Attach the budget plan, actuals export, and close notes, then ask ChatGPT for an editable review workbook. ChatGPT can preserve the raw inputs, map actuals to plan, calculate variances, and create a summary view you can inspect in the chat.",
+            "If the source files are in a connected plugin, mention the exact files or folder. Avoid asking ChatGPT to search a broad Drive or workspace when the review should use specific finance sources. When the workbook appears in the chat, open it and expand it full-screen to review the raw inputs, mappings, variance formulas, and summary tab before asking for revisions.",
             "Before sharing the workbook, ask ChatGPT to audit the categories, formulas, and variance explanations."
           ],
           "items": [
             "Attach the budget plan, actuals export, and close notes, or provide exact file references along with the source.",
             "Run the starter prompt and ask for an editable .xlsx workbook.",
             "Open the workbook in ChatGPT. Expand it into the full-screen view to inspect the raw inputs, mappings, variance formulas, and summary tab.",
-            "Continue in the same task to fix category mappings, add department cuts, or draft the finance summary."
+            "Continue in the same chat to fix category mappings, add department cuts, or draft the finance summary."
           ]
         }
       ],
@@ -553,9 +553,9 @@
             "Use the starter prompt on this page for the first inbox pass. ChatGPT should return a short queue: drafts for emails that need attention, messages that can wait, and the context it used when the answer depended on more than the email thread.",
             "Treat the first pass like calibration. If ChatGPT drafts too many replies, tell it which emails were noise. If it misses something important, tell it why that thread mattered. If the tone is off, correct the draft directly.",
             "Over time, ChatGPT should get better at deciding what needs a draft and what can stay out of your way.",
-            "You can schedule an inbox check-in from the same task. On each scheduled run, ChatGPT checks Gmail and the context sources you named, then posts only when there are emails that need your attention or drafts worth reviewing.",
+            "You can schedule an inbox check-in task from the same chat. On each scheduled run, ChatGPT checks Gmail and the context sources you named, then posts only when there are emails that need your attention or drafts worth reviewing.",
             "Once the drafts look useful, ask ChatGPT to keep an eye on Gmail. Email triage is a good job to automate: the drafts are reviewable, and you still decide what gets sent.",
-            "Use scheduled work from a task after the task has a good sense of your reply patterns. If ChatGPT finds an email that needs a decision it cannot make, it should flag the question instead of guessing.",
+            "You can schedule a task inside this chat after the chat has a good sense of your reply patterns. If ChatGPT finds an email that needs a decision it cannot make, it should flag the question instead of guessing.",
             "The Gmail plugin can also help organize your inbox. Keep that as a separate command after you trust the triage.",
             "For deletion, make the instruction explicit and narrow. Drafting replies is safe to automate for review; destructive cleanup should stay deliberate."
           ],
@@ -563,7 +563,7 @@
             "Ask ChatGPT to review Gmail for emails that need your attention.",
             "Ask it to use Slack, docs, or project notes for context that explains the bigger picture.",
             "Tell ChatGPT which drafts were useful and which emails it should ignore next time.",
-            "Schedule work from the task when it becomes useful, and pin it if you want fast access later."
+            "Schedule a task from the chat when it becomes useful, and pin the chat if you want fast access later."
           ]
         }
       ],
@@ -596,7 +596,7 @@
             "Start by adding Codex code review to your GitHub organization or repository. See Codex code review in GitHub for more details.",
             "You can set up Codex to automatically review every pull request, or you can request a review with @codex review in a pull request comment.",
             "If Codex flags a regression or potential issue, you can ask it to fix it by commenting on the pull request with a follow-up prompt like @codex fix it .",
-            "This will start a new cloud task that will fix the issue and update the pull request.",
+            "This will start a new cloud chat that will fix the issue and update the pull request.",
             "To customize what Codex reviews, add or update a top-level AGENTS.md with a section like this:",
             "Codex applies guidance from the closest AGENTS.md to each changed file. You can place more specific instructions deeper in the tree when particular packages need extra scrutiny."
           ],
@@ -758,7 +758,7 @@
             "Computer Use takes control of the app it is operating. If you want to keep working in one browser while ChatGPT browses in another, tell it which browser to use. You can also set a default in customization , for example: “When using Computer Use for web browsing tasks, default to Chrome instead of Safari.”",
             "Do not run two Computer Use tasks against the same app at the same time. That makes it much harder for ChatGPT to keep stable context about the current window and state.",
             "For smoother runs, make sure you are already signed in to the apps and services you want ChatGPT to use. If your Mac locks while Computer Use is running, the activity will stop.",
-            "Once the task finishes, keep the same task open if you want ChatGPT to summarize what it changed, double-check the result, or turn the workflow into a more repeatable pattern through customization .",
+            "Once the work finishes, keep the same chat open if you want ChatGPT to summarize what it changed, double-check the result, or turn the workflow into a more repeatable pattern through customization .",
             "Hand Off One Computer Task"
           ],
           "items": [
@@ -830,35 +830,35 @@
       "url": "https://learn.chatgpt.com/use-cases/automation-bug-triage",
       "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/automation-bug-triage",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/automation-bug-triage.webp",
-      "summary": "Ask Codex to check recent alerts, issues, failed checks, logs, and chat reports, tune the list in one task, then run that sweep on a schedule.",
+      "summary": "Ask Codex to check recent alerts, issues, failed checks, logs, and chat reports, tune the list in one chat, then run that sweep on a schedule.",
       "difficulty": "Intermediate",
       "time": "1h",
       "bestFor": [
         "Teams that track bugs across Sentry alerts, Slack threads, Linear issues, GitHub issues, failing PR checks, support tickets, or logs.",
-        "Triage workflows you want to run manually in one Codex task before scheduling the work."
+        "Triage workflows you want to run manually in one Codex chat before scheduling the work."
       ],
       "starterPrompt": "Run a bug triage sweep for [repo/service/team] covering the last [time window].\n\nUse these plugins: [@Sentry / @Slack / @Linear / @GitHub / none]\n\nInput sources:\n- Sentry: [project / alert link / none]\n- Slack: [channel / thread links / none]\n- Linear: [team / project / view / issue query / none]\n- GitHub: [repo / issue query / PR checks / none]\n- Other: [logs / support tickets / deploy link / dashboard / attached file / none]\n\nOutput format:\nFirst, name any input source you could not access.\nThen return a prioritized list of bugs, sorted from P0 to P3.\nIf you find no bugs, say: No qualifying bugs found.\n\nFor each bug, include:\n- Priority: P0, P1, P2, or P3\n- Title\n- Evidence (links or short citations)\n- Recommended next action\n\nRules:\n- Do not post, create, assign, label, close, rerun, or edit anything.\n- Group duplicate reports under one bug.\n- Keep observed evidence separate from guesses.",
       "workflow": [
         {
           "title": "How to use",
           "paragraphs": [
-            "Ask Codex to check the places where bugs already appear: Sentry alerts, Linear issues, GitHub issues, PR checks, deploy logs, support tickets, and Slack threads. Start with one manual sweep, tune the report in the task, then run it on a schedule.",
-            "Use one Codex task for the whole triage loop:",
+            "Ask Codex to check the places where bugs already appear: Sentry alerts, Linear issues, GitHub issues, PR checks, deploy logs, support tickets, and Slack threads. Start with one manual sweep, tune the report in the chat, then run it on a schedule.",
+            "Use one Codex chat for the whole triage loop:",
             "Before you start, install the plugins Codex needs, such as Sentry, Slack, Linear, or GitHub. In the starter prompt, replace the bracketed plugin list with real @ plugin chips. Then replace each bracketed source with the exact place to search: a Sentry project or alert URL, Slack channel or thread, Linear team, view, or query, GitHub repo, issue query, or PR check, deploy link, log file, support queue, or dashboard.",
             "Start Codex from the repo that owns the bugs when local context helps: tests, repo tooling, build checks, or CI failures. You can also run the sweep from any repo if your bug sources are available through plugins, connectors, MCP servers, links, exports, pasted logs, or attachments.",
             "Run the starter prompt above first. Keep only the plugins and sources that are part of your sweep.",
             "For example, a filled-in prompt can name the plugins and the exact queues, channels, or repos you want in the sweep.",
             "Before you automate, make sure the report is useful enough to read every day.",
             "A useful first run has:",
-            "Tune the report in the same task before you schedule it. You can ask Codex to:",
-            "When the on-demand report is useful, stay in the same task and schedule the triage work from it. Codex can use what you refined in the task to write the recurring prompt.",
+            "Tune the report in the same chat before you schedule it. You can ask Codex to:",
+            "When the on-demand report is useful, stay in the same chat and schedule a task for the triage work from it . Codex can use what you refined in the chat to write the recurring prompt.",
             "Schedule the triage work",
             "Once the scheduled report is useful, decide where the work should go next. Codex can draft a Slack update for a team channel, write Linear issues for the bugs you want to track, write GitHub comments for a failing PR, or produce a handoff for whoever is on call."
           ],
           "items": [
             "Run an on-demand sweep and get a draft list.",
-            "Review the list and give feedback in that same task.",
-            "Schedule the triage work from that task.",
+            "Review the list and give feedback in that same chat.",
+            "Schedule a task for the triage work from that chat.",
             "Optional: ask Codex to draft Linear issues, Slack updates, GitHub comments, or handoff notes when you are confident in the report.",
             "High-signal bugs sorted from P0 to P3.",
             "Duplicate reports are grouped under one bug.",
@@ -909,7 +909,7 @@
       "url": "https://learn.chatgpt.com/use-cases/make-granular-ui-changes",
       "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/make-granular-ui-changes",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/make-granular-ui-changes.webp",
-      "summary": "Use Codex to make one small UI adjustment at a time in an existing app, verify it in the browser, and keep iterating quickly from a popped-out task window near your preview.",
+      "summary": "Use Codex to make one small UI adjustment at a time in an existing app, verify it in the browser, and keep iterating quickly from a popped-out chat window near your preview.",
       "difficulty": "Easy",
       "time": "5m",
       "bestFor": [
@@ -934,10 +934,10 @@
           ],
           "items": [
             "Open the existing app and get the relevant route or component visible.",
-            "Pop out the active Codex task into a floating window and keep it near your browser, editor, or design preview while you work.",
+            "Pop out the active Codex chat into a floating window and keep it near your browser, editor, or design preview while you work.",
             "Give Codex one specific UI change at a time. Include the route, viewport, current screenshot, target screenshot, or exact product note if you have it.",
             "Ask Codex to inspect the current implementation, make the smallest defensible edit, and preserve the app’s existing components, tokens, layout primitives, and data flow.",
-            "Review the result, then send the next small adjustment in the same task."
+            "Review the result, then send the next small adjustment in the same chat."
           ]
         }
       ],
@@ -947,7 +947,7 @@
       "index": 20,
       "slug": "slack-coding-tasks",
       "title": "Kick off coding tasks from Slack",
-      "tagline": "Turn Slack threads into scoped cloud tasks.",
+      "tagline": "Turn Slack threads into scoped cloud chats.",
       "tags": [
         "Integrations",
         "Workflow"
@@ -955,7 +955,7 @@
       "url": "https://learn.chatgpt.com/use-cases/slack-coding-tasks",
       "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/slack-coding-tasks",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/slack-coding-tasks.webp",
-      "summary": "Mention @Codex in Slack to start a task tied to the right repo and environment, then review the result back in the thread or in Codex cloud.",
+      "summary": "Mention @Codex in Slack to start a chat tied to the right repo and environment, then review the result back in the thread or in Codex cloud.",
       "difficulty": "Easy",
       "time": "5m",
       "bestFor": [
@@ -972,7 +972,7 @@
           "items": [
             "Install the Slack app, connect the right repositories and environments, and add @Codex to the channel.",
             "Mention @Codex in a thread with a clear request, constraints, and the outcome you want.",
-            "Open the task link, review the result, and continue the follow-up in Slack if the task needs another pass.",
+            "Open the chat link, review the result, and continue the follow-up in Slack if the task needs another pass.",
             "If the thread does not already include enough context or suggested fix, include in your prompt some guidance",
             "Make sure the repo and environment mapping are correct by mentioning the name of the project or environment in your prompt",
             "Scope the request so Codex can finish it without a second planning loop",
@@ -1076,9 +1076,9 @@
             "Meeting follow-up can touch customer data, private notes, and systems of record. Use ChatGPT to prepare drafts, cite transcript evidence, and stage updates before you approve the next step.",
             "Before taking action, review:",
             "For recurring workflows, keep the pattern focused: draft, review, approve, then act.",
-            "After the first package is ready, use the same task to tune it for the audience or next workflow.",
+            "After the first package is ready, use the same chat to tune it for the audience or next workflow.",
             "You can also ask ChatGPT to compare this call with the last few weekly calls, turn action items into a mutual action plan, create a version for a sales engineer with only technical blockers, or draft CRM updates without saving them.",
-            "For weekly account check-ins or deal reviews, pin the task and ask ChatGPT to schedule the follow-up work from it .",
+            "For weekly account check-ins or deal reviews, pin the chat and ask ChatGPT to schedule a task for the follow-up work from it .",
             "You don’t necessarily want ChatGPT to post automatically, but it can create drafts for your review that you can approve and post."
           ],
           "items": [
@@ -1226,10 +1226,10 @@
             "Use the Build Web Apps plugin for web apps, dashboards, creative websites, and frontend-heavy tools. Its workflow pushes Codex to generate a design first, match it in code, and use the browser to compare the result back to the concept.",
             "Use the Game Studio plugin when the proof of concept is a browser game. That path should define the player verbs, first playable loop, engine, asset workflow, HUD, controls, and browser test before expanding the game.",
             "A good proof of concept is scoped to an MVP that can be implemented quickly and validated with the team. If you want to make sure the MVP is working as expected, you can use Playwright interactive to let Codex verify its work.",
-            "Once you have a first version working, you can iterate on it by asking for scoped changes in the same task:"
+            "Once you have a first version working, you can iterate on it by asking for scoped changes in the same chat:"
           ],
           "items": [
-            "Iterate on the visual direction using the ImageGen skill, and once you are satisfied with the proposed UI, you can ask Codex to build a prototype matching the visuals. In that case, select Codex, start a new task, and attach the final image you want to implement rather than continuing the ChatGPT chat directly. Codex does better when it can reference a user attachment.",
+            "Iterate on the visual direction using the ImageGen skill, and once you are satisfied with the proposed UI, you can ask Codex to build a prototype matching the visuals. In that case, select Codex, start a new chat, and attach the final image you want to implement rather than continuing the ChatGPT chat directly. Codex does better when it can reference a user attachment.",
             "Use a plugin and simply describe your idea: the plugin will generate the visual direction for you and handle next steps."
           ]
         }
@@ -1266,7 +1266,7 @@
             "Use @build-web-apps when Codex needs to build or polish the app. Use @vercel when it should deploy, inspect the deployment, or read Vercel build logs.",
             "Codex should tell you what it changed, which command it used to build the project, and whether the Vercel deployment is ready. If the deploy needs an environment variable, team choice, domain setting, or login step, Codex should call that out instead of pretending the site is finished.",
             "Keep production changes explicit. A preview deployment is the default; ask for production only when you mean it.",
-            "Once you have the preview, keep the same task open. Ask Codex to open the URL, fix layout issues, update copy, wire missing data, or read Vercel logs if the deploy fails. The task already has the repo, deployment, and build context.",
+            "Once you have the preview, keep the same chat open. Ask Codex to open the URL, fix layout issues, update copy, wire missing data, or read Vercel logs if the deploy fails. The chat already has the repo, deployment, and build context.",
             "Good follow-ups are specific:"
           ],
           "items": [
@@ -1306,11 +1306,11 @@
             "The key is to tell Codex what environment to test, which flows matter most, and what kind of report you want back.",
             "You can keep this broad:",
             "Or make it more explicit:",
-            "If you already maintain a test-plan file in the repo, attach it to the task or point Codex at it so the QA pass follows your existing flows.",
+            "If you already maintain a test-plan file in the repo, attach it to the chat or point Codex at it so the QA pass follows your existing flows.",
             "If account state, test data, feature flags, or environment choice affect the flow, include that up front. Codex will produce much better results when it knows whether it is testing local, staging, or production-like behavior.",
             "Call out whether you want Codex to focus on broken functionality, layout issues, confusing copy, visual regressions, or all of the above.",
             "If one blocking issue should end the run, say so. Otherwise, tell Codex to continue through the rest of the flow and collect all non-blocking issues before it summarizes.",
-            "After the QA pass, keep the same task open and ask Codex to fix one of the bugs it found, turn the findings into Linear or GitHub-ready drafts, or narrow the next pass to one specific failing flow.",
+            "After the QA pass, keep the same chat open and ask Codex to fix one of the bugs it found, turn the findings into Linear or GitHub-ready drafts, or narrow the next pass to one specific failing flow.",
             "Run a Structured QA Pass"
           ],
           "items": [
@@ -1486,7 +1486,7 @@
       "url": "https://learn.chatgpt.com/use-cases/deep-security-scan",
       "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/deep-security-scan",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/deep-security-scan.webp",
-      "summary": "Use the Codex Security plugin to run a more comprehensive audit of a repository or scoped folder that repeats discovery, validates candidates, and produces reviewable coverage and findings.",
+      "summary": "Use the Codex Security plugin to run a more comprehensive audit of a repository or scoped folder that repeats discovery, validates candidates, and produces reviewable coverage, detailed finding reports, and structural hardening guidance.",
       "difficulty": "Advanced",
       "time": "Long-running",
       "bestFor": [
@@ -1494,7 +1494,7 @@
         "More comprehensive reviews where additional runtime and token use are appropriate for finding more candidate issues.",
         "Security teams that need traceable finding evidence before deciding what to remediate."
       ],
-      "starterPrompt": "Use $codex-security:deep-security-scan to run a deep security scan on [this repository / absolute path to a scoped folder].\n\nScope and rules:\n- I am authorized to assess this repository.\n- Keep the scan within [the entire repository / the exact folder named above].\n- Use the Codex Security plugin's deep-scan workflow; do not reinterpret this as a pull request or diff review.\n\nReturn the generated report path. Summarize the findings, reviewed surfaces, and proof gaps that require human review first.",
+      "starterPrompt": "Use $codex-security:deep-security-scan to run a deep security scan on [this repository / absolute path to a scoped folder].\n\nScope and rules:\n- I am authorized to assess this repository.\n- Keep the scan within [the entire repository / the exact folder named above].\n- Use the Codex Security plugin's deep-scan workflow; do not reinterpret this as a pull request or diff review.\n\nReturn the scan directory and report.md path. Summarize the findings, reviewed surfaces, structural hardening guidance, and proof gaps that require human review first.",
       "workflow": [
         {
           "title": "Choose a deep repository review",
@@ -1508,9 +1508,10 @@
           "items": [
             "Open the repository in Codex and complete the Codex Security plugin quickstart .",
             "Confirm that you own the repository or have authorization to assess it.",
-            "Add repository-specific architecture, trust-boundary, build, test, and validation guidance in AGENTS.md when it will improve the review.",
-            "Run the starter prompt and let the scan complete its repeated discovery, validation, attack-path analysis, and final reporting stages.",
-            "Review the findings workspace and any proof gaps before asking Codex to change code or reproduce a finding further."
+            "Add architecture, trust-boundary, security-invariant, finding-criteria, exclusion, and severity guidance in SECURITY.md . Use nested SECURITY.md files for directory-specific policy.",
+            "Keep supported build, test, and validation commands and other repository instructions in AGENTS.md .",
+            "Run the starter prompt and let the scan complete its repeated discovery, validation, attack-path analysis, per-finding reporting, structural hardening, and final reporting stages.",
+            "Review the findings workspace, detailed reports, hardening portfolio, and any proof gaps before asking Codex to change code or reproduce a finding further."
           ]
         }
       ],
@@ -1637,7 +1638,7 @@
             "Most real work starts here. You have two or more datasets, the primary key isn’t clear, and a naive merge could lose data or create duplicates.",
             "Ask Codex to profile the merge before performing it:",
             "If you need to derive the best key, such as a normalized address, a parcel identifier built from a few columns, or a location join, make Codex explain the tradeoffs and edge cases before you accept the merge.",
-            "Exploratory data analysis is where Codex benefits from clean isolation. One worktree can test address cleanup or feature engineering while another focuses on charts or alternate model directions. That keeps each diff reviewable and prevents one long task from mixing incompatible ideas.",
+            "Exploratory data analysis is where Codex benefits from clean isolation. One worktree can test address cleanup or feature engineering while another focuses on charts or alternate model directions. That keeps each diff reviewable and prevents one long chat from mixing incompatible ideas.",
             "The ChatGPT desktop app includes built-in worktree support. If you are working in a terminal, plain Git worktrees work well too:",
             "In the running example, this step is where you would compare homes near the highway against homes farther away, examine outliers, inspect missing-value patterns, and decide whether the observed effect looks real or reflects neighborhood composition, home size, or other factors.",
             "Not every analysis needs a complex model. Start with an interpretable baseline.",
@@ -1647,7 +1648,7 @@
             "The analysis is only useful when someone else can consume it. Ask Codex to produce the artifact the audience needs:",
             "This is also where you ask for caveats. If the join quality is imperfect, sampling bias is present, or the model assumptions are fragile, Codex should say that plainly in the deliverable.",
             "The curated skills that fit this workflow especially well are:",
-            "Once the workflow stabilizes, create repo-local skills for the repeated parts, such as refresh-data , merge-and-qa , or publish-weekly-report . That’s a better long-term pattern than pasting the same procedural prompt into every task.",
+            "Once the workflow stabilizes, create repo-local skills for the repeated parts, such as refresh-data , merge-and-qa , or publish-weekly-report . That’s a better long-term pattern than pasting the same procedural prompt into every chat.",
             "Set Up the Analysis Environment",
             "Load the Dataset and Explain It",
             "Profile the Merge Before You Join",
@@ -1720,39 +1721,39 @@
       "url": "https://learn.chatgpt.com/use-cases/reusable-codex-skills",
       "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/reusable-codex-skills",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/reusable-codex-skills.webp",
-      "summary": "Turn a working Codex task, review rules, test commands, release checklists, design conventions, writing examples, or repo-specific scripts into a skill Codex can use in future tasks.",
+      "summary": "Turn a working Codex chat, review rules, test commands, release checklists, design conventions, writing examples, or repo-specific scripts into a skill Codex can use in future tasks.",
       "difficulty": "Easy",
       "time": "5m",
       "bestFor": [
         "Codified workflows you want Codex to use again.",
-        "Teams that want a reusable skill instead of a long prompt pasted into every task."
+        "Teams that want a reusable skill instead of a long prompt pasted into every chat."
       ],
-      "starterPrompt": "Use $skill-creator to create a Codex skill that [fixes failing Buildkite checks on a GitHub PR / turns PR notes into inline review comments / writes our release notes from merged PRs]\n\nUse these sources when creating the skill:\n- Working example: [say \"use this task,\" link a merged PR, or paste a good Codex answer]\n- Source: [paste a Slack thread, PR review link, runbook URL, docs URL, or ticket]\n- Repo: [repo path, if this skill depends on one repo]\n- Scripts or commands to reuse: [test command], [preview command], [log-fetch script], [release command]\n- Good output: [paste the Slack update, changelog entry, review comment, ticket, or final answer you want future tasks to match]",
+      "starterPrompt": "Use $skill-creator to create a Codex skill that [fixes failing Buildkite checks on a GitHub PR / turns PR notes into inline review comments / writes our release notes from merged PRs]\n\nUse these sources when creating the skill:\n- Working example: [say \"use this chat,\" link a merged PR, or paste a good Codex answer]\n- Source: [paste a Slack thread, PR review link, runbook URL, docs URL, or ticket]\n- Repo: [repo path, if this skill depends on one repo]\n- Scripts or commands to reuse: [test command], [preview command], [log-fetch script], [release command]\n- Good output: [paste the Slack update, changelog entry, review comment, ticket, or final answer you want future tasks to match]",
       "workflow": [
         {
           "title": "Create a skill Codex can keep on hand",
           "paragraphs": [
             "Use skills to give Codex reusable instructions, resources, and scripts for work you repeat. A skill can preserve the task, doc, command, or example that made Codex useful the first time.",
-            "Start with one working example: a Codex task that cherry-picked a PR, a release checklist from Notion, a set of useful PR comments, or a Slack thread explaining a launch process.",
+            "Start with one working example: a Codex chat that cherry-picked a PR, a release checklist from Notion, a set of useful PR comments, or a Slack thread explaining a launch process.",
             "Add the context you want Codex to use.",
-            "Stay in the Codex task you want to preserve, paste the Slack thread or docs link, and add the rule, command, or example Codex should remember.",
+            "Stay in the Codex chat you want to preserve, paste the Slack thread or docs link, and add the rule, command, or example Codex should remember.",
             "Run the starter prompt.",
             "The prompt names the skill you want, then gives $skill-creator the task, doc, PR, command, or output to preserve.",
             "Let Codex create and validate the skill.",
             "The result should define the $skill-name , describe when it should trigger, and keep reusable instructions in the right place.",
             "Skills in ~/.codex/skills are available from any repo. Skills in the current repo can be committed so teammates can use them too.",
-            "Use the skill, then update it from the task.",
+            "Use the skill, then update it from the chat.",
             "Invoke the new $skill-name on the next PR, alert, review, release note, or design task. If it uses the wrong test command, misses a review rule, skips a runbook step, or writes a draft you would not send, ask Codex to add that correction to the skill.",
             "Give $skill-creator the material that explains how the skill should work.",
-            "If the source is in Slack, Linear, GitHub, Notion, or Sentry, connect that tool in Codex with a plugin , mention it in the starter prompt, or paste the relevant part into the task.",
+            "If the source is in Slack, Linear, GitHub, Notion, or Sentry, connect that tool in Codex with a plugin , mention it in the starter prompt, or paste the relevant part into the chat.",
             "Most skills start as a SKILL.md file. $skill-creator can add longer references, scripts, or assets when the workflow needs them.",
             "Use the same pattern when future tasks should read the same runbook, run the same CLI, follow the same review rubric, write the same team update, or QA the same browser flow. For example:"
           ],
           "items": [
-            "Add the context you want Codex to use. Stay in the Codex task you want to preserve, paste the Slack thread or docs link, and add the rule, command, or example Codex should remember.",
+            "Add the context you want Codex to use. Stay in the Codex chat you want to preserve, paste the Slack thread or docs link, and add the rule, command, or example Codex should remember.",
             "Run the starter prompt. The prompt names the skill you want, then gives $skill-creator the task, doc, PR, command, or output to preserve.",
             "Let Codex create and validate the skill. The result should define the $skill-name , describe when it should trigger, and keep reusable instructions in the right place. Skills in ~/.codex/skills are available from any repo. Skills in the current repo can be committed so teammates can use them too.",
-            "Use the skill, then update it from the task. Invoke the new $skill-name on the next PR, alert, review, release note, or design task. If it uses the wrong test command, misses a review rule, skips a runbook step, or writes a draft you would not send, ask Codex to add that correction to the skill.",
+            "Use the skill, then update it from the chat. Invoke the new $skill-name on the next PR, alert, review, release note, or design task. If it uses the wrong test command, misses a review rule, skips a runbook step, or writes a draft you would not send, ask Codex to add that correction to the skill.",
             "my-skill/ SKILL.md Required: instructions and metadata references/ Optional: longer docs scripts/ Optional: repeatable commands assets/ Optional: templates and starter files",
             "SKILL.md Required: instructions and metadata",
             "references/ Optional: longer docs",
@@ -1786,7 +1787,7 @@
       "bestFor": [
         "Problems where each iteration can be scored, but the best result usually takes many passes",
         "Tasks with visual or subjective outputs that need both deterministic checks and an LLM-as-a-judge score",
-        "Long-running Codex tasks where you want progress tracked clearly instead of relying on context"
+        "Long-running Codex chats where you want progress tracked clearly instead of relying on context"
       ],
       "starterPrompt": "I have a difficult task in this workspace and I want you to run it as an eval-driven improvement loop.\n\nBefore changing anything:\n- Read `AGENTS.md`.\n- Find the script or command that scores the current output.\n\nIteration loop:\n- Make one focused improvement at a time.\n- Re-run the eval command after each meaningful change.\n- Log the scores and what changed.\n- Inspect generated artifacts directly. If the output is visual, use `view_image`.\n- Keep going until both the overall score and the LLM average are above 90%.\n\nConstraints:\n- Do not stop at the first acceptable result.\n- Do not revert to an earlier version unless the new result is clearly worse in scores or artifacts.\n- If the eval improves but is still below target, explain the bottleneck and continue.\n\nOutput:\n- current best scores\n- log of major iterations\n- remaining risks or weak spots",
       "workflow": [
@@ -1802,7 +1803,7 @@
             "Hard tasks often drift because the prompt says “keep improving” without saying when to stop. Make the stopping rule explicit.",
             "A practical pattern is:",
             "For example, if the goal is a high-quality artifact, ask Codex to keep going until both the overall score and the LLM average are above 90%. That makes the task legible: Codex can tell whether it is still below target, where the gap is, and whether the latest change helped.",
-            "Long-running work is much more reliable when Codex keeps notes about the loop instead of relying only on the task context.",
+            "Long-running work is much more reliable when Codex keeps notes about the loop instead of relying only on the chat context.",
             "That running log should record:",
             "This is especially important when the task runs for a long time. The log becomes the handoff point when the task resumes and the self-evaluation record for the current run.",
             "For some difficult tasks, the code diff and metric output are not enough. Codex should look at the artifact it produced.",
@@ -1856,7 +1857,7 @@
         "Reviews that combine KPI dashboards, workbooks, forecasts, prior reporting, and owner notes.",
         "Teams that need material changes, anomalies, and every important figure tied to a source before leadership review."
       ],
-      "starterPrompt": "Use $documents and $spreadsheets to prepare the [weekly, monthly, or quarterly] business review for [business or team].\n\nUse the KPI dashboard, metric definitions, close workbook, revenue and expense tables, forecast update, prior review, and owner notes I provide. If any inputs are in connected apps, use only the exact @google-drive files or @slack threads I name.\n\nCreate an editable document with a short leadership summary, material KPI changes, key variances, anomalies, changes since forecast, risks, data-quality checks, review questions, and follow-ups by owner. Include supporting charts where useful. Cite the workbook tab, dashboard, or source note behind every material number. Do not fill gaps with invented figures; list unsupported claims and missing inputs for review.",
+      "starterPrompt": "Use $documents and $spreadsheets to prepare the [weekly, monthly, or quarterly] business review for [business or team].\n\nUse the KPI dashboard, metric definitions, close workbook, revenue and expense tables, forecast update, prior review, and owner notes I provide. If any inputs are in connected plugins, use only the exact @google-drive files or @slack threads I name.\n\nCreate an editable document with a short leadership summary, material KPI changes, key variances, anomalies, changes since forecast, risks, data-quality checks, review questions, and follow-ups by owner. Include supporting charts where useful. Cite the workbook tab, dashboard, or source note behind every material number. Do not fill gaps with invented figures; list unsupported claims and missing inputs for review.",
       "workflow": [
         {
           "title": "Build from the recurring review record",
@@ -1896,7 +1897,7 @@
         "Reporting cycles that combine initiative progress, metrics, charts, narrative, and owner inputs.",
         "Teams that need a clear record of changed figures, risks, next milestones, and unresolved assumptions."
       ],
-      "starterPrompt": "Use $slides and $spreadsheets to prepare the [company, leadership, CFO, or board] reporting pack for [period or topic].\n\nUse the prior pack or progress outline, initiative trackers, metric snapshots, latest forecast model, KPI dashboard, cash view, leadership notes, owner commentary, and open questions I provide. If any sources are in connected apps, use only the exact @google-drive files or @slack threads I name.\n\nIdentify the through-line across workstreams, then update the narrative, proof points, key metrics, deltas, charts, risks, and next milestones while preserving the existing deck's visual system. Return an editable .pptx file and a short pack summary covering what changed, which figures do not tie to a source, what still needs owner input, which assumptions remain open, and which slides need leadership review. Render the deck and fix clipping, overflow, or layout issues before delivery. Do not share it.",
+      "starterPrompt": "Use $slides and $spreadsheets to prepare the [company, leadership, CFO, or board] reporting pack for [period or topic].\n\nUse the prior pack or progress outline, initiative trackers, metric snapshots, latest forecast model, KPI dashboard, cash view, leadership notes, owner commentary, and open questions I provide. If any sources are in connected plugins, use only the exact @google-drive files or @slack threads I name.\n\nIdentify the through-line across workstreams, then update the narrative, proof points, key metrics, deltas, charts, risks, and next milestones while preserving the existing deck's visual system. Return an editable .pptx file and a short pack summary covering what changed, which figures do not tie to a source, what still needs owner input, which assumptions remain open, and which slides need leadership review. Render the deck and fix clipping, overflow, or layout issues before delivery. Do not share it.",
       "workflow": [
         {
           "title": "Build the narrative from the reporting record",
@@ -1911,7 +1912,7 @@
             "Ask ChatGPT to find the through-line across progress, proof points, risks, and next milestones.",
             "Run the starter prompt and request an editable .pptx file.",
             "Review the source tie-out for every changed claim, metric, and chart.",
-            "Inspect the rendered slides for clipping, overflow, and layout drift, then resolve owner inputs in the same task."
+            "Inspect the rendered slides for clipping, overflow, and layout drift, then resolve owner inputs in the same chat."
           ]
         }
       ],
@@ -2086,7 +2087,7 @@
             "Questions: who owns partner review, and what is the latest date for the public copy freeze?",
             "Notes template: decisions, owners, dates, risks, and follow-ups.",
             "Notes template: decisions, owners, dates, risks, and follow-ups.",
-            "If the brief includes private or sensitive information, keep the output local to the task and ask ChatGPT to flag anything that doesn’t belong in a shared doc."
+            "If the brief includes private or sensitive information, keep the output local to the chat and ask ChatGPT to flag anything that doesn’t belong in a shared doc."
           ],
           "items": [
             "Name the meeting, date, or calendar event.",
@@ -2136,7 +2137,7 @@
             "Adding more context such as public release notes lets Codex avoid including private context or updates that are not yet public.",
             "For a repo-wide convention, add documentation expectations to AGENTS.md . For example:",
             "If the process has more steps, turn it into a skill so future Codex tasks can follow the same source-checking, drafting, and verification loop. See Save workflows as skills for more details on this pattern.",
-            "You can also schedule this workflow from the current task . For example, ask Codex to fetch recent GitHub pull requests and keep the docs current every week:"
+            "You can also schedule a task for this workflow from the current chat . For example, ask Codex to fetch recent GitHub pull requests and keep the docs current every week:"
           ],
           "items": [
             "Start from the change you need to document. Share the branch, pull request, commit, issue, or files. If the docs are public, say explicitly that unpublished roadmap, private customer details, and internal-only context should stay out.",
@@ -3155,7 +3156,7 @@
             "Use the starter prompt to create a plan with:",
             "The draft should show why each lesson belongs in the sequence, not only list activities.",
             "Check the standards alignment, pacing, assessment load, accessibility, and age appropriateness. Confirm that ChatGPT has not invented district requirements or learner information.",
-            "Revise the plan in the same task, then mark the approved version clearly before using it to generate decks or classroom materials."
+            "Revise the plan in the same chat, then mark the approved version clearly before using it to generate decks or classroom materials."
           ],
           "items": [
             "Learning goals and standards.",
@@ -3203,7 +3204,7 @@
             "Define the comparison, materiality threshold, and required finance lines.",
             "Run the starter prompt and ask for an editable bridge workbook.",
             "Review source breaks, sign conventions, and driver rankings.",
-            "Continue in the same task to resolve owner questions and prepare commentary."
+            "Continue in the same chat to resolve owner questions and prepare commentary."
           ]
         }
       ],
@@ -3756,7 +3757,7 @@
             "Define base, upside, and downside rules along with protected assumptions.",
             "Run the starter prompt and request an editable forecast workbook.",
             "Review assumption changes, formula links, sensitivities, and approval items.",
-            "Continue in the same task to tune one driver at a time."
+            "Continue in the same chat to tune one driver at a time."
           ]
         }
       ],
@@ -3832,7 +3833,7 @@
             "Ask ChatGPT to:",
             "The first output should be a plan, not rewritten course files.",
             "Check every recommendation against the cited source. Confirm that required content, accessibility guidance, institutional policy, and instructor discretion are represented correctly.",
-            "After approving the plan, continue in the same task and revise one group of files at a time. Preserve the originals and ask for a change summary after each revision pass."
+            "After approving the plan, continue in the same chat and revise one group of files at a time. Preserve the originals and ask for a change summary after each revision pass."
           ],
           "items": [
             "Map learning outcomes to lessons and assessments.",
@@ -4194,7 +4195,7 @@
       "url": "https://learn.chatgpt.com/use-cases/draft-prds-from-sources",
       "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/draft-prds-from-sources",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/draft-prds-from-sources.webp",
-      "summary": "Use ChatGPT with the $documents skill and connected apps such as Linear, Slack, Notion or Google Drive to create a reviewable PRD with the expected sections, a timeline, decisions, open questions, and a source appendix.",
+      "summary": "Use ChatGPT with the $documents skill and connected plugins such as Linear, Slack, Notion or Google Drive to create a reviewable PRD with the expected sections, a timeline, decisions, open questions, and a source appendix.",
       "difficulty": "Easy",
       "time": "30m",
       "bestFor": [
@@ -4209,7 +4210,7 @@
             "Before working on a new product or feature, it’s common to draft a product requirements document (PRD) to align on the scope and requirements. Most often than not, the context needed to write that PRD is already available in the team’s internal systems: tickets on Linear, discussions on Slack, drafts in Notion or Google Drive, etc. ChatGPT can gather this context and draft a PRD that you can review and iterate on, while keeping the source trail visible.",
             "Start with the sources you want ChatGPT to use: the Linear project, the Slack planning channel or thread, and any Drive docs, Notion pages, meeting notes, or local files that should be cited in the PRD. You should also clearly outline the PRD sections you expect, such as the problem, users, requirements, UX, tech, launch plan, timeline, or decisions.",
             "Use the starter prompt on this page for the first draft. If something is missing, point ChatGPT at the missing source instead of starting over.",
-            "Before sharing the PRD, ask ChatGPT to list the claims with weak or missing support, the unresolved questions, and the decisions it treated as confirmed. If the source appendix does not make those easy to audit, keep refining the same task before exporting or posting anything.",
+            "Before sharing the PRD, ask ChatGPT to list the claims with weak or missing support, the unresolved questions, and the decisions it treated as confirmed. If the source appendix does not make those easy to audit, keep refining the same chat before exporting or posting anything.",
             "Check the Source Trail"
           ],
           "items": [
@@ -4217,7 +4218,7 @@
             "Name the sources directly: the Linear project or milestone, the Slack channel or thread, and the docs or notes ChatGPT should cite.",
             "Give ChatGPT the PRD section contract.",
             "Review the source appendix first, then the requirements and open questions.",
-            "Use the same task to resolve gaps, tighten scope, and prepare the handoff."
+            "Use the same chat to resolve gaps, tighten scope, and prepare the handoff."
           ]
         }
       ],
@@ -4361,7 +4362,7 @@
             "Then, you can ask ChatGPT to use image generation to create a few mock directions. The mocks should preserve the product’s information architecture and design-system constraints.",
             "If helpful, you can provide screenshots of the current UI or a Figma file as reference.",
             "Do this until you are satisfied with the mock. The more scoped the changes are, the more likely Codex is to generate a mock that can be implemented directly.",
-            "Use the final mock image that you want Codex to implement. Select Codex, start a new task, and reattach the image rather than continuing the ChatGPT chat directly. Then ask Codex to implement the mock—optionally using the Build Web Apps plugin if you’re building a web app—to turn it into a working prototype:"
+            "Use the final mock image that you want Codex to implement. Select Codex, start a new chat, and reattach the image rather than continuing the ChatGPT chat directly. Then ask Codex to implement the mock—optionally using the Build Web Apps plugin if you’re building a web app—to turn it into a working prototype:"
           ],
           "items": []
         }
@@ -4386,12 +4387,12 @@
       "bestFor": [
         "Teams that want to turn recurring workflows into interactive apps.",
         "Apps that need lightweight structured persistence, file uploads, or workspace-oriented sharing.",
-        "Internal tools that benefit from building, testing, deploying, and iterating in one task."
+        "Internal tools that benefit from building, testing, deploying, and iterating in one chat."
       ],
       "starterPrompt": "Build and deploy an internal app for [team or workflow].\n\nGoal:\n- [what the app should help people do]\n- [who should use it]\n- [source docs, data, or connected services ChatGPT should inspect]\n\nRequirements:\n- Keep the first version focused on one useful workflow.\n- Use D1 for structured data persistence.\n- Use R2 for user-uploaded files if needed.\n- Test the main flow, persistence, and responsive layout before deploying.\n\nMake it available to all workspace users.",
       "workflow": [
         {
-          "title": "Build and deploy from one task",
+          "title": "Build and deploy from one chat",
           "paragraphs": [
             "Sites is a managed hosting service in ChatGPT. Ask ChatGPT to create an app, and it can build the project, run it for testing, deploy it, and return a URL you can share.",
             "The scope ranges from simple static sites to full-stack JavaScript or TypeScript web apps. That makes Sites a good fit for focused internal tools: onboarding dashboards, enablement hubs, searchable resource libraries, lightweight workflow apps, and reporting views.",
@@ -4399,7 +4400,7 @@
             "Start with one useful workflow. A clear first version is easier to review, deploy, and improve than a broad request to recreate an entire internal system.",
             "Tell ChatGPT who the app is for, what people should accomplish, which source material it should inspect, and what should persist between sessions. Be explicit about the intended sharing scope and ask ChatGPT to test the main flow before it deploys.",
             "You can also leverage Plugins to fetch or refresh data from internal sources.",
-            "If you need live data fetching, you can connect to a 3rd party tool using an API key. But if you want to use plugin connections, you can schedule work from the current task to fetch data with plugins on a set schedule, update the app, and redeploy it.",
+            "If you need live data fetching, you can connect to a 3rd party tool using an API key. But if you want to use plugin connections, you can schedule a task from the current chat to fetch data with plugins on a set schedule, update the app, and redeploy it.",
             "Many internal apps need persistence. Sites supports two storage primitives:",
             "Keep structured metadata in D1 and larger file objects in R2. A read-only resource page or static microsite may not need either one.",
             "You can manage who can visit your deployed projects.",
@@ -4453,7 +4454,7 @@
           "paragraphs": [
             "Slack is often where a request starts, but not where the full context lives. A teammate might ask for a reply in a DM, clarify the real action in a thread, link a doc in a channel, and resolve the issue later without mentioning you again.",
             "Use this workflow when you want ChatGPT to read the Slack context, check whether the ask is still live, and return the few items that actually need your attention. The goal is to get a ranked action queue: what needs a reply, a decision, a person to contact, a doc update, or a handoff.",
-            "After trying this and tweaking the flow to match your needs, you can schedule the work from the task by asking ChatGPT to do the same thing on a schedule.",
+            "After trying this and tweaking the flow to match your needs, you can schedule a task for the work from the chat by asking ChatGPT to do the same thing on a schedule.",
             "A useful triage result should explain why each item is still live. It should also skip old asks that someone answered later in the thread.",
             "You should expect to see something like this:",
             "Top action item: Priya is asking for concrete customer examples, not just more ideas.",
@@ -4466,7 +4467,7 @@
             "Next step: reply with two named leads, or say you can be the example if that is more useful.",
             "Good output makes the distinction explicit: an idea is different from a lead, a live ask is different from an FYI, and a request you already answered shouldn’t stay in the queue.",
             "If you get too much noise or too few actionable items, tweak the prompt and if needed, mention specific slack channels you want ChatGPT to pay attention to.",
-            "Once the queue is right, keep the action in the same task. Ask ChatGPT to draft a reply or handoff from the evidence it already gathered:"
+            "Once the queue is right, keep the action in the same chat. Ask ChatGPT to draft a reply or handoff from the evidence it already gathered:"
           ],
           "items": [
             "Give ChatGPT a time window, workstream, person, channel, or topic.",
@@ -4560,7 +4561,7 @@
         "Repeated work where Codex needs to search, read, download from, or safely write to the same service, export, local archive, or repo script.",
         "Agent tools that need paged search, exact reads by ID, predictable JSON, downloaded files, local indexes, or draft-before-write commands."
       ],
-      "starterPrompt": "Use $cli-creator to create a CLI you can use, and use $skill-creator to create the companion skill in this same task.\n\nSource to learn from: [docs URL, OpenAPI spec, redacted curl command, existing script path, log folder, CSV or JSON export, SQLite database path, or pasted --help output].\n\nFirst job the CLI should support: [download failed CI logs from a build URL, search support tickets and read one by ID, query an admin API, read a local database, or run one step from an existing script].\n\nOptional write job: [create a draft comment, upload media, retry a failed job, or read-only for now].\n\nCommand name: [cli-name, or recommend one].\n\nBefore coding, show me the proposed command surface and ask only for missing details that would block the build.",
+      "starterPrompt": "Use $cli-creator to create a CLI you can use, and use $skill-creator to create the companion skill in this same chat.\n\nSource to learn from: [docs URL, OpenAPI spec, redacted curl command, existing script path, log folder, CSV or JSON export, SQLite database path, or pasted --help output].\n\nFirst job the CLI should support: [download failed CI logs from a build URL, search support tickets and read one by ID, query an admin API, read a local database, or run one step from an existing script].\n\nOptional write job: [create a draft comment, upload media, retry a failed job, or read-only for now].\n\nCommand name: [cli-name, or recommend one].\n\nBefore coding, show me the proposed command surface and ask only for missing details that would block the build.",
       "workflow": [
         {
           "title": "Introduction",
@@ -4570,14 +4571,14 @@
             "In this workflow, $cli-creator helps Codex build the command. $skill-creator helps Codex save a reusable skill such as $ci-logs , which future tasks can invoke by name.",
             "Start with the thing you want Codex to do, not the technology you want it to write. A good CLI turns a repeated read, search, download, export, draft, upload, poll, or safe write into a command Codex can run from any repo.",
             "Codex needs something concrete to learn from: docs or OpenAPI, a redacted curl command, an export or database path, a log folder, or an existing script. If you want the CLI to follow a familiar style, paste a short --help output from gh , kubectl , or your team’s own tool.",
-            "If the command needs auth, tell Codex the environment variable name, config file path, or login flow it should support. Set the secret yourself in your shell or config file. Do not paste secrets into the task. Ask Codex to make the CLI’s setup check fail clearly when auth is missing.",
+            "If the command needs auth, tell Codex the environment variable name, config file path, or login flow it should support. Set the secret yourself in your shell or config file. Do not paste secrets into the chat. Ask Codex to make the CLI’s setup check fail clearly when auth is missing.",
             "Use the starter prompt on this page. Fill in the source Codex should learn from and the first job the CLI should support.",
             "Before Codex writes code, it should show the proposed command surface and ask only for missing details that would block the build.",
             "Codex should not stop after cargo run , python path/to/script.py , or an uninstalled package command. Ask it to test the installed command from another repo or a temporary folder, the way a later task will use it.",
             "Test the CLI like a future agent",
             "If Codex returns a giant JSON blob, ask it to narrow the default response and add a file export for full payloads. If it forgets the approval boundary, ask it to update the companion skill before you use it in another task.",
             "When you need the CLI again, invoke the skill instead of pasting the docs again:",
-            "For recurring work, test the skill once in a task, then ask Codex to schedule that same invocation from the task ."
+            "For recurring work, test the skill once in a chat, then ask Codex to schedule a task for that same invocation from the chat ."
           ],
           "items": [
             "Decide whether the job needs a CLI",
@@ -4663,7 +4664,7 @@
             "You can use ChatGPT to gather the approved planning sources and turn them into a playbook that separates attendee-facing copy from private operating details.",
             "Use the starter prompt to ask ChatGPT to generate an event playbook for you. It should:",
             "You should get a list of things to check and run every time a new event is planned.",
-            "After the first run of your new playbook works, keep the same task open and ask ChatGPT to schedule the playbook from that task ."
+            "After the first run of your new playbook works, keep the same chat open and ask ChatGPT to schedule a task for the playbook from that chat ."
           ],
           "items": [
             "The public event page",
