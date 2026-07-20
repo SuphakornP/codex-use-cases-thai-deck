@@ -3,12 +3,12 @@
     "index": 33,
     "slug": "reusable-codex-skills",
     "workflowEn": [
-      { "label": "Choose repeatable work", "detail": "Pick one recurring task with a strong example of the desired output." },
-      { "label": "Gather the pattern", "detail": "Attach examples, rules, documents, and commands that make the task successful." },
+      { "label": "Choose repeatable work", "detail": "Pick one recurring workflow with a strong example of the desired output." },
+      { "label": "Gather the pattern", "detail": "Attach examples, rules, documents, and commands that make the workflow successful." },
       { "label": "Create the Skill", "detail": "Use $skill-creator to build and validate the Skill, including when it should trigger." },
       { "label": "Test and refine", "detail": "Run the Skill on real work and add corrections wherever its output misses the standard." }
     ],
-    "checkEn": "Test the Skill on one real task and remove secrets or unsafe commands before sharing it."
+    "checkEn": "Test the Skill in one real chat and remove secrets or unsafe commands before sharing it."
   },
   {
     "index": 34,

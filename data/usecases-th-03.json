@@ -413,7 +413,7 @@
       { "label": "ทดสอบเหมือนผู้ใช้จริง", "detail": "ติดตั้งแล้วเรียก CLI จากอีกโฟลเดอร์ พร้อมตรวจ JSON, pagination และ error messages" }
     ],
     "promptTh": "ใช้ $cli-creator สร้าง CLI จาก [source] สำหรับ [งาน] และ $skill-creator ทำ companion skill เสนอ commands ก่อนเขียน รองรับ auth ผ่าน [env/config] จำกัด output และให้ write action รออนุมัติ แล้วทดสอบจากอีกโฟลเดอร์",
-    "checkTh": "อย่าใส่ secret ใน task และตรวจว่า write command ต้องขออนุมัติชัดเจนก่อนใช้กับข้อมูลจริง"
+    "checkTh": "อย่าใส่ secret ในแชต และตรวจว่า write command ต้องขออนุมัติชัดเจนก่อนใช้กับข้อมูลจริง"
   },
   {
     "index": 92,
