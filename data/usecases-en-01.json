@@ -147,7 +147,7 @@
     "slug": "github-code-reviews",
     "workflowEn": [
       { "label": "Connect the repository", "detail": "Install Codex code review and authorize the intended repository or organization." },
-      { "label": "Set review criteria", "detail": "Add project rules to AGENTS.md, including security, tests, and behavior to preserve." },
+      { "label": "Set review rules", "detail": "Add ## Code Review Rules to the nearest AGENTS.md; state the behavior to flag, safe path, and exceptions." },
       { "label": "Request a PR review", "detail": "Enable automatic review or mention @codex review with the areas to emphasize." },
       { "label": "Assess and fix", "detail": "Have a developer confirm findings, apply focused fixes, and run regression tests." }
     ],

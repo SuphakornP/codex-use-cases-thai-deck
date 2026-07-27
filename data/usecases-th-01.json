@@ -376,8 +376,8 @@
         "detail": "ติดตั้ง Codex code review และกำหนด repo หรือองค์กรที่อนุญาต"
       },
       {
-        "label": "กำหนดเกณฑ์ตรวจ",
-        "detail": "ใส่แนวทางเฉพาะโปรเจกต์ใน AGENTS.md เช่น security, tests และ behavior ที่ห้ามเปลี่ยน"
+        "label": "กำหนดกฎรีวิว",
+        "detail": "เพิ่มหัวข้อ ## Code Review Rules ใน AGENTS.md ที่ใกล้โค้ดที่สุด พร้อม behavior ที่ต้องจับ safe path และข้อยกเว้น"
       },
       {
         "label": "เรียกตรวจ PR",

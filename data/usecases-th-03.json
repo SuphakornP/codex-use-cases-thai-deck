@@ -455,13 +455,13 @@
     "summaryTh": "ใช้ Codex สร้าง ChatGPT app จากผลลัพธ์หลักหนึ่งอย่าง โดยออกแบบ tools, MCP server และ widget เท่าที่จำเป็น แล้วทดสอบใน ChatGPT จริง",
     "categoryTh": "วิศวกรรมซอฟต์แวร์",
     "workflow": [
-      { "label": "เลือกผลลัพธ์หลัก", "detail": "กำหนดงานหนึ่งอย่างที่ผู้ใช้ควรทำสำเร็จใน ChatGPT และวาง tools เพียง 3–5 ตัว" },
+      { "label": "เลือกผลลัพธ์หลัก", "detail": "กำหนดงานหนึ่งอย่างที่ MCP-backed plugin ควรทำสำเร็จใน ChatGPT และจำกัด tools ไว้ 3–5 ตัว" },
       { "label": "ออกแบบสัญญา", "detail": "ระบุ tool names, metadata, inputs, outputs และตัดสินใจว่า v1 ต้องมี widget หรือไม่" },
-      { "label": "สร้างแกนระบบ", "detail": "ให้ Codex scaffold MCP server และ widget ตาม pattern ของ repo ก่อนเพิ่ม auth" },
-      { "label": "ทดสอบใน ChatGPT", "detail": "เปิดผ่าน HTTPS ใน developer mode แล้วลอง direct, indirect และ negative prompts" }
+      { "label": "สร้างแกนระบบ", "detail": "ให้ Codex scaffold MCP server และ optional widget ตาม pattern ของ repo ก่อนเพิ่ม auth" },
+      { "label": "ทดสอบใน ChatGPT", "detail": "เชื่อม MCP server ผ่าน HTTPS ใน developer mode แล้วลอง direct, indirect และ negative prompts" }
     ],
     "promptTh": "ใช้ $chatgpt-apps กับ $openai-docs วางแผน ChatGPT app สำหรับ [use case] โดยเริ่มจาก outcome เดียว เสนอ tools 3–5 ตัวพร้อม metadata, inputs และ outputs แนะนำว่า v1 ต้องมี widget หรือไม่ ใช้ TypeScript กับ React และสรุป auth, deployment, tests, file tree และ risks",
-    "checkTh": "ทดสอบ tool payload และ conversation flow ใน ChatGPT จริง และเพิ่ม OAuth เฉพาะเมื่อมีข้อมูลผู้ใช้หรือ write action"
+    "checkTh": "ทดสอบ tool payload และ conversation flow ของ MCP server ใน ChatGPT จริง และเพิ่ม OAuth เฉพาะเมื่อมีข้อมูลผู้ใช้หรือ write action"
   },
   {
     "index": 95,
