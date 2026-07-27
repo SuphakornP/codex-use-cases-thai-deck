@@ -311,12 +311,12 @@
     "index": 94,
     "slug": "chatgpt-apps",
     "workflowEn": [
-      { "label": "Choose the core outcome", "detail": "Define one task users should complete in ChatGPT and limit the app to 3-5 tools." },
+      { "label": "Choose the core outcome", "detail": "Define one task the MCP-backed plugin should complete in ChatGPT and limit it to 3-5 tools." },
       { "label": "Design the contract", "detail": "Define tool names, metadata, inputs, outputs, and whether v1 needs a widget." },
-      { "label": "Build the core", "detail": "Have Codex scaffold the MCP server and widget using repo patterns before adding auth." },
-      { "label": "Test in ChatGPT", "detail": "Open it over HTTPS in developer mode and try direct, indirect, and negative prompts." }
+      { "label": "Build the core", "detail": "Have Codex scaffold the MCP server and optional widget using repository patterns before adding auth." },
+      { "label": "Test in ChatGPT", "detail": "Connect the MCP server over HTTPS in developer mode and try direct, indirect, and negative prompts." }
     ],
-    "checkEn": "Test tool payloads and conversation flow in ChatGPT; add OAuth only for user data or write actions."
+    "checkEn": "Test MCP server payloads and conversation flow in ChatGPT; add OAuth only for user data or write actions."
   },
   {
     "index": 95,
