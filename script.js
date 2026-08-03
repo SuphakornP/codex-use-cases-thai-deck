@@ -2,6 +2,7 @@
   "use strict";
 
   const useCases = Array.isArray(window.USE_CASES) ? window.USE_CASES : [];
+  const expectedUseCaseCount = 101;
   const supportedLanguages = new Set(["th", "en"]);
   const storageKey = "codex-field-guide-language";
   const categories = [
@@ -18,9 +19,9 @@
   const UI_COPY = {
     th: {
       locale: "th-TH",
-      documentTitle: "Codex Field Guide — 99 Use Cases สำหรับคนทำงาน",
+      documentTitle: "Codex Field Guide — 101 Use Cases สำหรับคนทำงาน",
       documentDescription:
-        "คู่มือ Codex สำหรับคนทำงาน: 99 use cases จากเอกสารทางการ พร้อม workflow ภาษาไทยและอังกฤษที่นำไปใช้ได้จริง",
+        "คู่มือ Codex สำหรับคนทำงาน: 101 use cases จากเอกสารทางการ พร้อม workflow ภาษาไทยและอังกฤษที่นำไปใช้ได้จริง",
       edition: "FIELD GUIDE / TH",
       skip: "ข้ามไปยังเนื้อหาสไลด์",
       home: "กลับไปสไลด์แรก",
@@ -73,9 +74,9 @@
     },
     en: {
       locale: "en",
-      documentTitle: "Codex Field Guide — 99 Use Cases for Knowledge Workers",
+      documentTitle: "Codex Field Guide — 101 Use Cases for Knowledge Workers",
       documentDescription:
-        "A practical Codex field guide with 99 official use cases, bilingual workflows, starter prompts, and human checkpoints.",
+        "A practical Codex field guide with 101 official use cases, bilingual workflows, starter prompts, and human checkpoints.",
       edition: "FIELD GUIDE / EN",
       skip: "Skip to slide content",
       home: "Return to the first slide",
@@ -133,14 +134,14 @@
       cover: {
         aria: "สไลด์เปิดเรื่อง",
         imageAlt: "ภาพประกอบโต๊ะทำงานจาก OpenAI use case",
-        kicker: "99 OFFICIAL USE CASES · BILINGUAL EDITION",
+        kicker: "101 OFFICIAL USE CASES · BILINGUAL EDITION",
         title: "Codex",
         accent: "ฉบับคนทำงาน",
         subhead:
           "จาก “อยากให้งานเสร็จ” สู่ workflow ที่มอบหมาย ตรวจสอบ และนำไปใช้ได้จริง — โดยไม่ต้องเป็นคนเขียนโค้ด",
         authorLabel: "ผู้จัดทำ",
         author: "Suphakorn P.",
-        footer: "สรุปจากเอกสารทางการ ณ 27 ก.ค. 2026 · เอกสารเพื่อการเรียนรู้ ไม่ใช่สื่อทางการของ OpenAI",
+        footer: "สรุปจากเอกสารทางการ ณ 3 ส.ค. 2026 · เอกสารเพื่อการเรียนรู้ ไม่ใช่สื่อทางการของ OpenAI",
       },
       framing: {
         aria: "หลักการทำงานร่วมกับ Codex",
@@ -180,7 +181,7 @@
       cover: {
         aria: "Introduction slide",
         imageAlt: "Workspace illustration from an official OpenAI use case",
-        kicker: "99 OFFICIAL USE CASES · BILINGUAL EDITION",
+        kicker: "101 OFFICIAL USE CASES · BILINGUAL EDITION",
         title: "Codex",
         accent: "for knowledge work",
         subhead:
@@ -188,7 +189,7 @@
         authorLabel: "Created by",
         author: "Suphakorn P.",
         footer:
-          "Summarized from official documentation as of July 27, 2026 · For learning; not official OpenAI material",
+          "Summarized from official documentation as of August 3, 2026 · For learning; not official OpenAI material",
       },
       framing: {
         aria: "Principles for working with Codex",
@@ -417,7 +418,7 @@
       <article class="slide slide--map" role="group" aria-label="${escapeHTML(content.aria)}">
         <div class="map-layout">
           <section class="map-heading">
-            <p class="eyebrow reveal" style="--reveal-order: 0">8 ROUTES · 99 USE CASES</p>
+            <p class="eyebrow reveal" style="--reveal-order: 0">8 ROUTES · ${expectedUseCaseCount} USE CASES</p>
             <h2 class="reveal" style="--reveal-order: 1">${escapeHTML(content.title)}<em>${escapeHTML(content.accent)}</em></h2>
             <p class="reveal" style="--reveal-order: 2">${escapeHTML(content.body)}</p>
           </section>
@@ -520,7 +521,7 @@
               .join("")}
           </section>
         </div>
-        <p class="closing-source">Source: learn.chatgpt.com/use-cases · 99 use cases reviewed</p>
+        <p class="closing-source">Source: learn.chatgpt.com/use-cases · ${expectedUseCaseCount} use cases reviewed</p>
       </article>`;
   }
 
@@ -650,8 +651,9 @@
     renderChrome();
     renderCategoryFilter();
     renderTocList();
-    if (useCases.length === 99) renderCurrentSlide({ transition: "language", preserveScroll: true });
-    else showDataError();
+    if (useCases.length === expectedUseCaseCount) {
+      renderCurrentSlide({ transition: "language", preserveScroll: true });
+    } else showDataError();
     if (!elements.prompt.hidden && slides[currentIndex]?.type === "usecase") {
       elements.promptCopy.textContent = localizedField(slides[currentIndex].data, "prompt");
     }
@@ -960,7 +962,7 @@
   renderChrome();
   syncLanguageUrl(currentLanguage);
   writeStoredLanguage(currentLanguage);
-  if (useCases.length !== 99) {
+  if (useCases.length !== expectedUseCaseCount) {
     showDataError();
   } else {
     renderCategoryFilter();

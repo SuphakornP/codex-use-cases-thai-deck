@@ -199,6 +199,17 @@
   },
   {
     "index": 84,
+    "slug": "build-and-deploy-internal-apps",
+    "workflowEn": [
+      { "label": "Choose the core task", "detail": "Name the user, one workflow, its sources, and what should persist between sessions." },
+      { "label": "Add storage only if needed", "detail": "Use D1 for structured data and R2 for files; keep secrets out of prompts and project files." },
+      { "label": "Build and test privately", "detail": "Test the main flow, persistence, and responsive layout on mobile and desktop before publishing." },
+      { "label": "Approve access", "detail": "Review before inviting people, sharing to the workspace or Internet, or changing the private preview." }
+    ],
+    "checkEn": "Review data and access; do not use Sites for PHI, payment-card data, or financial transactions."
+  },
+  {
+    "index": 85,
     "slug": "draft-prds-from-sources",
     "workflowEn": [
       { "label": "Identify the sources", "detail": "Point to the Linear project, Slack thread, Drive, or Notion content to use as evidence." },
@@ -209,7 +220,7 @@
     "checkEn": "Have the PM and subject owners confirm requirements, decisions, and sources before sharing or updating work systems."
   },
   {
-    "index": 85,
+    "index": 86,
     "slug": "follow-goals",
     "workflowEn": [
       { "label": "Define the outcome", "detail": "Set the objective, boundaries that must not change, and verifiable completion criteria." },
@@ -220,7 +231,29 @@
     "checkEn": "Set a clear stopping condition and test evidence before starting, and review status when scope or risk changes."
   },
   {
-    "index": 86,
+    "index": 87,
+    "slug": "project-teammate",
+    "workflowEn": [
+      { "label": "Scope one project", "detail": "Define one goal and only the messages, email, calendar, documents, and trackers relevant to it." },
+      { "label": "Build the project brief", "detail": "Summarize status, decisions, owners, deadlines, blockers, questions, and the next step with links." },
+      { "label": "Prepare the next step", "detail": "Research, prepare meetings, review drafts, and draft follow-ups while separating facts from assumptions." },
+      { "label": "Add a heartbeat", "detail": "Watch for meaningful changes and stay quiet otherwise; never contact people or update trackers unasked." }
+    ],
+    "checkEn": "Keep the task project-scoped and approve every send, edit, schedule, share, or commitment."
+  },
+  {
+    "index": 88,
+    "slug": "track-bills-subscriptions-and-spending",
+    "workflowEn": [
+      { "label": "Connect Finances on web", "detail": "Add read-only @Finances on web; desktop is unsupported." },
+      { "label": "Review 30 days", "detail": "Summarize spending, savings, balances, bills, and anomalies." },
+      { "label": "Verify anomalies", "detail": "Check categories and unfamiliar or duplicate charges against statements or providers." },
+      { "label": "Schedule monitoring", "detail": "Request daily alerts and a brief report every two weeks." }
+    ],
+    "checkEn": "Verify all figures; Finances cannot move money, pay bills, cancel services, trade, or change settings."
+  },
+  {
+    "index": 89,
     "slug": "ai-app-evals",
     "workflowEn": [
       { "label": "Choose one behavior", "detail": "Define one user promise, such as answer quality, grounding, or tool-call correctness." },
@@ -231,7 +264,7 @@
     "checkEn": "Ensure fixtures contain no sensitive data, assertions test real behavior, and product failures are not hidden by relaxed thresholds."
   },
   {
-    "index": 87,
+    "index": 90,
     "slug": "user-stories-to-ui-mocks",
     "workflowEn": [
       { "label": "Gather user voices", "detail": "Point to Slack, Linear, Drive, and research notes that explain the problem and context." },
@@ -242,18 +275,7 @@
     "checkEn": "Have users and the design team confirm the mock reflects the real problem and follows the design system before development."
   },
   {
-    "index": 88,
-    "slug": "build-and-deploy-internal-apps",
-    "workflowEn": [
-      { "label": "Choose the core task", "detail": "Identify the user, one task the app should support, and the data sources it should check." },
-      { "label": "Define storage", "detail": "Use D1 for structured data and R2 for user-uploaded files when needed." },
-      { "label": "Build and test", "detail": "Have Sites build the app, then test the main flow, persistence, and responsive layout." },
-      { "label": "Set access", "detail": "Keep it private during review, then choose invited users, the workspace, or anyone with the link." }
-    ],
-    "checkEn": "Review stored data, access permissions, and the selected audience before deploying or changing the app from private."
-  },
-  {
-    "index": 89,
+    "index": 91,
     "slug": "slack-action-triage",
     "workflowEn": [
       { "label": "Set the scope", "detail": "Specify the time period, workstream, people, or channels to review." },
@@ -264,7 +286,7 @@
     "checkEn": "Open the source thread to confirm the item remains unresolved, then check the recipient and tone before sending any message."
   },
   {
-    "index": 90,
+    "index": 92,
     "slug": "react-native-expo-apps",
     "workflowEn": [
       { "label": "Inspect the project", "detail": "Have Codex determine whether this is a new Expo app or existing project and define one core workflow." },
@@ -275,7 +297,7 @@
     "checkEn": "Verify results on a device or simulator and check package compatibility before creating a dev client or production build."
   },
   {
-    "index": 91,
+    "index": 93,
     "slug": "agent-friendly-clis",
     "workflowEn": [
       { "label": "Choose a repeat task", "detail": "Define the CLI's first task and its source of truth, such as API docs, an export, database, or script." },
@@ -286,7 +308,7 @@
     "checkEn": "Do not put secrets in the chat, and ensure write commands require explicit approval before use on real data."
   },
   {
-    "index": 92,
+    "index": 94,
     "slug": "verified-operations-workflows",
     "workflowEn": [
       { "label": "Define the scope", "detail": "Specify the goal, inputs, approval source, runner, and artifact that will prove the result." },
@@ -297,7 +319,7 @@
     "checkEn": "Stop before irreversible actions or scope expansion, and have the owner review outcome evidence after the run."
   },
   {
-    "index": 93,
+    "index": 95,
     "slug": "event-launch-playbooks",
     "workflowEn": [
       { "label": "Gather planning sources", "detail": "Identify planning threads, approved documents, templates, and calendar deadlines." },
@@ -308,7 +330,7 @@
     "checkEn": "Ensure public content contains no internal operational details and every date, owner, and approval has a verified source."
   },
   {
-    "index": 94,
+    "index": 96,
     "slug": "chatgpt-apps",
     "workflowEn": [
       { "label": "Choose the core outcome", "detail": "Define one task the MCP-backed plugin should complete in ChatGPT and limit it to 3-5 tools." },
@@ -319,7 +341,7 @@
     "checkEn": "Test MCP server payloads and conversation flow in ChatGPT; add OAuth only for user data or write actions."
   },
   {
-    "index": 95,
+    "index": 97,
     "slug": "audit-workflow",
     "workflowEn": [
       { "label": "Frame the process", "detail": "Define users, inputs, outputs, scope, review date, and workflow constraints." },
@@ -330,7 +352,7 @@
     "checkEn": "Have process owners review permissions, exception paths, irreversible actions, and ownership before automation."
   },
   {
-    "index": 96,
+    "index": 98,
     "slug": "launch-campaign-kit",
     "workflowEn": [
       { "label": "Gather launch inputs", "detail": "Attach approved launch plans, product notes, trackers, creative briefs, pages, and discussions." },
@@ -341,7 +363,7 @@
     "checkEn": "Verify claims against product sources, separate public copy from internal data, and get product, legal, and brand approval."
   },
   {
-    "index": 97,
+    "index": 99,
     "slug": "consolidate-spreadsheets",
     "workflowEn": [
       { "label": "Define joining rules", "detail": "Specify the join key, duplicate rule, period definitions, targets, and required output views." },
@@ -352,7 +374,7 @@
     "checkEn": "Verify formulas, join mismatches, and assumptions against originals whenever source files or reporting rules change."
   },
   {
-    "index": 98,
+    "index": 100,
     "slug": "weekly-work-summary",
     "workflowEn": [
       { "label": "Define the week", "detail": "Specify the date range, audience, and level of detail for the report." },

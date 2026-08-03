@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "source-usecases.json"
 IMAGE_DIR = ROOT / "assets" / "use-cases"
 USER_AGENT = "Mozilla/5.0 (compatible; CodexUseCaseDeck/1.0)"
+EXPECTED_COUNT = 101
 
 
 def clean(value: str) -> str:
@@ -155,8 +156,8 @@ def main() -> None:
         )
 
     cards.sort(key=lambda card: int(card["index"]))
-    if len(cards) != 99:
-        raise RuntimeError(f"Expected 99 official use cases, found {len(cards)}")
+    if len(cards) != EXPECTED_COUNT:
+        raise RuntimeError(f"Expected {EXPECTED_COUNT} official use cases, found {len(cards)}")
 
     completed: list[dict[str, object]] = []
     with ThreadPoolExecutor(max_workers=10) as executor:
