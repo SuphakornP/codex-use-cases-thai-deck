@@ -40,16 +40,16 @@ test("server-renders the complete bilingual presentation shell", async () => {
   assert.doesNotMatch(html, /codex-preview/i);
 });
 
-test("generated deck data contains 99 complete bilingual use cases", async () => {
+test("generated deck data contains 101 complete bilingual use cases", async () => {
   const source = await readFile(new URL("../data/usecases-data.js", import.meta.url), "utf8");
   const context = { window: {} };
   vm.runInNewContext(source, context);
   const items = context.window.USE_CASES;
 
-  assert.equal(items.length, 99);
+  assert.equal(items.length, 101);
   assert.deepEqual(
     Array.from(items, (item) => item.index),
-    Array.from({ length: 99 }, (_, index) => index),
+    Array.from({ length: 101 }, (_, index) => index),
   );
 
   for (const item of items) {

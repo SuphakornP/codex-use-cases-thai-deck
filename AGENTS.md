@@ -10,7 +10,7 @@ Core presentation files live at the repository root: `index.html`, `styles.css`,
 - `npm run dev` — prepare public assets and start the Vinext development server.
 - `npm run build` — create the production Sites bundle in `dist/`.
 - `npm test` — run a production build followed by the Node worker test suite.
-- `python3 scripts/build_deck_data.py` — validate and rebuild the 99-use-case JavaScript dataset after editing Thai or English JSON files.
+- `python3 scripts/build_deck_data.py` — validate and rebuild the 101-use-case JavaScript dataset after editing Thai or English JSON files.
 - `python3 -m http.server 4173` — preview the static deck directly without the Sites wrapper.
 
 ## Coding Style & Naming Conventions

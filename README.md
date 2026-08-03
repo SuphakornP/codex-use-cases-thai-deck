@@ -1,6 +1,6 @@
-# Codex Field Guide — 99 Use Cases | TH / EN
+# Codex Field Guide — 101 Use Cases | TH / EN
 
-Web presentation สองภาษา ไทย/อังกฤษ ที่สรุป use case ทั้งหมด 99 รายการจาก [OpenAI Learn: Use cases](https://learn.chatgpt.com/use-cases) ณ วันที่ 27 กรกฎาคม 2026 แต่ละ use case มีสไลด์เฉพาะ พร้อม workflow 4 ขั้น, Prompt เริ่มต้น, Human checkpoint และลิงก์กลับไปยัง official source
+Web presentation สองภาษา ไทย/อังกฤษ ที่สรุป use case ทั้งหมด 101 รายการจาก [OpenAI Learn: Use cases](https://learn.chatgpt.com/use-cases) ณ วันที่ 3 สิงหาคม 2026 แต่ละ use case มีสไลด์เฉพาะ พร้อม workflow 4 ขั้น, Prompt เริ่มต้น, Human checkpoint และลิงก์กลับไปยัง official source
 
 > หน้า official รวมทั้ง ChatGPT และ Codex workflows งานนี้จึงคงชื่อเครื่องมือในแต่ละ use case ให้ตรงกับต้นฉบับ แม้ชื่อ presentation จะเน้น Codex
 
@@ -31,11 +31,11 @@ python3 -m http.server 4173
 ## เนื้อหาในโฟลเดอร์
 
 - `index.html`, `styles.css`, `script.js` — presentation แบบ static ไม่มี runtime dependency
-- `data/usecases-data.js` — ข้อมูล 99 สไลด์ที่ build แล้ว
+- `data/usecases-data.js` — ข้อมูล 101 สไลด์ที่ build แล้ว
 - `data/usecases-th-01.json` ถึง `data/usecases-th-03.json` — เนื้อหาไทยที่เรียบเรียงสำหรับสไลด์
 - `data/usecases-en-01.json` ถึง `data/usecases-en-03.json` — workflow และ Human checkpoint ภาษาอังกฤษที่เรียบเรียงคู่กัน
 - `data/source-usecases.json` — inventory จาก official pages พร้อม source URL
-- `assets/use-cases/` — ภาพประกอบจากหน้า official use cases จำนวน 99 ภาพ
+- `assets/use-cases/` — ภาพประกอบจากหน้า official use cases จำนวน 101 ภาพ
 - `assets/fonts/` — IBM Plex Sans Thai และ Chakra Petch สำหรับใช้งานแบบ offline
 - `scripts/` — เครื่องมือ refresh source และรวมข้อมูล
 
@@ -48,7 +48,7 @@ python3 scripts/scrape_official_use_cases.py
 python3 scripts/build_deck_data.py
 ```
 
-ตัว scraper ตั้งใจตรวจว่าหน้า official ยังมี 99 use cases หากจำนวนเปลี่ยนจะหยุดและแจ้งให้ทบทวนเนื้อหาไทยก่อน build ใหม่
+ตัว scraper ตั้งใจตรวจว่าหน้า official ยังมี 101 use cases หากจำนวนเปลี่ยนจะหยุดและแจ้งให้ทบทวนเนื้อหาไทยก่อน build ใหม่
 
 ## Source และการใช้งานภาพ
 

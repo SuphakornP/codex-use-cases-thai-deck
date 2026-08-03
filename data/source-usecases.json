@@ -1,13 +1,186 @@
 {
   "source": "https://learn.chatgpt.com/use-cases",
-  "retrievedAt": "2026-07-27T03:01:13Z",
-  "count": 99,
+  "retrievedAt": "2026-08-03T02:03:44Z",
+  "count": 101,
   "useCases": [
     {
       "index": 0,
+      "slug": "generate-slide-decks",
+      "title": "Create or revise a slide deck",
+      "tagline": "Turn notes, data, or an existing presentation into a slide deck.",
+      "tags": [
+        "Data",
+        "Integrations"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/generate-slide-decks",
+      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/generate-slide-decks",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/generate-slide-decks.webp",
+      "summary": "Create or revise a Google Slides or PowerPoint presentation from source material, a reference deck, or a reusable template.",
+      "difficulty": "Easy",
+      "time": "30m",
+      "bestFor": [
+        "Turning notes, research, or data into a presentation.",
+        "Refreshing an existing deck while preserving its structure and style."
+      ],
+      "starterPrompt": "Use @Presentations to turn the material I've attached into a presentation for its intended audience.\n\nIf I've included an existing deck or template, match its structure, visual style, and branding. Keep text and charts editable where possible, use visuals when they make the point clearer, and check the finished slides for layout or formatting issues. Return the completed presentation and briefly flag anything that needs my review.",
+      "workflow": [
+        {
+          "title": "Before you start",
+          "paragraphs": [
+            "Start with the material you already have: notes, a memo, research, a spreadsheet, or an existing presentation. Tell ChatGPT who the deck is for, what it needs to communicate, and what should stay unchanged.",
+            "In the ChatGPT desktop app, use @Presentations to create or edit a PowerPoint file or build a new presentation from your source material. Connect Google Drive when you want to create or update native Google Slides or reference files stored in Google Workspace. You can also attach local files directly.",
+            "To work inside an open PowerPoint presentation, use the ChatGPT for PowerPoint add-in. Available plugins, skills, and connected sources can vary by plan and workspace.",
+            "Add @Presentations to your prompt to find saved presentation templates in the Template Gallery. If you don’t have a template, Presentations can start from a built-in layout or follow an existing deck.",
+            "ChatGPT turns the source material into a short slide plan, builds the presentation, and checks the rendered slides before returning the deck. It can follow a reference presentation or saved template, preserve approved figures and branding, and flag claims that need a source.",
+            "Here is what that conversation can look like:",
+            "ChatGPT reviewed the Frontier Builders strategy brief and review notes, created a six-slide presentation for Monday’s leadership review, generated a visual opener, and checked the slides for layout issues.",
+            "After a request to make the opener more visual and shorten the decision slide, it refined the deck and returned the updated presentation.",
+            "Review the final slides, not only the outline. Check that the story fits the audience, the claims and numbers match the source material, and the slides are readable. Duplicate important decks before making large changes so you can revert if needed.",
+            "Use follow-on prompts to match a reference, adapt the story, bring in new information, or save a format you expect to use again.",
+            "Template Creator saves a personal template backed by the original presentation, so you can reuse the same format in a future task. Template matching and advanced chart, shape, formatting, or slide-management edits can still need manual refinement. Confirm the final layout and claims before sharing.",
+            "See Create and edit files with ChatGPT Work for the current Google Workspace workflow and supported file types, or use ChatGPT for PowerPoint to work directly in an open PowerPoint presentation."
+          ],
+          "items": []
+        }
+      ],
+      "image": "assets/use-cases/generate-slide-decks.webp"
+    },
+    {
+      "index": 1,
+      "slug": "manage-your-inbox",
+      "title": "Get your email to inbox zero",
+      "tagline": "Clear the backlog, draft replies in your voice, and stay on top of new email.",
+      "tags": [
+        "Automation",
+        "Integrations"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/manage-your-inbox",
+      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/manage-your-inbox",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/manage-your-inbox.webp",
+      "summary": "Clear an overloaded inbox and see which messages need a reply, a decision, or your attention. ChatGPT Work can suggest a cleanup, draft replies in your voice, and check for new email on a schedule.",
+      "difficulty": "Easy",
+      "time": "10m",
+      "bestFor": [
+        "Clear an overloaded email inbox without losing useful records.",
+        "Surface important mail and reply drafts on a schedule."
+      ],
+      "starterPrompt": "Review my connected email from the last 90 days, including sent mail. If I have multiple accounts, review each separately. If none are connected, explain how to connect Gmail or Outlook Email from the Plugins tab in ChatGPT Work.\n\nInfer whether the inbox is work or personal and identify the people, projects, and recurring messages that matter. Use recent, human-written sent emails to understand how I write. Ignore forwarded or generated messages that aren't representative of my voice, and check other connected tools when they might provide useful context for a reply.\n\nGive me a concise, personalized update with natural headings:\n\n- Open with one or two sentences about what you learned from my inbox, including the total and unread counts.\n- List up to five emails that need attention. Keep each to one short, action-oriented bullet with relevant timing and a link. Avoid speculation, especially for security alerts.\n- In two or three sentences, explain what routine email you'd label and archive, what stays visible, and any subscriptions worth reviewing. Format proposed `labels` inline and clarify that archived email remains searchable.\n- Draft one useful reply in my voice, briefly explaining who it's for, what they need, and any relevant context you found.\n- Explain what you'll do going forward and that I can redirect you by replying here.\n- End with three simple, numbered yes/no questions: apply the cleanup, save the reply as a draft, or keep the proposed schedule and priorities. Show how to respond with a one-line example, such as “1 yes, 2 yes, 3 no,” and invite me to include any changes.\n\nSchedule checks at 8 AM and 4 PM on weekdays for work email, or 8 AM daily for personal email. Explain this in first person: “Going forward, I'll check…” Describe how you'll surface new or changed mail that needs attention, use other connected sources like messaging, documents, or calendar when relevant, and draft replies in my voice. Tell me I can redirect you by replying here. Keep each update concise, number any questions at the bottom, and briefly say so if nothing needs attention.\n\nDon't send, archive, or move anything to Trash without approval. Apply only approved cleanup actions and always ask separately before using Trash.",
+      "workflow": [
+        {
+          "title": "Before you start",
+          "paragraphs": [
+            "You can run this in ChatGPT Work in the browser or desktop app. Before you start:",
+            "ChatGPT reviews recent mail, identifies messages that need attention, proposes a cleanup, and prepares replies without sending them. Once you approve the cleanup, it can apply those changes to the older backlog. Here is what that conversation can look like:",
+            "I reviewed your connected work inbox, centered on product launches, documentation, and production work. It has 116 messages, 96 unread ; most unread mail is project activity, calendar updates, shared-file notifications, and newsletters.",
+            "I’d label and archive routine project, calendar, and document notifications under Project activity , Calendar , and Docs ; archived mail remains searchable. Direct requests, active reviews, failed builds, security alerts, and anything unresolved would stay visible. Newsletters and other recurring subscriptions are worth reviewing separately.",
+            "The recording organizer is waiting on demo topics, a short bio, and a photo. I checked the latest scheduling context and drafted a response in your voice:",
+            "Excited for this. I’m planning to show the three workflows we discussed and will send the bio and photo today. I saw the updated calendar invite, so I’ll plan around the new time.",
+            "Going forward, I’ll check at 8 AM and 4 PM on weekdays . I’ll surface new or changed email that needs your attention, check connected sources like messaging, documents, or your calendar when relevant, and prepare replies in your voice. You can redirect me anytime by replying here.",
+            "Reply with “1 yes, 2 yes, 3 no” and include any changes.",
+            "Warning: The Gmail plugin can move email to Trash when you explicitly ask. Review the proposed groups and a few sample messages first, and archive anything you’re unsure about instead of deleting it. Available actions can vary by email plugin and workspace settings.",
+            "An email workflow has a few parts:",
+            "You can be more specific when you already know what you want. A work-email prompt might emphasize active conversations, requests, approvals, and project context:",
+            "A personal-email prompt might instead emphasize people you know, bills, packages, travel, appointments, and account alerts:",
+            "Both examples follow the same basic structure: what to check, what matters, what to do, when to do it, and what requires approval.",
+            "Once the basic workflow is running, you can refine it or ask ChatGPT to handle other useful email tasks.",
+            "Always check the right context",
+            "Draft a recurring update",
+            "Follow up on unanswered email",
+            "Change the format",
+            "Teach it what matters",
+            "Adjust how it drafts replies",
+            "Change when it checks",
+            "Keep cleanup and reply actions approval-based until you trust the rules.",
+            "Gmail and Outlook actions and scheduled tasks depend on your plan and workspace settings."
+          ],
+          "items": [
+            "Connect your email. Install the Gmail or Outlook Email plugin . You can also connect Slack, Google Drive, and your calendar to give ChatGPT more context when drafting replies.",
+            "Choose where scheduled checks run. Start in the browser if you want checks to continue when your laptop is off. On desktop, keep your computer on and the ChatGPT desktop app running. Voice chats don’t support scheduled tasks , so set up or manage them in chat instead.",
+            "Recording prep: send the requested demo topics, short bio, and photo before tomorrow’s session.",
+            "Documentation review: address the product-accuracy feedback before the guide moves forward.",
+            "Failed preview deployment: investigate the failed build before relying on the current changes.",
+            "Benefits task: complete the outstanding benefits change.",
+            "Sign-in alert: confirm whether the recent login was yours and follow the alert instructions if it wasn’t.",
+            "Apply the cleanup? Yes / no. Routine messages will be labeled and archived, not deleted.",
+            "Save the reply as a draft? Yes / no.",
+            "Keep the proposed schedule and priorities? Yes / no.",
+            "Connected context: plugins let ChatGPT read your email and check other connected tools when a reply needs more context. Slack may have the latest conversation or decision, Google Drive may have relevant files or project docs, and your calendar can clarify dates or meetings.",
+            "Priorities: you can tell ChatGPT which people, requests, alerts, and recurring messages to prioritize or ignore. Future checks can use those instructions.",
+            "Approval boundaries: ChatGPT proposes cleanup and drafts replies, but waits for your approval before taking action.",
+            "Scheduled tasks: instead of waiting for you to come back and ask again, ChatGPT can check for new messages in the same task on a schedule."
+          ]
+        }
+      ],
+      "image": "assets/use-cases/manage-your-inbox.webp"
+    },
+    {
+      "index": 2,
+      "slug": "use-your-computer-with-codex",
+      "title": "Use your computer with ChatGPT",
+      "tagline": "Let ChatGPT click, type, and navigate apps on your macOS or Windows computer.",
+      "tags": [
+        "Knowledge Work",
+        "Workflow"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/use-your-computer-with-codex",
+      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/use-your-computer-with-codex",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/use-your-computer-with-codex.webp",
+      "summary": "In the ChatGPT desktop app, use Computer Use to complete a scoped task across macOS or Windows apps and local files, with permission prompts and a final result you can review. Start signed-in browser tasks separately with Chrome.",
+      "difficulty": "Easy",
+      "time": "5m",
+      "bestFor": [
+        "Tasks that move across desktop apps, windows, or local files.",
+        "Work that needs the macOS background experience or a dedicated Windows foreground session."
+      ],
+      "starterPrompt": "@Computer Help me [task].\n\nUse my desktop apps or files as needed. Ask before sending, buying, or changing anything important.",
+      "workflow": [
+        {
+          "title": "Introduction",
+          "paragraphs": [
+            "Use Computer Use when a task moves across desktop apps, windows, or local files. ChatGPT can click, type, and navigate the apps you allow, then return the result for review. For a website or signed-in browser session, start a separate browser task with @Chrome .",
+            "Computer Use requires the ChatGPT desktop app. In supported regions, Computer Use is available on macOS and Windows in ChatGPT Work and Codex. Cloud Work tasks on web or mobile cannot directly access your local apps, files, or signed-in desktop browser sessions. You can start or steer a desktop task from Remote on mobile when you connect a Mac or Windows host.",
+            "Good examples include moving notes into a system of record, checking context across a few apps before drafting a reply, or copying approved details between tools that don’t have a dedicated plugin.",
+            "Here is what a safe desktop handoff can look like when Messages and Notes contain your cabin-weekend plans:",
+            "Desktop task: Gather cabin-weekend ideas from Messages and a shortlist in Notes, create a local note, and draft a reply.",
+            "Result: Pine Lodge is step-free, within two hours, and costs $690 total. Lake House may work, but travel time and accessibility still need confirmation. Cedar Ridge is excluded because it has stairs. The group size is unknown, so per-person pricing stays conditional.",
+            "The local note and reply draft are ready for review. Nothing was booked or sent.",
+            "If a plugin exists for an app, ChatGPT may use the plugin for the structured action. Computer Use is useful when the task depends on the app interface or a plugin isn’t available.",
+            "Start with one tool: use @Computer for desktop apps and local files, or @Chrome for your browser. ChatGPT can choose other tools as needed.",
+            "Turn messages into a plan",
+            "Find places to stay",
+            "Catch up on a project",
+            "Update a tracker from meeting notes",
+            "Work in your signed-in browser",
+            "Test a website",
+            "Clean up local files",
+            "Show it what you’re looking at",
+            "On macOS, use an appshot to share the app window in front of you. Appshots provide visual context; Computer Use can then open, inspect, and interact with the app if you allow it.",
+            "On macOS, Computer Use can work in the background while you use other apps. A picture-in-picture preview shows the active app; open the preview to follow along or move it out of the way. If you use a Pet, you can move the preview there.",
+            "On Windows, Computer Use runs on the active desktop and takes over the foreground. Expect the pointer and keyboard to move while the task runs. Keep the device unlocked and connected, or run the desktop app in a Windows virtual machine if you need to keep using your main desktop.",
+            "Browser tasks are often part of Computer Use. Choose the browser that has the context you need:",
+            "Name the browser in the prompt when it matters, and use customization for a recurring desktop preference.",
+            "Do not run two Computer Use tasks against the same app at the same time. Competing actions can change the current window or state and make the result unreliable.",
+            "Before starting a desktop task, sign in to the apps and services it needs. On macOS, you can enable locked use if the task must continue after the Mac locks. Locked use is not available for Windows Computer Use."
+          ],
+          "items": [
+            "Open the ChatGPT desktop app and install the Computer Use plugin .",
+            "Start your request with @Computer for desktop apps or @Chrome for browser tasks.",
+            "Describe the task, the apps or files involved, and the result you want.",
+            "Review access prompts and pause before actions that send, submit, or change important data.",
+            "On Windows, keep the target app visible while Computer Use runs.",
+            "Chrome extension : Use @Chrome for browser tasks, including listing searches, websites, and your existing signed-in Chrome profile, tabs, or extensions.",
+            "Built-in browser : Use it when you want a separate browser session for localhost or public sites. It has its own browser state and can wait while you sign in.",
+            "Cloud browser in ChatGPT Work on web or mobile: Use it for supported public, signed-out sites. It cannot access local files, open tabs, extensions, or saved passwords, sign in to sites, or complete payments."
+          ]
+        }
+      ],
+      "image": "assets/use-cases/use-your-computer-with-codex.webp"
+    },
+    {
+      "index": 3,
       "slug": "daily-work-brief",
-      "title": "Create a daily work brief",
-      "tagline": "Turn calendar, messages, email, and project context into a focused plan.",
+      "title": "Set up a work chief of staff",
+      "tagline": "Stay on top of your priorities, meetings, messages, and commitments.",
       "tags": [
         "Automation",
         "Integrations"
@@ -15,37 +188,53 @@
       "url": "https://learn.chatgpt.com/use-cases/daily-work-brief",
       "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/daily-work-brief",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/daily-work-brief.webp",
-      "summary": "Give ChatGPT the sources behind your day, then ask it to identify priorities, meeting preparation, reply needs, decisions owed, and useful FYIs in one reviewable brief that can improve through feedback and recurring checks.",
+      "summary": "Set up ChatGPT Work as a chief of staff that checks your connected messages, email, calendar, documents, and project trackers every hour, keeps track of what changes, and prepares concise updates and draft replies. On desktop, ask it to create or coordinate a separate task for a specific project.",
       "difficulty": "Easy",
-      "time": "5m",
+      "time": "Long-running",
       "bestFor": [
-        "People whose priorities are spread across calendar, email, Slack, docs, and follow-up lists.",
-        "Workdays with several meetings, decisions, and reply-worthy messages to triage.",
-        "Teams that want a short source-backed brief they can refine and run on a schedule."
+        "People managing priorities and commitments across messages, email, calendars, documents, and project trackers.",
+        "Workdays with meetings to prepare for, decisions to make, and follow-ups to track."
       ],
-      "starterPrompt": "Build my work brief for [date].\n\nReview my calendar, unread direct messages and mentions from the last 24 hours, unread email from the last 24 hours, open follow-ups, and the project notes or trackers I name. If a prior brief is available, call out what changed. Create a short brief with:\n\n- top priorities\n- meeting preparation\n- messages that need replies\n- decisions I owe\n- useful FYIs\n- missing access or uncertain context\n\nKeep confirmed facts separate from inference. Do not send messages, change documents, or create tasks.",
+      "starterPrompt": "Be my chief of staff.\n\nStart by checking the work tools and sources available to you, such as Slack or Teams, Gmail or Outlook, my calendar, documents, notes, and project trackers. Figure out what I'm working on, who I work with, what I've committed to, and what needs my attention.\n\nGive me a concise update covering:\n\n- what changed and what needs a decision;\n- approaching deadlines, meetings, and commitments;\n- messages that need a response;\n- what is blocked or waiting on someone; and\n- what can wait.\n\nLink to the original sources when possible, check the latest replies before resurfacing an older request, and tell me if an important source is unavailable. Separate confirmed facts from assumptions and don't repeat items that have already been resolved.\n\nSuggest next steps, draft replies, and prepare meeting briefs when useful. In the desktop app, when I ask you to delegate a project, create or continue a separate project task and share only the context it needs.\n\nSet up an hourly check if scheduled tasks are available. Review the connected sources, compare what you find with prior updates, and interrupt me only when a priority, deadline, blocker, decision, or message meaningfully changes. Stay quiet when there's nothing new. If you can't create the schedule, tell me instead of implying that it's active.\n\nApart from the hourly check I just requested, ask before creating a new project task, sending anything, editing documents, changing a schedule, or making commitments.\n\nStart by telling me what I should know today.",
       "workflow": [
         {
-          "title": "Start with the context behind today",
+          "title": "What to expect",
           "paragraphs": [
-            "ChatGPT is most useful when it can see the calendar, messages, email, follow-ups, and notes that shape the day. Give it the sources it is allowed to use and ask it to distinguish urgent work from useful context.",
-            "Keep the brief short enough to use at the start of the day. Do not give ChatGPT permission to send messages or update source systems until you have reviewed the proposed actions.",
-            "Start with one manual brief. After the structure reliably surfaces the right priorities, schedule a task from the same chat so ChatGPT can return to the approved sources each morning and compare the new brief with the previous one. Keep correcting the chat when it overweights noise or misses an important source.",
-            "Ask ChatGPT to compare a new pass with the previous brief so you can focus on newly arrived messages, changed meetings, and follow-ups that now need attention."
+            "Give ChatGPT Work ongoing responsibility for staying on top of your work. In one thread, it can check the work tools you’ve connected every hour, bring together your priorities, prepare you for meetings, and flag messages, decisions, or commitments that need your attention. In the desktop app, it can also help you start or coordinate a separate task for a project when you ask.",
+            "Use the sources that apply to your work, such as Slack or Teams, Gmail or Outlook, your calendar, documents, and project trackers. ChatGPT should tell you if it can’t access a source rather than guess what’s in it.",
+            "Choose the surface that fits how you want your chief of staff to work:",
+            "Here’s what an initial check and follow-up can look like:",
+            "Top priorities",
+            "What changed: Launch copy is approved, the missing docs link is the current blocker, and the earlier team-social request is resolved.",
+            "Draft reply: “Copy is approved. I’m checking the docs link now and will confirm it before the readiness review.” The reply stays unsent until you approve it.",
+            "Catch-up prompt: I’m back after time away. Catch me up on work by checking my available messages, email, calendar, documents, and project trackers. Show me what changed, include source links, and don’t send or change anything.",
+            "The starter prompt authorizes an hourly check. ChatGPT should ask before creating another task, sending messages, updating documents, changing the schedule, or making commitments.",
+            "Adjust the hourly heartbeat",
+            "Catch up after time away",
+            "Start a project teammate on desktop",
+            "When one project needs its own focused working space, ask your chief of staff to set up a project teammate and share the relevant context.",
+            "Continue an existing project teammate",
+            "Prepare the next step",
+            "Connected sources and scheduled tasks depend on your plan and workspace settings. Set up scheduled tasks in chat rather than in a voice conversation."
           ],
           "items": [
-            "Name the date, working hours, and sources ChatGPT may review.",
-            "Ask it to inventory access gaps before drawing conclusions.",
-            "Run the starter prompt to create priorities, meeting preparation, replies, decisions, and FYIs.",
-            "Review the source links, move uncertain items into an open-questions list, and tell ChatGPT which items were useful or noisy.",
-            "Continue in the same chat when a priority needs a draft, a deeper source review, or a recurring check."
+            "ChatGPT on the web: Use connected work tools and an hourly scheduled check that can continue when your laptop is off. This is a good default when you want updates wherever you are.",
+            "ChatGPT desktop app: Use the same connected sources alongside local files and apps. Your chief of staff can also create, brief, and coordinate separate project teammates when you ask. Keep your computer on and the app running if a scheduled check needs local files or desktop tools.",
+            "Confirm the launch docs link with Priya before 9:15 AM for the 9:30 AM readiness review.",
+            "Prepare an accurate customer update, respond to Finance, and review the weekly update.",
+            "Start a thread using the starter prompt.",
+            "Connect the messaging, email, calendar, and document sources relevant to your work.",
+            "Review the first update and point out anything important, resolved, or missing.",
+            "Keep using the same thread for follow-ups, meeting preparation, and draft replies.",
+            "On desktop, ask it to create or continue a separate task when a project needs its own teammate.",
+            "Review the hourly heartbeat and adjust its schedule when needed."
           ]
         }
       ],
       "image": "assets/use-cases/daily-work-brief.webp"
     },
     {
-      "index": 1,
+      "index": 4,
       "slug": "discover-protein-folding-architectures",
       "title": "Discover protein folding models",
       "tagline": "Turn protein-folding hypotheses into benchmarked experiment loops.",
@@ -100,10 +289,56 @@
       "image": "assets/use-cases/discover-protein-folding-architectures.webp"
     },
     {
-      "index": 2,
+      "index": 5,
+      "slug": "analyze-data-export",
+      "title": "Build a dashboard that stays up to date",
+      "tagline": "Turn your data into a private dashboard and keep it up to date.",
+      "tags": [
+        "Data",
+        "Automation"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/analyze-data-export",
+      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/analyze-data-export",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/analyze-data-export.webp",
+      "summary": "Ask ChatGPT Work to turn your spreadsheets into a private, interactive Site, check the source data on a schedule, and flag the changes that need your attention.",
+      "difficulty": "Easy",
+      "time": "30m",
+      "bestFor": [
+        "Building an interactive dashboard from spreadsheets or sales exports.",
+        "Keeping the dashboard current without manually checking the source data."
+      ],
+      "starterPrompt": "Use @Sites and @google-drive to turn my latest sales data into a private, interactive dashboard. Use the spreadsheets or CSVs I attach, or the exact Google Drive or Google Sheets URL I paste into this chat. If I have not attached a file or provided a source URL, ask me for one instead of guessing.\n\nShow revenue, customer segments, changes over time, and anything unusual. Include clear charts, date and segment filters, when the source was last updated, and the calculations behind the results. Check for missing rows, unmatched records, and inconsistent dates, and explain anything that could change the answer.\n\nCheck the approved source every weekday morning. Update the dashboard when the data changes, and notify me only when there is a meaningful change, a data-quality problem, or something I need to review. If nothing important has changed, do not send an update.\n\nShow me the dashboard for review. Keep it private, and do not publish it, share it, change its permissions, or contact anyone without my approval.",
+      "workflow": [
+        {
+          "title": "Before you start",
+          "paragraphs": [
+            "Attach a CSV or spreadsheet, or connect Google Drive and paste the exact Google Drive or Google Sheets URL into the chat. Sites can turn those sources into a private, interactive dashboard without publishing it or making your data public.",
+            "You can build the dashboard in ChatGPT Work in the browser or desktop app. For a scheduled check that continues when your laptop is off, start the task in the browser. A desktop-based task requires your computer to be on and the desktop app to be running.",
+            "ChatGPT checks the source data, creates a dashboard, and shows the numbers behind the charts. This example uses fictional quarterly sales exports, a customer-segment map, and a representative dashboard preview. It distinguishes the largest dollar change from the largest percentage change and flags an order that cannot be matched to a customer segment.",
+            "Enterprise had the largest dollar change, and SMB had the largest percentage change. One Q2 order worth $160 did not match the customer-segment map and was excluded from the segment totals. The private dashboard includes a comparison chart, segment and date filters, source freshness, and the underlying calculations.",
+            "When asked to check the source every weekday morning, ChatGPT updates the dashboard when the approved data changes and flags material changes or missing records. It does not publish or share the dashboard without approval.",
+            "After reviewing the dashboard, ask ChatGPT to share it with specific people or make it available to your workspace. You can also manage access directly in Sites . Ask ChatGPT to show the current sharing settings and wait for your approval before inviting anyone, publishing the dashboard, or changing its visibility.",
+            "See the Sites documentation for sharing options and workspace access.",
+            "Change what the dashboard tracks",
+            "Set a more useful alert",
+            "Prepare a weekly update"
+          ],
+          "items": [
+            "Connect the source: attach a sales export or spreadsheet, or paste the exact link to an approved Google Sheet or Google Drive file. ChatGPT checks the columns, dates, and customer records before drawing conclusions.",
+            "Build the dashboard: Sites turns the results into a private, interactive dashboard with charts, filters, source freshness, and supporting calculations.",
+            "Keep it current: a scheduled ChatGPT Work task checks the approved source each weekday and updates the dashboard when the data changes. The site does not run the schedule itself.",
+            "Only surface what matters: ask ChatGPT to flag unusual changes, missing records, or decisions that need review. If nothing important changes, it should stay quiet.",
+            "Review before sharing: inspect the dashboard first. Ask ChatGPT to share it with specific people only after you approve the access change."
+          ]
+        }
+      ],
+      "image": "assets/use-cases/analyze-data-export.webp"
+    },
+    {
+      "index": 6,
       "slug": "feedback-synthesis",
-      "title": "Turn feedback into actions",
-      "tagline": "Synthesize feedback from multiple sources into a reviewable artifact.",
+      "title": "Analyze product feedback across tools",
+      "tagline": "Turn Slack threads, survey exports, and issue queues into clear themes and follow-ups.",
       "tags": [
         "Data",
         "Integrations"
@@ -111,35 +346,42 @@
       "url": "https://learn.chatgpt.com/use-cases/feedback-synthesis",
       "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/feedback-synthesis",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/feedback-synthesis.webp",
-      "summary": "Connect ChatGPT to multiple data sources such as Slack, GitHub, Linear, or Google Drive to group feedback into a reviewable Google Sheet, Google Doc, Slack update, or recurring feedback check.",
+      "summary": "Give ChatGPT Work feedback from Slack, surveys, issue trackers, support, or research notes. It can group repeated problems into a reviewable Sheet or Doc with evidence, design implications, open questions, and clear follow-ups.",
       "difficulty": "Easy",
       "time": "30m",
       "bestFor": [
-        "Analyzing feedback from Slack channels, issue threads, survey exports, support-ticket CSVs, or research notes.",
-        "Teams that need to turn feedback into actionable insights."
+        "Teams reviewing feedback across Slack, surveys, issues, support, and research.",
+        "Product decisions that need clear themes, supporting evidence, and follow-ups."
       ],
-      "starterPrompt": "Can you synthesize the beta feedback on [feature or product area] into a @google-sheets review sheet?\n\nUse these sources:\n- @slack [feedback channel or thread links]\n- @github [issue search or issue links]\n- @google-drive [survey export, notes doc, or Drive folder]\n\nIn the sheet, group repeated feedback, include source links or IDs, mark confidence, and call out which items need product or engineering follow-up.\n\nKeep names and private quotes out of the visible summary unless I approve them. Do not post, send, create issues, or assign owners.",
+      "starterPrompt": "Analyze feedback on [feature or product area] from [time period] using @Slack, @GitHub, @Linear, and @Google Drive. Include any relevant support tickets, surveys, and research notes.\n\nGroup the feedback into clear themes, show the supporting evidence, and tell me what needs attention.\n\nPut the findings in a Google Sheet or Doc I can review. Draft any follow-ups, but don't post or send them.",
       "workflow": [
         {
-          "title": "Create the first version",
+          "title": "Before you start",
           "paragraphs": [
-            "When feedback is spread across a Slack channel, a survey export, and a few issue threads, ChatGPT can pull it together into a Google Sheet or Doc that the team can review.",
-            "Use the starter prompt on this page for the first pass. The sources can be plugin links, attached files, or files in Google Drive.",
-            "Once the sheet exists, use the same chat to make it useful for the next person. Ask ChatGPT to add a column, split a theme, draft a Slack update, or turn a reviewed theme into an issue draft.",
-            "For a Slack channel or issue queue that keeps getting new reports, pin the chat and ask ChatGPT to schedule a task inside it."
+            "Product feedback might live in Slack, survey exports, issue trackers, support records, or research notes. Give ChatGPT Work the sources, product area, and date range to review. It can group repeated problems into a Sheet or Doc the team can check before deciding what to do next.",
+            "Start this workflow in Work on the web or desktop with connected apps and cloud files. Attach a local export first, or use the desktop app, when the source lives on your computer.",
+            "Here is an example using a survey export, support records, a feedback thread, and research notes for a request-review queue. The first pass groups the repeated problems; the follow-up splits a broad theme into two clearer decisions.",
+            "The first pass found three repeated problems across a survey, support records, a feedback thread, and research notes:",
+            "After a follow-up to separate the last theme, the table distinguishes search and filters resetting on return from blocked and unreviewed work being hard to isolate . The table keeps the affected users, evidence IDs, confidence, design implications, open questions, and follow-ups with each theme. The counts are repeated mentions in a small sample, not product-wide incidence rates.",
+            "Use the starter prompt on this page for the first pass, then refine any theme that is too broad, missing evidence, or mixing separate problems.",
+            "Once the summary exists, ask Work to split a broad theme, add missing evidence, draft a Slack update, or turn a reviewed theme into an issue draft. Name the audience and decision so the next step is clear.",
+            "For a Slack channel or issue queue that keeps getting new reports, ask Work to check it on a schedule . Keep the same review boundaries so new feedback does not become an unapproved post, issue, or assignment."
           ],
           "items": [
-            "Give ChatGPT the feedback sources and one sentence of context.",
-            "Ask for a Google Sheet or Doc with themes, evidence links, questions, and follow-ups.",
-            "Use the same chat to turn the reviewed sheet into a Slack update or issue draft.",
-            "Pin the chat and schedule a task from it if the feedback source keeps changing."
+            "Conflicts are hidden in the queue: eight mentions across four sources. Show conflict status in the list and distinguish Ready from Needs attention .",
+            "Bulk approval can include blocked requests: four mentions across four sources. Skip blocked requests by default or warn before approval.",
+            "Reviewers lose their place and can’t isolate work: ten mentions across four sources. Preserve search and filters and offer a Needs attention view.",
+            "Give Work the feedback sources, product area, and time period to review.",
+            "Ask it to group repeated feedback into themes and keep supporting links or IDs with each theme.",
+            "Create a Google Sheet or Doc with affected users, confidence, open questions, and the decision or follow-up needed.",
+            "Review the summary before turning any theme into a Slack update or issue draft."
           ]
         }
       ],
       "image": "assets/use-cases/feedback-synthesis.webp"
     },
     {
-      "index": 3,
+      "index": 7,
       "slug": "clean-messy-data",
       "title": "Clean and prepare messy data",
       "tagline": "Process tabular data without affecting the original.",
@@ -176,46 +418,7 @@
       "image": "assets/use-cases/clean-messy-data.webp"
     },
     {
-      "index": 4,
-      "slug": "analyze-data-export",
-      "title": "Query tabular data",
-      "tagline": "Ask a question about a CSV, spreadsheet, export, or data folder.",
-      "tags": [
-        "Data",
-        "Knowledge Work"
-      ],
-      "url": "https://learn.chatgpt.com/use-cases/analyze-data-export",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/analyze-data-export",
-      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/analyze-data-export.webp",
-      "summary": "Use ChatGPT with a CSV, spreadsheet, dashboard export, Google Sheet, or local data file to answer a question, create a browser visualization, and save the result.",
-      "difficulty": "Easy",
-      "time": "30m",
-      "bestFor": [
-        "Questions that can be answered through a quick calculation, chart, table, or short summary.",
-        "Roles that need to analyze data and create visualizations."
-      ],
-      "starterPrompt": "Analyze @sales-export.csv\n\nQuestion: Which customer segment changed the most last quarter?\n\nPlease:\n- inspect the columns before analyzing\n- answer the question from the data\n- create a simple browser visualization as an HTML file\n- start a local preview so I can open it in the built-in browser",
-      "workflow": [
-        {
-          "title": "Analyze the data",
-          "paragraphs": [
-            "Use ChatGPT when you have a CSV, spreadsheet, dashboard export, Google Sheet, or local data file and want to answer a question from it. Start with the file and the question. ChatGPT can inspect the columns, run the analysis, and create a browser visualization you can open in the ChatGPT desktop app.",
-            "Use @ to attach the CSV or mention the Google Sheet. If the data came from a dashboard, export the rows first so ChatGPT can inspect the raw columns.",
-            "After ChatGPT gives you the first answer, ask for the next comparison you would normally check.",
-            "You can keep going in the same chat: clean a column, exclude a test segment, compare two time windows, make the chart easier to read, or turn the result into a short note for a meeting."
-          ],
-          "items": [
-            "Attach the file or mention the connected data source.",
-            "Ask the question you want answered.",
-            "Have ChatGPT inspect the columns, run the calculation, and create an HTML visualization.",
-            "Open the local preview in the built-in browser, then continue in the same chat to adjust the chart or slice the data another way."
-          ]
-        }
-      ],
-      "image": "assets/use-cases/analyze-data-export.webp"
-    },
-    {
-      "index": 5,
+      "index": 8,
       "slug": "target-prioritization",
       "title": "Prioritize drug targets",
       "tagline": "Rank drug targets across multiple evidence lanes.",
@@ -259,7 +462,7 @@
       "image": "assets/use-cases/target-prioritization.webp"
     },
     {
-      "index": 6,
+      "index": 9,
       "slug": "scrna-seq-post-count-qc",
       "title": "Annotate scRNA-seq data",
       "tagline": "Review single-cell QC, annotations, and UMAPs in one chat.",
@@ -306,7 +509,7 @@
       "image": "assets/use-cases/scrna-seq-post-count-qc.webp"
     },
     {
-      "index": 7,
+      "index": 10,
       "slug": "bulk-rna-seq-fastq-qc",
       "title": "Validate bulk RNA-seq inputs",
       "tagline": "Validate bulk RNA-seq inputs before differential expression.",
@@ -353,7 +556,7 @@
       "image": "assets/use-cases/bulk-rna-seq-fastq-qc.webp"
     },
     {
-      "index": 8,
+      "index": 11,
       "slug": "cash-flow-forecast",
       "title": "Forecast cash flow",
       "tagline": "Find the liquidity low point in an editable forecast workbook.",
@@ -393,7 +596,106 @@
       "image": "assets/use-cases/cash-flow-forecast.webp"
     },
     {
-      "index": 9,
+      "index": 12,
+      "slug": "datasets-and-reports",
+      "title": "Analyze datasets and ship reports",
+      "tagline": "Turn messy data into clear analysis and visualizations.",
+      "tags": [
+        "Data",
+        "Analysis"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/datasets-and-reports",
+      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/datasets-and-reports",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/datasets-and-reports.webp",
+      "summary": "Use ChatGPT Work to clean data, join sources, explore a question, model the result, and produce a clear report with supporting charts and caveats.",
+      "difficulty": "Intermediate",
+      "time": "1h",
+      "bestFor": [
+        "Data analysis that starts with messy files and ends with a chart, memo, dashboard, or report.",
+        "Questions that require cleaning, reliable joins, interpretable models, or reproducible analysis.",
+        "Teams that need artifacts others can review and reuse."
+      ],
+      "starterPrompt": "Use @Data Analytics to inspect the attached property-sales and highway-distance datasets and determine whether homes near the highway have lower property values.\n\nExplain what each source contains, identify the relevant columns and likely join keys, and check for missing values, duplicates, unmatched records, and incomplete data. Clean and join the inputs without overwriting the source files or inventing values.\n\nExplore the question with clear supporting charts, start with an interpretable model when modeling is useful, and explain the result, assumptions, and uncertainty in plain language. Return a concise report, notebook, or spreadsheet with the answer first, name the files you create, and flag any data issue that could change the conclusion.",
+      "workflow": [
+        {
+          "title": "Introduction",
+          "paragraphs": [
+            "At its core, data analysis is about using data to inform decisions. The goal isn’t analysis for its own sake. It’s to produce an artifact that helps someone act: a chart for leadership, an experiment readout for a product team, a model evaluation for researchers, or a dashboard that guides daily operations.",
+            "A useful framework, popularized by R for Data Science , is a loop: import and tidy data, then iterate between transform, visualize, and model to build understanding before you communicate results.",
+            "ChatGPT Work fits well into this workflow. It helps you clean data, explore hypotheses, generate analyses, and produce reproducible artifacts. The target isn’t a one-off notebook. It’s an analysis that other people can review, trust, and rerun.",
+            "Choose one concrete question you want to answer with your data. The more specific the question, the easier it is to identify the right inputs, checks, and result.",
+            "As an example, we’ll explore the following question:",
+            "To what extent are houses near the highway lower in property valuation?",
+            "Suppose one dataset contains property values or sale prices, and another contains location, parcel, or highway-proximity information. The work isn’t only to run a model. It’s to make the inputs trustworthy, document the joins, pressure-test the result, and end with an artifact that somebody else can use.",
+            "You can attach CSVs or Excel workbooks, name an approved Google Sheet with @google-drive , or use the desktop app when your data is stored on your computer.",
+            "In a fictional sample, ChatGPT matches 11 property sales to the highway-distance file and flags one sale without a matching distance. Homes within one mile of the highway average $500,000 , compared with $600,000 for homes two to five miles away.",
+            "After excluding the highest-priced distant property, the difference remains $94,000 . The report and chart explain that the sample is small, the unmatched sale is excluded, and the comparison doesn’t establish causation or control for neighborhood, sale timing, traffic, or noise.",
+            "Start by attaching the files and asking ChatGPT to inspect them. This helps answer basic but important questions:",
+            "Don’t ask for conclusions yet. Ask for inventory and explanation first.",
+            "Most real work starts here. You have two or more datasets, the primary key isn’t clear, and a naive merge could lose data or create duplicates.",
+            "Ask ChatGPT to profile the merge before performing it:",
+            "If you need to derive the best key, such as a normalized address, a parcel identifier built from a few columns, or a location join, ask ChatGPT to explain the tradeoffs and edge cases before you accept the merge.",
+            "Use charts to understand the data before choosing a model. In the running example, compare homes near the highway with homes farther away, examine outliers, inspect missing-value patterns, and check whether the apparent effect reflects neighborhood composition, home size, or another factor.",
+            "Keep each chart tied to the original question. Save the useful comparisons so another person can inspect the analysis.",
+            "Not every analysis needs a complex model. Start with an interpretable baseline.",
+            "For the highway question, a sensible first pass is a regression or other transparent model that estimates the relationship between highway proximity and property value while controlling for relevant factors such as size, age, and location.",
+            "Ask ChatGPT to be explicit about:",
+            "If the first model is weak, that’s still useful. It tells you whether the problem is the model, the features, the join quality, or the question itself.",
+            "The analysis is only useful when someone else can consume it. Ask ChatGPT to produce the artifact the audience needs:",
+            "Ask it to include caveats. If the join quality is imperfect, sampling bias is present, or model assumptions are fragile, the deliverable should say so plainly.",
+            "If the project needs reusable scripts or a notebook, ask ChatGPT to use the existing Python environment or set up a small, reproducible one. Keep source files unchanged and save the analysis, charts, and final report separately. You don’t need to set up Python before analyzing attached files in ChatGPT Work.",
+            "Load the datasets and explain them",
+            "Check the merge before joining",
+            "Build an interpretable first model",
+            "Package the results for stakeholders"
+          ],
+          "items": [
+            "What file formats are here?",
+            "What does each dataset seem to represent?",
+            "Which columns might be targets, identifiers, dates, locations, or measures?",
+            "Where are the clear quality issues?",
+            "Check uniqueness for candidate keys.",
+            "Measure null rates and formatting differences.",
+            "Normalize clear formatting issues such as casing, whitespace, or address formatting.",
+            "Run trial joins and report match rates.",
+            "Recommend the safest merge strategy before it writes the final merged file.",
+            "The target variable and feature definitions.",
+            "Which controls to include and why.",
+            "Leakage risks and exclusions.",
+            "How it chose the split, evaluation, or uncertainty estimate.",
+            "What the result means in plain language.",
+            "A Markdown memo for technical collaborators.",
+            "A spreadsheet or CSV for downstream operations.",
+            "A formatted document or PDF for decision-makers.",
+            "A notebook, dashboard, or static report for a reusable analysis."
+          ]
+        },
+        {
+          "title": "Tech stack",
+          "paragraphs": [
+            "Need",
+            "Default options",
+            "Why it's needed",
+            "Need",
+            "Analysis stack",
+            "Default options",
+            "pandas with matplotlib or seaborn",
+            "Why it's needed",
+            "Good defaults for import, profiling, joins, cleaning, and the first round of charts.",
+            "Need",
+            "Modeling",
+            "Default options",
+            "statsmodels or scikit-learn",
+            "Why it's needed",
+            "Start with interpretable baselines before moving to more complex predictive models."
+          ],
+          "items": []
+        }
+      ],
+      "image": "assets/use-cases/datasets-and-reports.webp"
+    },
+    {
+      "index": 13,
       "slug": "dcf-model",
       "title": "Model a DCF valuation",
       "tagline": "Turn financial inputs into an editable valuation workbook.",
@@ -434,7 +736,7 @@
       "image": "assets/use-cases/dcf-model.webp"
     },
     {
-      "index": 10,
+      "index": 14,
       "slug": "budget-vs-actuals-review",
       "title": "Review budget vs. actuals",
       "tagline": "Turn plan, actuals, and close notes into a variance workbook.",
@@ -474,103 +776,7 @@
       "image": "assets/use-cases/budget-vs-actuals-review.webp"
     },
     {
-      "index": 11,
-      "slug": "generate-slide-decks",
-      "title": "Generate slide decks",
-      "tagline": "Manipulate pptx files and use image generation to automate slide creation.",
-      "tags": [
-        "Data",
-        "Integrations"
-      ],
-      "url": "https://learn.chatgpt.com/use-cases/generate-slide-decks",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/generate-slide-decks",
-      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/generate-slide-decks.webp",
-      "summary": "Use ChatGPT to update existing presentations or build new decks by editing slides directly through code, generating visuals, and applying repeatable layout rules slide by slide.",
-      "difficulty": "Easy",
-      "time": "30m",
-      "bestFor": [
-        "Teams turning notes or structured inputs into repeatable slide decks",
-        "Creating new visual presentations from scratch",
-        "Rebuilding or extending decks from screenshots, PDFs, or reference presentations"
-      ],
-      "starterPrompt": "Use the $slides and $imagegen skills to edit this slide deck in the following way:\n- If present, add logo.png in the bottom right corner on every slide\n- On slides X, Y and Z, move the text to the left and use image generation to generate an illustration (style: abstract, digital art) on the right\n- Preserve text as text and simple charts as native PowerPoint charts where practical.\n- Add these slides: [describe new slides here]\n- Use the existing branding on new slides and new text (colors, fonts, layout, etc.) \n- Render the updated deck to slide images, review the output, and fix layout issues before delivery.\n- Run overflow and font-substitution checks before delivery, especially if the deck is dense.\n- Save reusable prompts or generation notes when you create a batch of related images.\n\nOutput:\n- A copy of the slide deck with the changes applied\n- notes on which slides were generated, rewritten, or left unchanged",
-      "workflow": [
-        {
-          "title": "Introduction",
-          "paragraphs": [
-            "You can use ChatGPT to manipulate PowerPoint decks in a systematic way, using the slides system skill, which comes with ChatGPT by default, to create and edit decks with PptxGenJS, and using image generation to generate visuals for the slides.",
-            "Skills can be installed directly from the ChatGPT desktop app—see our skills documentation for more details.",
-            "You can create new decks from scratch, describing what you want, but the ideal workflow is to start from an existing deck–already set up with your branding guidelines–and ask ChatGPT to edit it.",
-            "If a deck already exists, ask ChatGPT to inspect it before making changes.",
-            "The slides system skill is opinionated here: match the source aspect ratio before you rebuild layout, and default to 16:9 only when the source material does not already define the deck size. If the references are screenshots or a PDF, ask ChatGPT to render or inspect them first so it can compare slide geometry visually instead of guessing.",
-            "When building out new slides, ask ChatGPT to keep the slides editable: when slides contain text, charts, or simple layout elements, those should stay PowerPoint-native when practical. Text should stay text. Simple bar, line, pie, and histogram visuals should stay native charts when possible. For diagrams or visuals that are too custom for native slide objects, ChatGPT can generate or place SVG and image assets deliberately instead of rasterizing the whole slide.",
-            "For example, if you want to build a complex timeline with illustrations, instead of generating a whole image, ask ChatGPT to generate each illustration separately (using a set style prompt as reference), place them on the slide, then link them using native lines. The text and dates should be text objects as well, and not included in the illustrations.",
-            "The imagegen system skill is already installed with ChatGPT and is most useful when the slides need a cover image, a concept illustration, or a lightweight diagram that would otherwise take manual design work. Ask ChatGPT to define the visual direction first, then reuse that direction consistently across the whole deck.",
-            "When several slides need related visuals, have ChatGPT save the prompts or generation notes it used. That makes the deck easier to extend later without starting over stylistically.",
-            "Deck automation works better when ChatGPT treats each slide as its own decision. Some slides should preserve exact copy, some need a stronger headline and cleaner structure, and some should stay mostly untouched apart from asset cleanup or formatting fixes.",
-            "The slides system skill also ships with bundled layout helpers. Ask ChatGPT to copy those helpers into the working directory and reuse them instead of reimplementing spacing, text-sizing, and image-placement logic on every deck.",
-            "Decks are easy to get almost right and still ship with clipped text, substituted fonts, or layout drift that only shows up after export. The slides system skill includes scripts to render decks to per-slide PNGs, build a quick montage for review, detect overflow beyond the slide canvas, and report missing or substituted fonts.",
-            "Ask ChatGPT to use those checks before it hands back the final deck, especially when slides are dense or margins are tight.",
-            "Here are some ideas you could try with this use case:",
-            "You can create new slide decks from scratch, describing what you want slide by slide and the overall vibe. If you have assets like logos or images, you can copy them in the same folder so that ChatGPT can easily access them.",
-            "You can update a deck template on a regular basis (weekly, monthly, quarterly, etc.) with new content. If you’re doing this frequently, create a file like guidelines.md to define the content and structure of the deck and how it should be updated.",
-            "Combine it with other skills to fetch information from your preferred data sources.",
-            "For example, if you need to give quarterly updates to your stakeholders, you can update the deck template with new numbers and insights.",
-            "If you built a deck but want to adjust it to fix spacing, misaligned text, or other layout issues, you can ask ChatGPT to fix it."
-          ],
-          "items": []
-        }
-      ],
-      "image": "assets/use-cases/generate-slide-decks.webp"
-    },
-    {
-      "index": 12,
-      "slug": "manage-your-inbox",
-      "title": "Manage your inbox",
-      "tagline": "Have ChatGPT find the emails that matter and write the replies in your voice.",
-      "tags": [
-        "Automation",
-        "Integrations"
-      ],
-      "url": "https://learn.chatgpt.com/use-cases/manage-your-inbox",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/manage-your-inbox",
-      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/manage-your-inbox.webp",
-      "summary": "Use ChatGPT with Gmail to find emails that need attention, draft responses in your voice, pull context from the tools where your work happens, and keep watching for new replies on a schedule.",
-      "difficulty": "Easy",
-      "time": "5m",
-      "bestFor": [
-        "People who want ChatGPT to find emails that need attention instead of manually sorting them.",
-        "Recurring inbox checks where ChatGPT can create reviewable drafts in the background."
-      ],
-      "starterPrompt": "Can you check my @gmail, figure out what I need to respond to, and write drafts in my voice.\n\nUse my recent sent replies or @google-drive [writing examples] for tone.\n\nUse @slack, @google-drive, or other sources where my work happens when the email is missing the latest decision, owner, file, or blocker.",
-      "workflow": [
-        {
-          "title": "Review your inbox",
-          "paragraphs": [
-            "Ask ChatGPT to check Gmail, find the messages that deserve a reply, and write drafts in your voice. It can use recent sent mail or approved writing examples for style, then search Slack, docs, project notes, or other tools when the email lacks context on its own.",
-            "Use ChatGPT for the first pass over your inbox: find the emails that need your attention, draft the replies, and bring in the work context that explains the bigger picture.",
-            "Use the Gmail plugin directly. You can give ChatGPT a broad inbox request, a time window, or a label if you already know the scope. If tone matters, ask ChatGPT to look at recent sent replies or a doc with examples before drafting.",
-            "Use the starter prompt on this page for the first inbox pass. ChatGPT should return a short queue: drafts for emails that need attention, messages that can wait, and the context it used when the answer depended on more than the email thread.",
-            "Treat the first pass like calibration. If ChatGPT drafts too many replies, tell it which emails were noise. If it misses something important, tell it why that thread mattered. If the tone is off, correct the draft directly.",
-            "Over time, ChatGPT should get better at deciding what needs a draft and what can stay out of your way.",
-            "You can schedule an inbox check-in task from the same chat. On each scheduled run, ChatGPT checks Gmail and the context sources you named, then posts only when there are emails that need your attention or drafts worth reviewing.",
-            "Once the drafts look useful, ask ChatGPT to keep an eye on Gmail. Email triage is a good job to automate: the drafts are reviewable, and you still decide what gets sent.",
-            "You can schedule a task inside this chat after the chat has a good sense of your reply patterns. If ChatGPT finds an email that needs a decision it cannot make, it should flag the question instead of guessing.",
-            "The Gmail plugin can also help organize your inbox. Keep that as a separate command after you trust the triage.",
-            "For deletion, make the instruction explicit and narrow. Drafting replies is safe to automate for review; destructive cleanup should stay deliberate."
-          ],
-          "items": [
-            "Ask ChatGPT to review Gmail for emails that need your attention.",
-            "Ask it to use Slack, docs, or project notes for context that explains the bigger picture.",
-            "Tell ChatGPT which drafts were useful and which emails it should ignore next time.",
-            "Schedule a task from the chat when it becomes useful, and pin the chat if you want fast access later."
-          ]
-        }
-      ],
-      "image": "assets/use-cases/manage-your-inbox.webp"
-    },
-    {
-      "index": 13,
+      "index": 15,
       "slug": "github-code-reviews",
       "title": "Review GitHub pull requests",
       "tagline": "Catch regressions and potential issues before human review.",
@@ -606,7 +812,7 @@
       "image": "assets/use-cases/github-code-reviews.webp"
     },
     {
-      "index": 14,
+      "index": 16,
       "slug": "macos-sidebar-detail-inspector",
       "title": "Build a Mac app shell",
       "tagline": "Use Codex to build a Mac-native SwiftUI app shell with a sidebar, detail pane, inspector, commands, and Settings.",
@@ -682,7 +888,7 @@
       "image": "assets/use-cases/macos-sidebar-detail-inspector.webp"
     },
     {
-      "index": 15,
+      "index": 17,
       "slug": "frontend-designs",
       "title": "Build responsive front-end designs",
       "tagline": "Turn screenshots and visual references into responsive UI with visual checks.",
@@ -727,55 +933,7 @@
       "image": "assets/use-cases/frontend-designs.webp"
     },
     {
-      "index": 16,
-      "slug": "use-your-computer-with-codex",
-      "title": "Use your computer with ChatGPT",
-      "tagline": "Let ChatGPT click, type, and navigate apps on your Mac.",
-      "tags": [
-        "Knowledge Work",
-        "Workflow"
-      ],
-      "url": "https://learn.chatgpt.com/use-cases/use-your-computer-with-codex",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/use-your-computer-with-codex",
-      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/use-your-computer-with-codex.webp",
-      "summary": "Use Computer Use to hand off multi-step tasks across Mac apps, windows, and files, and monitor progress in picture-in-picture.",
-      "difficulty": "Easy",
-      "time": "5m",
-      "bestFor": [
-        "Tasks that move across apps, windows, browser sessions, or local files on your Mac",
-        "Work you want to hand off and let ChatGPT continue in the background"
-      ],
-      "starterPrompt": "@Computer [do the task you want completed across your Mac]\n\nFor example:\n- Play some music to help me focus.\n- Help me add my interview notes from Notes to Ashby.\n- Look through my Messages app for the trip ideas Brooke sent me this week, add the best options to a new note called \"Yosemite ideas\", and draft a reply back to her.",
-      "workflow": [
-        {
-          "title": "Introduction",
-          "paragraphs": [
-            "You can let ChatGPT operate an app the same way you would: by clicking, seeing, and typing. Computer Use is useful when the task lives inside a normal app UI, even if that app does not have a dedicated plugin.",
-            "This works especially well for tasks that jump between apps or windows, such as collecting notes, updating a system of record, copying details from one place to another, or drafting a reply after checking context in a few different apps.",
-            "If you mention a specific app and a plugin exists for that app, ChatGPT may prefer the plugin over Computer Use. That is usually what you want. If no plugin exists, ChatGPT can fall back to Computer Use and operate the app directly.",
-            "For example:",
-            "When Computer Use starts working in an app, ChatGPT automatically opens a picture-in-picture (PiP) preview. Move the PiP around the ChatGPT window or click it to open the app being used. If you use a Pet, you can send the PiP to your Pet to monitor the task outside the ChatGPT window. When a task uses multiple apps or browser windows, their previews appear as a stack you can cycle through. If you dismiss the PiP, you can reopen it from the Summary view while Computer Use is running.",
-            "Computer Use takes control of the app it is operating. If you want to keep working in one browser while ChatGPT browses in another, tell it which browser to use. You can also set a default in customization , for example: “When using Computer Use for web browsing tasks, default to Chrome instead of Safari.”",
-            "Do not run two Computer Use tasks against the same app at the same time. That makes it much harder for ChatGPT to keep stable context about the current window and state.",
-            "For smoother runs, make sure you are already signed in to the apps and services you want ChatGPT to use. If your Mac locks while Computer Use is running, the activity will stop.",
-            "Once the work finishes, keep the same chat open if you want ChatGPT to summarize what it changed, double-check the result, or turn the workflow into a more repeatable pattern through customization .",
-            "Hand Off One Computer Task"
-          ],
-          "items": [
-            "Install the Computer Use plugin .",
-            "Start your request with @Computer , or mention a specific app such as @Slack or @Messages .",
-            "Describe the task and the outcome you want.",
-            "Approve access when ChatGPT needs it, then let it continue the task in the background.",
-            "@Computer Play some music to help me focus.",
-            "@Computer Help me add my interview notes from Notes to Ashby.",
-            "@Computer Go through my Slack and add reminders for everything I need to do by end of day."
-          ]
-        }
-      ],
-      "image": "assets/use-cases/use-your-computer-with-codex.webp"
-    },
-    {
-      "index": 17,
+      "index": 18,
       "slug": "codebase-onboarding",
       "title": "Understand large codebases",
       "tagline": "Trace request flows, map unfamiliar modules, and find the right files fast.",
@@ -819,7 +977,7 @@
       "image": "assets/use-cases/codebase-onboarding.webp"
     },
     {
-      "index": 18,
+      "index": 19,
       "slug": "automation-bug-triage",
       "title": "Automate bug triage",
       "tagline": "Turn daily bug reports into a prioritized list, then automate the sweep.",
@@ -898,7 +1056,7 @@
       "image": "assets/use-cases/automation-bug-triage.webp"
     },
     {
-      "index": 19,
+      "index": 20,
       "slug": "make-granular-ui-changes",
       "title": "Make granular UI changes",
       "tagline": "Use Codex-Spark for fast, focused UI iteration in an existing app.",
@@ -944,7 +1102,7 @@
       "image": "assets/use-cases/make-granular-ui-changes.webp"
     },
     {
-      "index": 20,
+      "index": 21,
       "slug": "slack-coding-tasks",
       "title": "Kick off coding tasks from Slack",
       "tagline": "Turn Slack threads into scoped cloud chats.",
@@ -983,7 +1141,7 @@
       "image": "assets/use-cases/slack-coding-tasks.webp"
     },
     {
-      "index": 21,
+      "index": 22,
       "slug": "new-hire-onboarding",
       "title": "Coordinate new-hire onboarding",
       "tagline": "Prepare onboarding trackers, team summaries, and welcome-space drafts.",
@@ -1043,7 +1201,7 @@
       "image": "assets/use-cases/new-hire-onboarding.webp"
     },
     {
-      "index": 22,
+      "index": 23,
       "slug": "zoom-meeting-follow-ups",
       "title": "Turn meetings into follow-ups",
       "tagline": "Convert Zoom meeting insights into actions across your tools.",
@@ -1101,7 +1259,7 @@
       "image": "assets/use-cases/zoom-meeting-follow-ups.webp"
     },
     {
-      "index": 23,
+      "index": 24,
       "slug": "learn-a-new-concept",
       "title": "Learn a new concept",
       "tagline": "Turn dense source material into a clear, reviewable learning report.",
@@ -1196,7 +1354,7 @@
       "image": "assets/use-cases/learn-a-new-concept.webp"
     },
     {
-      "index": 24,
+      "index": 25,
       "slug": "idea-to-proof-of-concept",
       "title": "Get from idea to proof of concept",
       "tagline": "Explore the concept visually with ImageGen and build a first version of your idea.",
@@ -1237,7 +1395,7 @@
       "image": "assets/use-cases/idea-to-proof-of-concept.webp"
     },
     {
-      "index": 25,
+      "index": 26,
       "slug": "deploy-app-or-website",
       "title": "Deploy an app or website",
       "tagline": "Build or update a web app, deploy a preview, and get a live URL.",
@@ -1279,7 +1437,7 @@
       "image": "assets/use-cases/deploy-app-or-website.webp"
     },
     {
-      "index": 26,
+      "index": 27,
       "slug": "qa-your-app-with-computer-use",
       "title": "QA your app with Computer Use",
       "tagline": "Click through real product flows and log what breaks.",
@@ -1326,7 +1484,7 @@
       "image": "assets/use-cases/qa-your-app-with-computer-use.webp"
     },
     {
-      "index": 27,
+      "index": 28,
       "slug": "api-integration-migrations",
       "title": "Upgrade your API integration",
       "tagline": "Upgrade your app to the latest OpenAI API models.",
@@ -1365,7 +1523,7 @@
       "image": "assets/use-cases/api-integration-migrations.webp"
     },
     {
-      "index": 28,
+      "index": 29,
       "slug": "complete-tasks-from-messages",
       "title": "Complete tasks from messages",
       "tagline": "Turn iMessage threads into completed work across the apps involved.",
@@ -1409,7 +1567,7 @@
       "image": "assets/use-cases/complete-tasks-from-messages.webp"
     },
     {
-      "index": 29,
+      "index": 30,
       "slug": "figma-designs-to-code",
       "title": "Turn Figma designs into code",
       "tagline": "Turn Figma selections into polished UI with structured design context and visual checks.",
@@ -1475,7 +1633,7 @@
       "image": "assets/use-cases/figma-designs-to-code.webp"
     },
     {
-      "index": 30,
+      "index": 31,
       "slug": "deep-security-scan",
       "title": "Run a deep security scan",
       "tagline": "Search an authorized repository deeply for plausible vulnerabilities.",
@@ -1518,7 +1676,7 @@
       "image": "assets/use-cases/deep-security-scan.webp"
     },
     {
-      "index": 31,
+      "index": 32,
       "slug": "browser-games",
       "title": "Create browser-based games",
       "tagline": "Define a game plan and let Codex build and test it in a live browser.",
@@ -1594,120 +1752,6 @@
         }
       ],
       "image": "assets/use-cases/browser-games.webp"
-    },
-    {
-      "index": 32,
-      "slug": "datasets-and-reports",
-      "title": "Analyze datasets and ship reports",
-      "tagline": "Turn messy data into clear analysis and visualizations.",
-      "tags": [
-        "Data",
-        "Analysis"
-      ],
-      "url": "https://learn.chatgpt.com/use-cases/datasets-and-reports",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/datasets-and-reports",
-      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/datasets-and-reports.webp",
-      "summary": "Use Codex to clean data, join sources, explore hypotheses, model results, and package the output as a reusable artifact.",
-      "difficulty": "Intermediate",
-      "time": "1h",
-      "bestFor": [
-        "Data analysis that starts with messy files and should end with a chart, memo, dashboard, or report",
-        "Analysts who want Codex to help with cleanup, joins, exploratory analysis, and reproducible scripts",
-        "Teams that need reviewable artifacts instead of one-off notebook state"
-      ],
-      "starterPrompt": "I'm doing a data analysis project in this workspace.\n\nGoal:\n- Figure out whether houses near the highway have lower property valuations.\n\nStart by:\n- reading `AGENTS.md` and explaining the recommended Python environment\n- loading the dataset(s) at [dataset path]\n- describing what each file contains, likely join keys, and obvious data quality issues\n- proposing a reproducible workflow from import and tidy through visualization, modeling, and report output\n\nConstraints:\n- prefer scripts and saved artifacts over one-off notebook state\n- do not invent missing values or merge keys\n- suggest any skills or worktree splits that would make the workflow more reproducible\n\nOutput:\n- setup plan\n- data inventory\n- analysis plan\n- first commands or files to create",
-      "workflow": [
-        {
-          "title": "Introduction",
-          "paragraphs": [
-            "At its core, data analysis is about using data to inform decisions. The goal isn’t analysis for its own sake. It’s to produce an artifact that helps someone act: a chart for leadership, an experiment readout for a product team, a model evaluation for researchers, or a dashboard that guides daily operations.",
-            "A useful framework, popularized by R for Data Science , is a loop: import and tidy data, then iterate between transform, visualize, and model to build understanding before you communicate results. Programming surrounds that whole cycle.",
-            "Codex fits well into this workflow. It helps you move around the loop faster by cleaning data, exploring hypotheses, generating analyses, and producing reproducible artifacts. The target isn’t a one-off notebook. The target is a workflow that other people can review, trust, and rerun.",
-            "Choose one concrete question you want to answer with your data.",
-            "The more specific the question, the better. It will help Codex understand what you want to achieve and how to help you get there.",
-            "As an example, we’ll explore the following question:",
-            "To what extent are houses near the highway lower in property valuation?",
-            "Suppose one dataset contains property values or sale prices, and another contains location, parcel, or highway-proximity information. The work isn’t only to run a model. It’s to make the inputs trustworthy, document the joins, pressure-test the result, and end with an artifact that somebody else can use.",
-            "When you start a new data analysis project, you need to set up the environment and define the rules of the project.",
-            "To learn more about how to install and use skills, see our skills documentation .",
-            "Before touching the data, tell Codex how to behave in the repo. Put personal defaults in ~/.codex/AGENTS.md , and put project rules in the repository AGENTS.md .",
-            "A small AGENTS.md is often enough:",
-            "If the repo doesn’t already define a Python environment, ask Codex to create a reproducible setup and explain how to run it. For data analysis work, that step matters more than jumping straight into charts.",
-            "Often the fastest way to start is to paste the file path and ask Codex to inspect it. This is where Codex helps you answer basic but important questions:",
-            "Don’t ask for conclusions yet. Ask for inventory and explanation first.",
-            "Most real work starts here. You have two or more datasets, the primary key isn’t clear, and a naive merge could lose data or create duplicates.",
-            "Ask Codex to profile the merge before performing it:",
-            "If you need to derive the best key, such as a normalized address, a parcel identifier built from a few columns, or a location join, make Codex explain the tradeoffs and edge cases before you accept the merge.",
-            "Exploratory data analysis is where Codex benefits from clean isolation. One worktree can test address cleanup or feature engineering while another focuses on charts or alternate model directions. That keeps each diff reviewable and prevents one long chat from mixing incompatible ideas.",
-            "The ChatGPT desktop app includes built-in worktree support. If you are working in a terminal, plain Git worktrees work well too:",
-            "In the running example, this step is where you would compare homes near the highway against homes farther away, examine outliers, inspect missing-value patterns, and decide whether the observed effect looks real or reflects neighborhood composition, home size, or other factors.",
-            "Not every analysis needs a complex model. Start with an interpretable baseline.",
-            "For the highway question, a sensible first pass is a regression or other transparent model that estimates the relationship between highway proximity and property value while controlling for relevant factors such as size, age, and location.",
-            "Ask Codex to be explicit about:",
-            "If the first model is weak, that’s still useful. It tells you whether the problem is the model, the features, the join quality, or the question itself.",
-            "The analysis is only useful when someone else can consume it. Ask Codex to produce the artifact the audience needs:",
-            "This is also where you ask for caveats. If the join quality is imperfect, sampling bias is present, or the model assumptions are fragile, Codex should say that plainly in the deliverable.",
-            "The curated skills that fit this workflow especially well are:",
-            "Once the workflow stabilizes, create repo-local skills for the repeated parts, such as refresh-data , merge-and-qa , or publish-weekly-report . That’s a better long-term pattern than pasting the same procedural prompt into every chat.",
-            "Set Up the Analysis Environment",
-            "Load the Dataset and Explain It",
-            "Profile the Merge Before You Join",
-            "Open a Fresh Exploration Worktree",
-            "Build an Interpretable First Model",
-            "Package the Results for Stakeholders"
-          ],
-          "items": [
-            "Environment: Codex should know which Python environment, package manager, folders, and output conventions are canonical for the project.",
-            "Skills: Repeated workflows such as notebook cleanup, spreadsheet exports, or final report packaging should move into reusable skills instead of being re-explained in every prompt.",
-            "Worktrees: Separate explorations into separate worktrees so one hypothesis, merge strategy, or visualization branch doesn’t bleed into another.",
-            "What file formats are here?",
-            "What does each dataset seem to represent?",
-            "Which columns might be targets, identifiers, dates, locations, or measures?",
-            "Where are the clear quality issues?",
-            "Check uniqueness for candidate keys.",
-            "Measure null rates and formatting differences.",
-            "Normalize clear formatting issues such as casing, whitespace, or address formatting.",
-            "Run trial joins and report match rates.",
-            "Recommend the safest merge strategy before it writes the final merged file.",
-            "The target variable and feature definitions.",
-            "Which controls to include and why.",
-            "Leakage risks and exclusions.",
-            "How it chose the split, evaluation, or uncertainty estimate.",
-            "What the result means in plain language.",
-            "A Markdown memo for technical collaborators.",
-            "A spreadsheet or CSV for downstream operations work.",
-            "A .docx brief using $doc when formatting and tables matter.",
-            "A rendered appendix or final deliverable using $pdf .",
-            "A lightweight dashboard or static report site deployed with $vercel-deploy .",
-            "$spreadsheet for CSV, TSV, and Excel editing or exports.",
-            "$jupyter-notebook when the deliverable should stay notebook-native.",
-            "$doc and $pdf for stakeholder-facing outputs.",
-            "$vercel-deploy when you want to share the result as a URL."
-          ]
-        },
-        {
-          "title": "Tech stack",
-          "paragraphs": [
-            "Need",
-            "Default options",
-            "Why it's needed",
-            "Need",
-            "Analysis stack",
-            "Default options",
-            "pandas with matplotlib or seaborn",
-            "Why it's needed",
-            "Good defaults for import, profiling, joins, cleaning, and the first round of charts.",
-            "Need",
-            "Modeling",
-            "Default options",
-            "statsmodels or scikit-learn",
-            "Why it's needed",
-            "Start with interpretable baselines before moving to more complex predictive models."
-          ],
-          "items": []
-        }
-      ],
-      "image": "assets/use-cases/datasets-and-reports.webp"
     },
     {
       "index": 33,
@@ -2183,7 +2227,7 @@
             "SwiftUI Pro is a broad SwiftUI review skill for modern APIs, maintainability, accessibility, and performance.",
             "Liquid Glass expert helps Codex adopt the new iOS 26 Liquid Glass APIs and tune custom components so they fit the latest system design.",
             "SwiftUI performance helps when a feature feels slow or a SwiftUI view update path looks suspicious. It scans for common SwiftUI mistakes and produces a prioritized report of what to fix and where the biggest gains are.",
-            "Swift concurrency expert helps when cryptic errors and compiler warnings start fighting the change you want to make. On GPT-5.4, you may need it less often, but it’s still useful when Swift concurrency diagnostics get noisy.",
+            "Swift concurrency expert helps when cryptic errors and compiler warnings start fighting the change you want to make. On GPT-5.6 Terra, you may need it less often, but it’s still useful when Swift concurrency diagnostics get noisy.",
             "SwiftUI view refactor helps keep files smaller and make SwiftUI code more consistent across the repo.",
             "SwiftUI patterns helps reach for predictable @Observable and @Environment architecture patterns as the app grows.",
             "To learn more about how to install and use skills, see our skills documentation .",
@@ -2201,7 +2245,7 @@
             "SwiftUI Pro is a broad SwiftUI review skill for modern APIs, maintainability, accessibility, and performance.",
             "Liquid Glass expert helps Codex adopt the new iOS 26 Liquid Glass APIs and tune custom components so they fit the latest system design.",
             "SwiftUI performance helps when a feature feels slow or a SwiftUI view update path looks suspicious. It scans for common SwiftUI mistakes and produces a prioritized report of what to fix and where the biggest gains are.",
-            "Swift concurrency expert helps when cryptic errors and compiler warnings start fighting the change you want to make. On GPT-5.4, you may need it less often, but it’s still useful when Swift concurrency diagnostics get noisy.",
+            "Swift concurrency expert helps when cryptic errors and compiler warnings start fighting the change you want to make. On GPT-5.6 Terra, you may need it less often, but it’s still useful when Swift concurrency diagnostics get noisy.",
             "SwiftUI view refactor helps keep files smaller and make SwiftUI code more consistent across the repo.",
             "SwiftUI patterns helps reach for predictable @Observable and @Environment architecture patterns as the app grows."
           ]
@@ -4185,6 +4229,69 @@
     },
     {
       "index": 84,
+      "slug": "build-and-deploy-internal-apps",
+      "title": "Build and deploy internal apps",
+      "tagline": "Turn a team workflow into a hosted internal app with Sites.",
+      "tags": [
+        "Front-end",
+        "Integrations"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/build-and-deploy-internal-apps",
+      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/build-and-deploy-internal-apps",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/build-and-deploy-internal-apps.webp",
+      "summary": "Use Sites in ChatGPT Work to build and test a focused internal app, add storage when the workflow needs it, and share the reviewed version with the right audience.",
+      "difficulty": "Intermediate",
+      "time": "30m",
+      "bestFor": [
+        "Teams turning a recurring workflow into a focused internal tool.",
+        "Apps that need lightweight storage, uploads, or workspace sharing."
+      ],
+      "starterPrompt": "Use @Sites to build a private internal app for [describe the workflow or tool you need]. Use any attached files or linked documents to understand who it's for, what information it should show, and what people need to do.\n\nBuild a focused first version and check that it works on mobile and desktop. Show me a private preview, explain anything that needs my review, and make it easy to iterate.\n\nDo not publish or share the app, change its access, or contact anyone without asking me first.",
+      "workflow": [
+        {
+          "title": "Build and deploy from one task",
+          "paragraphs": [
+            "Sites is a managed hosting service in ChatGPT. Ask ChatGPT to create an app, and it can build the project, run it for testing, deploy it, and return a URL you can share.",
+            "Sites is in public beta for eligible paid plans. It isn’t available on Free or Go, or in the EEA, Switzerland, or the United Kingdom at launch, and rollout or workspace settings can affect access.",
+            "The scope ranges from static sites to full-stack JavaScript or TypeScript web apps. That makes Sites a good fit for focused internal tools: onboarding dashboards, training hubs, searchable resource libraries, lightweight workflow apps, and reporting views.",
+            "See the Sites documentation for setup, storage, deployment, and access guidance.",
+            "Start with one useful workflow. A clear first version is easier to review, deploy, and improve than a broad request to recreate an entire internal system.",
+            "Here is a fictional example using an attached launch brief and five sample requests. The first pass creates and checks a focused request tracker; the follow-up adds an owner filter and makes overdue requests easier to see.",
+            "The launch-request tracker opens with five sample requests , including one blocked request, two in review, and one overdue item. The team can scan by launch and status, filter blocked work, add a request, and update its status. The main flow and saved state were checked at desktop and mobile widths.",
+            "After a follow-up, the tracker includes an owner filter and highlights overdue work; blocked requests stay at the top and a request can’t be marked ready without an owner . The preview remains private; no Site was published and access did not change.",
+            "Tell ChatGPT who the app is for, what people should do, which source material it should inspect, and what should persist between sessions. Be explicit about the intended sharing scope and ask ChatGPT to test the main flow before it deploys.",
+            "Use plugins to fetch or refresh data from connected internal sources. Start a Sites task that uses connected apps or cloud files in Work on the web, or in Work or Codex on desktop. Use the desktop app for a local file, the built-in browser for a signed-in site, or the Codex Chrome extension for an existing Chrome session.",
+            "If you need live data fetching, you can connect to a third-party tool using an API key configured in the Site’s settings. Keep secret values out of prompts and files. If you want to use plugin connections, you can schedule work from the current task to fetch data with plugins on a set schedule, update the app, and save a version for review. Deploy the reviewed version only after approval.",
+            "Many internal apps need persistence. Sites supports two storage primitives:",
+            "Keep structured metadata in D1 and larger file objects in R2. A read-only resource page or small static site may not need either one.",
+            "Sites doesn’t support data or inference residency. Don’t use it to process protected health information or payment-card data, or to enable financial transactions. Review the Sites data and usage restrictions before storing sensitive information.",
+            "You can manage who can visit your deployed projects.",
+            "Keep a new project private while you review its content, data handling, and intended audience.",
+            "Depending on your account and workspace settings, you can share it with:",
+            "Sharing lets people visit the project; it doesn’t let them edit it. To change access, open Sites in ChatGPT or ask ChatGPT directly:",
+            "Public sharing also works for a lightweight event guide, club resource page, or other site meant for people outside a workspace. In Enterprise workspaces, public publishing is off by default and an admin must enable it. Keep internal data private even when a public link is available.",
+            "The Sites showcase includes Site examples with full prompts.",
+            "Use those examples as starting points, then narrow the prompt around your team’s workflow and source material."
+          ],
+          "items": [
+            "Use D1, a SQLite-compatible database, for structured data such as checklist state, bookmarks, filters, annotations, configuration, and file metadata.",
+            "Use R2 object storage for file bytes such as uploaded documents, images, or other assets that should persist.",
+            "People you invite.",
+            "Everyone in your workspace.",
+            "Anyone on the Internet.",
+            "Onboarding Hub combines a first-week checklist, resources, notes, and uploaded documents. It uses D1 for user state and file metadata, and R2 for uploaded file bytes.",
+            "Enablement Hub provides a searchable training library with filters and saved bookmarks backed by D1.",
+            "Pulse Dashboard presents metrics, trends, and lineage details while using D1 for configuration and cached snapshots.",
+            "Sparkboard turns employee idea intake into a workflow with authenticated submissions, voting, comments, status boards, and contributor rankings.",
+            "Launch Cal organizes upcoming product launches into a monthly calendar with filters, risk signals, checklists, and connected-source references.",
+            "Event Planning Hub combines event requests, approvals, templates, milestones, policy readiness, and connected planning resources."
+          ]
+        }
+      ],
+      "image": "assets/use-cases/build-and-deploy-internal-apps.webp"
+    },
+    {
+      "index": 85,
       "slug": "draft-prds-from-sources",
       "title": "Draft PRDs from internal context",
       "tagline": "Create product requirements documents from Linear, Slack, source documents, and meeting notes.",
@@ -4225,7 +4332,7 @@
       "image": "assets/use-cases/draft-prds-from-sources.webp"
     },
     {
-      "index": 85,
+      "index": 86,
       "slug": "follow-goals",
       "title": "Follow a goal",
       "tagline": "Give Codex a durable objective for long-running work.",
@@ -4280,7 +4387,105 @@
       "image": "assets/use-cases/follow-goals.webp"
     },
     {
-      "index": 86,
+      "index": 87,
+      "slug": "project-teammate",
+      "title": "Set up a project teammate",
+      "tagline": "Keep one project moving with a dedicated, context-aware teammate.",
+      "tags": [
+        "Automation",
+        "Integrations"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/project-teammate",
+      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/project-teammate",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/project-teammate.webp",
+      "summary": "Give ChatGPT Work a dedicated task for one project or workstream. It can review relevant messages, documents, decisions, and deadlines; track meaningful changes on a schedule; prepare the next step; and wait for approval before taking action.",
+      "difficulty": "Easy",
+      "time": "Long-running",
+      "bestFor": [
+        "Launches, customer accounts, events, or initiatives with decisions spread across connected work tools.",
+        "Projects that need a dedicated task to track progress, blockers, owners, and next steps."
+      ],
+      "starterPrompt": "Be my dedicated teammate for [project or workstream]. Focus only on that project. If the project isn't clear, ask me before reviewing unrelated work.\n\nReview the relevant messages, email, calendar events, documents, notes, and project trackers available to you. Establish what we're trying to accomplish, who's involved, what's already been decided, the current deadlines, and what's still open. Tell me when a source is missing instead of guessing.\n\nStart with a concise project brief:\n\n- the goal and current state;\n- important decisions, owners, and deadlines;\n- what's changed;\n- blockers, dependencies, and unanswered questions; and\n- the next step that would move the project forward.\n\nLink to your sources when available, check the latest replies before surfacing old requests, and distinguish confirmed facts from assumptions. Keep your context limited to this project.\n\nHelp me research questions, prepare meetings, review drafts, and write follow-ups as the project progresses. If I ask you to check back on a schedule, watch for meaningful changes.\n\nAsk before sending messages, editing documents, scheduling work, sharing information, or making commitments.",
+      "workflow": [
+        {
+          "title": "What to expect",
+          "paragraphs": [
+            "Give ChatGPT Work one project to focus on. A dedicated teammate can check the messages, documents, meetings, decisions, and open questions that affect that project, then help you decide what to do next. Add a scheduled check when you want it to keep watching the project.",
+            "Unlike a work chief of staff , which watches across your priorities, a project teammate stays focused on a specific launch, customer account, initiative, or event.",
+            "Choose the surface that fits your project:",
+            "Here’s what a project check and follow-up can look like:",
+            "Project status: The customer-facing launch copy is approved, and the readiness review is on the calendar.",
+            "Open questions: The launch checklist is missing the documentation link, and security approval hasn’t been confirmed.",
+            "Next step: Check on the final link and confirm whether the security review blocks launch.",
+            "Draft follow-up: “Hey, checking on the final docs link before the readiness review. Is it ready to add to the launch checklist, or is anything still blocking it?” The message remains unsent.",
+            "Project heartbeat: Check the launch thread, checklist, and readiness meeting every 30 minutes. Report meaningful changes without contacting anyone or updating the tracker.",
+            "Keep the project task focused. ChatGPT should ask before sending messages, updating documents, changing a tracker, scheduling work, or making commitments.",
+            "In the desktop app, you can ask your work chief of staff to create and brief the project teammate. That gives the new task the relevant context without turning your chief-of-staff thread into another project workspace.",
+            "Check on an existing teammate",
+            "Add a project heartbeat",
+            "Connected sources and scheduled tasks depend on your plan and workspace settings. Project-task coordination is available in the desktop app."
+          ],
+          "items": [
+            "ChatGPT on the web: Keep a teammate focused on connected project messages, documents, meetings, and trackers. A scheduled check can keep watching those sources when your laptop is off.",
+            "ChatGPT desktop app: Give a teammate access to local project files and apps. You can also ask your chief of staff to create, brief, and coordinate the teammate as a separate task. Keep your computer on and the app running if a scheduled check needs local files or desktop tools.",
+            "Run a launch. Watch the project channel, launch checklist, approvals, assets, and release timing. Flag missing materials and decisions before they become blockers.",
+            "Produce a podcast or video. Track scripts, recordings, review notes, sensitive footage, edit requests, and publishing deadlines.",
+            "Ship documentation or a website. Track pull requests, review comments, preview deployments, product changes, and outstanding publication approvals.",
+            "Manage a customer project. Keep the account conversation, meeting notes, commitments, open questions, and the next follow-up in one place.",
+            "Choose the project, initiative, or customer account you want the teammate to focus on.",
+            "Connect or provide the messages, email, calendar, documents, and trackers relevant to that work.",
+            "Start a dedicated task using the starter prompt.",
+            "Review the initial project brief and correct any missing context.",
+            "Continue using the same task for decisions, research, meeting preparation, and draft follow-ups.",
+            "Add a heartbeat when you want the teammate to keep checking for project updates."
+          ]
+        }
+      ],
+      "image": "assets/use-cases/project-teammate.webp"
+    },
+    {
+      "index": 88,
+      "slug": "track-bills-subscriptions-and-spending",
+      "title": "Track bills, subscriptions, and spending",
+      "tagline": "Review the last 30 days and stay ahead of anything unusual.",
+      "tags": [
+        "Data",
+        "Knowledge Work"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/track-bills-subscriptions-and-spending",
+      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/track-bills-subscriptions-and-spending",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/track-bills-subscriptions-and-spending.webp",
+      "summary": "Use ChatGPT Work on the web to review connected accounts, understand your spending and savings, and get notified when something needs attention.",
+      "difficulty": "Easy",
+      "time": "5m",
+      "bestFor": [
+        "Understanding spending, savings, account growth, and upcoming bills.",
+        "Read-only daily monitoring with a short report every two weeks."
+      ],
+      "starterPrompt": "@Finances Check my finances for the last 30 days. Show me my spending, savings, account balances and growth, and anything unusual.",
+      "workflow": [
+        {
+          "title": "Before you start",
+          "paragraphs": [
+            "In ChatGPT Work on the web, open Finances in the sidebar, add the Finances plugin, and connect your financial accounts. You can then use @Finances to check your accounts. Finances is not available in the desktop app.",
+            "Finances is read-only: it can review your connected accounts, but it cannot move money, pay bills, cancel subscriptions, make trades, or change your account settings. Financial data can be incomplete or categorized incorrectly, so verify anything that needs your attention.",
+            "Start by asking for a review of the last 30 days, including changes to your spending and savings and anything unusual. Then ask for a daily check and a short report every two weeks.",
+            "In the last 30 days, spending totaled $4,280, savings increased by $820, and combined cash and investment balances grew by $930. Dining increased compared with the previous month. An unfamiliar $42 charge and a possible duplicate subscription renewal need review.",
+            "As a follow-up, ask for daily alerts when something needs attention and a short report every two weeks. Connected financial accounts are read-only.",
+            "Set up daily monitoring",
+            "Find subscriptions you forgot about",
+            "See where your money went",
+            "Check upcoming bills",
+            "Track your savings progress",
+            "Investigate an unfamiliar charge"
+          ],
+          "items": []
+        }
+      ],
+      "image": "assets/use-cases/track-bills-subscriptions-and-spending.webp"
+    },
+    {
+      "index": 89,
       "slug": "ai-app-evals",
       "title": "Add evals to your AI application",
       "tagline": "Use Codex to turn expected behavior into a Promptfoo eval suite.",
@@ -4332,7 +4537,7 @@
       "image": "assets/use-cases/ai-app-evals.webp"
     },
     {
-      "index": 87,
+      "index": 90,
       "slug": "user-stories-to-ui-mocks",
       "title": "Turn user stories into UI mocks",
       "tagline": "Convert product feedback, issue threads, and design context into mockups your team can react to and implement.",
@@ -4370,65 +4575,7 @@
       "image": "assets/use-cases/user-stories-to-ui-mocks.webp"
     },
     {
-      "index": 88,
-      "slug": "build-and-deploy-internal-apps",
-      "title": "Build and deploy internal apps",
-      "tagline": "Turn a team workflow into a hosted internal app with Sites.",
-      "tags": [
-        "Front-end",
-        "Integrations"
-      ],
-      "url": "https://learn.chatgpt.com/use-cases/build-and-deploy-internal-apps",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/build-and-deploy-internal-apps",
-      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/build-and-deploy-internal-apps.webp",
-      "summary": "Use Sites in ChatGPT to build, test, and deploy internal apps, with built-in storage and auth context.",
-      "difficulty": "Intermediate",
-      "time": "30m",
-      "bestFor": [
-        "Teams that want to turn recurring workflows into interactive apps.",
-        "Apps that need lightweight structured persistence, file uploads, or workspace-oriented sharing.",
-        "Internal tools that benefit from building, testing, deploying, and iterating in one chat."
-      ],
-      "starterPrompt": "Build and deploy an internal app for [team or workflow].\n\nGoal:\n- [what the app should help people do]\n- [who should use it]\n- [source docs, data, or connected services ChatGPT should inspect]\n\nRequirements:\n- Keep the first version focused on one useful workflow.\n- Use D1 for structured data persistence.\n- Use R2 for user-uploaded files if needed.\n- Test the main flow, persistence, and responsive layout before deploying.\n\nMake it available to all workspace users.",
-      "workflow": [
-        {
-          "title": "Build and deploy from one chat",
-          "paragraphs": [
-            "Sites is a managed hosting service in ChatGPT. Ask ChatGPT to create an app, and it can build the project, run it for testing, deploy it, and return a URL you can share.",
-            "The scope ranges from simple static sites to full-stack JavaScript or TypeScript web apps. That makes Sites a good fit for focused internal tools: onboarding dashboards, enablement hubs, searchable resource libraries, lightweight workflow apps, and reporting views.",
-            "See the Sites documentation for setup, storage, deployment, and access guidance.",
-            "Start with one useful workflow. A clear first version is easier to review, deploy, and improve than a broad request to recreate an entire internal system.",
-            "Tell ChatGPT who the app is for, what people should accomplish, which source material it should inspect, and what should persist between sessions. Be explicit about the intended sharing scope and ask ChatGPT to test the main flow before it deploys.",
-            "You can also leverage Plugins to fetch or refresh data from internal sources.",
-            "If you need live data fetching, you can connect to a 3rd party tool using an API key. But if you want to use plugin connections, you can schedule a task from the current chat to fetch data with plugins on a set schedule, update the app, and redeploy it.",
-            "Many internal apps need persistence. Sites supports two storage primitives:",
-            "Keep structured metadata in D1 and larger file objects in R2. A read-only resource page or static microsite may not need either one.",
-            "You can manage who can visit your deployed projects.",
-            "Keep a new project private while you review its content, data handling, and intended audience.",
-            "Depending on your account and workspace settings, you can share it with:",
-            "Sharing lets people visit the project; it doesn’t let them edit it. To change access, open Sites in ChatGPT or ask ChatGPT directly:",
-            "The Sites showcase includes sites examples with full prompts.",
-            "Use those examples as starting points, then narrow the prompt around your team’s workflow and source material."
-          ],
-          "items": [
-            "Use D1, a SQLite-compatible database, for structured data such as checklist state, bookmarks, filters, annotations, configuration, and file metadata.",
-            "Use R2 object storage for file bytes such as uploaded documents, images, or other assets that should persist.",
-            "People you invite.",
-            "Everyone in your workspace.",
-            "Anyone with the link.",
-            "Onboarding Hub combines a first-week checklist, resources, notes, and uploaded documents. It uses D1 for user state and file metadata, and R2 for uploaded file bytes.",
-            "Enablement Hub provides a searchable training library with filters and saved bookmarks backed by D1.",
-            "Pulse Dashboard presents metrics, trends, and lineage details while using D1 for configuration and cached snapshots.",
-            "Sparkboard turns employee idea intake into a workflow with authenticated submissions, voting, comments, status boards, and contributor rankings.",
-            "Launch Cal organizes upcoming product launches into a monthly calendar with filters, risk signals, checklists, and connected-source references.",
-            "Event Planning Hub combines event requests, approvals, templates, milestones, policy readiness, and connected planning resources."
-          ]
-        }
-      ],
-      "image": "assets/use-cases/build-and-deploy-internal-apps.webp"
-    },
-    {
-      "index": 89,
+      "index": 91,
       "slug": "slack-action-triage",
       "title": "Prioritize Slack action items",
       "tagline": "Turn Slack threads and DMs into a ranked queue of next steps.",
@@ -4481,7 +4628,7 @@
       "image": "assets/use-cases/slack-action-triage.webp"
     },
     {
-      "index": 90,
+      "index": 92,
       "slug": "react-native-expo-apps",
       "title": "Build React Native apps with Expo",
       "tagline": "Go from a mobile-app idea to a working Expo app with the dedicated plugin.",
@@ -4543,7 +4690,7 @@
       "image": "assets/use-cases/react-native-expo-apps.webp"
     },
     {
-      "index": 91,
+      "index": 93,
       "slug": "agent-friendly-clis",
       "title": "Create a CLI Codex can use",
       "tagline": "Give Codex a composable command for an API, log source, export, or team script.",
@@ -4592,7 +4739,7 @@
       "image": "assets/use-cases/agent-friendly-clis.webp"
     },
     {
-      "index": 92,
+      "index": 94,
       "slug": "verified-operations-workflows",
       "title": "Run verified operations",
       "tagline": "Run repeatable workflows and verify the result.",
@@ -4636,7 +4783,7 @@
       "image": "assets/use-cases/verified-operations-workflows.webp"
     },
     {
-      "index": 93,
+      "index": 95,
       "slug": "event-launch-playbooks",
       "title": "Run event playbooks",
       "tagline": "Create repeatable workflows for event program management.",
@@ -4681,7 +4828,7 @@
       "image": "assets/use-cases/event-launch-playbooks.webp"
     },
     {
-      "index": 94,
+      "index": 96,
       "slug": "chatgpt-apps",
       "title": "Bring your app to ChatGPT",
       "tagline": "Turn your use cases into focused apps for ChatGPT.",
@@ -4785,7 +4932,7 @@
       "image": "assets/use-cases/chatgpt-apps.webp"
     },
     {
-      "index": 95,
+      "index": 97,
       "slug": "audit-workflow",
       "title": "Audit a workflow",
       "tagline": "Turn a messy process into a clear audit and automation plan.",
@@ -4825,7 +4972,7 @@
       "image": "assets/use-cases/audit-workflow.webp"
     },
     {
-      "index": 96,
+      "index": 98,
       "slug": "launch-campaign-kit",
       "title": "Build a launch campaign kit",
       "tagline": "Turn launch context into coordinated first-draft campaign assets.",
@@ -4865,7 +5012,7 @@
       "image": "assets/use-cases/launch-campaign-kit.webp"
     },
     {
-      "index": 97,
+      "index": 99,
       "slug": "consolidate-spreadsheets",
       "title": "Consolidate spreadsheets",
       "tagline": "Join spreadsheet exports into one refreshable workbook.",
@@ -4905,7 +5052,7 @@
       "image": "assets/use-cases/consolidate-spreadsheets.webp"
     },
     {
-      "index": 98,
+      "index": 100,
       "slug": "weekly-work-summary",
       "title": "Write a weekly work summary",
       "tagline": "Turn a week of activity into a manager-ready update.",

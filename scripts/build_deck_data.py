@@ -13,6 +13,7 @@ SOURCE_PATH = DATA_DIR / "source-usecases.json"
 TRANSLATION_PATHS = [DATA_DIR / f"usecases-th-{part}.json" for part in ("01", "02", "03")]
 EN_TRANSLATION_PATHS = [DATA_DIR / f"usecases-en-{part}.json" for part in ("01", "02", "03")]
 OUTPUT_PATH = DATA_DIR / "usecases-data.js"
+EXPECTED_COUNT = 101
 CATEGORIES = {
     "งานประจำ": {"id": "everyday-work", "en": "Everyday work"},
     "ข้อมูลและการตัดสินใจ": {"id": "data-decisions", "en": "Data and decisions"},
@@ -99,13 +100,19 @@ def main() -> None:
     translations_th.sort(key=lambda item: item["index"])
     translations_en.sort(key=lambda item: item["index"])
     counts = (len(source_items), len(translations_th), len(translations_en))
-    if counts != (99, 99, 99):
-        raise ValueError(f"Expected 99 source, Thai, and English records, got {counts}")
-    expected_indices = list(range(99))
+    if counts != (EXPECTED_COUNT, EXPECTED_COUNT, EXPECTED_COUNT):
+        raise ValueError(
+            f"Expected {EXPECTED_COUNT} source, Thai, and English records, got {counts}"
+        )
+    expected_indices = list(range(EXPECTED_COUNT))
     if [item["index"] for item in translations_th] != expected_indices:
-        raise ValueError("Thai translation indices must be contiguous from 0 through 98")
+        raise ValueError(
+            f"Thai translation indices must be contiguous from 0 through {EXPECTED_COUNT - 1}"
+        )
     if [item["index"] for item in translations_en] != expected_indices:
-        raise ValueError("English translation indices must be contiguous from 0 through 98")
+        raise ValueError(
+            f"English translation indices must be contiguous from 0 through {EXPECTED_COUNT - 1}"
+        )
 
     merged = []
     for source, translation_th, translation_en in zip(
