@@ -872,7 +872,7 @@
     "slug": "deep-security-scan",
     "titleTh": "สแกนความปลอดภัยเชิงลึก",
     "titleEn": "Run a deep security scan",
-    "summaryTh": "ใช้ Codex Security plugin ตรวจ repository ที่ได้รับอนุญาตหลายรอบ ยืนยันช่องโหว่ที่เป็นไปได้ และจัดทำรายงาน finding โดยละเอียดพร้อมแนวทาง hardening เชิงโครงสร้าง",
+    "summaryTh": "ใช้ Codex Security plugin ตรวจ repository หรือ folder ที่ได้รับอนุญาตหลายรอบ ยืนยัน finding ที่เป็นไปได้ และส่งผลลัพธ์ที่ตรวจทานได้พร้อม coverage",
     "categoryTh": "วิทยาศาสตร์และความปลอดภัย",
     "workflow": [
       {
@@ -885,14 +885,14 @@
       },
       {
         "label": "รันการสแกนลึก",
-        "detail": "ให้ plugin ทำ discovery, validation และ attack-path analysis หลายรอบ พร้อมรายงานราย finding และแนวทาง hardening"
+        "detail": "ให้ plugin ทำ discovery, validation และ attack-path analysis หลายรอบ แล้วสรุป findings และ coverage ที่ตรวจทานได้"
       },
       {
         "label": "ทบทวนผลก่อนแก้",
-        "detail": "ตรวจ scan directory, report.md, รายงาน finding, hardening portfolio และ proof gaps แล้วเลือกแก้ทีละรายการ"
+        "detail": "ตรวจ scan directory, report.md และ proof gaps; ขอรายงานเชิงลึกหรือ structural hardening เพิ่มเมื่อจำเป็น ก่อนเลือกแก้ทีละ finding"
       }
     ],
-    "promptTh": "ใช้ $codex-security:deep-security-scan ตรวจ [repository/folder] ที่ฉันได้รับอนุญาต โดยคงขอบเขตนี้และส่ง scan directory กับ report.md path พร้อม findings, coverage, structural hardening guidance และ proof gaps",
+    "promptTh": "ใช้ $codex-security:deep-security-scan ตรวจ [repository/folder] ที่ฉันได้รับอนุญาต โดยคงขอบเขตนี้และส่ง scan directory กับ report.md path พร้อมสรุป findings, reviewed surfaces และ proof gaps ที่ต้องให้มนุษย์ตรวจสอบก่อน",
     "checkTh": "ผู้เชี่ยวชาญความปลอดภัยต้องยืนยัน reachability, severity และผลกระทบก่อนเผยแพร่หรือแก้ไข finding"
   },
   {

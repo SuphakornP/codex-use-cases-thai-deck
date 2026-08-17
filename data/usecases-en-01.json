@@ -346,8 +346,8 @@
     "workflowEn": [
       { "label": "Confirm scope and access", "detail": "Name the authorized repository or folder and do not expand beyond it." },
       { "label": "Set security context", "detail": "Put architecture, trust boundaries, invariants, exclusions, and severity rules in SECURITY.md; keep build and test commands in AGENTS.md." },
-      { "label": "Run a deep scan", "detail": "Let the plugin repeat discovery, validation, and attack-path analysis, then produce finding reports and hardening guidance." },
-      { "label": "Review before fixing", "detail": "Inspect the scan directory, report.md, detailed findings, hardening portfolio, and proof gaps before fixing one finding." }
+      { "label": "Run a deep scan", "detail": "Let the plugin repeat discovery, validation, and attack-path analysis, then report reviewable findings and coverage." },
+      { "label": "Review before fixing", "detail": "Inspect the scan workspace, report, and proof gaps; request detailed reports or hardening guidance only when needed." }
     ],
     "checkEn": "A security expert must confirm reachability, severity, and impact before disclosure or remediation."
   },

@@ -4,6 +4,7 @@
 
 ## Unreleased
 
+- 17 สิงหาคม 2026: ปรับ Deep Security Scan ให้รายงาน findings และ coverage ก่อน และขอรายงานเชิงลึกหรือ structural hardening เพิ่มเมื่อจำเป็น ตาม official source
 - 3 สิงหาคม 2026: เพิ่ม 2 use cases ใหม่ รีเฟรช 9 workflows ที่เปลี่ยน และจัดลำดับตาม official source ใหม่เป็น 101 รายการ
 - 27 กรกฎาคม 2026: ปรับคำแนะนำ GitHub code review ให้ใช้ `## Code Review Rules` ตามขอบเขต และปรับ workflow การสร้าง ChatGPT app เป็น MCP-backed plugin ตาม official source
 - 20 กรกฎาคม 2026: รีเฟรชเนื้อหาจาก OpenAI Learn ให้ใช้คำว่า chat/plugin ตามปัจจุบัน และเพิ่มผลลัพธ์ structural hardening สำหรับ Deep Security Scan
