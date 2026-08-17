@@ -1,6 +1,6 @@
 {
   "source": "https://learn.chatgpt.com/use-cases",
-  "retrievedAt": "2026-08-03T02:03:44Z",
+  "retrievedAt": "2026-08-17T02:04:50Z",
   "count": 101,
   "useCases": [
     {
@@ -1644,7 +1644,7 @@
       "url": "https://learn.chatgpt.com/use-cases/deep-security-scan",
       "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/deep-security-scan",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/deep-security-scan.webp",
-      "summary": "Use the Codex Security plugin to run a more comprehensive audit of a repository or scoped folder that repeats discovery, validates candidates, and produces reviewable coverage, detailed finding reports, and structural hardening guidance.",
+      "summary": "Use the Codex Security plugin to run a more comprehensive audit of a repository or scoped folder that repeats discovery, validates candidates, and produces reviewable findings and coverage.",
       "difficulty": "Advanced",
       "time": "Long-running",
       "bestFor": [
@@ -1652,7 +1652,7 @@
         "More comprehensive reviews where additional runtime and token use are appropriate for finding more candidate issues.",
         "Security teams that need traceable finding evidence before deciding what to remediate."
       ],
-      "starterPrompt": "Use $codex-security:deep-security-scan to run a deep security scan on [this repository / absolute path to a scoped folder].\n\nScope and rules:\n- I am authorized to assess this repository.\n- Keep the scan within [the entire repository / the exact folder named above].\n- Use the Codex Security plugin's deep-scan workflow; do not reinterpret this as a pull request or diff review.\n\nReturn the scan directory and report.md path. Summarize the findings, reviewed surfaces, structural hardening guidance, and proof gaps that require human review first.",
+      "starterPrompt": "Use $codex-security:deep-security-scan to run a deep security scan on [this repository / absolute path to a scoped folder].\n\nScope and rules:\n- I am authorized to assess this repository.\n- Keep the scan within [the entire repository / the exact folder named above].\n- Use the Codex Security plugin's deep-scan workflow; do not reinterpret this as a pull request or diff review.\n\nReturn the scan directory and report.md path. Summarize the findings, reviewed surfaces, and proof gaps that require human review first.",
       "workflow": [
         {
           "title": "Choose a deep repository review",
@@ -1668,8 +1668,8 @@
             "Confirm that you own the repository or have authorization to assess it.",
             "Add architecture, trust-boundary, security-invariant, finding-criteria, exclusion, and severity guidance in SECURITY.md . Use nested SECURITY.md files for directory-specific policy.",
             "Keep supported build, test, and validation commands and other repository instructions in AGENTS.md .",
-            "Run the starter prompt and let the scan complete its repeated discovery, validation, attack-path analysis, per-finding reporting, structural hardening, and final reporting stages.",
-            "Review the findings workspace, detailed reports, hardening portfolio, and any proof gaps before asking Codex to change code or reproduce a finding further."
+            "Run the starter prompt and let the scan complete its repeated discovery, validation, attack-path analysis, and final reporting stages.",
+            "Review the findings workspace, report, and any proof gaps. Request detailed vulnerability reports or structural hardening guidance when you need them."
           ]
         }
       ],
