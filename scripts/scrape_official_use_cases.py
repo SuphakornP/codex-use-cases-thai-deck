@@ -19,6 +19,7 @@ DATA_PATH = ROOT / "data" / "source-usecases.json"
 IMAGE_DIR = ROOT / "assets" / "use-cases"
 USER_AGENT = "Mozilla/5.0 (compatible; CodexUseCaseDeck/1.0)"
 EXPECTED_COUNT = 101
+USE_CASE_PATH = re.compile(r"^/(?:codex/)?use-cases/[^/]+$")
 
 
 def clean(value: str) -> str:
@@ -99,6 +100,7 @@ def parse_detail(card: dict[str, object]) -> dict[str, object]:
     html = fetch(str(card["url"])).decode("utf-8")
     soup = BeautifulSoup(html, "html.parser")
     first_h1 = soup.find("h1", string=lambda value: value and clean(value) == card["title"])
+    canonical = soup.find("link", rel="canonical", href=True)
     hero_paragraphs = []
     if first_h1:
         for node in first_h1.find_all_next("p", limit=2):
@@ -106,6 +108,7 @@ def parse_detail(card: dict[str, object]) -> dict[str, object]:
 
     card.update(
         {
+            "canonicalUrl": str(canonical["href"]) if canonical else card["canonicalUrl"],
             "tagline": hero_paragraphs[0] if hero_paragraphs else card["tagline"],
             "summary": hero_paragraphs[1] if len(hero_paragraphs) > 1 else card["tagline"],
             "difficulty": extract_meta_value(soup, "Difficulty"),
@@ -134,7 +137,7 @@ def main() -> None:
     cards: list[dict[str, object]] = []
 
     for node in soup.select("[data-codex-use-case-card]"):
-        link = node.find("a", href=re.compile(r"^/codex/use-cases/[^/]+$"))
+        link = node.find("a", href=USE_CASE_PATH)
         title = node.find("h3")
         tagline = node.find("p")
         image = node.find("img")
@@ -150,7 +153,7 @@ def main() -> None:
                 "tagline": clean(tagline.get_text(" ", strip=True)),
                 "tags": tags,
                 "url": f"{BASE_URL}/use-cases/{slug}",
-                "canonicalUrl": f"{BASE_URL}/codex/use-cases/{slug}",
+                "canonicalUrl": f"{BASE_URL}/use-cases/{slug}",
                 "imageUrl": f"{BASE_URL}{image['src']}" if image and image.get("src") else "",
             }
         )
