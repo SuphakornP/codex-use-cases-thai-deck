@@ -1,6 +1,6 @@
 {
   "source": "https://learn.chatgpt.com/use-cases",
-  "retrievedAt": "2026-08-17T02:04:50Z",
+  "retrievedAt": "2026-08-24T02:30:45Z",
   "count": 101,
   "useCases": [
     {
@@ -13,7 +13,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/generate-slide-decks",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/generate-slide-decks",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/generate-slide-decks",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/generate-slide-decks.webp",
       "summary": "Create or revise a Google Slides or PowerPoint presentation from source material, a reference deck, or a reusable template.",
       "difficulty": "Easy",
@@ -55,7 +55,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/manage-your-inbox",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/manage-your-inbox",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/manage-your-inbox",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/manage-your-inbox.webp",
       "summary": "Clear an overloaded inbox and see which messages need a reply, a decision, or your attention. ChatGPT Work can suggest a cleanup, draft replies in your voice, and check for new email on a schedule.",
       "difficulty": "Easy",
@@ -123,7 +123,7 @@
         "Workflow"
       ],
       "url": "https://learn.chatgpt.com/use-cases/use-your-computer-with-codex",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/use-your-computer-with-codex",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/use-your-computer-with-codex",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/use-your-computer-with-codex.webp",
       "summary": "In the ChatGPT desktop app, use Computer Use to complete a scoped task across macOS or Windows apps and local files, with permission prompts and a final result you can review. Start signed-in browser tasks separately with Chrome.",
       "difficulty": "Easy",
@@ -186,7 +186,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/daily-work-brief",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/daily-work-brief",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/daily-work-brief",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/daily-work-brief.webp",
       "summary": "Set up ChatGPT Work as a chief of staff that checks your connected messages, email, calendar, documents, and project trackers every hour, keeps track of what changes, and prepares concise updates and draft replies. On desktop, ask it to create or coordinate a separate task for a specific project.",
       "difficulty": "Easy",
@@ -243,7 +243,7 @@
         "Engineering"
       ],
       "url": "https://learn.chatgpt.com/use-cases/discover-protein-folding-architectures",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/discover-protein-folding-architectures",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/discover-protein-folding-architectures",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/discover-protein-folding-architectures.webp",
       "summary": "Use Codex with Goal Mode to research and implement novel architectural modifications to AlphaFold2 for improved protein folding performance.",
       "difficulty": "Advanced",
@@ -298,7 +298,7 @@
         "Automation"
       ],
       "url": "https://learn.chatgpt.com/use-cases/analyze-data-export",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/analyze-data-export",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/analyze-data-export",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/analyze-data-export.webp",
       "summary": "Ask ChatGPT Work to turn your spreadsheets into a private, interactive Site, check the source data on a schedule, and flag the changes that need your attention.",
       "difficulty": "Easy",
@@ -344,7 +344,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/feedback-synthesis",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/feedback-synthesis",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/feedback-synthesis",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/feedback-synthesis.webp",
       "summary": "Give ChatGPT Work feedback from Slack, surveys, issue trackers, support, or research notes. It can group repeated problems into a reviewable Sheet or Doc with evidence, design implications, open questions, and clear follow-ups.",
       "difficulty": "Easy",
@@ -390,7 +390,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/clean-messy-data",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/clean-messy-data",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/clean-messy-data",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/clean-messy-data.webp",
       "summary": "Drag in or mention a messy CSV or spreadsheet, describe the problems you see, and ask ChatGPT to write a cleaned copy while keeping the original file unchanged.",
       "difficulty": "Easy",
@@ -427,7 +427,7 @@
         "Data"
       ],
       "url": "https://learn.chatgpt.com/use-cases/target-prioritization",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/target-prioritization",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/target-prioritization",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/target-prioritization.webp",
       "summary": "Use ChatGPT with the Life Science Research plugin to normalize entities, retrieve genetics, cohort, clinical, literature, and expression evidence in parallel, score each lane, and produce a final ranking with reusable visuals.",
       "difficulty": "Advanced",
@@ -471,7 +471,7 @@
         "Data"
       ],
       "url": "https://learn.chatgpt.com/use-cases/scrna-seq-post-count-qc",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/scrna-seq-post-count-qc",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/scrna-seq-post-count-qc",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/scrna-seq-post-count-qc.webp",
       "summary": "Use ChatGPT with the NGS Analysis plugin to turn a 10x-style matrix bundle into QC-filtered single-cell artifacts, threshold-justified filtering summaries, annotations, and UMAPs you can inspect and revise in the same chat.",
       "difficulty": "Intermediate",
@@ -518,7 +518,7 @@
         "Data"
       ],
       "url": "https://learn.chatgpt.com/use-cases/bulk-rna-seq-fastq-qc",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/bulk-rna-seq-fastq-qc",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/bulk-rna-seq-fastq-qc",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/bulk-rna-seq-fastq-qc.webp",
       "summary": "Use ChatGPT with the NGS Analysis plugin to validate sample sheets, FASTQs, and references, then return MultiQC, Salmon matrices, provenance, and a short QC interpretation before differential expression.",
       "difficulty": "Intermediate",
@@ -565,7 +565,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/cash-flow-forecast",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/cash-flow-forecast",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/cash-flow-forecast",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/cash-flow-forecast.webp",
       "summary": "Give ChatGPT cash-flow inputs and model constraints, then ask it to create an editable workbook that preserves the source cadence, flags safety-balance breaches, and shows which assumptions drive cash pressure.",
       "difficulty": "Intermediate",
@@ -605,7 +605,7 @@
         "Analysis"
       ],
       "url": "https://learn.chatgpt.com/use-cases/datasets-and-reports",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/datasets-and-reports",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/datasets-and-reports",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/datasets-and-reports.webp",
       "summary": "Use ChatGPT Work to clean data, join sources, explore a question, model the result, and produce a clear report with supporting charts and caveats.",
       "difficulty": "Intermediate",
@@ -704,7 +704,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/dcf-model",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/dcf-model",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/dcf-model",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/dcf-model.webp",
       "summary": "Attach historical financials, valuation assumptions, and modeling notes, then ask ChatGPT for an editable DCF workbook you can inspect and revise in ChatGPT.",
       "difficulty": "Intermediate",
@@ -745,7 +745,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/budget-vs-actuals-review",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/budget-vs-actuals-review",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/budget-vs-actuals-review",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/budget-vs-actuals-review.webp",
       "summary": "Give ChatGPT a budget, actuals export, and close notes, then ask it to map actuals to plan, calculate variances, flag reconciliation issues, and separate supported explanations from open finance questions.",
       "difficulty": "Easy",
@@ -785,7 +785,7 @@
         "Workflow"
       ],
       "url": "https://learn.chatgpt.com/use-cases/github-code-reviews",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/github-code-reviews",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/github-code-reviews",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/github-code-reviews.webp",
       "summary": "Use Codex code review in GitHub to automatically surface regressions, missing tests, and documentation issues directly on a pull request.",
       "difficulty": "Easy",
@@ -821,7 +821,7 @@
         "Code"
       ],
       "url": "https://learn.chatgpt.com/use-cases/macos-sidebar-detail-inspector",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/macos-sidebar-detail-inspector",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/macos-sidebar-detail-inspector",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/macos-sidebar-detail-inspector.webp",
       "summary": "Use Codex and the Build macOS Apps plugin to turn an app idea into a desktop-native NavigationSplitView app, keep sidebar selection stable, add menus, toolbars, and keyboard shortcuts, and move preferences into a dedicated Settings scene.",
       "difficulty": "Advanced",
@@ -897,7 +897,7 @@
         "Design"
       ],
       "url": "https://learn.chatgpt.com/use-cases/frontend-designs",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/frontend-designs",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/frontend-designs",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/frontend-designs.webp",
       "summary": "Use Codex to translate screenshots and design briefs into code that matches the repo's design system, then use Playwright to compare the implementation to your references for different screen sizes and iterate until it looks right.",
       "difficulty": "Intermediate",
@@ -914,18 +914,18 @@
             "When you have screenshots, a short design brief, or a few references for inspiration, Codex can turn those into responsive UI without ignoring the patterns already established in your project.",
             "With the Playwright skill, Codex can open the app in a real browser, compare the implementation to your screenshots for different screen sizes, and iterate on layout or behavior until the result is closer to the target.",
             "Give Codex the clearest references you have for the UI you want. A single screenshot can be enough for a narrow task, but the handoff gets better when you include multiple states such as desktop and mobile layouts, hover or selected states, and any empty or loading views that matter.",
-            "The references do not need to be perfect design deliverables. They just need to make the intended hierarchy, spacing, and direction concrete enough that Codex is not guessing.",
-            "The more specific you are about the expected interaction patterns and the style you want, the better the result will be. The model tends to default to high-frequency patterns and style so if it’s not obvious from your references that you want something else, the UI might look generic. The more input you give, be it more reference inspiration or more specific instructions, the more you can expect to have a UI that stands out.",
+            "The references do not need to be perfect design assets. They just need to make the intended hierarchy, spacing, and direction concrete enough that Codex is not guessing.",
+            "The more specific you are about the expected interaction patterns and the style you want, the better the result will be. The model tends to default to high-frequency patterns and style so if it’s not clear from your references that you want something else, the UI might look generic. The more input you give, be it more reference inspiration or more specific instructions, the more you can expect to have a UI that stands out.",
             "Codex works best when the target repo already has a clear component layer. Codex can automatically use your existing component and design system instead of recreating them from scratch.",
-            "If you think it’s necessary (i.e. if you’re not using a standard stack), specify to Codex which primitives to reuse, where your tokens live, and what the repo considers canonical for buttons, inputs, cards, typography, and icons.",
-            "If you’re starting from an existing codebase, it’s very likely that Codex will understand on its own how to use your components and design system, but if starting from scratch, it’s a good idea to be explicit.",
+            "If necessary, such as when you’re not using a standard stack, specify to Codex which primitives to reuse, where your tokens live, and what the repo considers canonical for buttons, inputs, cards, typography, and icons.",
+            "If you’re starting from an existing codebase, Codex will likely understand on its own how to use your components and design system, but if starting from scratch, it’s a good idea to be explicit.",
             "Ask Codex to treat the screenshots as a visual target but to translate that target into the project’s actual utilities, component wrappers, color system, typography scale, spacing tokens, routing, state management, and data-fetch patterns.",
             "Playwright is a great tool to help Codex iterate on the UI. With it, Codex can open the app in a real browser, compare the implementation to the screenshots you provided, and iterate on layout or behavior.",
             "It can resize the browser window to different screen sizes and check the layout at different breakpoints.",
             "Make sure you have the Playwright interactive skill enabled in Codex. For more details, see the skills documentation .",
             "The first pass should already be directionally close to the screenshots. For complex layouts, interactions, or animation-heavy UI, expect a few rounds of adjustment.",
             "Ask Codex to compare the implementation back to the screenshots, not just whether the page builds. When conflicts come up, it should prefer the repo’s design-system tokens and only make minimal spacing or sizing adjustments needed to preserve the overall look of the design.",
-            "Use additional screenshots or short notes if they help clarify states that are not obvious from one image."
+            "Use additional screenshots or short notes if they help clarify states that are not clear from one image."
           ],
           "items": []
         }
@@ -942,7 +942,7 @@
         "Analysis"
       ],
       "url": "https://learn.chatgpt.com/use-cases/codebase-onboarding",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/codebase-onboarding",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/codebase-onboarding",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/codebase-onboarding.webp",
       "summary": "Use Codex to map unfamiliar codebases, explain different modules and data flow, and point you to the next files worth reading before you edit.",
       "difficulty": "Easy",
@@ -986,7 +986,7 @@
         "Quality"
       ],
       "url": "https://learn.chatgpt.com/use-cases/automation-bug-triage",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/automation-bug-triage",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/automation-bug-triage",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/automation-bug-triage.webp",
       "summary": "Ask Codex to check recent alerts, issues, failed checks, logs, and chat reports, tune the list in one chat, then run that sweep on a schedule.",
       "difficulty": "Intermediate",
@@ -1065,7 +1065,7 @@
         "Design"
       ],
       "url": "https://learn.chatgpt.com/use-cases/make-granular-ui-changes",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/make-granular-ui-changes",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/make-granular-ui-changes",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/make-granular-ui-changes.webp",
       "summary": "Use Codex to make one small UI adjustment at a time in an existing app, verify it in the browser, and keep iterating quickly from a popped-out chat window near your preview.",
       "difficulty": "Easy",
@@ -1111,7 +1111,7 @@
         "Workflow"
       ],
       "url": "https://learn.chatgpt.com/use-cases/slack-coding-tasks",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/slack-coding-tasks",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/slack-coding-tasks",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/slack-coding-tasks.webp",
       "summary": "Mention @Codex in Slack to start a chat tied to the right repo and environment, then review the result back in the thread or in Codex cloud.",
       "difficulty": "Easy",
@@ -1150,7 +1150,7 @@
         "Data"
       ],
       "url": "https://learn.chatgpt.com/use-cases/new-hire-onboarding",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/new-hire-onboarding",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/new-hire-onboarding",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/new-hire-onboarding.webp",
       "summary": "Use ChatGPT to gather approved new-hire context, stage tracker updates, draft team-by-team summaries, and prepare welcome-space setup for review before anything is sent.",
       "difficulty": "Intermediate",
@@ -1210,7 +1210,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/zoom-meeting-follow-ups",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/zoom-meeting-follow-ups",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/zoom-meeting-follow-ups",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/zoom-meeting-follow-ups.webp",
       "summary": "Use ChatGPT with Zoom transcripts and AI Companion summaries to draft customer follow-up emails, account plans, CRM updates, and team notifications for review.",
       "difficulty": "Intermediate",
@@ -1268,7 +1268,7 @@
         "Data"
       ],
       "url": "https://learn.chatgpt.com/use-cases/learn-a-new-concept",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/learn-a-new-concept",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/learn-a-new-concept",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/learn-a-new-concept.webp",
       "summary": "Use ChatGPT to study material such as research papers or courses, split the reading across subagents, gather context, and produce a Markdown report with diagrams.",
       "difficulty": "Intermediate",
@@ -1363,7 +1363,7 @@
         "Engineering"
       ],
       "url": "https://learn.chatgpt.com/use-cases/idea-to-proof-of-concept",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/idea-to-proof-of-concept",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/idea-to-proof-of-concept",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/idea-to-proof-of-concept.webp",
       "summary": "Use Codex with ImageGen to turn a rough idea into a visual direction, implement the smallest useful prototype, and verify it in a browser.",
       "difficulty": "Intermediate",
@@ -1404,7 +1404,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/deploy-app-or-website",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/deploy-app-or-website",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/deploy-app-or-website",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/deploy-app-or-website.webp",
       "summary": "Use Codex with Build Web Apps and Vercel to turn a repo, screenshot, design, or rough app idea into a working preview deployment you can share.",
       "difficulty": "Intermediate",
@@ -1446,7 +1446,7 @@
         "Quality"
       ],
       "url": "https://learn.chatgpt.com/use-cases/qa-your-app-with-computer-use",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/qa-your-app-with-computer-use",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/qa-your-app-with-computer-use",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/qa-your-app-with-computer-use.webp",
       "summary": "Use Computer Use to exercise key flows, catch issues, and finish with a bug report.",
       "difficulty": "Intermediate",
@@ -1493,7 +1493,7 @@
         "Engineering"
       ],
       "url": "https://learn.chatgpt.com/use-cases/api-integration-migrations",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/api-integration-migrations",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/api-integration-migrations",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/api-integration-migrations.webp",
       "summary": "Use Codex to update your existing OpenAI API integration to the latest recommended models and API features, while checking for regressions before you ship.",
       "difficulty": "Intermediate",
@@ -1532,7 +1532,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/complete-tasks-from-messages",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/complete-tasks-from-messages",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/complete-tasks-from-messages",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/complete-tasks-from-messages.webp",
       "summary": "Use Computer Use to read one Messages thread, complete the task, and draft a reply.",
       "difficulty": "Easy",
@@ -1576,7 +1576,7 @@
         "Design"
       ],
       "url": "https://learn.chatgpt.com/use-cases/figma-designs-to-code",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/figma-designs-to-code",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/figma-designs-to-code",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/figma-designs-to-code.webp",
       "summary": "Use Codex to pull design context, assets, and variants from Figma, translate them into code that matches the repo's design system, then use Playwright to compare the implementation to the Figma reference and iterate until it looks right.",
       "difficulty": "Intermediate",
@@ -1642,7 +1642,7 @@
         "Quality"
       ],
       "url": "https://learn.chatgpt.com/use-cases/deep-security-scan",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/deep-security-scan",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/deep-security-scan",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/deep-security-scan.webp",
       "summary": "Use the Codex Security plugin to run a more comprehensive audit of a repository or scoped folder that repeats discovery, validates candidates, and produces reviewable findings and coverage.",
       "difficulty": "Advanced",
@@ -1685,7 +1685,7 @@
         "Code"
       ],
       "url": "https://learn.chatgpt.com/use-cases/browser-games",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/browser-games",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/browser-games",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/browser-games.webp",
       "summary": "Use Codex to turn a game brief into first a well-defined plan, and then a real browser-based game. Use imagegen to generate visual assets, and let Codex test the game in a live browser to iterate on controls and UI.",
       "difficulty": "Intermediate",
@@ -1763,7 +1763,7 @@
         "Workflow"
       ],
       "url": "https://learn.chatgpt.com/use-cases/reusable-codex-skills",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/reusable-codex-skills",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/reusable-codex-skills",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/reusable-codex-skills.webp",
       "summary": "Turn a working Codex chat, review rules, test commands, release checklists, design conventions, writing examples, or repo-specific scripts into a skill Codex can use in future tasks.",
       "difficulty": "Easy",
@@ -1823,7 +1823,7 @@
         "Analysis"
       ],
       "url": "https://learn.chatgpt.com/use-cases/iterate-on-difficult-problems",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/iterate-on-difficult-problems",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/iterate-on-difficult-problems",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/iterate-on-difficult-problems.webp",
       "summary": "Give Codex an evaluation system, such as scripts and reviewable artifacts, so it can keep improving a hard task until the scores are good enough.",
       "difficulty": "Advanced",
@@ -1891,7 +1891,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/monthly-business-review-narrative",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/monthly-business-review-narrative",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/monthly-business-review-narrative",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/monthly-business-review-narrative.webp",
       "summary": "Give ChatGPT KPI dashboards, close workbooks, metric definitions, forecast updates, prior reviews, and owner notes, then ask it to explain material changes, variances, anomalies, risks, data-quality issues, and follow-ups in a review-ready narrative.",
       "difficulty": "Intermediate",
@@ -1931,7 +1931,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/cfo-board-reporting-pack",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/cfo-board-reporting-pack",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/cfo-board-reporting-pack",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/cfo-board-reporting-pack.webp",
       "summary": "Give ChatGPT the prior pack, progress outline, initiative trackers, KPI and forecast inputs, leadership notes, and owner commentary, then ask it to build an editable company or board update with a clear through-line, validated proof points, risks, milestones, and review flags.",
       "difficulty": "Intermediate",
@@ -1972,7 +1972,7 @@
         "Quality"
       ],
       "url": "https://learn.chatgpt.com/use-cases/remediate-vulnerability-backlog",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/remediate-vulnerability-backlog",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/remediate-vulnerability-backlog",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/remediate-vulnerability-backlog.webp",
       "summary": "Bring in approved findings from ticketing tools or vulnerability reporting systems, then use the Codex Security plugin to validate and address them one at a time with bounded patches and regression evidence.",
       "difficulty": "Advanced",
@@ -2014,7 +2014,7 @@
         "Quality"
       ],
       "url": "https://learn.chatgpt.com/use-cases/scan-code-changes-for-security",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/scan-code-changes-for-security",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/scan-code-changes-for-security",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/scan-code-changes-for-security.webp",
       "summary": "Use the Codex Security plugin to examine a Git-backed change set, validate plausible security regressions, and produce an evidence-based report before merge.",
       "difficulty": "Intermediate",
@@ -2055,7 +2055,7 @@
         "Quality"
       ],
       "url": "https://learn.chatgpt.com/use-cases/dependency-incident-audits",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/dependency-incident-audits",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/dependency-incident-audits",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/dependency-incident-audits.webp",
       "summary": "Use Codex to turn a public package or supply chain advisory into a read-only audit, then inspect manifests, lock files, CI workflows, and scripts without running untrusted code.",
       "difficulty": "Advanced",
@@ -2105,7 +2105,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/meeting-prep-briefs",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/meeting-prep-briefs",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/meeting-prep-briefs",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/meeting-prep-briefs.webp",
       "summary": "Use ChatGPT with Calendar, Drive, Slack, and Gmail to gather approved sources before a meeting, then draft objectives, agenda, questions, and a notes template.",
       "difficulty": "Easy",
@@ -2154,7 +2154,7 @@
         "Code"
       ],
       "url": "https://learn.chatgpt.com/use-cases/update-documentation",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/update-documentation",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/update-documentation",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/update-documentation.webp",
       "summary": "Use Codex to compare source code changes, public docs, release notes, and PR context, then draft focused documentation updates with verification steps before publishing.",
       "difficulty": "Easy",
@@ -2203,7 +2203,7 @@
         "Code"
       ],
       "url": "https://learn.chatgpt.com/use-cases/native-ios-apps",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/native-ios-apps",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/native-ios-apps",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/native-ios-apps.webp",
       "summary": "Use Codex to scaffold iOS SwiftUI projects, keep the build loop CLI-first with xcodebuild or Tuist, and add XcodeBuildMCP or focused SwiftUI skills when the work gets deeper.",
       "difficulty": "Advanced",
@@ -2296,7 +2296,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/kpi-root-cause-analysis",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/kpi-root-cause-analysis",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/kpi-root-cause-analysis",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/kpi-root-cause-analysis.webp",
       "summary": "Give ChatGPT KPI dashboards, metric definitions, exports, segment cuts, launch context, and stakeholder threads, then ask it to separate confirmed drivers from hypotheses in a source-backed root-cause brief.",
       "difficulty": "Intermediate",
@@ -2336,7 +2336,7 @@
         "Automation"
       ],
       "url": "https://learn.chatgpt.com/use-cases/dashboard-builder-monitor",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/dashboard-builder-monitor",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/dashboard-builder-monitor",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/dashboard-builder-monitor.webp",
       "summary": "Give ChatGPT a strategy brief, workflow context, metric definitions, source exports, dashboard examples, and stakeholder feedback, then ask it to draft a dashboard spec and monitoring plan.",
       "difficulty": "Intermediate",
@@ -2376,7 +2376,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/strategic-initiative-health-update",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/strategic-initiative-health-update",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/strategic-initiative-health-update",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/strategic-initiative-health-update.webp",
       "summary": "Give ChatGPT the tracker, initiative docs, KPI changes, prior briefs, owner notes, decision log, and stakeholder context, then ask it to summarize progress, deltas, blockers, risks, decisions, and stale items.",
       "difficulty": "Easy",
@@ -2416,7 +2416,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/prioritize-accounts",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/prioritize-accounts",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/prioritize-accounts",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/prioritize-accounts.webp",
       "summary": "Give ChatGPT account records, customer conversations, usage signals, renewal or growth context, and review rules, then ask it to produce a ranked account brief with rationale, risks, next actions, source links, and follow-up drafts.",
       "difficulty": "Intermediate",
@@ -2456,7 +2456,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/forecast-risk-review",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/forecast-risk-review",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/forecast-risk-review",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/forecast-risk-review.webp",
       "summary": "Give ChatGPT forecast snapshots, opportunity records, call notes, deal threads, email context, support or legal status, usage signals, and owner notes, then ask it to produce a sourced forecast risk review with deal-by-deal rationale.",
       "difficulty": "Intermediate",
@@ -2496,7 +2496,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/run-student-club-project",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/run-student-club-project",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/run-student-club-project",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/run-student-club-project.webp",
       "summary": "Use ChatGPT with a project brief, shared folder, meeting notes, budget, member availability, campus requirements, and deadlines to create a milestone plan, owner tracker, communications drafts, and risk log.",
       "difficulty": "Intermediate",
@@ -2541,7 +2541,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/analytics-request-agent",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/analytics-request-agent",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/analytics-request-agent",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/analytics-request-agent.webp",
       "summary": "Give ChatGPT the stakeholder request, business context, metric glossary, source exports, dashboard links, and request threads, then ask it to scope the question, identify missing inputs, run a first pass, and prepare a reviewable answer.",
       "difficulty": "Intermediate",
@@ -2581,7 +2581,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/research-to-decision-memo",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/research-to-decision-memo",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/research-to-decision-memo",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/research-to-decision-memo.webp",
       "summary": "Give ChatGPT research, planning documents, models, dashboards, stakeholder context, and unresolved questions, then ask it to separate evidence from interpretation and draft a sourced decision memo that is ready for leadership review.",
       "difficulty": "Intermediate",
@@ -2621,7 +2621,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/initiative-off-track-brief",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/initiative-off-track-brief",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/initiative-off-track-brief",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/initiative-off-track-brief.webp",
       "summary": "Give ChatGPT the executive ask, initiative docs, KPI dashboards, tracker, financial model, meeting notes, stakeholder threads, and owner updates, then ask it to draft an executive-ready off-track brief.",
       "difficulty": "Intermediate",
@@ -2661,7 +2661,7 @@
         "Code"
       ],
       "url": "https://learn.chatgpt.com/use-cases/refactor-your-codebase",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/refactor-your-codebase",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/refactor-your-codebase",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/refactor-your-codebase.webp",
       "summary": "Use Codex to remove dead code, untangle large files, collapse duplicated logic, and modernize stale patterns in small reviewable passes.",
       "difficulty": "Advanced",
@@ -2707,7 +2707,7 @@
         "Code"
       ],
       "url": "https://learn.chatgpt.com/use-cases/ios-liquid-glass",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/ios-liquid-glass",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/ios-liquid-glass",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/ios-liquid-glass.webp",
       "summary": "Use Codex and the Build iOS Apps plugin to audit existing iPhone and iPad UI, replace custom blur or material stacks with native Liquid Glass, and keep the migration safe with iOS 26 availability checks and simulator-driven validation.",
       "difficulty": "Advanced",
@@ -2787,7 +2787,7 @@
         "Code"
       ],
       "url": "https://learn.chatgpt.com/use-cases/native-macos-apps",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/native-macos-apps",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/native-macos-apps",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/native-macos-apps.webp",
       "summary": "Use Codex to build macOS SwiftUI apps, wire a shell-first build-and-run loop, and add desktop-native scene, window, AppKit, and signing workflows as the app matures.",
       "difficulty": "Advanced",
@@ -2860,7 +2860,7 @@
         "Code"
       ],
       "url": "https://learn.chatgpt.com/use-cases/ios-simulator-bug-debugging",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/ios-simulator-bug-debugging",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/ios-simulator-bug-debugging",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/ios-simulator-bug-debugging.webp",
       "summary": "Use Codex to discover the right Xcode scheme and simulator, launch the app, inspect the UI tree, tap, type, swipe, capture screenshots and logs, attach LLDB when needed, and turn a vague bug report into a small verified fix.",
       "difficulty": "Advanced",
@@ -2932,7 +2932,7 @@
         "Code"
       ],
       "url": "https://learn.chatgpt.com/use-cases/ios-app-intents",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/ios-app-intents",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/ios-app-intents",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/ios-app-intents.webp",
       "summary": "Use Codex and the Build iOS Apps plugin to identify the actions and entities your app should expose through App Intents, wire them into system surfaces like Shortcuts and Spotlight, and prepare your app for more assistant-driven workflows over time.",
       "difficulty": "Advanced",
@@ -3020,7 +3020,7 @@
         "Code"
       ],
       "url": "https://learn.chatgpt.com/use-cases/macos-telemetry-logs",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/macos-telemetry-logs",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/macos-telemetry-logs",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/macos-telemetry-logs.webp",
       "summary": "Use Codex and the Build macOS Apps plugin to add a few high-signal Logger events around windows, sidebars, commands, or sync flows, then run the app and prove from Console or log stream that the right actions fired.",
       "difficulty": "Advanced",
@@ -3095,7 +3095,7 @@
         "Code"
       ],
       "url": "https://learn.chatgpt.com/use-cases/code-migrations",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/code-migrations",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/code-migrations",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/code-migrations.webp",
       "summary": "Use Codex to map a legacy system to a new stack, land the move in milestones, and validate parity before each transition.",
       "difficulty": "Advanced",
@@ -3136,7 +3136,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/audit-course-section-consistency",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/audit-course-section-consistency",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/audit-course-section-consistency",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/audit-course-section-consistency.webp",
       "summary": "Use ChatGPT to compare section syllabi, schedules, assignments, policies, LMS exports, and department guidance, then create an evidence-backed consistency audit with conflicts, priorities, and owners.",
       "difficulty": "Intermediate",
@@ -3180,7 +3180,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/build-unit-plan-from-sources",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/build-unit-plan-from-sources",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/build-unit-plan-from-sources",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/build-unit-plan-from-sources.webp",
       "summary": "Use ChatGPT with standards, curriculum guidance, prior lesson files, a school calendar, assessment guidance, and learner needs to create an editable unit plan with goals, lesson sequence, source links, and review flags.",
       "difficulty": "Intermediate",
@@ -3224,7 +3224,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/variance-driver-bridge",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/variance-driver-bridge",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/variance-driver-bridge",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/variance-driver-bridge.webp",
       "summary": "Give ChatGPT actuals, budget, forecasts, KPI data, thresholds, and owner notes, then ask it to rank the drivers behind material movements and produce an editable bridge with reconciliations, questions, and source citations.",
       "difficulty": "Intermediate",
@@ -3264,7 +3264,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/build-interactive-lesson-resource",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/build-interactive-lesson-resource",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/build-interactive-lesson-resource",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/build-interactive-lesson-resource.webp",
       "summary": "Use Sites with approved lesson materials, practice questions, feedback rules, accessibility requirements, and design preferences to build and test an interactive lesson resource for educator review.",
       "difficulty": "Advanced",
@@ -3308,7 +3308,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/calibrate-assessments",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/calibrate-assessments",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/calibrate-assessments",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/calibrate-assessments.webp",
       "summary": "Use ChatGPT with de-identified submissions, rubrics, grading exports, and sample feedback to create a calibration workbook with evidence flags, scoring-pattern checks, and rubric clarification recommendations.",
       "difficulty": "Advanced",
@@ -3352,7 +3352,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/finance-model-cleanup",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/finance-model-cleanup",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/finance-model-cleanup",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/finance-model-cleanup.webp",
       "summary": "Give ChatGPT a financial model and its supporting sources, then ask it to make safe cleanup changes and return a severity-ranked QA memo covering formula risks, broken links, source tie-outs, and assumptions that need an owner.",
       "difficulty": "Intermediate",
@@ -3392,7 +3392,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/create-classroom-materials-pack",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/create-classroom-materials-pack",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/create-classroom-materials-pack",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/create-classroom-materials-pack.webp",
       "summary": "Use ChatGPT with a reviewed lesson deck, unit plan, school guidance, handouts, and accessibility or language requirements to create a teacher guide, student handout, answer key, family overview, and materials checklist.",
       "difficulty": "Intermediate",
@@ -3435,7 +3435,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/create-lesson-deck",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/create-lesson-deck",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/create-lesson-deck",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/create-lesson-deck.webp",
       "summary": "Use ChatGPT with a reviewed unit plan, prior slides or notes, a district template, approved images, and accessibility requirements to create a native lesson deck with speaker notes, checks for understanding, and source attribution.",
       "difficulty": "Intermediate",
@@ -3481,7 +3481,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/stalled-deal-diagnosis",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/stalled-deal-diagnosis",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/stalled-deal-diagnosis",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/stalled-deal-diagnosis.webp",
       "summary": "Give ChatGPT stage history, closed activities, call transcripts, emails, deal threads, security or procurement notes, and account context, then ask it to explain the blocker, prior attempts, escalation path, and next action.",
       "difficulty": "Intermediate",
@@ -3521,7 +3521,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/business-impact-readout",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/business-impact-readout",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/business-impact-readout",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/business-impact-readout.webp",
       "summary": "Give ChatGPT an experiment or launch plan, success metrics, cohort data, dashboard exports, customer signals, and launch notes, then ask it to quantify lift, check guardrails, explain segments, and draft a sourced impact readout.",
       "difficulty": "Intermediate",
@@ -3561,7 +3561,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/scenario-tradeoff-model",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/scenario-tradeoff-model",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/scenario-tradeoff-model",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/scenario-tradeoff-model.webp",
       "summary": "Give ChatGPT a financial model, KPI dashboard, planning docs, market context, stakeholder notes, operational data, and decision criteria, then ask it to compare options and produce a reviewable tradeoff model.",
       "difficulty": "Advanced",
@@ -3601,7 +3601,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/organize-lesson-unit-folder",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/organize-lesson-unit-folder",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/organize-lesson-unit-folder",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/organize-lesson-unit-folder.webp",
       "summary": "Use ChatGPT with an existing lesson or unit folder to identify duplicates, propose practical subfolders, preserve source files, archive older drafts, standardize names, and return a change summary.",
       "difficulty": "Easy",
@@ -3646,7 +3646,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/organize-semester-workspace",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/organize-semester-workspace",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/organize-semester-workspace",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/organize-semester-workspace.webp",
       "summary": "Use ChatGPT with course folders, syllabi, assignment sheets, readings, notes, and calendar context to organize a semester workspace, preserve originals, and build a deadline tracker linked to official sources.",
       "difficulty": "Easy",
@@ -3689,7 +3689,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/plan-budget-and-schedule",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/plan-budget-and-schedule",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/plan-budget-and-schedule",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/plan-budget-and-schedule.webp",
       "summary": "Use ChatGPT with course calendars, work shifts, recurring commitments, income, expenses, and bills to create a weekly planning dashboard, conflict view, budget tracker, and adjustable action plan.",
       "difficulty": "Intermediate",
@@ -3732,7 +3732,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/prepare-committee-packet",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/prepare-committee-packet",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/prepare-committee-packet",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/prepare-committee-packet.webp",
       "summary": "Use ChatGPT with prior minutes, policy drafts, stakeholder feedback, program data, governance rules, and decision criteria to prepare a sourced decision brief, options, agenda, and minutes template.",
       "difficulty": "Intermediate",
@@ -3776,7 +3776,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/refresh-forecast-and-plan",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/refresh-forecast-and-plan",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/refresh-forecast-and-plan",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/refresh-forecast-and-plan.webp",
       "summary": "Give ChatGPT an operating model, latest actuals, approved assumptions, owner inputs, and scenario rules, then ask it to refresh the forecast and compare scenarios with sensitivities, trigger points, and review notes.",
       "difficulty": "Intermediate",
@@ -3817,7 +3817,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/strategic-account-plan",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/strategic-account-plan",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/strategic-account-plan",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/strategic-account-plan.webp",
       "summary": "Give ChatGPT account and opportunity records, calls, threads, emails, usage notes, product needs, prior plans, and company context, then ask it to refresh the stakeholder map, discovery gaps, risks, value hypothesis, objections, proof points, and next actions.",
       "difficulty": "Intermediate",
@@ -3857,7 +3857,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/refresh-course-materials",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/refresh-course-materials",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/refresh-course-materials",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/refresh-course-materials.webp",
       "summary": "Use ChatGPT with Google Drive and document tools to review syllabi, slides, readings, assignments, rubrics, and outcomes, then return an evidence-backed course refresh plan without changing source files.",
       "difficulty": "Intermediate",
@@ -3900,7 +3900,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/revise-lesson-package",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/revise-lesson-package",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/revise-lesson-package",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/revise-lesson-package.webp",
       "summary": "Use ChatGPT with a current lesson folder, written or dictated feedback, approved files, and confirmation rules to create a revision plan, update connected materials, preserve prior versions, and return a verified change log.",
       "difficulty": "Intermediate",
@@ -3944,7 +3944,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/synthesize-research-evidence",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/synthesize-research-evidence",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/synthesize-research-evidence",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/synthesize-research-evidence.webp",
       "summary": "Use ChatGPT to synthesize papers, research notes, methods documents, prior proposals, funding guidance, and grant aims into a research landscape with themes, disagreements, limitations, and claim-review flags.",
       "difficulty": "Advanced",
@@ -3988,7 +3988,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/track-course-engagement",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/track-course-engagement",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/track-course-engagement",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/track-course-engagement.webp",
       "summary": "Use ChatGPT with LMS activity, gradebook, attendance, assignment metadata, and metric definitions to build a dashboard of engagement patterns, completion gaps, assessment trends, and data-quality warnings.",
       "difficulty": "Advanced",
@@ -4031,7 +4031,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/track-job-applications",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/track-job-applications",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/track-job-applications",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/track-job-applications.webp",
       "summary": "Use ChatGPT with verified experience notes, a resume, portfolio, role descriptions, career guidance, contacts, and deadlines to create a role-fit comparison, tailored drafts, interview prep, and application tracker.",
       "difficulty": "Intermediate",
@@ -4077,7 +4077,7 @@
         "Code"
       ],
       "url": "https://learn.chatgpt.com/use-cases/ios-swiftui-view-refactor",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/ios-swiftui-view-refactor",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/ios-swiftui-view-refactor",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/ios-swiftui-view-refactor.webp",
       "summary": "Use Codex and the Build iOS Apps plugin to break a long SwiftUI view into dedicated section views, move side effects out of body , stabilize state and Observation usage, and keep the refactor MV-first instead of introducing unnecessary view models.",
       "difficulty": "Advanced",
@@ -4149,7 +4149,7 @@
         "Code"
       ],
       "url": "https://learn.chatgpt.com/use-cases/build-student-website",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/build-student-website",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/build-student-website",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/build-student-website.webp",
       "summary": "Use Sites to scope, build, and test a simple website from student project content, design preferences, accessibility requirements, and success criteria, then prepare it for review before publishing.",
       "difficulty": "Intermediate",
@@ -4193,7 +4193,7 @@
         "Analysis"
       ],
       "url": "https://learn.chatgpt.com/use-cases/build-exam-study-system",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/build-exam-study-system",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/build-exam-study-system",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/build-exam-study-system.webp",
       "summary": "Use ChatGPT with learning objectives, notes, readings, problem sets, prior quizzes, exam guidance, and available time to create a study guide, concept map, practice schedule, question bank, and progress tracker.",
       "difficulty": "Intermediate",
@@ -4237,7 +4237,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/build-and-deploy-internal-apps",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/build-and-deploy-internal-apps",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/build-and-deploy-internal-apps",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/build-and-deploy-internal-apps.webp",
       "summary": "Use Sites in ChatGPT Work to build and test a focused internal app, add storage when the workflow needs it, and share the reviewed version with the right audience.",
       "difficulty": "Intermediate",
@@ -4300,7 +4300,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/draft-prds-from-sources",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/draft-prds-from-sources",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/draft-prds-from-sources",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/draft-prds-from-sources.webp",
       "summary": "Use ChatGPT with the $documents skill and connected plugins such as Linear, Slack, Notion or Google Drive to create a reviewable PRD with the expected sections, a timeline, decisions, open questions, and a source appendix.",
       "difficulty": "Easy",
@@ -4341,7 +4341,7 @@
         "Automation"
       ],
       "url": "https://learn.chatgpt.com/use-cases/follow-goals",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/follow-goals",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/follow-goals",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/follow-goals.webp",
       "summary": "Use /goal when a task needs Codex to keep working across turns toward a verifiable stopping condition.",
       "difficulty": "Advanced",
@@ -4396,7 +4396,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/project-teammate",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/project-teammate",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/project-teammate",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/project-teammate.webp",
       "summary": "Give ChatGPT Work a dedicated task for one project or workstream. It can review relevant messages, documents, decisions, and deadlines; track meaningful changes on a schedule; prepare the next step; and wait for approval before taking action.",
       "difficulty": "Easy",
@@ -4453,7 +4453,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/track-bills-subscriptions-and-spending",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/track-bills-subscriptions-and-spending",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/track-bills-subscriptions-and-spending",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/track-bills-subscriptions-and-spending.webp",
       "summary": "Use ChatGPT Work on the web to review connected accounts, understand your spending and savings, and get notified when something needs attention.",
       "difficulty": "Easy",
@@ -4494,7 +4494,7 @@
         "Quality"
       ],
       "url": "https://learn.chatgpt.com/use-cases/ai-app-evals",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/ai-app-evals",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/ai-app-evals",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/ai-app-evals.webp",
       "summary": "Ask Codex to inspect your AI application, identify the behavior you want to evaluate, and add a runnable Promptfoo eval suite.",
       "difficulty": "Intermediate",
@@ -4546,7 +4546,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/user-stories-to-ui-mocks",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/user-stories-to-ui-mocks",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/user-stories-to-ui-mocks",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/user-stories-to-ui-mocks.webp",
       "summary": "Use Codex to gather product feedback from Slack, Linear, Google Drive, normalize it into user stories and constraints, then generate UI mockups with ImageGen. When the direction is chosen, turn the mock into a working prototype.",
       "difficulty": "Easy",
@@ -4584,7 +4584,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/slack-action-triage",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/slack-action-triage",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/slack-action-triage",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/slack-action-triage.webp",
       "summary": "Use ChatGPT with Slack and the tools where work happens to find direct asks, implicit follow-ups, resolved items, and the highest-impact next actions before drafting replies or handoffs.",
       "difficulty": "Easy",
@@ -4637,7 +4637,7 @@
         "Engineering"
       ],
       "url": "https://learn.chatgpt.com/use-cases/react-native-expo-apps",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/react-native-expo-apps",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/react-native-expo-apps",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/react-native-expo-apps.webp",
       "summary": "Use Codex with the Expo plugin to scaffold React Native apps, stay inside Expo Router and Expo-native package conventions, test quickly with Expo Go, and move to dev clients or EAS builds only when the app needs them.",
       "difficulty": "Intermediate",
@@ -4699,7 +4699,7 @@
         "Code"
       ],
       "url": "https://learn.chatgpt.com/use-cases/agent-friendly-clis",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/agent-friendly-clis",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/agent-friendly-clis",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/agent-friendly-clis.webp",
       "summary": "Ask Codex to create a composable CLI it can run from any folder, combine with repo scripts, use to download files, and remember through a companion skill.",
       "difficulty": "Intermediate",
@@ -4748,7 +4748,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/verified-operations-workflows",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/verified-operations-workflows",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/verified-operations-workflows",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/verified-operations-workflows.webp",
       "summary": "Use ChatGPT to normalize inputs, run approved scripts or APIs, retry bounded failures, and verify the result from logs or artifacts before reporting back.",
       "difficulty": "Intermediate",
@@ -4792,7 +4792,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/event-launch-playbooks",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/event-launch-playbooks",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/event-launch-playbooks",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/event-launch-playbooks.webp",
       "summary": "Use ChatGPT with Slack, Google Drive, and Calendar to gather planning context, draft attendee-facing copy, and prepare a private checklist with owners, approvals, and open questions.",
       "difficulty": "Intermediate",
@@ -4837,7 +4837,7 @@
         "Code"
       ],
       "url": "https://learn.chatgpt.com/use-cases/chatgpt-apps",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/chatgpt-apps",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/chatgpt-apps",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/chatgpt-apps.webp",
       "summary": "Build one narrow ChatGPT app outcome end to end: define the tools, scaffold the MCP server and optional widget, connect it in ChatGPT, and iterate until the core flow works.",
       "difficulty": "Advanced",
@@ -4941,7 +4941,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/audit-workflow",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/audit-workflow",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/audit-workflow",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/audit-workflow.webp",
       "summary": "Give ChatGPT trackers, process docs, handoff notes, dashboards, ticket history, team discussions, and constraints, then ask it to map the current workflow, identify stuck points, and draft an automation-ready process spec.",
       "difficulty": "Intermediate",
@@ -4981,7 +4981,7 @@
         "Integrations"
       ],
       "url": "https://learn.chatgpt.com/use-cases/launch-campaign-kit",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/launch-campaign-kit",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/launch-campaign-kit",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/launch-campaign-kit.webp",
       "summary": "Give ChatGPT launch plans, product notes, trackers, page links, team discussion, creative inputs, and approval guidance, then ask it to draft a campaign kit with review flags for unverified claims and staging issues.",
       "difficulty": "Intermediate",
@@ -5021,7 +5021,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/consolidate-spreadsheets",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/consolidate-spreadsheets",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/consolidate-spreadsheets",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/consolidate-spreadsheets.webp",
       "summary": "Give ChatGPT spreadsheet exports, join keys, targets, segment definitions, and reporting rules, then ask it to create a consolidated workbook with cleaned joins, charts, insights, assumptions, refresh instructions, and mismatch review.",
       "difficulty": "Intermediate",
@@ -5061,7 +5061,7 @@
         "Knowledge Work"
       ],
       "url": "https://learn.chatgpt.com/use-cases/weekly-work-summary",
-      "canonicalUrl": "https://learn.chatgpt.com/codex/use-cases/weekly-work-summary",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/weekly-work-summary",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/weekly-work-summary.webp",
       "summary": "Give ChatGPT your calendar, edited documents, sent messages, tracker, and project context, then ask it to summarize completed work, decisions, changes, blockers, follow-ups, and next priorities with source links.",
       "difficulty": "Easy",
