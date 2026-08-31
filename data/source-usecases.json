@@ -1,7 +1,7 @@
 {
   "source": "https://learn.chatgpt.com/use-cases",
-  "retrievedAt": "2026-08-24T02:30:45Z",
-  "count": 101,
+  "retrievedAt": "2026-08-31T02:07:54Z",
+  "count": 102,
   "useCases": [
     {
       "index": 0,
@@ -4445,6 +4445,76 @@
     },
     {
       "index": 88,
+      "slug": "build-an-ai-tour-guide",
+      "title": "Build an AI tour guide",
+      "tagline": "Help users learn your app with a tour that adapts as they go.",
+      "tags": [
+        "Front-end",
+        "Engineering"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/build-an-ai-tour-guide",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/build-an-ai-tour-guide",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/build-an-ai-tour-guide.webp",
+      "summary": "Use Codex to add a WebMCP-powered tour to your web app. Highlight the next control, explain what to do, and adapt the guidance to the user's current state while they complete the steps themselves.",
+      "difficulty": "Advanced",
+      "time": "Long-running",
+      "bestFor": [
+        "Teams helping new users complete their first workflow in a web app.",
+        "Onboarding flows that change with sign-in status, connected services, or open panels.",
+        "Tasks where users should learn the controls and perform the actions themselves."
+      ],
+      "starterPrompt": "Add a guided tour to [web app/repository] so Codex can show users how to [complete one specific workflow].\n\nRead the app's existing UI, state management, and documentation first. Use WebMCP to let Codex:\n- discover tour targets through stable, semantic IDs, labels, and descriptions\n- highlight a target with a short explanation and dismiss the highlight\n- read the UI state needed to choose the next step\n- wait for the user to act, then read the updated state\n- read the app's instructions and relevant documentation\n\nThe user should complete the workflow themselves. Keep tour tools separate from tools that perform actions, and preserve the app's existing authentication and permission checks.\n\nStart with one complete flow. Reuse the existing components and design system. Test the tour in a browser environment where Codex can call the WebMCP tools, including different starting states, a canceled step, and a target that isn't visible yet.\n\nSummarize what changed, what you verified, and any setup still needed. Do not deploy or publish without my approval.",
+      "workflow": [
+        {
+          "title": "Introduction",
+          "paragraphs": [
+            "Some workflows are easier to learn when someone shows you where to go and what to select. Use Codex to build a tour that guides users through your web app while they perform the actions themselves.",
+            "With WebMCP tools for your app’s controls, state, and documentation, Codex can choose the next instruction based on what the user sees. A user who hasn’t connected a service needs a different first step from someone who has already completed setup.",
+            "Keep the first tour narrow. Verify that it can guide a user from setup to completion before adding more workflows.",
+            "In Runme , users edit notebooks and use a file explorer to add Google Drive folders and navigate their files. The tour helps a new user find those controls and learn the flow.",
+            "To learn more about Runme, you can read Automating repetitive work at OpenAI with Codex .",
+            "Watch Codex highlight Runme’s controls and explain their purpose. The screenshots below show a separate, task-focused tour for adding a Google Drive folder.",
+            "Your browser does not support the video tag.",
+            "The Google Drive tour starts with a request:",
+            "Codex checks whether Google Drive is connected. If it isn’t, Codex highlights Connect Google Drive and asks the user to select it and complete the connection.",
+            "",
+            "After the connection is complete, Codex guides the user to the file explorer. The next instruction follows the updated app state.",
+            "",
+            "Once the user expands the toolbar, Codex highlights the control for adding a Google Drive folder. The user stays in control of the interaction and learns where to find it next time.",
+            "",
+            "Runme’s implementation provides three kinds of context: tour targets, application state, and documentation. The tool names below come from Runme; adapt the same roles to your app.",
+            "Give tour targets stable, semantic data-tour-id values, with a label and description for each. Runme exposes these controls through three WebMCP tools:",
+            "This gives Codex a way to identify and explain a control without performing its action for the user.",
+            "Runme keeps tour-related state outside React and exposes it through a controller. Its getUiSnapshot tool provides the current UI state, including sign-in status. waitForUiChange(...) lets Codex wait for a change, such as the user selecting the highlighted control.",
+            "Ask Codex to read the state again after each interaction. Advancing the tour should depend on what happened in the app, not on whether Codex has already shown an instruction.",
+            "Runme bundles Markdown documentation with the application and makes it available through WebMCP:",
+            "The tour instructions and tools can ship with the app, without a separate Codex plugin for the tour.",
+            "Try the same request from different starting states. Check that the tour skips completed setup, waits for the user, and updates its guidance when the UI changes.",
+            "Also test a canceled step and a control that isn’t visible yet. Codex should explain what is missing or choose a valid next step. It shouldn’t claim that an action succeeded just because it highlighted a button.",
+            "Keep authentication, permission checks, and user actions in the existing app flow. The tour should help users understand the interface without bypassing those controls.",
+            "Once the first flow works, continue in the same chat:"
+          ],
+          "items": [
+            "Open your app’s repository in Codex and choose one workflow to guide, such as connecting a service or adding a folder.",
+            "Provide the relevant documentation and describe the starting states the tour should handle.",
+            "Run the starter prompt on this page to add tour targets, UI-state tools, and access to the app’s instructions.",
+            "Test the flow in a browser environment where Codex can call your app’s WebMCP tools. Ask Codex to guide you, then complete each step yourself.",
+            "listTargets lists the registered targets, IDs, labels, and descriptions.",
+            "showTourStep({ target, title?, message, placement? }) highlights a target and displays an explanation.",
+            "dismiss removes the highlight.",
+            "readInstructionsForAIAgents explains how Codex should interact with the app and its tools.",
+            "listDocumentation() lists the available pages and their descriptions.",
+            "getDocumentation({ name }) returns a selected page as Markdown.",
+            "“Test this tour when Google Drive is already connected and the file explorer is closed.”",
+            "“Handle a user canceling a step, then asking to continue the tour.”",
+            "“Add a tour for [next workflow], reusing the existing targets and state tools.”"
+          ]
+        }
+      ],
+      "image": "assets/use-cases/build-an-ai-tour-guide.webp"
+    },
+    {
+      "index": 89,
       "slug": "track-bills-subscriptions-and-spending",
       "title": "Track bills, subscriptions, and spending",
       "tagline": "Review the last 30 days and stay ahead of anything unusual.",
@@ -4485,7 +4555,7 @@
       "image": "assets/use-cases/track-bills-subscriptions-and-spending.webp"
     },
     {
-      "index": 89,
+      "index": 90,
       "slug": "ai-app-evals",
       "title": "Add evals to your AI application",
       "tagline": "Use Codex to turn expected behavior into a Promptfoo eval suite.",
@@ -4537,7 +4607,7 @@
       "image": "assets/use-cases/ai-app-evals.webp"
     },
     {
-      "index": 90,
+      "index": 91,
       "slug": "user-stories-to-ui-mocks",
       "title": "Turn user stories into UI mocks",
       "tagline": "Convert product feedback, issue threads, and design context into mockups your team can react to and implement.",
@@ -4575,7 +4645,7 @@
       "image": "assets/use-cases/user-stories-to-ui-mocks.webp"
     },
     {
-      "index": 91,
+      "index": 92,
       "slug": "slack-action-triage",
       "title": "Prioritize Slack action items",
       "tagline": "Turn Slack threads and DMs into a ranked queue of next steps.",
@@ -4628,7 +4698,7 @@
       "image": "assets/use-cases/slack-action-triage.webp"
     },
     {
-      "index": 92,
+      "index": 93,
       "slug": "react-native-expo-apps",
       "title": "Build React Native apps with Expo",
       "tagline": "Go from a mobile-app idea to a working Expo app with the dedicated plugin.",
@@ -4690,7 +4760,7 @@
       "image": "assets/use-cases/react-native-expo-apps.webp"
     },
     {
-      "index": 93,
+      "index": 94,
       "slug": "agent-friendly-clis",
       "title": "Create a CLI Codex can use",
       "tagline": "Give Codex a composable command for an API, log source, export, or team script.",
@@ -4739,7 +4809,7 @@
       "image": "assets/use-cases/agent-friendly-clis.webp"
     },
     {
-      "index": 94,
+      "index": 95,
       "slug": "verified-operations-workflows",
       "title": "Run verified operations",
       "tagline": "Run repeatable workflows and verify the result.",
@@ -4783,7 +4853,7 @@
       "image": "assets/use-cases/verified-operations-workflows.webp"
     },
     {
-      "index": 95,
+      "index": 96,
       "slug": "event-launch-playbooks",
       "title": "Run event playbooks",
       "tagline": "Create repeatable workflows for event program management.",
@@ -4828,7 +4898,7 @@
       "image": "assets/use-cases/event-launch-playbooks.webp"
     },
     {
-      "index": 96,
+      "index": 97,
       "slug": "chatgpt-apps",
       "title": "Bring your app to ChatGPT",
       "tagline": "Turn your use cases into focused apps for ChatGPT.",
@@ -4932,7 +5002,7 @@
       "image": "assets/use-cases/chatgpt-apps.webp"
     },
     {
-      "index": 97,
+      "index": 98,
       "slug": "audit-workflow",
       "title": "Audit a workflow",
       "tagline": "Turn a messy process into a clear audit and automation plan.",
@@ -4972,7 +5042,7 @@
       "image": "assets/use-cases/audit-workflow.webp"
     },
     {
-      "index": 98,
+      "index": 99,
       "slug": "launch-campaign-kit",
       "title": "Build a launch campaign kit",
       "tagline": "Turn launch context into coordinated first-draft campaign assets.",
@@ -5012,7 +5082,7 @@
       "image": "assets/use-cases/launch-campaign-kit.webp"
     },
     {
-      "index": 99,
+      "index": 100,
       "slug": "consolidate-spreadsheets",
       "title": "Consolidate spreadsheets",
       "tagline": "Join spreadsheet exports into one refreshable workbook.",
@@ -5052,7 +5122,7 @@
       "image": "assets/use-cases/consolidate-spreadsheets.webp"
     },
     {
-      "index": 100,
+      "index": 101,
       "slug": "weekly-work-summary",
       "title": "Write a weekly work summary",
       "tagline": "Turn a week of activity into a manager-ready update.",
