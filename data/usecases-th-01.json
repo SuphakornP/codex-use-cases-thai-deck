@@ -568,8 +568,8 @@
     "categoryTh": "ออกแบบและสร้าง",
     "workflow": [
       {
-        "label": "เปิดจุดที่จะแก้",
-        "detail": "เปิด route หรือ component ที่เกี่ยวข้องและเตรียม viewport หรือภาพเป้าหมาย"
+        "label": "เลือกโมเดลและจุดแก้",
+        "detail": "ใช้ gpt-5.3-codex-spark เมื่อมีสิทธิ์ หรือ gpt-6-astra ที่ reasoning ระดับ medium/low แล้วเปิด route หรือ component เป้าหมาย"
       },
       {
         "label": "สั่งเปลี่ยนเรื่องเดียว",

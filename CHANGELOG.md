@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+- 7 กันยายน 2026: ทบทวน official source ครบ 102 use cases และปรับ Make granular UI changes ให้ใช้ `gpt-6-astra` ที่ reasoning ระดับ medium/low เมื่อไม่มีสิทธิ์ Codex-Spark
+- 31 สิงหาคม 2026: เพิ่ม Build an AI tour guide จาก official source เป็น 102 use cases พร้อม workflow WebMCP ภาษาไทยและอังกฤษ
 - 24 สิงหาคม 2026: ปรับ source scraper ให้รองรับ official `/use-cases/*`, อัปเดต canonical URLs และทบทวนครบ 101 use cases โดยไม่มีเนื้อหาสำคัญเปลี่ยน
 - 17 สิงหาคม 2026: ปรับ Deep Security Scan ให้รายงาน findings และ coverage ก่อน และขอรายงานเชิงลึกหรือ structural hardening เพิ่มเมื่อจำเป็น ตาม official source
 - 3 สิงหาคม 2026: เพิ่ม 2 use cases ใหม่ รีเฟรช 9 workflows ที่เปลี่ยน และจัดลำดับตาม official source ใหม่เป็น 101 รายการ
