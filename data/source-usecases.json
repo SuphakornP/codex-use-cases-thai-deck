@@ -1,7 +1,7 @@
 {
   "source": "https://learn.chatgpt.com/use-cases",
-  "retrievedAt": "2026-08-24T02:30:45Z",
-  "count": 101,
+  "retrievedAt": "2026-09-07T02:07:17Z",
+  "count": 102,
   "useCases": [
     {
       "index": 0,
@@ -30,10 +30,10 @@
             "Start with the material you already have: notes, a memo, research, a spreadsheet, or an existing presentation. Tell ChatGPT who the deck is for, what it needs to communicate, and what should stay unchanged.",
             "In the ChatGPT desktop app, use @Presentations to create or edit a PowerPoint file or build a new presentation from your source material. Connect Google Drive when you want to create or update native Google Slides or reference files stored in Google Workspace. You can also attach local files directly.",
             "To work inside an open PowerPoint presentation, use the ChatGPT for PowerPoint add-in. Available plugins, skills, and connected sources can vary by plan and workspace.",
-            "Add @Presentations to your prompt to find saved presentation templates in the Template Gallery. If you don’t have a template, Presentations can start from a built-in layout or follow an existing deck.",
+            "Add @Presentations to your prompt to find saved presentation templates in the Template Gallery. If you don't have a template, Presentations can start from a built-in layout or follow an existing deck.",
             "ChatGPT turns the source material into a short slide plan, builds the presentation, and checks the rendered slides before returning the deck. It can follow a reference presentation or saved template, preserve approved figures and branding, and flag claims that need a source.",
             "Here is what that conversation can look like:",
-            "ChatGPT reviewed the Frontier Builders strategy brief and review notes, created a six-slide presentation for Monday’s leadership review, generated a visual opener, and checked the slides for layout issues.",
+            "ChatGPT reviewed the Frontier Builders strategy brief and review notes, created a six-slide presentation for Monday's leadership review, generated a visual opener, and checked the slides for layout issues.",
             "After a request to make the opener more visual and shorten the decision slide, it refined the deck and returned the updated presentation.",
             "Review the final slides, not only the outline. Check that the story fits the audience, the claims and numbers match the source material, and the slides are readable. Duplicate important decks before making large changes so you can revert if needed.",
             "Use follow-on prompts to match a reference, adapt the story, bring in new information, or save a format you expect to use again.",
@@ -72,12 +72,12 @@
             "You can run this in ChatGPT Work in the browser or desktop app. Before you start:",
             "ChatGPT reviews recent mail, identifies messages that need attention, proposes a cleanup, and prepares replies without sending them. Once you approve the cleanup, it can apply those changes to the older backlog. Here is what that conversation can look like:",
             "I reviewed your connected work inbox, centered on product launches, documentation, and production work. It has 116 messages, 96 unread ; most unread mail is project activity, calendar updates, shared-file notifications, and newsletters.",
-            "I’d label and archive routine project, calendar, and document notifications under Project activity , Calendar , and Docs ; archived mail remains searchable. Direct requests, active reviews, failed builds, security alerts, and anything unresolved would stay visible. Newsletters and other recurring subscriptions are worth reviewing separately.",
+            "I'd label and archive routine project, calendar, and document notifications under Project activity , Calendar , and Docs ; archived mail remains searchable. Direct requests, active reviews, failed builds, security alerts, and anything unresolved would stay visible. Newsletters and other recurring subscriptions are worth reviewing separately.",
             "The recording organizer is waiting on demo topics, a short bio, and a photo. I checked the latest scheduling context and drafted a response in your voice:",
-            "Excited for this. I’m planning to show the three workflows we discussed and will send the bio and photo today. I saw the updated calendar invite, so I’ll plan around the new time.",
-            "Going forward, I’ll check at 8 AM and 4 PM on weekdays . I’ll surface new or changed email that needs your attention, check connected sources like messaging, documents, or your calendar when relevant, and prepare replies in your voice. You can redirect me anytime by replying here.",
+            "Excited for this. I'm planning to show the three workflows we discussed and will send the bio and photo today. I saw the updated calendar invite, so I'll plan around the new time.",
+            "Going forward, I'll check at 8 AM and 4 PM on weekdays . I'll surface new or changed email that needs your attention, check connected sources like messaging, documents, or your calendar when relevant, and prepare replies in your voice. You can redirect me anytime by replying here.",
             "Reply with “1 yes, 2 yes, 3 no” and include any changes.",
-            "Warning: The Gmail plugin can move email to Trash when you explicitly ask. Review the proposed groups and a few sample messages first, and archive anything you’re unsure about instead of deleting it. Available actions can vary by email plugin and workspace settings.",
+            "Warning: The Gmail plugin can move email to Trash when you explicitly ask. Review the proposed groups and a few sample messages first, and archive anything you're unsure about instead of deleting it. Available actions can vary by email plugin and workspace settings.",
             "An email workflow has a few parts:",
             "You can be more specific when you already know what you want. A work-email prompt might emphasize active conversations, requests, approvals, and project context:",
             "A personal-email prompt might instead emphasize people you know, bills, packages, travel, appointments, and account alerts:",
@@ -95,12 +95,12 @@
           ],
           "items": [
             "Connect your email. Install the Gmail or Outlook Email plugin . You can also connect Slack, Google Drive, and your calendar to give ChatGPT more context when drafting replies.",
-            "Choose where scheduled checks run. Start in the browser if you want checks to continue when your laptop is off. On desktop, keep your computer on and the ChatGPT desktop app running. Voice chats don’t support scheduled tasks , so set up or manage them in chat instead.",
-            "Recording prep: send the requested demo topics, short bio, and photo before tomorrow’s session.",
+            "Choose where scheduled checks run. Start in the browser if you want checks to continue when your laptop is off. On desktop, keep your computer on and the ChatGPT desktop app running. Voice chats don't support scheduled tasks , so set up or manage them in chat instead.",
+            "Recording prep: send the requested demo topics, short bio, and photo before tomorrow's session.",
             "Documentation review: address the product-accuracy feedback before the guide moves forward.",
             "Failed preview deployment: investigate the failed build before relying on the current changes.",
             "Benefits task: complete the outstanding benefits change.",
-            "Sign-in alert: confirm whether the recent login was yours and follow the alert instructions if it wasn’t.",
+            "Sign-in alert: confirm whether the recent login was yours and follow the alert instructions if it wasn't.",
             "Apply the cleanup? Yes / no. Routine messages will be labeled and archived, not deleted.",
             "Save the reply as a draft? Yes / no.",
             "Keep the proposed schedule and priorities? Yes / no.",
@@ -139,12 +139,12 @@
           "paragraphs": [
             "Use Computer Use when a task moves across desktop apps, windows, or local files. ChatGPT can click, type, and navigate the apps you allow, then return the result for review. For a website or signed-in browser session, start a separate browser task with @Chrome .",
             "Computer Use requires the ChatGPT desktop app. In supported regions, Computer Use is available on macOS and Windows in ChatGPT Work and Codex. Cloud Work tasks on web or mobile cannot directly access your local apps, files, or signed-in desktop browser sessions. You can start or steer a desktop task from Remote on mobile when you connect a Mac or Windows host.",
-            "Good examples include moving notes into a system of record, checking context across a few apps before drafting a reply, or copying approved details between tools that don’t have a dedicated plugin.",
+            "Good examples include moving notes into a system of record, checking context across a few apps before drafting a reply, or copying approved details between tools that don't have a dedicated plugin.",
             "Here is what a safe desktop handoff can look like when Messages and Notes contain your cabin-weekend plans:",
             "Desktop task: Gather cabin-weekend ideas from Messages and a shortlist in Notes, create a local note, and draft a reply.",
             "Result: Pine Lodge is step-free, within two hours, and costs $690 total. Lake House may work, but travel time and accessibility still need confirmation. Cedar Ridge is excluded because it has stairs. The group size is unknown, so per-person pricing stays conditional.",
             "The local note and reply draft are ready for review. Nothing was booked or sent.",
-            "If a plugin exists for an app, ChatGPT may use the plugin for the structured action. Computer Use is useful when the task depends on the app interface or a plugin isn’t available.",
+            "If a plugin exists for an app, ChatGPT may use the plugin for the structured action. Computer Use is useful when the task depends on the app interface or a plugin isn't available.",
             "Start with one tool: use @Computer for desktop apps and local files, or @Chrome for your browser. ChatGPT can choose other tools as needed.",
             "Turn messages into a plan",
             "Find places to stay",
@@ -153,7 +153,7 @@
             "Work in your signed-in browser",
             "Test a website",
             "Clean up local files",
-            "Show it what you’re looking at",
+            "Show it what you're looking at",
             "On macOS, use an appshot to share the app window in front of you. Appshots provide visual context; Computer Use can then open, inspect, and interact with the app if you allow it.",
             "On macOS, Computer Use can work in the background while you use other apps. A picture-in-picture preview shows the active app; open the preview to follow along or move it out of the way. If you use a Pet, you can move the preview there.",
             "On Windows, Computer Use runs on the active desktop and takes over the foreground. Expect the pointer and keyboard to move while the task runs. Keep the device unlocked and connected, or run the desktop app in a Windows virtual machine if you need to keep using your main desktop.",
@@ -200,14 +200,14 @@
         {
           "title": "What to expect",
           "paragraphs": [
-            "Give ChatGPT Work ongoing responsibility for staying on top of your work. In one thread, it can check the work tools you’ve connected every hour, bring together your priorities, prepare you for meetings, and flag messages, decisions, or commitments that need your attention. In the desktop app, it can also help you start or coordinate a separate task for a project when you ask.",
-            "Use the sources that apply to your work, such as Slack or Teams, Gmail or Outlook, your calendar, documents, and project trackers. ChatGPT should tell you if it can’t access a source rather than guess what’s in it.",
+            "Give ChatGPT Work ongoing responsibility for staying on top of your work. In one thread, it can check the work tools you've connected every hour, bring together your priorities, prepare you for meetings, and flag messages, decisions, or commitments that need your attention. In the desktop app, it can also help you start or coordinate a separate task for a project when you ask.",
+            "Use the sources that apply to your work, such as Slack or Teams, Gmail or Outlook, your calendar, documents, and project trackers. ChatGPT should tell you if it can't access a source rather than guess what's in it.",
             "Choose the surface that fits how you want your chief of staff to work:",
-            "Here’s what an initial check and follow-up can look like:",
+            "Here's what an initial check and follow-up can look like:",
             "Top priorities",
             "What changed: Launch copy is approved, the missing docs link is the current blocker, and the earlier team-social request is resolved.",
-            "Draft reply: “Copy is approved. I’m checking the docs link now and will confirm it before the readiness review.” The reply stays unsent until you approve it.",
-            "Catch-up prompt: I’m back after time away. Catch me up on work by checking my available messages, email, calendar, documents, and project trackers. Show me what changed, include source links, and don’t send or change anything.",
+            "Draft reply: “Copy is approved. I'm checking the docs link now and will confirm it before the readiness review.” The reply stays unsent until you approve it.",
+            "Catch-up prompt: I'm back after time away. Catch me up on work by checking my available messages, email, calendar, documents, and project trackers. Show me what changed, include source links, and don't send or change anything.",
             "The starter prompt authorizes an hourly check. ChatGPT should ask before creating another task, sending messages, updating documents, changing the schedule, or making commitments.",
             "Adjust the hourly heartbeat",
             "Catch up after time away",
@@ -269,7 +269,7 @@
             "The result of this workflow was SimplexFold , an experimental architecture with explicit higher-order simplex states. Review the topology alongside the benchmark logs to confirm that each iteration still tests the original scientific idea.",
             "",
             "The useful lesson is not that Codex autonomously solved protein folding. The workflow shows how Goal Mode can act as a persistent scientific engineering loop: a scientist contributes the conceptual move, and Codex compresses the implementation, experimentation, debugging, and follow-up search cycle.",
-            "Treat promising diagnostics as evidence that the implementation path works, not as proof of generalization. Review the agent’s trajectory periodically, steer it back toward scientifically meaningful architecture questions if it collapses into local hyperparameter tuning, and promote claims only after matched public-validation comparisons and appropriate replicates."
+            "Treat promising diagnostics as evidence that the implementation path works, not as proof of generalization. Review the agent's trajectory periodically, steer it back toward scientifically meaningful architecture questions if it collapses into local hyperparameter tuning, and promote claims only after matched public-validation comparisons and appropriate replicates."
           ],
           "items": [
             "Supply a falsifiable, high-level scientific hypothesis instead of asking the model to invent an entire research agenda from scratch.",
@@ -370,7 +370,7 @@
           "items": [
             "Conflicts are hidden in the queue: eight mentions across four sources. Show conflict status in the list and distinguish Ready from Needs attention .",
             "Bulk approval can include blocked requests: four mentions across four sources. Skip blocked requests by default or warn before approval.",
-            "Reviewers lose their place and can’t isolate work: ten mentions across four sources. Preserve search and filters and offer a Needs attention view.",
+            "Reviewers lose their place and can't isolate work: ten mentions across four sources. Preserve search and filters and offer a Needs attention view.",
             "Give Work the feedback sources, product area, and time period to review.",
             "Ask it to group repeated feedback into themes and keep supporting links or IDs with each theme.",
             "Create a Google Sheet or Doc with affected users, confidence, open questions, and the decision or follow-up needed.",
@@ -620,19 +620,19 @@
         {
           "title": "Introduction",
           "paragraphs": [
-            "At its core, data analysis is about using data to inform decisions. The goal isn’t analysis for its own sake. It’s to produce an artifact that helps someone act: a chart for leadership, an experiment readout for a product team, a model evaluation for researchers, or a dashboard that guides daily operations.",
+            "At its core, data analysis is about using data to inform decisions. The goal isn't analysis for its own sake. It's to produce an artifact that helps someone act: a chart for leadership, an experiment readout for a product team, a model evaluation for researchers, or a dashboard that guides daily operations.",
             "A useful framework, popularized by R for Data Science , is a loop: import and tidy data, then iterate between transform, visualize, and model to build understanding before you communicate results.",
-            "ChatGPT Work fits well into this workflow. It helps you clean data, explore hypotheses, generate analyses, and produce reproducible artifacts. The target isn’t a one-off notebook. It’s an analysis that other people can review, trust, and rerun.",
+            "ChatGPT Work fits well into this workflow. It helps you clean data, explore hypotheses, generate analyses, and produce reproducible artifacts. The target isn't a one-off notebook. It's an analysis that other people can review, trust, and rerun.",
             "Choose one concrete question you want to answer with your data. The more specific the question, the easier it is to identify the right inputs, checks, and result.",
-            "As an example, we’ll explore the following question:",
+            "As an example, we'll explore the following question:",
             "To what extent are houses near the highway lower in property valuation?",
-            "Suppose one dataset contains property values or sale prices, and another contains location, parcel, or highway-proximity information. The work isn’t only to run a model. It’s to make the inputs trustworthy, document the joins, pressure-test the result, and end with an artifact that somebody else can use.",
+            "Suppose one dataset contains property values or sale prices, and another contains location, parcel, or highway-proximity information. The work isn't only to run a model. It's to make the inputs trustworthy, document the joins, pressure-test the result, and end with an artifact that somebody else can use.",
             "You can attach CSVs or Excel workbooks, name an approved Google Sheet with @google-drive , or use the desktop app when your data is stored on your computer.",
             "In a fictional sample, ChatGPT matches 11 property sales to the highway-distance file and flags one sale without a matching distance. Homes within one mile of the highway average $500,000 , compared with $600,000 for homes two to five miles away.",
-            "After excluding the highest-priced distant property, the difference remains $94,000 . The report and chart explain that the sample is small, the unmatched sale is excluded, and the comparison doesn’t establish causation or control for neighborhood, sale timing, traffic, or noise.",
+            "After excluding the highest-priced distant property, the difference remains $94,000 . The report and chart explain that the sample is small, the unmatched sale is excluded, and the comparison doesn't establish causation or control for neighborhood, sale timing, traffic, or noise.",
             "Start by attaching the files and asking ChatGPT to inspect them. This helps answer basic but important questions:",
-            "Don’t ask for conclusions yet. Ask for inventory and explanation first.",
-            "Most real work starts here. You have two or more datasets, the primary key isn’t clear, and a naive merge could lose data or create duplicates.",
+            "Don't ask for conclusions yet. Ask for inventory and explanation first.",
+            "Most real work starts here. You have two or more datasets, the primary key isn't clear, and a naive merge could lose data or create duplicates.",
             "Ask ChatGPT to profile the merge before performing it:",
             "If you need to derive the best key, such as a normalized address, a parcel identifier built from a few columns, or a location join, ask ChatGPT to explain the tradeoffs and edge cases before you accept the merge.",
             "Use charts to understand the data before choosing a model. In the running example, compare homes near the highway with homes farther away, examine outliers, inspect missing-value patterns, and check whether the apparent effect reflects neighborhood composition, home size, or another factor.",
@@ -640,10 +640,10 @@
             "Not every analysis needs a complex model. Start with an interpretable baseline.",
             "For the highway question, a sensible first pass is a regression or other transparent model that estimates the relationship between highway proximity and property value while controlling for relevant factors such as size, age, and location.",
             "Ask ChatGPT to be explicit about:",
-            "If the first model is weak, that’s still useful. It tells you whether the problem is the model, the features, the join quality, or the question itself.",
+            "If the first model is weak, that's still useful. It tells you whether the problem is the model, the features, the join quality, or the question itself.",
             "The analysis is only useful when someone else can consume it. Ask ChatGPT to produce the artifact the audience needs:",
             "Ask it to include caveats. If the join quality is imperfect, sampling bias is present, or model assumptions are fragile, the deliverable should say so plainly.",
-            "If the project needs reusable scripts or a notebook, ask ChatGPT to use the existing Python environment or set up a small, reproducible one. Keep source files unchanged and save the analysis, charts, and final report separately. You don’t need to set up Python before analyzing attached files in ChatGPT Work.",
+            "If the project needs reusable scripts or a notebook, ask ChatGPT to use the existing Python environment or set up a small, reproducible one. Keep source files unchanged and save the analysis, charts, and final report separately. You don't need to set up Python before analyzing attached files in ChatGPT Work.",
             "Load the datasets and explain them",
             "Check the merge before joining",
             "Build an interpretable first model",
@@ -760,7 +760,7 @@
         {
           "title": "Introduction",
           "paragraphs": [
-            "If you’re working on a budget and want to review the variances or inspect any issues, ChatGPT can help you create a fully functional review workbook you can work with.",
+            "If you're working on a budget and want to review the variances or inspect any issues, ChatGPT can help you create a fully functional review workbook you can work with.",
             "Attach the budget plan, actuals export, and close notes, then ask ChatGPT for an editable review workbook. ChatGPT can preserve the raw inputs, map actuals to plan, calculate variances, and create a summary view you can inspect in the chat.",
             "If the source files are in a connected plugin, mention the exact files or folder. Avoid asking ChatGPT to search a broad Drive or workspace when the review should use specific finance sources. When the workbook appears in the chat, open it and expand it full-screen to review the raw inputs, mappings, variance formulas, and summary tab before asking for revisions.",
             "Before sharing the workbook, ask ChatGPT to audit the categories, formulas, and variance explanations."
@@ -915,16 +915,16 @@
             "With the Playwright skill, Codex can open the app in a real browser, compare the implementation to your screenshots for different screen sizes, and iterate on layout or behavior until the result is closer to the target.",
             "Give Codex the clearest references you have for the UI you want. A single screenshot can be enough for a narrow task, but the handoff gets better when you include multiple states such as desktop and mobile layouts, hover or selected states, and any empty or loading views that matter.",
             "The references do not need to be perfect design assets. They just need to make the intended hierarchy, spacing, and direction concrete enough that Codex is not guessing.",
-            "The more specific you are about the expected interaction patterns and the style you want, the better the result will be. The model tends to default to high-frequency patterns and style so if it’s not clear from your references that you want something else, the UI might look generic. The more input you give, be it more reference inspiration or more specific instructions, the more you can expect to have a UI that stands out.",
+            "The more specific you are about the expected interaction patterns and the style you want, the better the result will be. The model tends to default to high-frequency patterns and style so if it's not clear from your references that you want something else, the UI might look generic. The more input you give, be it more reference inspiration or more specific instructions, the more you can expect to have a UI that stands out.",
             "Codex works best when the target repo already has a clear component layer. Codex can automatically use your existing component and design system instead of recreating them from scratch.",
-            "If necessary, such as when you’re not using a standard stack, specify to Codex which primitives to reuse, where your tokens live, and what the repo considers canonical for buttons, inputs, cards, typography, and icons.",
-            "If you’re starting from an existing codebase, Codex will likely understand on its own how to use your components and design system, but if starting from scratch, it’s a good idea to be explicit.",
-            "Ask Codex to treat the screenshots as a visual target but to translate that target into the project’s actual utilities, component wrappers, color system, typography scale, spacing tokens, routing, state management, and data-fetch patterns.",
+            "If necessary, such as when you're not using a standard stack, specify to Codex which primitives to reuse, where your tokens live, and what the repo considers canonical for buttons, inputs, cards, typography, and icons.",
+            "If you're starting from an existing codebase, Codex will likely understand on its own how to use your components and design system, but if starting from scratch, it's a good idea to be explicit.",
+            "Ask Codex to treat the screenshots as a visual target but to translate that target into the project's actual utilities, component wrappers, color system, typography scale, spacing tokens, routing, state management, and data-fetch patterns.",
             "Playwright is a great tool to help Codex iterate on the UI. With it, Codex can open the app in a real browser, compare the implementation to the screenshots you provided, and iterate on layout or behavior.",
             "It can resize the browser window to different screen sizes and check the layout at different breakpoints.",
             "Make sure you have the Playwright interactive skill enabled in Codex. For more details, see the skills documentation .",
             "The first pass should already be directionally close to the screenshots. For complex layouts, interactions, or animation-heavy UI, expect a few rounds of adjustment.",
-            "Ask Codex to compare the implementation back to the screenshots, not just whether the page builds. When conflicts come up, it should prefer the repo’s design-system tokens and only make minimal spacing or sizing adjustments needed to preserve the overall look of the design.",
+            "Ask Codex to compare the implementation back to the screenshots, not just whether the page builds. When conflicts come up, it should prefer the repo's design-system tokens and only make minimal spacing or sizing adjustments needed to preserve the overall look of the design.",
             "Use additional screenshots or short notes if they help clarify states that are not clear from one image."
           ],
           "items": []
@@ -957,7 +957,7 @@
           "title": "Introduction",
           "paragraphs": [
             "When you are new to a repo or dropped into an unfamiliar feature, Codex can help you get oriented before you start changing code. The goal is not just to get a high-level summary, but to map the request flow, understand which modules own what, and identify the next files worth reading.",
-            "If you’re new to a project, you can simply start by asking Codex to explain the whole codebase:",
+            "If you're new to a project, you can simply start by asking Codex to explain the whole codebase:",
             "If you need to contribute a new feature to an existing codebase, you can ask codex to explain a specific system area. The better you scope the request, the more concrete the explanation will be:",
             "A useful onboarding answer should leave you with a concrete map, not just a list of filenames. By the end, Codex should have explained the main flow, highlighted the risky parts, and pointed you to the next files or checks that matter before you start editing.",
             "Once Codex gives you a first pass, keep going until the explanation is specific enough that you would trust yourself to make the first edit. Good follow-up questions usually force it to call out assumptions, hidden dependencies, and the checks that matter after a change."
@@ -1083,7 +1083,7 @@
             "When you have an existing app and want to iterate fast on the UI, you can use gpt-5.3-codex-spark to make small, focused changes to the UI. Codex-Spark is our fastest model, optimized for near-instant, real-time coding iteration.",
             "This works best as a tight loop: one visual note, one focused edit, one browser check, then the next note.",
             "You can use the Codex Spark model for this task. It is available on Pro plans.",
-            "For fast UI iteration, start with gpt-5.3-codex-spark if you have access to it. It is less capable that our general-purpose models, but is designed for real-time coding iteration. If you don’t have access to it, use gpt-5.6 with medium or low reasoning effort.",
+            "For fast UI iteration, start with gpt-5.3-codex-spark if you have access to it. It is less capable that our general-purpose models, but is designed for real-time coding iteration. If you don't have access to it, use gpt-6-astra with medium or low reasoning effort.",
             "That tradeoff is useful for granular UI work. You usually do not need the deepest model to move a button, tune a breakpoint, or adjust a component state. You need a model that responds quickly, understands the local code, edits the right file, and can repeat the loop without making the iteration feel heavy.",
             "Granular UI prompts should be direct and narrow. A good prompt names the surface, the target change, and the validation you expect.",
             "If the result is close but not quite right, keep the follow-up equally specific:",
@@ -1094,7 +1094,7 @@
             "Open the existing app and get the relevant route or component visible.",
             "Pop out the active Codex chat into a floating window and keep it near your browser, editor, or design preview while you work.",
             "Give Codex one specific UI change at a time. Include the route, viewport, current screenshot, target screenshot, or exact product note if you have it.",
-            "Ask Codex to inspect the current implementation, make the smallest defensible edit, and preserve the app’s existing components, tokens, layout primitives, and data flow.",
+            "Ask Codex to inspect the current implementation, make the smallest defensible edit, and preserve the app's existing components, tokens, layout primitives, and data flow.",
             "Review the result, then send the next small adjustment in the same chat."
           ]
         }
@@ -1237,7 +1237,7 @@
             "After the first package is ready, use the same chat to tune it for the audience or next workflow.",
             "You can also ask ChatGPT to compare this call with the last few weekly calls, turn action items into a mutual action plan, create a version for a sales engineer with only technical blockers, or draft CRM updates without saving them.",
             "For weekly account check-ins or deal reviews, pin the chat and ask ChatGPT to schedule a task for the follow-up work from it .",
-            "You don’t necessarily want ChatGPT to post automatically, but it can create drafts for your review that you can approve and post."
+            "You don't necessarily want ChatGPT to post automatically, but it can create drafts for your review that you can approve and post."
           ],
           "items": [
             "Enable Zoom AI Companion meeting summaries, smart recordings, transcript generation, cloud recording, and audio transcripts.",
@@ -1289,7 +1289,7 @@
             "Start by naming the concept and the output you want. A narrow question makes the report more useful than a broad summary.",
             "For example:",
             "I want to understand the main idea in this research paper, how the method works, why the experiments support or do not support the claim, and what I should read next.",
-            "That scope gives ChatGPT a concrete job. It should teach you the concept, but it should also preserve uncertainty, cite where claims came from, and separate the paper’s claims from its own interpretation.",
+            "That scope gives ChatGPT a concrete job. It should teach you the concept, but it should also preserve uncertainty, cite where claims came from, and separate the paper's claims from its own interpretation.",
             "Suppose you want to learn about a paper about an unfamiliar model architecture. You want a report that lets you understand the concept at a glance, without having to read the whole paper.",
             "A good result might look like this:",
             "The point is to make the learning process more systematic and to leave behind a durable artifact.",
@@ -1297,11 +1297,11 @@
             "For a research paper, a practical split is:",
             "The main agent should wait for those subagents, compare their answers, and resolve contradictions. ChatGPT will then synthesize the results into a coherent report.",
             "When the paper assumes background you do not have, ask ChatGPT to gather context from approved sources. That might mean local notes, a bibliography folder, linked papers, web search if enabled, or a connected knowledge base.",
-            "If you’re learning about an internal concept, you can connect multiple sources with plugins to create a knowledge base.",
+            "If you're learning about an internal concept, you can connect multiple sources with plugins to create a knowledge base.",
             "Keep this step bounded. Tell ChatGPT what counts as a reliable source and what the final report should do with external context:",
             "Diagrams are often the fastest way to check whether you really understand a concept. For a Markdown report, ask ChatGPT for diagrams that stay close to the source material and are easy to revise.",
             "Good defaults include:",
-            "For Markdown-first reports, ask for Mermaid when the destination supports it, or a small checked-in SVG/PNG asset when it does not. Ask ChatGPT to use the imagegen system skill, which comes with ChatGPT by default, only when you need an illustrative, non-exact visual or something that doesn’t fit in a Markdown-native diagram.",
+            "For Markdown-first reports, ask for Mermaid when the destination supports it, or a small checked-in SVG/PNG asset when it does not. Ask ChatGPT to use the imagegen system skill, which comes with ChatGPT by default, only when you need an illustrative, non-exact visual or something that doesn't fit in a Markdown-native diagram.",
             "Ask ChatGPT to make the report self-contained enough that you can return to it later. A useful structure is:",
             "The report should include source references wherever possible. For a PDF, ask for page, section, figure, or table references. If ChatGPT cannot extract exact page references, it should say that and use section or heading references instead.",
             "The first report is a starting point. After reading it, ask follow-up questions and have ChatGPT revise the artifact.",
@@ -1325,8 +1325,8 @@
             "Notation and figures: Walk through equations, algorithms, diagrams, figures, and tables.",
             "Skeptical reviewer: Check whether the evidence supports the claims, list caveats, and identify missing baselines or unclear assumptions.",
             "Define prerequisite terms in a glossary.",
-            "Add a short “background you need first” section.",
-            "Link follow-up readings separately from the paper’s own claims.",
+            "Add a short \"background you need first\" section.",
+            "Link follow-up readings separately from the paper's own claims.",
             "Mark claims that come from outside the paper.",
             "A concept map that shows prerequisite ideas and how they connect.",
             "A method flow diagram that traces inputs, transformations, model components, and outputs.",
@@ -1342,7 +1342,7 @@
             "Open questions and follow-up reading.",
             "Which part of this method should I understand first?",
             "What is the simplest toy example that demonstrates the core idea?",
-            "Which figure is doing the most work in the paper’s argument?",
+            "Which figure is doing the most work in the paper's argument?",
             "Which claim is weakest or least supported?",
             "What should I read next if I want to implement this?",
             "$jupyter-notebook for toy examples, charts, or lightweight reproductions that should be runnable.",
@@ -1428,9 +1428,9 @@
             "Good follow-ups are specific:"
           ],
           "items": [
-            "“The mobile layout is cramped. Fix it and redeploy the preview.”",
-            "“Use the same project and add the latest data from [source].”",
-            "“Read the failed build logs and fix the deploy.”"
+            "\"The mobile layout is cramped. Fix it and redeploy the preview.\"",
+            "\"Use the same project and add the latest data from [source].\"",
+            "\"Read the failed build logs and fix the deploy.\""
           ]
         }
       ],
@@ -1599,8 +1599,8 @@
             "If a state, breakpoint, or interaction matters, call it out. If the file contains multiple close variants, tell Codex which one should be treated as the source of truth.",
             "The more explicit you are about what needs to match exactly and where repo conventions should win, the easier it is for Codex to make the right tradeoffs.",
             "Codex works best when the target repo already has a clear component layer. Codex can automatically use your existing component and design system instead of recreating them from scratch.",
-            "If you think it’s necessary, specify to Codex which primitives to reuse, where your tokens live, and what the repo considers canonical for buttons, inputs, cards, typography, and icons.",
-            "Treat the Figma MCP output, which often looks like React plus Tailwind, as a structural reference rather than final code style. Ask Codex to translate that output into the project’s actual utilities, component wrappers, color system, typography scale, spacing tokens, routing, state management, and data-fetch patterns.",
+            "If you think it's necessary, specify to Codex which primitives to reuse, where your tokens live, and what the repo considers canonical for buttons, inputs, cards, typography, and icons.",
+            "Treat the Figma MCP output, which often looks like React plus Tailwind, as a structural reference rather than final code style. Ask Codex to translate that output into the project's actual utilities, component wrappers, color system, typography scale, spacing tokens, routing, state management, and data-fetch patterns.",
             "Copy a link to the exact Figma frame, component, or variant you want implemented. The Figma MCP flow is link-based, so the link needs to point to the exact node you want rather than a nearby parent frame.",
             "Figma should drive the first pass. Ask Codex to follow the Figma MCP flow before it starts implementing.",
             "Things to include in your prompt:",
@@ -1841,7 +1841,7 @@
             "Some tasks are easy to verify in one shot: the build passes, the tests go green, and you are done. But there are some optimization problems that are difficult to solve, and need many iterations with a tight evaluation loop. To know which direction to go in, Codex needs to inspect the current output, score it, decide the next change, and repeat until the result is actually good.",
             "This type of use case pairs well with a custom UI that lets you inspect progress visually, by having Codex log the outputs and generated artifacts for each iteration. You can watch Codex continue working in the app while the target artifact, model output, or generated asset keeps improving. The key is to give Codex the necessary scripts to generate the evaluation metrics and the artifacts to inspect.",
             "Before the task begins, define how success will be measured. The best setup usually combines:",
-            "If the subjective part matters, give Codex a script that can call a model for example using the Responses API and return structured scores. The point is not to replace deterministic checks, it’s to supplement them with a consistent judge for the part humans would otherwise assess by eye.",
+            "If the subjective part matters, give Codex a script that can call a model for example using the Responses API and return structured scores. The point is not to replace deterministic checks, it's to supplement them with a consistent judge for the part humans would otherwise assess by eye.",
             "The loop works best when the eval output is machine-readable, saved after every run, and easy to compare over time.",
             "Tip : Ask Codex to generate the evaluation script for you, describing the checks you want to run.",
             "Hard tasks often drift because the prompt says “keep improving” without saying when to stop. Make the stopping rule explicit.",
@@ -1946,7 +1946,7 @@
         {
           "title": "Build the narrative from the reporting record",
           "paragraphs": [
-            "Company and board reporting needs a narrative that connects initiative progress, financial and operating metrics, risks, and next steps. ChatGPT can use the prior pack for structure and approved source files for facts while preserving the deck’s visual system and keeping unresolved assumptions visible.",
+            "Company and board reporting needs a narrative that connects initiative progress, financial and operating metrics, risks, and next steps. ChatGPT can use the prior pack for structure and approved source files for facts while preserving the deck's visual system and keeping unresolved assumptions visible.",
             "Provide the prior pack or progress outline, initiative trackers, latest forecast, KPI dashboard, cash view, leadership notes, and owner commentary. Tell ChatGPT which slides are in scope, which sources are authoritative, and which parts of the template must remain unchanged.",
             "The reporting pack should make it easy to distinguish updated facts from open questions. Ask ChatGPT to keep a change summary and owner checklist alongside the deck so reviewers can focus on material differences without rewriting the whole update."
           ],
@@ -1988,8 +1988,8 @@
           "title": "Fix reviewed findings one at a time",
           "paragraphs": [
             "Use this workflow after a security finding has enough evidence for a bounded remediation decision. The finding can come from the Codex Security plugin, an issue tracker such as Linear or Jira, GitHub Security Advisories, a disclosure platform such as HackerOne or Bugcrowd, an internal review, or another authorized source. Connect the source where supported, or provide the report, ticket, or advisory with affected code and evidence whenever possible.",
-            "Don’t hand Codex a broad backlog and ask it to change everything at once. A single-finding loop keeps the security invariant, patch, and validation evidence reviewable.",
-            "For each completed item, keep the original ticket, advisory, or report reference; the exact code change; the checks run; and any proof gap. If Codex finds that the issue is already fixed or it can’t reproduce it, record that evidence instead of forcing an unnecessary code change.",
+            "Don't hand Codex a broad backlog and ask it to change everything at once. A single-finding loop keeps the security invariant, patch, and validation evidence reviewable.",
+            "For each completed item, keep the original ticket, advisory, or report reference; the exact code change; the checks run; and any proof gap. If Codex finds that the issue is already fixed or it can't reproduce it, record that evidence instead of forcing an unnecessary code change.",
             "For the findings workspace and prompt-driven remediation paths, see Fix and verify security findings ."
           ],
           "items": [
@@ -2070,7 +2070,7 @@
         {
           "title": "Start with a safe audit plan",
           "paragraphs": [
-            "When a dependency or supply chain incident moves quickly, the first useful output isn’t a rushed patch. It’s a clear audit plan: what changed, which packages or workflows might be affected, and what evidence would prove exposure in your repo.",
+            "When a dependency or supply chain incident moves quickly, the first useful output isn't a rushed patch. It's a clear audit plan: what changed, which packages or workflows might be affected, and what evidence would prove exposure in your repo.",
             "Use Codex to turn the advisory into a conservative, read-only checklist before installing, building, testing, or running anything.",
             "For package incidents, avoid running install, build, test, import, or lifecycle commands until you know what the advisory affects. Codex can search lock files and workflows without executing untrusted code.",
             "A useful audit result should show both how bad a finding would be and how strong the evidence is:",
@@ -2131,7 +2131,7 @@
             "Questions: who owns partner review, and what is the latest date for the public copy freeze?",
             "Notes template: decisions, owners, dates, risks, and follow-ups.",
             "Notes template: decisions, owners, dates, risks, and follow-ups.",
-            "If the brief includes private or sensitive information, keep the output local to the chat and ask ChatGPT to flag anything that doesn’t belong in a shared doc."
+            "If the brief includes private or sensitive information, keep the output local to the chat and ask ChatGPT to flag anything that doesn't belong in a shared doc."
           ],
           "items": [
             "Name the meeting, date, or calendar event.",
@@ -2219,33 +2219,33 @@
           "title": "Scaffold the app and build loop",
           "paragraphs": [
             "For greenfield work, start with plain prompting. Ask Codex to scaffold a starter iOS SwiftUI app and write a small build-and-launch script you can wire to a Build action in a local environment .",
-            "Keep the loop CLI-first. Apple’s xcodebuild can list schemes and handle build, test, archive, build-for-testing , and test-without-building actions from the terminal, which lets Codex stay in an agentic loop instead of bouncing into the Xcode GUI.",
-            "If you want a cleaner project generator and you’re comfortable with third-party tooling, Tuist is a good next step. It can generate and build Xcode projects without needing the GUI, while still letting Codex build and launch the app from the terminal.",
-            "Use XcodeBuildMCP once you’re inside a full Xcode project and need deeper automation. That’s when schemes, targets, simulator control, screenshots, logs, and UI interaction matter enough that plain shell commands stop being the whole story.",
-            "For the first pass, you often don’t need a skill or MCP server. Add skills once the work gets specialized or you want stronger SwiftUI conventions baked into the run.",
+            "Keep the loop CLI-first. Apple's xcodebuild can list schemes and handle build, test, archive, build-for-testing , and test-without-building actions from the terminal, which lets Codex stay in an agentic loop instead of bouncing into the Xcode GUI.",
+            "If you want a cleaner project generator and you're comfortable with third-party tooling, Tuist is a good next step. It can generate and build Xcode projects without needing the GUI, while still letting Codex build and launch the app from the terminal.",
+            "Use XcodeBuildMCP once you're inside a full Xcode project and need deeper automation. That's when schemes, targets, simulator control, screenshots, logs, and UI interaction matter enough that plain shell commands stop being the whole story.",
+            "For the first pass, you often don't need a skill or MCP server. Add skills once the work gets specialized or you want stronger SwiftUI conventions baked into the run.",
             "SwiftUI expert is a strong general-purpose SwiftUI skill with a lot of best practices already baked in.",
             "SwiftUI Pro is a broad SwiftUI review skill for modern APIs, maintainability, accessibility, and performance.",
             "Liquid Glass expert helps Codex adopt the new iOS 26 Liquid Glass APIs and tune custom components so they fit the latest system design.",
             "SwiftUI performance helps when a feature feels slow or a SwiftUI view update path looks suspicious. It scans for common SwiftUI mistakes and produces a prioritized report of what to fix and where the biggest gains are.",
-            "Swift concurrency expert helps when cryptic errors and compiler warnings start fighting the change you want to make. On GPT-5.6 Terra, you may need it less often, but it’s still useful when Swift concurrency diagnostics get noisy.",
+            "Swift concurrency expert helps when cryptic errors and compiler warnings start fighting the change you want to make. On GPT-5.6 Terra, you may need it less often, but it's still useful when Swift concurrency diagnostics get noisy.",
             "SwiftUI view refactor helps keep files smaller and make SwiftUI code more consistent across the repo.",
             "SwiftUI patterns helps reach for predictable @Observable and @Environment architecture patterns as the app grows.",
             "To learn more about how to install and use skills, see our skills documentation .",
-            "Once you have a first pass working, or if you’re starting from an existing project, you can start iterating on the UI or behavior.",
+            "Once you have a first pass working, or if you're starting from an existing project, you can start iterating on the UI or behavior.",
             "For this part, be specific about what you want to change and how you want to change it.",
-            "Make that prompting layer explicit: tell Codex whether it’s working in a greenfield repo or an existing Xcode project, which iOS devices or deployment targets must keep working, and what validation loop you expect.",
+            "Make that prompting layer explicit: tell Codex whether it's working in a greenfield repo or an existing Xcode project, which iOS devices or deployment targets must keep working, and what validation loop you expect.",
             "For example, if you want to add a feature to an existing app, you can ask Codex for a change like this:",
-            "Start with plain prompting for greenfield work. Ask Codex to scaffold a starter SwiftUI app and write a small build-and-launch script you can wire to a Build action in a local environment . For that first pass, you often don’t need any skill or MCP server.",
+            "Start with plain prompting for greenfield work. Ask Codex to scaffold a starter SwiftUI app and write a small build-and-launch script you can wire to a Build action in a local environment . For that first pass, you often don't need any skill or MCP server.",
             "After each change, tell Codex to run the narrowest command that actually proves the contract you touched. Expand to broader builds later. This keeps Codex fast without pretending a full app build is required for every edit.",
-            "Keep the loop CLI-first. Apple’s xcodebuild tool can list schemes and run build, test, archive, build-for-testing , and test-without-building actions from the terminal, which lets Codex stay in an agentic loop instead of bouncing into the Xcode GUI.",
-            "Use XcodeBuildMCP as soon as you are inside a full Xcode project and need deeper automation. That’s the point where schemes, targets, simulator control, screenshots, logs, and UI interaction matter enough that plain shell commands stop being the whole story."
+            "Keep the loop CLI-first. Apple's xcodebuild tool can list schemes and run build, test, archive, build-for-testing , and test-without-building actions from the terminal, which lets Codex stay in an agentic loop instead of bouncing into the Xcode GUI.",
+            "Use XcodeBuildMCP as soon as you are inside a full Xcode project and need deeper automation. That's the point where schemes, targets, simulator control, screenshots, logs, and UI interaction matter enough that plain shell commands stop being the whole story."
           ],
           "items": [
             "SwiftUI expert is a strong general-purpose SwiftUI skill with a lot of best practices already baked in.",
             "SwiftUI Pro is a broad SwiftUI review skill for modern APIs, maintainability, accessibility, and performance.",
             "Liquid Glass expert helps Codex adopt the new iOS 26 Liquid Glass APIs and tune custom components so they fit the latest system design.",
             "SwiftUI performance helps when a feature feels slow or a SwiftUI view update path looks suspicious. It scans for common SwiftUI mistakes and produces a prioritized report of what to fix and where the biggest gains are.",
-            "Swift concurrency expert helps when cryptic errors and compiler warnings start fighting the change you want to make. On GPT-5.6 Terra, you may need it less often, but it’s still useful when Swift concurrency diagnostics get noisy.",
+            "Swift concurrency expert helps when cryptic errors and compiler warnings start fighting the change you want to make. On GPT-5.6 Terra, you may need it less often, but it's still useful when Swift concurrency diagnostics get noisy.",
             "SwiftUI view refactor helps keep files smaller and make SwiftUI code more consistent across the repo.",
             "SwiftUI patterns helps reach for predictable @Observable and @Environment architecture patterns as the app grows."
           ]
@@ -2479,7 +2479,7 @@
             "Define the forecast period, teams or deals in scope, and commit vocabulary.",
             "Attach the CRM export, forecast snapshots, calls, emails, deal threads, support, legal, procurement, usage, and owner notes.",
             "Ask ChatGPT to separate sourced facts from inferred risk.",
-            "Run the starter prompt and inspect each deal’s rationale, blocker, and next owner action.",
+            "Run the starter prompt and inspect each deal's rationale, blocker, and next owner action.",
             "Confirm recommendations with the sales owner before changing the forecast system."
           ]
         }
@@ -2679,19 +2679,19 @@
             "Codex is useful here because it can first map the messy area, then land the cleanup in small reviewable passes: deleting unused paths, untangling large modules, collapsing duplicate paths, modernizing old framework patterns, and tightening validation around each pass.",
             "The goal is to improve the current codebase in place:",
             "You can use Plan mode to create a plan for the refactor before starting the work.",
-            "The code modernization cookbook introduces ExecPlans: documents that let Codex keep an overview of the cleanup, spell out the intended end state, and log validation after each pass. They’re useful when the refactor spans more than one module or takes more than one session. Use them to record deletions, pattern updates, contracts that had to stay stable, and what’s still deferred.",
+            "The code modernization cookbook introduces ExecPlans: documents that let Codex keep an overview of the cleanup, spell out the intended end state, and log validation after each pass. They're useful when the refactor spans more than one module or takes more than one session. Use them to record deletions, pattern updates, contracts that had to stay stable, and what's still deferred.",
             "Skills are useful when the same cleanup rules repeat across repos, services, or teams. Use framework-specific skills when available, add security and CI skills around risky cleanups, and create a team skill when you have a proven checklist for unused-code removal, module extraction, or legacy-pattern modernization. If you end up doing the same modernization pass across more than one codebase, Codex can help turn the first successful pass into a reusable skill."
           ],
           "items": [
             "Remove unused code, stale helpers, old flags, and compatibility shims that are no longer needed.",
             "Shrink noisy modules by extracting helpers, splitting components, or moving side effects to clearer boundaries.",
-            "Replace legacy patterns with the repo’s current conventions: newer framework primitives, clearer types, simpler state flow, or standard library utilities.",
+            "Replace legacy patterns with the repo's current conventions: newer framework primitives, clearer types, simpler state flow, or standard library utilities.",
             "Keep public behavior stable while making the next change cheaper.",
             "Ask Codex to map the area before editing: noisy modules, duplicated logic, unused code, tests, public contracts, and any old patterns that the repo has outgrown.",
             "Pick one cleanup theme at a time: remove unused code, simplify control flow, modernize an outdated pattern, or split a large file into smaller owned pieces.",
             "Before Codex patches files, have it state the current behavior, the structural improvement it wants to make, and the smallest check that should prove behavior stayed stable.",
             "Review and run the smallest useful check after each pass instead of batching the whole cleanup into one diff.",
-            "Keep stack changes, dependency migrations, and architecture moves as separate tasks unless they’re required to finish the cleanup."
+            "Keep stack changes, dependency migrations, and architecture moves as separate tasks unless they're required to finish the cleanup."
           ]
         }
       ],
@@ -2728,7 +2728,7 @@
             "That plugin includes a SwiftUI Liquid Glass skill with a simple set of defaults worth carrying into your prompt:",
             "To learn more about installing plugins and skills, see our plugins and skills docs.",
             "These WWDC25 sessions are a good reference set before you ask Codex to refactor a real production flow:",
-            "Liquid Glass migrations go better when Codex separates “where should glass appear?” from “write all the code now.” Ask for a quick audit first, then let the agent implement one self-contained slice with simulator verification.",
+            "Liquid Glass migrations go better when Codex separates \"where should glass appear?\" from \"write all the code now.\" Ask for a quick audit first, then let the agent implement one self-contained slice with simulator verification.",
             "Liquid Glass should create a clear control layer above content, not turn every card into a glowing panel. Ask Codex to remove decorative backgrounds that fight system materials, preserve plain content where readability matters most, and reserve tinting for semantic emphasis or primary actions.",
             "A tab root, detail screen, sheet, search surface, or onboarding flow is usually a better first migration target than a full app-wide sweep. That keeps review easier and makes it clear which Liquid Glass decisions should become reusable component patterns.",
             "If your deployment target is below iOS 26, ask Codex to show the fallback implementation alongside the Liquid Glass version. That review step catches accidental API availability regressions and avoids shipping a migration that only works on the latest simulator."
@@ -2744,7 +2744,7 @@
             "Get to know the new design system",
             "Build a SwiftUI app with the new design",
             "Build a UIKit app with the new design",
-            "What’s new in SwiftUI"
+            "What's new in SwiftUI"
           ]
         },
         {
@@ -2881,7 +2881,7 @@
             "These are the practical capability groups to prompt Codex to use:",
             "The key habit is to ask Codex to inspect the view tree before it taps. XcodeBuildMCP exposes the accessibility hierarchy plus coordinates, so Codex can prefer stable labels or element IDs instead of guessing raw screen positions.",
             "The iOS debugger skill is most effective when your prompt gives one concrete bug and one expected outcome, then lets Codex drive the app and collect evidence autonomously. If a login, deep link, or test fixture is required, say that once and ask Codex to pause only when that missing input blocks progress.",
-            "Request the exact simulator, scheme, screenshots, log snippets, and stack details that Codex used to explain the bug. That makes the final patch much easier to review than “I think this should fix it.”",
+            "Request the exact simulator, scheme, screenshots, log snippets, and stack details that Codex used to explain the bug. That makes the final patch much easier to review than \"I think this should fix it.\"",
             "If Codex has to tap by coordinates because a control has no stable label or accessibility identifier, ask it to call that out. That is often a signal that the bug fix should include a small UI testability improvement too.",
             "A simulator-driven debugging loop is powerful, but it is still easier to trust when one prompt targets one failure mode. Ask Codex to finish one reproduce-fix-verify cycle before expanding to adjacent issues."
           ],
@@ -3035,19 +3035,19 @@
         {
           "title": "Add one Logger where debugging gets vague",
           "paragraphs": [
-            "This use case is for Mac app flows where “something happened” is too fuzzy to debug from code review alone. Ask Codex to add a few high-signal unified logs around one behavior, run the app, trigger that behavior, and verify from Console or log stream that the expected events fired.",
-            "Use the Build macOS Apps plugin for that loop. Its macOS telemetry skill is intentionally lightweight: use Apple’s Logger , choose a clear subsystem/category pair, log action boundaries and state transitions, avoid sensitive payloads, and verify the event after a local build/run instead of assuming the instrumentation is wired correctly.",
+            "This use case is for Mac app flows where \"something happened\" is too fuzzy to debug from code review alone. Ask Codex to add a few high-signal unified logs around one behavior, run the app, trigger that behavior, and verify from Console or log stream that the expected events fired.",
+            "Use the Build macOS Apps plugin for that loop. Its macOS telemetry skill is intentionally lightweight: use Apple's Logger , choose a clear subsystem/category pair, log action boundaries and state transitions, avoid sensitive payloads, and verify the event after a local build/run instead of assuming the instrumentation is wired correctly.",
             "Good logs give Codex a repeatable feedback loop after each patch. Instead of asking you to manually inspect every window, menu action, or sync transition, the agent can run the app, exercise the flow, inspect filtered logs, and decide the next code change from evidence.",
             "That is especially useful for three agentic loops:",
             "Ask Codex for one logger per feature area, not one permanent log line for every state mutation. Feature categories such as Windowing , Commands , MenuBar , Sidebar , Sync , or Import make logs much easier to filter during the next debugging pass.",
             "Use info for concise action and lifecycle events that should remain useful over time, and debug for noisier local state details that may be removed or demoted before the task is done. Add signposts only when you are measuring a timing span, not by default.",
             "The useful part is not just adding Logger calls. Ask Codex to run the app, trigger the instrumented flow, and give you the exact Console filter or log stream predicate it used plus one or two representative log lines.",
-            "If an expected event does not appear, ask Codex to move the log closer to the suspected control path, rerun the same flow, and keep iterating until the logs explain what happened. If the task turns into a crash or backtrace analysis, pivot to the plugin’s build/run debugging workflow and keep the telemetry focused on the action boundaries.",
+            "If an expected event does not appear, ask Codex to move the log closer to the suspected control path, rerun the same flow, and keep iterating until the logs explain what happened. If the task turns into a crash or backtrace analysis, pivot to the plugin's build/run debugging workflow and keep the telemetry focused on the action boundaries.",
             "For longer or intermittent bugs, ask Codex to save a focused log stream to a small local trace file, summarize the timeline, and leave that artifact in the workspace so a later Codex run can inspect the same evidence without replaying the whole session from memory. That makes multi-pass debugging easier when you want one agent run to collect a trace and another run to compare behavior before and after a patch.",
             "This also works well when the human needs to drive part of the session. Ask Codex to launch the app in a logging-friendly debug loop, start a filtered capture, wait while you reproduce the issue manually, and then read the saved trace file once you are done.",
             "Start with one sidebar, window, command, or sync path so the log sequence stays easy to inspect. If that path becomes reliable, Codex can expand the same pattern to neighboring flows.",
             "Ask Codex to explain every logged identifier and to avoid writing secrets, personal data, or raw content to unified logs. A tiny event vocabulary is usually enough for local debugging.",
-            "Representative log lines make the change much easier to trust than “telemetry was added.” Ask Codex to include the filter predicate and a short action timeline so the next agent run can reuse the same verification loop."
+            "Representative log lines make the change much easier to trust than \"telemetry was added.\" Ask Codex to include the filter predicate and a short action timeline so the next agent run can reuse the same verification loop."
           ],
           "items": [
             "Hands-free debug loop: Codex instruments a suspicious flow, launches the app, clicks the sidebar or triggers a command, reads the emitted log sequence, patches the state update path, and reruns the same flow until the logs and UI behavior agree.",
@@ -3151,7 +3151,7 @@
         {
           "title": "Establish the shared baseline",
           "paragraphs": [
-            "Start with the common course outcomes, department requirements, and any policies that apply to every section. Then add each section’s syllabus, schedule, assignments, grading weights, LMS guidance, and instructor notes.",
+            "Start with the common course outcomes, department requirements, and any policies that apply to every section. Then add each section's syllabus, schedule, assignments, grading weights, LMS guidance, and instructor notes.",
             "Label required elements separately from areas where instructors may choose different approaches.",
             "Ask ChatGPT to compare the sections across a stable set of dimensions:",
             "For every conflict, require a source reference and an explanation of the student impact.",
@@ -4252,26 +4252,26 @@
           "title": "Build and deploy from one task",
           "paragraphs": [
             "Sites is a managed hosting service in ChatGPT. Ask ChatGPT to create an app, and it can build the project, run it for testing, deploy it, and return a URL you can share.",
-            "Sites is in public beta for eligible paid plans. It isn’t available on Free or Go, or in the EEA, Switzerland, or the United Kingdom at launch, and rollout or workspace settings can affect access.",
+            "Sites is in public beta for eligible paid plans. It isn't available on Free or Go, or in the EEA, Switzerland, or the United Kingdom at launch, and rollout or workspace settings can affect access.",
             "The scope ranges from static sites to full-stack JavaScript or TypeScript web apps. That makes Sites a good fit for focused internal tools: onboarding dashboards, training hubs, searchable resource libraries, lightweight workflow apps, and reporting views.",
             "See the Sites documentation for setup, storage, deployment, and access guidance.",
             "Start with one useful workflow. A clear first version is easier to review, deploy, and improve than a broad request to recreate an entire internal system.",
             "Here is a fictional example using an attached launch brief and five sample requests. The first pass creates and checks a focused request tracker; the follow-up adds an owner filter and makes overdue requests easier to see.",
             "The launch-request tracker opens with five sample requests , including one blocked request, two in review, and one overdue item. The team can scan by launch and status, filter blocked work, add a request, and update its status. The main flow and saved state were checked at desktop and mobile widths.",
-            "After a follow-up, the tracker includes an owner filter and highlights overdue work; blocked requests stay at the top and a request can’t be marked ready without an owner . The preview remains private; no Site was published and access did not change.",
+            "After a follow-up, the tracker includes an owner filter and highlights overdue work; blocked requests stay at the top and a request can't be marked ready without an owner . The preview remains private; no Site was published and access did not change.",
             "Tell ChatGPT who the app is for, what people should do, which source material it should inspect, and what should persist between sessions. Be explicit about the intended sharing scope and ask ChatGPT to test the main flow before it deploys.",
             "Use plugins to fetch or refresh data from connected internal sources. Start a Sites task that uses connected apps or cloud files in Work on the web, or in Work or Codex on desktop. Use the desktop app for a local file, the built-in browser for a signed-in site, or the Codex Chrome extension for an existing Chrome session.",
-            "If you need live data fetching, you can connect to a third-party tool using an API key configured in the Site’s settings. Keep secret values out of prompts and files. If you want to use plugin connections, you can schedule work from the current task to fetch data with plugins on a set schedule, update the app, and save a version for review. Deploy the reviewed version only after approval.",
+            "If you need live data fetching, you can connect to a third-party tool using an API key configured in the Site's settings. Keep secret values out of prompts and files. If you want to use plugin connections, you can schedule work from the current task to fetch data with plugins on a set schedule, update the app, and save a version for review. Deploy the reviewed version only after approval.",
             "Many internal apps need persistence. Sites supports two storage primitives:",
             "Keep structured metadata in D1 and larger file objects in R2. A read-only resource page or small static site may not need either one.",
-            "Sites doesn’t support data or inference residency. Don’t use it to process protected health information or payment-card data, or to enable financial transactions. Review the Sites data and usage restrictions before storing sensitive information.",
+            "Sites doesn't support data or inference residency. Don't use it to process protected health information or payment-card data, or to enable financial transactions. Review the Sites data and usage restrictions before storing sensitive information.",
             "You can manage who can visit your deployed projects.",
             "Keep a new project private while you review its content, data handling, and intended audience.",
             "Depending on your account and workspace settings, you can share it with:",
-            "Sharing lets people visit the project; it doesn’t let them edit it. To change access, open Sites in ChatGPT or ask ChatGPT directly:",
+            "Sharing lets people visit the project; it doesn't let them edit it. To change access, open Sites in ChatGPT or ask ChatGPT directly:",
             "Public sharing also works for a lightweight event guide, club resource page, or other site meant for people outside a workspace. In Enterprise workspaces, public publishing is off by default and an admin must enable it. Keep internal data private even when a public link is available.",
             "The Sites showcase includes Site examples with full prompts.",
-            "Use those examples as starting points, then narrow the prompt around your team’s workflow and source material."
+            "Use those examples as starting points, then narrow the prompt around your team's workflow and source material."
           ],
           "items": [
             "Use D1, a SQLite-compatible database, for structured data such as checklist state, bookmarks, filters, annotations, configuration, and file metadata.",
@@ -4314,7 +4314,7 @@
         {
           "title": "Introduction",
           "paragraphs": [
-            "Before working on a new product or feature, it’s common to draft a product requirements document (PRD) to align on the scope and requirements. Most often than not, the context needed to write that PRD is already available in the team’s internal systems: tickets on Linear, discussions on Slack, drafts in Notion or Google Drive, etc. ChatGPT can gather this context and draft a PRD that you can review and iterate on, while keeping the source trail visible.",
+            "Before working on a new product or feature, it's common to draft a product requirements document (PRD) to align on the scope and requirements. Most often than not, the context needed to write that PRD is already available in the team's internal systems: tickets on Linear, discussions on Slack, drafts in Notion or Google Drive, etc. ChatGPT can gather this context and draft a PRD that you can review and iterate on, while keeping the source trail visible.",
             "Start with the sources you want ChatGPT to use: the Linear project, the Slack planning channel or thread, and any Drive docs, Notion pages, meeting notes, or local files that should be cited in the PRD. You should also clearly outline the PRD sections you expect, such as the problem, users, requirements, UX, tech, launch plan, timeline, or decisions.",
             "Use the starter prompt on this page for the first draft. If something is missing, point ChatGPT at the missing source instead of starting over.",
             "Before sharing the PRD, ask ChatGPT to list the claims with weak or missing support, the unresolved questions, and the decisions it treated as confirmed. If the source appendix does not make those easy to audit, keep refining the same chat before exporting or posting anything.",
@@ -4356,19 +4356,19 @@
         {
           "title": "Introduction",
           "paragraphs": [
-            "Use /goal when you want Codex to keep working toward one durable objective instead of stopping after one normal turn. It’s useful for work that has a clear target, a validation loop, and enough room for Codex to make progress without asking you to steer every step. When you use /goal , Codex can work independently for multiple hours without needing your input.",
+            "Use /goal when you want Codex to keep working toward one durable objective instead of stopping after one normal turn. It's useful for work that has a clear target, a validation loop, and enough room for Codex to make progress without asking you to steer every step. When you use /goal , Codex can work independently for multiple hours without needing your input.",
             "Set a goal with /goal <objective> , check the current goal with /goal , and use /goal pause , /goal resume , or /goal clear when you need to control the run.",
-            "If /goal doesn’t appear in the slash command list, enable features.goals in config.toml :",
+            "If /goal doesn't appear in the slash command list, enable features.goals in config.toml :",
             "You can also run codex features enable goals from the CLI or ask Codex to run it.",
-            "A good goal is bigger than one prompt but smaller than an open-ended backlog. It should define what Codex should achieve, what it shouldn’t change, how it should validate progress, and when it should stop.",
+            "A good goal is bigger than one prompt but smaller than an open-ended backlog. It should define what Codex should achieve, what it shouldn't change, how it should validate progress, and when it should stop.",
             "This works well for:",
             "Avoid using a goal for a loose list of unrelated work.",
-            "The important part is the contract. Codex should know what “done” means before it starts. If the goal is a migration, “done” might mean the new path passes contract tests and the legacy path still has a rollback. If the goal is a game or prototype, “done” might mean the app builds, launches, and matches the input reference or expected behavior.",
+            "The important part is the contract. Codex should know what \"done\" means before it starts. If the goal is a migration, \"done\" might mean the new path passes contract tests and the legacy path still has a rollback. If the goal is a game or prototype, \"done\" might mean the app builds, launches, and matches the input reference or expected behavior.",
             "Ask Codex to help: start by having a conversation about what you want to build, then ask it to directly set a goal and start working.",
             "During a goal, ask for compact progress reports that make the run easier to trust. A useful status update names the current checkpoint, what was verified, what remains, and whether Codex is blocked. If the status becomes vague, tighten the goal rather than adding more one-off instructions. Tell Codex exactly which checkpoint matters next, which command proves it, and what should cause it to pause.",
-            "When Codex follows a goal, it can work independently for many hours without you having to check in. It will stop running when it’s confident it has reached the stopping condition, so you should think of /goal as a background task you don’t need to monitor.",
-            "Whether you’re migrating games to a new stack, mobile apps to a new platform, or a codebase to a new framework, you can use /goal to have Codex run the migration:",
-            "Whether you’re creating a new app from scratch, a new game, or a new feature, you can use /goal to have Codex complete a polished first version. You can use a PLAN.md file to guide the creation of the first version, describing precisely what you want to build.",
+            "When Codex follows a goal, it can work independently for many hours without you having to check in. It will stop running when it's confident it has reached the stopping condition, so you should think of /goal as a background task you don't need to monitor.",
+            "Whether you're migrating games to a new stack, mobile apps to a new platform, or a codebase to a new framework, you can use /goal to have Codex run the migration:",
+            "Whether you're creating a new app from scratch, a new game, or a new feature, you can use /goal to have Codex complete a polished first version. You can use a PLAN.md file to guide the creation of the first version, describing precisely what you want to build.",
             "When you have an eval suite, you can use /goal to optimize prompts against the eval results. Codex can inspect failures, update the prompt, rerun the evals, and keep iterating until the score improves or it reaches your stopping condition."
           ],
           "items": [
@@ -4413,9 +4413,9 @@
             "Give ChatGPT Work one project to focus on. A dedicated teammate can check the messages, documents, meetings, decisions, and open questions that affect that project, then help you decide what to do next. Add a scheduled check when you want it to keep watching the project.",
             "Unlike a work chief of staff , which watches across your priorities, a project teammate stays focused on a specific launch, customer account, initiative, or event.",
             "Choose the surface that fits your project:",
-            "Here’s what a project check and follow-up can look like:",
+            "Here's what a project check and follow-up can look like:",
             "Project status: The customer-facing launch copy is approved, and the readiness review is on the calendar.",
-            "Open questions: The launch checklist is missing the documentation link, and security approval hasn’t been confirmed.",
+            "Open questions: The launch checklist is missing the documentation link, and security approval hasn't been confirmed.",
             "Next step: Check on the final link and confirm whether the security review blocks launch.",
             "Draft follow-up: “Hey, checking on the final docs link before the readiness review. Is it ready to add to the launch checklist, or is anything still blocking it?” The message remains unsent.",
             "Project heartbeat: Check the launch thread, checklist, and readiness meeting every 30 minutes. Report meaningful changes without contacting anyone or updating the tracker.",
@@ -4445,6 +4445,76 @@
     },
     {
       "index": 88,
+      "slug": "build-an-ai-tour-guide",
+      "title": "Build an AI tour guide",
+      "tagline": "Help users learn your app with a tour that adapts as they go.",
+      "tags": [
+        "Front-end",
+        "Engineering"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/build-an-ai-tour-guide",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/build-an-ai-tour-guide",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/build-an-ai-tour-guide.webp",
+      "summary": "Use Codex to add a WebMCP-powered tour to your web app. Highlight the next control, explain what to do, and adapt the guidance to the user's current state while they complete the steps themselves.",
+      "difficulty": "Advanced",
+      "time": "Long-running",
+      "bestFor": [
+        "Teams helping new users complete their first workflow in a web app.",
+        "Onboarding flows that change with sign-in status, connected services, or open panels.",
+        "Tasks where users should learn the controls and perform the actions themselves."
+      ],
+      "starterPrompt": "Add a guided tour to [web app/repository] so Codex can show users how to [complete one specific workflow].\n\nRead the app's existing UI, state management, and documentation first. Use WebMCP to let Codex:\n- discover tour targets through stable, semantic IDs, labels, and descriptions\n- highlight a target with a short explanation and dismiss the highlight\n- read the UI state needed to choose the next step\n- wait for the user to act, then read the updated state\n- read the app's instructions and relevant documentation\n\nThe user should complete the workflow themselves. Keep tour tools separate from tools that perform actions, and preserve the app's existing authentication and permission checks.\n\nStart with one complete flow. Reuse the existing components and design system. Test the tour in a browser environment where Codex can call the WebMCP tools, including different starting states, a canceled step, and a target that isn't visible yet.\n\nSummarize what changed, what you verified, and any setup still needed. Do not deploy or publish without my approval.",
+      "workflow": [
+        {
+          "title": "Introduction",
+          "paragraphs": [
+            "Some workflows are easier to learn when someone shows you where to go and what to select. Use Codex to build a tour that guides users through your web app while they perform the actions themselves.",
+            "With WebMCP tools for your app's controls, state, and documentation, Codex can choose the next instruction based on what the user sees. A user who hasn't connected a service needs a different first step from someone who has already completed setup.",
+            "Keep the first tour narrow. Verify that it can guide a user from setup to completion before adding more workflows.",
+            "In Runme , users edit notebooks and use a file explorer to add Google Drive folders and navigate their files. The tour helps a new user find those controls and learn the flow.",
+            "To learn more about Runme, you can read Automating repetitive work at OpenAI with Codex .",
+            "Watch Codex highlight Runme's controls and explain their purpose. The screenshots below show a separate, task-focused tour for adding a Google Drive folder.",
+            "Your browser does not support the video tag.",
+            "The Google Drive tour starts with a request:",
+            "Codex checks whether Google Drive is connected. If it isn't, Codex highlights Connect Google Drive and asks the user to select it and complete the connection.",
+            "",
+            "After the connection is complete, Codex guides the user to the file explorer. The next instruction follows the updated app state.",
+            "",
+            "Once the user expands the toolbar, Codex highlights the control for adding a Google Drive folder. The user stays in control of the interaction and learns where to find it next time.",
+            "",
+            "Runme's implementation provides three kinds of context: tour targets, application state, and documentation. The tool names below come from Runme; adapt the same roles to your app.",
+            "Give tour targets stable, semantic data-tour-id values, with a label and description for each. Runme exposes these controls through three WebMCP tools:",
+            "This gives Codex a way to identify and explain a control without performing its action for the user.",
+            "Runme keeps tour-related state outside React and exposes it through a controller. Its getUiSnapshot tool provides the current UI state, including sign-in status. waitForUiChange(...) lets Codex wait for a change, such as the user selecting the highlighted control.",
+            "Ask Codex to read the state again after each interaction. Advancing the tour should depend on what happened in the app, not on whether Codex has already shown an instruction.",
+            "Runme bundles Markdown documentation with the application and makes it available through WebMCP:",
+            "The tour instructions and tools can ship with the app, without a separate Codex plugin for the tour.",
+            "Try the same request from different starting states. Check that the tour skips completed setup, waits for the user, and updates its guidance when the UI changes.",
+            "Also test a canceled step and a control that isn't visible yet. Codex should explain what is missing or choose a valid next step. It shouldn't claim that an action succeeded just because it highlighted a button.",
+            "Keep authentication, permission checks, and user actions in the existing app flow. The tour should help users understand the interface without bypassing those controls.",
+            "Once the first flow works, continue in the same chat:"
+          ],
+          "items": [
+            "Open your app's repository in Codex and choose one workflow to guide, such as connecting a service or adding a folder.",
+            "Provide the relevant documentation and describe the starting states the tour should handle.",
+            "Run the starter prompt on this page to add tour targets, UI-state tools, and access to the app's instructions.",
+            "Test the flow in a browser environment where Codex can call your app's WebMCP tools. Ask Codex to guide you, then complete each step yourself.",
+            "listTargets lists the registered targets, IDs, labels, and descriptions.",
+            "showTourStep({ target, title?, message, placement? }) highlights a target and displays an explanation.",
+            "dismiss removes the highlight.",
+            "readInstructionsForAIAgents explains how Codex should interact with the app and its tools.",
+            "listDocumentation() lists the available pages and their descriptions.",
+            "getDocumentation({ name }) returns a selected page as Markdown.",
+            "\"Test this tour when Google Drive is already connected and the file explorer is closed.\"",
+            "\"Handle a user canceling a step, then asking to continue the tour.\"",
+            "\"Add a tour for [next workflow], reusing the existing targets and state tools.\""
+          ]
+        }
+      ],
+      "image": "assets/use-cases/build-an-ai-tour-guide.webp"
+    },
+    {
+      "index": 89,
       "slug": "track-bills-subscriptions-and-spending",
       "title": "Track bills, subscriptions, and spending",
       "tagline": "Review the last 30 days and stay ahead of anything unusual.",
@@ -4485,7 +4555,7 @@
       "image": "assets/use-cases/track-bills-subscriptions-and-spending.webp"
     },
     {
-      "index": 89,
+      "index": 90,
       "slug": "ai-app-evals",
       "title": "Add evals to your AI application",
       "tagline": "Use Codex to turn expected behavior into a Promptfoo eval suite.",
@@ -4511,7 +4581,7 @@
           "paragraphs": [
             "When you are building an AI application, or making changes to an existing one, you want to make sure it behaves as expected. Evals are a way to systematically test a set of scenarios and catch regressions before they ship.",
             "You can use Promptfoo to run evals on your AI application, and Codex to help you create and maintain the evals.",
-            "Use Codex with the Promptfoo plugin’s $promptfoo-evals skill to turn one AI app behavior into a repeatable eval suite. When the app does not already have a working Promptfoo target, $promptfoo-provider-setup helps connect the suite to the application path you want to test.",
+            "Use Codex with the Promptfoo plugin's $promptfoo-evals skill to turn one AI app behavior into a repeatable eval suite. When the app does not already have a working Promptfoo target, $promptfoo-provider-setup helps connect the suite to the application path you want to test.",
             "Codex can inspect the app, propose high-signal cases, add the Promptfoo config and test data, run the suite locally, and give you a command to keep using.",
             "This use case works best when the behavior is concrete: support answer quality, retrieval grounding, classifier labels, tool calls, JSON shape, business rules, or prompt and model migration confidence.",
             "A strong first pass should be reviewable code and test data: a promptfooconfig.yaml or equivalent config, a small evals/ directory, test cases, any target adapter needed to call the app, and a local command such as npm run evals .",
@@ -4537,7 +4607,7 @@
       "image": "assets/use-cases/ai-app-evals.webp"
     },
     {
-      "index": 90,
+      "index": 91,
       "slug": "user-stories-to-ui-mocks",
       "title": "Turn user stories into UI mocks",
       "tagline": "Convert product feedback, issue threads, and design context into mockups your team can react to and implement.",
@@ -4564,10 +4634,10 @@
             "Product teams often collect feedback from various sources, such as Slack threads, Linear issues, Google Drive docs or sheets, or customer-call notes. Sometimes, they have clear user stories illustrating a problem they want to solve, and sometimes, the context lives in those sources.",
             "ChatGPT can gather this context and turn it into a UI mock for a feature that would solve the problem. Once you validate the direction, Codex can implement it in the product.",
             "If you have a clear user story, you can start with that. If not, you can have a discussion with ChatGPT first, gathering context from different sources and synthesizing it into a user story.",
-            "Then, you can ask ChatGPT to use image generation to create a few mock directions. The mocks should preserve the product’s information architecture and design-system constraints.",
+            "Then, you can ask ChatGPT to use image generation to create a few mock directions. The mocks should preserve the product's information architecture and design-system constraints.",
             "If helpful, you can provide screenshots of the current UI or a Figma file as reference.",
             "Do this until you are satisfied with the mock. The more scoped the changes are, the more likely Codex is to generate a mock that can be implemented directly.",
-            "Use the final mock image that you want Codex to implement. Select Codex, start a new chat, and reattach the image rather than continuing the ChatGPT chat directly. Then ask Codex to implement the mock—optionally using the Build Web Apps plugin if you’re building a web app—to turn it into a working prototype:"
+            "Use the final mock image that you want Codex to implement. Select Codex, start a new chat, and reattach the image rather than continuing the ChatGPT chat directly. Then ask Codex to implement the mock—optionally using the Build Web Apps plugin if you're building a web app—to turn it into a working prototype:"
           ],
           "items": []
         }
@@ -4575,7 +4645,7 @@
       "image": "assets/use-cases/user-stories-to-ui-mocks.webp"
     },
     {
-      "index": 91,
+      "index": 92,
       "slug": "slack-action-triage",
       "title": "Prioritize Slack action items",
       "tagline": "Turn Slack threads and DMs into a ranked queue of next steps.",
@@ -4608,11 +4678,11 @@
             "Top action item: Priya is asking for concrete customer examples, not just more ideas.",
             "Why it matters: the launch update needs real people the team can contact this week.",
             "Why it matters: the launch update needs real people the team can contact this week.",
-            "Evidence: the original channel message asked for use cases, but the thread later says “please DM me if you have leads.”",
-            "Evidence: the original channel message asked for use cases, but the thread later says “please DM me if you have leads.”",
+            "Evidence: the original channel message asked for use cases, but the thread later says \"please DM me if you have leads.\"",
+            "Evidence: the original channel message asked for use cases, but the thread later says \"please DM me if you have leads.\"",
             "Next step: reply with two named leads, or say you can be the example if that is more useful.",
             "Next step: reply with two named leads, or say you can be the example if that is more useful.",
-            "Good output makes the distinction explicit: an idea is different from a lead, a live ask is different from an FYI, and a request you already answered shouldn’t stay in the queue.",
+            "Good output makes the distinction explicit: an idea is different from a lead, a live ask is different from an FYI, and a request you already answered shouldn't stay in the queue.",
             "If you get too much noise or too few actionable items, tweak the prompt and if needed, mention specific slack channels you want ChatGPT to pay attention to.",
             "Once the queue is right, keep the action in the same chat. Ask ChatGPT to draft a reply or handoff from the evidence it already gathered:"
           ],
@@ -4628,7 +4698,7 @@
       "image": "assets/use-cases/slack-action-triage.webp"
     },
     {
-      "index": 92,
+      "index": 93,
       "slug": "react-native-expo-apps",
       "title": "Build React Native apps with Expo",
       "tagline": "Go from a mobile-app idea to a working Expo app with the dedicated plugin.",
@@ -4652,7 +4722,7 @@
         {
           "title": "Start with Expo Go",
           "paragraphs": [
-            "Expo is a strong default when you want Codex to move from a mobile-app idea to a tested React Native app. The useful loop is expo start first, Expo Go on a device next, and then a dev client or EAS build only when the app needs custom native code, store distribution, or a capability that Expo Go can’t run.",
+            "Expo is a strong default when you want Codex to move from a mobile-app idea to a tested React Native app. The useful loop is expo start first, Expo Go on a device next, and then a dev client or EAS build only when the app needs custom native code, store distribution, or a capability that Expo Go can't run.",
             "That keeps Codex focused on the app workflow instead of spending the first pass on native IDE setup, simulator setup, provisioning, or build configuration.",
             "Expo published an Expo plugin that gives Codex Expo-native guidance for Expo Router, native UI, forms, navigation, animations, data fetching, NativeWind setup, Expo modules, dev clients, deployment, upgrades, and Codex Run action wiring.",
             "Use it when Codex is building new Expo screens, adding packages, wiring API calls, preparing a dev client, or getting an app ready for TestFlight, App Store, Play Store, or EAS Hosting.",
@@ -4690,7 +4760,7 @@
       "image": "assets/use-cases/react-native-expo-apps.webp"
     },
     {
-      "index": 93,
+      "index": 94,
       "slug": "agent-friendly-clis",
       "title": "Create a CLI Codex can use",
       "tagline": "Give Codex a composable command for an API, log source, export, or team script.",
@@ -4717,8 +4787,8 @@
             "Add a companion skill that records when Codex should use the CLI, what to run first, how to keep output small, where downloaded files land, and which write commands need approval.",
             "In this workflow, $cli-creator helps Codex build the command. $skill-creator helps Codex save a reusable skill such as $ci-logs , which future tasks can invoke by name.",
             "Start with the thing you want Codex to do, not the technology you want it to write. A good CLI turns a repeated read, search, download, export, draft, upload, poll, or safe write into a command Codex can run from any repo.",
-            "Codex needs something concrete to learn from: docs or OpenAPI, a redacted curl command, an export or database path, a log folder, or an existing script. If you want the CLI to follow a familiar style, paste a short --help output from gh , kubectl , or your team’s own tool.",
-            "If the command needs auth, tell Codex the environment variable name, config file path, or login flow it should support. Set the secret yourself in your shell or config file. Do not paste secrets into the chat. Ask Codex to make the CLI’s setup check fail clearly when auth is missing.",
+            "Codex needs something concrete to learn from: docs or OpenAPI, a redacted curl command, an export or database path, a log folder, or an existing script. If you want the CLI to follow a familiar style, paste a short --help output from gh , kubectl , or your team's own tool.",
+            "If the command needs auth, tell Codex the environment variable name, config file path, or login flow it should support. Set the secret yourself in your shell or config file. Do not paste secrets into the chat. Ask Codex to make the CLI's setup check fail clearly when auth is missing.",
             "Use the starter prompt on this page. Fill in the source Codex should learn from and the first job the CLI should support.",
             "Before Codex writes code, it should show the proposed command surface and ask only for missing details that would block the build.",
             "Codex should not stop after cargo run , python path/to/script.py , or an uninstalled package command. Ask it to test the installed command from another repo or a temporary folder, the way a later task will use it.",
@@ -4739,7 +4809,7 @@
       "image": "assets/use-cases/agent-friendly-clis.webp"
     },
     {
-      "index": 94,
+      "index": 95,
       "slug": "verified-operations-workflows",
       "title": "Run verified operations",
       "tagline": "Run repeatable workflows and verify the result.",
@@ -4783,7 +4853,7 @@
       "image": "assets/use-cases/verified-operations-workflows.webp"
     },
     {
-      "index": 95,
+      "index": 96,
       "slug": "event-launch-playbooks",
       "title": "Run event playbooks",
       "tagline": "Create repeatable workflows for event program management.",
@@ -4828,7 +4898,7 @@
       "image": "assets/use-cases/event-launch-playbooks.webp"
     },
     {
-      "index": 96,
+      "index": 97,
       "slug": "chatgpt-apps",
       "title": "Bring your app to ChatGPT",
       "tagline": "Turn your use cases into focused apps for ChatGPT.",
@@ -4865,7 +4935,7 @@
           "items": [
             "An MCP server that defines tools, returns data, enforces auth, and points ChatGPT at any UI resources.",
             "An optional web component that renders inside a ChatGPT iframe. You can build it with React or with plain HTML, CSS, and JavaScript.",
-            "A model that decides when to call the plugin’s tools based on the metadata you provide.",
+            "A model that decides when to call the plugin's tools based on the metadata you provide.",
             "Planning the tool surface and metadata.",
             "Scaffolding the server and widget.",
             "Wiring local run scripts.",
@@ -4932,7 +5002,7 @@
       "image": "assets/use-cases/chatgpt-apps.webp"
     },
     {
-      "index": 97,
+      "index": 98,
       "slug": "audit-workflow",
       "title": "Audit a workflow",
       "tagline": "Turn a messy process into a clear audit and automation plan.",
@@ -4972,7 +5042,7 @@
       "image": "assets/use-cases/audit-workflow.webp"
     },
     {
-      "index": 98,
+      "index": 99,
       "slug": "launch-campaign-kit",
       "title": "Build a launch campaign kit",
       "tagline": "Turn launch context into coordinated first-draft campaign assets.",
@@ -5012,7 +5082,7 @@
       "image": "assets/use-cases/launch-campaign-kit.webp"
     },
     {
-      "index": 99,
+      "index": 100,
       "slug": "consolidate-spreadsheets",
       "title": "Consolidate spreadsheets",
       "tagline": "Join spreadsheet exports into one refreshable workbook.",
@@ -5052,7 +5122,7 @@
       "image": "assets/use-cases/consolidate-spreadsheets.webp"
     },
     {
-      "index": 100,
+      "index": 101,
       "slug": "weekly-work-summary",
       "title": "Write a weekly work summary",
       "tagline": "Turn a week of activity into a manager-ready update.",

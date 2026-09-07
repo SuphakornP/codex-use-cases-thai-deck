@@ -13,7 +13,7 @@ SOURCE_PATH = DATA_DIR / "source-usecases.json"
 TRANSLATION_PATHS = [DATA_DIR / f"usecases-th-{part}.json" for part in ("01", "02", "03")]
 EN_TRANSLATION_PATHS = [DATA_DIR / f"usecases-en-{part}.json" for part in ("01", "02", "03")]
 OUTPUT_PATH = DATA_DIR / "usecases-data.js"
-EXPECTED_COUNT = 101
+EXPECTED_COUNT = 102
 CATEGORIES = {
     "งานประจำ": {"id": "everyday-work", "en": "Everyday work"},
     "ข้อมูลและการตัดสินใจ": {"id": "data-decisions", "en": "Data and decisions"},

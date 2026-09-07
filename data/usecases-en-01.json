@@ -223,7 +223,7 @@
     "index": 20,
     "slug": "make-granular-ui-changes",
     "workflowEn": [
-      { "label": "Open the target", "detail": "Open the relevant route or component and prepare the target viewport or reference image." },
+      { "label": "Choose model and target", "detail": "Use gpt-5.3-codex-spark when available; otherwise use gpt-6-astra at medium or low reasoning, then open the target UI." },
       { "label": "Request one change", "detail": "Change only one item per round: spacing, alignment, color, copy, or state." },
       { "label": "Keep the edit small", "detail": "Reuse existing components and tokens without touching unrelated routing or data flow." },
       { "label": "Review and iterate", "detail": "Inspect the browser result, then give the next focused adjustment in the same chat." }

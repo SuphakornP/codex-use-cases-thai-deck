@@ -243,6 +243,17 @@
   },
   {
     "index": 88,
+    "slug": "build-an-ai-tour-guide",
+    "workflowEn": [
+      { "label": "Scope one workflow", "detail": "Choose one narrow flow, its starting states, and the documentation the tour needs." },
+      { "label": "Expose tour context", "detail": "Add semantic targets and WebMCP tools for controls, UI state, and instructions." },
+      { "label": "Guide, then wait", "detail": "Highlight the next control, let the user act, then reread state before continuing." },
+      { "label": "Test edge states", "detail": "Test completed setup, cancellation, hidden targets, and existing auth and permission checks." }
+    ],
+    "checkEn": "Confirm the user performs every action, state is reread after each step, and auth and permission checks remain intact."
+  },
+  {
+    "index": 89,
     "slug": "track-bills-subscriptions-and-spending",
     "workflowEn": [
       { "label": "Connect Finances on web", "detail": "Add read-only @Finances on web; desktop is unsupported." },
@@ -253,7 +264,7 @@
     "checkEn": "Verify all figures; Finances cannot move money, pay bills, cancel services, trade, or change settings."
   },
   {
-    "index": 89,
+    "index": 90,
     "slug": "ai-app-evals",
     "workflowEn": [
       { "label": "Choose one behavior", "detail": "Define one user promise, such as answer quality, grounding, or tool-call correctness." },
@@ -264,7 +275,7 @@
     "checkEn": "Ensure fixtures contain no sensitive data, assertions test real behavior, and product failures are not hidden by relaxed thresholds."
   },
   {
-    "index": 90,
+    "index": 91,
     "slug": "user-stories-to-ui-mocks",
     "workflowEn": [
       { "label": "Gather user voices", "detail": "Point to Slack, Linear, Drive, and research notes that explain the problem and context." },
@@ -275,7 +286,7 @@
     "checkEn": "Have users and the design team confirm the mock reflects the real problem and follows the design system before development."
   },
   {
-    "index": 91,
+    "index": 92,
     "slug": "slack-action-triage",
     "workflowEn": [
       { "label": "Set the scope", "detail": "Specify the time period, workstream, people, or channels to review." },
@@ -286,7 +297,7 @@
     "checkEn": "Open the source thread to confirm the item remains unresolved, then check the recipient and tone before sending any message."
   },
   {
-    "index": 92,
+    "index": 93,
     "slug": "react-native-expo-apps",
     "workflowEn": [
       { "label": "Inspect the project", "detail": "Have Codex determine whether this is a new Expo app or existing project and define one core workflow." },
@@ -297,7 +308,7 @@
     "checkEn": "Verify results on a device or simulator and check package compatibility before creating a dev client or production build."
   },
   {
-    "index": 93,
+    "index": 94,
     "slug": "agent-friendly-clis",
     "workflowEn": [
       { "label": "Choose a repeat task", "detail": "Define the CLI's first task and its source of truth, such as API docs, an export, database, or script." },
@@ -308,7 +319,7 @@
     "checkEn": "Do not put secrets in the chat, and ensure write commands require explicit approval before use on real data."
   },
   {
-    "index": 94,
+    "index": 95,
     "slug": "verified-operations-workflows",
     "workflowEn": [
       { "label": "Define the scope", "detail": "Specify the goal, inputs, approval source, runner, and artifact that will prove the result." },
@@ -319,7 +330,7 @@
     "checkEn": "Stop before irreversible actions or scope expansion, and have the owner review outcome evidence after the run."
   },
   {
-    "index": 95,
+    "index": 96,
     "slug": "event-launch-playbooks",
     "workflowEn": [
       { "label": "Gather planning sources", "detail": "Identify planning threads, approved documents, templates, and calendar deadlines." },
@@ -330,7 +341,7 @@
     "checkEn": "Ensure public content contains no internal operational details and every date, owner, and approval has a verified source."
   },
   {
-    "index": 96,
+    "index": 97,
     "slug": "chatgpt-apps",
     "workflowEn": [
       { "label": "Choose the core outcome", "detail": "Define one task the MCP-backed plugin should complete in ChatGPT and limit it to 3-5 tools." },
@@ -341,7 +352,7 @@
     "checkEn": "Test MCP server payloads and conversation flow in ChatGPT; add OAuth only for user data or write actions."
   },
   {
-    "index": 97,
+    "index": 98,
     "slug": "audit-workflow",
     "workflowEn": [
       { "label": "Frame the process", "detail": "Define users, inputs, outputs, scope, review date, and workflow constraints." },
@@ -352,7 +363,7 @@
     "checkEn": "Have process owners review permissions, exception paths, irreversible actions, and ownership before automation."
   },
   {
-    "index": 98,
+    "index": 99,
     "slug": "launch-campaign-kit",
     "workflowEn": [
       { "label": "Gather launch inputs", "detail": "Attach approved launch plans, product notes, trackers, creative briefs, pages, and discussions." },
@@ -363,7 +374,7 @@
     "checkEn": "Verify claims against product sources, separate public copy from internal data, and get product, legal, and brand approval."
   },
   {
-    "index": 99,
+    "index": 100,
     "slug": "consolidate-spreadsheets",
     "workflowEn": [
       { "label": "Define joining rules", "detail": "Specify the join key, duplicate rule, period definitions, targets, and required output views." },
@@ -374,7 +385,7 @@
     "checkEn": "Verify formulas, join mismatches, and assumptions against originals whenever source files or reporting rules change."
   },
   {
-    "index": 100,
+    "index": 101,
     "slug": "weekly-work-summary",
     "workflowEn": [
       { "label": "Define the week", "detail": "Specify the date range, audience, and level of detail for the report." },
