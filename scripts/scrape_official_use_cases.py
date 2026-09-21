@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "source-usecases.json"
 IMAGE_DIR = ROOT / "assets" / "use-cases"
 USER_AGENT = "Mozilla/5.0 (compatible; CodexUseCaseDeck/1.0)"
-EXPECTED_COUNT = 102
+EXPECTED_COUNT = 105
 USE_CASE_PATH = re.compile(r"^/(?:codex/)?use-cases/[^/]+$")
 
 
@@ -67,11 +67,16 @@ def extract_prompt(soup: BeautifulSoup) -> str:
 
 def extract_workflow(soup: BeautifulSoup) -> list[dict[str, object]]:
     prompt_heading = soup.find("h2", string=lambda value: value and clean(value) == "Starter prompt")
-    if prompt_heading is None:
+    best_for_headings = soup.find_all(
+        "h2", string=lambda value: value and clean(value) == "Best for"
+    )
+    start_heading = prompt_heading or (best_for_headings[-1] if best_for_headings else None)
+    if start_heading is None:
         return []
 
     sections: list[dict[str, object]] = []
-    start_section = prompt_heading.find_parent("section")
+    seen_sections: set[str] = set()
+    start_section = start_heading.find_parent("section")
     for section in start_section.find_all_next("section"):
         heading = section.find("h2")
         if heading is None:
@@ -84,7 +89,11 @@ def extract_workflow(soup: BeautifulSoup) -> list[dict[str, object]]:
         paragraphs = [clean(node.get_text(" ", strip=True)) for node in section.find_all("p")]
         items = section_items(section)
         if paragraphs or items:
-            sections.append({"title": title, "paragraphs": paragraphs, "items": items})
+            record = {"title": title, "paragraphs": paragraphs, "items": items}
+            signature = json.dumps(record, ensure_ascii=False, sort_keys=True)
+            if signature not in seen_sections:
+                sections.append(record)
+                seen_sections.add(signature)
     return sections
 
 

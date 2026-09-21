@@ -1,6 +1,118 @@
 [
   {
     "index": 33,
+    "slug": "api-integration-migrations",
+    "titleTh": "อัปเกรดการเชื่อมต่อ API",
+    "titleEn": "Upgrade your API integration",
+    "summaryTh": "ใช้ Codex และ OpenAI Docs ปรับ integration ไปยัง model กับ API ที่แนะนำล่าสุด โดยรักษาพฤติกรรมเดิมและตรวจ regression ก่อนปล่อย",
+    "categoryTh": "วิศวกรรมซอฟต์แวร์",
+    "workflow": [
+      {
+        "label": "สำรวจของเดิม",
+        "detail": "ให้ Codex inventory model, endpoint, prompt, tool และ response shape ที่ใช้อยู่ใน repo"
+      },
+      {
+        "label": "อ่านคำแนะนำล่าสุด",
+        "detail": "ใช้ $openai-docs ตรวจ model guidance, API features และแนวทาง prompt ของรุ่นเป้าหมาย"
+      },
+      {
+        "label": "ย้ายแบบจำกัดขอบเขต",
+        "detail": "เปลี่ยนเฉพาะส่วนจำเป็นและระบุ behavior หรือ schema ที่ต้องให้มนุษย์พิจารณา"
+      },
+      {
+        "label": "วัดผลก่อนปล่อย",
+        "detail": "รัน tests และ evals เทียบ baseline เพื่อหาการถดถอยด้านคุณภาพ ความเร็ว และต้นทุน"
+      }
+    ],
+    "promptTh": "ใช้ $openai-docs อัปเกรด OpenAI integration นี้ไปยัง model และ API ที่แนะนำล่าสุด เริ่มจาก inventory แล้วทำ migration ที่เล็กที่สุดพร้อม tests และ evals",
+    "checkTh": "ตรวจ official docs, response shape, tool behavior, คุณภาพ eval และต้นทุนก่อนเปิดใช้จริง"
+  },
+  {
+    "index": 34,
+    "slug": "complete-tasks-from-messages",
+    "titleTh": "ทำงานต่อจากข้อความให้เสร็จ",
+    "titleEn": "Complete tasks from messages",
+    "summaryTh": "ใช้ Computer Use อ่าน thread ที่ระบุ เข้าใจสิ่งที่ต้องทำ ลงมือข้ามแอปที่เกี่ยวข้อง และร่างคำตอบกลับโดยหยุดก่อนขั้นตอนย้อนกลับไม่ได้",
+    "categoryTh": "งานประจำ",
+    "workflow": [
+      {
+        "label": "เลือกบทสนทนา",
+        "detail": "ระบุชื่อผู้ส่งหรือ thread ที่ต้องการให้ ChatGPT อ่านอย่างเจาะจง"
+      },
+      {
+        "label": "สกัดสิ่งที่ต้องทำ",
+        "detail": "ให้ระบบสรุปคำขอ ข้อมูลที่ขาด และแอปที่ต้องใช้ก่อนลงมือ"
+      },
+      {
+        "label": "ทำงานข้ามแอป",
+        "detail": "ค้นข้อมูล เช็กปฏิทิน หรือเตรียมรายการตามคำขอโดยใช้ session ที่เข้าสู่ระบบแล้ว"
+      },
+      {
+        "label": "ร่างคำตอบและหยุด",
+        "detail": "ร่างข้อความใน thread เดิมและขออนุมัติก่อนซื้อ จอง จ่ายเงิน หรือยืนยันเวลา"
+      }
+    ],
+    "promptTh": "@Computer อ่าน Messages จาก [ชื่อ] ทำความเข้าใจคำขอ ช่วยทำงานผ่าน [แอป] และร่างคำตอบใน thread เดิม โดยหยุดก่อนการจอง ซื้อ จ่าย หรือยืนยัน",
+    "checkTh": "ตรวจผู้รับ รายละเอียดสุดท้าย ราคา เวลา และเงื่อนไขยกเลิกก่อนอนุมัติการกระทำ"
+  },
+  {
+    "index": 35,
+    "slug": "figma-designs-to-code",
+    "titleTh": "เปลี่ยน Figma เป็นโค้ด",
+    "titleEn": "Turn Figma designs into code",
+    "summaryTh": "ใช้ Codex ดึงโครงสร้าง asset และ variant จาก Figma มาแปลงเป็นโค้ดที่เข้ากับ design system เดิม แล้วเทียบผลใน browser",
+    "categoryTh": "ออกแบบและสร้าง",
+    "workflow": [
+      {
+        "label": "เลือก frame ที่แน่นอน",
+        "detail": "ส่งลิงก์ตรงไปยัง frame, component หรือ variant ที่เป็น source of truth"
+      },
+      {
+        "label": "ดึงบริบทการออกแบบ",
+        "detail": "ใช้ Figma skill อ่าน design context, variables, assets และ screenshot ของ variant นั้น"
+      },
+      {
+        "label": "แปลงเข้าระบบเดิม",
+        "detail": "ใช้ component, token, routing และ data pattern ของ repo แทนการคัดลอกโค้ดอ้างอิงตรง ๆ"
+      },
+      {
+        "label": "เทียบและปรับ",
+        "detail": "ใช้ Playwright ตรวจ spacing, hierarchy, interaction และ responsive behavior เทียบ Figma"
+      }
+    ],
+    "promptTh": "นำ Figma frame จาก [ลิงก์] มาสร้างเป็น UI ในโปรเจกต์นี้ด้วย Figma skill ใช้ component/token เดิม รองรับ desktop/mobile และใช้ Playwright เทียบกับ variant ต้นฉบับ",
+    "checkTh": "ตรวจ variant, asset license, responsive states และ accessibility เทียบกับ Figma และ design system"
+  },
+  {
+    "index": 36,
+    "slug": "browser-games",
+    "titleTh": "สร้างเกมบนเว็บเบราว์เซอร์",
+    "titleEn": "Create browser-based games",
+    "summaryTh": "ใช้ Codex เปลี่ยน game brief เป็นแผนและเกมที่เล่นได้จริง พร้อมสร้าง asset และทดลองการควบคุมกับ UI ใน browser อย่างต่อเนื่อง",
+    "categoryTh": "ออกแบบและสร้าง",
+    "workflow": [
+      {
+        "label": "เขียนแผนเกม",
+        "detail": "กำหนด core loop, controls, win/fail, difficulty และ milestones ใน PLAN.md"
+      },
+      {
+        "label": "ตั้งกติกาการทำงาน",
+        "detail": "ใช้ AGENTS.md ระบุให้ Codex ทำตามแผน บันทึกงาน และเรียก skill ที่ต้องใช้"
+      },
+      {
+        "label": "สร้างเกมและภาพ",
+        "detail": "ลงมือทำ gameplay, UI และ asset ด้วย prompt ภาพที่บันทึกไว้เพื่อรักษาสไตล์"
+      },
+      {
+        "label": "เล่นทดสอบซ้ำ",
+        "detail": "ใช้ Playwright เล่นใน browser แล้วปรับ controls, feedback, difficulty และ layout จากผลจริง"
+      }
+    ],
+    "promptTh": "ใช้ $playwright-interactive, $imagegen และ $openai-docs วางแผนและสร้างเกม browser ตาม [แนวคิด] บันทึก PLAN.md กับ logs และทดสอบ core loop ใน browser",
+    "checkTh": "ให้คนเล่นจริงตรวจ controls, win/fail state, accessibility, performance และความเหมาะสมของ asset ก่อนเผยแพร่"
+  },
+  {
+    "index": 37,
     "slug": "reusable-codex-skills",
     "titleTh": "บันทึกเวิร์กโฟลว์เป็น Skill",
     "titleEn": "Save workflows as skills",
@@ -28,7 +140,7 @@
     "checkTh": "ทดลอง Skill กับงานจริงหนึ่งครั้ง และตรวจว่าไม่มีข้อมูลลับหรือคำสั่งที่ไม่ควรรันก่อนแชร์"
   },
   {
-    "index": 34,
+    "index": 38,
     "slug": "iterate-on-difficult-problems",
     "titleTh": "แก้โจทย์ยากด้วยวงจรปรับปรุง",
     "titleEn": "Iterate on difficult problems",
@@ -56,7 +168,7 @@
     "checkTh": "ตรวจทั้งคะแนนและชิ้นงานจริงด้วยมนุษย์ เพราะ Eval อาจไม่ครอบคลุมคุณภาพทุกด้าน"
   },
   {
-    "index": 35,
+    "index": 39,
     "slug": "monthly-business-review-narrative",
     "titleTh": "เตรียมรายงานทบทวนธุรกิจ",
     "titleEn": "Prepare a business review",
@@ -84,7 +196,7 @@
     "checkTh": "ห้ามเติมตัวเลขที่ไม่มีหลักฐาน และให้เจ้าของข้อมูลยืนยันตัวเลขสำคัญก่อนนำเสนอ"
   },
   {
-    "index": 36,
+    "index": 40,
     "slug": "cfo-board-reporting-pack",
     "titleTh": "เตรียมชุดรายงานสำหรับผู้บริหาร",
     "titleEn": "Prepare a leadership reporting pack",
@@ -112,91 +224,7 @@
     "checkTh": "ให้เจ้าของข้อมูลยืนยันตัวเลข สมมติฐาน และความเสี่ยงทุกจุดก่อนเผยแพร่ชุดรายงาน"
   },
   {
-    "index": 37,
-    "slug": "remediate-vulnerability-backlog",
-    "titleTh": "จัดการรายการช่องโหว่ค้างแก้",
-    "titleEn": "Remediate a vulnerability backlog",
-    "summaryTh": "แก้ช่องโหว่ที่ผ่านการทบทวนทีละรายการด้วย Patch ขนาดเล็ก พร้อมหลักฐานว่าปัญหาเดิมไม่เกิดซ้ำและระบบปกติยังทำงานได้",
-    "categoryTh": "วิทยาศาสตร์และความปลอดภัย",
-    "workflow": [
-      {
-        "label": "เลือกหนึ่งช่องโหว่",
-        "detail": "นำรายงานหรือ Ticket ที่ได้รับอนุญาตพร้อมขอบเขตและผลกระทบมาใช้"
-      },
-      {
-        "label": "ยืนยันปัญหา",
-        "detail": "ให้ Codex ตรวจเส้นทางที่มีช่องโหว่หรือยืนยันว่าปัญหาถูกแก้แล้วก่อนเปลี่ยนโค้ด"
-      },
-      {
-        "label": "แก้เท่าที่จำเป็น",
-        "detail": "ใช้ $codex-security:fix-finding ทำ Patch ที่เล็กที่สุดและเพิ่ม Regression Test"
-      },
-      {
-        "label": "พิสูจน์ผล",
-        "detail": "รันทดสอบทั้งเส้นทางโจมตีเดิมและการใช้งานปกติพร้อมบันทึกความไม่แน่นอน"
-      }
-    ],
-    "promptTh": "ใช้ $codex-security:fix-finding แก้ช่องโหว่ [ชื่อ] จาก [แหล่งที่ได้รับอนุญาต] โดยยืนยันปัญหาก่อน ทำ Patch ที่เล็กที่สุด เพิ่ม Regression Test และรายงานหลักฐานว่าปัญหาไม่เกิดซ้ำ",
-    "checkTh": "ทำเฉพาะระบบที่ได้รับอนุญาต และให้ผู้เชี่ยวชาญความปลอดภัยทบทวน Patch กับหลักฐานก่อนนำขึ้นระบบ"
-  },
-  {
-    "index": 38,
-    "slug": "scan-code-changes-for-security",
-    "titleTh": "ตรวจความปลอดภัยของการเปลี่ยนแปลงโค้ด",
-    "titleEn": "Scan code changes for security",
-    "summaryTh": "ตรวจ PR, Commit หรือ Patch เฉพาะส่วนที่เปลี่ยน เพื่อค้นหาและยืนยันความเสี่ยงด้านความปลอดภัยก่อน Merge",
-    "categoryTh": "วิทยาศาสตร์และความปลอดภัย",
-    "workflow": [
-      {
-        "label": "ระบุชุดการเปลี่ยน",
-        "detail": "กำหนด PR, Commit, Branch diff หรือ Working Tree ที่ได้รับอนุญาตให้ตรวจ"
-      },
-      {
-        "label": "ชี้จุดเสี่ยง",
-        "detail": "บอกพื้นผิวสำคัญ เช่น Auth ข้อมูลนำเข้า File path Network หรือ Secret"
-      },
-      {
-        "label": "สแกนและยืนยัน",
-        "detail": "ใช้ $codex-security:security-diff-scan แยกช่องโหว่ที่มีหลักฐานออกจากข้อสงสัย"
-      },
-      {
-        "label": "ทบทวนก่อนแก้",
-        "detail": "ตรวจบรรทัดที่ได้รับผล หลักฐาน และช่องว่างการพิสูจน์ก่อนเปิดงานแก้แยกต่างหาก"
-      }
-    ],
-    "promptTh": "ใช้ $codex-security:security-diff-scan ตรวจ [PR หรือ Diff] โดยเน้น [พื้นผิวเสี่ยง] และส่งรายงานพร้อม Inline comments สำหรับประเด็นที่ต้องให้มนุษย์ทบทวน โดยยังไม่แก้โค้ด",
-    "checkTh": "มนุษย์ต้องยืนยันการเข้าถึงได้จริงและผลกระทบของแต่ละ Finding ก่อนจัดลำดับหรือแก้ไข"
-  },
-  {
-    "index": 39,
-    "slug": "dependency-incident-audits",
-    "titleTh": "ตรวจสอบเหตุการณ์จาก Dependency",
-    "titleEn": "Audit dependency incidents",
-    "summaryTh": "ตรวจประกาศช่องโหว่ของ Package และ Supply chain แบบ read-only เพื่อดูว่าระบบได้รับผลจริงหรือไม่ โดยไม่รันโค้ดที่ไม่น่าเชื่อถือ",
-    "categoryTh": "วิทยาศาสตร์และความปลอดภัย",
-    "workflow": [
-      {
-        "label": "ยืนยันประกาศ",
-        "detail": "แยกข้อมูลจากแหล่งทางการออกจากรายงานหรือความเห็นที่ยังไม่ยืนยัน"
-      },
-      {
-        "label": "ตั้งเกณฑ์หลักฐาน",
-        "detail": "ระบุสิ่งที่จะพิสูจน์หรือหักล้างว่าระบบใช้ Package และ Version ที่ได้รับผล"
-      },
-      {
-        "label": "ตรวจแบบอ่านอย่างเดียว",
-        "detail": "ค้น Manifest, Lock file, CI workflow และ Script โดยไม่ติดตั้งหรือรัน Lifecycle"
-      },
-      {
-        "label": "สรุประดับหลักฐาน",
-        "detail": "จัดผลเป็นยืนยันแล้ว ต้องตรวจเพิ่ม หรือไม่เข้าข่าย พร้อมความรุนแรงและขั้นตอนถัดไป"
-      }
-    ],
-    "promptTh": "ตรวจ Repository นี้ต่อประกาศ [URL] แบบ read-only โดยสรุป Package และ Version ที่ได้รับผล ตรวจ Manifest, Lock file, CI และ Script แล้วจัดสถานะหลักฐานพร้อม File reference โดยห้ามติดตั้งหรือรันโค้ด",
-    "checkTh": "อย่ารัน Package หรือ Script ที่อาจปนเปื้อน และขออนุมัติแยกก่อนอัปเดต Dependency หรือล้าง Credential"
-  },
-  {
-    "index": 40,
+    "index": 41,
     "slug": "meeting-prep-briefs",
     "titleTh": "เตรียมสรุปก่อนประชุม",
     "titleEn": "Prepare meeting briefs",
@@ -224,7 +252,7 @@
     "checkTh": "ตรวจสิทธิ์และข้อมูลอ่อนไหวก่อนแชร์ Brief และอย่าให้ระบบส่งข้อความหรือแก้เอกสารโดยไม่ได้อนุมัติ"
   },
   {
-    "index": 41,
+    "index": 42,
     "slug": "update-documentation",
     "titleTh": "อัปเดตเอกสารให้ทันการเปลี่ยนแปลง",
     "titleEn": "Keep documentation up-to-date",
@@ -252,7 +280,7 @@
     "checkTh": "ตรวจว่าไม่มี Roadmap ที่ยังไม่ประกาศหรือข้อมูลลูกค้าภายในหลุดสู่เอกสารสาธารณะ"
   },
   {
-    "index": 42,
+    "index": 43,
     "slug": "native-ios-apps",
     "titleTh": "สร้างแอปสำหรับ iOS",
     "titleEn": "Build for iOS",
@@ -280,7 +308,35 @@
     "checkTh": "ตรวจ Build และเส้นทางใช้งานหลักบน Simulator จริง รวมถึง Accessibility และอุปกรณ์เป้าหมายก่อนส่งมอบ"
   },
   {
-    "index": 43,
+    "index": 44,
+    "slug": "scan-multiple-repositories",
+    "titleTh": "สแกนหลาย Repository",
+    "titleEn": "Scan multiple repositories",
+    "summaryTh": "ใช้ Codex Security CLI สแกนรายการ repository ตาม full commit SHA แยกผลและ coverage ต่อ repo เพื่อเลือกตรวจเพิ่มหรือแก้ไขจากหลักฐาน",
+    "categoryTh": "วิทยาศาสตร์และความปลอดภัย",
+    "workflow": [
+      {
+        "label": "ทำ Inventory ที่แน่นอน",
+        "detail": "เริ่มจาก repo ที่ได้รับอนุญาตจำนวนน้อย พร้อม unique ID, repository URL และ full commit SHA ของแต่ละรายการ"
+      },
+      {
+        "label": "ตั้งค่าการรันอย่างปลอดภัย",
+        "detail": "ใช้ private output directory นอก repositories แล้วกำหนด workers, attempts, mode และ estimated cost limit"
+      },
+      {
+        "label": "รันและปกป้องผลลัพธ์",
+        "detail": "รัน bulk-scan และจำกัดสิทธิ์ artifacts แยกแต่ละ repo เพราะอาจมี source excerpts และรายละเอียดช่องโหว่"
+      },
+      {
+        "label": "ตรวจผลทุก Repository",
+        "detail": "ตรวจ manifest, attempt status, coverage, reports และ evidence แล้วกำหนดว่าจะตรวจเพิ่ม แก้ไข หรือตาม coverage gap"
+      }
+    ],
+    "promptTh": "ใช้ Codex Security CLI สแกน repository ที่ได้รับอนุญาตใน [repositories.csv] ตาม full commit SHA ส่งผลไป [private directory นอก repositories] ด้วย workers, mode, max-attempts และ estimated max-cost ที่ระบุ แล้วสรุป status, findings, evidence, coverage gaps และ next action ต่อ repo ห้าม apply fix และอย่าตีความ completed หรือ empty findings ว่าปลอดภัย",
+    "checkTh": "ยืนยันทุก repository และ full SHA ปกป้อง artifacts และตรวจ coverage ค่า exit code 0 หรือไม่พบ finding แปลว่ารันเสร็จตามสถานะ ไม่ใช่หลักฐานว่าโค้ดปลอดภัย"
+  },
+  {
+    "index": 45,
     "slug": "kpi-root-cause-analysis",
     "titleTh": "วิเคราะห์ต้นเหตุของ KPI",
     "titleEn": "Analyze KPI root causes",
@@ -308,7 +364,7 @@
     "checkTh": "อย่าสรุปว่าความสัมพันธ์คือเหตุและผล และให้ Metric owner ตรวจนิยามกับข้อมูลก่อนใช้ตัดสินใจ"
   },
   {
-    "index": 44,
+    "index": 46,
     "slug": "dashboard-builder-monitor",
     "titleTh": "วางแผน Dashboard และการติดตามผล",
     "titleEn": "Plan a dashboard and monitoring workflow",
@@ -336,7 +392,7 @@
     "checkTh": "ทดสอบนิยามและตัวเลขกับข้อมูลต้นทางก่อนอ้างว่า Dashboard พร้อมใช้งานจริง"
   },
   {
-    "index": 45,
+    "index": 47,
     "slug": "strategic-initiative-health-update",
     "titleTh": "สรุปสถานะโครงการเชิงกลยุทธ์",
     "titleEn": "Prepare an initiative health update",
@@ -364,7 +420,7 @@
     "checkTh": "ให้หัวหน้าโครงการยืนยันสถานะ เจ้าของ และรายการค้างก่อนแชร์กับผู้บริหาร"
   },
   {
-    "index": 46,
+    "index": 48,
     "slug": "prioritize-accounts",
     "titleTh": "จัดลำดับความสำคัญของบัญชีลูกค้า",
     "titleEn": "Prioritize accounts",
@@ -392,7 +448,7 @@
     "checkTh": "ให้เจ้าของบัญชียืนยันบริบทและอนุมัติข้อความทุกฉบับก่อนติดต่อกับลูกค้า"
   },
   {
-    "index": 47,
+    "index": 49,
     "slug": "forecast-risk-review",
     "titleTh": "ทบทวนความเสี่ยงของ Forecast",
     "titleEn": "Review forecast risk",
@@ -420,7 +476,7 @@
     "checkTh": "อย่าใช้ Stage เพียงอย่างเดียวตัดสินความมั่นใจ และให้ Sales owner อนุมัติก่อนเปลี่ยน Forecast"
   },
   {
-    "index": 48,
+    "index": 50,
     "slug": "run-student-club-project",
     "titleTh": "บริหารโครงการชมรมนักศึกษา",
     "titleEn": "Run a student club project",
@@ -448,7 +504,7 @@
     "checkTh": "ทีมต้องยืนยันผู้รับผิดชอบ วันที่ และงบประมาณก่อนมอบหมายงาน ส่งข้อความ หรือใช้จ่ายเงินจริง"
   },
   {
-    "index": 49,
+    "index": 51,
     "slug": "analytics-request-agent",
     "titleTh": "กำหนดขอบเขตคำขอวิเคราะห์ข้อมูล",
     "titleEn": "Scope an analytics request",
@@ -476,7 +532,7 @@
     "checkTh": "อย่าสมมตินิยาม Metric หรือ Join logic และให้นักวิเคราะห์ตรวจผลก่อนถือเป็นคำตอบสุดท้าย"
   },
   {
-    "index": 50,
+    "index": 52,
     "slug": "research-to-decision-memo",
     "titleTh": "เปลี่ยนงานวิจัยเป็นบันทึกเพื่อการตัดสินใจ",
     "titleEn": "Turn research into a decision memo",
@@ -504,7 +560,7 @@
     "checkTh": "ตรวจที่มาของทุกข้อเท็จจริงสำคัญและให้ผู้มีอำนาจตัดสินใจเป็นผู้อนุมัติ ไม่ให้ AI ตัดสินใจแทน"
   },
   {
-    "index": 51,
+    "index": 53,
     "slug": "initiative-off-track-brief",
     "titleTh": "เขียนสรุปโครงการที่หลุดแผน",
     "titleEn": "Write an initiative off-track brief",
@@ -532,7 +588,7 @@
     "checkTh": "ให้เจ้าของโครงการยืนยันข้อเท็จจริงและผลกระทบก่อนเปลี่ยนแผนหรือสถานะในระบบ"
   },
   {
-    "index": 52,
+    "index": 54,
     "slug": "refactor-your-codebase",
     "titleTh": "ปรับโครงสร้าง Codebase",
     "titleEn": "Refactor your codebase",
@@ -560,7 +616,7 @@
     "checkTh": "แยก Framework migration, Dependency upgrade และการเปลี่ยน Public API เป็นงานต่างหากเพื่อควบคุมความเสี่ยง"
   },
   {
-    "index": 53,
+    "index": 55,
     "slug": "ios-liquid-glass",
     "titleTh": "ปรับใช้ Liquid Glass",
     "titleEn": "Adopt liquid glass",
@@ -588,7 +644,7 @@
     "checkTh": "ตรวจความอ่านง่าย ความสม่ำเสมอ และ Fallback บนอุปกรณ์รุ่นเก่า อย่าเปลี่ยนทุกพื้นผิวให้เป็น Glass"
   },
   {
-    "index": 54,
+    "index": 56,
     "slug": "native-macos-apps",
     "titleTh": "สร้างแอปสำหรับ macOS",
     "titleEn": "Build for macOS",
@@ -616,7 +672,7 @@
     "checkTh": "ตรวจ Window, Menu, Keyboard, Accessibility และการ Launch จริงก่อนถือว่า Feature พร้อมใช้งาน"
   },
   {
-    "index": 55,
+    "index": 57,
     "slug": "ios-simulator-bug-debugging",
     "titleTh": "แก้บั๊กด้วย iOS Simulator",
     "titleEn": "Debug in iOS simulator",
@@ -644,7 +700,7 @@
     "checkTh": "อย่าแก้จากการคาดเดา ต้องมีหลักฐานก่อนและหลังแก้ พร้อมทดสอบพฤติกรรมที่เกี่ยวข้องไม่ให้ถดถอย"
   },
   {
-    "index": 56,
+    "index": 58,
     "slug": "ios-app-intents",
     "titleTh": "เพิ่ม App Intents สำหรับ iOS",
     "titleEn": "Add iOS app intents",
@@ -672,7 +728,7 @@
     "checkTh": "ตรวจสิทธิ์และข้อมูลที่เปิดให้ระบบภายนอกเห็น พร้อมทดสอบทุก Intent ก่อนเผยแพร่"
   },
   {
-    "index": 57,
+    "index": 59,
     "slug": "macos-telemetry-logs",
     "titleTh": "เพิ่ม Telemetry ให้แอป Mac",
     "titleEn": "Add Mac telemetry",
@@ -700,7 +756,7 @@
     "checkTh": "ห้ามบันทึก Secret, Token, ข้อมูลส่วนบุคคล หรือเนื้อหาเอกสารดิบลง Log"
   },
   {
-    "index": 58,
+    "index": 60,
     "slug": "code-migrations",
     "titleTh": "ย้ายระบบโค้ดอย่างเป็นขั้นตอน",
     "titleEn": "Run code migrations",
@@ -728,7 +784,35 @@
     "checkTh": "อย่ารวมเป็น Big-bang rewrite และต้องแก้ Validation ที่ไม่ผ่านก่อนเดินหน้าสู่ Milestone ถัดไป"
   },
   {
-    "index": 59,
+    "index": 61,
+    "slug": "automate-security-scans-in-ci",
+    "titleTh": "ทำ Security Scan อัตโนมัติใน CI",
+    "titleEn": "Automate security scans in CI",
+    "summaryTh": "เพิ่ม Codex Security CLI ใน CI เพื่อสแกน diff ของ pull request, commit บน default branch หรือ full repository ตาม schedule พร้อมเก็บ findings และ coverage ให้ทีมกำหนดผลต่อการ merge",
+    "categoryTh": "วิทยาศาสตร์และความปลอดภัย",
+    "workflow": [
+      {
+        "label": "เลือก Trigger และ Scope",
+        "detail": "ใช้ diff scan กับ pull request และใช้ full-repository scan กับ commit บน default branch หรือรอบตาม schedule"
+      },
+      {
+        "label": "ป้องกัน Scan Job",
+        "detail": "ใช้ trusted runner และ secret store ที่ได้รับอนุญาต ตัด credential ที่ไม่เกี่ยวข้อง และคำนึงถึงข้อจำกัดของ fork"
+      },
+      {
+        "label": "เก็บหลักฐานสำหรับรีวิว",
+        "detail": "ยืนยัน revision กับ scope ใน scan-manifest.json แล้วเก็บ reports และ coverage เป็น CI artifacts ที่จำกัดสิทธิ์"
+      },
+      {
+        "label": "ค่อย ๆ กำหนด Policy",
+        "detail": "เริ่มแบบไม่ block merge ตรวจเวลาและ cost แล้วจึงตั้ง threshold หลังยืนยัน completion และ coverage"
+      }
+    ],
+    "promptTh": "เพิ่ม Codex Security CLI ใน [CI platform] สำหรับ [trigger] โดยสแกน [pull-request diff หรือ full repository] ที่ commit เป้าหมาย ส่ง API key ผ่าน CI secret store ใช้ trusted runner และไม่ใส่ credential ที่ไม่เกี่ยวข้อง เก็บ manifest, findings, evidence และ coverage เป็น restricted artifacts เริ่มแบบไม่ block merge รายงาน failure หรือ skipped code และเสนอ threshold หลังทีมตรวจคุณภาพ เวลา และ cost",
+    "checkTh": "ให้เจ้าของความปลอดภัยตรวจ runner permissions, trigger scope, manifest, evidence และ coverage งานที่ผ่านหรือไม่พบ finding ไม่ใช่หลักฐานว่าระบบปลอดภัย"
+  },
+  {
+    "index": 62,
     "slug": "audit-course-section-consistency",
     "titleTh": "ตรวจความสอดคล้องของรายวิชาหลายกลุ่ม",
     "titleEn": "Audit course section consistency",
@@ -756,7 +840,7 @@
     "checkTh": "ให้ผู้สอนยืนยันว่าความต่างเป็นข้อผิดพลาดหรือทางเลือกที่อนุมัติแล้วก่อนแก้เอกสารต้นฉบับ"
   },
   {
-    "index": 60,
+    "index": 63,
     "slug": "build-unit-plan-from-sources",
     "titleTh": "สร้างแผนหน่วยการเรียนจากไฟล์ต้นฉบับ",
     "titleEn": "Build a unit plan from source files",
@@ -784,7 +868,7 @@
     "checkTh": "อย่าแต่งข้อกำหนดโรงเรียนหรือข้อมูลผู้เรียนที่ไม่มีในแหล่ง และให้ครูอนุมัติก่อนนำไปใช้"
   },
   {
-    "index": 61,
+    "index": 64,
     "slug": "variance-driver-bridge",
     "titleTh": "สร้าง Variance Bridge อธิบายส่วนต่าง",
     "titleEn": "Build a variance driver bridge",
@@ -812,7 +896,7 @@
     "checkTh": "อย่าเขียนคำอธิบายเป็นข้อสรุปเมื่อข้อมูลรองรับเพียงสมมติฐาน และให้ Finance owner ยืนยันก่อนเผยแพร่"
   },
   {
-    "index": 62,
+    "index": 65,
     "slug": "build-interactive-lesson-resource",
     "titleTh": "สร้างสื่อบทเรียนแบบโต้ตอบ",
     "titleEn": "Build an interactive lesson resource",
@@ -838,89 +922,5 @@
     ],
     "promptTh": "ใช้ @sites สร้าง Interactive lesson สำหรับ [ระดับ/วิชา/หัวข้อ] จากชุดบทเรียนที่อนุมัติ โดยมี Introduction, Guided example, Practice 3 ข้อพร้อม Feedback, Final self-check และ Teacher notes",
     "checkTh": "ครูต้องตรวจเนื้อหาและ Accessibility ทั้งคำตอบถูกและผิดก่อน Publish หรือแชร์กับนักเรียน"
-  },
-  {
-    "index": 63,
-    "slug": "calibrate-assessments",
-    "titleTh": "ปรับมาตรฐานการประเมินให้สอดคล้อง",
-    "titleEn": "Calibrate assessments",
-    "summaryTh": "ใช้ผลงานที่ลบตัวตน Rubric และข้อมูลการให้คะแนน เพื่อตรวจรูปแบบที่อาจไม่สอดคล้องและเสนอการทำ Rubric ให้ชัดขึ้นโดยไม่ตัดสินเกรดแทนครู",
-    "categoryTh": "การศึกษาและอาชีพ",
-    "workflow": [
-      {
-        "label": "ลบข้อมูลระบุตัวตน",
-        "detail": "นำชื่อและข้อมูลส่วนบุคคลออกจาก Submission กับ Grading export ก่อนใช้งาน"
-      },
-      {
-        "label": "กำหนดขอบเขตทบทวน",
-        "detail": "แนบ Rubric, Course outcomes, Calibration rules และ Feedback ตัวอย่าง"
-      },
-      {
-        "label": "สร้าง Calibration workbook",
-        "detail": "ชี้ Score pattern, Inconsistency, Strength, Gap และ Feedback theme พร้อมหลักฐาน"
-      },
-      {
-        "label": "ให้คณาจารย์ตัดสิน",
-        "detail": "ตรวจบริบทและใช้ Pattern ที่ยืนยันแล้วเสนอ Rubric clarification โดยคงกรณีไม่แน่ชัดไว้"
-      }
-    ],
-    "promptTh": "ตรวจ Submission ที่ลบตัวตนแล้วกับ Rubric และ Grading export เพื่อสร้าง Calibration workbook ที่ชี้ Scoring inconsistency, Common strengths/gaps, Feedback themes และ Rubric clarifications พร้อม Evidence",
-    "checkTh": "ห้ามให้ AI กำหนดหรือเปลี่ยนเกรด ทุกข้อสังเกตต้องผ่านการตัดสินของคณาจารย์"
-  },
-  {
-    "index": 64,
-    "slug": "finance-model-cleanup",
-    "titleTh": "ทำความสะอาดและตรวจโมเดลการเงิน",
-    "titleEn": "Clean and review a financial model",
-    "summaryTh": "ตรวจสูตร ลิงก์ การกระทบยอด และสมมติฐานในโมเดลการเงิน พร้อมแก้เฉพาะจุดที่ปลอดภัยและจัดทำ QA memo เรียงตามความรุนแรง",
-    "categoryTh": "การเงินและกลยุทธ์",
-    "workflow": [
-      {
-        "label": "เก็บต้นฉบับ",
-        "detail": "แนบโมเดลและแหล่งข้อมูลโดยรักษาไฟล์เดิมไว้เพื่อเทียบทุกการแก้ไข"
-      },
-      {
-        "label": "ตรวจโครงสร้าง",
-        "detail": "หา Formula risk, Hardcode, Broken link, Circular reference, Period และ Source tie-out"
-      },
-      {
-        "label": "แก้เฉพาะที่ชัด",
-        "detail": "ทำความสะอาดและซ่อมสูตรเมื่อเจตนาแน่นอน โดยไม่เปลี่ยน Business assumption"
-      },
-      {
-        "label": "ส่ง QA memo",
-        "detail": "จัดอันดับปัญหา ระบุ Cell หรือ Tab และส่งคำถามที่ต้องให้ Finance owner ตัดสิน"
-      }
-    ],
-    "promptTh": "ใช้ $spreadsheets ทำความสะอาดและตรวจ [ชื่อโมเดล] โดยตรวจ Formula, Hardcode, Link, Sign, Period, Source tie-out และ Output tabs แก้เฉพาะจุดที่ชัด แล้วส่งไฟล์สำเนากับ QA memo เรียงตาม Severity",
-    "checkTh": "ห้ามเปลี่ยน Business assumption โดยไม่ได้อนุมัติ และให้ Finance owner ตรวจสูตรกับผลลัพธ์สำคัญทุกจุด"
-  },
-  {
-    "index": 65,
-    "slug": "create-classroom-materials-pack",
-    "titleTh": "สร้างชุดสื่อการสอนครบชุด",
-    "titleEn": "Create a classroom materials pack",
-    "summaryTh": "สร้างคู่มือครู ใบงาน เฉลย สรุปสำหรับครอบครัว และรายการอุปกรณ์จากบทเรียนเดียวกัน โดยรักษาคำศัพท์ ตัวอย่าง เวลา และคำสั่งให้ตรงกันทุกไฟล์",
-    "categoryTh": "การศึกษาและอาชีพ",
-    "workflow": [
-      {
-        "label": "ตั้งแหล่งจริงร่วม",
-        "detail": "ใช้ Lesson deck และ Unit plan ที่ทบทวนแล้วร่วมกับ School guidance และ Accessibility needs"
-      },
-      {
-        "label": "สร้างเอกสารทั้งชุด",
-        "detail": "จัดทำ Teacher guide, Student handout, Answer key, Family overview และ Materials checklist"
-      },
-      {
-        "label": "ตรวจความสอดคล้อง",
-        "detail": "เปรียบเทียบคำศัพท์ ตัวอย่าง เวลา คำสั่ง และคำตอบข้ามทุกไฟล์"
-      },
-      {
-        "label": "ให้ครูอนุมัติ",
-        "detail": "ตรวจความถูกต้อง การใช้งาน Accessibility ภาษา และนโยบายก่อนนำไปใช้"
-      }
-    ],
-    "promptTh": "จาก Lesson deck และ Unit plan ที่ทบทวนแล้ว สร้าง Classroom materials pack ได้แก่ Teacher guide, Student handout, Answer key, Family overview และ Materials checklist โดยรักษาคำศัพท์ เวลา และคำสั่งให้ตรงกัน",
-    "checkTh": "เก็บทุกไฟล์เป็น Draft จนกว่าครูจะตรวจความถูกต้อง Accessibility ภาษา และนโยบายครบถ้วน"
   }
 ]

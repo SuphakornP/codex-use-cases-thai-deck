@@ -1,6 +1,50 @@
 [
   {
     "index": 33,
+    "slug": "api-integration-migrations",
+    "workflowEn": [
+      { "label": "Inventory the current setup", "detail": "Map the models, endpoints, prompts, tools, and response shapes used in the repo." },
+      { "label": "Read current guidance", "detail": "Use $openai-docs for target-model guidance, API features, and prompting practices." },
+      { "label": "Migrate in scope", "detail": "Change only what is required and flag behavior or schema choices for human review." },
+      { "label": "Measure before release", "detail": "Compare tests and evals with baseline quality, latency, and cost." }
+    ],
+    "checkEn": "Review official docs, response shapes, tool behavior, eval quality, and cost before rollout."
+  },
+  {
+    "index": 34,
+    "slug": "complete-tasks-from-messages",
+    "workflowEn": [
+      { "label": "Choose the conversation", "detail": "Name the sender or exact thread ChatGPT should review." },
+      { "label": "Extract the request", "detail": "Summarize the ask, missing details, and apps needed before acting." },
+      { "label": "Work across apps", "detail": "Find information, check calendars, or prepare requested items using signed-in sessions." },
+      { "label": "Draft and stop", "detail": "Draft the reply in the original thread and ask before buying, booking, paying, or confirming." }
+    ],
+    "checkEn": "Verify the recipient, final details, price, timing, and cancellation terms before approving any action."
+  },
+  {
+    "index": 35,
+    "slug": "figma-designs-to-code",
+    "workflowEn": [
+      { "label": "Choose the exact frame", "detail": "Link directly to the source-of-truth frame, component, or variant." },
+      { "label": "Read the design context", "detail": "Use the Figma skill to inspect variables, assets, screenshots, and variant details." },
+      { "label": "Fit the existing system", "detail": "Reuse the repo's components, tokens, routing, and data patterns instead of copying reference code." },
+      { "label": "Compare and refine", "detail": "Use Playwright to check spacing, hierarchy, interaction, and responsive behavior against Figma." }
+    ],
+    "checkEn": "Verify variants, asset rights, responsive states, and accessibility against Figma and the design system."
+  },
+  {
+    "index": 36,
+    "slug": "browser-games",
+    "workflowEn": [
+      { "label": "Write the game plan", "detail": "Define the core loop, controls, win and fail states, difficulty, and milestones in PLAN.md." },
+      { "label": "Set working rules", "detail": "Use AGENTS.md to require plan tracking, progress notes, and the right skills." },
+      { "label": "Build gameplay and art", "detail": "Create the game, UI, and assets with saved image prompts for visual consistency." },
+      { "label": "Playtest repeatedly", "detail": "Use Playwright in the browser and refine controls, feedback, difficulty, and layout." }
+    ],
+    "checkEn": "Have real players check controls, states, accessibility, performance, and asset suitability before release."
+  },
+  {
+    "index": 37,
     "slug": "reusable-codex-skills",
     "workflowEn": [
       { "label": "Choose repeatable work", "detail": "Pick one recurring workflow with a strong example of the desired output." },
@@ -11,7 +55,7 @@
     "checkEn": "Test the Skill in one real chat and remove secrets or unsafe commands before sharing it."
   },
   {
-    "index": 34,
+    "index": 38,
     "slug": "iterate-on-difficult-problems",
     "workflowEn": [
       { "label": "Define success", "detail": "Set the target score, evaluation method, and stopping conditions." },
@@ -22,7 +66,7 @@
     "checkEn": "Review both the scores and the real output; an eval may not cover every aspect of quality."
   },
   {
-    "index": 35,
+    "index": 39,
     "slug": "monthly-business-review-narrative",
     "workflowEn": [
       { "label": "Set the reporting period", "detail": "Define the date range, audience, and what counts as a material change." },
@@ -33,7 +77,7 @@
     "checkEn": "Do not invent missing numbers; data owners must confirm material figures before presentation."
   },
   {
-    "index": 36,
+    "index": 40,
     "slug": "cfo-board-reporting-pack",
     "workflowEn": [
       { "label": "Set the scope", "detail": "Define the reporting period, audience, workstreams, and slides to update." },
@@ -44,40 +88,7 @@
     "checkEn": "Data owners must confirm every key figure, assumption, and risk before the reporting pack is published."
   },
   {
-    "index": 37,
-    "slug": "remediate-vulnerability-backlog",
-    "workflowEn": [
-      { "label": "Choose one finding", "detail": "Use an authorized report or ticket with clear scope and impact." },
-      { "label": "Confirm the issue", "detail": "Verify the vulnerable path, or prove it is already fixed, before changing code." },
-      { "label": "Make the smallest fix", "detail": "Use $codex-security:fix-finding for a focused patch and add a regression test." },
-      { "label": "Prove the result", "detail": "Test the original attack path and normal behavior, and document remaining uncertainty." }
-    ],
-    "checkEn": "Work only on authorized systems, and have a security expert review the patch and evidence before release."
-  },
-  {
-    "index": 38,
-    "slug": "scan-code-changes-for-security",
-    "workflowEn": [
-      { "label": "Define the change set", "detail": "Choose the authorized PR, commit, branch diff, or working tree to review." },
-      { "label": "Name risk areas", "detail": "Highlight surfaces such as auth, user input, file paths, networking, or secrets." },
-      { "label": "Scan and validate", "detail": "Use $codex-security:security-diff-scan to separate evidenced flaws from suspicions." },
-      { "label": "Review before fixing", "detail": "Inspect affected lines, evidence, and proof gaps before opening separate remediation work." }
-    ],
-    "checkEn": "A person must confirm real reachability and impact before prioritizing or fixing each finding."
-  },
-  {
-    "index": 39,
-    "slug": "dependency-incident-audits",
-    "workflowEn": [
-      { "label": "Verify the advisory", "detail": "Separate official-source facts from unconfirmed reports or commentary." },
-      { "label": "Set evidence criteria", "detail": "Define what would prove or disprove use of an affected package and version." },
-      { "label": "Audit read-only", "detail": "Inspect manifests, lockfiles, CI workflows, and scripts without installing or running lifecycle code." },
-      { "label": "Classify the evidence", "detail": "Mark results confirmed, needs review, or not affected, with severity and next steps." }
-    ],
-    "checkEn": "Do not run a possibly compromised package or script; seek approval before updates or credential cleanup."
-  },
-  {
-    "index": 40,
+    "index": 41,
     "slug": "meeting-prep-briefs",
     "workflowEn": [
       { "label": "Identify the meeting", "detail": "Provide the meeting name, date, attendees, and desired outcome." },
@@ -88,7 +99,7 @@
     "checkEn": "Check permissions and sensitive information before sharing; do not send messages or edit documents without approval."
   },
   {
-    "index": 41,
+    "index": 42,
     "slug": "update-documentation",
     "workflowEn": [
       { "label": "Point to the change", "detail": "Provide the branch, PR, commit, or files that introduced the new behavior." },
@@ -99,7 +110,7 @@
     "checkEn": "Ensure unreleased roadmap details and internal customer information do not enter public documentation."
   },
   {
-    "index": 42,
+    "index": 43,
     "slug": "native-ios-apps",
     "workflowEn": [
       { "label": "Define the starting point", "detail": "State whether the project is new or existing, plus devices and deployment target." },
@@ -110,7 +121,19 @@
     "checkEn": "Verify the build and core flows in Simulator, including accessibility and target-device behavior."
   },
   {
-    "index": 43,
+    "index": 44,
+    "slug": "scan-multiple-repositories",
+    "workflowEn": [
+      { "label": "Prepare exact inventory", "detail": "List a small authorized set with a unique ID, repository URL, and full commit SHA for each target." },
+      { "label": "Set safe run controls", "detail": "Use a private output directory outside the repositories. Choose workers, attempts, mode, and an estimated cost limit." },
+      { "label": "Run and protect results", "detail": "Run bulk-scan and keep its per-repository artifacts private because they can contain source and vulnerability details." },
+      { "label": "Review every result", "detail": "Check manifest, attempt status, coverage, reports, and evidence. Assign investigation, remediation, or coverage follow-up." }
+    ],
+    "promptEn": "Use the Codex Security CLI to scan the authorized repositories listed in [repositories.csv] at their full commit SHAs. Write output to [private directory outside the repositories], using [workers], [mode], [max attempts], and [estimated max cost] settings. For each repository, summarize status, findings, supporting evidence, coverage gaps, and the next action. Treat a completed run or empty findings list as coverage status, not proof that the code is secure. Do not apply fixes.",
+    "checkEn": "Confirm every repository and full SHA, protect artifacts, and review coverage. Exit code 0 or no findings does not prove the code is secure."
+  },
+  {
+    "index": 45,
     "slug": "kpi-root-cause-analysis",
     "workflowEn": [
       { "label": "Lock the KPI definition", "detail": "Set the formula, comparison period, expected direction, and decision this analysis supports." },
@@ -121,7 +144,7 @@
     "checkEn": "Do not treat correlation as causation; the metric owner must validate definitions and data before decisions."
   },
   {
-    "index": 44,
+    "index": 46,
     "slug": "dashboard-builder-monitor",
     "workflowEn": [
       { "label": "Start with the decision", "detail": "Define the user, question, decision, and review cadence before choosing charts." },
@@ -132,7 +155,7 @@
     "checkEn": "Test metric definitions and numbers against source data before calling the dashboard production-ready."
   },
   {
-    "index": 45,
+    "index": 47,
     "slug": "strategic-initiative-health-update",
     "workflowEn": [
       { "label": "Set the reporting cadence", "detail": "Define the period, audience, and standard status language used each time." },
@@ -143,7 +166,7 @@
     "checkEn": "The initiative lead should confirm statuses, owners, and open items before sharing with leadership."
   },
   {
-    "index": 46,
+    "index": 48,
     "slug": "prioritize-accounts",
     "workflowEn": [
       { "label": "Set the criteria", "detail": "Define the segment, time horizon, and weights for urgency, risk, or growth potential." },
@@ -154,7 +177,7 @@
     "checkEn": "Account owners must confirm context and approve every message before contacting customers."
   },
   {
-    "index": 47,
+    "index": 49,
     "slug": "forecast-risk-review",
     "workflowEn": [
       { "label": "Set the forecast period", "detail": "Define the time window, deals in scope, and meanings of Commit and Upside." },
@@ -165,7 +188,7 @@
     "checkEn": "Do not judge confidence from stage alone; the sales owner must approve every forecast change."
   },
   {
-    "index": 48,
+    "index": 50,
     "slug": "run-student-club-project",
     "workflowEn": [
       { "label": "Gather project inputs", "detail": "Bring together the brief, shared folder, notes, budget, member availability, and university rules." },
@@ -176,7 +199,7 @@
     "checkEn": "The team must confirm owners, dates, and budget before assigning work, messaging, or spending."
   },
   {
-    "index": 49,
+    "index": 51,
     "slug": "analytics-request-agent",
     "workflowEn": [
       { "label": "Extract the business question", "detail": "Separate the decision the requester faces from their suggested chart or answer." },
@@ -187,7 +210,7 @@
     "checkEn": "Do not assume metric definitions or join logic; an analyst must review the final result."
   },
   {
-    "index": 50,
+    "index": 52,
     "slug": "research-to-decision-memo",
     "workflowEn": [
       { "label": "Define the decision", "detail": "Name the options, decision maker, deadline, criteria, and approval boundary." },
@@ -198,7 +221,7 @@
     "checkEn": "Verify every material fact and leave the final approval to the authorized decision maker, not the AI."
   },
   {
-    "index": 51,
+    "index": 53,
     "slug": "initiative-off-track-brief",
     "workflowEn": [
       { "label": "Compare plan and actuals", "detail": "Combine the plan, tracker, KPIs, model, notes, and owner updates to find the gap." },
@@ -209,7 +232,7 @@
     "checkEn": "Project owners must confirm facts and impact before changing the plan or system status."
   },
   {
-    "index": 52,
+    "index": 54,
     "slug": "refactor-your-codebase",
     "workflowEn": [
       { "label": "Map the problem areas", "detail": "Find dead code, duplication, large modules, and legacy patterns, plus contracts to preserve." },
@@ -220,7 +243,7 @@
     "checkEn": "Keep framework migrations, dependency upgrades, and public API changes as separate risk-controlled work."
   },
   {
-    "index": 53,
+    "index": 55,
     "slug": "ios-liquid-glass",
     "workflowEn": [
       { "label": "Set the platform baseline", "detail": "Define iOS 26, Xcode 26, and fallback behavior for older devices." },
@@ -231,7 +254,7 @@
     "checkEn": "Check readability, consistency, and older-device fallbacks; do not turn every surface into glass."
   },
   {
-    "index": 54,
+    "index": 56,
     "slug": "native-macos-apps",
     "workflowEn": [
       { "label": "Choose the scene model", "detail": "Select a main window, Settings, MenuBarExtra, or utility window to fit the product." },
@@ -242,7 +265,7 @@
     "checkEn": "Verify windows, menus, keyboard use, accessibility, and real launch behavior before calling the feature ready."
   },
   {
-    "index": 55,
+    "index": 57,
     "slug": "ios-simulator-bug-debugging",
     "workflowEn": [
       { "label": "Fix the environment", "detail": "Select the correct project, scheme, and Simulator and keep them consistent throughout." },
@@ -253,7 +276,7 @@
     "checkEn": "Do not fix by guesswork; capture before-and-after evidence and test related behavior for regressions."
   },
   {
-    "index": 56,
+    "index": 58,
     "slug": "ios-app-intents",
     "workflowEn": [
       { "label": "Choose a valuable action", "detail": "Pick a task users should complete without opening and tapping through the whole app." },
@@ -264,7 +287,7 @@
     "checkEn": "Review permissions and exposed data, then test every intent before publishing."
   },
   {
-    "index": 57,
+    "index": 59,
     "slug": "macos-telemetry-logs",
     "workflowEn": [
       { "label": "Choose one flow", "detail": "Select a window, sidebar, command, or sync path that code inspection cannot fully explain." },
@@ -275,7 +298,7 @@
     "checkEn": "Never log secrets, tokens, personal data, or raw document contents."
   },
   {
-    "index": 58,
+    "index": 60,
     "slug": "code-migrations",
     "workflowEn": [
       { "label": "Map the current system", "detail": "Inventory routing, data, auth, config, builds, tests, deployment, and external contracts." },
@@ -286,7 +309,19 @@
     "checkEn": "Avoid a big-bang rewrite and resolve failed validation before moving to the next milestone."
   },
   {
-    "index": 59,
+    "index": 61,
+    "slug": "automate-security-scans-in-ci",
+    "workflowEn": [
+      { "label": "Choose trigger and scope", "detail": "Use a diff scan for pull requests. Use a full-repository scan for default-branch commits or a recurring schedule." },
+      { "label": "Secure the job", "detail": "Use an authorized trusted runner and secret store. Exclude unrelated credentials and account for untrusted fork restrictions." },
+      { "label": "Preserve review evidence", "detail": "Confirm revision and scope in scan-manifest.json. Save reports and coverage as access-controlled CI artifacts." },
+      { "label": "Adopt policy gradually", "detail": "Start non-blocking, review duration and cost, then set merge thresholds only after checking completion and coverage." }
+    ],
+    "promptEn": "Add the Codex Security CLI to [CI platform] for [trigger]. Scan [pull-request diff or full repository] at the intended commit, provide the API key through the CI secret store, and run only on a trusted runner with unrelated credentials removed. Preserve the manifest, findings, evidence, and coverage as restricted artifacts. Start non-blocking, report failures or skipped code clearly, and recommend merge thresholds only after the team reviews scan quality, duration, and cost.",
+    "checkEn": "A security owner must verify runner permissions, trigger scope, manifest, evidence, and coverage. A passed or empty scan is not security proof."
+  },
+  {
+    "index": 62,
     "slug": "audit-course-section-consistency",
     "workflowEn": [
       { "label": "Set shared standards", "detail": "Gather learning outcomes, department requirements, and policies that apply to all sections." },
@@ -297,7 +332,7 @@
     "checkEn": "Instructors must decide whether each difference is an error or an approved choice before source files change."
   },
   {
-    "index": 60,
+    "index": 63,
     "slug": "build-unit-plan-from-sources",
     "workflowEn": [
       { "label": "Select approved sources", "detail": "Gather current standards, pacing guides, calendars, prior lessons, and assessment guidance." },
@@ -308,7 +343,7 @@
     "checkEn": "Do not invent school requirements or student facts; the teacher must approve the plan before use."
   },
   {
-    "index": 61,
+    "index": 64,
     "slug": "variance-driver-bridge",
     "workflowEn": [
       { "label": "Define the comparison", "detail": "Set versions, periods, materiality, sign convention, and financial lines in scope." },
@@ -319,7 +354,7 @@
     "checkEn": "Do not present a hypothesis as a conclusion; finance owners must confirm explanations before publication."
   },
   {
-    "index": 62,
+    "index": 65,
     "slug": "build-interactive-lesson-resource",
     "workflowEn": [
       { "label": "Confirm source content", "detail": "Use an approved lesson package, practice questions, feedback rules, and accessibility requirements." },
@@ -328,38 +363,5 @@
       { "label": "Check accessibility", "detail": "Review keyboard use, labels, contrast, responsiveness, logic, and content before approval." }
     ],
     "checkEn": "The teacher must review content and accessibility for correct and incorrect paths before publishing or sharing."
-  },
-  {
-    "index": 63,
-    "slug": "calibrate-assessments",
-    "workflowEn": [
-      { "label": "Remove identifying data", "detail": "Strip names and personal information from submissions and grading exports." },
-      { "label": "Set the review scope", "detail": "Attach the rubric, course outcomes, calibration rules, and example feedback." },
-      { "label": "Build a calibration workbook", "detail": "Show score patterns, inconsistencies, strengths, gaps, and feedback themes with evidence." },
-      { "label": "Let faculty decide", "detail": "Review context and propose rubric clarification only from confirmed patterns." }
-    ],
-    "checkEn": "AI must not assign or change grades; faculty must judge every observation."
-  },
-  {
-    "index": 64,
-    "slug": "finance-model-cleanup",
-    "workflowEn": [
-      { "label": "Preserve the original", "detail": "Attach the model and sources while keeping the original file for comparison." },
-      { "label": "Audit the structure", "detail": "Find risky formulas, hardcodes, broken links, circular references, period issues, and tie-outs." },
-      { "label": "Fix only clear issues", "detail": "Clean and repair formulas only when intent is certain, without changing business assumptions." },
-      { "label": "Deliver a QA memo", "detail": "Prioritize issues, name cells or tabs, and list questions for the finance owner." }
-    ],
-    "checkEn": "Never change business assumptions without approval; finance owners must review formulas and key outputs."
-  },
-  {
-    "index": 65,
-    "slug": "create-classroom-materials-pack",
-    "workflowEn": [
-      { "label": "Set shared source material", "detail": "Use a reviewed lesson deck and unit plan with school guidance and accessibility needs." },
-      { "label": "Create the full pack", "detail": "Draft a teacher guide, student handout, answer key, family overview, and materials checklist." },
-      { "label": "Check consistency", "detail": "Compare terminology, examples, timing, instructions, and answers across every file." },
-      { "label": "Have the teacher approve", "detail": "Review accuracy, usability, accessibility, language, and policy before use." }
-    ],
-    "checkEn": "Keep every file as a draft until a teacher has reviewed accuracy, accessibility, language, and policy."
   }
 ]

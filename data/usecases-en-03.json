@@ -1,6 +1,39 @@
 [
   {
     "index": 66,
+    "slug": "calibrate-assessments",
+    "workflowEn": [
+      { "label": "Remove identifying data", "detail": "Strip names and personal information from submissions and grading exports." },
+      { "label": "Set the review scope", "detail": "Attach the rubric, course outcomes, calibration rules, and example feedback." },
+      { "label": "Build a calibration workbook", "detail": "Show score patterns, inconsistencies, strengths, gaps, and feedback themes with evidence." },
+      { "label": "Let faculty decide", "detail": "Review context and propose rubric clarification only from confirmed patterns." }
+    ],
+    "checkEn": "AI must not assign or change grades; faculty must judge every observation."
+  },
+  {
+    "index": 67,
+    "slug": "finance-model-cleanup",
+    "workflowEn": [
+      { "label": "Preserve the original", "detail": "Attach the model and sources while keeping the original file for comparison." },
+      { "label": "Audit the structure", "detail": "Find risky formulas, hardcodes, broken links, circular references, period issues, and tie-outs." },
+      { "label": "Fix only clear issues", "detail": "Clean and repair formulas only when intent is certain, without changing business assumptions." },
+      { "label": "Deliver a QA memo", "detail": "Prioritize issues, name cells or tabs, and list questions for the finance owner." }
+    ],
+    "checkEn": "Never change business assumptions without approval; finance owners must review formulas and key outputs."
+  },
+  {
+    "index": 68,
+    "slug": "create-classroom-materials-pack",
+    "workflowEn": [
+      { "label": "Set shared source material", "detail": "Use a reviewed lesson deck and unit plan with school guidance and accessibility needs." },
+      { "label": "Create the full pack", "detail": "Draft a teacher guide, student handout, answer key, family overview, and materials checklist." },
+      { "label": "Check consistency", "detail": "Compare terminology, examples, timing, instructions, and answers across every file." },
+      { "label": "Have the teacher approve", "detail": "Review accuracy, usability, accessibility, language, and policy before use." }
+    ],
+    "checkEn": "Keep every file as a draft until a teacher has reviewed accuracy, accessibility, language, and policy."
+  },
+  {
+    "index": 69,
     "slug": "create-lesson-deck",
     "workflowEn": [
       { "label": "Gather materials", "detail": "Prepare the lesson plan, template, approved images, and accessibility requirements." },
@@ -11,7 +44,7 @@
     "checkEn": "Have the instructor verify accuracy, learning sequence, accessibility, and image rights before teaching."
   },
   {
-    "index": 67,
+    "index": 70,
     "slug": "stalled-deal-diagnosis",
     "workflowEn": [
       { "label": "Gather the history", "detail": "Import stage history, call notes, emails, and any security, legal, or procurement issues." },
@@ -22,7 +55,7 @@
     "checkEn": "Have the deal owner validate the evidence and approve every message before customer contact or CRM changes."
   },
   {
-    "index": 68,
+    "index": 71,
     "slug": "business-impact-readout",
     "workflowEn": [
       { "label": "Frame the question", "detail": "State the initiative, target outcome, measurement period, and decision to be made." },
@@ -33,7 +66,7 @@
     "checkEn": "Have an analyst or experiment owner verify the figures, calculations, and confidence level before deciding."
   },
   {
-    "index": 69,
+    "index": 72,
     "slug": "scenario-tradeoff-model",
     "workflowEn": [
       { "label": "Define the options", "detail": "State the decision, available options, time horizon, and key comparison criteria." },
@@ -44,7 +77,7 @@
     "checkEn": "Have the data owners confirm every assumption and cost before presenting the comparison in a meeting."
   },
   {
-    "index": 70,
+    "index": 73,
     "slug": "organize-lesson-unit-folder",
     "workflowEn": [
       { "label": "Identify core files", "detail": "Mark which files are authoritative, which are drafts, and which must not be moved." },
@@ -55,7 +88,7 @@
     "checkEn": "Confirm no files were deleted, links still work, and current versions remain easy to find after organizing."
   },
   {
-    "index": 71,
+    "index": 74,
     "slug": "organize-semester-workspace",
     "workflowEn": [
       { "label": "Gather official materials", "detail": "Collect each course's syllabus, assignments, readings, calendar, and existing folders." },
@@ -66,7 +99,7 @@
     "checkEn": "Verify every deadline against official documents, and do not choose a date when sources conflict."
   },
   {
-    "index": 72,
+    "index": 75,
     "slug": "plan-budget-and-schedule",
     "workflowEn": [
       { "label": "Prepare the inputs", "detail": "Gather calendars, work shifts, commitments, income, expenses, and bills for the planning period." },
@@ -77,7 +110,7 @@
     "checkEn": "Verify amounts and due dates at the source, and remove account numbers or unnecessary financial details before uploading."
   },
   {
-    "index": 73,
+    "index": 76,
     "slug": "prepare-committee-packet",
     "workflowEn": [
       { "label": "Frame the decision", "detail": "State the question, governing rules, evaluation criteria, decision owner, and deadline." },
@@ -88,7 +121,7 @@
     "checkEn": "Verify citations, governing rules, confidential data, and fair treatment of differing views before distribution."
   },
   {
-    "index": 74,
+    "index": 77,
     "slug": "refresh-forecast-and-plan",
     "workflowEn": [
       { "label": "Prepare the model", "detail": "Attach the operating model, latest actuals, approved assumptions, owner inputs, and prior forecast." },
@@ -99,7 +132,7 @@
     "checkEn": "Have the plan owner verify formulas and data links, then approve every changed assumption before sharing the forecast."
   },
   {
-    "index": 75,
+    "index": 78,
     "slug": "strategic-account-plan",
     "workflowEn": [
       { "label": "Gather account signals", "detail": "Attach account records, calls, email threads, usage notes, and the previous plan." },
@@ -110,7 +143,7 @@
     "checkEn": "Have the account owner confirm the data and customer-safe content before updating CRM or sharing externally."
   },
   {
-    "index": 76,
+    "index": 79,
     "slug": "refresh-course-materials",
     "workflowEn": [
       { "label": "Set sources of truth", "detail": "Gather the syllabus, outcomes, slides, readings, assignments, rubrics, and calendar; mark official versions." },
@@ -121,7 +154,7 @@
     "checkEn": "Have the instructor verify sources, policies, accessibility, and every recommendation requiring academic judgment."
   },
   {
-    "index": 77,
+    "index": 80,
     "slug": "revise-lesson-package",
     "workflowEn": [
       { "label": "Sort the feedback", "detail": "Gather feedback, the approved file list, and any points needing confirmation before edits." },
@@ -132,7 +165,7 @@
     "checkEn": "Have the instructor confirm that examples, instructions, and answers match across all files before using the new version."
   },
   {
-    "index": 78,
+    "index": 81,
     "slug": "synthesize-research-evidence",
     "workflowEn": [
       { "label": "Define the evidence set", "detail": "Gather approved papers, notes, methods, prior proposals, and funder guidance." },
@@ -143,7 +176,7 @@
     "checkEn": "Verify every citation against the original and preserve the study scope, population, methods, and uncertainty."
   },
   {
-    "index": 79,
+    "index": 82,
     "slug": "track-course-engagement",
     "workflowEn": [
       { "label": "Prepare de-identified data", "detail": "Use only approved, de-identified exports with metric definitions and a reporting period." },
@@ -154,7 +187,7 @@
     "checkEn": "Reconcile totals and spot-check source records; confirm date range, section, and metric definitions before use."
   },
   {
-    "index": 80,
+    "index": 83,
     "slug": "track-job-applications",
     "workflowEn": [
       { "label": "Gather your evidence", "detail": "Prepare your resume, portfolio, and verified experience notes after removing sensitive details." },
@@ -165,7 +198,7 @@
     "checkEn": "Verify every resume statement and interview answer against your real experience before using or submitting it."
   },
   {
-    "index": 81,
+    "index": 84,
     "slug": "ios-swiftui-view-refactor",
     "workflowEn": [
       { "label": "Set the scope", "detail": "Choose one screen file and note the behavior, layout, navigation, and business rules to preserve." },
@@ -176,7 +209,7 @@
     "checkEn": "Review the diff and build or test results to confirm business logic, navigation, analytics, and appearance are unchanged."
   },
   {
-    "index": 82,
+    "index": 85,
     "slug": "build-student-website",
     "workflowEn": [
       { "label": "Define the users", "detail": "State the target audience, the site's main job, available content, and success criteria." },
@@ -187,7 +220,7 @@
     "checkEn": "Have the project owner verify content, links, image rights, privacy, and form-data destinations before publishing."
   },
   {
-    "index": 83,
+    "index": 86,
     "slug": "build-exam-study-system",
     "workflowEn": [
       { "label": "Define the exam scope", "detail": "Gather learning objectives, instructor guidance, notes, readings, exercises, and past quizzes." },
@@ -198,7 +231,7 @@
     "checkEn": "Verify exam scope, questions, and answers against official materials, and flag topics the instructor has not confirmed."
   },
   {
-    "index": 84,
+    "index": 87,
     "slug": "build-and-deploy-internal-apps",
     "workflowEn": [
       { "label": "Choose the core task", "detail": "Name the user, one workflow, its sources, and what should persist between sessions." },
@@ -209,7 +242,7 @@
     "checkEn": "Review data and access; do not use Sites for PHI, payment-card data, or financial transactions."
   },
   {
-    "index": 85,
+    "index": 88,
     "slug": "draft-prds-from-sources",
     "workflowEn": [
       { "label": "Identify the sources", "detail": "Point to the Linear project, Slack thread, Drive, or Notion content to use as evidence." },
@@ -220,7 +253,7 @@
     "checkEn": "Have the PM and subject owners confirm requirements, decisions, and sources before sharing or updating work systems."
   },
   {
-    "index": 86,
+    "index": 89,
     "slug": "follow-goals",
     "workflowEn": [
       { "label": "Define the outcome", "detail": "Set the objective, boundaries that must not change, and verifiable completion criteria." },
@@ -231,7 +264,7 @@
     "checkEn": "Set a clear stopping condition and test evidence before starting, and review status when scope or risk changes."
   },
   {
-    "index": 87,
+    "index": 90,
     "slug": "project-teammate",
     "workflowEn": [
       { "label": "Scope one project", "detail": "Define one goal and only the messages, email, calendar, documents, and trackers relevant to it." },
@@ -242,7 +275,7 @@
     "checkEn": "Keep the task project-scoped and approve every send, edit, schedule, share, or commitment."
   },
   {
-    "index": 88,
+    "index": 91,
     "slug": "build-an-ai-tour-guide",
     "workflowEn": [
       { "label": "Scope one workflow", "detail": "Choose one narrow flow, its starting states, and the documentation the tour needs." },
@@ -253,7 +286,7 @@
     "checkEn": "Confirm the user performs every action, state is reread after each step, and auth and permission checks remain intact."
   },
   {
-    "index": 89,
+    "index": 92,
     "slug": "track-bills-subscriptions-and-spending",
     "workflowEn": [
       { "label": "Connect Finances on web", "detail": "Add read-only @Finances on web; desktop is unsupported." },
@@ -264,7 +297,7 @@
     "checkEn": "Verify all figures; Finances cannot move money, pay bills, cancel services, trade, or change settings."
   },
   {
-    "index": 90,
+    "index": 93,
     "slug": "ai-app-evals",
     "workflowEn": [
       { "label": "Choose one behavior", "detail": "Define one user promise, such as answer quality, grounding, or tool-call correctness." },
@@ -275,7 +308,7 @@
     "checkEn": "Ensure fixtures contain no sensitive data, assertions test real behavior, and product failures are not hidden by relaxed thresholds."
   },
   {
-    "index": 91,
+    "index": 94,
     "slug": "user-stories-to-ui-mocks",
     "workflowEn": [
       { "label": "Gather user voices", "detail": "Point to Slack, Linear, Drive, and research notes that explain the problem and context." },
@@ -286,7 +319,7 @@
     "checkEn": "Have users and the design team confirm the mock reflects the real problem and follows the design system before development."
   },
   {
-    "index": 92,
+    "index": 95,
     "slug": "slack-action-triage",
     "workflowEn": [
       { "label": "Set the scope", "detail": "Specify the time period, workstream, people, or channels to review." },
@@ -297,7 +330,7 @@
     "checkEn": "Open the source thread to confirm the item remains unresolved, then check the recipient and tone before sending any message."
   },
   {
-    "index": 93,
+    "index": 96,
     "slug": "react-native-expo-apps",
     "workflowEn": [
       { "label": "Inspect the project", "detail": "Have Codex determine whether this is a new Expo app or existing project and define one core workflow." },
@@ -308,7 +341,7 @@
     "checkEn": "Verify results on a device or simulator and check package compatibility before creating a dev client or production build."
   },
   {
-    "index": 94,
+    "index": 97,
     "slug": "agent-friendly-clis",
     "workflowEn": [
       { "label": "Choose a repeat task", "detail": "Define the CLI's first task and its source of truth, such as API docs, an export, database, or script." },
@@ -319,7 +352,7 @@
     "checkEn": "Do not put secrets in the chat, and ensure write commands require explicit approval before use on real data."
   },
   {
-    "index": 95,
+    "index": 98,
     "slug": "verified-operations-workflows",
     "workflowEn": [
       { "label": "Define the scope", "detail": "Specify the goal, inputs, approval source, runner, and artifact that will prove the result." },
@@ -330,7 +363,7 @@
     "checkEn": "Stop before irreversible actions or scope expansion, and have the owner review outcome evidence after the run."
   },
   {
-    "index": 96,
+    "index": 99,
     "slug": "event-launch-playbooks",
     "workflowEn": [
       { "label": "Gather planning sources", "detail": "Identify planning threads, approved documents, templates, and calendar deadlines." },
@@ -341,7 +374,7 @@
     "checkEn": "Ensure public content contains no internal operational details and every date, owner, and approval has a verified source."
   },
   {
-    "index": 97,
+    "index": 100,
     "slug": "chatgpt-apps",
     "workflowEn": [
       { "label": "Choose the core outcome", "detail": "Define one task the MCP-backed plugin should complete in ChatGPT and limit it to 3-5 tools." },
@@ -352,7 +385,7 @@
     "checkEn": "Test MCP server payloads and conversation flow in ChatGPT; add OAuth only for user data or write actions."
   },
   {
-    "index": 98,
+    "index": 101,
     "slug": "audit-workflow",
     "workflowEn": [
       { "label": "Frame the process", "detail": "Define users, inputs, outputs, scope, review date, and workflow constraints." },
@@ -363,7 +396,7 @@
     "checkEn": "Have process owners review permissions, exception paths, irreversible actions, and ownership before automation."
   },
   {
-    "index": 99,
+    "index": 102,
     "slug": "launch-campaign-kit",
     "workflowEn": [
       { "label": "Gather launch inputs", "detail": "Attach approved launch plans, product notes, trackers, creative briefs, pages, and discussions." },
@@ -374,7 +407,7 @@
     "checkEn": "Verify claims against product sources, separate public copy from internal data, and get product, legal, and brand approval."
   },
   {
-    "index": 100,
+    "index": 103,
     "slug": "consolidate-spreadsheets",
     "workflowEn": [
       { "label": "Define joining rules", "detail": "Specify the join key, duplicate rule, period definitions, targets, and required output views." },
@@ -385,7 +418,7 @@
     "checkEn": "Verify formulas, join mismatches, and assumptions against originals whenever source files or reporting rules change."
   },
   {
-    "index": 101,
+    "index": 104,
     "slug": "weekly-work-summary",
     "workflowEn": [
       { "label": "Define the week", "detail": "Specify the date range, audience, and level of detail for the report." },
