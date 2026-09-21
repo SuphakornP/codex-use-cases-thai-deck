@@ -40,17 +40,27 @@ test("server-renders the complete bilingual presentation shell", async () => {
   assert.doesNotMatch(html, /codex-preview/i);
 });
 
-test("generated deck data contains 102 complete bilingual use cases", async () => {
+test("generated deck data contains 105 complete bilingual use cases", async () => {
   const source = await readFile(new URL("../data/usecases-data.js", import.meta.url), "utf8");
   const context = { window: {} };
   vm.runInNewContext(source, context);
   const items = context.window.USE_CASES;
 
-  assert.equal(items.length, 102);
+  assert.equal(items.length, 105);
   assert.deepEqual(
     Array.from(items, (item) => item.index),
-    Array.from({ length: 102 }, (_, index) => index),
+    Array.from({ length: 105 }, (_, index) => index),
   );
+  const slugs = new Set(items.map((item) => item.slug));
+  for (const slug of [
+    "find-vulnerabilities-in-your-code",
+    "fix-a-finding-from-your-security-scan",
+    "scan-multiple-repositories",
+    "automate-security-scans-in-ci",
+  ]) {
+    assert.ok(slugs.has(slug), `${slug}: new official use case must be present`);
+  }
+  assert.equal(slugs.has("make-granular-ui-changes"), false);
 
   for (const item of items) {
     for (const key of [

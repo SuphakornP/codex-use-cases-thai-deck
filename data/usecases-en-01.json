@@ -34,182 +34,6 @@
   },
   {
     "index": 3,
-    "slug": "daily-work-brief",
-    "workflowEn": [
-      { "label": "Connect work context", "detail": "Name the messaging, email, calendar, document, and tracker sources; surface any access gaps." },
-      { "label": "Build the brief", "detail": "Summarize changes, decisions, deadlines, replies, blockers, and what can wait, with source links." },
-      { "label": "Run the heartbeat", "detail": "Compare hourly checks with prior updates, surface only meaningful changes, and stay quiet otherwise." },
-      { "label": "Delegate deliberately", "detail": "On desktop, create a separate project teammate only when asked and share only needed context." }
-    ],
-    "checkEn": "Verify the schedule and sources; approve new tasks, sends, edits, schedules, or commitments."
-  },
-  {
-    "index": 4,
-    "slug": "discover-protein-folding-architectures",
-    "workflowEn": [
-      { "label": "Set a hypothesis", "detail": "Define a falsifiable question, a working baseline, and a measurable benchmark." },
-      { "label": "Build a small prototype", "detail": "Ask Codex for the smallest change, then run unit tests and microbenchmarks before training." },
-      { "label": "Run experiment loops", "detail": "Record metrics, runtime, memory, and failure modes after every benchmark run." },
-      { "label": "Review the evidence", "detail": "Decide whether to keep, revert, or refine the idea without claiming more than the results show." }
-    ],
-    "checkEn": "Have a domain expert review the method, matched comparisons, and replication before making general claims."
-  },
-  {
-    "index": 5,
-    "slug": "analyze-data-export",
-    "workflowEn": [
-      { "label": "Set the approved source", "detail": "Attach a CSV or spreadsheet or paste one exact Drive or Sheets URL; inspect columns, dates, and unmatched rows." },
-      { "label": "Build a private dashboard", "detail": "Use @Sites for charts, filters, source freshness, and calculations without publishing or sharing." },
-      { "label": "Schedule source checks", "detail": "Have a Work task check the source, update on changes, and stay quiet when nothing material changed." },
-      { "label": "Review before sharing", "detail": "Verify figures and data-quality issues, then approve recipients or any visibility change." }
-    ],
-    "checkEn": "Verify metrics, missing or unmatched rows, the scheduled source, and access before sharing or publishing."
-  },
-  {
-    "index": 6,
-    "slug": "feedback-synthesis",
-    "workflowEn": [
-      { "label": "Set the review scope", "detail": "Name the product area, time range, and Slack, GitHub, Linear, Drive, support, or research sources." },
-      { "label": "Cluster with evidence", "detail": "Create a Sheet or Doc with source IDs, affected users, confidence, implications, and open questions." },
-      { "label": "Review the meaning", "detail": "Split broad themes and treat counts as mentions in the sample, not product-wide incidence." },
-      { "label": "Prepare follow-ups", "detail": "Draft an update or issue from approved themes; do not post, create, or assign it without approval." }
-    ],
-    "checkEn": "Protect private feedback, trace every theme to evidence, and do not treat mention counts as incidence rates."
-  },
-  {
-    "index": 7,
-    "slug": "clean-messy-data",
-    "workflowEn": [
-      { "label": "Attach the original", "detail": "Attach or reference the CSV or spreadsheet that needs cleaning." },
-      { "label": "Describe the issues", "detail": "Call out date formats, currencies, missing values, duplicates, or mixed-in summary rows." },
-      { "label": "Create a clean copy", "detail": "Request a new cleaned file and data-quality note without changing the original." },
-      { "label": "Compare the result", "detail": "Sample rows that changed, were removed, or could not be cleaned with confidence." }
-    ],
-    "checkEn": "Compare totals, row counts, source IDs, and blank values with the original before using the cleaned file."
-  },
-  {
-    "index": 8,
-    "slug": "target-prioritization",
-    "workflowEn": [
-      { "label": "Define the candidates", "detail": "Name the disease, drug targets to compare, and evidence sets required." },
-      { "label": "Search in parallel", "detail": "Review genetics, cohorts, clinical data, literature, and expression as separate workstreams." },
-      { "label": "Score consistently", "detail": "Apply one rubric to every evidence lane and separate direct evidence from related diseases." },
-      { "label": "Build the ranking", "detail": "Deliver a heatmap, final ranking, confidence, limitations, and reviewable raw payload." }
-    ],
-    "checkEn": "A scientist should review scoring, sources, and correlation-versus-causation before any decision."
-  },
-  {
-    "index": 9,
-    "slug": "scrna-seq-post-count-qc",
-    "workflowEn": [
-      { "label": "Identify the dataset", "detail": "Provide the matrix, barcodes, features, manifest, and experiment metadata." },
-      { "label": "Set data-led thresholds", "detail": "Inspect distributions and propose justified QC thresholds instead of fixed defaults." },
-      { "label": "Inspect plots and counts", "detail": "Review threshold plots, the QC summary, and UMAP for removed cells or suspicious clusters." },
-      { "label": "Refine and rerun", "detail": "Adjust thresholds or add a reference atlas while preserving raw counts and prior reasoning." }
-    ],
-    "checkEn": "A bioinformatician should review thresholds, batch effects, and annotation confidence before biological use."
-  },
-  {
-    "index": 10,
-    "slug": "bulk-rna-seq-fastq-qc",
-    "workflowEn": [
-      { "label": "Prepare the inputs", "detail": "Provide a matched sample sheet, FASTQ files, transcriptome, genome, and GTF." },
-      { "label": "Check consistency", "detail": "Verify strandedness, reference consistency, and tool readiness before running." },
-      { "label": "Review QC", "detail": "Use MultiQC to inspect mapping rate, duplication, library type, and outlier samples." },
-      { "label": "Confirm the handoff", "detail": "Check the gene-level matrix and provenance before differential expression analysis." }
-    ],
-    "checkEn": "A specialist should verify library quality, sample metadata, and reference versions before analysis."
-  },
-  {
-    "index": 11,
-    "slug": "cash-flow-forecast",
-    "workflowEn": [
-      { "label": "Gather cash inputs", "detail": "Add opening cash, receipts, payroll, payables, debt, tax, capex, and timing assumptions." },
-      { "label": "Build an editable model", "detail": "Use formulas and preserve the original weekly or monthly reporting cadence." },
-      { "label": "Find risk points", "detail": "Identify the cash low point, threshold breaches, and missing assumptions." },
-      { "label": "Test scenarios", "detail": "Change one driver at a time, such as collections or payment timing, to see its impact." }
-    ],
-    "checkEn": "Finance should tie balances to source data and approve assumptions before liquidity planning."
-  },
-  {
-    "index": 12,
-    "slug": "datasets-and-reports",
-    "workflowEn": [
-      { "label": "Set one clear question", "detail": "Define the question, audience, and artifact that will support a decision." },
-      { "label": "Inspect and clean", "detail": "Use @Data Analytics to check columns, missing values, duplicates, candidate keys, and unmatched rows." },
-      { "label": "Analyze transparently", "detail": "Build charts and an interpretable model without overwriting source files or inventing values." },
-      { "label": "Package the result", "detail": "Lead with the answer, then include assumptions, uncertainty, and a reviewable report, notebook, or sheet." }
-    ],
-    "checkEn": "Review join keys, missing data, leakage, model assumptions, and business meaning before publishing conclusions."
-  },
-  {
-    "index": 13,
-    "slug": "dcf-model",
-    "workflowEn": [
-      { "label": "Attach baseline data", "detail": "Provide historical financials, valuation assumptions, and clearly sourced modeling notes." },
-      { "label": "Build the model", "detail": "Calculate operating drivers, unlevered free cash flow, WACC, terminal value, and enterprise value." },
-      { "label": "Audit the links", "detail": "Review source tie-outs, formulas, hardcodes, assumptions, and the sensitivity table." },
-      { "label": "Change one driver", "detail": "Vary growth, margin, capex, or working capital one assumption at a time." }
-    ],
-    "checkEn": "A finance expert should review formulas, WACC sources, and terminal value before investment use."
-  },
-  {
-    "index": 14,
-    "slug": "budget-vs-actuals-review",
-    "workflowEn": [
-      { "label": "Attach plan and actuals", "detail": "Provide the budget, actuals export, and close notes from the same reporting period." },
-      { "label": "Map the accounts", "detail": "Map entries to budget categories and flag unclear items instead of forcing a match." },
-      { "label": "Calculate variances", "detail": "Show amount and percentage variances, with favorable or unfavorable logic by account type." },
-      { "label": "Review and explain", "detail": "Tie out the numbers and evidence before drafting the leadership summary." }
-    ],
-    "checkEn": "Finance should review category mapping, tie-outs, and any variance explanation without evidence."
-  },
-  {
-    "index": 15,
-    "slug": "github-code-reviews",
-    "workflowEn": [
-      { "label": "Connect the repository", "detail": "Install Codex code review and authorize the intended repository or organization." },
-      { "label": "Set review rules", "detail": "Add ## Code Review Rules to the nearest AGENTS.md; state the behavior to flag, safe path, and exceptions." },
-      { "label": "Request a PR review", "detail": "Enable automatic review or mention @codex review with the areas to emphasize." },
-      { "label": "Assess and fix", "detail": "Have a developer confirm findings, apply focused fixes, and run regression tests." }
-    ],
-    "checkEn": "A person must confirm every finding and test result before approving the merge."
-  },
-  {
-    "index": 16,
-    "slug": "macos-sidebar-detail-inspector",
-    "workflowEn": [
-      { "label": "Describe the core task", "detail": "Define the data, primary screen, and key actions users need in the app." },
-      { "label": "Structure the window", "detail": "Choose the scene model and build a NavigationSplitView with explicit selection state." },
-      { "label": "Add desktop commands", "detail": "Connect actions to menus, toolbars, keyboard shortcuts, and Settings." },
-      { "label": "Build and test", "detail": "Run build checks and use an AppKit bridge only where SwiftUI cannot provide the behavior." }
-    ],
-    "checkEn": "Test selection, menus, shortcuts, Settings persistence, and accessibility on a real Mac."
-  },
-  {
-    "index": 17,
-    "slug": "frontend-designs",
-    "workflowEn": [
-      { "label": "Provide references", "detail": "Attach screenshots at key sizes and states, with the expected behavior." },
-      { "label": "Inspect the current system", "detail": "Find existing components, tokens, routing, and data patterns to reuse." },
-      { "label": "Implement the design", "detail": "Match hierarchy, spacing, and responsive behavior without duplicating the design system." },
-      { "label": "Compare in the browser", "detail": "Use Playwright on desktop and mobile, then refine visual and interaction differences." }
-    ],
-    "checkEn": "Visually and functionally verify responsiveness, keyboard access, contrast, and core behavior."
-  },
-  {
-    "index": 18,
-    "slug": "codebase-onboarding",
-    "workflowEn": [
-      { "label": "Narrow the scope", "detail": "Choose a feature, directory, or request flow instead of asking about the whole system." },
-      { "label": "Trace the data path", "detail": "Follow a request through business logic, persistence, and the UI." },
-      { "label": "Find critical points", "detail": "Locate validation, side effects, state transitions, and easy-to-miss dependencies." },
-      { "label": "Build a reading list", "detail": "List the next files, risk areas, and tests to run before making changes." }
-    ],
-    "checkEn": "Confirm the explanation against code, tests, and system owners before changing side-effecting behavior."
-  },
-  {
-    "index": 19,
     "slug": "automation-bug-triage",
     "workflowEn": [
       { "label": "Name the bug sources", "detail": "Scope the Sentry, Slack, Linear, GitHub, logs, and support queues to review." },
@@ -220,18 +44,206 @@
     "checkEn": "System owners should confirm severity, duplicate groups, and evidence before issues or alerts are created."
   },
   {
-    "index": 20,
-    "slug": "make-granular-ui-changes",
+    "index": 4,
+    "slug": "daily-work-brief",
     "workflowEn": [
-      { "label": "Choose model and target", "detail": "Use gpt-5.3-codex-spark when available; otherwise use gpt-6-astra at medium or low reasoning, then open the target UI." },
-      { "label": "Request one change", "detail": "Change only one item per round: spacing, alignment, color, copy, or state." },
-      { "label": "Keep the edit small", "detail": "Reuse existing components and tokens without touching unrelated routing or data flow." },
-      { "label": "Review and iterate", "detail": "Inspect the browser result, then give the next focused adjustment in the same chat." }
+      { "label": "Connect work context", "detail": "Name the messaging, email, calendar, document, and tracker sources; surface any access gaps." },
+      { "label": "Build the brief", "detail": "Summarize changes, decisions, deadlines, replies, blockers, and what can wait, with source links." },
+      { "label": "Run the heartbeat", "detail": "Compare hourly checks with prior updates, surface only meaningful changes, and stay quiet otherwise." },
+      { "label": "Delegate deliberately", "detail": "On desktop, create a separate project teammate only when asked and share only needed context." }
     ],
-    "checkEn": "Check other states, breakpoints, and the component's accessibility for unintended effects."
+    "checkEn": "Verify the schedule and sources; approve new tasks, sends, edits, schedules, or commitments."
+  },
+  {
+    "index": 5,
+    "slug": "discover-protein-folding-architectures",
+    "workflowEn": [
+      { "label": "Set a hypothesis", "detail": "Define a falsifiable question, a working baseline, and a measurable benchmark." },
+      { "label": "Build a small prototype", "detail": "Ask Codex for the smallest change, then run unit tests and microbenchmarks before training." },
+      { "label": "Run experiment loops", "detail": "Record metrics, runtime, memory, and failure modes after every benchmark run." },
+      { "label": "Review the evidence", "detail": "Decide whether to keep, revert, or refine the idea without claiming more than the results show." }
+    ],
+    "checkEn": "Have a domain expert review the method, matched comparisons, and replication before making general claims."
+  },
+  {
+    "index": 6,
+    "slug": "analyze-data-export",
+    "workflowEn": [
+      { "label": "Set the approved source", "detail": "Attach a CSV or spreadsheet or paste one exact Drive or Sheets URL; inspect columns, dates, and unmatched rows." },
+      { "label": "Build a private dashboard", "detail": "Use @Sites for charts, filters, source freshness, and calculations without publishing or sharing." },
+      { "label": "Schedule source checks", "detail": "Have a Work task check the source, update on changes, and stay quiet when nothing material changed." },
+      { "label": "Review before sharing", "detail": "Verify figures and data-quality issues, then approve recipients or any visibility change." }
+    ],
+    "checkEn": "Verify metrics, missing or unmatched rows, the scheduled source, and access before sharing or publishing."
+  },
+  {
+    "index": 7,
+    "slug": "feedback-synthesis",
+    "workflowEn": [
+      { "label": "Set the review scope", "detail": "Name the product area, time range, and Slack, GitHub, Linear, Drive, support, or research sources." },
+      { "label": "Cluster with evidence", "detail": "Create a Sheet or Doc with source IDs, affected users, confidence, implications, and open questions." },
+      { "label": "Review the meaning", "detail": "Split broad themes and treat counts as mentions in the sample, not product-wide incidence." },
+      { "label": "Prepare follow-ups", "detail": "Draft an update or issue from approved themes; do not post, create, or assign it without approval." }
+    ],
+    "checkEn": "Protect private feedback, trace every theme to evidence, and do not treat mention counts as incidence rates."
+  },
+  {
+    "index": 8,
+    "slug": "clean-messy-data",
+    "workflowEn": [
+      { "label": "Attach the original", "detail": "Attach or reference the CSV or spreadsheet that needs cleaning." },
+      { "label": "Describe the issues", "detail": "Call out date formats, currencies, missing values, duplicates, or mixed-in summary rows." },
+      { "label": "Create a clean copy", "detail": "Request a new cleaned file and data-quality note without changing the original." },
+      { "label": "Compare the result", "detail": "Sample rows that changed, were removed, or could not be cleaned with confidence." }
+    ],
+    "checkEn": "Compare totals, row counts, source IDs, and blank values with the original before using the cleaned file."
+  },
+  {
+    "index": 9,
+    "slug": "target-prioritization",
+    "workflowEn": [
+      { "label": "Define the candidates", "detail": "Name the disease, drug targets to compare, and evidence sets required." },
+      { "label": "Search in parallel", "detail": "Review genetics, cohorts, clinical data, literature, and expression as separate workstreams." },
+      { "label": "Score consistently", "detail": "Apply one rubric to every evidence lane and separate direct evidence from related diseases." },
+      { "label": "Build the ranking", "detail": "Deliver a heatmap, final ranking, confidence, limitations, and reviewable raw payload." }
+    ],
+    "checkEn": "A scientist should review scoring, sources, and correlation-versus-causation before any decision."
+  },
+  {
+    "index": 10,
+    "slug": "scrna-seq-post-count-qc",
+    "workflowEn": [
+      { "label": "Identify the dataset", "detail": "Provide the matrix, barcodes, features, manifest, and experiment metadata." },
+      { "label": "Set data-led thresholds", "detail": "Inspect distributions and propose justified QC thresholds instead of fixed defaults." },
+      { "label": "Inspect plots and counts", "detail": "Review threshold plots, the QC summary, and UMAP for removed cells or suspicious clusters." },
+      { "label": "Refine and rerun", "detail": "Adjust thresholds or add a reference atlas while preserving raw counts and prior reasoning." }
+    ],
+    "checkEn": "A bioinformatician should review thresholds, batch effects, and annotation confidence before biological use."
+  },
+  {
+    "index": 11,
+    "slug": "bulk-rna-seq-fastq-qc",
+    "workflowEn": [
+      { "label": "Prepare the inputs", "detail": "Provide a matched sample sheet, FASTQ files, transcriptome, genome, and GTF." },
+      { "label": "Check consistency", "detail": "Verify strandedness, reference consistency, and tool readiness before running." },
+      { "label": "Review QC", "detail": "Use MultiQC to inspect mapping rate, duplication, library type, and outlier samples." },
+      { "label": "Confirm the handoff", "detail": "Check the gene-level matrix and provenance before differential expression analysis." }
+    ],
+    "checkEn": "A specialist should verify library quality, sample metadata, and reference versions before analysis."
+  },
+  {
+    "index": 12,
+    "slug": "cash-flow-forecast",
+    "workflowEn": [
+      { "label": "Gather cash inputs", "detail": "Add opening cash, receipts, payroll, payables, debt, tax, capex, and timing assumptions." },
+      { "label": "Build an editable model", "detail": "Use formulas and preserve the original weekly or monthly reporting cadence." },
+      { "label": "Find risk points", "detail": "Identify the cash low point, threshold breaches, and missing assumptions." },
+      { "label": "Test scenarios", "detail": "Change one driver at a time, such as collections or payment timing, to see its impact." }
+    ],
+    "checkEn": "Finance should tie balances to source data and approve assumptions before liquidity planning."
+  },
+  {
+    "index": 13,
+    "slug": "datasets-and-reports",
+    "workflowEn": [
+      { "label": "Set one clear question", "detail": "Define the question, audience, and artifact that will support a decision." },
+      { "label": "Inspect and clean", "detail": "Use @Data Analytics to check columns, missing values, duplicates, candidate keys, and unmatched rows." },
+      { "label": "Analyze transparently", "detail": "Build charts and an interpretable model without overwriting source files or inventing values." },
+      { "label": "Package the result", "detail": "Lead with the answer, then include assumptions, uncertainty, and a reviewable report, notebook, or sheet." }
+    ],
+    "checkEn": "Review join keys, missing data, leakage, model assumptions, and business meaning before publishing conclusions."
+  },
+  {
+    "index": 14,
+    "slug": "dcf-model",
+    "workflowEn": [
+      { "label": "Attach baseline data", "detail": "Provide historical financials, valuation assumptions, and clearly sourced modeling notes." },
+      { "label": "Build the model", "detail": "Calculate operating drivers, unlevered free cash flow, WACC, terminal value, and enterprise value." },
+      { "label": "Audit the links", "detail": "Review source tie-outs, formulas, hardcodes, assumptions, and the sensitivity table." },
+      { "label": "Change one driver", "detail": "Vary growth, margin, capex, or working capital one assumption at a time." }
+    ],
+    "checkEn": "A finance expert should review formulas, WACC sources, and terminal value before investment use."
+  },
+  {
+    "index": 15,
+    "slug": "budget-vs-actuals-review",
+    "workflowEn": [
+      { "label": "Attach plan and actuals", "detail": "Provide the budget, actuals export, and close notes from the same reporting period." },
+      { "label": "Map the accounts", "detail": "Map entries to budget categories and flag unclear items instead of forcing a match." },
+      { "label": "Calculate variances", "detail": "Show amount and percentage variances, with favorable or unfavorable logic by account type." },
+      { "label": "Review and explain", "detail": "Tie out the numbers and evidence before drafting the leadership summary." }
+    ],
+    "checkEn": "Finance should review category mapping, tie-outs, and any variance explanation without evidence."
+  },
+  {
+    "index": 16,
+    "slug": "github-code-reviews",
+    "workflowEn": [
+      { "label": "Connect the repository", "detail": "Install Codex code review and authorize the intended repository or organization." },
+      { "label": "Set review rules", "detail": "Add ## Code Review Rules to the nearest AGENTS.md; state the behavior to flag, safe path, and exceptions." },
+      { "label": "Request a PR review", "detail": "Enable automatic review or mention @codex review with the areas to emphasize." },
+      { "label": "Assess and fix", "detail": "Have a developer confirm findings, apply focused fixes, and run regression tests." }
+    ],
+    "checkEn": "A person must confirm every finding and test result before approving the merge."
+  },
+  {
+    "index": 17,
+    "slug": "find-vulnerabilities-in-your-code",
+    "workflowEn": [
+      { "label": "Confirm access and scope", "detail": "Open an authorized repository, confirm plugin access, and choose the full codebase or one service folder." },
+      { "label": "Run one standard scan", "detail": "Confirm the current branch and last commit, add relevant security context, and run one standard scan with Deep scan off." },
+      { "label": "Review evidence and coverage", "detail": "Confirm the target revision. Inspect skipped areas, attack paths, safeguards, validation evidence, and uncertainty." },
+      { "label": "Record each decision", "detail": "Record each finding's evidence, coverage gaps, owner, and next action: fix, investigate, or no fix." }
+    ],
+    "checkEn": "Confirm the target revision, attack path, safeguards, validation, and coverage. Completion or no findings does not prove the code is secure."
+  },
+  {
+    "index": 18,
+    "slug": "macos-sidebar-detail-inspector",
+    "workflowEn": [
+      { "label": "Describe the core task", "detail": "Define the data, primary screen, and key actions users need in the app." },
+      { "label": "Structure the window", "detail": "Choose the scene model and build a NavigationSplitView with explicit selection state." },
+      { "label": "Add desktop commands", "detail": "Connect actions to menus, toolbars, keyboard shortcuts, and Settings." },
+      { "label": "Build and test", "detail": "Run build checks and use an AppKit bridge only where SwiftUI cannot provide the behavior." }
+    ],
+    "checkEn": "Test selection, menus, shortcuts, Settings persistence, and accessibility on a real Mac."
+  },
+  {
+    "index": 19,
+    "slug": "frontend-designs",
+    "workflowEn": [
+      { "label": "Provide references", "detail": "Attach screenshots at key sizes and states, with the expected behavior." },
+      { "label": "Inspect the current system", "detail": "Find existing components, tokens, routing, and data patterns to reuse." },
+      { "label": "Implement the design", "detail": "Match hierarchy, spacing, and responsive behavior without duplicating the design system." },
+      { "label": "Compare in the browser", "detail": "Use Playwright on desktop and mobile, then refine visual and interaction differences." }
+    ],
+    "checkEn": "Visually and functionally verify responsiveness, keyboard access, contrast, and core behavior."
+  },
+  {
+    "index": 20,
+    "slug": "codebase-onboarding",
+    "workflowEn": [
+      { "label": "Narrow the scope", "detail": "Choose a feature, directory, or request flow instead of asking about the whole system." },
+      { "label": "Trace the data path", "detail": "Follow a request through business logic, persistence, and the UI." },
+      { "label": "Find critical points", "detail": "Locate validation, side effects, state transitions, and easy-to-miss dependencies." },
+      { "label": "Build a reading list", "detail": "List the next files, risk areas, and tests to run before making changes." }
+    ],
+    "checkEn": "Confirm the explanation against code, tests, and system owners before changing side-effecting behavior."
   },
   {
     "index": 21,
+    "slug": "fix-a-finding-from-your-security-scan",
+    "workflowEn": [
+      { "label": "Review the finding", "detail": "Read the affected code, impact, and evidence. Define what the fix must prevent and what legitimate behavior must remain." },
+      { "label": "Generate a focused patch", "detail": "Generate a proposed patch only after the evidence is clear. Generating it does not modify the selected checkout." },
+      { "label": "Inspect and apply", "detail": "Review the diff, regression tests, and validation artifacts. Remove unrelated changes, then apply and inspect the working tree." },
+      { "label": "Verify and prepare review", "detail": "Show the vulnerable behavior no longer reproduces and legitimate behavior still works. Document gaps in the pull request." }
+    ],
+    "promptEn": "Use $codex-security:fix-finding to address [reviewed finding] in [authorized repository]. Review the affected code, impact, and evidence first. Generate the smallest focused patch, preserve legitimate behavior, add or run a focused regression test, and verify that the vulnerable behavior no longer reproduces. Return the final diff, validation commands and results, and any remaining uncertainty. Do not close the finding or open a pull request without review.",
+    "checkEn": "A security reviewer must confirm the final diff, regression evidence, and remaining gaps. An applied patch alone does not prove the finding is fixed."
+  },
+  {
+    "index": 22,
     "slug": "slack-coding-tasks",
     "workflowEn": [
       { "label": "Connect Slack and the repo", "detail": "Install the Slack app and map the correct channel, repository, and environment." },
@@ -242,7 +254,7 @@
     "checkEn": "Confirm the repository and environment, then review the diff and test results before merging."
   },
   {
-    "index": 22,
+    "index": 23,
     "slug": "new-hire-onboarding",
     "workflowEn": [
       { "label": "Set data boundaries", "detail": "Define allowed sources, start dates, usable fields, and sensitive data to exclude." },
@@ -253,95 +265,7 @@
     "checkEn": "Verify access rights, announcement status, and every personal-data field before taking action."
   },
   {
-    "index": 23,
-    "slug": "zoom-meeting-follow-ups",
-    "workflowEn": [
-      { "label": "Select the meeting", "detail": "Name the customer, date, or meeting and retrieve its transcript and AI Companion summary." },
-      { "label": "Extract key outcomes", "detail": "Capture decisions, risks, opportunities, owners, and dates with supporting evidence." },
-      { "label": "Draft each destination", "detail": "Prepare a customer email, account-plan update, CRM note, and Slack message, separating internal details." },
-      { "label": "Review before sending", "detail": "Have the account owner review and approve each send, post, or record update separately." }
-    ],
-    "checkEn": "Verify commitments, owners, dates, customer data, and internal details before publishing anywhere."
-  },
-  {
     "index": 24,
-    "slug": "learn-a-new-concept",
-    "workflowEn": [
-      { "label": "Set a learning goal", "detail": "Name the concept, source material, and specific questions instead of asking for a broad summary." },
-      { "label": "Split the reading", "detail": "Use subagents for structure, foundations, figures, equations, and evidence quality." },
-      { "label": "Synthesize the report", "detail": "Create a Markdown brief with a summary, glossary, concept map, evidence table, and caveats." },
-      { "label": "Review and experiment", "detail": "Ask follow-ups and add a small example or notebook when the concept needs a working demonstration." }
-    ],
-    "checkEn": "Ensure the report separates source claims from interpretation and cites the relevant pages, figures, or tables."
-  },
-  {
-    "index": 25,
-    "slug": "idea-to-proof-of-concept",
-    "workflowEn": [
-      { "label": "Define the problem", "detail": "Name the target user, core problem, and one workflow the prototype must prove." },
-      { "label": "Explore a visual direction", "detail": "Use ImageGen for mockups and choose the direction that communicates the idea clearly." },
-      { "label": "Build the MVP", "detail": "Create the smallest working prototype with the right plugin for a website or game." },
-      { "label": "Test in the browser", "detail": "Use Playwright on the main workflow and iterate from team feedback." }
-    ],
-    "checkEn": "Ask target users to try the core flow and separate what the prototype proves from remaining assumptions."
-  },
-  {
-    "index": 26,
-    "slug": "deploy-app-or-website",
-    "workflowEn": [
-      { "label": "Clarify the inputs", "detail": "Provide the repo, screenshot, design brief, data source, and anything that must not change." },
-      { "label": "Build and check locally", "detail": "Use Build Web Apps to update the project and run its required build or checks." },
-      { "label": "Deploy a preview", "detail": "Use the Vercel plugin and report missing environment variables or sign-in steps." },
-      { "label": "Inspect the live URL", "detail": "Check desktop and mobile, then fix issues using build logs or observed page behavior." }
-    ],
-    "checkEn": "Review the preview, environment variables, and secrets, then seek separate approval for production deployment."
-  },
-  {
-    "index": 27,
-    "slug": "qa-your-app-with-computer-use",
-    "workflowEn": [
-      { "label": "Prepare the environment", "detail": "Choose local, staging, or production-like, with the needed account, test data, and flags." },
-      { "label": "Choose the main flows", "detail": "Prioritize hero flows and decide whether testing stops or continues after a blocker." },
-      { "label": "Run the test", "detail": "Use @Computer to click, type, and inspect function, layout, and copy within scope." },
-      { "label": "Triage the report", "detail": "Capture repro steps, expected and actual results, severity, and recommended order of fixes." }
-    ],
-    "checkEn": "A person should reproduce critical bugs and confirm the test account cannot affect real data."
-  },
-  {
-    "index": 28,
-    "slug": "api-integration-migrations",
-    "workflowEn": [
-      { "label": "Inventory the current setup", "detail": "Map the models, endpoints, prompts, tools, and response shapes used in the repo." },
-      { "label": "Read current guidance", "detail": "Use $openai-docs for target-model guidance, API features, and prompting practices." },
-      { "label": "Migrate in scope", "detail": "Change only what is required and flag behavior or schema choices for human review." },
-      { "label": "Measure before release", "detail": "Compare tests and evals with baseline quality, latency, and cost." }
-    ],
-    "checkEn": "Review official docs, response shapes, tool behavior, eval quality, and cost before rollout."
-  },
-  {
-    "index": 29,
-    "slug": "complete-tasks-from-messages",
-    "workflowEn": [
-      { "label": "Choose the conversation", "detail": "Name the sender or exact thread ChatGPT should review." },
-      { "label": "Extract the request", "detail": "Summarize the ask, missing details, and apps needed before acting." },
-      { "label": "Work across apps", "detail": "Find information, check calendars, or prepare requested items using signed-in sessions." },
-      { "label": "Draft and stop", "detail": "Draft the reply in the original thread and ask before buying, booking, paying, or confirming." }
-    ],
-    "checkEn": "Verify the recipient, final details, price, timing, and cancellation terms before approving any action."
-  },
-  {
-    "index": 30,
-    "slug": "figma-designs-to-code",
-    "workflowEn": [
-      { "label": "Choose the exact frame", "detail": "Link directly to the source-of-truth frame, component, or variant." },
-      { "label": "Read the design context", "detail": "Use the Figma skill to inspect variables, assets, screenshots, and variant details." },
-      { "label": "Fit the existing system", "detail": "Reuse the repo's components, tokens, routing, and data patterns instead of copying reference code." },
-      { "label": "Compare and refine", "detail": "Use Playwright to check spacing, hierarchy, interaction, and responsive behavior against Figma." }
-    ],
-    "checkEn": "Verify variants, asset rights, responsive states, and accessibility against Figma and the design system."
-  },
-  {
-    "index": 31,
     "slug": "deep-security-scan",
     "workflowEn": [
       { "label": "Confirm scope and access", "detail": "Name the authorized repository or folder and do not expand beyond it." },
@@ -352,14 +276,91 @@
     "checkEn": "A security expert must confirm reachability, severity, and impact before disclosure or remediation."
   },
   {
-    "index": 32,
-    "slug": "browser-games",
+    "index": 25,
+    "slug": "zoom-meeting-follow-ups",
     "workflowEn": [
-      { "label": "Write the game plan", "detail": "Define the core loop, controls, win and fail states, difficulty, and milestones in PLAN.md." },
-      { "label": "Set working rules", "detail": "Use AGENTS.md to require plan tracking, progress notes, and the right skills." },
-      { "label": "Build gameplay and art", "detail": "Create the game, UI, and assets with saved image prompts for visual consistency." },
-      { "label": "Playtest repeatedly", "detail": "Use Playwright in the browser and refine controls, feedback, difficulty, and layout." }
+      { "label": "Select the meeting", "detail": "Name the customer, date, or meeting and retrieve its transcript and AI Companion summary." },
+      { "label": "Extract key outcomes", "detail": "Capture decisions, risks, opportunities, owners, and dates with supporting evidence." },
+      { "label": "Draft each destination", "detail": "Prepare a customer email, account-plan update, CRM note, and Slack message, separating internal details." },
+      { "label": "Review before sending", "detail": "Have the account owner review and approve each send, post, or record update separately." }
     ],
-    "checkEn": "Have real players check controls, states, accessibility, performance, and asset suitability before release."
+    "checkEn": "Verify commitments, owners, dates, customer data, and internal details before publishing anywhere."
+  },
+  {
+    "index": 26,
+    "slug": "learn-a-new-concept",
+    "workflowEn": [
+      { "label": "Set a learning goal", "detail": "Name the concept, source material, and specific questions instead of asking for a broad summary." },
+      { "label": "Split the reading", "detail": "Use subagents for structure, foundations, figures, equations, and evidence quality." },
+      { "label": "Synthesize the report", "detail": "Create a Markdown brief with a summary, glossary, concept map, evidence table, and caveats." },
+      { "label": "Review and experiment", "detail": "Ask follow-ups and add a small example or notebook when the concept needs a working demonstration." }
+    ],
+    "checkEn": "Ensure the report separates source claims from interpretation and cites the relevant pages, figures, or tables."
+  },
+  {
+    "index": 27,
+    "slug": "idea-to-proof-of-concept",
+    "workflowEn": [
+      { "label": "Define the problem", "detail": "Name the target user, core problem, and one workflow the prototype must prove." },
+      { "label": "Explore a visual direction", "detail": "Use ImageGen for mockups and choose the direction that communicates the idea clearly." },
+      { "label": "Build the MVP", "detail": "Create the smallest working prototype with the right plugin for a website or game." },
+      { "label": "Test in the browser", "detail": "Use Playwright on the main workflow and iterate from team feedback." }
+    ],
+    "checkEn": "Ask target users to try the core flow and separate what the prototype proves from remaining assumptions."
+  },
+  {
+    "index": 28,
+    "slug": "deploy-app-or-website",
+    "workflowEn": [
+      { "label": "Clarify the inputs", "detail": "Provide the repo, screenshot, design brief, data source, and anything that must not change." },
+      { "label": "Build and check locally", "detail": "Use Build Web Apps to update the project and run its required build or checks." },
+      { "label": "Deploy a preview", "detail": "Use the Vercel plugin and report missing environment variables or sign-in steps." },
+      { "label": "Inspect the live URL", "detail": "Check desktop and mobile, then fix issues using build logs or observed page behavior." }
+    ],
+    "checkEn": "Review the preview, environment variables, and secrets, then seek separate approval for production deployment."
+  },
+  {
+    "index": 29,
+    "slug": "remediate-vulnerability-backlog",
+    "workflowEn": [
+      { "label": "Choose one finding", "detail": "Use an authorized report or ticket with clear scope and impact." },
+      { "label": "Confirm the issue", "detail": "Verify the vulnerable path, or prove it is already fixed, before changing code." },
+      { "label": "Make the smallest fix", "detail": "Use $codex-security:fix-finding for a focused patch and add a regression test." },
+      { "label": "Prove the result", "detail": "Test the original attack path and normal behavior, and document remaining uncertainty." }
+    ],
+    "checkEn": "Work only on authorized systems, and have a security expert review the patch and evidence before release."
+  },
+  {
+    "index": 30,
+    "slug": "scan-code-changes-for-security",
+    "workflowEn": [
+      { "label": "Define the change set", "detail": "Choose the authorized PR, commit, branch diff, or working tree to review." },
+      { "label": "Name risk areas", "detail": "Highlight surfaces such as auth, user input, file paths, networking, or secrets." },
+      { "label": "Scan and validate", "detail": "Use $codex-security:security-diff-scan to separate evidenced flaws from suspicions." },
+      { "label": "Review before fixing", "detail": "Inspect affected lines, evidence, and proof gaps before opening separate remediation work." }
+    ],
+    "checkEn": "A person must confirm real reachability and impact before prioritizing or fixing each finding."
+  },
+  {
+    "index": 31,
+    "slug": "dependency-incident-audits",
+    "workflowEn": [
+      { "label": "Verify the advisory", "detail": "Separate official-source facts from unconfirmed reports or commentary." },
+      { "label": "Set evidence criteria", "detail": "Define what would prove or disprove use of an affected package and version." },
+      { "label": "Audit read-only", "detail": "Inspect manifests, lockfiles, CI workflows, and scripts without installing or running lifecycle code." },
+      { "label": "Classify the evidence", "detail": "Mark results confirmed, needs review, or not affected, with severity and next steps." }
+    ],
+    "checkEn": "Do not run a possibly compromised package or script; seek approval before updates or credential cleanup."
+  },
+  {
+    "index": 32,
+    "slug": "qa-your-app-with-computer-use",
+    "workflowEn": [
+      { "label": "Prepare the environment", "detail": "Choose local, staging, or production-like, with the needed account, test data, and flags." },
+      { "label": "Choose the main flows", "detail": "Prioritize hero flows and decide whether testing stops or continues after a blocker." },
+      { "label": "Run the test", "detail": "Use @Computer to click, type, and inspect function, layout, and copy within scope." },
+      { "label": "Triage the report", "detail": "Capture repro steps, expected and actual results, severity, and recommended order of fixes." }
+    ],
+    "checkEn": "A person should reproduce critical bugs and confirm the test account cannot affect real data."
   }
 ]

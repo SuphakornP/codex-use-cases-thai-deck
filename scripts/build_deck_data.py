@@ -13,7 +13,7 @@ SOURCE_PATH = DATA_DIR / "source-usecases.json"
 TRANSLATION_PATHS = [DATA_DIR / f"usecases-th-{part}.json" for part in ("01", "02", "03")]
 EN_TRANSLATION_PATHS = [DATA_DIR / f"usecases-en-{part}.json" for part in ("01", "02", "03")]
 OUTPUT_PATH = DATA_DIR / "usecases-data.js"
-EXPECTED_COUNT = 102
+EXPECTED_COUNT = 105
 CATEGORIES = {
     "งานประจำ": {"id": "everyday-work", "en": "Everyday work"},
     "ข้อมูลและการตัดสินใจ": {"id": "data-decisions", "en": "Data and decisions"},
@@ -36,6 +36,7 @@ TH_TRANSLATION_KEYS = {
     "checkTh",
 }
 EN_TRANSLATION_KEYS = {"index", "slug", "workflowEn", "checkEn"}
+EN_TRANSLATION_OPTIONAL_KEYS = {"promptEn"}
 
 
 def load_json(path: Path):
@@ -75,16 +76,27 @@ def validate_th_translation(item: dict, source: dict) -> None:
 
 def validate_en_translation(item: dict, source: dict) -> None:
     index = item.get("index")
-    if set(item) != EN_TRANSLATION_KEYS:
+    item_keys = set(item)
+    valid_key_sets = {
+        frozenset(EN_TRANSLATION_KEYS),
+        frozenset(EN_TRANSLATION_KEYS | EN_TRANSLATION_OPTIONAL_KEYS),
+    }
+    if frozenset(item_keys) not in valid_key_sets:
         raise ValueError(f"Index {index}: English translation keys do not match the deck schema")
     if item["slug"] != source["slug"]:
         raise ValueError(f"Index {index}: English source identity mismatch")
     validate_workflow(index, item["workflowEn"], "workflowEn", max_detail_length=140)
     if not isinstance(item["checkEn"], str) or not item["checkEn"].strip():
         raise ValueError(f"Index {index}: missing checkEn")
-    for key in ("title", "summary", "starterPrompt"):
+    for key in ("title", "summary"):
         if not isinstance(source.get(key), str) or not source[key].strip():
             raise ValueError(f"Index {index}: official source is missing {key}")
+    official_prompt = source.get("starterPrompt")
+    if isinstance(official_prompt, str) and official_prompt.strip():
+        if "promptEn" in item:
+            raise ValueError(f"Index {index}: promptEn must not override an official starter prompt")
+    elif not isinstance(item.get("promptEn"), str) or not item["promptEn"].strip():
+        raise ValueError(f"Index {index}: missing editorial promptEn fallback")
 
 
 def main() -> None:
@@ -123,6 +135,12 @@ def main() -> None:
         validate_th_translation(translation_th, source)
         validate_en_translation(translation_en, source)
         category = CATEGORIES[translation_th["categoryTh"]]
+        official_prompt = source.get("starterPrompt")
+        prompt_en = (
+            official_prompt
+            if isinstance(official_prompt, str) and official_prompt.strip()
+            else translation_en["promptEn"]
+        )
         merged.append(
             {
                 "index": source["index"],
@@ -137,7 +155,7 @@ def main() -> None:
                 "workflowTh": translation_th["workflow"],
                 "workflowEn": translation_en["workflowEn"],
                 "promptTh": translation_th["promptTh"],
-                "promptEn": source["starterPrompt"],
+                "promptEn": prompt_en,
                 "checkTh": translation_th["checkTh"],
                 "checkEn": translation_en["checkEn"],
                 "difficulty": source["difficulty"],
