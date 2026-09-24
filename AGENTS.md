@@ -17,6 +17,14 @@ Core presentation files live at the repository root: `index.html`, `styles.css`,
 
 Use two-space indentation for HTML, CSS, JavaScript, TypeScript, and JSON; use four spaces for Python. Prefer double quotes, semicolons, `camelCase` functions and variables, `PascalCase` React components, and kebab-case slugs such as `daily-work-brief`. Preserve Thai copy as Unicode, but keep identifiers and technical comments in English. Reuse helpers and avoid unsafe casts or silent error handling. Follow nearby code and run `npx tsc --noEmit` for TypeScript changes.
 
+## Thai Editorial Guidelines
+
+- Write natural, neutral Thai for nontechnical knowledge workers. Use clear subjects and actions; avoid literal translations, unnatural metaphors, hype, and incomplete phrases.
+- Keep English product names and technical terms when they are clearer than a forced Thai translation (for example, prompt, workflow, code review, API, and deployment). Explain unfamiliar terms briefly only when needed, and use terminology consistently.
+- Review titles, summaries, all four workflow steps, starter prompts, Human checkpoints, fixed slides, UI labels, and accessibility text. Preserve factual meaning, permissions, cautions, source identities, and English copy during Thai-only edits.
+- Translate starter prompts in full from the nonblank official `starterPrompt`, or the reviewed English `promptEn` fallback when no official prompt exists. Preserve every instruction, example, constraint, approval boundary, verification requirement, and output detail; keep literal placeholders, tool/skill tokens, commands, paths, filenames, and useful paragraph/list structure. Never replace a full prompt with a summary or add instructions absent from the source. Keep separate Human checkpoints outside the translated prompt, and compare both languages side by side before publishing.
+- Make language corrections when they improve clarity, even if official knowledge is unchanged. Avoid arbitrary synonym changes. Record editorial review separately from official source review; do not advance source-review dates for language-only edits.
+
 ## Testing Guidelines
 
 Tests use Node's built-in `node:test` framework and follow the `*.test.mjs` naming pattern. Add focused assertions for worker rendering or hosting behavior in `tests/site-worker.test.mjs`. There is no numeric coverage threshold. For visual changes, verify desktop and mobile layouts, keyboard navigation, prompt drawers, and direct hash links. If standalone Playwright is unavailable or fails, switch directly to the in-app Browser plugin for visual QA; do not let Playwright setup block testing.

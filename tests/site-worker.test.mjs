@@ -87,5 +87,17 @@ test("generated deck data contains 105 complete bilingual use cases", async () =
         assert.ok(step.detail.trim(), `${item.slug}: ${workflowKey} detail must not be empty`);
       }
     }
+    const promptTokens = item.promptEn.match(/(?<!\w)[$@][A-Za-z][\w:-]*|\[[^\]\n]+\]/g) ?? [];
+    for (const token of new Set(promptTokens)) {
+      assert.ok(
+        item.promptTh.includes(token),
+        `${item.slug}: Thai starter prompt must retain reference token ${token}`,
+      );
+    }
+    assert.ok(["official", "editorial"].includes(item.promptSource), `${item.slug}: prompt source must be identified`);
   }
+  assert.deepEqual(
+    Array.from(items.filter((item) => item.promptSource === "editorial"), (item) => item.slug),
+    ["fix-a-finding-from-your-security-scan", "scan-multiple-repositories", "automate-security-scans-in-ci"],
+  );
 });
