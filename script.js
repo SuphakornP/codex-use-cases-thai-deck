@@ -47,22 +47,23 @@
       tocAction: "คลิกเพื่อไปยังสไลด์",
       emptySearch: "ไม่พบ use case ที่ตรงกับคำค้น ลองใช้คำที่กว้างขึ้นหรือเลือก “ทั้งหมด”",
       promptKicker: "PROMPT STARTER",
-      promptTitle: "เริ่มคุยกับ Codex แบบนี้",
+      promptTitle: "ตัวอย่าง prompt สำหรับเริ่มต้น",
       promptClose: "ปิดตัวอย่าง prompt",
       promptHelp: "ปรับชื่อไฟล์ ช่วงเวลา และผลลัพธ์ให้ตรงกับงานของคุณ",
+      promptEditorialHelp: "ตัวอย่างนี้เรียบเรียงจาก workflow ทางการ เนื่องจากหน้าต้นฉบับไม่มี Starter prompt ปรับรายละเอียดให้ตรงกับงานของคุณ",
       copyPrompt: "คัดลอก Prompt",
       copied: "คัดลอกแล้ว",
       copySuccess: "คัดลอก Prompt แล้ว",
       copyFailed: "คัดลอกไม่สำเร็จ กรุณาเลือกข้อความแล้วคัดลอกเอง",
       fullscreenFailed: "เบราว์เซอร์นี้ไม่อนุญาตโหมดเต็มจอ",
-      source: "เปิด official source",
+      source: "ดูแหล่งข้อมูลทางการ",
       promptButton: "ดู Prompt เริ่มต้น",
       humanCheckpoint: "Human checkpoint",
       workflowAria: "Workflow 4 ขั้น",
       chapters: {
         cover: "เปิดเรื่อง",
         framing: "หลักการทำงาน",
-        map: "แผนที่ 8 หมวด",
+        map: "รวม 8 หมวดงาน",
         closing: "เริ่มลงมือ",
       },
       difficulty: { Easy: "เริ่มง่าย", Intermediate: "ปานกลาง", Advanced: "ขั้นสูง" },
@@ -105,6 +106,7 @@
       promptTitle: "Start with this prompt",
       promptClose: "Close prompt example",
       promptHelp: "Replace file names, time ranges, and deliverables with details from your work.",
+      promptEditorialHelp: "This example is adapted from the official workflow because the source page has no starter prompt. Adjust the details for your work.",
       copyPrompt: "Copy prompt",
       copied: "Copied",
       copySuccess: "Prompt copied",
@@ -146,34 +148,34 @@
       framing: {
         aria: "หลักการทำงานร่วมกับ Codex",
         kicker: "THE WORKING LOOP",
-        title: "Codex ไม่ใช่ช่องถามตอบ",
-        accent: "แต่คือพื้นที่ทำงานร่วมกัน",
-        body: "เริ่มจากงานเล็กที่มีคำตอบให้ตรวจได้ แล้วค่อยเพิ่มสิทธิ์ แหล่งข้อมูล และความถี่เมื่อ workflow เชื่อถือได้",
+        title: "Codex ช่วยได้มากกว่าการถามตอบ",
+        accent: "ใช้เป็นพื้นที่ทำงานร่วมกัน",
+        body: "เริ่มจากงานเล็กที่ตรวจสอบผลลัพธ์ได้ เมื่อมั่นใจใน workflow แล้ว จึงค่อยเพิ่มสิทธิ์เข้าถึง แหล่งข้อมูล และความถี่ในการทำงาน",
         loopAria: "วงจรการทำงาน 4 ขั้น",
         steps: [
           ["01", "ให้บริบท", "บอกเป้าหมาย แหล่งข้อมูล ข้อจำกัด และสิ่งที่ห้ามเปลี่ยน"],
-          ["02", "ให้ลงมือ", "ขอผลลัพธ์ที่ตรวจได้ เช่น เอกสาร ตาราง เว็บไซต์ หรือรายงาน"],
-          ["03", "ให้ตรวจ", "เปิดไฟล์ ทดสอบตัวเลข เช็กแหล่งที่มา และแยกข้อเท็จจริงจากข้อสันนิษฐาน"],
-          ["04", "ให้ปรับ", "บอก feedback ที่เฉพาะเจาะจง แล้วให้แก้จากชิ้นงานเดิม"],
+          ["02", "ให้ลงมือทำ", "ขอผลลัพธ์ที่ตรวจสอบได้ เช่น เอกสาร ตาราง เว็บไซต์ หรือรายงาน"],
+          ["03", "ตรวจสอบผล", "เปิดไฟล์ ตรวจตัวเลข เช็กแหล่งที่มา และแยกข้อเท็จจริงจากข้อสันนิษฐาน"],
+          ["04", "ปรับปรุงงาน", "ให้ feedback ที่ชัดเจน แล้วให้แก้ไขชิ้นงานเดิม"],
         ],
       },
       map: {
-        aria: "แผนที่ use case 8 หมวด",
+        aria: "รวม use case 8 หมวด",
         title: "เริ่มจาก",
-        accent: "งานที่คุณมีอยู่แล้ว",
+        accent: "งานที่คุณทำอยู่แล้ว",
         body: "เลือกหมวดเพื่อเปิดสารบัญ หรือเลื่อนไปตามลำดับจากเอกสารทางการ ซึ่งรวมทั้ง Codex และ ChatGPT workflows",
         listAria: "หมวด use case",
       },
       closing: {
         aria: "สไลด์สรุป",
         title: "อย่าเริ่มจาก “Codex ทำอะไรได้?”",
-        accent: "เริ่มจาก “งานไหนควรดีขึ้น?”",
-        body: "เลือกหนึ่ง use case ทำรอบแรกแบบมีคนตรวจ แล้วเก็บ prompt และเกณฑ์คุณภาพไว้ใช้ซ้ำ",
+        accent: "เริ่มจาก “อยากให้งานไหนดีขึ้น?”",
+        body: "เลือกหนึ่ง use case ให้คนตรวจสอบผลลัพธ์ในรอบแรก แล้วเก็บ prompt และเกณฑ์คุณภาพไว้ใช้ซ้ำ",
         questionsAria: "คำถามก่อนเริ่ม",
         questions: [
           "งานไหนทำซ้ำบ่อยและกินเวลาคุณทุกสัปดาห์?",
-          "ข้อมูลต้นทางอยู่ที่ไหน และ Codex อ่านได้แค่ไหน?",
-          "อะไรคือหลักฐานที่ทำให้คุณกล้ากด ‘ใช้จริง’?",
+          "ข้อมูลต้นทางอยู่ที่ไหน และ Codex เข้าถึงข้อมูลใดได้บ้าง?",
+          "ต้องตรวจสอบอะไรบ้าง จึงจะมั่นใจว่านำผลลัพธ์ไปใช้ได้?",
         ],
       },
     },
@@ -655,7 +657,7 @@
       renderCurrentSlide({ transition: "language", preserveScroll: true });
     } else showDataError();
     if (!elements.prompt.hidden && slides[currentIndex]?.type === "usecase") {
-      elements.promptCopy.textContent = localizedField(slides[currentIndex].data, "prompt");
+      updatePromptContent(slides[currentIndex].data);
     }
   }
 
@@ -758,11 +760,16 @@
     if (restoreFocus && focusBeforeOverlay instanceof HTMLElement) focusBeforeOverlay.focus();
   }
 
+  function updatePromptContent(item) {
+    elements.promptCopy.textContent = localizedField(item, "prompt");
+    elements.promptHelp.textContent = item.promptSource === "editorial" ? copy().promptEditorialHelp : copy().promptHelp;
+  }
+
   function openPrompt(index) {
     const item = useCases.find((candidate) => candidate.index === index);
     if (!item) return;
     focusBeforeOverlay = document.activeElement;
-    elements.promptCopy.textContent = localizedField(item, "prompt");
+    updatePromptContent(item);
     elements.prompt.hidden = false;
     elements.shell.inert = true;
     document.body.dataset.overlay = "prompt";

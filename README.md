@@ -4,6 +4,8 @@ Web presentation สองภาษา ไทย/อังกฤษ ที่ส
 
 > หน้า official รวมทั้ง ChatGPT และ Codex workflows งานนี้จึงคงชื่อเครื่องมือในแต่ละ use case ให้ตรงกับต้นฉบับ แม้ชื่อ presentation จะเน้น Codex
 
+Prompt ภาษาไทยแปลรายละเอียดครบตามฉบับอังกฤษ โดยคงชื่อ tool/skill และ placeholders ไว้ให้ตรงกัน และใช้ศัพท์อังกฤษเมื่ออ่านเข้าใจง่ายกว่า หน้าที่ไม่มี Starter prompt ทางการจะใช้ตัวอย่างที่เรียบเรียงจาก workflow พร้อมข้อความระบุที่มาในหน้าต่าง Prompt
+
 ## เปิด Presentation
 
 เปิด `index.html` ได้โดยตรง หรือใช้ local server เพื่อให้ browser ทำงานครบที่สุด:

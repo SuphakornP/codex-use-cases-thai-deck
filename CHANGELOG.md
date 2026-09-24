@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+- 24 กันยายน 2026: ตรวจภาษาไทยครบ 105 use cases และข้อความประกอบเว็บ ปรับสำนวนให้เป็นธรรมชาติ คงศัพท์อังกฤษที่เข้าใจง่ายกว่า และเติม Prompt เริ่มต้นให้ครบตามฉบับอังกฤษ พร้อมเพิ่มเกณฑ์ตรวจภาษาและความครบถ้วนของ prompt ในการอัปเดตรายสัปดาห์
+
 - 21 กันยายน 2026: ปรับตาม official source เป็น 105 use cases โดยเพิ่ม 4 security workflows, ถอด Make granular UI changes, จัดลำดับใหม่ และรองรับหน้าที่ไม่มี Starter prompt
 - 7 กันยายน 2026: ทบทวน official source ครบ 102 use cases และปรับ Make granular UI changes ให้ใช้ `gpt-6-astra` ที่ reasoning ระดับ medium/low เมื่อไม่มีสิทธิ์ Codex-Spark
 - 31 สิงหาคม 2026: เพิ่ม Build an AI tour guide จาก official source เป็น 102 use cases พร้อม workflow WebMCP ภาษาไทยและอังกฤษ

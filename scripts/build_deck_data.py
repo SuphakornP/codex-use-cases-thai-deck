@@ -156,6 +156,7 @@ def main() -> None:
                 "workflowEn": translation_en["workflowEn"],
                 "promptTh": translation_th["promptTh"],
                 "promptEn": prompt_en,
+                "promptSource": "official" if isinstance(official_prompt, str) and official_prompt.strip() else "editorial",
                 "checkTh": translation_th["checkTh"],
                 "checkEn": translation_en["checkEn"],
                 "difficulty": source["difficulty"],
