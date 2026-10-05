@@ -620,28 +620,28 @@
     "slug": "slack-coding-tasks",
     "titleTh": "เริ่มงานเขียนโค้ดจาก Slack",
     "titleEn": "Kick off coding tasks from Slack",
-    "summaryTh": "เรียก @Codex ใน Slack เพื่อส่งต่องานที่มีบริบทจาก thread ไปยัง repository และ environment ที่ถูกต้อง แล้วกลับมาตรวจผลในที่เดิม",
+    "summaryTh": "เรียก @ChatGPT ใน Slack เพื่อมอบหมายงาน repository ไปยัง Codex Cloud environment ที่แชร์ใน workspace แล้วตรวจผลใน thread โดย flow นี้ไม่รองรับ personal environment",
     "categoryTh": "วิศวกรรมซอฟต์แวร์",
     "workflow": [
       {
-        "label": "เชื่อมทีมกับ repo",
-        "detail": "ติดตั้ง Slack app แล้ว map channel, repository และ environment ให้ถูกโครงการ"
+        "label": "เตรียม environment ที่แชร์",
+        "detail": "ให้ผู้ดูแลเปิด ChatGPT ใน Slack และ Cloud delegation พร้อม environment ที่แชร์ใน workspace และมี published version"
       },
       {
         "label": "มอบหมายใน thread",
-        "detail": "mention @Codex พร้อมปัญหา ขอบเขต ข้อจำกัด และผลลัพธ์ที่คาดหวัง"
+        "detail": "เรียก @ChatGPT พร้อม repository, environment, บริบท ข้อจำกัด และผลลัพธ์ที่ต้องการ ระบุไฟล์ที่เกี่ยวข้องหาก repo ใหญ่"
       },
       {
-        "label": "ติดตามผ่านลิงก์",
-        "detail": "เปิดลิงก์แชตเพื่อดูการวิเคราะห์ การเปลี่ยนแปลง และการตรวจสอบที่ Codex ทำ"
+        "label": "อนุมัติและตรวจผล",
+        "detail": "ทำขั้นตอนเชื่อมต่อหรืออนุมัติให้ครบ แล้วตรวจผลและการทดสอบ ใช้ Follow along เพื่อติดตาม task เมื่อมีปุ่มนี้"
       },
       {
-        "label": "ทบทวนและต่อยอด",
-        "detail": "ตรวจ diff และ test แล้วตอบกลับใน thread หากต้องการให้แก้เฉพาะจุดเพิ่ม"
+        "label": "ต่องานหรือเปลี่ยน environment",
+        "detail": "ใช้บัญชีที่รัน task เดิมเพื่อต่องานใน thread เดิม บัญชีอื่นอาจเริ่ม task แยก หากเปลี่ยน environment ให้เริ่มบทสนทนาใหม่"
       }
     ],
-    "promptTh": "@Codex วิเคราะห์ปัญหาที่กล่าวถึงใน thread นี้ และลงมือแก้ใน <name of your environment>",
-    "checkTh": "ตรวจว่า repo/environment ถูกต้อง และ review diff กับผล test ก่อน merge"
+    "promptTh": "@ChatGPT ตรวจสอบปัญหาที่อธิบายใน thread นี้สำหรับ [repository]\nใช้ Cloud environment ที่แชร์ใน workspace สำหรับ [project or environment]\nแก้ไขให้น้อยที่สุดโดยยังแก้ปัญหาได้ รันการตรวจสอบที่เกี่ยวข้อง และรายงานผลที่นี่",
+    "checkTh": "ยืนยันสิทธิ์ของบัญชีที่รันใน environment, repo และบริการที่ใช้ ตรวจ diff และ tests ให้ครอบคลุมงานก่อน merge ข้อความตอบใน Slack ไม่ได้ให้ทุกคนเข้าถึง task"
   },
   {
     "index": 23,

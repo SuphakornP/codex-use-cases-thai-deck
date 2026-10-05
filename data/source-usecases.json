@@ -1,6 +1,6 @@
 {
   "source": "https://learn.chatgpt.com/use-cases",
-  "retrievedAt": "2026-09-21T02:09:15Z",
+  "retrievedAt": "2026-10-05T02:03:54Z",
   "count": 105,
   "useCases": [
     {
@@ -1178,7 +1178,7 @@
       "index": 22,
       "slug": "slack-coding-tasks",
       "title": "Kick off coding tasks from Slack",
-      "tagline": "Turn Slack threads into scoped cloud chats.",
+      "tagline": "Delegate repository work from Slack threads.",
       "tags": [
         "Integrations",
         "Workflow"
@@ -1186,28 +1186,29 @@
       "url": "https://learn.chatgpt.com/use-cases/slack-coding-tasks",
       "canonicalUrl": "https://learn.chatgpt.com/use-cases/slack-coding-tasks",
       "imageUrl": "https://learn.chatgpt.com/codex/use-cases/slack-coding-tasks.webp",
-      "summary": "Mention @Codex in Slack to start a chat tied to the right repo and environment, then review the result back in the thread or in Codex cloud.",
+      "summary": "Mention @ChatGPT in Slack to request repository work in an eligible workspace-shared Codex Cloud environment, then review the result in the thread.",
       "difficulty": "Easy",
       "time": "5m",
       "bestFor": [
-        "Async handoffs that start in a Slack thread and already have enough context to act on",
-        "Teams that want quick issue triage, bug fixes, or scoped implementation work without context switching"
+        "Async handoffs with enough context in the Slack thread to act on",
+        "Teams handling issue triage, bug fixes, or scoped implementation work from Slack"
       ],
-      "starterPrompt": "@Codex analyze the issue mentioned in this thread and implement a fix in <name of your environment>.",
+      "starterPrompt": "@ChatGPT investigate the issue described in this thread for [repository].\nUse the workspace-shared Cloud environment for [project or environment].\nMake the smallest useful fix, run the relevant checks, and report the result here.",
       "workflow": [
         {
           "title": "How to use",
-          "paragraphs": [
-            "You can learn more about how to use Codex in Slack in the dedicated guide ."
-          ],
+          "paragraphs": [],
           "items": [
-            "Install the Slack app, connect the right repositories and environments, and add @Codex to the channel.",
-            "Mention @Codex in a thread with a clear request, constraints, and the outcome you want.",
-            "Open the chat link, review the result, and continue the follow-up in Slack if the task needs another pass.",
-            "If the thread does not already include enough context or suggested fix, include in your prompt some guidance",
-            "Make sure the repo and environment mapping are correct by mentioning the name of the project or environment in your prompt",
-            "Scope the request so Codex can finish it without a second planning loop",
-            "If your project is a large codebase, guide Codex by mentioning which files or folders are relevant to the task"
+            "Have your workspace admin enable the ChatGPT app in Slack using the Slack setup guide .",
+            "For repository work, confirm that Cloud delegation is enabled and an eligible workspace-shared environment has a published version. For an Enterprise workspace, follow the environment sharing guidance .",
+            "Copy the starter prompt into an enabled Slack channel or thread. Include the repository, relevant context, constraints, and the result you want.",
+            "Complete any connection or approval prompts, then review the result and reported checks. When available, use Follow along to inspect the coding task.",
+            "Mention @ChatGPT in the same thread for related work. Follow-ups that use the same account to run the task can continue it; another execution account may start a separate task. Start a new conversation to use a different Cloud environment.",
+            "Summarize the issue and expected behavior if the thread doesn’t already provide enough context.",
+            "Name the repository or intended workspace-shared environment. Personal Cloud environments aren’t included in this Slack flow.",
+            "Check that the account running the task has the required environment, repository, and service access. A Slack reply doesn’t give everyone access to the coding task.",
+            "Keep the request scoped and name relevant files or folders in a large codebase.",
+            "Before merging, review proposed changes and check that the reported tests cover the requested behavior."
           ]
         }
       ],
