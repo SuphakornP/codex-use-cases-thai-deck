@@ -246,12 +246,12 @@
     "index": 22,
     "slug": "slack-coding-tasks",
     "workflowEn": [
-      { "label": "Connect Slack and the repo", "detail": "Install the Slack app and map the correct channel, repository, and environment." },
-      { "label": "Assign work in a thread", "detail": "Mention @Codex with the problem, scope, constraints, and expected output." },
-      { "label": "Follow the chat link", "detail": "Review Codex's analysis, changes, and verification from the linked chat." },
-      { "label": "Review and refine", "detail": "Check the diff and tests, then request focused follow-up changes in the thread." }
+      { "label": "Prepare Cloud", "detail": "Have an admin enable ChatGPT in Slack and Cloud delegation. Use a shared environment with a published version." },
+      { "label": "Delegate in Slack", "detail": "Mention @ChatGPT with the repo, environment, context, constraints, and goal; name relevant files." },
+      { "label": "Approve and review", "detail": "Complete connection or approval prompts. Review results and checks; use Follow along when available." },
+      { "label": "Continue the task", "detail": "Use the same execution account to continue; others may start a new task. Change environments in a new conversation." }
     ],
-    "checkEn": "Confirm the repository and environment, then review the diff and test results before merging."
+    "checkEn": "Use a shared environment, not a personal one; confirm execution-account access to the environment, repo, and services. Check the diff and tests before merging; Slack replies do not grant task access."
   },
   {
     "index": 23,

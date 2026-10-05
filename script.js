@@ -143,7 +143,7 @@
           "จาก “อยากให้งานเสร็จ” สู่ workflow ที่มอบหมาย ตรวจสอบ และนำไปใช้ได้จริง — โดยไม่ต้องเป็นคนเขียนโค้ด",
         authorLabel: "ผู้จัดทำ",
         author: "Suphakorn P.",
-        footer: "สรุปจากเอกสารทางการ ณ 21 ก.ย. 2026 · เอกสารเพื่อการเรียนรู้ ไม่ใช่สื่อทางการของ OpenAI",
+        footer: "สรุปจากเอกสารทางการ ณ 5 ต.ค. 2026 · เอกสารเพื่อการเรียนรู้ ไม่ใช่สื่อทางการของ OpenAI",
       },
       framing: {
         aria: "หลักการทำงานร่วมกับ Codex",
@@ -191,7 +191,7 @@
         authorLabel: "Created by",
         author: "Suphakorn P.",
         footer:
-          "Summarized from official documentation as of September 21, 2026 · For learning; not official OpenAI material",
+          "Summarized from official documentation as of October 5, 2026 · For learning; not official OpenAI material",
       },
       framing: {
         aria: "Principles for working with Codex",
