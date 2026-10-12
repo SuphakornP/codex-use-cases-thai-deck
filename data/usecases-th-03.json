@@ -973,7 +973,7 @@
       },
       {
         "label": "ทดสอบใน ChatGPT",
-        "detail": "เชื่อม MCP server ผ่าน HTTPS ใน developer mode แล้วลอง direct, indirect และ negative prompts"
+        "detail": "เชื่อม MCP server ผ่าน HTTPS ด้วย Add custom MCP server ใน ChatGPT แล้วลอง direct, indirect และ negative prompts"
       }
     ],
     "promptTh": "ใช้ $chatgpt-apps ร่วมกับ $openai-docs วางแผน ChatGPT app สำหรับ [use case] ใน repo นี้\n\nข้อกำหนด:\n- เริ่มจากผลลัพธ์หลักที่ผู้ใช้ต้องการเพียงหนึ่งอย่าง\n- เสนอ tools 3–5 ตัว พร้อมชื่อ คำอธิบาย inputs และ outputs ที่ชัดเจน\n- แนะนำว่า v1 จำเป็นต้องมี widget หรือเริ่มแบบ data-only ได้\n- เลือกใช้ TypeScript สำหรับ MCP server และ React สำหรับ widget เป็นหลัก\n- ระบุข้อกำหนดด้าน auth, deployment และการทดสอบ\n\nผลลัพธ์:\n- แผน tools\n- โครงสร้างไฟล์ที่เสนอ\n- ชุด Golden prompts\n- ความเสี่ยงและคำถามที่ยังต้องหาคำตอบ",
