@@ -380,7 +380,7 @@
       { "label": "Choose the core outcome", "detail": "Define one task the MCP-backed plugin should complete in ChatGPT and limit it to 3-5 tools." },
       { "label": "Design the contract", "detail": "Define tool names, metadata, inputs, outputs, and whether v1 needs a widget." },
       { "label": "Build the core", "detail": "Have Codex scaffold the MCP server and optional widget using repository patterns before adding auth." },
-      { "label": "Test in ChatGPT", "detail": "Connect the MCP server over HTTPS in developer mode and try direct, indirect, and negative prompts." }
+      { "label": "Test in ChatGPT", "detail": "Connect over HTTPS using Add custom MCP server in ChatGPT; try direct, indirect, and negative prompts." }
     ],
     "checkEn": "Test MCP server payloads and conversation flow in ChatGPT; add OAuth only for user data or write actions."
   },
