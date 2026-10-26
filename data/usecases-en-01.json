@@ -232,6 +232,18 @@
   },
   {
     "index": 21,
+    "slug": "getting-started-with-daybreak-blue",
+    "workflowEn": [
+      { "label": "Confirm approval", "detail": "Have the workspace owner complete Trusted Access and wait for Daybreak Blue to become Active." },
+      { "label": "Grant a team role", "detail": "Enable Blue and a supported model in a custom role; save and assign it to the approved group." },
+      { "label": "Verify saved access", "detail": "Reopen settings, check all roles and groups, and allow about 10 minutes for access to apply." },
+      { "label": "Test member access", "detail": "In the approved workspace, turn Daybreak on, choose the model, and test a small task in Codex." }
+    ],
+    "checkEn": "The owner verifies saved grants. Workspace approval does not automatically enable API access; use only authorized defensive workflows.",
+    "promptEn": "Help me prepare and verify a Daybreak Blue rollout for approved members of [ChatGPT Enterprise workspace].\n\nHave the workspace owner check Trusted Access and confirm that Daybreak Blue is Active. If it is In review, wait for OpenAI's welcome email before assigning access.\n\nPlan a custom role for [approved group] with both Daybreak Blue and a supported model, such as GPT-6 Sol, enabled. For a new rollout to selected members, leave Daybreak Blue off in the workspace default. If it is already on, give everyone who should retain access a granting role before turning the default off. After the owner saves and assigns the role, reopen the settings and check group membership and other role grants. Allow about 10 minutes before checking member access.\n\nHave one member sign in to the approved workspace in the ChatGPT desktop app, open Codex, start a chat, turn Daybreak on in the model menu, and select the enabled model. Try a small task, such as suggesting two tests for a patch that rejects expired session tokens, and check that the chat returns a reply without a model access error.\n\nIf the toggle or model is missing, refresh the app and check the workspace, role assignments, and saved settings. Report what is confirmed, what is missing, and the next step. If the team also uses API keys, identify the separate approved-organization and per-project setup required."
+  },
+  {
+    "index": 22,
     "slug": "fix-a-finding-from-your-security-scan",
     "workflowEn": [
       { "label": "Review the finding", "detail": "Read the affected code, impact, and evidence. Define what the fix must prevent and what legitimate behavior must remain." },
@@ -243,7 +255,7 @@
     "checkEn": "A security reviewer must confirm the final diff, regression evidence, and remaining gaps. An applied patch alone does not prove the finding is fixed."
   },
   {
-    "index": 22,
+    "index": 23,
     "slug": "slack-coding-tasks",
     "workflowEn": [
       { "label": "Prepare Cloud", "detail": "Have an admin enable ChatGPT in Slack and Cloud delegation. Use a shared environment with a published version." },
@@ -254,7 +266,7 @@
     "checkEn": "Use a shared environment, not a personal one; confirm execution-account access to the environment, repo, and services. Check the diff and tests before merging; Slack replies do not grant task access."
   },
   {
-    "index": 23,
+    "index": 24,
     "slug": "new-hire-onboarding",
     "workflowEn": [
       { "label": "Set data boundaries", "detail": "Define allowed sources, start dates, usable fields, and sensitive data to exclude." },
@@ -265,7 +277,7 @@
     "checkEn": "Verify access rights, announcement status, and every personal-data field before taking action."
   },
   {
-    "index": 24,
+    "index": 25,
     "slug": "deep-security-scan",
     "workflowEn": [
       { "label": "Confirm scope and access", "detail": "Name the authorized repository or folder and do not expand beyond it." },
@@ -276,7 +288,7 @@
     "checkEn": "A security expert must confirm reachability, severity, and impact before disclosure or remediation."
   },
   {
-    "index": 25,
+    "index": 26,
     "slug": "zoom-meeting-follow-ups",
     "workflowEn": [
       { "label": "Select the meeting", "detail": "Name the customer, date, or meeting and retrieve its transcript and AI Companion summary." },
@@ -287,7 +299,7 @@
     "checkEn": "Verify commitments, owners, dates, customer data, and internal details before publishing anywhere."
   },
   {
-    "index": 26,
+    "index": 27,
     "slug": "learn-a-new-concept",
     "workflowEn": [
       { "label": "Set a learning goal", "detail": "Name the concept, source material, and specific questions instead of asking for a broad summary." },
@@ -298,7 +310,7 @@
     "checkEn": "Ensure the report separates source claims from interpretation and cites the relevant pages, figures, or tables."
   },
   {
-    "index": 27,
+    "index": 28,
     "slug": "idea-to-proof-of-concept",
     "workflowEn": [
       { "label": "Define the problem", "detail": "Name the target user, core problem, and one workflow the prototype must prove." },
@@ -309,7 +321,7 @@
     "checkEn": "Ask target users to try the core flow and separate what the prototype proves from remaining assumptions."
   },
   {
-    "index": 28,
+    "index": 29,
     "slug": "deploy-app-or-website",
     "workflowEn": [
       { "label": "Clarify the inputs", "detail": "Provide the repo, screenshot, design brief, data source, and anything that must not change." },
@@ -320,7 +332,7 @@
     "checkEn": "Review the preview, environment variables, and secrets, then seek separate approval for production deployment."
   },
   {
-    "index": 29,
+    "index": 30,
     "slug": "remediate-vulnerability-backlog",
     "workflowEn": [
       { "label": "Choose one finding", "detail": "Use an authorized report or ticket with clear scope and impact." },
@@ -331,7 +343,7 @@
     "checkEn": "Work only on authorized systems, and have a security expert review the patch and evidence before release."
   },
   {
-    "index": 30,
+    "index": 31,
     "slug": "scan-code-changes-for-security",
     "workflowEn": [
       { "label": "Define the change set", "detail": "Choose the authorized PR, commit, branch diff, or working tree to review." },
@@ -342,7 +354,7 @@
     "checkEn": "A person must confirm real reachability and impact before prioritizing or fixing each finding."
   },
   {
-    "index": 31,
+    "index": 32,
     "slug": "dependency-incident-audits",
     "workflowEn": [
       { "label": "Verify the advisory", "detail": "Separate official-source facts from unconfirmed reports or commentary." },
@@ -353,7 +365,7 @@
     "checkEn": "Do not run a possibly compromised package or script; seek approval before updates or credential cleanup."
   },
   {
-    "index": 32,
+    "index": 33,
     "slug": "qa-your-app-with-computer-use",
     "workflowEn": [
       { "label": "Prepare the environment", "detail": "Choose local, staging, or production-like, with the needed account, test data, and flags." },

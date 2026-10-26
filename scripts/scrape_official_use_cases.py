@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "source-usecases.json"
 IMAGE_DIR = ROOT / "assets" / "use-cases"
 USER_AGENT = "Mozilla/5.0 (compatible; CodexUseCaseDeck/1.0)"
-EXPECTED_COUNT = 105
+EXPECTED_COUNT = 113
 USE_CASE_PATH = re.compile(r"^/(?:codex/)?use-cases/[^/]+$")
 
 

@@ -2,7 +2,7 @@
   "use strict";
 
   const useCases = Array.isArray(window.USE_CASES) ? window.USE_CASES : [];
-  const expectedUseCaseCount = 105;
+  const expectedUseCaseCount = 113;
   const supportedLanguages = new Set(["th", "en"]);
   const storageKey = "codex-field-guide-language";
   const categories = [
@@ -19,9 +19,9 @@
   const UI_COPY = {
     th: {
       locale: "th-TH",
-      documentTitle: "Codex Field Guide — 105 Use Cases สำหรับคนทำงาน",
+      documentTitle: "Codex Field Guide — 113 Use Cases สำหรับคนทำงาน",
       documentDescription:
-        "คู่มือ Codex สำหรับคนทำงาน: 105 use cases จากเอกสารทางการ พร้อม workflow ภาษาไทยและอังกฤษที่นำไปใช้ได้จริง",
+        "คู่มือ Codex สำหรับคนทำงาน: 113 use cases จากเอกสารทางการ พร้อม workflow ภาษาไทยและอังกฤษที่นำไปใช้ได้จริง",
       edition: "FIELD GUIDE / TH",
       skip: "ข้ามไปยังเนื้อหาสไลด์",
       home: "กลับไปสไลด์แรก",
@@ -75,9 +75,9 @@
     },
     en: {
       locale: "en",
-      documentTitle: "Codex Field Guide — 105 Use Cases for Knowledge Workers",
+      documentTitle: "Codex Field Guide — 113 Use Cases for Knowledge Workers",
       documentDescription:
-        "A practical Codex field guide with 105 official use cases, bilingual workflows, starter prompts, and human checkpoints.",
+        "A practical Codex field guide with 113 official use cases, bilingual workflows, starter prompts, and human checkpoints.",
       edition: "FIELD GUIDE / EN",
       skip: "Skip to slide content",
       home: "Return to the first slide",
@@ -136,14 +136,14 @@
       cover: {
         aria: "สไลด์เปิดเรื่อง",
         imageAlt: "ภาพประกอบโต๊ะทำงานจาก OpenAI use case",
-        kicker: "105 OFFICIAL USE CASES · BILINGUAL EDITION",
+        kicker: "113 OFFICIAL USE CASES · BILINGUAL EDITION",
         title: "Codex",
         accent: "ฉบับคนทำงาน",
         subhead:
           "จาก “อยากให้งานเสร็จ” สู่ workflow ที่มอบหมาย ตรวจสอบ และนำไปใช้ได้จริง — โดยไม่ต้องเป็นคนเขียนโค้ด",
         authorLabel: "ผู้จัดทำ",
         author: "Suphakorn P.",
-        footer: "สรุปจากเอกสารทางการ ณ 12 ต.ค. 2026 · เอกสารเพื่อการเรียนรู้ ไม่ใช่สื่อทางการของ OpenAI",
+        footer: "สรุปจากเอกสารทางการ ณ 26 ต.ค. 2026 · เอกสารเพื่อการเรียนรู้ ไม่ใช่สื่อทางการของ OpenAI",
       },
       framing: {
         aria: "หลักการทำงานร่วมกับ Codex",
@@ -183,7 +183,7 @@
       cover: {
         aria: "Introduction slide",
         imageAlt: "Workspace illustration from an official OpenAI use case",
-        kicker: "105 OFFICIAL USE CASES · BILINGUAL EDITION",
+        kicker: "113 OFFICIAL USE CASES · BILINGUAL EDITION",
         title: "Codex",
         accent: "for knowledge work",
         subhead:
@@ -191,7 +191,7 @@
         authorLabel: "Created by",
         author: "Suphakorn P.",
         footer:
-          "Summarized from official documentation as of October 12, 2026 · For learning; not official OpenAI material",
+          "Summarized from official documentation as of October 26, 2026 · For learning; not official OpenAI material",
       },
       framing: {
         aria: "Principles for working with Codex",

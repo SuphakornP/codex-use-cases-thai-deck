@@ -4,6 +4,8 @@
 
 ## Unreleased
 
+- 26 ตุลาคม 2026: ทบทวน official source ครบ 113 use cases เพิ่ม 8 workflows พร้อม prompt สองภาษา และปรับเงื่อนไข Sites เรื่องสิทธิ์ใช้งาน ที่จัดเก็บข้อมูล และการรับชำระเงิน; แยกแก้ภาษาไทยในงานวิเคราะห์ข้อมูลและ onboarding ให้ชัดเจน โดย official knowledge ของสองรายการนี้ไม่เปลี่ยน พร้อมแก้ข้อความถูกตัดและทับกันในสไลด์ปิดท้าย
+
 - 12 ตุลาคม 2026: ทบทวน official source ครบ 105 use cases และปรับ Bring your app to ChatGPT ให้เชื่อมผ่าน Add custom MCP server แทน developer mode ทั้งสองภาษา; แยกแก้ภาษาไทย 3 use cases ให้การอนุมัติสร้าง issue งานตัดสินใจ/ติดตามหลังประชุม และข้อกำหนดร่วมของกลุ่มเรียนชัดเจน โดย official knowledge ของ 3 รายการนี้ไม่เปลี่ยน และตรวจ prompt ครบทั้งสองภาษาแล้ว
 
 - 5 ตุลาคม 2026: ทบทวน official source ครบ 105 use cases และปรับงานจาก Slack เป็น @ChatGPT พร้อมเงื่อนไข workspace-shared Cloud environment, prompt และ workflow สองภาษา; แยกแก้ภาษาไทย 7 use cases ให้ขอบเขตข้อมูล หลักฐาน การประเมิน และกรณีทดสอบชัดเจน โดยเนื้อหาทางการของ 7 รายการนี้ไม่เปลี่ยน
