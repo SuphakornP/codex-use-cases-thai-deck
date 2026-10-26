@@ -40,16 +40,16 @@ test("server-renders the complete bilingual presentation shell", async () => {
   assert.doesNotMatch(html, /codex-preview/i);
 });
 
-test("generated deck data contains 105 complete bilingual use cases", async () => {
+test("generated deck data contains 113 complete bilingual use cases", async () => {
   const source = await readFile(new URL("../data/usecases-data.js", import.meta.url), "utf8");
   const context = { window: {} };
   vm.runInNewContext(source, context);
   const items = context.window.USE_CASES;
 
-  assert.equal(items.length, 105);
+  assert.equal(items.length, 113);
   assert.deepEqual(
     Array.from(items, (item) => item.index),
-    Array.from({ length: 105 }, (_, index) => index),
+    Array.from({ length: 113 }, (_, index) => index),
   );
   const slugs = new Set(items.map((item) => item.slug));
   for (const slug of [
@@ -57,6 +57,14 @@ test("generated deck data contains 105 complete bilingual use cases", async () =
     "fix-a-finding-from-your-security-scan",
     "scan-multiple-repositories",
     "automate-security-scans-in-ci",
+    "getting-started-with-daybreak-blue",
+    "incident-to-tested-fix",
+    "migrate-a-validation-module",
+    "build-workshop-practice-site",
+    "build-personal-onboarding-plan",
+    "collect-and-schedule-team-requests",
+    "compare-campaign-performance",
+    "issue-to-tested-pr",
   ]) {
     assert.ok(slugs.has(slug), `${slug}: new official use case must be present`);
   }
@@ -98,6 +106,6 @@ test("generated deck data contains 105 complete bilingual use cases", async () =
   }
   assert.deepEqual(
     Array.from(items.filter((item) => item.promptSource === "editorial"), (item) => item.slug),
-    ["fix-a-finding-from-your-security-scan", "scan-multiple-repositories", "automate-security-scans-in-ci"],
+    ["getting-started-with-daybreak-blue", "fix-a-finding-from-your-security-scan", "scan-multiple-repositories", "automate-security-scans-in-ci"],
   );
 });

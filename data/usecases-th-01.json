@@ -368,7 +368,7 @@
     "slug": "datasets-and-reports",
     "titleTh": "วิเคราะห์ข้อมูลและจัดทำรายงาน",
     "titleEn": "Analyze datasets and ship reports",
-    "summaryTh": "ใช้ ChatGPT Work ทำความสะอาด เชื่อม สำรวจ และจำลองข้อมูล ก่อนส่งคำตอบพร้อมกราฟ รายงาน และข้อจำกัดที่ผู้อื่นตรวจและนำไปใช้ซ้ำได้",
+    "summaryTh": "ใช้ ChatGPT Work ทำความสะอาด เชื่อม และสำรวจข้อมูล พร้อมสร้างแบบจำลอง ก่อนส่งคำตอบพร้อมกราฟ รายงาน และข้อจำกัดที่ผู้อื่นตรวจและนำไปใช้ซ้ำได้",
     "categoryTh": "ข้อมูลและการตัดสินใจ",
     "workflow": [
       {
@@ -377,7 +377,7 @@
       },
       {
         "label": "สำรวจและทำความสะอาด",
-        "detail": "ใช้ @Data Analytics ตรวจไฟล์ คอลัมน์ missing, duplicates, candidate keys และ unmatched rows ก่อน join"
+        "detail": "ใช้ @Data Analytics ตรวจคอลัมน์ ค่าที่หาย ข้อมูลซ้ำ candidate keys และแถวที่จับคู่ไม่ได้ก่อน join"
       },
       {
         "label": "วิเคราะห์แบบอธิบายได้",
@@ -589,6 +589,34 @@
   },
   {
     "index": 21,
+    "slug": "getting-started-with-daybreak-blue",
+    "titleTh": "เริ่มใช้ Daybreak Blue ในทีม",
+    "titleEn": "Getting Started with Daybreak Blue.",
+    "summaryTh": "ให้เจ้าของ ChatGPT Enterprise workspace เปิด Daybreak Blue สำหรับสมาชิกที่อนุมัติ แล้วตรวจสิทธิ์และการตอบใน Codex เพื่อทำงานป้องกันภัยที่ได้รับอนุญาต",
+    "categoryTh": "วิทยาศาสตร์และความปลอดภัย",
+    "workflow": [
+      {
+        "label": "ยืนยันการอนุมัติ",
+        "detail": "เจ้าของ workspace ตรวจ Trusted Access ทำขั้นตอนสมัครและยืนยันให้ครบ แล้วรอ Daybreak Blue เป็น Active"
+      },
+      {
+        "label": "กำหนดสิทธิ์เฉพาะทีม",
+        "detail": "สร้าง custom role เปิด Daybreak Blue และโมเดลที่รองรับ บันทึก แล้วมอบหมายให้กลุ่มที่อนุมัติ"
+      },
+      {
+        "label": "ตรวจค่าที่บันทึกแล้ว",
+        "detail": "เปิด role ตรวจค่าซ้ำ เช็กสิทธิ์จากทุก role และกลุ่ม รวมถึง workspace default แล้วรอประมาณ 10 นาที"
+      },
+      {
+        "label": "ทดสอบด้วยบัญชีสมาชิก",
+        "detail": "เลือก workspace ที่อนุมัติใน Codex เปิด Daybreak เลือกโมเดล และลองงานเล็ก ๆ ว่าตอบได้โดยไม่มี model access error"
+      }
+    ],
+    "promptTh": "ช่วยฉันเตรียมและตรวจสอบการเปิดใช้ Daybreak Blue สำหรับสมาชิกที่อนุมัติใน [ChatGPT Enterprise workspace]\n\nให้เจ้าของ workspace ตรวจ Trusted Access และยืนยันว่า Daybreak Blue เป็น Active หากสถานะยังเป็น In review ให้รออีเมลต้อนรับจาก OpenAI ก่อนมอบหมายสิทธิ์\n\nวางแผน custom role สำหรับ [approved group] โดยเปิดทั้ง Daybreak Blue และโมเดลที่รองรับ เช่น GPT-6 Sol สำหรับการเปิดใช้ครั้งใหม่เฉพาะสมาชิกที่เลือก ให้คง Daybreak Blue ที่ workspace default เป็นปิด หากเปิดอยู่แล้ว ให้มอบ role ที่ให้สิทธิ์แก่ทุกคนที่ควรมีสิทธิ์ต่อก่อนปิดค่า default หลังจากเจ้าของบันทึกและมอบหมาย role แล้ว ให้เปิดค่ากลับมาตรวจอีกครั้ง รวมถึงสิทธิ์ที่ได้รับจากกลุ่มและ role อื่น รอประมาณ 10 นาทีก่อนตรวจสิทธิ์ด้วยบัญชีสมาชิก\n\nให้สมาชิกคนหนึ่งลงชื่อเข้าใช้ workspace ที่อนุมัติใน ChatGPT desktop app เปิด Codex เริ่มแชต เปิด Daybreak ในเมนูโมเดล และเลือกโมเดลที่เปิดให้ใช้ ลองงานเล็ก ๆ เช่น เสนอการทดสอบสองข้อสำหรับ patch ที่ปฏิเสธ session tokens ที่หมดอายุ และตรวจว่าแชตตอบกลับโดยไม่มี model access error\n\nหากไม่พบ toggle หรือโมเดล ให้รีเฟรชแอปและตรวจ workspace การมอบหมาย role และค่าที่บันทึกไว้ รายงานสิ่งที่ยืนยันแล้ว สิ่งที่ยังขาด และขั้นตอนถัดไป หากทีมใช้ API keys ด้วย ให้ระบุว่าต้องยืนยัน API organization ที่อนุมัติและตั้งค่าแต่ละ project แยกต่างหาก",
+    "checkTh": "เจ้าของต้องยืนยันผู้ได้รับสิทธิ์และการบันทึกจริง การอนุมัติ workspace ไม่ได้เปิดสิทธิ์ API โดยอัตโนมัติ และใช้ได้เฉพาะงานป้องกันภัยที่ได้รับอนุญาต"
+  },
+  {
+    "index": 22,
     "slug": "fix-a-finding-from-your-security-scan",
     "titleTh": "แก้ Finding จากการสแกนความปลอดภัย",
     "titleEn": "Fix a finding from your security scan",
@@ -616,7 +644,7 @@
     "checkTh": "ให้ผู้เชี่ยวชาญตรวจ final diff, regression evidence และช่องว่างที่เหลือ การ apply patch อย่างเดียวไม่พิสูจน์ว่าแก้ช่องโหว่แล้ว และ verification ไม่ได้ปิด finding อัตโนมัติ"
   },
   {
-    "index": 22,
+    "index": 23,
     "slug": "slack-coding-tasks",
     "titleTh": "เริ่มงานเขียนโค้ดจาก Slack",
     "titleEn": "Kick off coding tasks from Slack",
@@ -644,7 +672,7 @@
     "checkTh": "ยืนยันสิทธิ์ของบัญชีที่รันใน environment, repo และบริการที่ใช้ ตรวจ diff และ tests ให้ครอบคลุมงานก่อน merge ข้อความตอบใน Slack ไม่ได้ให้ทุกคนเข้าถึง task"
   },
   {
-    "index": 23,
+    "index": 24,
     "slug": "new-hire-onboarding",
     "titleTh": "ประสานงานพนักงานใหม่",
     "titleEn": "Coordinate new-hire onboarding",
@@ -656,7 +684,7 @@
         "detail": "ระบุแหล่งข้อมูล ช่วงวันเริ่มงาน ฟิลด์ที่ใช้ได้ และข้อมูลอ่อนไหวที่ห้ามใช้"
       },
       {
-        "label": "สำรวจ cohort",
+        "label": "ตรวจรายชื่อพนักงานใหม่",
         "detail": "ให้ ChatGPT นับและจัดกลุ่มตามทีมกับผู้จัดการ พร้อม flag ข้อมูลความพร้อมที่ขาด"
       },
       {
@@ -672,7 +700,7 @@
     "checkTh": "ตรวจสิทธิ์การเข้าถึง สถานะประกาศ และข้อมูลส่วนบุคคลทุกช่องก่อนดำเนินการจริง"
   },
   {
-    "index": 24,
+    "index": 25,
     "slug": "deep-security-scan",
     "titleTh": "สแกนความปลอดภัยเชิงลึก",
     "titleEn": "Run a deep security scan",
@@ -700,7 +728,7 @@
     "checkTh": "ผู้เชี่ยวชาญความปลอดภัยต้องยืนยัน reachability, severity และผลกระทบก่อนเผยแพร่หรือแก้ไข finding"
   },
   {
-    "index": 25,
+    "index": 26,
     "slug": "zoom-meeting-follow-ups",
     "titleTh": "เปลี่ยนการประชุมเป็นงานติดตาม",
     "titleEn": "Turn meetings into follow-ups",
@@ -728,7 +756,7 @@
     "checkTh": "ตรวจข้อตกลงที่ให้ไว้ ผู้รับผิดชอบ วันที่ ข้อมูลลูกค้า และรายละเอียดภายในก่อนส่งหรือบันทึกในแต่ละระบบ"
   },
   {
-    "index": 26,
+    "index": 27,
     "slug": "learn-a-new-concept",
     "titleTh": "เรียนรู้แนวคิดใหม่อย่างเป็นระบบ",
     "titleEn": "Learn a new concept",
@@ -756,7 +784,7 @@
     "checkTh": "ตรวจว่ารายงานแยกสิ่งที่ต้นฉบับระบุออกจากการตีความ และอ้างอิงหน้า รูป หรือตารางที่เกี่ยวข้องได้จริง"
   },
   {
-    "index": 27,
+    "index": 28,
     "slug": "idea-to-proof-of-concept",
     "titleTh": "เปลี่ยนไอเดียเป็นต้นแบบใช้งานได้",
     "titleEn": "Get from idea to proof of concept",
@@ -784,7 +812,7 @@
     "checkTh": "ให้ผู้ใช้เป้าหมายทดลอง workflow หลักและแยกสิ่งที่ต้นแบบพิสูจน์ได้จากสิ่งที่ยังเป็นสมมติฐาน"
   },
   {
-    "index": 28,
+    "index": 29,
     "slug": "deploy-app-or-website",
     "titleTh": "นำแอปหรือเว็บไซต์ขึ้นใช้งาน",
     "titleEn": "Deploy an app or website",
@@ -812,7 +840,7 @@
     "checkTh": "ตรวจ preview, environment variables, ข้อมูลลับ และขออนุมัติแยกก่อน deploy production"
   },
   {
-    "index": 29,
+    "index": 30,
     "slug": "remediate-vulnerability-backlog",
     "titleTh": "จัดการรายการช่องโหว่ค้างแก้",
     "titleEn": "Remediate a vulnerability backlog",
@@ -840,7 +868,7 @@
     "checkTh": "ทำเฉพาะระบบที่ได้รับอนุญาต และให้ผู้เชี่ยวชาญความปลอดภัยทบทวน Patch กับหลักฐานก่อนนำขึ้นระบบ"
   },
   {
-    "index": 30,
+    "index": 31,
     "slug": "scan-code-changes-for-security",
     "titleTh": "ตรวจความปลอดภัยของการเปลี่ยนแปลงโค้ด",
     "titleEn": "Scan code changes for security",
@@ -868,7 +896,7 @@
     "checkTh": "มนุษย์ต้องยืนยันการเข้าถึงได้จริงและผลกระทบของแต่ละ Finding ก่อนจัดลำดับหรือแก้ไข"
   },
   {
-    "index": 31,
+    "index": 32,
     "slug": "dependency-incident-audits",
     "titleTh": "ตรวจสอบเหตุการณ์จาก Dependency",
     "titleEn": "Audit dependency incidents",
@@ -896,7 +924,7 @@
     "checkTh": "อย่ารัน Package หรือ Script ที่อาจถูกแทรกแซง และขออนุมัติแยกก่อนอัปเดต Dependency หรือทำ Credential cleanup"
   },
   {
-    "index": 32,
+    "index": 33,
     "slug": "qa-your-app-with-computer-use",
     "titleTh": "ทดสอบคุณภาพแอปด้วย Computer Use",
     "titleEn": "QA your app with Computer Use",

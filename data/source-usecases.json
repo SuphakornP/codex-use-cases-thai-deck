@@ -1,7 +1,7 @@
 {
   "source": "https://learn.chatgpt.com/use-cases",
-  "retrievedAt": "2026-10-12T02:03:16Z",
-  "count": 105,
+  "retrievedAt": "2026-10-26T02:21:08Z",
+  "count": 113,
   "useCases": [
     {
       "index": 0,
@@ -1115,6 +1115,72 @@
     },
     {
       "index": 21,
+      "slug": "getting-started-with-daybreak-blue",
+      "title": "Getting Started with Daybreak Blue.",
+      "tagline": "Give selected team members access and check that they can use Daybreak in Codex.",
+      "tags": [
+        "Security",
+        "Engineering"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/getting-started-with-daybreak-blue",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/getting-started-with-daybreak-blue",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/getting-started-with-daybreak-blue.webp",
+      "summary": "Daybreak Blue reduces refusals on supported models for authorized defensive work. As a ChatGPT Enterprise workspace owner, give approved team members access to review internal code in Codex.",
+      "difficulty": "Easy",
+      "time": "Long-running",
+      "bestFor": [
+        "Enterprise workspace owners rolling out Daybreak Blue to an approved group.",
+        "Security team members checking their workspace access in Codex."
+      ],
+      "starterPrompt": "",
+      "workflow": [
+        {
+          "title": "Before you start",
+          "paragraphs": [
+            "Sign in as a workspace owner and open Workspace status and access for the Enterprise workspace your team will use. Look for Daybreak Blue under Trusted Access .",
+            "What you’ll accomplish",
+            "Using an API key for the Responses API or Codex? Set up an API project . If your team uses both ChatGPT sign-in and API keys, complete both setups.",
+            "Gather what you’ll need for the application.",
+            "In Trusted Access , complete any outstanding business verification, then open the Daybreak Blue application. Complete the requested attestations, have an authorized signer accept the terms if prompted, and submit. See the verification requirements for accepted documents.",
+            "If your workspace doesn’t show the application, follow the enterprise onboarding guide . On that path, submit the enterprise intake form first, then follow the verification email from Persona.",
+            "Scroll or swipe to explore. Select Fit image to see the whole screenshot.",
+            "When OpenAI emails you that the workspace is ready, return to Trusted Access .",
+            "Scroll or swipe to explore. Select Fit image to see the whole screenshot.",
+            "Open Admin Console → Models and check Workspace default → Cybersecurity . For a new rollout to selected members, leave Daybreak Blue off here. If it’s already on, first give everyone who should keep access a role that grants it. Then you can turn the default off and select Save changes .",
+            "Scroll or swipe to explore. Select Fit image to see the whole screenshot.",
+            "Scroll or swipe to explore. Select Fit image to see the whole screenshot.",
+            "Reopen the role in Models → Roles and confirm that you saved both Daybreak Blue and the model you chose. In Groups & roles , check who has the role, including through group membership. For someone outside the rollout, check whether any of their other roles grant Daybreak Blue. Allow about 10 minutes for changes to take effect before a team member checks access in Codex.",
+            "For other rollout options, see the team setup guide .",
+            "Ask one member with the role to open the ChatGPT desktop app , sign in with their ChatGPT account, and select the approved workspace. Have them open Codex , start a chat, and open the model menu below the message box.",
+            "In that menu, turn Daybreak on and select the model the owner enabled. GPT-6 Sol supports reduced refusals with Blue. For another model, check the Daybreak model support table .",
+            "Scroll or swipe to explore. Select Fit image to see the whole screenshot.",
+            "Have the member try a small task in that chat, such as “Suggest two tests for a patch that rejects expired session tokens.” Check that the chat returns a reply without a model access error.",
+            "If the toggle or model is missing, ask the member to refresh the app and check which workspace they’re using. As the owner, confirm that the member has the intended role, directly or through their group. Then reopen the role in Models → Roles and check its Daybreak Blue and model settings. For access errors, see Daybreak troubleshooting .",
+            "To review code with the team, follow Run your first security scan . Start with one repository the team owns or has permission to assess.",
+            "Workspace roles apply to people who sign in with ChatGPT. For API keys, an API organization owner enables Daybreak Blue separately for each project that needs it.",
+            "If your team uses a command-line client, follow the instructions for Codex CLI or Codex Security CLI . For personal access, use the individual application ."
+          ],
+          "items": [
+            "Request workspace access if you haven’t applied. If Daybreak Blue shows In review , wait for OpenAI’s welcome email.",
+            "Give your team access when Daybreak Blue shows Active .",
+            "Check access in Codex with a team member who has the role. If you’ve already assigned the role, start here.",
+            "Business details. Use the legal name, address, and contact details from your business records. Have a tax or registration number and supporting documents ready if requested.",
+            "Intended use. Have the workspace name and ID handy. Describe what your security team does and which defensive workflows it plans to run.",
+            "Verification contact. Use an email address the person completing verification can check. Persona may ask for proof they can act for the business. For identity verification, have an original, unexpired physical government-issued photo ID and a device with a camera ready if requested.",
+            "In the Admin Console, open Groups & roles . Choose a custom role used only by approved team members, or create and save a new role for the team.",
+            "Return to Models → Roles . Select Add role override and choose your role. If it already has an override, open its ⋯ menu and select Edit override .",
+            "Under Cybersecurity , set Daybreak Blue to On . Under Models , enable the model your team will use, such as 6 Sol for GPT-6 Sol. Select Save changes .",
+            "Return to Groups & roles and assign the custom role to the approved group. For direct member assignments or the Permissions & roles layout in workspace settings, follow the role assignment instructions .",
+            "Confirm which organization is approved. Open Organization status and access in the API Platform and check your Daybreak approval email for the intended API organization. If the email only names your ChatGPT workspace, ask your OpenAI account team to confirm API access before proceeding.",
+            "Enable Blue for the project. In the approved organization, choose or create a non-default project for your team’s internal security work. Open Project settings → General → Daybreak model access , turn on Daybreak Blue , and select Save . Add the approved users to the project and allow up to 15 minutes for the change to take effect.",
+            "Check that a request uses Blue. Have a project member use an API key from that project to send a Responses API request with an approved model such as gpt-6-sol and access_programs.cyber set to daybreak_blue . When the response includes that field, its value should be daybreak_blue . The Responses API guide has a request you can copy."
+          ]
+        }
+      ],
+      "image": "assets/use-cases/getting-started-with-daybreak-blue.webp"
+    },
+    {
+      "index": 22,
       "slug": "fix-a-finding-from-your-security-scan",
       "title": "Fix a finding from your security scan",
       "tagline": "Open a finding from your scan, review and apply a patch, and verify the fix.",
@@ -1175,7 +1241,7 @@
       "image": "assets/use-cases/fix-a-finding-from-your-security-scan.webp"
     },
     {
-      "index": 22,
+      "index": 23,
       "slug": "slack-coding-tasks",
       "title": "Kick off coding tasks from Slack",
       "tagline": "Delegate repository work from Slack threads.",
@@ -1215,7 +1281,7 @@
       "image": "assets/use-cases/slack-coding-tasks.webp"
     },
     {
-      "index": 23,
+      "index": 24,
       "slug": "new-hire-onboarding",
       "title": "Coordinate new-hire onboarding",
       "tagline": "Prepare onboarding trackers, team summaries, and welcome-space drafts.",
@@ -1275,7 +1341,7 @@
       "image": "assets/use-cases/new-hire-onboarding.webp"
     },
     {
-      "index": 24,
+      "index": 25,
       "slug": "deep-security-scan",
       "title": "Run a deep security scan",
       "tagline": "Search an authorized repository deeply for plausible vulnerabilities.",
@@ -1318,7 +1384,7 @@
       "image": "assets/use-cases/deep-security-scan.webp"
     },
     {
-      "index": 25,
+      "index": 26,
       "slug": "zoom-meeting-follow-ups",
       "title": "Turn meetings into follow-ups",
       "tagline": "Convert Zoom meeting insights into actions across your tools.",
@@ -1376,7 +1442,7 @@
       "image": "assets/use-cases/zoom-meeting-follow-ups.webp"
     },
     {
-      "index": 26,
+      "index": 27,
       "slug": "learn-a-new-concept",
       "title": "Learn a new concept",
       "tagline": "Turn dense source material into a clear, reviewable learning report.",
@@ -1471,7 +1537,7 @@
       "image": "assets/use-cases/learn-a-new-concept.webp"
     },
     {
-      "index": 27,
+      "index": 28,
       "slug": "idea-to-proof-of-concept",
       "title": "Get from idea to proof of concept",
       "tagline": "Explore the concept visually with ImageGen and build a first version of your idea.",
@@ -1512,7 +1578,7 @@
       "image": "assets/use-cases/idea-to-proof-of-concept.webp"
     },
     {
-      "index": 28,
+      "index": 29,
       "slug": "deploy-app-or-website",
       "title": "Deploy an app or website",
       "tagline": "Build or update a web app, deploy a preview, and get a live URL.",
@@ -1554,7 +1620,7 @@
       "image": "assets/use-cases/deploy-app-or-website.webp"
     },
     {
-      "index": 29,
+      "index": 30,
       "slug": "remediate-vulnerability-backlog",
       "title": "Remediate a vulnerability backlog",
       "tagline": "Turn reviewed findings into minimal fixes with regression evidence.",
@@ -1596,7 +1662,7 @@
       "image": "assets/use-cases/remediate-vulnerability-backlog.webp"
     },
     {
-      "index": 30,
+      "index": 31,
       "slug": "scan-code-changes-for-security",
       "title": "Scan code changes for security",
       "tagline": "Review a pull request or local diff for security regressions.",
@@ -1637,7 +1703,7 @@
       "image": "assets/use-cases/scan-code-changes-for-security.webp"
     },
     {
-      "index": 31,
+      "index": 32,
       "slug": "dependency-incident-audits",
       "title": "Audit dependency incidents",
       "tagline": "Turn a public package advisory into a safe repo-audit plan.",
@@ -1687,7 +1753,7 @@
       "image": "assets/use-cases/dependency-incident-audits.webp"
     },
     {
-      "index": 32,
+      "index": 33,
       "slug": "qa-your-app-with-computer-use",
       "title": "QA your app with Computer Use",
       "tagline": "Click through real product flows and log what breaks.",
@@ -1734,7 +1800,7 @@
       "image": "assets/use-cases/qa-your-app-with-computer-use.webp"
     },
     {
-      "index": 33,
+      "index": 34,
       "slug": "api-integration-migrations",
       "title": "Upgrade your API integration",
       "tagline": "Upgrade your app to the latest OpenAI API models.",
@@ -1773,7 +1839,7 @@
       "image": "assets/use-cases/api-integration-migrations.webp"
     },
     {
-      "index": 34,
+      "index": 35,
       "slug": "complete-tasks-from-messages",
       "title": "Complete tasks from messages",
       "tagline": "Turn iMessage threads into completed work across the apps involved.",
@@ -1817,7 +1883,7 @@
       "image": "assets/use-cases/complete-tasks-from-messages.webp"
     },
     {
-      "index": 35,
+      "index": 36,
       "slug": "figma-designs-to-code",
       "title": "Turn Figma designs into code",
       "tagline": "Turn Figma selections into polished UI with structured design context and visual checks.",
@@ -1883,7 +1949,7 @@
       "image": "assets/use-cases/figma-designs-to-code.webp"
     },
     {
-      "index": 36,
+      "index": 37,
       "slug": "browser-games",
       "title": "Create browser-based games",
       "tagline": "Define a game plan and let Codex build and test it in a live browser.",
@@ -1961,7 +2027,7 @@
       "image": "assets/use-cases/browser-games.webp"
     },
     {
-      "index": 37,
+      "index": 38,
       "slug": "reusable-codex-skills",
       "title": "Save workflows as skills",
       "tagline": "Create a skill Codex can keep on hand for work you repeat.",
@@ -2021,7 +2087,7 @@
       "image": "assets/use-cases/reusable-codex-skills.webp"
     },
     {
-      "index": 38,
+      "index": 39,
       "slug": "iterate-on-difficult-problems",
       "title": "Iterate on difficult problems",
       "tagline": "Use Codex as a scored improvement loop to solve hard tasks.",
@@ -2089,7 +2155,7 @@
       "image": "assets/use-cases/iterate-on-difficult-problems.webp"
     },
     {
-      "index": 39,
+      "index": 40,
       "slug": "monthly-business-review-narrative",
       "title": "Prepare a business review",
       "tagline": "Turn recurring KPI, close, and forecast inputs into a sourced performance narrative.",
@@ -2129,7 +2195,7 @@
       "image": "assets/use-cases/monthly-business-review-narrative.webp"
     },
     {
-      "index": 40,
+      "index": 41,
       "slug": "cfo-board-reporting-pack",
       "title": "Prepare a leadership reporting pack",
       "tagline": "Turn company progress, financial metrics, and owner updates into a source-backed reporting pack.",
@@ -2170,7 +2236,7 @@
       "image": "assets/use-cases/cfo-board-reporting-pack.webp"
     },
     {
-      "index": 41,
+      "index": 42,
       "slug": "meeting-prep-briefs",
       "title": "Prepare meeting briefs",
       "tagline": "Turn calendar context into an agenda and notes plan.",
@@ -2219,7 +2285,7 @@
       "image": "assets/use-cases/meeting-prep-briefs.webp"
     },
     {
-      "index": 42,
+      "index": 43,
       "slug": "update-documentation",
       "title": "Keep documentation up-to-date",
       "tagline": "Use code and other sources to automate docs updates.",
@@ -2268,7 +2334,7 @@
       "image": "assets/use-cases/update-documentation.webp"
     },
     {
-      "index": 43,
+      "index": 44,
       "slug": "native-ios-apps",
       "title": "Build for iOS",
       "tagline": "Use Codex to scaffold, build, and debug SwiftUI apps for iPhone and iPad.",
@@ -2361,7 +2427,7 @@
       "image": "assets/use-cases/native-ios-apps.webp"
     },
     {
-      "index": 44,
+      "index": 45,
       "slug": "scan-multiple-repositories",
       "title": "Scan multiple repositories",
       "tagline": "Run security scans across repositories and review the findings and coverage.",
@@ -2408,7 +2474,7 @@
       "image": "assets/use-cases/scan-multiple-repositories.webp"
     },
     {
-      "index": 45,
+      "index": 46,
       "slug": "kpi-root-cause-analysis",
       "title": "Analyze KPI root causes",
       "tagline": "Explain an unexpected metric movement with evidence and next actions.",
@@ -2448,7 +2514,7 @@
       "image": "assets/use-cases/kpi-root-cause-analysis.webp"
     },
     {
-      "index": 46,
+      "index": 47,
       "slug": "dashboard-builder-monitor",
       "title": "Plan a dashboard and monitoring workflow",
       "tagline": "Define metrics, owners, quality checks, and the decisions a dashboard supports.",
@@ -2488,7 +2554,7 @@
       "image": "assets/use-cases/dashboard-builder-monitor.webp"
     },
     {
-      "index": 47,
+      "index": 48,
       "slug": "strategic-initiative-health-update",
       "title": "Prepare an initiative health update",
       "tagline": "Turn recurring initiative context into a clear leadership readout.",
@@ -2528,7 +2594,7 @@
       "image": "assets/use-cases/strategic-initiative-health-update.webp"
     },
     {
-      "index": 48,
+      "index": 49,
       "slug": "prioritize-accounts",
       "title": "Prioritize accounts",
       "tagline": "Rank accounts by risk, upside, urgency, and next action.",
@@ -2568,7 +2634,7 @@
       "image": "assets/use-cases/prioritize-accounts.webp"
     },
     {
-      "index": 49,
+      "index": 50,
       "slug": "forecast-risk-review",
       "title": "Review forecast risk",
       "tagline": "Decide which deals belong in commit, upside, or pull.",
@@ -2608,7 +2674,7 @@
       "image": "assets/use-cases/forecast-risk-review.webp"
     },
     {
-      "index": 50,
+      "index": 51,
       "slug": "run-student-club-project",
       "title": "Run a student club project",
       "tagline": "Coordinate plans, owners, budgets, and follow-ups in one hub.",
@@ -2653,7 +2719,7 @@
       "image": "assets/use-cases/run-student-club-project.webp"
     },
     {
-      "index": 51,
+      "index": 52,
       "slug": "analytics-request-agent",
       "title": "Scope an analytics request",
       "tagline": "Turn an ambiguous stakeholder ask into a validated analysis plan.",
@@ -2693,7 +2759,7 @@
       "image": "assets/use-cases/analytics-request-agent.webp"
     },
     {
-      "index": 52,
+      "index": 53,
       "slug": "research-to-decision-memo",
       "title": "Turn research into a decision memo",
       "tagline": "Combine evidence, tradeoffs, and open questions into one recommendation.",
@@ -2733,7 +2799,7 @@
       "image": "assets/use-cases/research-to-decision-memo.webp"
     },
     {
-      "index": 53,
+      "index": 54,
       "slug": "initiative-off-track-brief",
       "title": "Write an initiative off-track brief",
       "tagline": "Explain what changed, why an initiative slipped, and what decision is needed.",
@@ -2773,7 +2839,7 @@
       "image": "assets/use-cases/initiative-off-track-brief.webp"
     },
     {
-      "index": 54,
+      "index": 55,
       "slug": "refactor-your-codebase",
       "title": "Refactor your codebase",
       "tagline": "Remove dead code and modernize legacy patterns without changing behavior.",
@@ -2819,7 +2885,7 @@
       "image": "assets/use-cases/refactor-your-codebase.webp"
     },
     {
-      "index": 55,
+      "index": 56,
       "slug": "ios-liquid-glass",
       "title": "Adopt liquid glass",
       "tagline": "Use Codex to migrate an existing SwiftUI app to Liquid Glass with iOS 26 APIs and Xcode 26.",
@@ -2899,7 +2965,7 @@
       "image": "assets/use-cases/ios-liquid-glass.webp"
     },
     {
-      "index": 56,
+      "index": 57,
       "slug": "native-macos-apps",
       "title": "Build for macOS",
       "tagline": "Use Codex to scaffold, build, and debug native Mac apps with SwiftUI.",
@@ -2972,7 +3038,7 @@
       "image": "assets/use-cases/native-macos-apps.webp"
     },
     {
-      "index": 57,
+      "index": 58,
       "slug": "ios-simulator-bug-debugging",
       "title": "Debug in iOS simulator",
       "tagline": "Use Codex and XcodeBuildMCP to drive your app in iOS Simulator, capture evidence, and iterate toward a fix.",
@@ -3044,7 +3110,7 @@
       "image": "assets/use-cases/ios-simulator-bug-debugging.webp"
     },
     {
-      "index": 58,
+      "index": 59,
       "slug": "ios-app-intents",
       "title": "Add iOS app intents",
       "tagline": "Use Codex to make your app's actions and content available to Shortcuts, Siri, Spotlight, and newer assistant-driven system experiences.",
@@ -3132,7 +3198,7 @@
       "image": "assets/use-cases/ios-app-intents.webp"
     },
     {
-      "index": 59,
+      "index": 60,
       "slug": "macos-telemetry-logs",
       "title": "Add Mac telemetry",
       "tagline": "Use Codex to instrument one Mac feature with Logger, run the app, and verify the action from unified logs.",
@@ -3207,7 +3273,7 @@
       "image": "assets/use-cases/macos-telemetry-logs.webp"
     },
     {
-      "index": 60,
+      "index": 61,
       "slug": "code-migrations",
       "title": "Run code migrations",
       "tagline": "Migrate legacy stacks in controlled checkpoints.",
@@ -3248,7 +3314,7 @@
       "image": "assets/use-cases/code-migrations.webp"
     },
     {
-      "index": 61,
+      "index": 62,
       "slug": "automate-security-scans-in-ci",
       "title": "Automate security scans in CI",
       "tagline": "Scan pull requests, commits to main, or your repository on a schedule.",
@@ -3313,7 +3379,7 @@
       "image": "assets/use-cases/automate-security-scans-in-ci.webp"
     },
     {
-      "index": 62,
+      "index": 63,
       "slug": "audit-course-section-consistency",
       "title": "Audit course section consistency",
       "tagline": "Compare shared courses while preserving instructor discretion.",
@@ -3357,7 +3423,7 @@
       "image": "assets/use-cases/audit-course-section-consistency.webp"
     },
     {
-      "index": 63,
+      "index": 64,
       "slug": "build-unit-plan-from-sources",
       "title": "Build a unit plan from source files",
       "tagline": "Turn standards, pacing, and prior lessons into a teachable sequence.",
@@ -3401,7 +3467,7 @@
       "image": "assets/use-cases/build-unit-plan-from-sources.webp"
     },
     {
-      "index": 64,
+      "index": 65,
       "slug": "variance-driver-bridge",
       "title": "Build a variance driver bridge",
       "tagline": "Explain movements across actuals, budget, and forecast with source-backed drivers.",
@@ -3441,7 +3507,7 @@
       "image": "assets/use-cases/variance-driver-bridge.webp"
     },
     {
-      "index": 65,
+      "index": 66,
       "slug": "build-interactive-lesson-resource",
       "title": "Build an interactive lesson resource",
       "tagline": "Turn an approved lesson package into a tested student experience.",
@@ -3485,7 +3551,7 @@
       "image": "assets/use-cases/build-interactive-lesson-resource.webp"
     },
     {
-      "index": 66,
+      "index": 67,
       "slug": "calibrate-assessments",
       "title": "Calibrate assessments",
       "tagline": "Review scoring patterns without assigning or changing grades.",
@@ -3529,7 +3595,7 @@
       "image": "assets/use-cases/calibrate-assessments.webp"
     },
     {
-      "index": 67,
+      "index": 68,
       "slug": "finance-model-cleanup",
       "title": "Clean and review a financial model",
       "tagline": "Check formulas, links, tie-outs, and assumptions before a high-stakes review.",
@@ -3569,7 +3635,7 @@
       "image": "assets/use-cases/finance-model-cleanup.webp"
     },
     {
-      "index": 68,
+      "index": 69,
       "slug": "create-classroom-materials-pack",
       "title": "Create a classroom materials pack",
       "tagline": "Produce aligned teaching, practice, and family materials.",
@@ -3612,7 +3678,7 @@
       "image": "assets/use-cases/create-classroom-materials-pack.webp"
     },
     {
-      "index": 69,
+      "index": 70,
       "slug": "create-lesson-deck",
       "title": "Create a lesson deck",
       "tagline": "Turn approved teaching materials into an editable presentation.",
@@ -3658,7 +3724,7 @@
       "image": "assets/use-cases/create-lesson-deck.webp"
     },
     {
-      "index": 70,
+      "index": 71,
       "slug": "stalled-deal-diagnosis",
       "title": "Diagnose a stalled deal",
       "tagline": "Find the real blocker and the next customer-facing move.",
@@ -3698,7 +3764,7 @@
       "image": "assets/use-cases/stalled-deal-diagnosis.webp"
     },
     {
-      "index": 71,
+      "index": 72,
       "slug": "business-impact-readout",
       "title": "Measure business impact",
       "tagline": "Turn experiment or launch results into a scale, change, or stop recommendation.",
@@ -3738,7 +3804,7 @@
       "image": "assets/use-cases/business-impact-readout.webp"
     },
     {
-      "index": 72,
+      "index": 73,
       "slug": "scenario-tradeoff-model",
       "title": "Model strategic scenarios and tradeoffs",
       "tagline": "Compare strategic paths with assumptions, risks, cost, timing, and impact.",
@@ -3778,7 +3844,7 @@
       "image": "assets/use-cases/scenario-tradeoff-model.webp"
     },
     {
-      "index": 73,
+      "index": 74,
       "slug": "organize-lesson-unit-folder",
       "title": "Organize a lesson or unit folder",
       "tagline": "Turn scattered teaching files into a clear, verified structure.",
@@ -3823,7 +3889,7 @@
       "image": "assets/use-cases/organize-lesson-unit-folder.webp"
     },
     {
-      "index": 74,
+      "index": 75,
       "slug": "organize-semester-workspace",
       "title": "Organize a semester workspace",
       "tagline": "Turn scattered course files and deadlines into one verified system.",
@@ -3866,7 +3932,7 @@
       "image": "assets/use-cases/organize-semester-workspace.webp"
     },
     {
-      "index": 75,
+      "index": 76,
       "slug": "plan-budget-and-schedule",
       "title": "Plan a budget and schedule",
       "tagline": "See time conflicts, workload clusters, bills, and budget together.",
@@ -3909,7 +3975,7 @@
       "image": "assets/use-cases/plan-budget-and-schedule.webp"
     },
     {
-      "index": 76,
+      "index": 77,
       "slug": "prepare-committee-packet",
       "title": "Prepare a committee packet",
       "tagline": "Turn governance context into a review-ready meeting packet.",
@@ -3953,7 +4019,7 @@
       "image": "assets/use-cases/prepare-committee-packet.webp"
     },
     {
-      "index": 77,
+      "index": 78,
       "slug": "refresh-forecast-and-plan",
       "title": "Refresh a forecast and plan",
       "tagline": "Update assumptions and compare base, upside, and downside plans.",
@@ -3994,7 +4060,7 @@
       "image": "assets/use-cases/refresh-forecast-and-plan.webp"
     },
     {
-      "index": 78,
+      "index": 79,
       "slug": "strategic-account-plan",
       "title": "Refresh a strategic account plan",
       "tagline": "Turn recent account activity into a current deal strategy pack.",
@@ -4034,7 +4100,7 @@
       "image": "assets/use-cases/strategic-account-plan.webp"
     },
     {
-      "index": 79,
+      "index": 80,
       "slug": "refresh-course-materials",
       "title": "Refresh course materials",
       "tagline": "Review a course as one connected system.",
@@ -4077,7 +4143,7 @@
       "image": "assets/use-cases/refresh-course-materials.webp"
     },
     {
-      "index": 80,
+      "index": 81,
       "slug": "revise-lesson-package",
       "title": "Revise a lesson package",
       "tagline": "Apply approved feedback consistently across connected files.",
@@ -4121,7 +4187,7 @@
       "image": "assets/use-cases/revise-lesson-package.webp"
     },
     {
-      "index": 81,
+      "index": 82,
       "slug": "synthesize-research-evidence",
       "title": "Synthesize research evidence",
       "tagline": "Build a source-linked evidence base for research or proposals.",
@@ -4165,7 +4231,7 @@
       "image": "assets/use-cases/synthesize-research-evidence.webp"
     },
     {
-      "index": 82,
+      "index": 83,
       "slug": "track-course-engagement",
       "title": "Track course engagement",
       "tagline": "Turn de-identified course exports into a faculty review view.",
@@ -4208,7 +4274,7 @@
       "image": "assets/use-cases/track-course-engagement.webp"
     },
     {
-      "index": 83,
+      "index": 84,
       "slug": "track-job-applications",
       "title": "Track job applications",
       "tagline": "Compare roles and manage tailored application materials.",
@@ -4254,7 +4320,7 @@
       "image": "assets/use-cases/track-job-applications.webp"
     },
     {
-      "index": 84,
+      "index": 85,
       "slug": "ios-swiftui-view-refactor",
       "title": "Refactor SwiftUI screens",
       "tagline": "Use Codex to split an oversized SwiftUI screen into small subviews without changing behavior or layout.",
@@ -4326,7 +4392,7 @@
       "image": "assets/use-cases/ios-swiftui-view-refactor.webp"
     },
     {
-      "index": 85,
+      "index": 86,
       "slug": "build-student-website",
       "title": "Build a student website",
       "tagline": "Turn an idea and source material into a tested first version.",
@@ -4370,7 +4436,7 @@
       "image": "assets/use-cases/build-student-website.webp"
     },
     {
-      "index": 86,
+      "index": 87,
       "slug": "build-exam-study-system",
       "title": "Build an exam study system",
       "tagline": "Turn course materials into a reusable plan and practice set.",
@@ -4414,7 +4480,7 @@
       "image": "assets/use-cases/build-exam-study-system.webp"
     },
     {
-      "index": 87,
+      "index": 88,
       "slug": "build-and-deploy-internal-apps",
       "title": "Build and deploy internal apps",
       "tagline": "Turn a team workflow into a hosted internal app with Sites.",
@@ -4438,7 +4504,7 @@
           "title": "Build and deploy from one task",
           "paragraphs": [
             "Sites is a managed hosting service in ChatGPT. Ask ChatGPT to create an app, and it can build the project, run it for testing, deploy it, and return a URL you can share.",
-            "Sites is in public beta for eligible paid plans. It isn’t available on Free or Go, or in the EEA, Switzerland, or the United Kingdom at launch, and rollout or workspace settings can affect access.",
+            "Sites availability depends on your plan, rollout, and workspace settings. Check Sites availability and usage limits before you start.",
             "The scope ranges from static sites to full-stack JavaScript or TypeScript web apps. That makes Sites a good fit for focused internal tools: onboarding dashboards, training hubs, searchable resource libraries, lightweight workflow apps, and reporting views.",
             "See the Sites documentation for setup, storage, deployment, and access guidance.",
             "Start with one useful workflow. A clear first version is easier to review, deploy, and improve than a broad request to recreate an entire internal system.",
@@ -4450,7 +4516,7 @@
             "If you need live data fetching, you can connect to a third-party tool using an API key configured in the Site’s settings. Keep secret values out of prompts and files. If you want to use plugin connections, you can schedule work from the current task to fetch data with plugins on a set schedule, update the app, and save a version for review. Deploy the reviewed version only after approval.",
             "Many internal apps need persistence. Sites supports two storage primitives:",
             "Keep structured metadata in D1 and larger file objects in R2. A read-only resource page or small static site may not need either one.",
-            "Sites doesn’t support data or inference residency. Don’t use it to process protected health information or payment-card data, or to enable financial transactions. Review the Sites data and usage restrictions before storing sensitive information.",
+            "Review the Sites limits and unsupported uses before storing sensitive information. The guide links to current residency requirements and explains restrictions on protected health information and payments through third-party processors.",
             "You can manage who can visit your deployed projects.",
             "Keep a new project private while you review its content, data handling, and intended audience.",
             "Depending on your account and workspace settings, you can share it with:",
@@ -4477,7 +4543,7 @@
       "image": "assets/use-cases/build-and-deploy-internal-apps.webp"
     },
     {
-      "index": 88,
+      "index": 89,
       "slug": "draft-prds-from-sources",
       "title": "Draft PRDs from internal context",
       "tagline": "Create product requirements documents from Linear, Slack, source documents, and meeting notes.",
@@ -4518,7 +4584,7 @@
       "image": "assets/use-cases/draft-prds-from-sources.webp"
     },
     {
-      "index": 89,
+      "index": 90,
       "slug": "follow-goals",
       "title": "Follow a goal",
       "tagline": "Give Codex a durable objective for long-running work.",
@@ -4573,7 +4639,7 @@
       "image": "assets/use-cases/follow-goals.webp"
     },
     {
-      "index": 90,
+      "index": 91,
       "slug": "project-teammate",
       "title": "Set up a project teammate",
       "tagline": "Keep one project moving with a dedicated, context-aware teammate.",
@@ -4630,7 +4696,7 @@
       "image": "assets/use-cases/project-teammate.webp"
     },
     {
-      "index": 91,
+      "index": 92,
       "slug": "build-an-ai-tour-guide",
       "title": "Build an AI tour guide",
       "tagline": "Help users learn your app with a tour that adapts as they go.",
@@ -4700,7 +4766,7 @@
       "image": "assets/use-cases/build-an-ai-tour-guide.webp"
     },
     {
-      "index": 92,
+      "index": 93,
       "slug": "track-bills-subscriptions-and-spending",
       "title": "Track bills, subscriptions, and spending",
       "tagline": "Review the last 30 days and stay ahead of anything unusual.",
@@ -4741,7 +4807,7 @@
       "image": "assets/use-cases/track-bills-subscriptions-and-spending.webp"
     },
     {
-      "index": 93,
+      "index": 94,
       "slug": "ai-app-evals",
       "title": "Add evals to your AI application",
       "tagline": "Use Codex to turn expected behavior into a Promptfoo eval suite.",
@@ -4793,7 +4859,7 @@
       "image": "assets/use-cases/ai-app-evals.webp"
     },
     {
-      "index": 94,
+      "index": 95,
       "slug": "user-stories-to-ui-mocks",
       "title": "Turn user stories into UI mocks",
       "tagline": "Convert product feedback, issue threads, and design context into mockups your team can react to and implement.",
@@ -4831,7 +4897,7 @@
       "image": "assets/use-cases/user-stories-to-ui-mocks.webp"
     },
     {
-      "index": 95,
+      "index": 96,
       "slug": "slack-action-triage",
       "title": "Prioritize Slack action items",
       "tagline": "Turn Slack threads and DMs into a ranked queue of next steps.",
@@ -4884,7 +4950,7 @@
       "image": "assets/use-cases/slack-action-triage.webp"
     },
     {
-      "index": 96,
+      "index": 97,
       "slug": "react-native-expo-apps",
       "title": "Build React Native apps with Expo",
       "tagline": "Go from a mobile-app idea to a working Expo app with the dedicated plugin.",
@@ -4946,7 +5012,7 @@
       "image": "assets/use-cases/react-native-expo-apps.webp"
     },
     {
-      "index": 97,
+      "index": 98,
       "slug": "agent-friendly-clis",
       "title": "Create a CLI Codex can use",
       "tagline": "Give Codex a composable command for an API, log source, export, or team script.",
@@ -4995,7 +5061,7 @@
       "image": "assets/use-cases/agent-friendly-clis.webp"
     },
     {
-      "index": 98,
+      "index": 99,
       "slug": "verified-operations-workflows",
       "title": "Run verified operations",
       "tagline": "Run repeatable workflows and verify the result.",
@@ -5039,7 +5105,7 @@
       "image": "assets/use-cases/verified-operations-workflows.webp"
     },
     {
-      "index": 99,
+      "index": 100,
       "slug": "event-launch-playbooks",
       "title": "Run event playbooks",
       "tagline": "Create repeatable workflows for event program management.",
@@ -5084,7 +5150,7 @@
       "image": "assets/use-cases/event-launch-playbooks.webp"
     },
     {
-      "index": 100,
+      "index": 101,
       "slug": "chatgpt-apps",
       "title": "Bring your app to ChatGPT",
       "tagline": "Turn your use cases into focused apps for ChatGPT.",
@@ -5188,7 +5254,7 @@
       "image": "assets/use-cases/chatgpt-apps.webp"
     },
     {
-      "index": 101,
+      "index": 102,
       "slug": "audit-workflow",
       "title": "Audit a workflow",
       "tagline": "Turn a messy process into a clear audit and automation plan.",
@@ -5228,7 +5294,7 @@
       "image": "assets/use-cases/audit-workflow.webp"
     },
     {
-      "index": 102,
+      "index": 103,
       "slug": "launch-campaign-kit",
       "title": "Build a launch campaign kit",
       "tagline": "Turn launch context into coordinated first-draft campaign assets.",
@@ -5268,7 +5334,414 @@
       "image": "assets/use-cases/launch-campaign-kit.webp"
     },
     {
-      "index": 103,
+      "index": 104,
+      "slug": "incident-to-tested-fix",
+      "title": "Investigate an incident and test a fix",
+      "tagline": "Turn an incident packet into a reproduced bug, a focused patch, and a reviewable handoff.",
+      "tags": [
+        "Engineering",
+        "Quality"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/incident-to-tested-fix",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/incident-to-tested-fix",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/incident-to-tested-fix.webp",
+      "summary": "Give Codex Cloud a sanitized incident packet and a working test environment. Investigate the evidence, reproduce a supported code defect, and return a focused patch with regression-test evidence and a deployment and rollback handoff.",
+      "difficulty": "Intermediate",
+      "time": "Long-running",
+      "bestFor": [
+        "Small engineering teams investigating a stabilized incident.",
+        "Application defects with sanitized evidence and safe reproduction inputs.",
+        "Teams reviewing a focused fix in a working, isolated test environment."
+      ],
+      "starterPrompt": "Investigate [incident ID] in [repository/service] using [path to sanitized incident packet]. Work in the published cloud environment selected for this task.\n\nThe packet identifies the incident time window, affected release SHA, expected behavior, observed behavior, relevant log and trace excerpts, and safe reproduction inputs. Read AGENTS.md and the repository's setup and testing instructions first. Check that the checkout matches the affected release, or explain the difference before drawing conclusions.\n\nBuild a short timeline with file and line references to the packet and source code. Separate observations, hypotheses, and evidence gaps. Test the strongest hypothesis in the isolated test environment. If you cannot reproduce the failure or lack decisive evidence, return an investigation with the next diagnostic step; do not claim a confirmed root cause or make a speculative fix.\n\nIf the evidence supports a code defect, add a regression test and run it against the original code to demonstrate the failure. Make the smallest fix, rerun that test, then run the relevant broader tests, lint, and type checks available in this repository. Record the commands, exit codes, and any checks you could not run.\n\nPrepare a branch diff, a draft pull-request description, test-evidence.md, and a deployment and rollback handoff. Include the supported cause, unresolved uncertainty, and behavior changed. Use one evidence row per criterion: revision and environment versions, baseline command/exit/log, final command/exit/log, actual result, and pass/fail/blocked/not-run status with limitations. Keep the PR description as a local draft for review.\n\nFor this duplicate-webhook example, name the before-commit and after-commit failure points, prove duplicate contention with independent database connections, and state isolation, receipt-retention, and mixed-version rollout assumptions.\n\nFor this duplicate-webhook example, before proposing that retained deliveries resume, identify legacy orders without matching receipts after old consumers have drained. Hold affected event keys using the existing queue or quarantine procedure. Add a seeded orphan-with-pending-retry test that proves no second order or success acknowledgment occurs while held. Reconcile only from trusted immutable event identity, canonical payload, and committed-order evidence; keep missing or conflicting evidence quarantined for owner review. Do not invent fingerprints, delete receipts, or replay an unresolved legacy event.\n\nUse only the supplied packet and repository unless I identify another approved source. Access only the explicitly approved read-only monitoring source, if supplied. Write code and task artifacts only in this repository; use only its isolated test database. Do not connect directly to production application or database hosts, or modify production systems. Do not replay production events, modify live data or monitoring, create or post external updates, merge, or deploy.",
+      "workflow": [
+        {
+          "title": "Prepare the environment and incident packet",
+          "paragraphs": [
+            "Give Codex one bounded incident to investigate in a prepared cloud environment. The goal is a result an engineer can review: a supported explanation, a regression test that fails before the fix, a focused patch, and evidence from the tests that ran.",
+            "This works well after the immediate incident has been stabilized and the remaining job is to understand and fix an application defect. If the available evidence cannot establish the cause, a useful result is a clear account of the investigation and the next diagnostic step.",
+            "In the web or desktop app, choose Work in > Cloud and select a published environment.",
+            "To create one, select Create environment , choose the GitHub repositories, and ask Codex to prepare the runtime, dependencies, and isolated test services.",
+            "Review the setup report, resolve failed checks, and Publish before starting a new task.",
+            "If dependencies change or service setup changes, edit the reusable environment, test it, and Republish ; then validate the updated environment in a new task.",
+            "Repository refresh does not rerun install/start commands, and existing tasks retain their own state.",
+            "Configure required network destinations and test credentials separately; allowing a destination does not grant service access.",
+            "Confirm that the affected checkout, dependencies, checks, and disposable test database work in the new task. Record the starting commit and test baseline.",
+            "Keep the initial investigation self-contained. Place a sanitized packet in the repository or make its files available to the task. An engineer should assemble and check it before starting:",
+            "Do not include access tokens, customer payloads, or personal data in the packet.",
+            "A monitoring integration is optional. If you use one, grant read-only access to the relevant project and time window; the file-based workflow does not require it. Repository instructions should keep test credentials separate from production configuration.",
+            "Use the starter prompt on this page and replace its placeholders with your incident ID, repository, and packet path. The first result should connect the evidence to the affected code, explain what can be reproduced, and identify missing information.",
+            "Ask Codex to continue through implementation only when the evidence supports a code defect. Otherwise, review the investigation and provide the missing input. A plausible explanation, a recent code change, or a successful test on a different release is not enough to establish the cause.",
+            "Use the runnable incident sample to practice the investigation. It includes a prepared incident packet, a handler with a reproducible defect, the corrected handler, and PostgreSQL tests.",
+            "The service receives an order.created webhook, writes an order, and records that the event has been processed. During an incident, a retry appears to create a second order. The team has already stabilized the service and wants a patch for review.",
+            "The sample uses JavaScript, Node.js’s test runner, and PostgreSQL. Its disposable fixture has an event_receipts table with non-null identity columns and a non-deferrable unique key on (provider, account_id, event_id) .",
+            "The schema permits a receipt claim before the order exists and retains the canonical payload fingerprint needed to detect conflicting reuse of the same event key.",
+            "If your application instead requires an order foreign key at claim time or lacks this conflict evidence, stop for a separate schema/design decision.",
+            "Record the exact runtime, dependency lock, PostgreSQL version, transaction isolation level, and receipt schema in the evidence. The downloadable fixture pins Node.js 24.19.0, PostgreSQL 17.6, and pg 8.23.1.",
+            "For the supplied Compose setup, prepare an environment with a working Docker daemon and verify docker info before publishing it. Its database accepts only public test credentials and is bound to the local loopback interface. Use your application’s database engine and relevant settings when adapting the test.",
+            "This example assumes PostgreSQL READ COMMITTED, stable provider event IDs, and receipt retention covering the provider’s retry/replay window.",
+            "The fixed handler places receipt and order writes in one database transaction. The fixture provisions a disposable database and a delivery_holds table to model an existing queue’s quarantine procedure; that table is test infrastructure, not a proposed application migration.",
+            "The application fix adds no queue, database service, schema migration, or monitoring integration. If those assumptions do not hold, stop and revise the scope.",
+            "Extract the ZIP, open its directory, and use Docker with Compose:",
+            "The baseline command must exit with code 1 : the retry assertion observes two orders and one receipt instead of one of each. The regression command runs the same assertion against the corrected handler and must exit with code 0 .",
+            "The final test command exercises the full matrix, including independent connections, database lock contention, and legacy-orphan quarantine.",
+            "If your installation provides docker-compose , use that spelling in place of docker compose . Run these commands sequentially; the suite resets only its marked test schema.",
+            "This excerpt comes from main.mjs in the download. Run the complete files after extracting the ZIP; the tests and fixture setup are included there.",
+            "Use these files as the packet outline:",
+            "In this scenario, release.json identifies the example release SHA 4a1c9e7d2b6f8a0c3d5e7f9012a4b6c8d0e2f413 , deployed at 2026-09-22T11:58:00Z . The incident window is 12:03:00Z–12:05:00Z on the same day. The packet reports two internal orders associated with one provider event. When preparing your own packet, include confirmed impact counts and identify any estimates.",
+            "The sanitized logs contain these correlated observations:",
+            "Keep a stable event ID across deliveries and distinct request and trace IDs per delivery. A per-request identifier would hide the relationship between the retry and the original event.",
+            "The incident report proposes that a retry storm caused the duplicate. Codex should treat that as a hypothesis. Two observed deliveries do not establish a storm, and retries are a normal condition a webhook handler must tolerate.",
+            "In the sample’s affected implementation, source inspection reveals this sequence: look up a receipt, commit the order, then write the receipt in a separate transaction. The gap between the two commits is a stronger explanation. A worker failure in that gap can leave an order without a receipt, so a retry can create another order. Concurrent deliveries can also both pass a separate check before either writes its receipt.",
+            "Have Codex trace the actual handler and transaction boundaries and cite the relevant lines. It should confirm the packet’s release matches the code under test, or explain why testing a different commit limits the conclusion.",
+            "Add a regression test using the sample webhook and the isolated PostgreSQL database. Put a test-only failure hook immediately after the order write and before the receipt-write step in the original handler.",
+            "Confirm from the real transaction boundaries that the original order has committed at that point. Retry the same provider/account/event and assert exactly one order and one matching receipt; the seeded implementation should fail with two orders.",
+            "After the fix, exercise the corresponding hook after the order statement but before the shared transaction commits; the failed attempt must leave zero orders and zero receipts.",
+            "Retry and assert one of each. Keep the same business assertion across revisions and record the hook location on each revision.",
+            "Run the new test on the original implementation first. For the seeded defect in this sample, the expected failure is two orders instead of one. Save the command, starting commit, exit code, and assertion output. If that failure does not occur, investigate the mismatch before editing the handler.",
+            "An injected exception exercises the application’s transaction behavior. Record that it does not reproduce every possible host, network, or database failure.",
+            "For this specific defect, claim the event receipt and write the order within one transaction on one database connection. Use the existing unique key with INSERT ... ON CONFLICT (provider, account_id, event_id) DO NOTHING RETURNING ... .",
+            "Only the delivery that inserts the receipt may write the order; acknowledge success only after commit. A failed transaction rolls back both writes. Do not catch a uniqueness error and continue using an aborted transaction.",
+            "A competing delivery may wait for the first transaction. If the first commits, the second claim inserts nothing: issue a fresh SELECT under READ COMMITTED, verify the stored event identity/payload policy, and return the existing duplicate acknowledgment without writing an order.",
+            "If the first transaction rolls back, the competitor can claim and process the event. A missing receipt after a skipped insert, an identity conflict, or a transient database error must follow the documented retry/error path, not a fabricated success.",
+            "Under stricter isolation, serialization failures require the repository’s bounded whole-transaction retry policy. See PostgreSQL’s INSERT conflict behavior and transaction isolation .",
+            "Neither an in-memory set nor a separate “check then insert” protects against concurrent workers or restarts. Scope the key to the provider’s event-identity contract. If a supposedly identical event carries conflicting identity or payload information, surface that inconsistency rather than silently treating it as a valid duplicate.",
+            "The demo’s business mutation is entirely within the same database. If the real handler also sends email, charges a card, or calls another service, this transaction alone does not make those external effects idempotent. Identify that boundary and the system’s existing delivery or idempotency mechanism before expanding the fix.",
+            "Ask for both the original failure and the post-fix result. Use test-only hooks at named transaction boundaries and inspect committed state from a separate connection. The sample passes eleven local PostgreSQL tests; test-evidence.md in the download records those results and the checks still needed for Cloud execution and deployment. Run the suite in your published environment and test actual connection loss during commit before relying on that recovery path.",
+            "Coordinate concurrency with barriers/latches and bounded timeouts, not sleeps or a bare pair of promises. Release blocked workers in test cleanup and use disposable fixtures. An exception test alone does not prove abrupt process death, transport loss, or production concurrency behavior.",
+            "The sample uses node main.mjs baseline , node main.mjs regression , and node main.mjs inside the pinned runner. Its structured output records transaction boundaries, committed row counts, acknowledgment status/body, and observed blocking backend IDs.",
+            "When adapting the workflow, use the commands actually defined by your repository and report their real results. A skipped check or unavailable dependency belongs in the handoff, with its impact on confidence.",
+            "Use the incident workflow’s evidence format for each acceptance criterion. Populate it from observed output; the fields below are a template, not passing results. For a new test that does not exist at baseline, distinguish “not yet present” from a failed existing check.",
+            "Keep red and green runs tied to their actual tested states, including test-only changes on the original revision. Keep the logs, response fixtures, and final diff with the handoff. A changed final revision needs updated evidence; checks that were not run or were blocked cannot count as passing.",
+            "Ask Codex to leave the code diff and these review artifacts in the repository:",
+            "Before accepting the patch, verify that the original code fails the new test, the fix passes it, and the diff addresses the demonstrated defect. In the webhook example, inspect event-key scope, transaction boundaries, concurrency coverage, and any effects outside the transaction. Review existing duplicate orders separately; preventing new duplicates does not repair historical records.",
+            "A code patch protects only workers running the corrected handler. Old workers can still write an order before claiming a receipt, so a mixed-version canary is not evidence that the defect is eliminated.",
+            "The deployment owner must choose either a tested mixed-version strategy or an existing runbook that pauses ingestion, drains in-flight old workers, updates every consumer, and resumes retained deliveries without loss.",
+            "Confirm the provider/queue retry and retention behavior before choosing the latter; do not assume pausing is lossless.",
+            "Before resuming retained deliveries, identify committed legacy orders with no matching receipt. Pausing and draining old consumers prevents new legacy writes; it does not repair those existing orders. Hold every affected event key with the existing queue or quarantine procedure. If legacy records cannot establish a complete event identity, keep the affected deliveries or those from the affected time window paused for owner review rather than declaring the scan complete.",
+            "Reconcile a held key only when trusted immutable provider/account/event identity, canonical payload evidence, and the committed business record establish what already happened.",
+            "Under the approved reconciliation procedure, record the matching receipt without repeating the business mutation, then release that key’s hold.",
+            "Keep affected keys quarantined for owner review when evidence is missing, payloads conflict, or multiple business records exist. A retry payload cannot substitute for trusted evidence of the original event when reconstructing its fingerprint.",
+            "The pre-resume gate passes only when each affected key is reconciled or its hold remains enforced across all consumers.",
+            "Seed a legacy order and its pending retry in staging. Verify the hold prevents another order and any success acknowledgment; after trusted reconciliation, the retry may receive the duplicate acknowledgment while the existing order count stays at one. Rehearse an unresolved case too: it must remain held without a fabricated receipt. Keep this gate in the deployment handoff alongside pause/drain, consumer-version, retention, and rollback checks.",
+            "Before rollout, verify the existing unique constraint is present and valid, the receipt key/payload policy is consistent across all consumers, receipt cleanup cannot reopen the replay window, and external effects remain outside this patch.",
+            "In staging, rehearse the selected sequence and failed-worker retry. Record the owner’s observation window and stop thresholds for duplicate orders, webhook errors, acknowledgment latency, lock waits, and retry backlog; do not invent production thresholds.",
+            "Reverting to the old handler can reintroduce duplicate orders. The rollback handoff must name the containment step (for example, the approved pause/drain procedure), the safe revision, and the owner who decides when processing can resume. Preserve receipts; do not delete them to unblock retries. Historical duplicate orders require a separately reviewed remediation.",
+            "The engineer owns the deployment decision and any production remediation. A passing isolated test is evidence for review, not proof that production is healthy. Create the pull request, run your normal CI and review process, and deploy through your team’s established controls after reviewing the draft.",
+            "Use a focused follow-up to resolve uncertainty or improve the handoff:",
+            "If the first run could not reproduce the incident:"
+          ],
+          "items": [
+            "In the web or desktop app, choose Work in > Cloud and select a published environment.",
+            "To create one, select Create environment , choose the GitHub repositories, and ask Codex to prepare the runtime, dependencies, and isolated test services.",
+            "Review the setup report, resolve failed checks, and Publish before starting a new task.",
+            "Follow the current Cloud environment guide .",
+            "Keep repository guidance in AGENTS.md .",
+            "incident-investigation.md : timeline, evidence references, hypotheses tested, supported cause, and remaining uncertainty.",
+            "test-evidence.md : baseline commit, failing regression output, fix commit or diff, passing targeted checks, broader checks, and limitations.",
+            "pr-draft.md : a concise explanation of the defect, changed behavior, test evidence, and remaining risk.",
+            "deployment-handoff.md : verified schema/isolation/receipt-retention assumptions, named rollout owner, pre-deployment checks, duplicate-order and acknowledgment/error metrics, and the rollout/rollback gates below."
+          ]
+        }
+      ],
+      "image": "assets/use-cases/incident-to-tested-fix.webp"
+    },
+    {
+      "index": 105,
+      "slug": "migrate-a-validation-module",
+      "title": "Migrate a validation module",
+      "tagline": "Upgrade one module and prove that its public behavior still holds.",
+      "tags": [
+        "Engineering",
+        "Quality"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/migrate-a-validation-module",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/migrate-a-validation-module",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/migrate-a-validation-module.webp",
+      "summary": "Give Codex a bounded migration brief, contract fixtures, and a prepared cloud environment. Upgrade one validation module and return the focused change, parity evidence, remaining differences, and rollback instructions.",
+      "difficulty": "Advanced",
+      "time": "Long-running",
+      "bestFor": [
+        "Engineering teams moving a legacy validation component.",
+        "Migrations with explicit contracts and repeatable tests.",
+        "Teams needing a small reviewed change while other modules keep working."
+      ],
+      "starterPrompt": "Migrate [module] in [repository] from [current pinned version] to [approved target version] in this cloud environment.\n\nRead AGENTS.md, [migration brief], [official migration guide], the dependency lockfile, the module's callers, and [contract test locations]. Record the starting commit, environment/setup reference, installed Python version, framework/Pydantic/bundled-v1 versions, and lockfile hash. Confirm baseline/target compatibility; treat shared dependency/import preparation as a separate reviewed change.\n\nFirst run [baseline commands], inventory the migration surface, and write a short plan in [plan file]. Preserve [public contracts]. Keep [out-of-scope modules] unchanged. Remove obsolete code only inside the approved slice; name any compatibility adapter that must remain.\n\nIf the slice can be isolated and the baseline is usable, run the same frozen HTTP contract tests before and after the change through the real router, error handler, and response serialization. Compare status codes, contractual headers, accepted/rejected inputs, public JSON keys/types, defaults/nulls, and the complete error envelope. Run affected integration, lint and type checks too. If this requires broader upgrades or public behavior changes, return that decision before expanding scope. Do not approve new snapshots, normalize away public differences or weaken assertions. Record each check's revisions/environment/versions, before/after commands, exit codes, evidence paths, and pass/fail/blocked/not run with limitations.\n\nReturn the diff, before-and-after evidence, unresolved differences, dependency and lockfile changes, rollback instructions, and a draft PR description. Create a draft PR only if the connected repository tools and my permissions support it; otherwise provide the patch and description. Do not merge, deploy, change production data, or begin another slice.",
+      "workflow": [
+        {
+          "title": "When to use it",
+          "paragraphs": [
+            "Use this workflow when a migration has a clear boundary and tests that compare old and new behavior. Give Codex a migration brief, the module and its callers, frozen contract fixtures, and a prepared cloud environment. Ask for one focused change with evidence and a rollback path.",
+            "The sample migrates one validation model in an orders service from Pydantic v1 to v2. It includes the original implementation, a compatibility preparation stage, and the final module. Its tests exercise the real FastAPI router, error handler, response serialization, adjacent legacy route, and public OpenAPI document. No database migration or deployment is included.",
+            "Choose Work in > Cloud and select a published environment.",
+            "To create one, select Create environment , choose the GitHub repositories, and ask Codex to prepare the runtime, dependencies, and isolated test services.",
+            "Review the setup report, resolve failed checks, and Publish before starting a new task.",
+            "If dependencies change or service setup changes, edit the reusable environment, test it, and Republish .",
+            "Validate the updated environment in a new task. Repository refresh preserves dependency caches without rerunning installation or startup commands, and existing tasks retain their own state.",
+            "Configure required network destinations and credentials separately.",
+            "Record the environment/setup reference, source commit, Python patch version, framework and dependency versions, package-manager version, and lockfile hash at each stage. Verify those versions inside the new task before using its results.",
+            "Download the complete migration sample . It includes three standalone uv projects, their resolved uv.lock files, application implementations, a shared error and schema adapter, frozen HTTP fixtures, and the contract runner.",
+            "Use Python 3.11, 3.12, or 3.13 and install uv , then run:",
+            "The comparison creates a separate .venv for each stage and installs dependencies with uv sync --frozen . All stages use the invoking Python interpreter and the same HTTP and schema fixtures; dependency versions remain locked.",
+            "Python 3.14 and later are excluded because the legacy Pydantic v1 bridge does not support them. A successful run ends with:",
+            "Read evidence/legacy.json , prepared.json , target.json , and summary.json . They contain observed responses, runtime versions, source, fixture, and lockfile hashes, commands, exit codes, and raw-log paths.",
+            "The runner exercises the sample application’s HTTP endpoints through FastAPI ’s in-process TestClient . Run it inside your chosen Cloud task and retain that task’s evidence.",
+            "Run python3 run.py without --compare-stages only to check the target model in an environment with Pydantic v2 installed. That self-contained mode checks seven validation and serialization cases. It does not run HTTP or cross-stage parity checks. Use the full comparison command above to verify a migration.",
+            "The full comparison checks 23 HTTP cases in each stage, public OpenAPI, and response serialization. It passed locally on Python 3.11, 3.12, and 3.13. The download’s README.md records the tested versions and execution history. Run the current comparison in your Cloud environment to record its results there.",
+            "The prepared and target dependency locks are identical. The module slice changes the model and its direct serialization method, not the dependency environment.",
+            "The preparation step is a separate reviewed change. It also makes the remaining v1 route adapters emit alias-keyed dictionaries with dict(by_alias=True) before response validation; returning the v1 model directly under the v2 host can lose public aliases.",
+            "The target order adapter uses model_dump(by_alias=True) , and the adjacent v1 route keeps its preparation adapter.",
+            "The FastAPI migration guide limits temporary mixed v1/v2 route support to 0.119.0 through 0.127.x ; 0.128.0 removed it.",
+            "This example deliberately pins 0.119.0 to demonstrate that transition. Use a fully v2 boundary for a newer FastAPI application, and keep an owner and removal condition for the temporary bridge. Do not nest v1 and v2 models. This bridge is not a Python 3.14 migration path.",
+            "The frozen HTTP cases cover successful requests, an omitted note or a note explicitly set to null, missing and invalid IDs, multiple unknown fields, mixed field errors, invalid notes, malformed JSON, wrong content type, missing body, aliases, array and string bodies, and the adjacent legacy route. They compare status codes, the Content-Type header, and complete parsed JSON responses without stripping error fields or changing expected types.",
+            "The service has an application-owned error envelope and public OpenAPI document from the legacy stage. The error and schema adapters remain in place. The target preserves the legacy error order: declared-field errors first, then unknown keys alphabetically.",
+            "The tests compare the complete ordered error.fields array; they do not sort observed responses. The runner records each model’s native schema separately and verifies that native schemas differ; public schema parity does not mean the dependency’s generated schemas are identical.",
+            "The service preserves a legacy input behavior: it accepts an array of pairs such as [[\"order_id\", \"ord_123\"]] as an object, and both [] and an empty JSON string become empty objects with a missing-ID error. A nonempty string remains an invalid body. The target model keeps successful dict(value) conversions. Changing it to object-only input requires an owner’s contract decision, not a rewritten test expectation.",
+            "For your repository, freeze its actual existing responses before editing. Preserve optional fields with explicit defaults, keep strictness and unknown-field behavior, and test the real error handler and response serialization.",
+            "Raw validation errors differ across versions. The Pydantic migration guide also describes changes to aliases, coercion, optional fields, and custom validation functions; v2 does not convert TypeError raised inside those functions into ValidationError .",
+            "This excerpt comes from run.py in the download. Run the complete files after extracting the ZIP; the locked stages and HTTP fixtures are included there.",
+            "Use an evidence record for each criterion:",
+            "A successful import, lint check, or regenerated snapshot does not prove API parity. Record intentional differences separately, and rerun checks when the final source changes. When adapting the sample, include your application’s callers and services in the contract tests."
+          ],
+          "items": [
+            "Choose Work in > Cloud and select a published environment.",
+            "To create one, select Create environment , choose the GitHub repositories, and ask Codex to prepare the runtime, dependencies, and isolated test services.",
+            "Review the setup report, resolve failed checks, and Publish before starting a new task.",
+            "Follow the Cloud environment guide .",
+            "Keep repository guidance in AGENTS.md .",
+            "Write the brief. Name the module, direct callers, owner, approved versions, contract tests, out-of-scope code, and rollback instructions. Stop if the slice requires a wider dependency upgrade or changes public behavior.",
+            "Establish the baseline. Have Codex read AGENTS.md , the brief, official migration guidance, locks, callers, and tests. Record the starting commit and installed versions. Explain or repair failing baseline checks before claiming parity.",
+            "Prepare compatibility separately. If shared dependencies couple the module to other code, review that preparation first. Prove that the same fixtures pass against both the original and prepared baselines.",
+            "Migrate one slice. Use the starter prompt on this page. Change the module and its direct adapter; preserve unrelated modules and name any compatibility code that remains.",
+            "Run the same tests. Compare baseline and final HTTP/schema fixtures without changing expectations. Run affected integration, lint, and type checks, and save output tied to the final source and dependency state.",
+            "Review the handoff. Inspect the diff, observed evidence, unresolved differences, remaining bridge, and rollback. Create a draft PR only when repository tools and permissions support it. Leave merging, deployment, and another migration slice to the reviewer."
+          ]
+        }
+      ],
+      "image": "assets/use-cases/migrate-a-validation-module.webp"
+    },
+    {
+      "index": 106,
+      "slug": "build-workshop-practice-site",
+      "title": "Build a hackathon site",
+      "tagline": "Give participants one place to find the agenda, register, and share what they built.",
+      "tags": [
+        "Front-end",
+        "Knowledge Work"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/build-workshop-practice-site",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/build-workshop-practice-site",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/build-workshop-practice-site.webp",
+      "summary": "Turn your event brief and agenda into a site that guides participants through registration and demo submission, then keeps their projects available in a gallery.",
+      "difficulty": "Intermediate",
+      "time": "1h",
+      "bestFor": [
+        "Organizers running a hackathon for their team or organization.",
+        "Participants registering a team and submitting a demo."
+      ],
+      "starterPrompt": "Use @Sites to build a hackathon site for [hackathon name] using the event brief and agenda below. The participants belong to our workspace.\n\nSources:\n- Event brief and organizer contact: [attached file or document link].\n- Agenda: [file or spreadsheet link and tab].\n- Event date and time zone: [date and time zone].\n- Team rules and submission requirements: [document link].\n- Submission deadline and late-submission rule: [confirmed details].\n- Project gallery visibility: [when submitted projects should appear and who can see them].\n- Judging criteria and participant resources: [links or none].\n\nFirst confirm which sources you can read and summarize the schedule, deadline, team rules, and required submission fields. Ask about gaps or conflicting times. Use only the supplied event details. Leave project choice to participants; don't suggest project ideas or example use cases.\n\nBuild an event overview, agenda, participant instructions, resource list, and organizer contact section. Make it easy to find the next session, team registration, and project submission. Show the event date and time zone with the schedule and exact submission deadline. Keep the deadline and help contact near the submission form. Link to original resources and explain that this is a reviewed copy of the event information.\n\nLet participants register a team with its name and members, then return to add a project title, short description, and demo link. Distinguish saved drafts from submitted projects and explain any missing required fields. Show submitted projects in a gallery according to the supplied visibility rule. Require sign-in and enforce team membership on the server so members can edit only their own team's entry. Ask how membership should be confirmed before enabling team edits; don't use a typed name as proof of identity. Save registrations and submissions between visits.\n\nKeep event information, team registrations, and project records separate so agenda edits preserve submissions. Validate required fields and demo links. Follow the supplied deadline rule; ask if it is missing. Don't edit source documents or send invitations.\n\nTest with two fictional teams: register, submit, edit, reload, and try to edit the other team's entry directly. Check the deadline behavior and mobile layout. Identify and remove test records before the event. Keep the site private to our workspace and show a saved preview, test results, and unresolved questions before publishing.",
+      "workflow": [
+        {
+          "title": "Before you start",
+          "paragraphs": [
+            "Give hackathon participants a link they can use before, during, and after the event. Build a site where they can find the schedule, register a team, submit a demo, and explore what others made. Organizers can use the same project gallery to run demos and share the results afterward.",
+            "Gather the information you would normally send participants:",
+            "Decide what participants need to submit and when projects should appear in the gallery. For example, you might collect a title, a short description of what the team built, and a demo link. Use the event’s rules to decide whether entries appear immediately or when submissions close.",
+            "In this hypothetical event, participants meet at 9:00, form teams at 9:30, submit projects by 16:00, and begin demos at 16:30. All times use the event’s stated time zone. A participant opens the site to find the morning meeting link, registers their team, then returns later to add the project description and demo. During presentations, the organizer opens each submitted project from the gallery.",
+            "Replace the sample times with your confirmed schedule. Participants choose what to build; the site gives them the information and steps they need to take part.",
+            "Check that participants can open meeting links, instructions, and demo links with their own accounts. You can start with attached files and ordinary resource links; a live connection isn’t required for registration and submissions.",
+            "Confirm the event clock and instructions",
+            "Use the starter prompt with your event materials. Open the preview and compare it with the approved brief. Check the date, time zone, session times, submission deadline, and links. A participant should be able to find where to go next, how to join, and what to submit without asking an organizer. Keep the deadline and help contact near the submission instructions.",
+            "Register a team and submit a demo",
+            "Register a fictional test team, then return to add a project title, description, and demo link. Check the full path from registration to a submitted entry: can members tell what’s saved, what’s still missing, and whether their project has been submitted? Confirm that it appears in the gallery according to your event’s visibility rule.",
+            "Edit the entry and reload to confirm the changes were saved. Test with a second team account and confirm it can’t edit the first team’s entry, including through a direct link. Check what happens at the submission deadline and remove test entries before the event.",
+            "Use the site during and after the hackathon",
+            "Review the audience and publish the site for your participants. Add the link to the event invitation and ask a colleague to find the agenda and submission instructions without your help. Before the event, use their feedback to clarify any confusing steps.",
+            "During demos, use the gallery to open each project and see the team’s description alongside its demo link. After the event, keep the gallery available to the intended audience so people can revisit projects they missed. Check demo links from a participant’s account, and update event information without replacing the saved submissions.",
+            "Change session times or locations without overwriting registered teams, submitted projects, or their access rules.",
+            "Make the deadline visible in the event’s time zone and explain what happens when it passes."
+          ],
+          "items": [
+            "Attach the event brief and agenda in the build conversation. If they’re in a connected app, ask ChatGPT which connections are available, then provide the exact document links and spreadsheet tab name. Complete any connection step it requests. For example, supply the “Team hackathon brief” document and “Agenda” spreadsheet tab from Google Drive or SharePoint, if the relevant connection is available. Use ordinary links for the meeting room and participant resources.",
+            "Ask ChatGPT to summarize the schedule, deadline, team rules, and required submission fields. Confirm the event date and time zone. Resolve conflicting deadlines before using the starter prompt.",
+            "Build from a reviewed copy of these details, with links to original resources. Keep team registrations and project submissions in the site so they remain available between visits. Changes to the source agenda need a separate site update unless you add a live connection.",
+            "If you need the agenda to load from a connected source, ask ChatGPT to verify that the connection can read it. Keep the site private to your workspace and test with a participant’s own account. Follow data and connections .",
+            "Confirm the event clock and instructions Use the starter prompt with your event materials. Open the preview and compare it with the approved brief. Check the date, time zone, session times, submission deadline, and links. A participant should be able to find where to go next, how to join, and what to submit without asking an organizer. Keep the deadline and help contact near the submission instructions.",
+            "Register a team and submit a demo Register a fictional test team, then return to add a project title, description, and demo link. Check the full path from registration to a submitted entry: can members tell what’s saved, what’s still missing, and whether their project has been submitted? Confirm that it appears in the gallery according to your event’s visibility rule. Edit the entry and reload to confirm the changes were saved. Test with a second team account and confirm it can’t edit the first team’s entry, including through a direct link. Check what happens at the submission deadline and remove test entries before the event.",
+            "Use the site during and after the hackathon Review the audience and publish the site for your participants. Add the link to the event invitation and ask a colleague to find the agenda and submission instructions without your help. Before the event, use their feedback to clarify any confusing steps. During demos, use the gallery to open each project and see the team’s description alongside its demo link. After the event, keep the gallery available to the intended audience so people can revisit projects they missed. Check demo links from a participant’s account, and update event information without replacing the saved submissions."
+          ]
+        }
+      ],
+      "image": "assets/use-cases/build-workshop-practice-site.webp"
+    },
+    {
+      "index": 107,
+      "slug": "build-personal-onboarding-plan",
+      "title": "Build an onboarding portal",
+      "tagline": "Help new hires find their next task and practice the work they'll be doing.",
+      "tags": [
+        "Front-end",
+        "Knowledge Work"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/build-personal-onboarding-plan",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/build-personal-onboarding-plan",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/build-personal-onboarding-plan.webp",
+      "summary": "Turn your team's first-week plan into daily activities, resource links, and a practice task, with saved progress so each new hire can pick up where they left off.",
+      "difficulty": "Intermediate",
+      "time": "1h",
+      "bestFor": [
+        "Managers onboarding several people into the same role.",
+        "People teams maintaining first-week plans and resources for new hires."
+      ],
+      "starterPrompt": "Use @Sites to build an onboarding portal for [role or team] from our first-week plan. The end-of-week goal is [for example, draft a customer kickoff agenda].\n\nSources:\n- First-week plan: [attached file or document link].\n- Product and team resources: [specific document or folder links].\n- Practice-task instructions and example: [links].\n- Contacts and their responsibilities: [supplied list].\n\nFirst confirm which sources you can read. List the tasks by day with their source links, instructions, and contacts. Ask about missing or conflicting details; don't invent tasks, people, or company policies.\n\nBuild a welcome page, a day-by-day checklist, a resource list, helpful contacts, and the end-of-week practice task. For each task, show what to do, why it matters, what a completed task looks like, its resource link, and who can help. Include estimated times only where the plan provides them. Link the practice task to its instructions, approved example, and review criteria. Use the sequence in the supplied plan. Add a progress bar and a Continue where you left off section. Treat completion as a record of activities, not a score of job readiness.\n\nRequire sign-in and save each person's task completion between visits. Keep progress private to that person and enforce record access on the server. Keep shared task content separate from individual progress. Give tasks stable identities so an instruction or link update doesn't erase completion records.\n\nUse a reviewed copy of the plan and links to original resources. Explain that source-document changes need a site update. Don't copy restricted resource contents into a page for a broader audience or write completion data back into source documents. If a source can't be read, ask for an accessible copy or link.\n\nTest a new user, partial progress, a completed plan, and a second account. Confirm that progress survives reload, remains private, and isn't reset by an instruction edit. Flag resource links that still need a new hire's access check. Keep the site private to our workspace. Show a saved preview, test results, and open questions before publishing.",
+      "workflow": [
+        {
+          "title": "Before you start",
+          "paragraphs": [
+            "Turn your first-week plan into a place where new hires can see what to do today, find the right resources, and pick up where they left off. Ask for a portal that brings daily tasks, helpful contacts, and an end-of-week practice task together, with progress saved for each person.",
+            "Choose a role and name something a new hire should be able to do by the end of the week. That goal helps you decide which resources and activities belong in the plan. Gather the materials your team already uses:",
+            "Make tasks concrete enough that someone can tell when they’re done. “Learn the product” could become “Read the product overview and bring two questions to your buddy meeting.” Include an estimated time if your plan provides one, and explain which activities need another person’s help.",
+            "In this hypothetical plan for a customer success manager, the week’s activities build toward drafting a kickoff agenda:",
+            "For another role, substitute a relevant task, such as preparing a campaign brief or handling a sample support request. Use your approved plan to set the activities and sequence.",
+            "Open the resource links with a colleague who has the same access as a new hire. Fix inaccessible materials before sharing the site. Keep individual completion records in the site; they don’t need to be written back into the onboarding document.",
+            "Put the next action first",
+            "Use the starter prompt with your plan and resource links. Review the first day as someone who has just joined. They should know which task to start, why it matters, what to open, and who can help. Ask ChatGPT to replace vague task labels with actions from the plan and put the relevant resource beside each task.",
+            "Work toward the practice task",
+            "Follow the week’s activities through to the practice task. The new hire should be able to find the instructions, an approved example, and what their manager will look for. In the sample kickoff plan, that might mean checking that the agenda states the meeting’s purpose, includes questions for the customer, and leaves time to agree on next steps.",
+            "Mark an activity complete, reload, and return in another session to check that progress is saved. Use a second account to verify that it starts with its own progress and can’t access the first person’s record. A completed checklist records activities; use the practice task and conversation to understand where the person still needs help.",
+            "Welcome the next hire",
+            "Review the audience and publish the site for your team. Include its link in your welcome message, and explain how the new hire can use it each day. Ask which instructions or resources were hard to follow during the end-of-week conversation. When the plan changes, ask ChatGPT to preserve completed tasks and explain how new or removed tasks affect progress before publishing the update.",
+            "Update the checklist when the onboarding plan changes, while preserving completed tasks and making changes to existing progress explicit.",
+            "Help each new hire resume their first unfinished task without hiding the rest of the week’s plan."
+          ],
+          "items": [
+            "Get oriented: Read the product overview and meet a buddy to discuss questions.",
+            "See the work: Watch an approved sample kickoff and note the questions the host asks.",
+            "Try the task: Draft an agenda using the team’s template, then discuss it with a manager.",
+            "Attach the onboarding plan in the build conversation. For documents in a connected app, ask ChatGPT which connections are available, then give it the exact plan, resource, or folder links. Complete any connection step it requests. For example, point to “Customer success: first week” and “Kickoff agenda template” in Google Drive or SharePoint, if the relevant connection is available. Name the exact files instead of asking it to search all company documents.",
+            "Ask ChatGPT to list the tasks it found, grouped by day, with the source link and contact for each. Correct gaps before it builds the site. A document link identifies a source; confirm that ChatGPT can read it when you need its contents.",
+            "Use the plan as a reviewed copy in the site and keep links to original resources. A later edit to the source document won’t automatically update that copy. To revise the plan, return to the build conversation with the updated source.",
+            "If resources should load from a connected app when someone visits, request that separately. Use a workspace-private site, and test with the new hire’s own app permissions. Follow data and connections for the connection flow.",
+            "Put the next action first Use the starter prompt with your plan and resource links. Review the first day as someone who has just joined. They should know which task to start, why it matters, what to open, and who can help. Ask ChatGPT to replace vague task labels with actions from the plan and put the relevant resource beside each task.",
+            "Work toward the practice task Follow the week’s activities through to the practice task. The new hire should be able to find the instructions, an approved example, and what their manager will look for. In the sample kickoff plan, that might mean checking that the agenda states the meeting’s purpose, includes questions for the customer, and leaves time to agree on next steps. Mark an activity complete, reload, and return in another session to check that progress is saved. Use a second account to verify that it starts with its own progress and can’t access the first person’s record. A completed checklist records activities; use the practice task and conversation to understand where the person still needs help.",
+            "Welcome the next hire Review the audience and publish the site for your team. Include its link in your welcome message, and explain how the new hire can use it each day. Ask which instructions or resources were hard to follow during the end-of-week conversation. When the plan changes, ask ChatGPT to preserve completed tasks and explain how new or removed tasks affect progress before publishing the update."
+          ]
+        }
+      ],
+      "image": "assets/use-cases/build-personal-onboarding-plan.webp"
+    },
+    {
+      "index": 108,
+      "slug": "collect-and-schedule-team-requests",
+      "title": "Manage creative requests from brief to delivery",
+      "tagline": "Collect complete briefs, review drafts, and keep final assets with each request.",
+      "tags": [
+        "Front-end",
+        "Knowledge Work"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/collect-and-schedule-team-requests",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/collect-and-schedule-team-requests",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/collect-and-schedule-team-requests.webp",
+      "summary": "Turn your creative brief template into a request app where colleagues submit work, designers manage the queue, and reviewers give feedback on drafts.",
+      "difficulty": "Intermediate",
+      "time": "1h",
+      "bestFor": [
+        "Small creative teams receiving design requests through scattered messages.",
+        "Marketing teams coordinating campaign assets and review deadlines."
+      ],
+      "starterPrompt": "Use @Sites to build a creative request app for [team] using our brief template.\n\nSources:\n- Brief template: [attached file or document link].\n- Brand guidelines and approved assets: [document or folder links].\n- Existing requests, if any: [spreadsheet or none].\n- Creative-team members and reviewers: [supplied list].\n\nFirst confirm which sources you can read and summarize the required fields. Ask about missing owners, unclear dates, or unavailable sources. Use the supplied materials; don't invent brand rules or real requests.\n\nBuild an intake form for title, audience, key message, format or dimensions, requested date, reviewer, and copy or reference links. Adapt the fields to [request types, such as event graphics or presentations]. Show field examples and explain how to fix missing or invalid entries. Keep the requested date separate from the delivery date agreed by the creative team.\n\nGive each request a detail page with its brief, requester, owner, reviewer, agreed date, status, draft link, feedback, and final asset link. Use New, In progress, In review, and Delivered. Make the latest draft and delivered asset easy to distinguish. Add a queue with owner, status, and agreed-delivery-date filters. Make unassigned requests and missing agreed dates visible.\n\nRequire sign-in. Let requesters create and read their own requests and add feedback. Let only the named creative team manage all requests, assignment, and delivery status. Enforce access on the server, including direct record access. Save records and feedback between visits.\n\nStart with a reviewed copy of supplied request data and links to original assets. Explain which content is copied and which remains linked. Don't imply that source files stay synchronized, and don't modify connected documents or task trackers.\n\nUse labeled fictional requests for testing. Test required fields, submission, status changes, saved feedback after reload, and two requesters with different access. Check the layout on mobile. Keep the site private to our workspace and show a saved preview, test results, and any unresolved questions before publishing.",
+      "workflow": [
+        {
+          "title": "Before you start",
+          "paragraphs": [
+            "Give colleagues one place to request creative work and follow it through review and delivery. A request app can collect the details a designer needs, show who owns the work, and keep feedback beside the latest draft. The requester can check progress without searching through messages; the creative team can see what needs attention across its queue.",
+            "Choose a recurring request, such as an event graphic, presentation, or campaign asset. Gather the material you already use:",
+            "Decide who submits requests, who assigns the work, and who approves the result. Include those roles in your prompt so the app reflects how your team works. Keep a requested date separate from the delivery date the creative team agrees to.",
+            "In this hypothetical example, a marketer needs a 1200 × 628 graphic for a webinar aimed at operations leaders. The brief includes the approved headline, registration link, reviewer, and requested delivery date. A designer accepts the request, agrees on a date, and adds a draft. The reviewer leaves feedback on that request, and the designer adds the final asset when it’s ready.",
+            "You can use the same flow for another deliverable. Change the form fields to match the work: a presentation might need a slide count and speaker notes, while a print asset might need print dimensions and a production deadline.",
+            "If a connection isn’t available, attach the brief template and any request export, and link to the original assets. Check that the intended reviewers can open the linked files. The app’s request status and a task in another app are separate records unless you add an integration.",
+            "Submit a brief a designer can use",
+            "Use the starter prompt with your sources, then submit a fictional request. Read the resulting brief as the person doing the work: can you tell who the asset is for, what it should communicate, which copy is approved, and who will review it? If a field is too vague, ask ChatGPT for a more specific question or an example beneath it.",
+            "Try leaving a required field blank. Check that the form explains what is missing, retains the other entries, and creates only one request when submitted.",
+            "Review the draft and deliver the asset",
+            "Assign an owner and agree on a delivery date. Add a draft link, move the request to In review, and leave feedback as the requester. For the sample graphic, feedback might be: “Keep the headline and image. Make the event date easier to read at the size used in an email.” Specific feedback gives the designer a clear next action.",
+            "Add the final asset link and mark the request Delivered. Reopen it to check that the brief, feedback, and updates remain. Someone returning later should be able to distinguish the delivered asset from an earlier draft.",
+            "Share the queue with the right people",
+            "Filter the queue by owner, status, and agreed delivery date. Use it to see which work is due next and which requests need a reviewer’s response. An unassigned request or a missing agreed date should be visible so the team can resolve it.",
+            "Test with separate requester and creative-team accounts. A requester should see their own requests; the creative team should manage the queue. Confirm that another requester can’t read or change a request by opening its URL directly. Review the site’s audience, then publish it for your team. Adjust the form when the same missing detail keeps coming up.",
+            "Use a supported connection to show brand guidelines each visitor can access, with links to the original documents.",
+            "Add a view that separates overdue requests, requests waiting for feedback, and requests without an agreed delivery date."
+          ],
+          "items": [
+            "Attach the brief template and a small request export to the build conversation. To use a document from a connected app, ask ChatGPT which connections are available, then name the app and provide the exact document title or link. Complete any connection step ChatGPT requests. For example, if Google Drive is available, provide the link to your “Brand guidelines” document and “Approved assets” folder, and ask which materials it can read.",
+            "Ask ChatGPT to identify the required fields, summarize the brand guidance, and show how spreadsheet columns map to request records. Resolve missing owners or unclear dates before importing records.",
+            "Save briefs, status updates, and feedback in the app. Link to original copy, drafts, and finished assets. Copying a spreadsheet into the site doesn’t keep it synchronized with the original.",
+            "If you want visitors to retrieve current brand resources, ask for a supported read connection to the approved folder or documents. Keep the site private to your workspace and test with a teammate’s own account and permissions. See data and connections .",
+            "Submit a brief a designer can use Use the starter prompt with your sources, then submit a fictional request. Read the resulting brief as the person doing the work: can you tell who the asset is for, what it should communicate, which copy is approved, and who will review it? If a field is too vague, ask ChatGPT for a more specific question or an example beneath it. Try leaving a required field blank. Check that the form explains what is missing, retains the other entries, and creates only one request when submitted.",
+            "Review the draft and deliver the asset Assign an owner and agree on a delivery date. Add a draft link, move the request to In review, and leave feedback as the requester. For the sample graphic, feedback might be: “Keep the headline and image. Make the event date easier to read at the size used in an email.” Specific feedback gives the designer a clear next action. Add the final asset link and mark the request Delivered. Reopen it to check that the brief, feedback, and updates remain. Someone returning later should be able to distinguish the delivered asset from an earlier draft.",
+            "Share the queue with the right people Filter the queue by owner, status, and agreed delivery date. Use it to see which work is due next and which requests need a reviewer’s response. An unassigned request or a missing agreed date should be visible so the team can resolve it. Test with separate requester and creative-team accounts. A requester should see their own requests; the creative team should manage the queue. Confirm that another requester can’t read or change a request by opening its URL directly. Review the site’s audience, then publish it for your team. Adjust the form when the same missing detail keeps coming up."
+          ]
+        }
+      ],
+      "image": "assets/use-cases/collect-and-schedule-team-requests.webp"
+    },
+    {
+      "index": 109,
+      "slug": "compare-campaign-performance",
+      "title": "See which campaigns bring in leads",
+      "tagline": "Compare spend, lead counts, and cost per lead by campaign, channel, and week.",
+      "tags": [
+        "Front-end",
+        "Data"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/compare-campaign-performance",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/compare-campaign-performance",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/compare-campaign-performance.webp",
+      "summary": "Turn weekly campaign exports into a dashboard where your team can compare lead volume and cost, filter a change by channel, and inspect the rows behind the totals.",
+      "difficulty": "Easy",
+      "time": "30m",
+      "bestFor": [
+        "Marketers comparing lead volume and cost per lead across channels.",
+        "Teams reviewing weekly exports from ad platforms and CRM reports.",
+        "Teams replacing a static weekly report with a dashboard people can explore."
+      ],
+      "starterPrompt": "Use @Sites to build a campaign dashboard for [team] from [attached spreadsheet or exact source link and tab].\n\nReporting context:\n- Review question: [what the team wants to understand from this report].\n- Period: [start and end dates].\n- Currency: [currency].\n- Week boundary and time zone: [definition].\n- Lead definition and attribution rule: [team definition].\n- Additional source and campaign-ID mapping, if needed: [file or none].\n\nFirst inspect the source and show the columns, row count, date range, and sample rows. Expect one row per campaign per week with campaign ID or name, channel, spend, and leads. Flag duplicates, missing values, mixed currencies, and unmatched campaign IDs. Ask how to resolve ambiguous mappings; don't silently drop rows or invent data.\n\nShow total spend, total leads, and cost per lead. Add campaign, channel, and week filters, a weekly trend chart, and a campaign comparison table. Let a reviewer inspect the source rows behind a selected campaign's totals. Make every card, chart, and table use the same filtered rows. Label currency, reporting period, source, and any excluded rows. Flag a partial reporting week when the supplied dates establish that it is incomplete.\n\nCalculate cost per lead as total spend divided by total leads for the selected rows, never the average of row-level ratios. Show N/A for zero-lead ratios, distinguish missing values from zero, and show an empty state when no rows match. Keep different currencies separate unless I supply a conversion rule.\n\nStart with a saved copy of the supplied data. Explain how to replace it with a new export without duplicating overlapping weeks. Don't describe it as live unless a supported connection is configured and tested. Don't edit source reports or campaign budgets, or infer revenue or lead quality from lead counts.\n\nCheck totals against the source. Use a separate, labeled sample to test that $1,000 with 25 leads plus $500 with five leads gives $1,500 spend, 30 leads, and $50 cost per lead; don't add these sample rows to the real report. Also test zero leads, missing values, duplicate rows, and combined filters. Check the mobile layout. Keep the dashboard private to our workspace and show a saved preview, validation results, and unresolved data questions before publishing.",
+      "workflow": [
+        {
+          "title": "Before you start",
+          "paragraphs": [
+            "Turn weekly campaign exports into a dashboard your team can explore during a review. Show spend, lead volume, and cost per lead together so colleagues can compare campaigns, narrow to a channel or week, and open the rows behind a result.",
+            "Choose the question the dashboard should help answer. You might want to find campaigns where spend increased without a similar increase in leads, or see whether a change came from one campaign or an entire channel. That question helps you choose useful filters and comparisons.",
+            "Export a spreadsheet for the period you want to review. Use one row per campaign per week and include a stable campaign ID if names can change.",
+            "Supply your team’s lead definition and the reporting period. If spend comes from an advertising report and leads come from a customer relationship management (CRM) report, also provide the agreed campaign mapping and attribution rule. Without these, the site can’t reliably connect the two reports.",
+            "A source link or uploaded export doesn’t create a live connection. For a connected version, request a manual Refresh action and a visible last-successful-refresh time. If access fails, show an error or previous results labeled with their refresh time rather than an empty report that looks like zero activity.",
+            "Reconcile the totals with your export",
+            "Use the starter prompt, then compare unfiltered totals with the source. Check a small selection yourself before relying on the summary cards. For example, these hypothetical campaigns illustrate how the dashboard should combine results:",
+            "Combined cost per lead is $1,500 divided by 30 leads, or $50. Averaging $40 and $100 would incorrectly give $70 because the campaigns generated different numbers of leads. Ask ChatGPT to show how it calculates the total, then check it against your source rows.",
+            "Test a zero-lead row, a missing value, and a filter with no matching rows. The cards, chart, and table should all use the same selection and distinguish missing data from zero.",
+            "Compare volume, cost, and weekly changes",
+            "Choose the same reporting period for the campaigns you want to compare. Look at lead counts alongside cost per lead: a campaign can have a low unit cost while contributing only a small share of total leads. Then filter to a channel and inspect the weekly trend to find where a change began.",
+            "Use the campaign table to identify what needs a closer look. If spend rose but leads stayed flat, check the source report and campaign changes for that period. If one week looks unusually low, first check whether the week is complete and all rows were included. Lead counts alone don’t establish lead quality, revenue, or what caused a change.",
+            "Bring current data to the weekly review",
+            "Review the audience and publish the dashboard for your team. Before each meeting, replace the export or refresh the connected source, then verify the reporting period, totals, and any excluded rows. In the meeting, filter to a result someone has a question about and trace it back to the source. Leave with a specific follow-up, such as checking a campaign’s lead definition or reviewing a recent creative change. Keep budget changes outside the dashboard’s reporting workflow.",
+            "Replace repeated file uploads with a supported read connection that shows when the dashboard last refreshed successfully.",
+            "Show what changed from the previous calendar week, using consistent filters and totals for both periods."
+          ],
+          "items": [
+            "Attach a CSV or spreadsheet in the build conversation. For a sheet in a connected app, ask ChatGPT which connections can read it, then provide the file link, tab name, and relevant range or column names. Complete any connection step it requests. For example, name the “Weekly campaign results” file in Google Drive, the “Campaigns” tab, and columns A–F, if an available connection can read that sheet. Otherwise, export the tab as a CSV and attach it.",
+            "Ask ChatGPT to show the columns, reporting dates, row count, and a few sample rows before building. Identify blank values, duplicate campaign-week rows, and unmatched campaign IDs. Confirm how to handle them.",
+            "Start with a saved copy of the export. Label it with its source and reporting period. To update it, provide a fresh file in the same conversation and say whether it replaces the dataset or adds new weeks. Check for overlap before combining exports.",
+            "For data that loads when someone opens the site, ask ChatGPT to verify a supported read connection to the exact sheet or reporting source. Keep the site private to your workspace and test with a teammate’s connection. See data and connections .",
+            "Reconcile the totals with your export Use the starter prompt, then compare unfiltered totals with the source. Check a small selection yourself before relying on the summary cards. For example, these hypothetical campaigns illustrate how the dashboard should combine results: Sample campaign Spend Leads Cost per lead Product demo: Search $1,000 25 $40 Product demo: Social $500 5 $100 Combined $1,500 30 $50 Combined cost per lead is $1,500 divided by 30 leads, or $50. Averaging $40 and $100 would incorrectly give $70 because the campaigns generated different numbers of leads. Ask ChatGPT to show how it calculates the total, then check it against your source rows. Test a zero-lead row, a missing value, and a filter with no matching rows. The cards, chart, and table should all use the same selection and distinguish missing data from zero.",
+            "Compare volume, cost, and weekly changes Choose the same reporting period for the campaigns you want to compare. Look at lead counts alongside cost per lead: a campaign can have a low unit cost while contributing only a small share of total leads. Then filter to a channel and inspect the weekly trend to find where a change began. Use the campaign table to identify what needs a closer look. If spend rose but leads stayed flat, check the source report and campaign changes for that period. If one week looks unusually low, first check whether the week is complete and all rows were included. Lead counts alone don’t establish lead quality, revenue, or what caused a change.",
+            "Bring current data to the weekly review Review the audience and publish the dashboard for your team. Before each meeting, replace the export or refresh the connected source, then verify the reporting period, totals, and any excluded rows. In the meeting, filter to a result someone has a question about and trace it back to the source. Leave with a specific follow-up, such as checking a campaign’s lead definition or reviewing a recent creative change. Keep budget changes outside the dashboard’s reporting workflow."
+          ]
+        }
+      ],
+      "image": "assets/use-cases/compare-campaign-performance.webp"
+    },
+    {
+      "index": 110,
       "slug": "consolidate-spreadsheets",
       "title": "Consolidate spreadsheets",
       "tagline": "Join spreadsheet exports into one refreshable workbook.",
@@ -5308,7 +5781,7 @@
       "image": "assets/use-cases/consolidate-spreadsheets.webp"
     },
     {
-      "index": 104,
+      "index": 111,
       "slug": "weekly-work-summary",
       "title": "Write a weekly work summary",
       "tagline": "Turn a week of activity into a manager-ready update.",
@@ -5346,6 +5819,130 @@
         }
       ],
       "image": "assets/use-cases/weekly-work-summary.webp"
+    },
+    {
+      "index": 112,
+      "slug": "issue-to-tested-pr",
+      "title": "Turn an issue into a tested pull request",
+      "tagline": "Hand off a small feature with acceptance criteria and review the evidence.",
+      "tags": [
+        "Engineering",
+        "Code"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/issue-to-tested-pr",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/issue-to-tested-pr",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/issue-to-tested-pr.webp",
+      "summary": "Give Codex a scoped issue, a prepared cloud environment, and explicit checks. Get an implementation, tests, documentation, and a reviewable change with evidence for each acceptance criterion.",
+      "difficulty": "Intermediate",
+      "time": "Long-running",
+      "bestFor": [
+        "Startup engineers implementing a scoped API issue.",
+        "Reviewers who need implementation and validation evidence together.",
+        "Teams with acceptance criteria and a working test environment."
+      ],
+      "starterPrompt": "Implement [issue ID and title] in [repository] at [base branch and commit],\nusing the prepared cloud environment I selected for this task.\n\nInput packet: [paste or attach the issue, acceptance criteria, relevant\nfiles, public success/error schemas, authorization and pagination contract,\ntest fixtures, and approved validation commands].\nRepository instructions: [AGENTS.md and any relevant nested instructions].\nScope: [files or component boundaries].\nOut of scope: [explicit exclusions].\nRequired checks: [focused tests, relevant regression tests, type check,\nlint, and any required CI checks].\nOutput: [create a draft PR in this repository if the available integration\nsupports it and I authorize it here / return a diff and draft PR description].\n\nFirst read the instructions and relevant code. Confirm the starting commit\nand run the existing baseline checks using the execution tools available\nin this environment. Record any new test files as still to be created.\nIf the baseline fails, access is missing, or a\nrequired check cannot run, report the exact blocker before implementing.\n\nState a short plan, then implement the smallest change that meets the\nacceptance criteria. Follow existing auth, error, pagination, and testing\npatterns. Add tests that distinguish the required behavior from the old\nbehavior. For this pagination example, require tied timestamps across a\npage boundary, bounded traversal and replay on fixed fixtures, partial and\nexact-full final pages, authorization before cursor validation, invalid\ncursor cases, and success/error schema checks. Update the affected API\ndocumentation to match the implemented public response exactly.\n\nAfter implementation, run the required checks again. For every acceptance\ncriterion, point to the test or other evidence that verifies it. Record\ncommands, results, the tested commit or working-tree state, and any checks\nthat were not run. Separate pre-existing failures from new failures.\nNever describe an unrun check as passing.\n\nDeliver the diff or authorized draft PR, a concise change summary, the\nacceptance-criteria evidence table, remaining risks, and reviewer actions.\nDo not merge, deploy, use production data, change permissions, add new\ndependencies, or expand the agreed scope. Stop for a decision if the\ncontract conflicts with the repository or the work needs a schema change.",
+      "workflow": [
+        {
+          "title": "When to use it",
+          "paragraphs": [
+            "Hand Codex a small, well-defined issue and ask for a change a teammate can review: implementation, tests, documentation, and evidence that the requested behavior works. Keep the task in one prepared cloud environment so the code and validation use the same repository setup.",
+            "In the web or desktop app, choose Work in > Cloud and select a published environment.",
+            "To create one, select Create environment , choose the GitHub repositories, and ask Codex to prepare the runtime, dependencies, and isolated test services.",
+            "Review the setup report, resolve failed checks, and Publish before starting a new task.",
+            "If dependencies change or service setup changes, edit the reusable environment, test it, and Republish , then verify the changes in a new task.",
+            "Repository refresh does not rerun install/start commands, and existing tasks keep their own state.",
+            "Configure required network destinations and test credentials separately; allowing a destination does not grant service access.",
+            "If required checks cannot run, finish setup before using this workflow.",
+            "Choose a feature with a written contract and a clear stopping point: a new API endpoint, a validation rule, or a small addition to an existing service. The issue should fit in one pull request and have checks that can run without production access.",
+            "The example adds pagination to a project’s activity feed. The runnable Node.js sample includes authentication, project access, signed cursors, and an existing project-detail route. It uses fixed test records in memory, so you can check the pagination contract without a database or external service.",
+            "Download the sample , extract it, and open its issue-to-tested-pr folder. Use Node 22.6 or later . The sample uses the standard library and needs no package installation or API key.",
+            "node api.mjs starts a local HTTP server, requests the first page, prints its public IDs, and closes the server.",
+            "The --seeded test run deliberately exits nonzero: its timestamp-only continuation skips two events tied at the first page boundary. The same tests pass with the corrected timestamp-and-ID tuple continuation.",
+            "The reproduction command succeeds only if the seeded state fails and the corrected state passes.",
+            "The corrected traversal with limit=2 returns these pages in three requests:",
+            "The first two pages have a continuation cursor; the final page has next_cursor: null .",
+            "The seeded state returns [evt_105, evt_104] , then [evt_101] , losing evt_103 and evt_102 .",
+            "A successful run passes all 36 tests in the corrected state. The seeded state fails three assertions that expose the pagination defect.",
+            "To verify your environment, put the files in your selected repository, prepare and publish an environment with a supported Node runtime, then run the commands in a new Cloud task and record its results.",
+            "reproduce.mjs saves red.log , green.log , observed-http.json , and run-manifest.json in the requested evidence directory. The manifest identifies the runtime, commands, exit codes, seeded defect, correction, and SHA-256 source hashes.",
+            "It does not record session tokens or the signing key. Read README.md and openapi.json for the sample’s setup and public contract.",
+            "These excerpts come from the files in the download. Run the complete files after extracting the ZIP.",
+            "An issue link is useful only if Codex can read it. Paste or attach the relevant content when the source is unavailable. Include the following information with the starter prompt.",
+            "For the sample, prepare Node 22.6 or later; the tests create their own test sessions and cursor-signing key and bind a temporary HTTP server to the loopback interface. For your own service, also prepare its dependencies, test configuration, and isolated services. Verify that its cursor helper can bind a cursor to the authenticated tenant and requested project before assigning this issue.",
+            "Confirm the sample contract below matches your repository before implementation. A successful response is HTTP 200 with exactly { items, next_cursor } .",
+            "Each item has exactly four required public fields: id (nonempty string), created_at (UTC RFC 3339 timestamp string), type (nonempty string), and summary (string). items is an array of these objects; next_cursor is an opaque nonempty string or null .",
+            "Internal tenant/project keys, database metadata, raw event payloads, and credentials are not response fields. Describe response field types, required fields, whether fields allow null , and closed object shapes in OpenAPI. Verify the serialized HTTP bodies against that schema.",
+            "Events sort by created_at DESC, id DESC , preserving the timestamp’s fractional precision and using descending lexical ID order. The cursor resumes strictly after the last returned tuple in that order.",
+            "The default page size is 25; valid limits are decimal integers from 1 through 100. Repeated limit or cursor parameters are invalid. Return a non-null cursor only when another matching event exists.",
+            "Both a partial final page and an exactly full final page return next_cursor: null ; an empty authorized project returns items: [] and next_cursor: null .",
+            "The sample signs each cursor and binds it to the authenticated tenant and requested project. Authenticate and authorize the requested project before validating its limit or cursor, so parameter errors cannot reveal whether another tenant’s project exists.",
+            "A missing or invalid session returns 401; an inaccessible or nonexistent project returns the same generic 404. After confirming access, check the limit before the cursor.",
+            "A malformed, tampered, structurally invalid, or tenant/project-mismatched cursor returns HTTP 400 with code invalid_cursor . A valid cursor for another project in the same tenant, or for another tenant, is invalid when supplied to an authorized project.",
+            "A supplied cursor must not change the authorization result for an inaccessible project. The sample’s version-1 cursor does not expire; unsupported versions are invalid.",
+            "In the sample, every error body has exactly { error: { code, message } } , with both fields required strings and no extra fields.",
+            "Use these generic error responses:",
+            "Keep decoded cursor contents, tenant/project identifiers, raw errors, and stack traces out of every error body. Use the real repository’s approved envelope and codes if they differ; resolve that contract difference before changing shared helpers.",
+            "Traversal and replay assertions use fixed fixtures with no concurrent writes: following cursors returns every event once in the agreed order and terminates within ceil(event_count / limit) requests for a nonempty feed, or one request for an empty feed.",
+            "Replaying a valid cursor with the same request parameters returns the same items and continuation position while those fixtures stay unchanged; it need not produce byte-identical signed tokens.",
+            "This contract does not promise single-use cursors, snapshot pagination, or identical results after feed changes. Document the repository’s existing feed consistency policy; stop for a product decision if no policy exists and the issue requires snapshot behavior.",
+            "Choose the issue and prepare the environment. Confirm that the contract above matches the actual repository. Select the prepared cloud environment and the intended base commit. Supply the issue packet directly in the task; starting this recipe does not depend on an automatic issue-tracker trigger.",
+            "Run the starter prompt. Replace its bracketed inputs with your repository, issue packet, boundaries, and checks. Choose whether Codex should return a diff or create an authorized draft PR. The starter prompt on this page contains the full handoff instructions.",
+            "Establish the baseline. Codex should read repository instructions and run the approved baseline checks before editing.",
+            "For the sample, run node test.mjs and the syntax checks in README.md ; --seeded is a separate deliberate failure demonstration.",
+            "For your own service, run its existing regression, type, and lint checks. A new endpoint’s focused test file may not exist yet; record that as a test to create. Resolve failing existing checks or unavailable test services before attributing later results to the feature.",
+            "Implement and verify the contract. Ask Codex to use the existing access and cursor helpers, implement the endpoint, add the acceptance tests below, and update its API documentation. Where practical, the new tests should fail against the original code and pass after the change. Keep those results with the final verification record. In the downloadable sample, --seeded selects a deliberate defect for this comparison; this comparison is separate from a failing baseline in your repository.",
+            "Review the change and its evidence. Read the diff, acceptance checks, check outputs, and remaining risks together. If Codex creates an authorized draft PR, verify that its base and head are correct. If PR tooling is unavailable, use the returned diff and description to prepare the PR through your normal process. List any unresolved checks in the draft PR and keep it unready for merge.",
+            "Resolve review feedback and merge through your normal process. Give Codex the specific comments to address in the same task, then rerun the affected checks. A reviewer confirms required CI and approves the final commit before merging.",
+            "These tests make the issue small enough to delegate and specific enough to review. Adapt the names to your test runner, while preserving the behavior each test proves.",
+            "Seed five fixed events: evt_105 has the newest timestamp, evt_104 , evt_103 , and evt_102 share the middle timestamp, and evt_101 has the oldest.",
+            "With limit=2 , require exactly these pages: [evt_105, evt_104] , [evt_103, evt_102] , [evt_101] . The tie group must cross the first boundary.",
+            "Assert exact order, no duplicate or missing IDs, non-null cursors on the first two pages, and a null cursor on the third; fail if traversal exceeds three requests.",
+            "Replay the first continuation cursor with the same limit against unchanged fixtures and assert the same second-page items and continuation position.",
+            "Seed more than 100 events. Assert 25 items without a limit parameter, one with limit=1 , and 100 with limit=100 .",
+            "Assert HTTP 400 for 0 , 101 , -1 , a fractional value, and a string such as many , using the existing validation error shape.",
+            "Assert an empty authorized project returns items: [] and next_cursor: null . With limit=2 , assert that five events produce a one-item third page with a null cursor and that four events produce a two-item second page with a null cursor. The full final page must not require an extra empty request.",
+            "Assert missing and invalid sessions return the agreed 401 schema, including requests with a malformed cursor or a cursor from another scope. Cursor validation must not override authentication.",
+            "Authenticate as tenant A and request tenant B’s project or a nonexistent project. Assert the same agreed generic 404 body with no event data, including when the request carries a malformed or mismatched cursor. Authorization must precede cursor validation.",
+            "Request an authorized tenant-A project with (1) a valid signed cursor from another tenant-A project and (2) a valid signed cursor issued under tenant B.",
+            "Assert both return the same HTTP 400 invalid_cursor body with no event data or scope details. Test these separately from requests to an inaccessible project, which must return 404.",
+            "On an authorized project, assert HTTP 400 invalid_cursor for tokens the helper cannot decode, tokens with modified signatures, and signed tokens that omit required cursor fields or give those fields the wrong type. Use isolated test signing fixtures.",
+            "Cover unsupported versions or expired tokens if the shared helper supports those features. Assert that responses match the agreed generic error schema and contain no decoded contents, identifiers, raw errors, or stack traces.",
+            "The sample checks the existing project-detail route with authorized, unauthorized, and inaccessible-project requests. Run syntax checks for its .mjs files. In your service, run its established regression suite, type check, and lint.",
+            "Validate actual HTTP 200, 400, 401, and 404 response bodies against the agreed OpenAPI schemas. Assert required keys, item field types, timestamp format, whether the cursor allows null , and no extra properties at any object level.",
+            "Seed internal fields in stored events and verify they are absent from serialized items; verify every error response contains only its approved generic code and message.",
+            "Verify the OpenAPI operation and examples match the implemented parameters, exact success/error schemas, authorization precedence, ordering, final-page rules, and fixed-fixture replay/consistency limits. Run the repository’s API specification validation if one exists.",
+            "Use this evidence format for each acceptance criterion. Populate it from observed output. For a new test that does not exist at baseline, distinguish “not yet present” from a failed existing check.",
+            "Keep red and green runs tied to their actual tested states, including test-only changes on the original revision. Keep the logs, response fixtures, and final diff with the handoff; file and test names alone do not prove execution. Update the evidence when the tested revision changes. Checks that are blocked or have not run cannot count as passing.",
+            "A useful PR description links each claim to its evidence. Use this handoff template and replace every bracketed field with observed results.",
+            "Use a focused follow-up for a specific review finding. For example:",
+            "Provide the text of the comment if Codex cannot access the review directly. A reviewer should check that the response resolves the behavior in question, rather than only satisfying the wording of the comment.",
+            "After a reviewer accepts the first result, save the issue packet and acceptance checklist in your team’s issue template. Record stable repository guidance, such as test commands and where API contracts live, in AGENTS.md or the existing contributor guide."
+          ],
+          "items": [
+            "In the web or desktop app, choose Work in > Cloud and select a published environment.",
+            "To create one, select Create environment , choose the GitHub repositories, and ask Codex to prepare the runtime, dependencies, and isolated test services.",
+            "Review the setup report, resolve failed checks, and Publish before starting a new task.",
+            "Follow the current Cloud environment guide .",
+            "Keep repository guidance in AGENTS.md .",
+            "400 invalid_cursor / Invalid cursor.",
+            "400 invalid_limit / Limit must be an integer from 1 through 100.",
+            "401 unauthenticated / Authentication required.",
+            "404 not_found / Project not found.",
+            "Choose the issue and prepare the environment. Confirm that the contract above matches the actual repository. Select the prepared cloud environment and the intended base commit. Supply the issue packet directly in the task; starting this recipe does not depend on an automatic issue-tracker trigger.",
+            "Run the starter prompt. Replace its bracketed inputs with your repository, issue packet, boundaries, and checks. Choose whether Codex should return a diff or create an authorized draft PR. The starter prompt on this page contains the full handoff instructions.",
+            "Establish the baseline. Codex should read repository instructions and run the approved baseline checks before editing. For the sample, run node test.mjs and the syntax checks in README.md ; --seeded is a separate deliberate failure demonstration. For your own service, run its existing regression, type, and lint checks. A new endpoint’s focused test file may not exist yet; record that as a test to create. Resolve failing existing checks or unavailable test services before attributing later results to the feature.",
+            "Implement and verify the contract. Ask Codex to use the existing access and cursor helpers, implement the endpoint, add the acceptance tests below, and update its API documentation. Where practical, the new tests should fail against the original code and pass after the change. Keep those results with the final verification record. In the downloadable sample, --seeded selects a deliberate defect for this comparison; this comparison is separate from a failing baseline in your repository.",
+            "Review the change and its evidence. Read the diff, acceptance checks, check outputs, and remaining risks together. If Codex creates an authorized draft PR, verify that its base and head are correct. If PR tooling is unavailable, use the returned diff and description to prepare the PR through your normal process. List any unresolved checks in the draft PR and keep it unready for merge.",
+            "Resolve review feedback and merge through your normal process. Give Codex the specific comments to address in the same task, then rerun the affected checks. A reviewer confirms required CI and approves the final commit before merging.",
+            "The baseline is red or cannot run. Return the failing check and setup details. Fix the environment or agree on a documented baseline before continuing.",
+            "The contract conflicts with existing behavior. Identify the conflict, affected callers, and the smallest decision needed. Do not silently change the contract.",
+            "The change needs a migration, new dependency, or auth redesign. Explain why and split or re-scope the issue before expanding it.",
+            "Tests fail after implementation. Do not treat the change as ready to merge. Report the failing cases. Do not remove assertions or weaken authorization to make checks pass.",
+            "Repository write integration is unavailable. Return the diff, draft PR description, and validation evidence. A teammate can complete the repository handoff."
+          ]
+        }
+      ],
+      "image": "assets/use-cases/issue-to-tested-pr.webp"
     }
   ]
 }

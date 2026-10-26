@@ -1,6 +1,6 @@
 [
   {
-    "index": 33,
+    "index": 34,
     "slug": "api-integration-migrations",
     "titleTh": "อัปเกรดการเชื่อมต่อ API",
     "titleEn": "Upgrade your API integration",
@@ -28,7 +28,7 @@
     "checkTh": "ตรวจ official docs, response shape, tool behavior, คุณภาพ eval และต้นทุนก่อนเปิดใช้จริง"
   },
   {
-    "index": 34,
+    "index": 35,
     "slug": "complete-tasks-from-messages",
     "titleTh": "ทำงานต่อจากข้อความให้เสร็จ",
     "titleEn": "Complete tasks from messages",
@@ -56,7 +56,7 @@
     "checkTh": "ตรวจผู้รับ รายละเอียดสุดท้าย ราคา เวลา และเงื่อนไขยกเลิกก่อนอนุมัติการกระทำ"
   },
   {
-    "index": 35,
+    "index": 36,
     "slug": "figma-designs-to-code",
     "titleTh": "เปลี่ยน Figma เป็นโค้ด",
     "titleEn": "Turn Figma designs into code",
@@ -84,7 +84,7 @@
     "checkTh": "ตรวจ variant, asset license, responsive states และ accessibility เทียบกับ Figma และ design system"
   },
   {
-    "index": 36,
+    "index": 37,
     "slug": "browser-games",
     "titleTh": "สร้างเกมบนเว็บเบราว์เซอร์",
     "titleEn": "Create browser-based games",
@@ -112,7 +112,7 @@
     "checkTh": "ให้คนเล่นจริงตรวจ controls, win/fail state, accessibility, performance และความเหมาะสมของ asset ก่อนเผยแพร่"
   },
   {
-    "index": 37,
+    "index": 38,
     "slug": "reusable-codex-skills",
     "titleTh": "บันทึกเวิร์กโฟลว์เป็น Skill",
     "titleEn": "Save workflows as skills",
@@ -140,7 +140,7 @@
     "checkTh": "ทดลอง Skill กับงานจริงหนึ่งครั้ง และตรวจว่าไม่มีข้อมูลลับหรือคำสั่งที่ไม่ควรรันก่อนแชร์"
   },
   {
-    "index": 38,
+    "index": 39,
     "slug": "iterate-on-difficult-problems",
     "titleTh": "แก้โจทย์ยากด้วยการปรับปรุงทีละรอบ",
     "titleEn": "Iterate on difficult problems",
@@ -168,7 +168,7 @@
     "checkTh": "ตรวจทั้งคะแนนและชิ้นงานจริงด้วยมนุษย์ เพราะ Eval อาจไม่ครอบคลุมคุณภาพทุกด้าน"
   },
   {
-    "index": 39,
+    "index": 40,
     "slug": "monthly-business-review-narrative",
     "titleTh": "เตรียมรายงานทบทวนธุรกิจ",
     "titleEn": "Prepare a business review",
@@ -196,7 +196,7 @@
     "checkTh": "ห้ามเติมตัวเลขที่ไม่มีหลักฐาน และให้เจ้าของข้อมูลยืนยันตัวเลขสำคัญก่อนนำเสนอ"
   },
   {
-    "index": 40,
+    "index": 41,
     "slug": "cfo-board-reporting-pack",
     "titleTh": "เตรียมชุดรายงานสำหรับผู้บริหาร",
     "titleEn": "Prepare a leadership reporting pack",
@@ -224,7 +224,7 @@
     "checkTh": "ให้เจ้าของข้อมูลยืนยันตัวเลข สมมติฐาน และความเสี่ยงทุกจุดก่อนเผยแพร่ชุดรายงาน"
   },
   {
-    "index": 41,
+    "index": 42,
     "slug": "meeting-prep-briefs",
     "titleTh": "เตรียมสรุปก่อนประชุม",
     "titleEn": "Prepare meeting briefs",
@@ -252,7 +252,7 @@
     "checkTh": "ตรวจสิทธิ์และข้อมูลอ่อนไหวก่อนแชร์ Brief และอย่าให้ระบบส่งข้อความหรือแก้เอกสารโดยไม่ได้อนุมัติ"
   },
   {
-    "index": 42,
+    "index": 43,
     "slug": "update-documentation",
     "titleTh": "อัปเดตเอกสารให้ทันการเปลี่ยนแปลง",
     "titleEn": "Keep documentation up-to-date",
@@ -280,7 +280,7 @@
     "checkTh": "ตรวจว่าไม่มี Roadmap ที่ยังไม่ประกาศหรือข้อมูลลูกค้าภายในหลุดสู่เอกสารสาธารณะ"
   },
   {
-    "index": 43,
+    "index": 44,
     "slug": "native-ios-apps",
     "titleTh": "สร้างแอปสำหรับ iOS",
     "titleEn": "Build for iOS",
@@ -308,7 +308,7 @@
     "checkTh": "ตรวจ Build และทดสอบเส้นทางใช้งานหลักบน Simulator รวมถึง Accessibility และอุปกรณ์เป้าหมายก่อนส่งมอบ"
   },
   {
-    "index": 44,
+    "index": 45,
     "slug": "scan-multiple-repositories",
     "titleTh": "สแกนหลาย Repository",
     "titleEn": "Scan multiple repositories",
@@ -336,7 +336,7 @@
     "checkTh": "ยืนยันทุก repository และ full SHA ปกป้อง artifacts และตรวจ coverage แม้ค่า exit code จะเป็น 0 หรือไม่พบ finding ก็ยังไม่ใช่หลักฐานว่าโค้ดปลอดภัย"
   },
   {
-    "index": 45,
+    "index": 46,
     "slug": "kpi-root-cause-analysis",
     "titleTh": "วิเคราะห์สาเหตุที่ KPI เปลี่ยนแปลง",
     "titleEn": "Analyze KPI root causes",
@@ -364,7 +364,7 @@
     "checkTh": "อย่าสรุปว่าความสัมพันธ์คือเหตุและผล และให้ Metric owner ตรวจนิยามกับข้อมูลก่อนใช้ตัดสินใจ"
   },
   {
-    "index": 46,
+    "index": 47,
     "slug": "dashboard-builder-monitor",
     "titleTh": "วางแผน Dashboard และการติดตามผล",
     "titleEn": "Plan a dashboard and monitoring workflow",
@@ -392,7 +392,7 @@
     "checkTh": "ทดสอบนิยามและตัวเลขกับข้อมูลต้นทางก่อนอ้างว่า Dashboard พร้อมใช้งานจริง"
   },
   {
-    "index": 47,
+    "index": 48,
     "slug": "strategic-initiative-health-update",
     "titleTh": "สรุปสถานะโครงการเชิงกลยุทธ์",
     "titleEn": "Prepare an initiative health update",
@@ -420,7 +420,7 @@
     "checkTh": "ให้หัวหน้าโครงการยืนยันสถานะ ผู้รับผิดชอบ และรายการค้างก่อนแชร์กับผู้บริหาร"
   },
   {
-    "index": 48,
+    "index": 49,
     "slug": "prioritize-accounts",
     "titleTh": "จัดลำดับความสำคัญของบัญชีลูกค้า",
     "titleEn": "Prioritize accounts",
@@ -448,7 +448,7 @@
     "checkTh": "ให้ผู้ดูแลบัญชีลูกค้ายืนยันบริบทและอนุมัติข้อความทุกฉบับก่อนติดต่อลูกค้า"
   },
   {
-    "index": 49,
+    "index": 50,
     "slug": "forecast-risk-review",
     "titleTh": "ทบทวนความเสี่ยงของ Forecast",
     "titleEn": "Review forecast risk",
@@ -476,7 +476,7 @@
     "checkTh": "อย่าใช้ Stage เพียงอย่างเดียวตัดสินความมั่นใจ และให้ Sales owner อนุมัติก่อนเปลี่ยน Forecast"
   },
   {
-    "index": 50,
+    "index": 51,
     "slug": "run-student-club-project",
     "titleTh": "บริหารโครงการชมรมนักศึกษา",
     "titleEn": "Run a student club project",
@@ -504,7 +504,7 @@
     "checkTh": "ทีมต้องยืนยันผู้รับผิดชอบ วันที่ และงบประมาณก่อนมอบหมายงาน ส่งข้อความ หรือใช้จ่ายเงินจริง"
   },
   {
-    "index": 51,
+    "index": 52,
     "slug": "analytics-request-agent",
     "titleTh": "กำหนดขอบเขตคำขอวิเคราะห์ข้อมูล",
     "titleEn": "Scope an analytics request",
@@ -532,7 +532,7 @@
     "checkTh": "อย่าสมมตินิยาม Metric หรือ Join logic และให้นักวิเคราะห์ตรวจผลก่อนถือเป็นคำตอบสุดท้าย"
   },
   {
-    "index": 52,
+    "index": 53,
     "slug": "research-to-decision-memo",
     "titleTh": "เปลี่ยนงานวิจัยเป็นบันทึกเพื่อการตัดสินใจ",
     "titleEn": "Turn research into a decision memo",
@@ -560,7 +560,7 @@
     "checkTh": "ตรวจที่มาของทุกข้อเท็จจริงสำคัญและให้ผู้มีอำนาจตัดสินใจเป็นผู้อนุมัติ ไม่ให้ AI ตัดสินใจแทน"
   },
   {
-    "index": 53,
+    "index": 54,
     "slug": "initiative-off-track-brief",
     "titleTh": "เขียนสรุปโครงการที่ไม่เป็นไปตามแผน",
     "titleEn": "Write an initiative off-track brief",
@@ -588,7 +588,7 @@
     "checkTh": "ให้เจ้าของโครงการยืนยันข้อเท็จจริงและผลกระทบก่อนเปลี่ยนแผนหรือสถานะในระบบ"
   },
   {
-    "index": 54,
+    "index": 55,
     "slug": "refactor-your-codebase",
     "titleTh": "ปรับโครงสร้าง Codebase",
     "titleEn": "Refactor your codebase",
@@ -616,7 +616,7 @@
     "checkTh": "แยก Framework migration, Dependency upgrade และการเปลี่ยน Public API เป็นงานต่างหากเพื่อควบคุมความเสี่ยง"
   },
   {
-    "index": 55,
+    "index": 56,
     "slug": "ios-liquid-glass",
     "titleTh": "ปรับใช้ Liquid Glass",
     "titleEn": "Adopt liquid glass",
@@ -644,7 +644,7 @@
     "checkTh": "ตรวจความอ่านง่าย ความสม่ำเสมอ และ Fallback บนอุปกรณ์รุ่นเก่า หลีกเลี่ยงการใช้ Glass กับทุกส่วนของหน้าจอ"
   },
   {
-    "index": 56,
+    "index": 57,
     "slug": "native-macos-apps",
     "titleTh": "สร้างแอปสำหรับ macOS",
     "titleEn": "Build for macOS",
@@ -672,7 +672,7 @@
     "checkTh": "ตรวจ Window, Menu, Keyboard, Accessibility และการ Launch จริงก่อนถือว่า Feature พร้อมใช้งาน"
   },
   {
-    "index": 57,
+    "index": 58,
     "slug": "ios-simulator-bug-debugging",
     "titleTh": "แก้บั๊กด้วย iOS Simulator",
     "titleEn": "Debug in iOS simulator",
@@ -700,7 +700,7 @@
     "checkTh": "อย่าแก้จากการคาดเดา ต้องมีหลักฐานก่อนและหลังแก้ พร้อมทดสอบว่าพฤติกรรมที่เกี่ยวข้องยังทำงานได้ตามเดิม"
   },
   {
-    "index": 58,
+    "index": 59,
     "slug": "ios-app-intents",
     "titleTh": "เพิ่ม App Intents สำหรับ iOS",
     "titleEn": "Add iOS app intents",
@@ -728,7 +728,7 @@
     "checkTh": "ตรวจสิทธิ์และข้อมูลที่เปิดให้ระบบภายนอกเห็น พร้อมทดสอบทุก Intent ก่อนเผยแพร่"
   },
   {
-    "index": 59,
+    "index": 60,
     "slug": "macos-telemetry-logs",
     "titleTh": "เพิ่ม Telemetry ให้แอป Mac",
     "titleEn": "Add Mac telemetry",
@@ -756,7 +756,7 @@
     "checkTh": "ห้ามบันทึก Secret, Token, ข้อมูลส่วนบุคคล หรือเนื้อหาเอกสารดิบลง Log"
   },
   {
-    "index": 60,
+    "index": 61,
     "slug": "code-migrations",
     "titleTh": "ย้ายระบบโค้ดอย่างเป็นขั้นตอน",
     "titleEn": "Run code migrations",
@@ -784,7 +784,7 @@
     "checkTh": "หลีกเลี่ยงการเขียนระบบใหม่ทั้งหมดในครั้งเดียว (Big-bang rewrite) และต้องแก้ Validation ที่ไม่ผ่านก่อนเดินหน้าสู่ Milestone ถัดไป"
   },
   {
-    "index": 61,
+    "index": 62,
     "slug": "automate-security-scans-in-ci",
     "titleTh": "ทำ Security Scan อัตโนมัติใน CI",
     "titleEn": "Automate security scans in CI",
@@ -812,7 +812,7 @@
     "checkTh": "ให้เจ้าของความปลอดภัยตรวจ runner permissions, trigger scope, manifest, evidence และ coverage งานที่ผ่านหรือไม่พบ finding ไม่ใช่หลักฐานว่าระบบปลอดภัย"
   },
   {
-    "index": 62,
+    "index": 63,
     "slug": "audit-course-section-consistency",
     "titleTh": "ตรวจความสอดคล้องของรายวิชาหลายกลุ่ม",
     "titleEn": "Audit course section consistency",
@@ -840,7 +840,7 @@
     "checkTh": "ให้ผู้สอนยืนยันว่าความต่างเป็นข้อผิดพลาดหรือทางเลือกที่อนุมัติแล้วก่อนแก้เอกสารต้นฉบับ"
   },
   {
-    "index": 63,
+    "index": 64,
     "slug": "build-unit-plan-from-sources",
     "titleTh": "สร้างแผนหน่วยการเรียนจากไฟล์ต้นฉบับ",
     "titleEn": "Build a unit plan from source files",
@@ -868,7 +868,7 @@
     "checkTh": "อย่าแต่งข้อกำหนดโรงเรียนหรือข้อมูลผู้เรียนที่ไม่มีในแหล่ง และให้ครูอนุมัติก่อนนำไปใช้"
   },
   {
-    "index": 64,
+    "index": 65,
     "slug": "variance-driver-bridge",
     "titleTh": "สร้าง Variance Bridge อธิบายส่วนต่าง",
     "titleEn": "Build a variance driver bridge",
@@ -896,7 +896,7 @@
     "checkTh": "อย่าเขียนคำอธิบายเป็นข้อสรุปเมื่อข้อมูลรองรับเพียงสมมติฐาน และให้ Finance owner ยืนยันก่อนเผยแพร่"
   },
   {
-    "index": 65,
+    "index": 66,
     "slug": "build-interactive-lesson-resource",
     "titleTh": "สร้างสื่อบทเรียนแบบโต้ตอบ",
     "titleEn": "Build an interactive lesson resource",
