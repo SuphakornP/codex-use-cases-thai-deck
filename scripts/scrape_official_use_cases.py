@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "source-usecases.json"
 IMAGE_DIR = ROOT / "assets" / "use-cases"
 USER_AGENT = "Mozilla/5.0 (compatible; CodexUseCaseDeck/1.0)"
-EXPECTED_COUNT = 113
+EXPECTED_COUNT = 119
 USE_CASE_PATH = re.compile(r"^/(?:codex/)?use-cases/[^/]+$")
 
 
@@ -65,7 +65,7 @@ def extract_prompt(soup: BeautifulSoup) -> str:
     return ""
 
 
-def extract_workflow(soup: BeautifulSoup) -> list[dict[str, object]]:
+def extract_workflow(soup: BeautifulSoup, page_title: str) -> list[dict[str, object]]:
     prompt_heading = soup.find("h2", string=lambda value: value and clean(value) == "Starter prompt")
     best_for_headings = soup.find_all(
         "h2", string=lambda value: value and clean(value) == "Best for"
@@ -74,27 +74,32 @@ def extract_workflow(soup: BeautifulSoup) -> list[dict[str, object]]:
     if start_heading is None:
         return []
 
-    sections: list[dict[str, object]] = []
-    seen_sections: set[str] = set()
+    sections: dict[str, dict[str, object]] = {}
     start_section = start_heading.find_parent("section")
     for section in start_section.find_all_next("section"):
         heading = section.find("h2")
-        if heading is None:
+        if heading is None and section.get("id") != "useCaseMarkdownContent":
             continue
-        title = clean(heading.get_text(" ", strip=True))
+        title = clean(heading.get_text(" ", strip=True)) if heading else page_title
         if title == "Related use cases":
             break
         if title in {"Best for", "Skills & Plugins", "Starter prompt"}:
             continue
         paragraphs = [clean(node.get_text(" ", strip=True)) for node in section.find_all("p")]
         items = section_items(section)
-        if paragraphs or items:
+        code_blocks = (
+            [node.get_text() for node in section.find_all("pre")]
+            if section.get("id") == "useCaseMarkdownContent" else []
+        )
+        if heading is None:
+            paragraphs = [p for p in paragraphs if p]
+        if paragraphs or items or code_blocks:
             record = {"title": title, "paragraphs": paragraphs, "items": items}
             signature = json.dumps(record, ensure_ascii=False, sort_keys=True)
-            if signature not in seen_sections:
-                sections.append(record)
-                seen_sections.add(signature)
-    return sections
+            record = sections.setdefault(signature, record)
+            if code_blocks:
+                record["codeBlocks"] = code_blocks
+    return list(sections.values())
 
 
 def extract_meta_value(soup: BeautifulSoup, label: str) -> str:
@@ -124,7 +129,7 @@ def parse_detail(card: dict[str, object]) -> dict[str, object]:
             "time": extract_meta_value(soup, "Time horizon"),
             "bestFor": section_items(find_section(soup, "Best for")),
             "starterPrompt": extract_prompt(soup),
-            "workflow": extract_workflow(soup),
+            "workflow": extract_workflow(soup, str(card["title"])),
         }
     )
     return card

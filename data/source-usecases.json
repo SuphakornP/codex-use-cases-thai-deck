@@ -1,7 +1,7 @@
 {
   "source": "https://learn.chatgpt.com/use-cases",
-  "retrievedAt": "2026-10-26T02:21:08Z",
-  "count": 113,
+  "retrievedAt": "2026-11-02T02:04:15Z",
+  "count": 119,
   "useCases": [
     {
       "index": 0,
@@ -362,6 +362,9 @@
             "NanoFold competition rules",
             "Goal Mode running for more than 150 hours",
             "Goal Mode article"
+          ],
+          "codeBlocks": [
+            "MSA representation M\n        <-> pair / edge tensor Z_ij\n        <-> sparse face tensor F_ijk\n        <-> sparse tetra tensor U_ijkl\n        -> structure module\n        -> recycled geometry\n        loops back into the next pass"
           ]
         }
       ],
@@ -885,7 +888,10 @@
             "To customize what Codex reviews, add a ## Code Review Rules section to the AGENTS.md closest to the code the rules govern. For example:",
             "Put repository-wide rules in the root AGENTS.md and service-specific rules in a nested file. Keep rules concise, describe the behavior to flag and any safe path or exception, and leave formatting and lint checks in CI. See Customize what Codex reviews for setup and rule-writing guidance."
           ],
-          "items": []
+          "items": [],
+          "codeBlocks": [
+            "## Code Review Rules\n\n### Experiment cohorts\n\n- Do not filter treatment comparisons on post-exposure behavior, including conversion or retention.\n  Safe path: build cohorts from assignment or exposure; report conversion as an outcome."
+          ]
         }
       ],
       "image": "assets/use-cases/github-code-reviews.webp"
@@ -943,6 +949,9 @@
             "Needs a fix: Select one accepted finding and continue to Fix a finding from your security scan .",
             "Needs investigation: Keep it open and identify the missing check or information before making a remediation decision.",
             "Does not need a fix: Record the supporting evidence and your triage decision. Closing a finding records that decision; it does not change code."
+          ],
+          "codeBlocks": [
+            "Users must only retrieve documents from workspaces they belong to.\nReview whether a user can supply another workspace's identifier and\nretrieve its private documents. Check where workspace membership is\nenforced, including background jobs and direct API calls."
           ]
         }
       ],
@@ -986,7 +995,12 @@
             "If a user preference affects the whole app, ask Codex to put that control in Settings with @AppStorage and expose an entry point through the app menu instead of building another pushed settings screen.",
             "If the feature needs open/save panels, first-responder control, or a custom NSView , use AppKit as a small edge around a SwiftUI-owned state model rather than rewriting the whole window in AppKit."
           ],
-          "items": []
+          "items": [],
+          "codeBlocks": [
+            "struct LibraryRootView: View {\n  @SceneStorage(\"LibraryRootView.selection\") private var selection: Item.ID?\n  @SceneStorage(\"LibraryRootView.showInspector\") private var showInspector = true\n\n  var body: some View {\n    NavigationSplitView {\n      List(selection: $selection) {\n        ForEach(items) { item in\n          Label(item.title, systemImage: item.systemImage)\n            .tag(item.id)\n        }\n      }\n      .listStyle(.sidebar)\n      .navigationTitle(\"Library\")\n    } detail: {\n      ItemDetailView(selection: selection)\n        .inspector(isPresented: $showInspector) {\n          ItemInspectorView(selection: selection)\n        }\n    }\n  }\n}",
+            "@main\nstruct LibraryApp: App {\n  var body: some Scene {\n    WindowGroup {\n      LibraryRootView()\n    }\n    .commands {\n      CommandMenu(\"Library\") {\n        Button(\"New Item\") {\n          // Create a new item.\n        }\n        .keyboardShortcut(\"n\")\n\n        Button(\"Toggle Inspector\") {\n          // Route this command to the focused window or selected item state.\n        }\n        .keyboardShortcut(\"i\", modifiers: [.command, .option])\n      }\n    }\n\n    Settings {\n      LibrarySettingsView()\n    }\n  }\n}",
+            "struct LibrarySettingsView: View {\n  @AppStorage(\"showItemMetadata\") private var showItemMetadata = true\n\n  var body: some View {\n    TabView {\n      Form {\n        Toggle(\"Show Item Metadata\", isOn: $showItemMetadata)\n      }\n      .tabItem { Label(\"General\", systemImage: \"gearshape\") }\n    }\n    .frame(width: 460, height: 260)\n    .scenePadding()\n  }\n}"
+          ]
         },
         {
           "title": "Tech stack",
@@ -1181,6 +1195,179 @@
     },
     {
       "index": 22,
+      "slug": "automate-security-reviews-in-github-cloud",
+      "title": "Automate security reviews in GitHub Cloud",
+      "tagline": "Check proposed changes for security risks before they merge.",
+      "tags": [
+        "Security",
+        "Engineering"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/automate-security-reviews-in-github-cloud",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/automate-security-reviews-in-github-cloud",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/automate-security-reviews-in-github-cloud.webp",
+      "summary": "Connect a repository and configure review triggers with Codex Security Review.",
+      "difficulty": "Intermediate",
+      "time": "30m",
+      "bestFor": [
+        "Developers who want security feedback within their existing GitHub pull-request workflow.",
+        "Application security teams establishing consistent reviews of proposed code changes.",
+        "Repository maintainers tailoring reporting thresholds for sensitive areas such as authentication, authorization, and payments."
+      ],
+      "starterPrompt": "",
+      "workflow": [
+        {
+          "title": "Difference between Code Review and Security Review",
+          "paragraphs": [
+            "The fastest way to automate security reviews in GitHub Cloud is through the Security Review feature within ChatGPT. This is available through the same product surface as Codex Code Reviews available within your organization at https://chatgpt.com/codex/cloud/settings/code-review .",
+            "Codex Security Review goes deeper than Code Review on security-specific risks by analyzing the pull request diff, supporting repository context, and configured threat models or security guidance.",
+            "Code Review is a broad engineering review that assesses code quality. For example, Code Review asks: “Could this change break the product or introduce a serious engineering problem?” It reviews issues such as incorrect control flow, data corruption or loss, compatibility regressions, or incorrect API behavior. The intended users for Code Review are software developers within the organization.",
+            "Codex Security is a specialized, deeper assessment of security risks in the same PR changes. Security Review is for both software developers responsible for remediating vulnerabilities, as well as application security engineers responsible for securing CI/CD pipelines and source code. It assesses issues such as authentication and authorization bypasses, cross-tenant access, injection and unsafe parsing, or sensitive data exposure.",
+            "There are two options for configuring security reviews. The auto-review reporting determines which findings Codex posts to the PR when Security Review runs automatically. It is defaulted to High, so only High and Critical findings are posted.",
+            "The option for manual review controls which findings Codex posts after someone explicitly requests a Security Review. It is defaulted to Medium, so Medium, High, and Critical findings are posted.",
+            "When configured, posted vulnerabilities will surface within the PR.",
+            "",
+            "It’s best to choose automatic reporting thresholds around what the team is prepared to investigate consistently. For a targeted investigation, use the manual review settings to surface the additional detail relevant to that question.",
+            "Path-based reporting overrides the minimum severity published to the Github PR. Given that a repository’s risk is rarely uniform, this feature can tailor the risk threshold for more critical path, such as:",
+            "Lowering the threshold for authentication, authorization, payments, cryptography, CI workflows, of infrastructure.",
+            "Keeping a higher threshold for lower-risk or especially noisy areas.",
+            "You can modify the path overrides within the Codex Cloud settings for the selected repo. In this example below, we have established that src/** should have auto reviews for low vulnerabilities or higher. Changes to GitHub workflows or dependencies will enforce reporting for medium vulnerabilities.",
+            ""
+          ],
+          "items": [
+            "Lowering the threshold for authentication, authorization, payments, cryptography, CI workflows, of infrastructure.",
+            "Keeping a higher threshold for lower-risk or especially noisy areas."
+          ]
+        }
+      ],
+      "image": "assets/use-cases/automate-security-reviews-in-github-cloud.webp"
+    },
+    {
+      "index": 23,
+      "slug": "manage-supply-chain-risk-in-cicd",
+      "title": "Manage supply chain risk in the CI/CD",
+      "tagline": "Investigate dependency alerts and check package updates for security risks.",
+      "tags": [
+        "Security",
+        "Engineering"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/manage-supply-chain-risk-in-cicd",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/manage-supply-chain-risk-in-cicd",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/manage-supply-chain-risk-in-cicd.webp",
+      "summary": "Assess how third-party dependencies affect your application’s security with Codex Security CLI. Triage and validate Dependabot alerts, and run security scans when packages are introduced or updated.",
+      "difficulty": "Intermediate",
+      "time": "Long-running",
+      "bestFor": [
+        "Application security teams deciding which dependency alerts require action.",
+        "Developers assessing newly introduced packages or dependency updates.",
+        "Platform teams adding dependency-triggered security scans to their CI/CD pipelines."
+      ],
+      "starterPrompt": "",
+      "workflow": [
+        {
+          "title": "Validating Dependabot alerts",
+          "paragraphs": [
+            "You can leverage the Codex Security CLI to assess dependencies in the codebase, such as when a new dependency is introduced or a version is bumped. This is extremely useful in preventing vulnerable packages from presenting supply chain risk. The way to achieve this is through deploying the Codex Security CLI as commands within custom workflows.",
+            "Codex Security provides a skill for validating existing third-party vulnerabilities, including Dependabot, for reachability and exploitability. You can invoke the skill directly in the UI or through the CLI.",
+            "",
+            "Codex will triage each of the Dependabot alerts and subsequently present a ledger of each presented risk with a reason why the alert was validated or not.",
+            "",
+            "It is also possible to run security scans against the latest version of a dependency when the version is changed."
+          ],
+          "items": [],
+          "codeBlocks": [
+            "name: Codex Security dependency scan\n\non:\n  pull_request:\n    paths:\n      - package.json\n      - package-lock.json\n\npermissions:\n  contents: read\n\njobs:\n  scan:\n    name: Scan dependency changes\n    if: github.event.pull_request.head.repo.full_name == github.repository\n    runs-on: ubuntu-24.04\n    timeout-minutes: 45\n    steps:\n      - name: Set up the Ubuntu sandbox\n        run: |\n          sudo apt-get update\n          sudo apt-get install --yes bubblewrap apparmor-profiles\n          sudo apparmor_parser -r /usr/share/apparmor/extra-profiles/bwrap-userns-restrict\n\n      - name: Set up Node.js\n        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7\n        with:\n          node-version: \"26\"\n\n      - name: Set up Python\n        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7\n        with:\n          python-version: \"3.14\"\n\n      - name: Install Codex Security\n        run: |\n          set -euo pipefail\n          npm install \\\n            --prefix \"$RUNNER_TEMP/codex-security\" \\\n            --ignore-scripts \\\n            --no-audit \\\n            --no-fund \\\n            @openai/codex-security\n\n      - name: Verify Codex Security\n        env:\n          CODEX_SECURITY_BIN: ${{ runner.temp }}/codex-security/node_modules/.bin/codex-security\n        run: |\n          set -euo pipefail\n          test -x \"$CODEX_SECURITY_BIN\"\n          \"$CODEX_SECURITY_BIN\" --version\n\n      - name: Check out the pull request\n        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7\n        with:\n          ref: ${{ github.event.pull_request.head.sha }}\n          fetch-depth: 0\n          persist-credentials: false\n\n      - name: Install project dependencies\n        run: |\n          set -euo pipefail\n          npm ci --ignore-scripts --no-audit --no-fund\n\n      - name: Run full repository scan\n        env:\n          OPENAI_API_KEY: ${{ secrets.CODEX_SECURITY_API_KEY }}\n          CODEX_SECURITY_BIN: ${{ runner.temp }}/codex-security/node_modules/.bin/codex-security\n          CODEX_SECURITY_STATE_DIR: ${{ runner.temp }}/codex-security-state\n          SCAN_DIR: ${{ runner.temp }}/codex-security-results\n        run: |\n          set -euo pipefail\n          \"$CODEX_SECURITY_BIN\" scan . \\\n            --auth api-key \\\n            --output-dir \"$SCAN_DIR\" \\\n            --fail-on-severity high \\\n            --json > \"$RUNNER_TEMP/codex-security.json\"\n\n      - name: Preserve scan results\n        if: always()\n        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7\n        with:\n          name: codex-security-dependency-results\n          path: |\n            ${{ runner.temp }}/codex-security-results\n            ${{ runner.temp }}/codex-security.json\n          if-no-files-found: warn\n          retention-days: 7"
+          ]
+        }
+      ],
+      "image": "assets/use-cases/manage-supply-chain-risk-in-cicd.webp"
+    },
+    {
+      "index": 24,
+      "slug": "review-code-changes-in-codex-desktop",
+      "title": "Review code changes in Codex Desktop",
+      "tagline": "Inspect changes and investigate security findings while you work.",
+      "tags": [
+        "Security",
+        "Engineering"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/review-code-changes-in-codex-desktop",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/review-code-changes-in-codex-desktop",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/review-code-changes-in-codex-desktop.webp",
+      "summary": "Start a security review from Codex or your repository’s Codex project.",
+      "difficulty": "Intermediate",
+      "time": "30m",
+      "bestFor": [
+        "Developers checking uncommitted changes while the implementation is still fresh in their minds.",
+        "Engineers reviewing a commit, branch, or pull-request change set from a local checkout.",
+        "Reviewers who want to investigate findings alongside the affected code before deciding what to fix."
+      ],
+      "starterPrompt": "Please run a $codex-security:security-diff-scan on [Github repository URL]",
+      "workflow": [
+        {
+          "title": "Review code changes in Codex Desktop",
+          "paragraphs": [
+            "For a more interactive experience reviewing PRs or uncommitted changes, you can execute reviews through the security tab within Codex.",
+            "Alternatively, you can prompt Codex within the repository project of Codex by invoking the skill."
+          ],
+          "items": []
+        }
+      ],
+      "image": "assets/use-cases/review-code-changes-in-codex-desktop.webp"
+    },
+    {
+      "index": 25,
+      "slug": "set-up-security-context",
+      "title": "Set up security context",
+      "tagline": "Define what to protect, which rules to check, and what to report.",
+      "tags": [
+        "Security",
+        "Engineering"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/set-up-security-context",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/set-up-security-context",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/set-up-security-context.webp",
+      "summary": "Learn how to prepare and configure the context Codex needs for security reviews and scans.",
+      "difficulty": "Intermediate",
+      "time": "30m",
+      "bestFor": [
+        "Developers preparing a repository for security reviews and scans.",
+        "Application security teams documenting system risks, security requirements, and reporting criteria.",
+        "Teams making architecture, engineering, and operational knowledge available to security agents."
+      ],
+      "starterPrompt": "",
+      "workflow": [
+        {
+          "title": "Differences among threat models, AGENTS.md, SECURITY.md, and knowledge bases",
+          "paragraphs": [
+            "AGENTS.md keeps shared engineering instructions that establish consistent expectations. SECURITY.md tells Codex how your organization wants that reality evaluated and reported. A threat model describes the security reality of the system. They overlap, but the threat model is usually one part of the broader policy.",
+            "For example, a threat model would include details about assets, entry points, attacker-controlled inputs, trust boundaries, authentication assumptions, privileged operations, and risky components.",
+            "The security.md tells Codex how your organization wants that reality evaluated and reported.",
+            "Finally, a knowledge base supplies supporting documents to particular scans. This can include architecture documents, policies, additional threat models, or operational context that the CLI scanner should consider. Here’s an example of a Markdown architecture document seeded for the CLI scanner.",
+            "It can be supplied to the scan using the following command:",
+            "Putting it all together, a useful arrangement could look like the following:",
+            "Committing a threat model is a core component of informing how Codex should review security reviews. You can initialize a threat model by invoking the threat model skill within Codex and committing it.",
+            "",
+            "You can invoke the threat model skill through Codex by simply typing $threat-model . Once a threat model has been created, commit it to the repository under /docs/security and then link to the threat model within the Codex Cloud settings for the selected repo. If a threat model is not specified, Codex will regenerate the threat model for every security review.",
+            "",
+            "You can use the $define-security-policy skill to generate a seeded security policy within the repository.",
+            "",
+            "A strong security policy should include thorough details about how the application operates. Here’s an example of prompt that provides those details for Codex to enumerate and establish:"
+          ],
+          "items": [],
+          "codeBlocks": [
+            "# Threat Model\n\nThe public API accepts untrusted JSON and file uploads.\nRequests cross from the internet-facing API into internal billing and\nidentity services. Attackers are unauthenticated users or compromised\ntenant accounts. Protect tenant data, billing mutations, and service credentials.",
+            "# Security Policy\n\n## Security Invariants\n\n- Every billing mutation must be authorized for the active tenant.\n- Uploaded content must be parsed within explicit size and resource limits.\n- Service credentials must never be returned to clients.\n\n## Reportable Findings\n\nReport realistic violations of tenant isolation, authentication bypass,\nunsafe parsing, secret exposure, or unauthorized billing mutations.\n\n## Severity Context\n\nCross-tenant access is Critical.\nSingle-tenant unauthorized mutation is High.\n\n## Out of Scope\n\nDevelopment-only tools that cannot be included in production builds.",
+            "# Payment Service Security Context\n\n## Purpose\n\nThe payment service creates charges, issues refunds, and stores references\nto payment-provider customers. It does not store full card numbers or CVVs.\n\n## Deployment and Exposure\n\n- `POST /api/payments` is internet-facing through the API gateway.\n- `POST /internal/refunds` is reachable only from the support service.\n- Background workers consume messages from the `payment-events` queue.\n- The service runs with access to the payment-provider API and billing database.\n\n## Authentication and Authorization\n\n- Public endpoints use JWTs issued by the identity service.\n- The API gateway validates signatures, issuer, and expiration.\n- This service remains responsible for tenant authorization.\n- Internal requests use workload identity; network location alone is not trusted.\n- Refunds above £1,000 require a previously recorded approval.\n\n## Trust Boundaries\n\n1. Internet client → API gateway\n2. API gateway → payment service\n3. Payment service → payment provider\n4. Payment service → billing database\n5. Message producers → `payment-events` consumer\n\nInputs crossing any of these boundaries must be treated as untrusted unless\nthe receiving component performs the documented validation.\n\n## Sensitive Assets and Operations\n\n- Payment-provider API credentials\n- Customer-to-provider identifier mappings\n- Charge creation\n- Refund issuance\n- Webhook signature secrets\n- Tenant billing history\n\n## Important Data Flows\n\n### Creating a charge\n\n1. The API receives an authenticated request containing an order identifier.\n2. The service retrieves the order using both tenant ID and order ID.\n3. The service calculates the amount from server-side order data.\n4. The service creates the provider charge with an idempotency key.\n5. The resulting provider identifier is stored in the billing database.\n\nClient-supplied amounts must never be passed directly to the provider.\n\n### Processing a webhook\n\n1. The raw request body is retained.\n2. The provider signature is verified over the raw bytes.\n3. The event timestamp must be within five minutes.\n4. Duplicate event IDs are ignored.\n5. State changes occur only after all validation succeeds.\n\n## Relevant Code\n\n- `src/http/payments.ts`: public payment endpoints\n- `src/http/refunds.ts`: refund endpoints\n- `src/webhooks/provider.ts`: webhook validation\n- `src/workers/payment-events.ts`: asynchronous event processing\n- `src/auth/tenant.ts`: tenant authorization\n- `src/provider/client.ts`: provider API wrapper\n\n## Security Assumptions\n\n- The identity service is trusted to authenticate users, but not to authorize\n  access to payment records.\n- Queue publishers may be compromised; consumers must validate message content.\n- API-gateway authentication does not replace service-level tenant checks.\n- Provider webhook payloads are attacker-controlled until signature validation\n  completes.\n\n## Known Limitations\n\n- Legacy refunds created before 2025 do not have idempotency keys.\n- Webhook replay protection is local to one region.\n- The development payment-provider emulator does not validate signatures.",
+            "codex-security scan . \\\n  --knowledge-base /path/to/security-policies",
+            "SECURITY.md\ndocs/security/\n├── threat-model.md\n├── architecture.md\n├── authentication.md\n└── deployment-boundaries.md",
+            "### Authentication and Authorization\n\n- Every non-public endpoint must authenticate the caller.\n- Sessions and tokens must be validated for issuer, audience, signature, expiry, revocation, and intended authentication context.\n- Authentication failures must fail closed.\n- Sensitive operations must require recent or stronger authentication where appropriate.\n- Password-reset, account-recovery, MFA, and identity-linking flows must not permit account takeover.\n- Authentication secrets and tokens must never appear in logs, URLs, analytics, or error responses.\n- Authorization must occur before every read, mutation, transaction, export, or administrative action.\n- Possession of a valid account or resource identifier never proves authorization.\n- Customer, account, and tenant isolation must hold across list, detail, search, bulk, export, and indirect-reference endpoints.\n- Server-side authorization must not rely on client-supplied roles, ownership fields, prices, balances, or approval state.\n- Administrative and service-to-service permissions must use least privilege.\n- Failures allowing cross-customer access are reportable even when only one endpoint is affected.\n\n### Transaction and ledger integrity\n\n- Transactions must be authorized against the authenticated customer and eligible source account.\n- Amounts, currencies, destinations, fees, limits, and approval state must be validated server-side.\n- Transaction requests must be protected against replay, duplication, race conditions, and idempotency-key confusion.\n- Balance checks and ledger updates must be atomic.\n- Posted ledger entries must be immutable or corrected through auditable compensating entries.\n- High-risk transactions must enforce applicable limits, step-up authentication, approval, or fraud controls.\n- No failure path may produce an ambiguous transaction state without reconciliation.\n\n### Data protection\n\n- Sensitive data must be encrypted in transit and at rest using approved controls.\n- Secret material must come from an approved secret-management system rather than source code or ordinary configuration files.\n- Logs, traces, metrics, support tooling, and security artifacts must exclude credentials and minimize personal and financial data.\n- Data exports and backups must receive equivalent authorization and protection to primary data.\n- Error responses must not expose internals, sensitive records, credentials, or authorization details.\n- Retention and deletion behavior must follow the system’s approved data-governance requirements.\n\n### Input and output handling\n\n- Treat headers, paths, query parameters, bodies, uploaded files, webhook payloads, third-party responses, and stored customer content as untrusted.\n- Apply schema, type, range, length, and format validation before security-sensitive use.\n- Database access must use parameterized queries.\n- Outbound requests must restrict destinations, protocols, redirects, DNS behavior, and response sizes.\n- Parsers, uploads, decompression, and serialization must be bounded against resource exhaustion.\n- Customer-controlled content must be safely encoded for its output context.\n  \\"
+          ]
+        }
+      ],
+      "image": "assets/use-cases/set-up-security-context.webp"
+    },
+    {
+      "index": 26,
       "slug": "fix-a-finding-from-your-security-scan",
       "title": "Fix a finding from your security scan",
       "tagline": "Open a finding from your scan, review and apply a patch, and verify the fix.",
@@ -1241,7 +1428,7 @@
       "image": "assets/use-cases/fix-a-finding-from-your-security-scan.webp"
     },
     {
-      "index": 23,
+      "index": 27,
       "slug": "slack-coding-tasks",
       "title": "Kick off coding tasks from Slack",
       "tagline": "Delegate repository work from Slack threads.",
@@ -1281,7 +1468,7 @@
       "image": "assets/use-cases/slack-coding-tasks.webp"
     },
     {
-      "index": 24,
+      "index": 28,
       "slug": "new-hire-onboarding",
       "title": "Coordinate new-hire onboarding",
       "tagline": "Prepare onboarding trackers, team summaries, and welcome-space drafts.",
@@ -1341,7 +1528,7 @@
       "image": "assets/use-cases/new-hire-onboarding.webp"
     },
     {
-      "index": 25,
+      "index": 29,
       "slug": "deep-security-scan",
       "title": "Run a deep security scan",
       "tagline": "Search an authorized repository deeply for plausible vulnerabilities.",
@@ -1384,7 +1571,7 @@
       "image": "assets/use-cases/deep-security-scan.webp"
     },
     {
-      "index": 26,
+      "index": 30,
       "slug": "zoom-meeting-follow-ups",
       "title": "Turn meetings into follow-ups",
       "tagline": "Convert Zoom meeting insights into actions across your tools.",
@@ -1442,7 +1629,7 @@
       "image": "assets/use-cases/zoom-meeting-follow-ups.webp"
     },
     {
-      "index": 27,
+      "index": 31,
       "slug": "learn-a-new-concept",
       "title": "Learn a new concept",
       "tagline": "Turn dense source material into a clear, reviewable learning report.",
@@ -1537,7 +1724,7 @@
       "image": "assets/use-cases/learn-a-new-concept.webp"
     },
     {
-      "index": 28,
+      "index": 32,
       "slug": "idea-to-proof-of-concept",
       "title": "Get from idea to proof of concept",
       "tagline": "Explore the concept visually with ImageGen and build a first version of your idea.",
@@ -1578,7 +1765,7 @@
       "image": "assets/use-cases/idea-to-proof-of-concept.webp"
     },
     {
-      "index": 29,
+      "index": 33,
       "slug": "deploy-app-or-website",
       "title": "Deploy an app or website",
       "tagline": "Build or update a web app, deploy a preview, and get a live URL.",
@@ -1620,7 +1807,7 @@
       "image": "assets/use-cases/deploy-app-or-website.webp"
     },
     {
-      "index": 30,
+      "index": 34,
       "slug": "remediate-vulnerability-backlog",
       "title": "Remediate a vulnerability backlog",
       "tagline": "Turn reviewed findings into minimal fixes with regression evidence.",
@@ -1662,7 +1849,7 @@
       "image": "assets/use-cases/remediate-vulnerability-backlog.webp"
     },
     {
-      "index": 31,
+      "index": 35,
       "slug": "scan-code-changes-for-security",
       "title": "Scan code changes for security",
       "tagline": "Review a pull request or local diff for security regressions.",
@@ -1703,7 +1890,7 @@
       "image": "assets/use-cases/scan-code-changes-for-security.webp"
     },
     {
-      "index": 32,
+      "index": 36,
       "slug": "dependency-incident-audits",
       "title": "Audit dependency incidents",
       "tagline": "Turn a public package advisory into a safe repo-audit plan.",
@@ -1753,7 +1940,7 @@
       "image": "assets/use-cases/dependency-incident-audits.webp"
     },
     {
-      "index": 33,
+      "index": 37,
       "slug": "qa-your-app-with-computer-use",
       "title": "QA your app with Computer Use",
       "tagline": "Click through real product flows and log what breaks.",
@@ -1800,7 +1987,7 @@
       "image": "assets/use-cases/qa-your-app-with-computer-use.webp"
     },
     {
-      "index": 34,
+      "index": 38,
       "slug": "api-integration-migrations",
       "title": "Upgrade your API integration",
       "tagline": "Upgrade your app to the latest OpenAI API models.",
@@ -1839,7 +2026,7 @@
       "image": "assets/use-cases/api-integration-migrations.webp"
     },
     {
-      "index": 35,
+      "index": 39,
       "slug": "complete-tasks-from-messages",
       "title": "Complete tasks from messages",
       "tagline": "Turn iMessage threads into completed work across the apps involved.",
@@ -1883,7 +2070,7 @@
       "image": "assets/use-cases/complete-tasks-from-messages.webp"
     },
     {
-      "index": 36,
+      "index": 40,
       "slug": "figma-designs-to-code",
       "title": "Turn Figma designs into code",
       "tagline": "Turn Figma selections into polished UI with structured design context and visual checks.",
@@ -1949,7 +2136,7 @@
       "image": "assets/use-cases/figma-designs-to-code.webp"
     },
     {
-      "index": 37,
+      "index": 41,
       "slug": "browser-games",
       "title": "Create browser-based games",
       "tagline": "Define a game plan and let Codex build and test it in a live browser.",
@@ -2000,6 +2187,9 @@
             "Playwright interactive so Codex can test the game in a live browser",
             "OpenAI docs so Codex can fetch the latest OpenAI API documentation",
             "Optionally, you can add the Context7 MCP server to fetch the latest docs for the rendering framework"
+          ],
+          "codeBlocks": [
+            "# Game name\n\n<Type of game>\n\nTech Stack:\n\n- NextJS for frontend (hosted on Vercel)\n- <insert technology> for rendering\n- Fastify for backend, websockets (hosted on <hosting platform>)\n- Postgres for database (hosted on <hosting platform>)\n- Redis for caching and pub/sub (hosted on <hosting platform>)\n- OpenAI for generative AI features\n\nTips:\n\n- Use build and test commands to verify your work as soon as you complete a feature or task\n- Use the PLAN.md file to guide your work when building new features\n- Log your work under .logs (create new log files as you see fit) to record your thought process and decisions, and reference them when iterating on features\n- Use playwright to test the visual output of your work, and iterate if it doesn't look right or fit the vibe\n- Use imagegen to generate visual assets for your work, and every time you generate a collection of assets, save the prompts you used to be able to continue generating more of the same assets later (create files in .prompts)\n- Use Context7 MCP to fetch <rendering framework> docs"
           ]
         },
         {
@@ -2027,7 +2217,7 @@
       "image": "assets/use-cases/browser-games.webp"
     },
     {
-      "index": 38,
+      "index": 42,
       "slug": "reusable-codex-skills",
       "title": "Save workflows as skills",
       "tagline": "Create a skill Codex can keep on hand for work you repeat.",
@@ -2087,7 +2277,7 @@
       "image": "assets/use-cases/reusable-codex-skills.webp"
     },
     {
-      "index": 39,
+      "index": 43,
       "slug": "iterate-on-difficult-problems",
       "title": "Iterate on difficult problems",
       "tagline": "Use Codex as a scored improvement loop to solve hard tasks.",
@@ -2155,7 +2345,7 @@
       "image": "assets/use-cases/iterate-on-difficult-problems.webp"
     },
     {
-      "index": 40,
+      "index": 44,
       "slug": "monthly-business-review-narrative",
       "title": "Prepare a business review",
       "tagline": "Turn recurring KPI, close, and forecast inputs into a sourced performance narrative.",
@@ -2195,7 +2385,7 @@
       "image": "assets/use-cases/monthly-business-review-narrative.webp"
     },
     {
-      "index": 41,
+      "index": 45,
       "slug": "cfo-board-reporting-pack",
       "title": "Prepare a leadership reporting pack",
       "tagline": "Turn company progress, financial metrics, and owner updates into a source-backed reporting pack.",
@@ -2236,7 +2426,7 @@
       "image": "assets/use-cases/cfo-board-reporting-pack.webp"
     },
     {
-      "index": 42,
+      "index": 46,
       "slug": "meeting-prep-briefs",
       "title": "Prepare meeting briefs",
       "tagline": "Turn calendar context into an agenda and notes plan.",
@@ -2285,7 +2475,7 @@
       "image": "assets/use-cases/meeting-prep-briefs.webp"
     },
     {
-      "index": 43,
+      "index": 47,
       "slug": "update-documentation",
       "title": "Keep documentation up-to-date",
       "tagline": "Use code and other sources to automate docs updates.",
@@ -2328,13 +2518,16 @@
             "Ask Codex to map the affected docs. Have it search existing docs for feature names, config keys, commands, examples, and related terms before drafting.",
             "Update the smallest useful docs surface. Codex should preserve the current page structure, terminology, cross-links, and frontmatter. It should avoid broad rewrites when a precise note, example, or section update is enough.",
             "Verify the changes. Ask Codex to run formatting and docs checks that fit the repo, then summarize the evidence behind each user-facing claim."
+          ],
+          "codeBlocks": [
+            "## Documentation\n\n- When user-facing behavior changes, check whether docs, examples, or changelogs need updates.\n- Public docs must only include public information or behavior visible in this repo.\n- Preserve existing terminology and frontmatter.\n- Run the docs formatting and build checks before final handoff."
           ]
         }
       ],
       "image": "assets/use-cases/update-documentation.webp"
     },
     {
-      "index": 44,
+      "index": 48,
       "slug": "native-ios-apps",
       "title": "Build for iOS",
       "tagline": "Use Codex to scaffold, build, and debug SwiftUI apps for iPhone and iPad.",
@@ -2427,7 +2620,7 @@
       "image": "assets/use-cases/native-ios-apps.webp"
     },
     {
-      "index": 45,
+      "index": 49,
       "slug": "scan-multiple-repositories",
       "title": "Scan multiple repositories",
       "tagline": "Run security scans across repositories and review the findings and coverage.",
@@ -2468,13 +2661,18 @@
             "Inventory: Confirm the repositories and commits in manifest.json .",
             "Status: Read results.jsonl for each attempt’s status and artifact location.",
             "Coverage and findings: In each attempt folder, read coverage.json for gaps and exclusions, then report.md and findings.json for findings and supporting evidence."
+          ],
+          "codeBlocks": [
+            "id,repository,revision\npayments,https://github.com/YOUR-ORG/payments.git,REPLACE_WITH_FULL_COMMIT_SHA\nidentity,https://github.com/YOUR-ORG/identity.git,REPLACE_WITH_FULL_COMMIT_SHA",
+            "git -C /path/to/repository rev-parse HEAD",
+            "npx @openai/codex-security bulk-scan repositories.csv \\\n  --output-dir /path/outside/repositories/security-scans \\\n  --workers 2 \\\n  --mode standard \\\n  --max-attempts 1 \\\n  --max-cost 5"
           ]
         }
       ],
       "image": "assets/use-cases/scan-multiple-repositories.webp"
     },
     {
-      "index": 46,
+      "index": 50,
       "slug": "kpi-root-cause-analysis",
       "title": "Analyze KPI root causes",
       "tagline": "Explain an unexpected metric movement with evidence and next actions.",
@@ -2514,7 +2712,7 @@
       "image": "assets/use-cases/kpi-root-cause-analysis.webp"
     },
     {
-      "index": 47,
+      "index": 51,
       "slug": "dashboard-builder-monitor",
       "title": "Plan a dashboard and monitoring workflow",
       "tagline": "Define metrics, owners, quality checks, and the decisions a dashboard supports.",
@@ -2554,7 +2752,7 @@
       "image": "assets/use-cases/dashboard-builder-monitor.webp"
     },
     {
-      "index": 48,
+      "index": 52,
       "slug": "strategic-initiative-health-update",
       "title": "Prepare an initiative health update",
       "tagline": "Turn recurring initiative context into a clear leadership readout.",
@@ -2594,7 +2792,7 @@
       "image": "assets/use-cases/strategic-initiative-health-update.webp"
     },
     {
-      "index": 49,
+      "index": 53,
       "slug": "prioritize-accounts",
       "title": "Prioritize accounts",
       "tagline": "Rank accounts by risk, upside, urgency, and next action.",
@@ -2634,7 +2832,7 @@
       "image": "assets/use-cases/prioritize-accounts.webp"
     },
     {
-      "index": 50,
+      "index": 54,
       "slug": "forecast-risk-review",
       "title": "Review forecast risk",
       "tagline": "Decide which deals belong in commit, upside, or pull.",
@@ -2674,7 +2872,7 @@
       "image": "assets/use-cases/forecast-risk-review.webp"
     },
     {
-      "index": 51,
+      "index": 55,
       "slug": "run-student-club-project",
       "title": "Run a student club project",
       "tagline": "Coordinate plans, owners, budgets, and follow-ups in one hub.",
@@ -2719,7 +2917,7 @@
       "image": "assets/use-cases/run-student-club-project.webp"
     },
     {
-      "index": 52,
+      "index": 56,
       "slug": "analytics-request-agent",
       "title": "Scope an analytics request",
       "tagline": "Turn an ambiguous stakeholder ask into a validated analysis plan.",
@@ -2759,7 +2957,7 @@
       "image": "assets/use-cases/analytics-request-agent.webp"
     },
     {
-      "index": 53,
+      "index": 57,
       "slug": "research-to-decision-memo",
       "title": "Turn research into a decision memo",
       "tagline": "Combine evidence, tradeoffs, and open questions into one recommendation.",
@@ -2799,7 +2997,7 @@
       "image": "assets/use-cases/research-to-decision-memo.webp"
     },
     {
-      "index": 54,
+      "index": 58,
       "slug": "initiative-off-track-brief",
       "title": "Write an initiative off-track brief",
       "tagline": "Explain what changed, why an initiative slipped, and what decision is needed.",
@@ -2839,7 +3037,7 @@
       "image": "assets/use-cases/initiative-off-track-brief.webp"
     },
     {
-      "index": 55,
+      "index": 59,
       "slug": "refactor-your-codebase",
       "title": "Refactor your codebase",
       "tagline": "Remove dead code and modernize legacy patterns without changing behavior.",
@@ -2885,7 +3083,7 @@
       "image": "assets/use-cases/refactor-your-codebase.webp"
     },
     {
-      "index": 56,
+      "index": 60,
       "slug": "ios-liquid-glass",
       "title": "Adopt liquid glass",
       "tagline": "Use Codex to migrate an existing SwiftUI app to Liquid Glass with iOS 26 APIs and Xcode 26.",
@@ -2965,7 +3163,7 @@
       "image": "assets/use-cases/ios-liquid-glass.webp"
     },
     {
-      "index": 57,
+      "index": 61,
       "slug": "native-macos-apps",
       "title": "Build for macOS",
       "tagline": "Use Codex to scaffold, build, and debug native Mac apps with SwiftUI.",
@@ -3038,7 +3236,7 @@
       "image": "assets/use-cases/native-macos-apps.webp"
     },
     {
-      "index": 58,
+      "index": 62,
       "slug": "ios-simulator-bug-debugging",
       "title": "Debug in iOS simulator",
       "tagline": "Use Codex and XcodeBuildMCP to drive your app in iOS Simulator, capture evidence, and iterate toward a fix.",
@@ -3110,7 +3308,7 @@
       "image": "assets/use-cases/ios-simulator-bug-debugging.webp"
     },
     {
-      "index": 59,
+      "index": 63,
       "slug": "ios-app-intents",
       "title": "Add iOS app intents",
       "tagline": "Use Codex to make your app's actions and content available to Shortcuts, Siri, Spotlight, and newer assistant-driven system experiences.",
@@ -3198,7 +3396,7 @@
       "image": "assets/use-cases/ios-app-intents.webp"
     },
     {
-      "index": 60,
+      "index": 64,
       "slug": "macos-telemetry-logs",
       "title": "Add Mac telemetry",
       "tagline": "Use Codex to instrument one Mac feature with Logger, run the app, and verify the action from unified logs.",
@@ -3240,6 +3438,10 @@
             "Hands-free debug loop: Codex instruments a suspicious flow, launches the app, clicks the sidebar or triggers a command, reads the emitted log sequence, patches the state update path, and reruns the same flow until the logs and UI behavior agree.",
             "App session collection loop: Codex adds one event for app launch, window open, sidebar selection, import started, import finished, and import failed, then runs a local session and summarizes the resulting timeline so missing or out-of-order transitions become obvious.",
             "Human-driven capture loop: Codex launches the app with logging enabled, keeps a focused log stream running while you manually exercise a tricky flow, then inspects the captured session afterward and proposes the next patch from that trace."
+          ],
+          "codeBlocks": [
+            "import OSLog\n\nprivate let logger = Logger(\n  subsystem: Bundle.main.bundleIdentifier ?? \"SampleApp\",\n  category: \"Sidebar\"\n)\n\n@MainActor\nfunc selectItem(_ item: SidebarItem) {\n  logger.info(\"Selected sidebar item: \\(item.id, privacy: .public)\")\n  selection = item.id\n}",
+            "log stream --style compact --predicate 'subsystem == \"com.example.app\" && category == \"Sidebar\"'"
           ]
         },
         {
@@ -3273,7 +3475,7 @@
       "image": "assets/use-cases/macos-telemetry-logs.webp"
     },
     {
-      "index": 61,
+      "index": 65,
       "slug": "code-migrations",
       "title": "Run code migrations",
       "tagline": "Migrate legacy stacks in controlled checkpoints.",
@@ -3314,7 +3516,106 @@
       "image": "assets/use-cases/code-migrations.webp"
     },
     {
-      "index": 62,
+      "index": 66,
+      "slug": "create-custom-review-workflows-with-github-actions",
+      "title": "Create custom review workflows with GitHub Actions",
+      "tagline": "Run security checks on your own triggers and keep the results for review.",
+      "tags": [
+        "Security",
+        "Engineering"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/create-custom-review-workflows-with-github-actions",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/create-custom-review-workflows-with-github-actions",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/create-custom-review-workflows-with-github-actions.webp",
+      "summary": "Make security reviews a repeatable part of your development process. Configure a GitHub Actions workflow that runs Codex Security on proposed changes and saves the results for your team to inspect.",
+      "difficulty": "Intermediate",
+      "time": "Long-running",
+      "bestFor": [
+        "Platform and application security teams adding security checks to GitHub Actions.",
+        "Repository maintainers configuring custom review triggers and scan scope.",
+        "Teams that need repeatable reviews with saved findings, evidence, and coverage reports."
+      ],
+      "starterPrompt": "",
+      "workflow": [
+        {
+          "title": "Create custom review workflows with GitHub Actions",
+          "paragraphs": [
+            "Instead of enforcing security reviews through Codex, it is also possible to create custom workflows that run the Codex Security CLI. We’ve packaged this workflow to easily be used as a GitHub Action.",
+            "These workflows can also be applied to other source code management tools like GitLab, BitBucket, or Jenkins. Take a look at our documentation page to learn more: Run Codex Security in CI ."
+          ],
+          "items": [],
+          "codeBlocks": [
+            "name: Codex Security review\non:\n  workflow_dispatch:\n  schedule:\n    - cron: '23 7 * * 1' # Mondays at 07:23 UTC\n\npermissions:\n  contents: read\n\njobs:\n  security:\n    runs-on: ubuntu-24.04\n    steps:\n      - name: Set up the Ubuntu sandbox\n        run: |\n          sudo apt-get update\n          sudo apt-get install --yes bubblewrap apparmor-profiles\n          sudo apparmor_parser -r /usr/share/apparmor/extra-profiles/bwrap-userns-restrict\n\n      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1\n        with:\n          persist-credentials: false\n      - uses: openai/codex-security@3f61e5150981a5087c32e4395bbaa8ce5ce0c3e3 # action-v0.3.0\n        with:\n          model: gpt-5.6-sol\n          effort: high\n        env:\n          OPENAI_API_KEY: ${{ secrets.CODEX_SECURITY_API_KEY }}"
+          ]
+        }
+      ],
+      "image": "assets/use-cases/create-custom-review-workflows-with-github-actions.webp"
+    },
+    {
+      "index": 67,
+      "slug": "run-security-reviews-from-the-cli",
+      "title": "Run security reviews from the CLI",
+      "tagline": "Review selected code changes and inspect security evidence from your terminal.",
+      "tags": [
+        "Security",
+        "Engineering"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/run-security-reviews-from-the-cli",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/run-security-reviews-from-the-cli",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/run-security-reviews-from-the-cli.webp",
+      "summary": "Use Codex Security CLI to review uncommitted work or changes on a branch.",
+      "difficulty": "Intermediate",
+      "time": "30m",
+      "bestFor": [
+        "Developers checking local work or branch changes from their terminal.",
+        "Application security teams assessing selected services, packages, and their consumers in a monorepo.",
+        "Engineers investigating existing GitHub code-scanning alerts against their repository."
+      ],
+      "starterPrompt": "",
+      "workflow": [
+        {
+          "title": "Reviewing uncommitted local work",
+          "paragraphs": [
+            "You can use the CLI to review uncommitted local work with seeded context about the repository and security policies.",
+            "Run the examples in the same shell from your Git checkout. They assume your security policy is in SECURITY.md and your supporting documents are in docs/security/ . The setup creates a temporary directory for scan results.",
+            "This reviews staged and unstaged changes relative to HEAD .",
+            "Before starting, be sure to confirm that the working tree contains the change you intend to assess. Unrelated edits broaden the investigation and can make it harder to connect the findings to the question that prompted the review.",
+            "Another option is to review a PR or branch for security issues. Check out the branch to review and fetch its target branch. This example uses origin/main .",
+            "Note that a diff scan evaluates the proposed changes and does not scan the entire repository. Once complete, the output directory will contain the following files:",
+            "report.md : readable review",
+            "scan-manifest.json : confirms the exact base, head, target, and artifacts",
+            "findings.json : presents the severity, confidence, locations, and remediation",
+            "coverage.json : identifies the reviewed surfaces, exclusions, deferred work, and completeness",
+            "In a monorepo, a change to a shared library can affect multiple services. Codex should receive enough context to review those interactions, while CI determines which components and checks are required.",
+            "Keep shared engineering instructions in AGENTS.md and security expectations in SECURITY.md . A typical repository could look like this:",
+            "Use existing ownership and build metadata to connect each component to its dependencies, consumers, and tests. For example, a change to packages/auth may require reviewing both services even when their files are unchanged. This scope mapping is maintained by your organization; it is not automatically configured by adding Codex.",
+            "Large repositories may not always require scanning the entire codebase for each PR. One option is to use a path scan when a monorepo contains separate services or packages. Repeat –path to assess a shared library and its consumers together.",
+            "This scans only the selected paths rather than the entire repository.",
+            "For a PR, use its exact base and head commit hashes from authenticated GitHub metadata. Both revisions and their history must be available in the checkout. The following example reuses the variables above and saves the diff results separately:",
+            "A diff scan focuses on the proposed changes. If a shared-library change requires broader consumer review, also run the component assessment against a clean checkout of that PR’s head revision. Keep the results distinct: --diff and --path are separate scan modes and cannot be combined.",
+            "You can also assess code scanning alerts from the default branch using the Codex Security CLI."
+          ],
+          "items": [
+            "report.md : readable review",
+            "scan-manifest.json : confirms the exact base, head, target, and artifacts",
+            "findings.json : presents the severity, confidence, locations, and remediation",
+            "coverage.json : identifies the reviewed surfaces, exclusions, deferred work, and completeness"
+          ],
+          "codeBlocks": [
+            "northstar_repo=\"$(git rev-parse --show-toplevel)\"\nnorthstar_kb=\"$northstar_repo/docs/security\"\nnorthstar_results=\"$(mktemp -d)\"",
+            "npx @openai/codex-security scan \"$northstar_repo\" \\\n  --working-tree \\\n  --base HEAD \\\n  --knowledge-base \"$northstar_repo/SECURITY.md\" \\\n  --knowledge-base \"$northstar_kb\" \\\n  --output-dir \"$northstar_results/working-tree\"",
+            "northstar_pr_base=\"$(git -C \"$northstar_repo\" merge-base origin/main HEAD)\"\n\nnpx @openai/codex-security scan \"$northstar_repo\" \\\n  --diff \"$northstar_pr_base\" \\\n  --head HEAD \\\n  --knowledge-base \"$northstar_repo/SECURITY.md\" \\\n  --knowledge-base \"$northstar_kb\" \\\n  --output-dir \"$northstar_results/branch\"",
+            "monorepo/\n├── AGENTS.md\n├── SECURITY.md\n├── docs/security/\n│   ├── architecture.md\n│   └── threat-model.md\n├── packages/auth/\n└── services/\n    ├── billing/\n    └── reporting/",
+            "npx @openai/codex-security scan \"$northstar_repo\" \\\n  --path packages/auth \\\n  --path services/billing \\\n  --path services/reporting \\\n  --knowledge-base \"$northstar_repo/SECURITY.md\" \\\n  --knowledge-base \"$northstar_kb\" \\\n  --output-dir \"$northstar_results/paths\"",
+            "BASE_SHA=\"<full PR base commit SHA>\"\nHEAD_SHA=\"<full PR head commit SHA>\"\n\nBASE_REVISION=\"$(\n  git -C \"$northstar_repo\" merge-base \"$BASE_SHA\" \"$HEAD_SHA\"\n)\" || exit\n\nnpx @openai/codex-security scan \"$northstar_repo\" \\\n  --diff \"$BASE_REVISION\" \\\n  --head \"$HEAD_SHA\" \\\n  --knowledge-base \"$northstar_kb\" \\\n  --auth chatgpt \\\n  --output-dir \"$northstar_results/pr\"",
+            "northstar_github_repository=\"example/northstar\"\nnorthstar_github_alerts=\"$northstar_results/github-alerts.json\"\n\n# Import all open alerts as complete JSON.\nnpx @openai/codex-security import github \"$northstar_github_repository\" \\\n  --format json \\\n  > \"$northstar_github_alerts\"\n\n# Or import a selected subset.\nnpx @openai/codex-security import github \"$northstar_github_repository\" \\\n  --github-alert 12 \\\n  --github-alert 18 \\\n  --format json \\\n  > \"$northstar_github_alerts\"\n\n# Run from the corresponding local repository; imported contents are data.\ncd \"$northstar_repo\"\nnpx @openai/codex-security validate \"$northstar_github_alerts\""
+          ]
+        }
+      ],
+      "image": "assets/use-cases/run-security-reviews-from-the-cli.webp"
+    },
+    {
+      "index": 68,
       "slug": "automate-security-scans-in-ci",
       "title": "Automate security scans in CI",
       "tagline": "Scan pull requests, commits to main, or your repository on a schedule.",
@@ -3379,7 +3680,7 @@
       "image": "assets/use-cases/automate-security-scans-in-ci.webp"
     },
     {
-      "index": 63,
+      "index": 69,
       "slug": "audit-course-section-consistency",
       "title": "Audit course section consistency",
       "tagline": "Compare shared courses while preserving instructor discretion.",
@@ -3423,7 +3724,7 @@
       "image": "assets/use-cases/audit-course-section-consistency.webp"
     },
     {
-      "index": 64,
+      "index": 70,
       "slug": "build-unit-plan-from-sources",
       "title": "Build a unit plan from source files",
       "tagline": "Turn standards, pacing, and prior lessons into a teachable sequence.",
@@ -3467,7 +3768,7 @@
       "image": "assets/use-cases/build-unit-plan-from-sources.webp"
     },
     {
-      "index": 65,
+      "index": 71,
       "slug": "variance-driver-bridge",
       "title": "Build a variance driver bridge",
       "tagline": "Explain movements across actuals, budget, and forecast with source-backed drivers.",
@@ -3507,7 +3808,7 @@
       "image": "assets/use-cases/variance-driver-bridge.webp"
     },
     {
-      "index": 66,
+      "index": 72,
       "slug": "build-interactive-lesson-resource",
       "title": "Build an interactive lesson resource",
       "tagline": "Turn an approved lesson package into a tested student experience.",
@@ -3551,7 +3852,7 @@
       "image": "assets/use-cases/build-interactive-lesson-resource.webp"
     },
     {
-      "index": 67,
+      "index": 73,
       "slug": "calibrate-assessments",
       "title": "Calibrate assessments",
       "tagline": "Review scoring patterns without assigning or changing grades.",
@@ -3595,7 +3896,7 @@
       "image": "assets/use-cases/calibrate-assessments.webp"
     },
     {
-      "index": 68,
+      "index": 74,
       "slug": "finance-model-cleanup",
       "title": "Clean and review a financial model",
       "tagline": "Check formulas, links, tie-outs, and assumptions before a high-stakes review.",
@@ -3635,7 +3936,7 @@
       "image": "assets/use-cases/finance-model-cleanup.webp"
     },
     {
-      "index": 69,
+      "index": 75,
       "slug": "create-classroom-materials-pack",
       "title": "Create a classroom materials pack",
       "tagline": "Produce aligned teaching, practice, and family materials.",
@@ -3678,7 +3979,7 @@
       "image": "assets/use-cases/create-classroom-materials-pack.webp"
     },
     {
-      "index": 70,
+      "index": 76,
       "slug": "create-lesson-deck",
       "title": "Create a lesson deck",
       "tagline": "Turn approved teaching materials into an editable presentation.",
@@ -3724,7 +4025,7 @@
       "image": "assets/use-cases/create-lesson-deck.webp"
     },
     {
-      "index": 71,
+      "index": 77,
       "slug": "stalled-deal-diagnosis",
       "title": "Diagnose a stalled deal",
       "tagline": "Find the real blocker and the next customer-facing move.",
@@ -3764,7 +4065,7 @@
       "image": "assets/use-cases/stalled-deal-diagnosis.webp"
     },
     {
-      "index": 72,
+      "index": 78,
       "slug": "business-impact-readout",
       "title": "Measure business impact",
       "tagline": "Turn experiment or launch results into a scale, change, or stop recommendation.",
@@ -3804,7 +4105,7 @@
       "image": "assets/use-cases/business-impact-readout.webp"
     },
     {
-      "index": 73,
+      "index": 79,
       "slug": "scenario-tradeoff-model",
       "title": "Model strategic scenarios and tradeoffs",
       "tagline": "Compare strategic paths with assumptions, risks, cost, timing, and impact.",
@@ -3844,7 +4145,7 @@
       "image": "assets/use-cases/scenario-tradeoff-model.webp"
     },
     {
-      "index": 74,
+      "index": 80,
       "slug": "organize-lesson-unit-folder",
       "title": "Organize a lesson or unit folder",
       "tagline": "Turn scattered teaching files into a clear, verified structure.",
@@ -3889,7 +4190,7 @@
       "image": "assets/use-cases/organize-lesson-unit-folder.webp"
     },
     {
-      "index": 75,
+      "index": 81,
       "slug": "organize-semester-workspace",
       "title": "Organize a semester workspace",
       "tagline": "Turn scattered course files and deadlines into one verified system.",
@@ -3932,7 +4233,7 @@
       "image": "assets/use-cases/organize-semester-workspace.webp"
     },
     {
-      "index": 76,
+      "index": 82,
       "slug": "plan-budget-and-schedule",
       "title": "Plan a budget and schedule",
       "tagline": "See time conflicts, workload clusters, bills, and budget together.",
@@ -3975,7 +4276,7 @@
       "image": "assets/use-cases/plan-budget-and-schedule.webp"
     },
     {
-      "index": 77,
+      "index": 83,
       "slug": "prepare-committee-packet",
       "title": "Prepare a committee packet",
       "tagline": "Turn governance context into a review-ready meeting packet.",
@@ -4019,7 +4320,7 @@
       "image": "assets/use-cases/prepare-committee-packet.webp"
     },
     {
-      "index": 78,
+      "index": 84,
       "slug": "refresh-forecast-and-plan",
       "title": "Refresh a forecast and plan",
       "tagline": "Update assumptions and compare base, upside, and downside plans.",
@@ -4060,7 +4361,7 @@
       "image": "assets/use-cases/refresh-forecast-and-plan.webp"
     },
     {
-      "index": 79,
+      "index": 85,
       "slug": "strategic-account-plan",
       "title": "Refresh a strategic account plan",
       "tagline": "Turn recent account activity into a current deal strategy pack.",
@@ -4100,7 +4401,7 @@
       "image": "assets/use-cases/strategic-account-plan.webp"
     },
     {
-      "index": 80,
+      "index": 86,
       "slug": "refresh-course-materials",
       "title": "Refresh course materials",
       "tagline": "Review a course as one connected system.",
@@ -4143,7 +4444,7 @@
       "image": "assets/use-cases/refresh-course-materials.webp"
     },
     {
-      "index": 81,
+      "index": 87,
       "slug": "revise-lesson-package",
       "title": "Revise a lesson package",
       "tagline": "Apply approved feedback consistently across connected files.",
@@ -4187,7 +4488,7 @@
       "image": "assets/use-cases/revise-lesson-package.webp"
     },
     {
-      "index": 82,
+      "index": 88,
       "slug": "synthesize-research-evidence",
       "title": "Synthesize research evidence",
       "tagline": "Build a source-linked evidence base for research or proposals.",
@@ -4231,7 +4532,7 @@
       "image": "assets/use-cases/synthesize-research-evidence.webp"
     },
     {
-      "index": 83,
+      "index": 89,
       "slug": "track-course-engagement",
       "title": "Track course engagement",
       "tagline": "Turn de-identified course exports into a faculty review view.",
@@ -4274,7 +4575,7 @@
       "image": "assets/use-cases/track-course-engagement.webp"
     },
     {
-      "index": 84,
+      "index": 90,
       "slug": "track-job-applications",
       "title": "Track job applications",
       "tagline": "Compare roles and manage tailored application materials.",
@@ -4320,7 +4621,7 @@
       "image": "assets/use-cases/track-job-applications.webp"
     },
     {
-      "index": 85,
+      "index": 91,
       "slug": "ios-swiftui-view-refactor",
       "title": "Refactor SwiftUI screens",
       "tagline": "Use Codex to split an oversized SwiftUI screen into small subviews without changing behavior or layout.",
@@ -4392,7 +4693,7 @@
       "image": "assets/use-cases/ios-swiftui-view-refactor.webp"
     },
     {
-      "index": 86,
+      "index": 92,
       "slug": "build-student-website",
       "title": "Build a student website",
       "tagline": "Turn an idea and source material into a tested first version.",
@@ -4436,7 +4737,7 @@
       "image": "assets/use-cases/build-student-website.webp"
     },
     {
-      "index": 87,
+      "index": 93,
       "slug": "build-exam-study-system",
       "title": "Build an exam study system",
       "tagline": "Turn course materials into a reusable plan and practice set.",
@@ -4480,7 +4781,7 @@
       "image": "assets/use-cases/build-exam-study-system.webp"
     },
     {
-      "index": 88,
+      "index": 94,
       "slug": "build-and-deploy-internal-apps",
       "title": "Build and deploy internal apps",
       "tagline": "Turn a team workflow into a hosted internal app with Sites.",
@@ -4543,7 +4844,7 @@
       "image": "assets/use-cases/build-and-deploy-internal-apps.webp"
     },
     {
-      "index": 89,
+      "index": 95,
       "slug": "draft-prds-from-sources",
       "title": "Draft PRDs from internal context",
       "tagline": "Create product requirements documents from Linear, Slack, source documents, and meeting notes.",
@@ -4584,7 +4885,7 @@
       "image": "assets/use-cases/draft-prds-from-sources.webp"
     },
     {
-      "index": 90,
+      "index": 96,
       "slug": "follow-goals",
       "title": "Follow a goal",
       "tagline": "Give Codex a durable objective for long-running work.",
@@ -4633,13 +4934,16 @@
             "Tell Codex to work in checkpoints and keep a short progress log.",
             "Use /goal to inspect status while it runs.",
             "Pause, resume, or clear the goal when the run is done, blocked, or changing direction."
+          ],
+          "codeBlocks": [
+            "[features]\ngoals = true"
           ]
         }
       ],
       "image": "assets/use-cases/follow-goals.webp"
     },
     {
-      "index": 91,
+      "index": 97,
       "slug": "project-teammate",
       "title": "Set up a project teammate",
       "tagline": "Keep one project moving with a dedicated, context-aware teammate.",
@@ -4696,7 +5000,7 @@
       "image": "assets/use-cases/project-teammate.webp"
     },
     {
-      "index": 92,
+      "index": 98,
       "slug": "build-an-ai-tour-guide",
       "title": "Build an AI tour guide",
       "tagline": "Help users learn your app with a tour that adapts as they go.",
@@ -4766,7 +5070,7 @@
       "image": "assets/use-cases/build-an-ai-tour-guide.webp"
     },
     {
-      "index": 93,
+      "index": 99,
       "slug": "track-bills-subscriptions-and-spending",
       "title": "Track bills, subscriptions, and spending",
       "tagline": "Review the last 30 days and stay ahead of anything unusual.",
@@ -4807,7 +5111,7 @@
       "image": "assets/use-cases/track-bills-subscriptions-and-spending.webp"
     },
     {
-      "index": 94,
+      "index": 100,
       "slug": "ai-app-evals",
       "title": "Add evals to your AI application",
       "tagline": "Use Codex to turn expected behavior into a Promptfoo eval suite.",
@@ -4853,13 +5157,16 @@
             "Tool use: choosing the right tool, passing valid arguments, and handling tool errors.",
             "Format or business rules: JSON schemas, field names, business-rule limits, or UI-facing copy contracts.",
             "Prompt or model migration: making sure a new prompt, model, system message, or retrieval setting does not break important cases."
+          ],
+          "codeBlocks": [
+            "evals/\n  promptfooconfig.yaml\n  tests/\n    cases.yaml\n  providers/\n    provider.js  # only if the built-in provider cannot call the app directly"
           ]
         }
       ],
       "image": "assets/use-cases/ai-app-evals.webp"
     },
     {
-      "index": 95,
+      "index": 101,
       "slug": "user-stories-to-ui-mocks",
       "title": "Turn user stories into UI mocks",
       "tagline": "Convert product feedback, issue threads, and design context into mockups your team can react to and implement.",
@@ -4897,7 +5204,7 @@
       "image": "assets/use-cases/user-stories-to-ui-mocks.webp"
     },
     {
-      "index": 96,
+      "index": 102,
       "slug": "slack-action-triage",
       "title": "Prioritize Slack action items",
       "tagline": "Turn Slack threads and DMs into a ranked queue of next steps.",
@@ -4950,7 +5257,7 @@
       "image": "assets/use-cases/slack-action-triage.webp"
     },
     {
-      "index": 97,
+      "index": 103,
       "slug": "react-native-expo-apps",
       "title": "Build React Native apps with Expo",
       "tagline": "Go from a mobile-app idea to a working Expo app with the dedicated plugin.",
@@ -5012,7 +5319,7 @@
       "image": "assets/use-cases/react-native-expo-apps.webp"
     },
     {
-      "index": 98,
+      "index": 104,
       "slug": "agent-friendly-clis",
       "title": "Create a CLI Codex can use",
       "tagline": "Give Codex a composable command for an API, log source, export, or team script.",
@@ -5061,7 +5368,7 @@
       "image": "assets/use-cases/agent-friendly-clis.webp"
     },
     {
-      "index": 99,
+      "index": 105,
       "slug": "verified-operations-workflows",
       "title": "Run verified operations",
       "tagline": "Run repeatable workflows and verify the result.",
@@ -5105,7 +5412,7 @@
       "image": "assets/use-cases/verified-operations-workflows.webp"
     },
     {
-      "index": 100,
+      "index": 106,
       "slug": "event-launch-playbooks",
       "title": "Run event playbooks",
       "tagline": "Create repeatable workflows for event program management.",
@@ -5150,7 +5457,7 @@
       "image": "assets/use-cases/event-launch-playbooks.webp"
     },
     {
-      "index": 101,
+      "index": 107,
       "slug": "chatgpt-apps",
       "title": "Bring your app to ChatGPT",
       "tagline": "Turn your use cases into focused apps for ChatGPT.",
@@ -5254,7 +5561,7 @@
       "image": "assets/use-cases/chatgpt-apps.webp"
     },
     {
-      "index": 102,
+      "index": 108,
       "slug": "audit-workflow",
       "title": "Audit a workflow",
       "tagline": "Turn a messy process into a clear audit and automation plan.",
@@ -5294,7 +5601,7 @@
       "image": "assets/use-cases/audit-workflow.webp"
     },
     {
-      "index": 103,
+      "index": 109,
       "slug": "launch-campaign-kit",
       "title": "Build a launch campaign kit",
       "tagline": "Turn launch context into coordinated first-draft campaign assets.",
@@ -5334,7 +5641,7 @@
       "image": "assets/use-cases/launch-campaign-kit.webp"
     },
     {
-      "index": 104,
+      "index": 110,
       "slug": "incident-to-tested-fix",
       "title": "Investigate an incident and test a fix",
       "tagline": "Turn an incident packet into a reproduced bug, a focused patch, and a reviewable handoff.",
@@ -5441,13 +5748,21 @@
             "test-evidence.md : baseline commit, failing regression output, fix commit or diff, passing targeted checks, broader checks, and limitations.",
             "pr-draft.md : a concise explanation of the defect, changed behavior, test evidence, and remaining risk.",
             "deployment-handoff.md : verified schema/isolation/receipt-retention assumptions, named rollout owner, pre-deployment checks, duplicate-order and acknowledgment/error metrics, and the rollout/rollback gates below."
+          ],
+          "codeBlocks": [
+            "docker compose -p codex-incident-rehearsal up -d --wait postgres\ndocker compose -p codex-incident-rehearsal run --rm runner node main.mjs baseline\ndocker compose -p codex-incident-rehearsal run --rm runner node main.mjs regression\ndocker compose -p codex-incident-rehearsal run --rm runner\ndocker compose -p codex-incident-rehearsal down --volumes",
+            "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39async function fixed(client, input, hook = async (_boundary) => {}) {\n  await assertNotHeld(client, input);\n  await hook(\"beforeClaim\");\n  await client.query(\"BEGIN ISOLATION LEVEL READ COMMITTED\");\n  let committed = false;\n  try {\n    const claimed = await client.query(\n      `INSERT INTO event_receipts(provider, account_id, event_id, payload_fingerprint)\n       VALUES ($1,$2,$3,$4)\n       ON CONFLICT (provider, account_id, event_id) DO NOTHING RETURNING event_id`,\n      [...key(input), fingerprint(input)]\n    );\n    trace(\"receipt-claim-result\", client, input, {\n      inserted: claimed.rowCount === 1,\n    });\n    if (claimed.rowCount === 1) {\n      await hook(\"afterClaim\");\n      await writeOrder(client, input);\n      await hook(\"afterOrder\");\n    } else {\n      // A new READ COMMITTED statement sees the winner after its commit.\n      await checkReceipt(client, input);\n    }\n    await client.query(\"COMMIT\");\n    committed = true;\n    trace(\"transaction-committed\", client, input);\n    await hook(\"afterCommit\");\n    trace(\"acknowledged\", client, input, acknowledgment);\n    return acknowledgment;\n  } catch (error) {\n    if (!committed) {\n      await client.query(\"ROLLBACK\");\n      trace(\"transaction-rolled-back-no-ack\", client, input);\n    } else {\n      trace(\"committed-response-lost-no-ack\", client, input);\n    }\n    throw error;\n  }\n}",
+            "incidents/INC-DEMO-014/incident.md\nincidents/INC-DEMO-014/logs.ndjson\nincidents/INC-DEMO-014/release.json\nincidents/INC-DEMO-014/order-created.sanitized.json",
+            "Criterion / test: [specific behavior and test location]\nEnvironment: [published setup reference; runtime, database and dependency versions]\nBefore: [revision + test-only diff ID; command; exit code; observed assertion; log path]\nAfter: [final revision or base + diff ID; command; exit code; observed assertion; log path]\nStatus: [pass / fail / blocked / not run]\nLimits / reviewer action: [untested behavior, blocker, or decision required]",
+            "Review the patch against two concurrent deliveries and a retry after a worker failure. Show which behaviors the tests establish and which remain untested. Keep the change limited to this handler and its regression tests; update the handoff with any remaining risk.",
+            "Stop implementation. List the hypotheses the evidence rules out, the strongest remaining hypothesis, and the smallest additional sanitized input or isolated experiment needed to distinguish it. Keep the root cause unconfirmed."
           ]
         }
       ],
       "image": "assets/use-cases/incident-to-tested-fix.webp"
     },
     {
-      "index": 105,
+      "index": 111,
       "slug": "migrate-a-validation-module",
       "title": "Migrate a validation module",
       "tagline": "Upgrade one module and prove that its public behavior still holds.",
@@ -5515,13 +5830,19 @@
             "Migrate one slice. Use the starter prompt on this page. Change the module and its direct adapter; preserve unrelated modules and name any compatibility code that remains.",
             "Run the same tests. Compare baseline and final HTTP/schema fixtures without changing expectations. Run affected integration, lint, and type checks, and save output tied to the final source and dependency state.",
             "Review the handoff. Inspect the diff, observed evidence, unresolved differences, remaining bridge, and rollback. Create a draft PR only when repository tools and permissions support it. Leave merging, deployment, and another migration slice to the reviewer."
+          ],
+          "codeBlocks": [
+            "unzip sample.zip\ncd migrate-a-validation-module\nuv run --project support/target --python python3 --frozen python run.py --compare-stages --output evidence",
+            "PASS: legacy, prepared, target HTTP/schema/serialization contracts match\nNative model schemas differ; the existing public schema adapter is preserved.",
+            "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n60\n61\n62\n63\n64\n65\n66\n67\n68\n69\n70\n71\n72\n73\n74\n75\n76\n77\n78\n79\n80\n81\n82\n83\n84\n85\n86\n87\n88\n89\n90\n91\n92\n93\n94\n95\n96\n97\n98\n99\n100\n101\n102\n103\n104\n105\n106\n107\n108\n109\n110\n111\n112\n113\n114\n115\n116\n117\n118\n119\n120\n121\n122\n123\n124\n125\n126\n127\n128\n129\n130\n131\n132\n133\n134\n135\n136\n137\n138\n139\n140\n141\n142\n143\n144\n145\n146\n147\n148\n149\n150\n151\n152\n153\n154\n155\n156\n157\n158\n159\n160\n161\n162\n163\n164\n165\n166\n167\n168\n169\n170\n171\n172class OrderInput(BaseModel):\n    internal_order_id: StrictStr = Field(alias=\"order_id\")\n    customer_note: StrictStr | None = None\n    model_config = ConfigDict(extra=\"forbid\", populate_by_name=False)\n\n    @model_validator(mode=\"before\")\n    @classmethod\n    def preserve_legacy_mapping(cls, value):\n        # v1 tries dict(value), so pairs, [] and \"\" can become objects.\n        # Preserve successful conversions without changing failed-input errors.\n        if not isinstance(value, dict):\n            try:\n                return dict(value)\n            except (TypeError, ValueError):\n                return value\n        return value\n\n\ndef serialize_order(payload):\n    return OrderInput(**payload).model_dump(by_alias=True)\n\n\ndef preserve_legacy_error_order(fields):\n    # v1 reports declared-field errors first and unknown keys alphabetically.\n    # v2 keeps unknown keys in input order; preserve the existing HTTP contract.\n    known = [field for field in fields if field[\"code\"] != \"extra_forbidden\"]\n    extra = sorted(\n        (field for field in fields if field[\"code\"] == \"extra_forbidden\"),\n        key=lambda field: field[\"path\"],\n    )\n    return known + extra\n\n\ndef check_target_model():\n    for payload, expected in (\n        ({\"order_id\": \"ord_123\"}, {\"order_id\": \"ord_123\", \"customer_note\": None}),\n        (\n            {\"order_id\": \"ord_123\", \"customer_note\": \"Leave at desk\"},\n            {\"order_id\": \"ord_123\", \"customer_note\": \"Leave at desk\"},\n        ),\n        (\n            {\"order_id\": \"ord_123\", \"customer_note\": None},\n            {\"order_id\": \"ord_123\", \"customer_note\": None},\n        ),\n    ):\n        assert serialize_order(payload) == expected\n    for payload, expected in (\n        ({}, [(\"order_id\", \"missing\")]),\n        ({\"order_id\": 123}, [(\"order_id\", \"string_type\")]),\n        (\n            {\"order_id\": \"ord_123\", \"customer_note\": 17},\n            [(\"customer_note\", \"string_type\")],\n        ),\n        (\n            {\"order_id\": \"ord_123\", \"unexpected\": True},\n            [(\"unexpected\", \"extra_forbidden\")],\n        ),\n    ):\n        try:\n            OrderInput(**payload)\n        except ValidationError as error:\n            assert [\n                (item[\"loc\"][0], item[\"type\"]) for item in error.errors()\n            ] == expected\n        else:\n            raise AssertionError(f\"Accepted invalid order: {payload}\")\n    print(\"PASS: target model validation and serialization (7 cases)\")\n    print(\"Model-only checks; use --compare-stages for HTTP migration parity.\")\n\n\ndef main():\n    parser = argparse.ArgumentParser()\n    parser.add_argument(\"--output\", type=Path, default=ROOT / \"evidence\")\n    parser.add_argument(\"--compare-stages\", action=\"store_true\")\n    args = parser.parse_args()\n    if not args.compare_stages:\n        check_target_model()\n        return\n    args.output.mkdir(parents=True, exist_ok=True)\n    reports = []\n    commands = []\n    for stage in (\"legacy\", \"prepared\", \"target\"):\n        project = Path(\"support\") / stage\n        stage_commands = [\n            [\n                \"uv\",\n                \"sync\",\n                \"--project\",\n                str(project),\n                \"--python\",\n                sys.executable,\n                \"--frozen\",\n            ],\n            [\n                \"uv\",\n                \"run\",\n                \"--project\",\n                str(project),\n                \"--python\",\n                sys.executable,\n                \"--frozen\",\n                \"python\",\n                \"test/run_stage.py\",\n                stage,\n                str(args.output / f\"{stage}.json\"),\n            ],\n        ]\n        for command in stage_commands:\n            completed = subprocess.run(\n                command, cwd=ROOT, capture_output=True, text=True\n            )\n            label = f\"{stage}-{len(commands)}\"\n            (args.output / f\"{label}.log\").write_text(\n                completed.stdout + completed.stderr\n            )\n            commands.append(\n                {\n                    \"command\": command,\n                    \"exit_code\": completed.returncode,\n                    \"log\": f\"{label}.log\",\n                }\n            )\n            (args.output / \"commands.json\").write_text(\n                json.dumps(commands, indent=2, sort_keys=True) + \"\\n\"\n            )\n            if completed.returncode:\n                print(completed.stdout + completed.stderr, file=sys.stderr)\n                raise SystemExit(completed.returncode)\n            print(completed.stdout, end=\"\")\n        reports.append(json.loads((args.output / f\"{stage}.json\").read_text()))\n    assert all(report[\"python\"] == platform.python_version() for report in reports)\n    for report in reports[1:]:\n        for key in (\n            \"observations\",\n            \"public_openapi\",\n            \"direct_call\",\n            \"fixture_sha256\",\n            \"schema_fixture_sha256\",\n        ):\n            assert report[key] == reports[0][key], f\"Parity failed: {key}\"\n    assert reports[1][\"lock_sha256\"] == reports[2][\"lock_sha256\"]\n    native_schema_differs = (\n        reports[0][\"native_model_schema\"] != reports[2][\"native_model_schema\"]\n    )\n    assert native_schema_differs, \"The example should expose native schema drift\"\n    manifest = {\n        str(path.relative_to(ROOT)): digest(path)\n        for path in sorted(ROOT.rglob(\"*\"))\n        if path.is_file()\n        and not path.resolve().is_relative_to(args.output.resolve())\n        and not any(\n            part in {\".venv\", \"__pycache__\", \"evidence\", \".ruff_cache\"}\n            for part in path.relative_to(ROOT).parts\n        )\n    }\n    summary = {\n        \"status\": \"pass\",\n        \"scope\": \"synthetic in-process FastAPI TestClient execution\",\n        \"stages\": [report[\"stage\"] for report in reports],\n        \"http_cases_per_stage\": reports[0][\"http_cases\"],\n        \"native_model_schema_differs\": native_schema_differs,\n        \"public_http_and_schema_parity\": True,\n        \"commands\": commands,\n        \"source_sha256\": manifest,\n    }\n    (args.output / \"summary.json\").write_text(\n        json.dumps(summary, indent=2, sort_keys=True) + \"\\n\"\n    )\n    print(\"PASS: legacy, prepared, target HTTP/schema/serialization contracts match\")\n    print(\n        \"Native model schemas differ; the existing public schema adapter is preserved.\"\n    )",
+            "Criterion: [behavior and test]\nEnvironment: [setup reference; actual runtime and dependency versions]\nBefore: [commit/diff ID; command; exit code; observed result; evidence path]\nAfter: [final commit/diff ID; command; exit code; observed result; evidence path]\nStatus: [pass / fail / blocked / not run]\nLimits: [untested behavior, missing prerequisite, or required owner decision]"
           ]
         }
       ],
       "image": "assets/use-cases/migrate-a-validation-module.webp"
     },
     {
-      "index": 106,
+      "index": 112,
       "slug": "build-workshop-practice-site",
       "title": "Build a hackathon site",
       "tagline": "Give participants one place to find the agenda, register, and share what they built.",
@@ -5575,7 +5896,7 @@
       "image": "assets/use-cases/build-workshop-practice-site.webp"
     },
     {
-      "index": 107,
+      "index": 113,
       "slug": "build-personal-onboarding-plan",
       "title": "Build an onboarding portal",
       "tagline": "Help new hires find their next task and practice the work they'll be doing.",
@@ -5631,7 +5952,7 @@
       "image": "assets/use-cases/build-personal-onboarding-plan.webp"
     },
     {
-      "index": 108,
+      "index": 114,
       "slug": "collect-and-schedule-team-requests",
       "title": "Manage creative requests from brief to delivery",
       "tagline": "Collect complete briefs, review drafts, and keep final assets with each request.",
@@ -5686,7 +6007,7 @@
       "image": "assets/use-cases/collect-and-schedule-team-requests.webp"
     },
     {
-      "index": 109,
+      "index": 115,
       "slug": "compare-campaign-performance",
       "title": "See which campaigns bring in leads",
       "tagline": "Compare spend, lead counts, and cost per lead by campaign, channel, and week.",
@@ -5741,7 +6062,7 @@
       "image": "assets/use-cases/compare-campaign-performance.webp"
     },
     {
-      "index": 110,
+      "index": 116,
       "slug": "consolidate-spreadsheets",
       "title": "Consolidate spreadsheets",
       "tagline": "Join spreadsheet exports into one refreshable workbook.",
@@ -5781,7 +6102,7 @@
       "image": "assets/use-cases/consolidate-spreadsheets.webp"
     },
     {
-      "index": 111,
+      "index": 117,
       "slug": "weekly-work-summary",
       "title": "Write a weekly work summary",
       "tagline": "Turn a week of activity into a manager-ready update.",
@@ -5821,7 +6142,7 @@
       "image": "assets/use-cases/weekly-work-summary.webp"
     },
     {
-      "index": 112,
+      "index": 118,
       "slug": "issue-to-tested-pr",
       "title": "Turn an issue into a tested pull request",
       "tagline": "Hand off a small feature with acceptance criteria and review the evidence.",
@@ -5939,6 +6260,17 @@
             "The change needs a migration, new dependency, or auth redesign. Explain why and split or re-scope the issue before expanding it.",
             "Tests fail after implementation. Do not treat the change as ready to merge. Report the failing cases. Do not remove assertions or weaken authorization to make checks pass.",
             "Repository write integration is unavailable. Return the diff, draft PR description, and validation evidence. A teammate can complete the repository handoff."
+          ],
+          "codeBlocks": [
+            "node --version\nnode api.mjs\nnode test.mjs --seeded\nnode test.mjs\nnode reproduce.mjs ./evidence",
+            "[evt_105, evt_104]\n[evt_103, evt_102]\n[evt_101]",
+            "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n60\n61\n62\n63\n64\n65\n66\n67\n68\n69\n70\n71\n72\n73\n74\n75\n76\n77\n78\n79\n80\n81\n82\n83\n84\n85\n86\n87\n88\n89\n90\n91\n92\n93\n94\n95\n96\n97\n98\n99\n100\n101\n102\n103\n104\n105\n106\n107\n108\n109\n110\n111\n112\n113\n114\n115export function createApi({\n  sessions,\n  projects,\n  events,\n  signingKey,\n  seededBug = false,\n}) {\n  return createServer((request, response) => {\n    const send = (status, body) => {\n      response.writeHead(status, { \"content-type\": \"application/json\" });\n      response.end(JSON.stringify(body));\n    };\n    const fail = (code) => {\n      const [status, message] = errors[code];\n      send(status, { error: { code, message } });\n    };\n    // Authenticate, then authorize. Malformed parameters must not change these results.\n    const authorization = request.headers.authorization ?? \"\";\n    const bearer = /^Bearer ([A-Za-z0-9_-]+)$/.exec(authorization);\n    const tenantId = bearer ? sessions.get(bearer[1]) : undefined;\n    if (!tenantId) return fail(\"unauthenticated\");\n\n    const url = new URL(request.url ?? \"/\", \"http://127.0.0.1\");\n    const route = /^\\/v1\\/projects\\/([^/]+)(\\/events)?$/.exec(url.pathname);\n    let projectId;\n    try {\n      projectId = route ? decodeURIComponent(route[1]) : undefined;\n    } catch {\n      return fail(\"not_found\");\n    }\n    const project = projectId ? projects.get(projectId) : undefined;\n    if (\n      request.method !== \"GET\" ||\n      !project ||\n      project.tenant_id !== tenantId\n    ) {\n      return fail(\"not_found\");\n    }\n    // Existing project-detail behavior remains independent of pagination parameters.\n    if (!route[2]) return send(200, { id: projectId, name: project.name });\n\n    const rawLimit = url.searchParams.get(\"limit\");\n    const limit = rawLimit === null ? 25 : Number(rawLimit);\n    if (\n      url.searchParams.getAll(\"limit\").length > 1 ||\n      (rawLimit !== null && !/^\\d+$/.test(rawLimit)) ||\n      !Number.isInteger(limit) ||\n      limit < 1 ||\n      limit > 100\n    ) {\n      return fail(\"invalid_limit\");\n    }\n    let cursor;\n    if (url.searchParams.has(\"cursor\")) {\n      try {\n        if (url.searchParams.getAll(\"cursor\").length !== 1)\n          throw new Error(\"Invalid cursor\");\n        cursor = decodeCursor(\n          url.searchParams.get(\"cursor\"),\n          tenantId,\n          projectId,\n          signingKey\n        );\n      } catch {\n        return fail(\"invalid_cursor\");\n      }\n    }\n\n    const matching = events\n      .filter(\n        (event) =>\n          event.tenant_id === tenantId && event.project_id === projectId\n      )\n      .sort(compareEvents)\n      .filter((event) => {\n        if (!cursor) return true;\n        // Deliberate baseline defect: timestamp-only continuation loses tied rows.\n        if (seededBug)\n          return (\n            timestampValue(event.created_at) < timestampValue(cursor.created_at)\n          );\n        return compareEvents(event, cursor) > 0;\n      });\n    const selected = matching.slice(0, limit);\n    const items = selected.map(({ id, created_at, type, summary }) => ({\n      id,\n      created_at,\n      type,\n      summary,\n    }));\n    const nextCursor =\n      matching.length > limit\n        ? encodeCursor(selected.at(-1), tenantId, projectId, signingKey)\n        : null;\n    return send(200, { items, next_cursor: nextCursor });\n  });\n}\n\nexport async function startApi(fixtures, options = {}) {\n  const server = createApi({ ...fixtures, ...options });\n  await new Promise((resolve, reject) => {\n    server.once(\"error\", reject);\n    server.listen(0, \"127.0.0.1\", () => resolve(undefined));\n  });\n  const address = server.address();\n  if (!address || typeof address === \"string\")\n    throw new Error(\"No listening address\");\n  return {\n    baseUrl: `http://127.0.0.1:${address.port}`,\n    close: () =>\n      new Promise((resolve, reject) =>\n        server.close((error) => (error ? reject(error) : resolve(undefined)))\n      ),\n  };\n}",
+            "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n60\n61\n62export function createFixtures() {\n  const tokenA = randomBytes(24).toString(\"base64url\");\n  const tokenB = randomBytes(24).toString(\"base64url\");\n  const sessions = new Map([\n    [tokenA, \"tenant_a\"],\n    [tokenB, \"tenant_b\"],\n  ]);\n  const projects = new Map([\n    [\"feed\", { tenant_id: \"tenant_a\", name: \"Activity feed\" }],\n    [\"empty\", { tenant_id: \"tenant_a\", name: \"Empty feed\" }],\n    [\"exact\", { tenant_id: \"tenant_a\", name: \"Four events\" }],\n    [\"large\", { tenant_id: \"tenant_a\", name: \"Large feed\" }],\n    [\"precision\", { tenant_id: \"tenant_a\", name: \"Precise timestamps\" }],\n    [\"other\", { tenant_id: \"tenant_a\", name: \"Another project\" }],\n    [\"private\", { tenant_id: \"tenant_b\", name: \"Private project\" }],\n  ]);\n  const event = (id, created_at, project_id, tenant_id = \"tenant_a\") => ({\n    id,\n    created_at,\n    project_id,\n    tenant_id,\n    type: \"deployment\",\n    summary: `Synthetic event ${id}`,\n    internal_note: \"This field must never enter the HTTP response.\",\n    raw_payload: { synthetic: true },\n  });\n  const feed = [\n    event(\"evt_105\", \"2026-01-15T12:00:03.123456Z\", \"feed\"),\n    event(\"evt_104\", \"2026-01-15T12:00:02.123456Z\", \"feed\"),\n    event(\"evt_103\", \"2026-01-15T12:00:02.123456Z\", \"feed\"),\n    event(\"evt_102\", \"2026-01-15T12:00:02.123456Z\", \"feed\"),\n    event(\"evt_101\", \"2026-01-15T12:00:01.123456Z\", \"feed\"),\n  ];\n  const events = [\n    ...feed,\n    ...feed.slice(0, 4).map((item) => ({ ...item, project_id: \"exact\" })),\n    ...Array.from({ length: 105 }, (_, index) =>\n      event(\n        `large_${String(index).padStart(3, \"0\")}`,\n        new Date(Date.UTC(2026, 0, 15, 12, 0, index))\n          .toISOString()\n          .replace(\".000Z\", \".123456Z\"),\n        \"large\"\n      )\n    ),\n    // Reverse ID order makes timestamp precision observable in the tests.\n    event(\"precise_a\", \"2026-01-15T12:00:00.123999Z\", \"precision\"),\n    event(\"precise_z\", \"2026-01-15T12:00:00.123001Z\", \"precision\"),\n    event(\"other_1\", \"2026-01-15T12:00:00.123456Z\", \"other\"),\n    event(\"other_2\", \"2026-01-15T11:59:59.123456Z\", \"other\"),\n    event(\"private_1\", \"2026-01-15T12:00:00.123456Z\", \"private\", \"tenant_b\"),\n    event(\"private_2\", \"2026-01-15T11:59:59.123456Z\", \"private\", \"tenant_b\"),\n  ];\n  return {\n    sessions,\n    projects,\n    events,\n    signingKey: randomBytes(32),\n    tokenA,\n    tokenB,\n  };\n}",
+            "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n60\n61\n62\n63\n64\n65\n66\n67\n68\n69\n70\n71\n72\n73\n74\n75\n76\n77\n78\n79\n80\n81\n82\n83\n84\n85\n86\n87\n88\n89\n90\n91\n92\n93\n94\n95\n96\n97\n98\n99\n100\n101\n102\n103\n104\n105\n106\n107\n108\n109\n110\n111\n112\n113\n114\n115\n116\n117\n118\n119\n120\n121\n122\n123\n124\n125\n126\n127\n128\n129\n130\n131\n132\n133\n134\n135\n136\n137\n138\n139\n140\n141\n142\n143\n144\n145\n146\n147\n148\n149\n150\n151\n152\n153\n154\n155\n156\n157\n158\n159\n160\n161\n162\n163\n164\n165\n166\n167\n168\n169\n170\n171\n172\n173\n174\n175\n176\n177\n178\n179\n180\n181\n182\n183\n184\n185\n186\n187\n188\n189\n190\n191\n192\n193\n194\n195\n196\n197\n198\n199\n200\n201\n202\n203\n204\n205\n206\n207\n208\n209\n210\n211\n212\n213\n214\n215\n216\n217\n218\n219\n220\n221\n222\n223\n224\n225\n226\n227\n228\n229\n230\n231\n232\n233\n234\n235\n236\n237\n238\n239\n240\n241\n242\n243\n244\n245\n246\n247\n248\n249\n250\n251\n252\n253\n254\n255\n256\n257\n258\n259\n260\n261\n262\n263\n264\n265\n266\n267\n268\n269\n270\n271\n272\n273\n274\n275\n276\n277\n278\n279\n280\n281\n282\n283\n284\n285\n286\n287\n288\n289\n290\n291\n292\n293\n294\n295\n296\n297\n298\n299\n300\n301\n302\n303\n304\n305\n306\n307\n308\n309\n310\n311\n312\n313\n314\n315\n316\n317\n318\n319\n320\n321\n322\n323\n324\n325\n326\n327\n328\n329\n330\n331\n332\n333\n334\n335\n336\n337\n338\n339\n340\n341\n342\n343\n344\n345\n346\n347\n348\n349\n350test(\"five-event traversal crosses a timestamp tie and replays the same continuation\", async () => {\n  const expected = [\"evt_105\", \"evt_104\", \"evt_103\", \"evt_102\", \"evt_101\"];\n  const pages = await traverse(\"feed\", 2, expected);\n  assert.deepEqual(pages.map(ids), [\n    [\"evt_105\", \"evt_104\"],\n    [\"evt_103\", \"evt_102\"],\n    [\"evt_101\"],\n  ]);\n  assert.equal(pages.length, 3);\n  assert.ok(pages[0].next_cursor);\n  assert.ok(pages[1].next_cursor);\n  assert.equal(pages[2].next_cursor, null);\n  const replay = await request(\"feed\", {\n    limit: \"2\",\n    cursor: pages[0].next_cursor,\n  });\n  assert.deepEqual(replay.body.items, pages[1].items);\n  const next = await request(\"feed\", {\n    limit: \"2\",\n    cursor: replay.body.next_cursor,\n  });\n  assert.deepEqual(next.body.items, pages[2].items);\n  assert.equal(next.body.next_cursor, null);\n  console.log(\n    JSON.stringify({\n      fixture: \"five-event-tie\",\n      pages: pages.map(ids),\n      requests: pages.length,\n      replay: ids(replay.body),\n    })\n  );\n});\n\ntest(\"the same tie group traverses correctly with limit three\", async () => {\n  const pages = await traverse(\"feed\", 3, [\n    \"evt_105\",\n    \"evt_104\",\n    \"evt_103\",\n    \"evt_102\",\n    \"evt_101\",\n  ]);\n  assert.deepEqual(pages.map(ids), [\n    [\"evt_105\", \"evt_104\", \"evt_103\"],\n    [\"evt_102\", \"evt_101\"],\n  ]);\n});\n\ntest(\"timestamp ordering and continuation preserve submillisecond precision\", async () => {\n  const pages = await traverse(\"precision\", 1, [\"precise_a\", \"precise_z\"]);\n  assert.equal(pages[0].items[0].created_at, \"2026-01-15T12:00:00.123999Z\");\n  assert.equal(pages[1].items[0].created_at, \"2026-01-15T12:00:00.123001Z\");\n});\n\ntest(\"omitted, minimum, and maximum limits return 25, 1, and 100 of 105 events\", async () => {\n  for (const [parameters, expected] of [\n    [{}, 25],\n    [{ limit: \"1\" }, 1],\n    [{ limit: \"100\" }, 100],\n  ]) {\n    const result = await request(\"large\", parameters);\n    assert.equal(result.status, 200);\n    assert.equal(result.body.items.length, expected);\n    assert.ok(result.body.next_cursor);\n  }\n  const pages = await traverse(\n    \"large\",\n    100,\n    Array.from(\n      { length: 105 },\n      (_, index) => `large_${String(104 - index).padStart(3, \"0\")}`\n    )\n  );\n  assert.deepEqual(\n    pages.map((page) => page.items.length),\n    [100, 5]\n  );\n});\n\ntest(\"invalid and repeated limits return the documented generic error\", async (context) => {\n  for (const limit of [\n    \"0\",\n    \"101\",\n    \"-1\",\n    \"1.5\",\n    \"many\",\n    \"\",\n    \"1e2\",\n    \"Infinity\",\n  ]) {\n    await context.test(`limit ${JSON.stringify(limit)}`, async () => {\n      const result = await request(\"feed\", { limit });\n      assert.equal(result.status, 400);\n      assert.deepEqual(\n        result.body,\n        expectedError(\n          \"invalid_limit\",\n          \"Limit must be an integer from 1 through 100.\"\n        )\n      );\n    });\n  }\n  const repeated = await request(\"feed\", [\n    [\"limit\", \"1\"],\n    [\"limit\", \"2\"],\n  ]);\n  assert.equal(repeated.status, 400);\n});\n\ntest(\"empty, partial, and exactly full final pages have no continuation\", async () => {\n  assert.deepEqual((await request(\"empty\")).body, {\n    items: [],\n    next_cursor: null,\n  });\n  const partial = await traverse(\"feed\", 2, [\n    \"evt_105\",\n    \"evt_104\",\n    \"evt_103\",\n    \"evt_102\",\n    \"evt_101\",\n  ]);\n  assert.equal(partial.at(-1).items.length, 1);\n  const exact = await traverse(\"exact\", 2, [\n    \"evt_105\",\n    \"evt_104\",\n    \"evt_103\",\n    \"evt_102\",\n  ]);\n  assert.deepEqual(\n    exact.map((page) => page.items.length),\n    [2, 2]\n  );\n  assert.equal(exact[1].next_cursor, null);\n});\n\ntest(\"authentication precedes malformed and wrong-scope cursor or limit validation\", async () => {\n  const privateCursor = (\n    await request(\"private\", { limit: \"1\" }, fixtures.tokenB)\n  ).body.next_cursor;\n  for (const token of [null, \"invalid_session\"]) {\n    for (const parameters of [\n      { cursor: \"broken\" },\n      { cursor: privateCursor },\n      { limit: \"0\", cursor: \"broken\" },\n    ]) {\n      const result = await request(\"feed\", parameters, token);\n      assert.equal(result.status, 401);\n      assert.deepEqual(result.body, unauthenticated);\n    }\n  }\n});\n\ntest(\"inaccessible and nonexistent projects return identical 404 before cursor validation\", async () => {\n  const ownCursor = (await request(\"feed\", { limit: \"1\" })).body.next_cursor;\n  for (const project of [\"private\", \"missing\"]) {\n    for (const parameters of [\n      {},\n      { cursor: \"broken\" },\n      { cursor: ownCursor },\n      { limit: \"0\", cursor: \"broken\" },\n    ]) {\n      const result = await request(project, parameters);\n      assert.equal(result.status, 404);\n      assert.deepEqual(result.body, notFound);\n    }\n  }\n});\n\ntest(\"a valid cursor from another project in the same tenant is invalid on an authorized feed\", async () => {\n  const cursor = (await request(\"other\", { limit: \"1\" })).body.next_cursor;\n  assert.ok(cursor);\n  const result = await request(\"feed\", { cursor });\n  assert.equal(result.status, 400);\n  assert.deepEqual(result.body, invalidCursor);\n});\n\ntest(\"a valid cursor from another tenant is invalid on an authorized feed\", async () => {\n  const cursor = (await request(\"private\", { limit: \"1\" }, fixtures.tokenB))\n    .body.next_cursor;\n  assert.ok(cursor);\n  const result = await request(\"feed\", { cursor });\n  assert.equal(result.status, 400);\n  assert.deepEqual(result.body, invalidCursor);\n});\n\ntest(\"undecodable, empty, tampered, and repeated cursor tokens return the same closed error\", async () => {\n  const cursor = (await request(\"feed\", { limit: \"1\" })).body.next_cursor;\n  const [payload, signature] = cursor.split(\".\");\n  const tampered = `${payload}.${signature[0] === \"A\" ? \"B\" : \"A\"}${signature.slice(1)}`;\n  for (const token of [\n    \"broken\",\n    \"\",\n    \"%%%.___\",\n    \"a.b.c\",\n    \"x\".repeat(2049),\n    tampered,\n  ]) {\n    const result = await request(\"feed\", { cursor: token });\n    assert.equal(result.status, 400);\n    assert.deepEqual(result.body, invalidCursor);\n  }\n  const result = await request(\"feed\", [\n    [\"cursor\", cursor],\n    [\"cursor\", cursor],\n  ]);\n  assert.equal(result.status, 400);\n  assert.deepEqual(result.body, invalidCursor);\n});\n\ntest(\"signed structurally invalid payloads and unsupported versions are rejected\", async (context) => {\n  const valid = {\n    version: 1,\n    tenant_id: \"tenant_a\",\n    project_id: \"feed\",\n    created_at: \"2026-01-15T12:00:02.123456Z\",\n    id: \"evt_104\",\n  };\n  const missing = { ...valid };\n  delete missing.id;\n  const cases = [\n    [\"missing ID\", missing],\n    [\"number ID\", { ...valid, id: 104 }],\n    [\"empty ID\", { ...valid, id: \"\" }],\n    [\"number timestamp\", { ...valid, created_at: 0 }],\n    [\"invalid date\", { ...valid, created_at: \"2026-02-30T12:00:00Z\" }],\n    [\"unsupported version\", { ...valid, version: 2 }],\n    [\"extra field\", { ...valid, extra: true }],\n    [\"wrong tenant type\", { ...valid, tenant_id: 1 }],\n    [\"wrong project type\", { ...valid, project_id: null }],\n    [\"null payload\", null],\n    [\"array payload\", []],\n    [\"invalid JSON\", \"not-json\"],\n  ];\n  for (const [name, payload] of cases) {\n    await context.test(name, async () => {\n      const result = await request(\"feed\", { cursor: signFixture(payload) });\n      assert.equal(result.status, 400);\n      assert.deepEqual(result.body, invalidCursor);\n    });\n  }\n});\n\ntest(\"every serialized event omits stored tenant, project, and raw payload fields\", async () => {\n  const result = await request(\"feed\", { limit: \"100\" });\n  assert.equal(result.status, 200);\n  for (const item of result.body.items) {\n    assert.deepEqual(Object.keys(item).sort(), [\n      \"created_at\",\n      \"id\",\n      \"summary\",\n      \"type\",\n    ]);\n  }\n  assert.ok(\n    fixtures.events.some((event) => event.internal_note && event.raw_payload)\n  );\n});\n\ntest(\"the schema oracle rejects extra, missing, incorrectly typed, and malformed public fields\", () => {\n  const schema = specification.components.schemas.EventPage;\n  const page = {\n    items: [\n      {\n        id: \"evt_1\",\n        created_at: \"2026-01-15T12:00:00.123456Z\",\n        type: \"deployment\",\n        summary: \"Synthetic\",\n      },\n    ],\n    next_cursor: null,\n  };\n  assert.ok(conforms(page, schema));\n  assert.equal(conforms({ ...page, tenant_id: \"tenant_a\" }, schema), false);\n  assert.equal(\n    conforms(\n      { ...page, items: [{ ...page.items[0], raw_payload: {} }] },\n      schema\n    ),\n    false\n  );\n  assert.equal(conforms({ items: page.items }, schema), false);\n  assert.equal(conforms({ ...page, next_cursor: \"\" }, schema), false);\n  assert.equal(\n    conforms({ ...page, items: [{ ...page.items[0], id: 1 }] }, schema),\n    false\n  );\n  assert.equal(\n    conforms(\n      { ...page, items: [{ ...page.items[0], created_at: \"yesterday\" }] },\n      schema\n    ),\n    false\n  );\n  const errorSchema = specification.components.schemas.InvalidCursor;\n  assert.equal(\n    conforms(\n      { error: { ...invalidCursor.error, stack: \"internal\" } },\n      errorSchema\n    ),\n    false\n  );\n  assert.equal(\n    conforms(\n      { error: { ...invalidCursor.error, message: \"tenant_a\" } },\n      errorSchema\n    ),\n    false\n  );\n});\n\ntest(\"the existing project-detail route preserves access and ignores pagination parameters\", async () => {\n  const own = await request(\n    \"feed\",\n    { cursor: \"broken\", limit: \"0\" },\n    fixtures.tokenA,\n    true\n  );\n  assert.equal(own.status, 200);\n  assert.deepEqual(own.body, { id: \"feed\", name: \"Activity feed\" });\n  const inaccessible = await request(\"private\", {}, fixtures.tokenA, true);\n  assert.equal(inaccessible.status, 404);\n  assert.deepEqual(inaccessible.body, notFound);\n  const unauthenticatedResult = await request(\"feed\", {}, null, true);\n  assert.equal(unauthenticatedResult.status, 401);\n  assert.deepEqual(unauthenticatedResult.body, unauthenticated);\n});\n\ntest(\"OpenAPI declares operation, limit boundaries, signed cursor, and response statuses\", () => {\n  assert.equal(specification.openapi, \"3.1.0\");\n  const operation = specification.paths[\"/v1/projects/{project_id}/events\"].get;\n  assert.equal(operation.operationId, \"listProjectEvents\");\n  const limit = operation.parameters.find(\n    (parameter) => parameter.name === \"limit\"\n  ).schema;\n  assert.deepEqual(limit, {\n    type: \"integer\",\n    minimum: 1,\n    maximum: 100,\n    default: 25,\n  });\n  assert.deepEqual(Object.keys(operation.responses).sort(), [\n    \"200\",\n    \"400\",\n    \"401\",\n    \"404\",\n  ]);\n  assert.equal(\n    specification.components.securitySchemes.session.scheme,\n    \"bearer\"\n  );\n});",
+            "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n60\n61\n62\n63\n64\n65\n66\n67\n68\n69\n70\n71\n72\n73\n74\n75\n76mkdirSync(output, { recursive: true });\nconst states = [];\nfor (const [name, arguments_] of [\n  [\"red\", [\"--seeded\"]],\n  [\"green\", []],\n]) {\n  const result = spawnSync(\n    process.execPath,\n    [resolve(directory, \"test.mjs\"), ...arguments_],\n    {\n      cwd: directory,\n      encoding: \"utf8\",\n      timeout: 30_000,\n    }\n  );\n  writeFileSync(\n    resolve(output, `${name}.log`),\n    `${result.stdout ?? \"\"}${result.stderr ?? \"\"}`\n  );\n  states.push({\n    name,\n    command: `node test.mjs${arguments_.length ? \" --seeded\" : \"\"}`,\n    exit_code: result.status,\n    signal: result.signal,\n    error: result.error?.message ?? null,\n  });\n}\nconst sources = Object.fromEntries(\n  readdirSync(directory, { withFileTypes: true })\n    .filter((entry) => entry.isFile())\n    .map((entry) => [\n      entry.name,\n      createHash(\"sha256\")\n        .update(readFileSync(resolve(directory, entry.name)))\n        .digest(\"hex\"),\n    ])\n);\nconst observed = { red: await observe(true), green: await observe(false) };\nwriteJson(\"observed-http.json\", observed);\nwriteJson(\"run-manifest.json\", {\n  execution: \"Synthetic loopback HTTP fixture; no external service\",\n  recorded_at: new Date().toISOString(),\n  node: process.version,\n  minimum_node: \"22.6.0\",\n  dependencies: \"Node standard library only; no install step\",\n  baseline:\n    \"Deliberately seeded timestamp-only continuation; not a historical customer defect\",\n  correction:\n    \"Descending timestamp-and-ID tuple continuation using full fractional precision\",\n  source_sha256: sources,\n  states,\n});\nif (\n  states[0].exit_code === null ||\n  states[0].exit_code === 0 ||\n  states[1].exit_code !== 0\n) {\n  throw new Error(\n    \"Expected the unchanged tests to fail on the seeded baseline and pass on the corrected implementation. Inspect red.log and green.log.\"\n  );\n}\nconsole.log(\n  JSON.stringify(\n    {\n      execution: \"synthetic-loopback-http\",\n      red_exit: states[0].exit_code,\n      green_exit: states[1].exit_code,\n      green_pages: observed.green.pages.map((page) =>\n        page.body.items.map((item) => item.id)\n      ),\n      evidence_directory: output,\n    },\n    null,\n    2\n  )\n);",
+            "Criterion / test: [specific behavior and test location]\nEnvironment: [published setup reference; runtime, database and dependency versions]\nBefore: [revision + test-only diff ID; command; exit code; observed assertion; log path]\nAfter: [final revision or base + diff ID; command; exit code; observed assertion; log path]\nStatus: [pass / fail / blocked / not run]\nLimits / reviewer action: [untested behavior, blocker, or decision required]",
+            "Title: Add cursor pagination for project events\nIssue: API-142\nBase: [branch and commit]\nTested state: [head commit, or base commit plus attached diff identifier]\n\nChanges\n- Add the project-events endpoint using the existing project access helper.\n- Reuse signed cursors scoped to tenant and project.\n- Add contract tests and update the OpenAPI operation.\n\nAcceptance evidence\n- [One row per criterion above: test, observed result, and log reference.]\n\nValidation\n- Before edits: [command, result, and log reference for each baseline check].\n- New tests against original code: [result, or not run with reason].\n- After edits: [command, result, and log reference for each required check].\n- CI: [check links and actual states, or not available].\n- Remaining checks: [specific checks and blockers, or none with supporting evidence].\n\nReviewer focus\n- [Highest-risk behavior and unresolved criteria.]\n\nRemaining risk and rollback\n- [Observed limitations; distinguish them from untested assumptions.]\n- [How this change can be reverted and whether any callers depend on it.]",
+            "Address this review comment in the current change:\n\"Repeat the five-event traversal with limit=3; assert pages\n[evt_105, evt_104, evt_103] and [evt_102, evt_101], then a null cursor.\"\n\nAdd the regression test and change the implementation only if it exposes a\nfailure. Rerun the focused endpoint tests and any other required checks affected\nby the edit. Update the evidence table with the tested state and actual results.\nKeep the same scope. Do not merge or deploy."
           ]
         }
       ],

@@ -1823,7 +1823,9 @@ html[lang="en"] .closing-copy h2 {
   .slide--closing {
     overflow-y: auto;
   }
+}
 
+@media (max-height: 960px) and (min-width: 901px) {
   .case-main {
     padding-top: 24px;
     padding-bottom: 22px;

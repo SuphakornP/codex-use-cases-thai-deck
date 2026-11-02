@@ -40,16 +40,16 @@ test("server-renders the complete bilingual presentation shell", async () => {
   assert.doesNotMatch(html, /codex-preview/i);
 });
 
-test("generated deck data contains 113 complete bilingual use cases", async () => {
+test("generated deck data contains 119 complete bilingual use cases", async () => {
   const source = await readFile(new URL("../data/usecases-data.js", import.meta.url), "utf8");
   const context = { window: {} };
   vm.runInNewContext(source, context);
   const items = context.window.USE_CASES;
 
-  assert.equal(items.length, 113);
+  assert.equal(items.length, 119);
   assert.deepEqual(
     Array.from(items, (item) => item.index),
-    Array.from({ length: 113 }, (_, index) => index),
+    Array.from({ length: 119 }, (_, index) => index),
   );
   const slugs = new Set(items.map((item) => item.slug));
   for (const slug of [
@@ -65,6 +65,12 @@ test("generated deck data contains 113 complete bilingual use cases", async () =
     "collect-and-schedule-team-requests",
     "compare-campaign-performance",
     "issue-to-tested-pr",
+    "automate-security-reviews-in-github-cloud",
+    "manage-supply-chain-risk-in-cicd",
+    "review-code-changes-in-codex-desktop",
+    "set-up-security-context",
+    "create-custom-review-workflows-with-github-actions",
+    "run-security-reviews-from-the-cli",
   ]) {
     assert.ok(slugs.has(slug), `${slug}: new official use case must be present`);
   }
@@ -106,6 +112,30 @@ test("generated deck data contains 113 complete bilingual use cases", async () =
   }
   assert.deepEqual(
     Array.from(items.filter((item) => item.promptSource === "editorial"), (item) => item.slug),
-    ["getting-started-with-daybreak-blue", "fix-a-finding-from-your-security-scan", "scan-multiple-repositories", "automate-security-scans-in-ci"],
+    [
+      "getting-started-with-daybreak-blue",
+      "automate-security-reviews-in-github-cloud",
+      "manage-supply-chain-risk-in-cicd",
+      "set-up-security-context",
+      "fix-a-finding-from-your-security-scan",
+      "scan-multiple-repositories",
+      "create-custom-review-workflows-with-github-actions",
+      "run-security-reviews-from-the-cli",
+      "automate-security-scans-in-ci",
+    ],
   );
+});
+
+test("source inventory preserves official prose and code examples with or without section headings", async () => {
+  const raw = await readFile(new URL("../data/source-usecases.json", import.meta.url), "utf8");
+  const records = new Map(JSON.parse(raw).useCases.map((item) => [item.slug, item]));
+  const desktop = records.get("review-code-changes-in-codex-desktop");
+  assert.ok(desktop.workflow.some((part) => part.paragraphs.length > 0));
+  for (const [slug, example] of [
+    ["create-custom-review-workflows-with-github-actions", "workflow_dispatch:"],
+    ["run-security-reviews-from-the-cli", "--working-tree"],
+  ]) {
+    const blocks = records.get(slug).workflow.flatMap((part) => part.codeBlocks ?? []);
+    assert.ok(blocks.some((block) => block.includes(example)), `${slug}: missing official code example`);
+  }
 });
