@@ -7,6 +7,7 @@ import json
 import re
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from copy import deepcopy
 from pathlib import Path
 from bs4 import BeautifulSoup, Tag
 import requests
@@ -65,6 +66,13 @@ def extract_prompt(soup: BeautifulSoup) -> str:
     return ""
 
 
+def extract_code_block(node: Tag) -> str:
+    code = deepcopy(node)
+    for line_numbers in code.select('span.syntax-highlighter-line-numbers[aria-hidden="true"]'):
+        line_numbers.decompose()
+    return code.get_text()
+
+
 def extract_workflow(soup: BeautifulSoup, page_title: str) -> list[dict[str, object]]:
     prompt_heading = soup.find("h2", string=lambda value: value and clean(value) == "Starter prompt")
     best_for_headings = soup.find_all(
@@ -88,7 +96,7 @@ def extract_workflow(soup: BeautifulSoup, page_title: str) -> list[dict[str, obj
         paragraphs = [clean(node.get_text(" ", strip=True)) for node in section.find_all("p")]
         items = section_items(section)
         code_blocks = (
-            [node.get_text() for node in section.find_all("pre")]
+            [extract_code_block(node) for node in section.find_all("pre")]
             if section.get("id") == "useCaseMarkdownContent" else []
         )
         if heading is None:
