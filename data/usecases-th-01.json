@@ -591,29 +591,29 @@
     "index": 21,
     "slug": "getting-started-with-daybreak-blue",
     "titleTh": "เริ่มใช้ Daybreak Blue ในทีม",
-    "titleEn": "Getting Started with Daybreak Blue.",
-    "summaryTh": "ให้เจ้าของ ChatGPT Enterprise workspace เปิด Daybreak Blue สำหรับสมาชิกที่อนุมัติ แล้วตรวจสิทธิ์และการตอบใน Codex เพื่อทำงานป้องกันภัยที่ได้รับอนุญาต",
+    "titleEn": "Getting Started with Daybreak Blue",
+    "summaryTh": "ให้เจ้าของ ChatGPT Business หรือ Enterprise workspace เปิด Daybreak Blue สำหรับสมาชิกที่อนุมัติตามวิธีของแต่ละแผน แล้วตรวจการใช้งานใน Codex สำหรับงานป้องกันภัยที่ได้รับอนุญาต",
     "categoryTh": "วิทยาศาสตร์และความปลอดภัย",
     "workflow": [
       {
-        "label": "ยืนยันการอนุมัติ",
-        "detail": "เจ้าของ workspace ตรวจ Trusted Access ทำขั้นตอนสมัครและยืนยันให้ครบ แล้วรอ Daybreak Blue เป็น Active"
+        "label": "ยืนยันการอนุมัติ workspace",
+        "detail": "Business ต้องเป็น workspace ที่อนุมัติแล้ว ส่วน Enterprise ให้เจ้าของตรวจ Trusted Access และรอสถานะ Active"
       },
       {
-        "label": "กำหนดสิทธิ์เฉพาะทีม",
-        "detail": "สร้าง custom role เปิด Daybreak Blue และโมเดลที่รองรับ บันทึก แล้วมอบหมายให้กลุ่มที่อนุมัติ"
+        "label": "ให้สิทธิ์ตามแผนที่ใช้",
+        "detail": "Business เลือกสมาชิกผ่าน Models → Specialty Models → Daybreak Blue → Set access ส่วน Enterprise ใช้ custom role ที่เปิด Blue และโมเดล"
       },
       {
         "label": "ตรวจค่าที่บันทึกแล้ว",
-        "detail": "เปิด role ตรวจค่าซ้ำ เช็กสิทธิ์จากทุก role และกลุ่ม รวมถึง workspace default แล้วรอประมาณ 10 นาที"
+        "detail": "Business ตรวจ toggle และสมาชิกที่เลือก ส่วน Enterprise ตรวจ default, roles และกลุ่ม แล้วรอประมาณ 10 นาที"
       },
       {
         "label": "ทดสอบด้วยบัญชีสมาชิก",
         "detail": "เลือก workspace ที่อนุมัติใน Codex เปิด Daybreak เลือกโมเดล และลองงานเล็ก ๆ ว่าตอบได้โดยไม่มี model access error"
       }
     ],
-    "promptTh": "ช่วยฉันเตรียมและตรวจสอบการเปิดใช้ Daybreak Blue สำหรับสมาชิกที่อนุมัติใน [ChatGPT Enterprise workspace]\n\nให้เจ้าของ workspace ตรวจ Trusted Access และยืนยันว่า Daybreak Blue เป็น Active หากสถานะยังเป็น In review ให้รออีเมลต้อนรับจาก OpenAI ก่อนมอบหมายสิทธิ์\n\nวางแผน custom role สำหรับ [approved group] โดยเปิดทั้ง Daybreak Blue และโมเดลที่รองรับ เช่น GPT-6 Sol สำหรับการเปิดใช้ครั้งใหม่เฉพาะสมาชิกที่เลือก ให้คง Daybreak Blue ที่ workspace default เป็นปิด หากเปิดอยู่แล้ว ให้มอบ role ที่ให้สิทธิ์แก่ทุกคนที่ควรมีสิทธิ์ต่อก่อนปิดค่า default หลังจากเจ้าของบันทึกและมอบหมาย role แล้ว ให้เปิดการตั้งค่าอีกครั้ง ตรวจว่าสมาชิกอยู่ในกลุ่มที่กำหนด และตรวจสิทธิ์ที่ได้รับจาก role อื่นด้วย รอประมาณ 10 นาทีก่อนตรวจสิทธิ์ด้วยบัญชีสมาชิก\n\nให้สมาชิกคนหนึ่งลงชื่อเข้าใช้ workspace ที่อนุมัติใน ChatGPT desktop app เปิด Codex เริ่มแชต เปิด Daybreak ในเมนูโมเดล และเลือกโมเดลที่เปิดให้ใช้ ลองงานเล็ก ๆ เช่น เสนอการทดสอบสองข้อสำหรับ patch ที่ปฏิเสธ session tokens ที่หมดอายุ และตรวจว่าแชตตอบกลับโดยไม่มี model access error\n\nหากไม่พบ toggle หรือโมเดล ให้รีเฟรชแอปและตรวจ workspace การมอบหมาย role และค่าที่บันทึกไว้ รายงานสิ่งที่ยืนยันแล้ว สิ่งที่ยังขาด และขั้นตอนถัดไป หากทีมใช้ API keys ด้วย ให้ระบุว่าต้องยืนยัน API organization ที่อนุมัติและตั้งค่าแต่ละ project แยกต่างหาก",
-    "checkTh": "เจ้าของต้องยืนยันผู้ได้รับสิทธิ์และการบันทึกจริง การอนุมัติ workspace ไม่ได้เปิดสิทธิ์ API โดยอัตโนมัติ และใช้ได้เฉพาะงานป้องกันภัยที่ได้รับอนุญาต"
+    "promptTh": "ช่วยฉันเตรียมและตรวจสอบการเปิดใช้ Daybreak Blue สำหรับสมาชิกที่อนุมัติใน [ChatGPT Business or Enterprise workspace]\n\nระบุว่าเราใช้ workspace แผนใด สำหรับ ChatGPT Business ให้ยืนยันว่า workspace ได้รับอนุมัติแล้ว สำหรับ ChatGPT Enterprise ให้เจ้าของ workspace ตรวจ Trusted Access และยืนยันว่า Daybreak Blue เป็น Active หากสถานะยังเป็น In review ให้รออีเมลต้อนรับจาก OpenAI ก่อนมอบหมายสิทธิ์\n\nสำหรับ ChatGPT Business ให้เจ้าของเปิด Admin Console → Models → Specialty Models → Daybreak Blue → Set access และเลือกสมาชิกที่อนุมัติใน [approved group] ตรวจ workspace toggle และรายชื่อสมาชิกที่บันทึกไว้ อธิบายว่า workspace toggle ใช้หยุดสิทธิ์ของทุกคนชั่วคราว และเมื่อเปิดอีกครั้ง การเลือกสมาชิกแต่ละคนยังมีผลตามเดิม\n\nสำหรับ ChatGPT Enterprise ให้วางแผน custom role สำหรับ [approved group] โดยเปิดทั้ง Daybreak Blue และโมเดลที่รองรับ เช่น GPT-6 Sol สำหรับการเปิดใช้ครั้งใหม่เฉพาะสมาชิกที่เลือก ให้คง Daybreak Blue ที่ workspace default เป็นปิด หากเปิดอยู่แล้ว ให้มอบ role ที่ให้สิทธิ์แก่ทุกคนที่ควรมีสิทธิ์ต่อก่อนปิดค่า default หลังจากเจ้าของบันทึกและมอบหมาย role แล้ว ให้เปิด Models → Roles อีกครั้ง และตรวจค่า Blue กับโมเดลที่บันทึกไว้ ตรวจว่าสมาชิกอยู่ในกลุ่มที่กำหนด และตรวจสิทธิ์ที่ได้รับจาก role อื่นใน Groups & roles รอประมาณ 10 นาทีก่อนตรวจสิทธิ์ด้วยบัญชีสมาชิก\n\nให้สมาชิกที่อนุมัติคนหนึ่งลงชื่อเข้าใช้ workspace ที่อนุมัติใน ChatGPT desktop app เปิด Codex เริ่มแชต เปิด Daybreak ในเมนูโมเดล และเลือกโมเดลที่เปิดให้ใช้ ลองงานเล็ก ๆ เช่น เสนอการทดสอบสองข้อสำหรับ patch ที่ปฏิเสธ session tokens ที่หมดอายุ และตรวจว่าแชตตอบกลับโดยไม่มี model access error\n\nหากไม่พบ toggle หรือโมเดล ให้รีเฟรชแอปและตรวจ workspace สำหรับ Business ให้ตรวจ workspace toggle และการเลือกสมาชิกคนนั้นใน Set access สำหรับ Enterprise ให้ตรวจการมอบหมาย role และค่า Daybreak Blue กับโมเดลที่บันทึกไว้ รายงานสิ่งที่ยืนยันแล้ว สิ่งที่ยังขาด และขั้นตอนถัดไป หากทีมใช้ API keys ด้วย ให้ระบุว่าต้องยืนยัน API organization ที่อนุมัติและตั้งค่าแต่ละ project แยกต่างหาก",
+    "checkTh": "เจ้าของต้องยืนยันผู้ได้รับสิทธิ์และค่าที่บันทึกตามประเภท workspace การอนุมัติ workspace ไม่ได้เปิดสิทธิ์ API อัตโนมัติ และใช้ได้เฉพาะงานป้องกันภัยที่ได้รับอนุญาต"
   },
   {
     "index": 22,
@@ -716,8 +716,8 @@
         "detail": "ใช้ $define-security-policy ร่างกฎ ข้อยกเว้น และเกณฑ์ความรุนแรงใน SECURITY.md เก็บคำสั่ง build และ test ใน AGENTS.md"
       },
       {
-        "label": "เชื่อมกับ Cloud",
-        "detail": "หลังทบทวนแล้ว ให้ commit threat model ใน docs/security/ และระบุพาธไฟล์ในการตั้งค่า Codex Cloud ของ repo"
+        "label": "ตั้งค่า threat model บน Cloud",
+        "detail": "ใน Codex Security Cloud เลือก repo ใน Repositories → Monitoring settings แก้ Threat model แล้ว Save เพื่อใช้กับการสแกนครั้งถัดไป"
       },
       {
         "label": "ให้ข้อมูลแก่ CLI",
