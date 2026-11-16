@@ -629,7 +629,7 @@
       },
       {
         "label": "เลือก PR และเวลา",
-        "detail": "เปิด Auto security review เลือก PR ที่ต้องตรวจ และกำหนดให้รันเมื่อเปิด PR เมื่อ push หรือพร้อม Code Review"
+        "detail": "เริ่มที่ Daybreak → Set up PR reviews หรือปรับ Auto security review ใน Codex เพื่อเลือก PR และเวลาตรวจ"
       },
       {
         "label": "กำหนดเกณฑ์รายงาน",
@@ -640,7 +640,7 @@
         "detail": "ดูข้อค้นพบใน PR และเปิด Security Report ใน Codex เพื่อตรวจหลักฐานและเส้นทางโจมตี"
       }
     ],
-    "promptTh": "ช่วยฉันวางแผนตั้งค่า Codex Security Review สำหรับ [owner/repository] ใน GitHub Cloud ยืนยันว่า workspace ใช้ Security Review ได้ เชื่อม repository กับ Codex Cloud แล้ว และผู้ดูแล repository มีสิทธิ์ push หรือ admin หากตรวจข้อใดไม่ได้ ให้ระบุว่ายังขาดข้อมูลอะไร\n\nเสนอว่าจะตรวจ PR ใดและจะเริ่มตรวจเมื่อใด อธิบายระดับความรุนแรงขั้นต่ำที่กำหนดแยกกันสำหรับการตรวจอัตโนมัติและการสั่งตรวจเอง เริ่มจากค่าเริ่มต้น High และ Medium ตามลำดับ เสนอเกณฑ์เฉพาะสำหรับ [sensitive path] หากมีเหตุผล พร้อมอธิบายว่าผู้ใดเห็นข้อค้นพบที่โพสต์ลง PR ได้\n\nส่งค่าที่เสนอและแผนตรวจสอบโดยใช้ PR ตัวอย่างหนึ่งรายการ ระบุว่าเมื่อใดควรใช้ `@codex security review` และจะตรวจรายงานฉบับเต็มใน Codex ได้ที่ใด ขออนุมัติจากฉันก่อนเปลี่ยนการตั้งค่าที่ใช้ร่วมกันหรือโพสต์ความคิดเห็น",
+    "promptTh": "ช่วยฉันวางแผนตั้งค่า Codex Security Review สำหรับ [owner/repository] ใน GitHub Cloud ยืนยันว่า workspace ใช้ Security Review ได้ เชื่อม repository กับ Codex Cloud แล้ว และผู้ดูแล repository มีสิทธิ์ push หรือ admin หากตรวจข้อใดไม่ได้ ให้ระบุว่ายังขาดข้อมูลอะไร\n\nหากเริ่มจาก Daybreak ให้เสนอเส้นทาง Set up PR reviews บนหน้าต้อนรับ เชื่อม GitHub organization หากจำเป็น เลือก repositories และ Enable PR reviews เพื่อให้ตรวจ PR ใหม่เมื่อเปิด โดยยังไม่เปลี่ยนค่าจนกว่าฉันจะอนุมัติ\n\nเสนอว่าจะตรวจ PR ใดและจะเริ่มตรวจเมื่อใด อธิบายระดับความรุนแรงขั้นต่ำที่กำหนดแยกกันสำหรับการตรวจอัตโนมัติและการสั่งตรวจเอง เริ่มจากค่าเริ่มต้น High และ Medium ตามลำดับ เสนอเกณฑ์เฉพาะสำหรับ [sensitive path] หากมีเหตุผล พร้อมอธิบายว่าผู้ใดเห็นข้อค้นพบที่โพสต์ลง PR ได้\n\nส่งค่าที่เสนอและแผนตรวจสอบโดยใช้ PR ตัวอย่างหนึ่งรายการ ระบุว่าเมื่อใดควรใช้ `@codex security review` และจะตรวจรายงานฉบับเต็มใน Codex ได้ที่ใด ขออนุมัติจากฉันก่อนเปลี่ยนการตั้งค่าที่ใช้ร่วมกันหรือโพสต์ความคิดเห็น",
     "checkTh": "ให้ผู้ดูแลยืนยันขอบเขต PR ผู้ที่เห็นข้อค้นพบ และหลักฐานในรายงานก่อนตัดสินใจ merge"
   },
   {
@@ -717,14 +717,14 @@
       },
       {
         "label": "ตั้งค่า threat model บน Cloud",
-        "detail": "ใน Codex Security Cloud เลือก repo ใน Repositories → Monitoring settings แก้ Threat model แล้ว Save เพื่อใช้กับการสแกนครั้งถัดไป"
+        "detail": "ใน Daybreak Defense Factory เลือก Repositories → repository → Threat model แก้ไขแล้วบันทึก เพื่อใช้กับการสแกนครั้งถัดไป"
       },
       {
         "label": "ให้ข้อมูลแก่ CLI",
         "detail": "ใช้ --knowledge-base ให้ CLI อ้างอิงเอกสารสถาปัตยกรรม นโยบาย หรือข้อมูลการทำงานของระบบที่เกี่ยวข้อง"
       }
     ],
-    "promptTh": "ช่วยเตรียมข้อมูลด้านความปลอดภัยสำหรับ [repository] อ่าน AGENTS.md และเอกสารสถาปัตยกรรมที่ทีมอนุญาตให้ใช้ ระบุสิ่งที่ต้องปกป้อง จุดรับข้อมูล ขอบเขตความเชื่อถือ และสมมติฐานที่ต้องให้เจ้าของระบบยืนยัน\n\nใช้ $threat-model ร่าง threat model และใช้ $define-security-policy ร่าง SECURITY.md โดยระบุว่าต้องรายงานปัญหาใด ประเมินความรุนแรงอย่างไร และเรื่องใดอยู่นอกขอบเขต เสนอเอกสารสำหรับใช้กับ --knowledge-base ให้ทีมทบทวนฉบับร่างก่อน commit หรือเปลี่ยนการตั้งค่า Codex Cloud",
+    "promptTh": "ช่วยเตรียมข้อมูลด้านความปลอดภัยสำหรับ [repository] อ่าน AGENTS.md และเอกสารสถาปัตยกรรมที่ทีมอนุญาตให้ใช้ ระบุสิ่งที่ต้องปกป้อง จุดรับข้อมูล ขอบเขตความเชื่อถือ และสมมติฐานที่ต้องให้เจ้าของระบบยืนยัน\n\nใช้ $threat-model ร่าง threat model และใช้ $define-security-policy ร่าง SECURITY.md โดยระบุว่าต้องรายงานปัญหาใด ประเมินความรุนแรงอย่างไร และเรื่องใดอยู่นอกขอบเขต เสนอเอกสารสำหรับใช้กับ --knowledge-base ให้ทีมทบทวนฉบับร่างก่อน commit หรือเปลี่ยนการตั้งค่า Daybreak Defense Factory\n\nหากใช้ Daybreak Defense Factory ให้เตรียมการแก้ threat model ผ่าน Repositories → repository → Threat model แล้วบันทึกหลังทีมอนุมัติ การเปลี่ยนแปลงมีผลกับการสแกนครั้งถัดไป สำหรับบริบทที่ใช้ตรวจยืนยันข้อค้นพบ ให้เปิด Manage ใต้ Validation context และเสนอข้อมูลใน Additional context ให้ทบทวนก่อน Save หากต้องแก้ SECURITY.md ให้แก้ไฟล์ใน repository",
     "checkTh": "ให้เจ้าของระบบยืนยันสมมติฐาน ข้อยกเว้น และเกณฑ์รายงานก่อนทีมใช้เอกสารนี้ในการตรวจจริง"
   },
   {
@@ -757,6 +757,34 @@
   },
   {
     "index": 27,
+    "slug": "make-a-custom-flyer",
+    "titleTh": "สร้างใบปลิวตามแบบที่ต้องการ",
+    "titleEn": "Make a custom flyer",
+    "summaryTh": "สร้างใบปลิวสำหรับธุรกิจ กิจกรรม หรือโครงการส่วนตัวจากคำอธิบาย ข้อความ และภาพอ้างอิง แล้วปรับแบบและตรวจรายละเอียดก่อนดาวน์โหลด",
+    "categoryTh": "ออกแบบและสร้าง",
+    "workflow": [
+      {
+        "label": "เตรียมข้อความและภาพอ้างอิง",
+        "detail": "บอกวัตถุประสงค์ ข้อความที่ต้องการใช้ และว่าจะพิมพ์หรือแชร์ออนไลน์ พร้อมแนบโลโก้หรือภาพอ้างอิง"
+      },
+      {
+        "label": "สร้างแบบแรก",
+        "detail": "ระบุสี ภาพประกอบ และ layout ที่ต้องการ หรือให้ ChatGPT เสนอแนวทางหากยังไม่แน่ใจ"
+      },
+      {
+        "label": "ปรับแบบในแชทเดิม",
+        "detail": "ขอปรับขนาดชื่อเรื่อง สี หรือตำแหน่งภาพเพื่อให้อ่านข้อความง่ายขึ้น หรือแนบภาพกลับมาแก้ภายหลัง"
+      },
+      {
+        "label": "ตรวจแล้วดาวน์โหลด",
+        "detail": "ตรวจข้อความและรายละเอียดทั้งหมด รวมถึงความอ่านง่ายและรูปแบบสำหรับพิมพ์หรือแชร์ ก่อนดาวน์โหลด"
+      }
+    ],
+    "promptTh": "สร้างใบปลิวสำหรับ [describe what it's for] โดยให้มีข้อความนี้: [add your text]\n\nฉันต้องการให้งานมีลักษณะ [describe the style, colors, or illustrations you have in mind] หากฉันแนบภาพอ้างอิงไว้ ให้ใช้เป็นแนวทางในการออกแบบ ทำให้ข้อความอ่านง่าย และใช้รูปแบบที่เหมาะกับ [printing or sharing online]",
+    "checkTh": "ตรวจการสะกด วันที่ เวลา สถานที่ และรายละเอียดทั้งหมด พร้อมดูว่าข้อความอ่านง่ายในขนาดที่จะพิมพ์หรือแชร์ก่อนนำไปใช้"
+  },
+  {
+    "index": 28,
     "slug": "slack-coding-tasks",
     "titleTh": "เริ่มงานเขียนโค้ดจาก Slack",
     "titleEn": "Kick off coding tasks from Slack",
@@ -784,7 +812,7 @@
     "checkTh": "ยืนยันสิทธิ์ของบัญชีที่รันใน environment, repo และบริการที่ใช้ ตรวจ diff และ tests ให้ครอบคลุมงานก่อน merge ข้อความตอบใน Slack ไม่ได้ให้ทุกคนเข้าถึง task"
   },
   {
-    "index": 28,
+    "index": 29,
     "slug": "new-hire-onboarding",
     "titleTh": "ประสานงานพนักงานใหม่",
     "titleEn": "Coordinate new-hire onboarding",
@@ -812,7 +840,7 @@
     "checkTh": "ตรวจสิทธิ์การเข้าถึง สถานะประกาศ และข้อมูลส่วนบุคคลทุกช่องก่อนดำเนินการจริง"
   },
   {
-    "index": 29,
+    "index": 30,
     "slug": "deep-security-scan",
     "titleTh": "สแกนความปลอดภัยเชิงลึก",
     "titleEn": "Run a deep security scan",
@@ -840,7 +868,7 @@
     "checkTh": "ผู้เชี่ยวชาญความปลอดภัยต้องยืนยัน reachability, severity และผลกระทบก่อนเผยแพร่หรือแก้ไข finding"
   },
   {
-    "index": 30,
+    "index": 31,
     "slug": "zoom-meeting-follow-ups",
     "titleTh": "เปลี่ยนการประชุมเป็นงานติดตาม",
     "titleEn": "Turn meetings into follow-ups",
@@ -868,7 +896,7 @@
     "checkTh": "ตรวจข้อตกลงที่ให้ไว้ ผู้รับผิดชอบ วันที่ ข้อมูลลูกค้า และรายละเอียดภายในก่อนส่งหรือบันทึกในแต่ละระบบ"
   },
   {
-    "index": 31,
+    "index": 32,
     "slug": "learn-a-new-concept",
     "titleTh": "เรียนรู้แนวคิดใหม่อย่างเป็นระบบ",
     "titleEn": "Learn a new concept",
@@ -896,7 +924,7 @@
     "checkTh": "ตรวจว่ารายงานแยกสิ่งที่ต้นฉบับระบุออกจากการตีความ และอ้างอิงหน้า รูป หรือตารางที่เกี่ยวข้องได้จริง"
   },
   {
-    "index": 32,
+    "index": 33,
     "slug": "idea-to-proof-of-concept",
     "titleTh": "เปลี่ยนไอเดียเป็นต้นแบบใช้งานได้",
     "titleEn": "Get from idea to proof of concept",
@@ -924,7 +952,7 @@
     "checkTh": "ให้ผู้ใช้เป้าหมายทดลอง workflow หลักและแยกสิ่งที่ต้นแบบพิสูจน์ได้จากสิ่งที่ยังเป็นสมมติฐาน"
   },
   {
-    "index": 33,
+    "index": 34,
     "slug": "deploy-app-or-website",
     "titleTh": "นำแอปหรือเว็บไซต์ขึ้นใช้งาน",
     "titleEn": "Deploy an app or website",
@@ -952,7 +980,7 @@
     "checkTh": "ตรวจ preview, environment variables, ข้อมูลลับ และขออนุมัติแยกก่อน deploy production"
   },
   {
-    "index": 34,
+    "index": 35,
     "slug": "remediate-vulnerability-backlog",
     "titleTh": "จัดการรายการช่องโหว่ค้างแก้",
     "titleEn": "Remediate a vulnerability backlog",
@@ -980,7 +1008,7 @@
     "checkTh": "ทำเฉพาะระบบที่ได้รับอนุญาต และให้ผู้เชี่ยวชาญความปลอดภัยทบทวน Patch กับหลักฐานก่อนนำขึ้นระบบ"
   },
   {
-    "index": 35,
+    "index": 36,
     "slug": "scan-code-changes-for-security",
     "titleTh": "ตรวจความปลอดภัยของการเปลี่ยนแปลงโค้ด",
     "titleEn": "Scan code changes for security",
@@ -1008,7 +1036,7 @@
     "checkTh": "มนุษย์ต้องยืนยันการเข้าถึงได้จริงและผลกระทบของแต่ละ Finding ก่อนจัดลำดับหรือแก้ไข"
   },
   {
-    "index": 36,
+    "index": 37,
     "slug": "dependency-incident-audits",
     "titleTh": "ตรวจสอบเหตุการณ์จาก Dependency",
     "titleEn": "Audit dependency incidents",
@@ -1036,7 +1064,7 @@
     "checkTh": "อย่ารัน Package หรือ Script ที่อาจถูกแทรกแซง และขออนุมัติแยกก่อนอัปเดต Dependency หรือทำ Credential cleanup"
   },
   {
-    "index": 37,
+    "index": 38,
     "slug": "qa-your-app-with-computer-use",
     "titleTh": "ทดสอบคุณภาพแอปด้วย Computer Use",
     "titleEn": "QA your app with Computer Use",
