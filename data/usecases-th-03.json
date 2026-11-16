@@ -1,6 +1,6 @@
 [
   {
-    "index": 73,
+    "index": 74,
     "slug": "calibrate-assessments",
     "titleTh": "ปรับมาตรฐานการประเมินให้สอดคล้องกัน",
     "titleEn": "Calibrate assessments",
@@ -28,7 +28,7 @@
     "checkTh": "ห้ามให้ AI กำหนดหรือเปลี่ยนเกรด ทุกข้อสังเกตต้องผ่านการตัดสินของคณาจารย์"
   },
   {
-    "index": 74,
+    "index": 75,
     "slug": "finance-model-cleanup",
     "titleTh": "จัดระเบียบและตรวจโมเดลการเงิน",
     "titleEn": "Clean and review a financial model",
@@ -56,7 +56,7 @@
     "checkTh": "ห้ามเปลี่ยน Business assumption โดยไม่ได้อนุมัติ และให้ Finance owner ตรวจสูตรกับผลลัพธ์สำคัญทุกจุด"
   },
   {
-    "index": 75,
+    "index": 76,
     "slug": "create-classroom-materials-pack",
     "titleTh": "สร้างชุดสื่อการสอน",
     "titleEn": "Create a classroom materials pack",
@@ -84,7 +84,7 @@
     "checkTh": "เก็บทุกไฟล์เป็น Draft จนกว่าครูจะตรวจความถูกต้อง Accessibility ภาษา และความสอดคล้องกับนโยบายครบถ้วน"
   },
   {
-    "index": 76,
+    "index": 77,
     "slug": "create-lesson-deck",
     "titleTh": "สร้างสไลด์บทเรียน",
     "titleEn": "Create a lesson deck",
@@ -112,7 +112,7 @@
     "checkTh": "ให้ผู้สอนตรวจความถูกต้อง ลำดับการเรียน การเข้าถึง และสิทธิ์ใช้รูปก่อนนำไปสอน"
   },
   {
-    "index": 77,
+    "index": 78,
     "slug": "stalled-deal-diagnosis",
     "titleTh": "หาสาเหตุที่ดีลหยุดชะงัก",
     "titleEn": "Diagnose a stalled deal",
@@ -140,7 +140,7 @@
     "checkTh": "ให้เจ้าของดีลยืนยันหลักฐานและอนุมัติข้อความทุกครั้งก่อนติดต่อลูกค้าหรือแก้ CRM"
   },
   {
-    "index": 78,
+    "index": 79,
     "slug": "business-impact-readout",
     "titleTh": "วัดผลกระทบทางธุรกิจ",
     "titleEn": "Measure business impact",
@@ -168,7 +168,7 @@
     "checkTh": "ให้นักวิเคราะห์หรือเจ้าของการทดลองตรวจตัวเลข วิธีคำนวณ และระดับความมั่นใจก่อนใช้ตัดสินใจ"
   },
   {
-    "index": 79,
+    "index": 80,
     "slug": "scenario-tradeoff-model",
     "titleTh": "จำลองสถานการณ์และเปรียบเทียบ Trade-off เชิงกลยุทธ์",
     "titleEn": "Model strategic scenarios and tradeoffs",
@@ -196,7 +196,7 @@
     "checkTh": "ให้ผู้รับผิดชอบข้อมูลยืนยันสมมติฐานและต้นทุนทุกข้อก่อนนำผลเปรียบเทียบเข้าที่ประชุม"
   },
   {
-    "index": 80,
+    "index": 81,
     "slug": "organize-lesson-unit-folder",
     "titleTh": "จัดระเบียบโฟลเดอร์บทเรียนหรือหน่วยการเรียน",
     "titleEn": "Organize a lesson or unit folder",
@@ -224,7 +224,7 @@
     "checkTh": "ตรวจว่าไม่มีไฟล์ถูกลบ ลิงก์ยังใช้ได้ และไฟล์ฉบับปัจจุบันยังค้นพบง่ายหลังจัดระเบียบ"
   },
   {
-    "index": 81,
+    "index": 82,
     "slug": "organize-semester-workspace",
     "titleTh": "จัดระเบียบพื้นที่ทำงานตลอดภาคเรียน",
     "titleEn": "Organize a semester workspace",
@@ -252,7 +252,7 @@
     "checkTh": "ตรวจทุกกำหนดส่งกับเอกสารทางการและอย่าเลือกวันที่เองเมื่อพบข้อมูลขัดแย้ง"
   },
   {
-    "index": 82,
+    "index": 83,
     "slug": "plan-budget-and-schedule",
     "titleTh": "วางแผนงบประมาณและตารางเวลา",
     "titleEn": "Plan a budget and schedule",
@@ -280,7 +280,7 @@
     "checkTh": "ตรวจยอดและวันครบกำหนดจากแหล่งข้อมูลต้นทาง พร้อมลบเลขบัญชีและข้อมูลการเงินที่ไม่จำเป็นก่อนอัปโหลด"
   },
   {
-    "index": 83,
+    "index": 84,
     "slug": "prepare-committee-packet",
     "titleTh": "เตรียมชุดเอกสารสำหรับคณะกรรมการ",
     "titleEn": "Prepare a committee packet",
@@ -308,7 +308,7 @@
     "checkTh": "ตรวจ citation กฎเกณฑ์ที่เกี่ยวข้อง ข้อมูลลับ และการนำเสนอมุมมองที่เห็นต่างอย่างเป็นธรรมก่อนแจกเอกสาร"
   },
   {
-    "index": 84,
+    "index": 85,
     "slug": "refresh-forecast-and-plan",
     "titleTh": "อัปเดตประมาณการและแผน",
     "titleEn": "Refresh a forecast and plan",
@@ -336,11 +336,11 @@
     "checkTh": "ให้เจ้าของแผนตรวจสูตร ลิงก์ข้อมูล และอนุมัติสมมติฐานที่เปลี่ยนทุกข้อก่อนแชร์ forecast"
   },
   {
-    "index": 85,
+    "index": 86,
     "slug": "strategic-account-plan",
     "titleTh": "อัปเดตแผนบริหารลูกค้ารายสำคัญ",
     "titleEn": "Refresh a strategic account plan",
-    "summaryTh": "ใช้ ChatGPT รวมสัญญาณล่าสุดจากลูกค้าและข้อมูลโอกาสขายเพื่ออัปเดตผู้มีส่วนได้ส่วนเสีย ความเสี่ยง คุณค่าที่เสนอ และ next action",
+    "summaryTh": "ใช้ ChatGPT รวมสัญญาณล่าสุดจากลูกค้าและข้อมูลโอกาสขายเพื่ออัปเดตข้อมูลผู้มีส่วนได้ส่วนเสีย ความเสี่ยง คุณค่าที่เสนอ และ next action",
     "categoryTh": "การขายและปฏิบัติการ",
     "workflow": [
       {
@@ -364,7 +364,7 @@
     "checkTh": "ให้ account owner ยืนยันข้อมูลและเนื้อหาที่ใช้กับลูกค้าได้ก่อนแก้ CRM หรือส่งต่อภายนอก"
   },
   {
-    "index": 86,
+    "index": 87,
     "slug": "refresh-course-materials",
     "titleTh": "ปรับปรุงสื่อการสอน",
     "titleEn": "Refresh course materials",
@@ -392,7 +392,7 @@
     "checkTh": "ให้ผู้สอนตรวจแหล่งอ้างอิง นโยบาย การเข้าถึง และทุกข้อเสนอที่ต้องใช้ดุลยพินิจทางวิชาการ"
   },
   {
-    "index": 87,
+    "index": 88,
     "slug": "revise-lesson-package",
     "titleTh": "แก้ไขชุดสื่อบทเรียน",
     "titleEn": "Revise a lesson package",
@@ -420,7 +420,7 @@
     "checkTh": "ให้ผู้สอนตรวจว่าตัวอย่าง คำสั่ง และเฉลยตรงกันทุกไฟล์ก่อนใช้ฉบับใหม่"
   },
   {
-    "index": 88,
+    "index": 89,
     "slug": "synthesize-research-evidence",
     "titleTh": "สังเคราะห์หลักฐานงานวิจัย",
     "titleEn": "Synthesize research evidence",
@@ -448,7 +448,7 @@
     "checkTh": "ตรวจทุก citation กับต้นฉบับและรักษาขอบเขต ประชากร วิธีวิจัย และความไม่แน่นอนของผลไว้ครบ"
   },
   {
-    "index": 89,
+    "index": 90,
     "slug": "track-course-engagement",
     "titleTh": "ติดตามการมีส่วนร่วมในรายวิชา",
     "titleEn": "Track course engagement",
@@ -476,7 +476,7 @@
     "checkTh": "เทียบยอดรวมและสุ่มตรวจระเบียนกับต้นทาง รวมทั้งยืนยันช่วงวันที่ section และนิยาม metric ก่อนใช้ผล"
   },
   {
-    "index": 90,
+    "index": 91,
     "slug": "track-job-applications",
     "titleTh": "ติดตามการสมัครงาน",
     "titleEn": "Track job applications",
@@ -504,7 +504,7 @@
     "checkTh": "ตรวจทุกข้อความใน resume และคำตอบสัมภาษณ์กับประสบการณ์จริงก่อนใช้หรือส่งสมัคร"
   },
   {
-    "index": 91,
+    "index": 92,
     "slug": "ios-swiftui-view-refactor",
     "titleTh": "ปรับโครงสร้างหน้าจอ SwiftUI",
     "titleEn": "Refactor SwiftUI screens",
@@ -532,7 +532,35 @@
     "checkTh": "ทบทวน diff และผล build/test เพื่อยืนยันว่า business logic การนำทาง analytics และหน้าตาไม่เปลี่ยน"
   },
   {
-    "index": 92,
+    "index": 93,
+    "slug": "fill-out-an-expense-report",
+    "titleTh": "กรอกรายงานเบิกค่าใช้จ่ายจากใบเสร็จ",
+    "titleEn": "Fill out an expense report",
+    "summaryTh": "ใช้ Computer Use กรอกรายการค่าใช้จ่ายจากใบเสร็จและแนบไฟล์ในเว็บไซต์หรือแอปบนคอมพิวเตอร์ แล้วเปิดแบบฟอร์มไว้ให้ตรวจทานก่อนส่ง",
+    "categoryTh": "การเงินและกลยุทธ์",
+    "workflow": [
+      {
+        "label": "เปิดแบบฟอร์มและให้สิทธิ์",
+        "detail": "เข้าสู่ระบบรายงานค่าใช้จ่าย เปิด Computer Use ในแอป ChatGPT บนคอมพิวเตอร์ และอนุมัติการเข้าถึงเมื่อระบบขอ"
+      },
+      {
+        "label": "ระบุใบเสร็จและข้อมูลประกอบ",
+        "detail": "แนบใบเสร็จ ระบุไฟล์ใน drive ที่เชื่อมต่อหรือโฟลเดอร์ในเครื่อง และแจ้งวัตถุประสงค์ทางธุรกิจหากแบบฟอร์มต้องใช้"
+      },
+      {
+        "label": "กรอกและจับคู่รายการ",
+        "detail": "กรอกวันที่ ร้านค้า ยอดรวม สกุลเงิน และหมวดหมู่ที่ระบุได้ พร้อมจับคู่รายการเดิมและแนบใบเสร็จเมื่อจำเป็น"
+      },
+      {
+        "label": "ตรวจทานก่อนส่ง",
+        "detail": "ให้ถามข้อมูลที่ขาดและเปิดแบบฟอร์มไว้โดยไม่ส่ง ตรวจยอด หมวดหมู่ และใบเสร็จ แล้วขอแก้ในแชทเดิมหากจำเป็น"
+      }
+    ],
+    "promptTh": "ใช้ Computer Use กรอกรายงานค่าใช้จ่ายที่ฉันเปิดไว้ใน [app or website] ค้นหาใบเสร็จของฉัน [attached to this chat, in a connected drive, or in a folder on my computer] กรอกวันที่ ร้านค้า ยอดรวม และสกุลเงินของค่าใช้จ่ายแต่ละรายการ จับคู่กับรายการค่าใช้จ่ายที่มีอยู่แล้วเมื่อทำได้ และอัปโหลดใบเสร็จแต่ละใบหากจำเป็น\n\nเลือกหมวดหมู่จากแบบฟอร์มเมื่อข้อมูลในใบเสร็จทำให้ระบุหมวดหมู่ได้ชัดเจน ถามฉันเกี่ยวกับข้อมูลที่ขาด รวมถึงวัตถุประสงค์ทางธุรกิจหากแบบฟอร์มกำหนดให้ระบุ เปิดแบบฟอร์มที่กรอกแล้วทิ้งไว้ให้ฉันตรวจทาน ห้ามส่งแบบฟอร์ม",
+    "checkTh": "ตรวจวันที่ ร้านค้า ยอดรวม สกุลเงิน หมวดหมู่ วัตถุประสงค์ทางธุรกิจ และใบเสร็จที่จับคู่กับแต่ละรายการก่อนส่งด้วยตนเอง"
+  },
+  {
+    "index": 94,
     "slug": "build-student-website",
     "titleTh": "สร้างเว็บไซต์สำหรับนักเรียนหรือนักศึกษา",
     "titleEn": "Build a student website",
@@ -560,7 +588,7 @@
     "checkTh": "ให้เจ้าของโครงการตรวจเนื้อหา ลิงก์ สิทธิ์รูป ความเป็นส่วนตัว และปลายทางของข้อมูลแบบฟอร์มก่อน publish"
   },
   {
-    "index": 93,
+    "index": 95,
     "slug": "build-exam-study-system",
     "titleTh": "สร้างระบบเตรียมสอบ",
     "titleEn": "Build an exam study system",
@@ -588,7 +616,7 @@
     "checkTh": "ตรวจขอบเขตข้อสอบ คำถาม และเฉลยกับเอกสารทางการ และทำเครื่องหมายหัวข้อที่ผู้สอนยังไม่ยืนยัน"
   },
   {
-    "index": 94,
+    "index": 96,
     "slug": "build-and-deploy-internal-apps",
     "titleTh": "สร้างและเผยแพร่แอปภายในองค์กร",
     "titleEn": "Build and deploy internal apps",
@@ -616,7 +644,7 @@
     "checkTh": "รับชำระสินค้า/บริการผ่านผู้ให้บริการภายนอกที่จัดการข้อมูลบัตรทั้งหมดเท่านั้น ห้ามใช้ PHI หรือทำธุรกรรมการเงินอื่น และขออนุมัติก่อนแชร์"
   },
   {
-    "index": 95,
+    "index": 97,
     "slug": "draft-prds-from-sources",
     "titleTh": "ร่าง PRD จากบริบทภายในองค์กร",
     "titleEn": "Draft PRDs from internal context",
@@ -644,7 +672,7 @@
     "checkTh": "ให้ PM และเจ้าของเรื่องยืนยัน requirements การตัดสินใจ และแหล่งอ้างอิงก่อนแชร์หรืออัปเดตระบบงาน"
   },
   {
-    "index": 96,
+    "index": 98,
     "slug": "follow-goals",
     "titleTh": "ให้ Codex ทำงานต่อเนื่องจนบรรลุเป้าหมาย",
     "titleEn": "Follow a goal",
@@ -672,7 +700,7 @@
     "checkTh": "ตั้ง stopping condition และหลักฐานทดสอบให้ชัดก่อนเริ่ม และตรวจสถานะเมื่อ scope หรือความเสี่ยงเปลี่ยน"
   },
   {
-    "index": 97,
+    "index": 99,
     "slug": "project-teammate",
     "titleTh": "ตั้งผู้ช่วยประจำโปรเจกต์",
     "titleEn": "Set up a project teammate",
@@ -700,7 +728,7 @@
     "checkTh": "รักษาขอบเขตไว้ที่โปรเจกต์เดียว ตรวจแหล่งล่าสุด และอนุมัติก่อนส่ง แก้ ตั้งเวลา แชร์ หรือรับปากทุกครั้ง"
   },
   {
-    "index": 98,
+    "index": 100,
     "slug": "build-an-ai-tour-guide",
     "titleTh": "สร้าง AI Tour Guide",
     "titleEn": "Build an AI tour guide",
@@ -728,7 +756,7 @@
     "checkTh": "ยืนยันว่าผู้ใช้เป็นคนทำทุก action ระบบอ่าน state ใหม่ทุกขั้น และไม่ข้าม authentication หรือ permission ก่อนเผยแพร่"
   },
   {
-    "index": 99,
+    "index": 101,
     "slug": "track-bills-subscriptions-and-spending",
     "titleTh": "ติดตามบิล ค่าสมาชิก และการใช้จ่าย",
     "titleEn": "Track bills, subscriptions, and spending",
@@ -756,7 +784,7 @@
     "checkTh": "ยืนยันยอด หมวด และรายการผิดปกติกับสถาบันการเงิน ระบบนี้อ่านอย่างเดียวและไม่สามารถโอนเงิน จ่ายบิล ยกเลิกบริการ ซื้อขาย หรือเปลี่ยนการตั้งค่า"
   },
   {
-    "index": 100,
+    "index": 102,
     "slug": "ai-app-evals",
     "titleTh": "เพิ่ม Evals ให้แอป AI",
     "titleEn": "Add evals to your AI application",
@@ -784,7 +812,7 @@
     "checkTh": "ตรวจว่า fixtures ไม่มีข้อมูลอ่อนไหว assertions วัดพฤติกรรมจริง และความล้มเหลวของผลิตภัณฑ์ไม่ถูกซ่อนด้วยการปรับเกณฑ์"
   },
   {
-    "index": 101,
+    "index": 103,
     "slug": "user-stories-to-ui-mocks",
     "titleTh": "เปลี่ยน User Story เป็นแบบร่าง UI",
     "titleEn": "Turn user stories into UI mocks",
@@ -812,7 +840,7 @@
     "checkTh": "ให้ผู้ใช้และทีม design ยืนยันว่า mock สะท้อนปัญหาจริงและไม่ขัด design system ก่อนเริ่มพัฒนา"
   },
   {
-    "index": 102,
+    "index": 104,
     "slug": "slack-action-triage",
     "titleTh": "จัดลำดับงานที่ต้องทำจาก Slack",
     "titleEn": "Prioritize Slack action items",
@@ -840,7 +868,7 @@
     "checkTh": "เปิด thread ต้นทางเพื่อยืนยันว่ารายการยังไม่ได้รับการจัดการ และตรวจผู้รับกับน้ำเสียงก่อนส่งข้อความใด ๆ"
   },
   {
-    "index": 103,
+    "index": 105,
     "slug": "react-native-expo-apps",
     "titleTh": "สร้างแอป React Native ด้วย Expo",
     "titleEn": "Build React Native apps with Expo",
@@ -868,7 +896,7 @@
     "checkTh": "ยืนยันผลบนอุปกรณ์หรือ simulator และตรวจ package compatibility ก่อนสร้าง dev client หรือ production build"
   },
   {
-    "index": 104,
+    "index": 106,
     "slug": "agent-friendly-clis",
     "titleTh": "สร้าง CLI ที่ Codex ใช้งานได้",
     "titleEn": "Create a CLI Codex can use",
@@ -896,7 +924,7 @@
     "checkTh": "อย่าใส่ secret ในแชต และตรวจว่า write command ต้องขออนุมัติชัดเจนก่อนใช้กับข้อมูลจริง"
   },
   {
-    "index": 105,
+    "index": 107,
     "slug": "verified-operations-workflows",
     "titleTh": "ดำเนินงานแบบตรวจสอบย้อนกลับได้",
     "titleEn": "Run verified operations",
@@ -924,7 +952,7 @@
     "checkTh": "หยุดก่อน irreversible action หรือการขยาย scope และให้เจ้าของงานตรวจหลักฐานผลลัพธ์หลังรัน"
   },
   {
-    "index": 106,
+    "index": 108,
     "slug": "event-launch-playbooks",
     "titleTh": "จัดทำ Playbook สำหรับอีเวนต์",
     "titleEn": "Run event playbooks",
@@ -952,7 +980,7 @@
     "checkTh": "ตรวจว่าเนื้อหาสาธารณะไม่มีข้อมูลการปฏิบัติงานภายใน และวันเวลา owner กับ approval ทุกรายการมีแหล่งข้อมูลยืนยัน"
   },
   {
-    "index": 107,
+    "index": 109,
     "slug": "chatgpt-apps",
     "titleTh": "นำแอปของคุณมาใช้ใน ChatGPT",
     "titleEn": "Bring your app to ChatGPT",
@@ -980,7 +1008,7 @@
     "checkTh": "ทดสอบ tool payload และ conversation flow ของ MCP server ใน ChatGPT จริง และเพิ่ม OAuth เฉพาะเมื่อมีข้อมูลผู้ใช้หรือ write action"
   },
   {
-    "index": 108,
+    "index": 110,
     "slug": "audit-workflow",
     "titleTh": "ตรวจสอบกระบวนการทำงาน",
     "titleEn": "Audit a workflow",
@@ -1008,7 +1036,7 @@
     "checkTh": "ให้เจ้าของกระบวนการตรวจ permissions, exception paths, irreversible actions และ ownership ก่อนทำ automation"
   },
   {
-    "index": 109,
+    "index": 111,
     "slug": "launch-campaign-kit",
     "titleTh": "สร้างชุดแคมเปญเปิดตัว",
     "titleEn": "Build a launch campaign kit",
@@ -1036,7 +1064,7 @@
     "checkTh": "ตรวจ claims กับข้อมูลผลิตภัณฑ์ต้นทาง แยกข้อความสาธารณะจากข้อมูลภายใน และให้ product/legal/brand อนุมัติก่อนเผยแพร่"
   },
   {
-    "index": 110,
+    "index": 112,
     "slug": "incident-to-tested-fix",
     "titleTh": "ตรวจสอบเหตุขัดข้องและทดสอบการแก้ไข",
     "titleEn": "Investigate an incident and test a fix",
@@ -1064,7 +1092,7 @@
     "checkTh": "เทียบหลักฐานก่อนและหลังแก้กับ revision ที่ทดสอบ ให้ผู้รับผิดชอบทบทวนเหตุการณ์ค้างและอนุมัติเงื่อนไข rollout และ rollback ผลทดสอบในระบบแยกยังไม่ยืนยันว่า production ปกติ"
   },
   {
-    "index": 111,
+    "index": 113,
     "slug": "migrate-a-validation-module",
     "titleTh": "ย้าย validation module ไปเวอร์ชันใหม่",
     "titleEn": "Migrate a validation module",
@@ -1092,7 +1120,7 @@
     "checkTh": "ตรวจ HTTP และ schema parity จากผลจริง ห้ามแก้ snapshots หรือ assertions เพื่อซ่อนความต่าง ให้ผู้รับผิดชอบอนุมัติการขยายขอบเขตและแผน rollback"
   },
   {
-    "index": 112,
+    "index": 114,
     "slug": "build-workshop-practice-site",
     "titleTh": "สร้างเว็บไซต์สำหรับ Hackathon",
     "titleEn": "Build a hackathon site",
@@ -1120,7 +1148,7 @@
     "checkTh": "ผู้จัดต้องยืนยันเวลา กติกา สิทธิ์สมาชิกและ gallery ตรวจด้วยสองบัญชี และลบข้อมูลทดสอบก่อนเผยแพร่ใน workspace"
   },
   {
-    "index": 113,
+    "index": 115,
     "slug": "build-personal-onboarding-plan",
     "titleTh": "สร้างเว็บไซต์แนะนำงานสำหรับพนักงานใหม่",
     "titleEn": "Build an onboarding portal",
@@ -1148,7 +1176,7 @@
     "checkTh": "ให้ผู้ดูแลตรวจแผน ลิงก์และสิทธิ์ด้วยบัญชีพนักงานใหม่ ยืนยันว่าความคืบหน้าเป็นส่วนตัวและยังอยู่เมื่อกลับมาใช้ ห้ามใช้ checklist ตัดสินความพร้อมทำงาน"
   },
   {
-    "index": 114,
+    "index": 116,
     "slug": "collect-and-schedule-team-requests",
     "titleTh": "จัดการคำของานสร้างสรรค์ตั้งแต่ brief ถึงส่งมอบ",
     "titleEn": "Manage creative requests from brief to delivery",
@@ -1176,7 +1204,7 @@
     "checkTh": "ยืนยันกฎแบรนด์ วันส่งที่ตกลง และสิทธิ์ผู้ขอกับทีม ตรวจการเข้าถึงรายการโดยตรงและการบันทึก feedback ก่อนเผยแพร่ใน workspace"
   },
   {
-    "index": 115,
+    "index": 117,
     "slug": "compare-campaign-performance",
     "titleTh": "เปรียบเทียบแคมเปญที่สร้าง lead",
     "titleEn": "See which campaigns bring in leads",
@@ -1204,7 +1232,7 @@
     "checkTh": "ยืนยันยอด นิยาม lead และข้อมูลที่ตัดออกก่อนแชร์ ห้ามแก้งบแคมเปญหรือสรุปรายได้และคุณภาพ lead จากจำนวนเพียงอย่างเดียว"
   },
   {
-    "index": 116,
+    "index": 118,
     "slug": "consolidate-spreadsheets",
     "titleTh": "รวมสเปรดชีต",
     "titleEn": "Consolidate spreadsheets",
@@ -1232,7 +1260,7 @@
     "checkTh": "ตรวจสูตร join mismatches และสมมติฐานกับต้นฉบับทุกครั้งที่ source files หรือ reporting rules เปลี่ยน"
   },
   {
-    "index": 117,
+    "index": 119,
     "slug": "weekly-work-summary",
     "titleTh": "เขียนสรุปงานประจำสัปดาห์",
     "titleEn": "Write a weekly work summary",
@@ -1260,7 +1288,7 @@
     "checkTh": "ตรวจการตัดสินใจ อุปสรรค และงานติดตามกับแหล่งต้นทาง พร้อมลบข้อมูลอ่อนไหวก่อนแชร์รายงาน"
   },
   {
-    "index": 118,
+    "index": 120,
     "slug": "issue-to-tested-pr",
     "titleTh": "เปลี่ยน issue เป็น pull request ที่ผ่านการทดสอบ",
     "titleEn": "Turn an issue into a tested pull request",

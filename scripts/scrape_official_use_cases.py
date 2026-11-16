@@ -9,6 +9,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from copy import deepcopy
 from pathlib import Path
+from urllib.parse import parse_qs, urljoin, urlsplit
 from bs4 import BeautifulSoup, Tag
 import requests
 
@@ -19,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "source-usecases.json"
 IMAGE_DIR = ROOT / "assets" / "use-cases"
 USER_AGENT = "Mozilla/5.0 (compatible; CodexUseCaseDeck/1.0)"
-EXPECTED_COUNT = 119
+EXPECTED_COUNT = 121
 USE_CASE_PATH = re.compile(r"^/(?:codex/)?use-cases/[^/]+$")
 
 
@@ -153,20 +154,74 @@ def save_image(card: dict[str, object]) -> None:
     card["image"] = f"assets/use-cases/{destination.name}"
 
 
-def main() -> None:
-    index_html = fetch(INDEX_URL).decode("utf-8")
-    soup = BeautifulSoup(index_html, "html.parser")
-    cards: list[dict[str, object]] = []
+def find_catalog_url(soup: BeautifulSoup) -> str:
+    for link in soup.select("main a[href]"):
+        url = urljoin(INDEX_URL, str(link["href"]))
+        if (
+            clean(link.get_text(" ", strip=True)) == "Browse all use cases"
+            and url == f"{BASE_URL}/use-cases/all"
+        ):
+            return url
+    raise RuntimeError("Official landing page has no recognized Browse all use cases link")
 
+
+def extract_image_urls(soup: BeautifulSoup) -> dict[str, str]:
+    images = {}
+    for image in soup.select("img[src]"):
+        url = urljoin(BASE_URL, str(image["src"]))
+        parts = urlsplit(url)
+        if parts.netloc == urlsplit(BASE_URL).netloc and re.fullmatch(
+            r"/codex/use-cases/[^/]+\.webp", parts.path
+        ):
+            images[Path(parts.path).stem] = url
+    return images
+
+
+def parse_cards(
+    soup: BeautifulSoup,
+    previous_cards: dict[str, dict[str, object]],
+    image_urls: dict[str, str],
+) -> list[dict[str, object]]:
+    labels: dict[str, dict[str, str]] = {"category": {}, "task_type": {}}
+    for link in soup.select("a[data-use-case-filter-link][data-filter-value][data-filter-label]"):
+        value = str(link["data-filter-value"])
+        query = parse_qs(urlsplit(str(link.get("href", ""))).query)
+        for dimension in labels:
+            if query.get(dimension) == [value]:
+                labels[dimension][value] = clean(str(link["data-filter-label"]))
+    cards: list[dict[str, object]] = []
     for node in soup.select("[data-codex-use-case-card]"):
         link = node.find("a", href=USE_CASE_PATH)
+        if link is None:
+            raise RuntimeError("Official use-case card has no recognized detail link")
         title = node.find("h3")
         tagline = node.find("p")
         image = node.find("img")
-        if not link or not title or not tagline:
-            continue
+        if node.name == "li":
+            text_group = link.find("span", recursive=False)
+            fields = text_group.find_all("span", recursive=False) if text_group else []
+            if len(fields) != 2:
+                raise RuntimeError(f"Unrecognized use-case list text: {link['href']}")
+            title, tagline = fields
+            tags = []
+            for dimension in labels:
+                values = str(node.get(f"data-{dimension}", "")).split()
+                if not values or any(value not in labels[dimension] for value in values):
+                    raise RuntimeError(f"Unmapped official {dimension} labels: {link['href']}")
+                tags.extend(labels[dimension][value] for value in values)
+            # Legacy cards showed the first two labels from categories, then task types.
+            tags = tags[:2]
+        else:
+            tags = [clean(tag.get_text(" ", strip=True)) for tag in node.select("span")]
+        if title is None or tagline is None:
+            raise RuntimeError(f"Official use-case card has no title or tagline: {link['href']}")
         slug = str(link["href"]).rstrip("/").split("/")[-1]
-        tags = [clean(tag.get_text(" ", strip=True)) for tag in node.select("span")]
+        image_url = (
+            urljoin(BASE_URL, str(image["src"])) if image and image.get("src")
+            else image_urls.get(slug) or str(previous_cards.get(slug, {}).get("imageUrl", ""))
+        )
+        if not image_url:
+            raise RuntimeError(f"No evidenced illustration URL for official use case: {slug}")
         cards.append(
             {
                 "index": int(node.get("data-sort-recommended-index", len(cards))),
@@ -176,11 +231,26 @@ def main() -> None:
                 "tags": tags,
                 "url": f"{BASE_URL}/use-cases/{slug}",
                 "canonicalUrl": f"{BASE_URL}/use-cases/{slug}",
-                "imageUrl": f"{BASE_URL}{image['src']}" if image and image.get("src") else "",
+                "imageUrl": image_url,
             }
         )
 
     cards.sort(key=lambda card: int(card["index"]))
+    if len({card["slug"] for card in cards}) != len(cards):
+        raise RuntimeError("Official inventory contains duplicate use-case slugs")
+    return cards
+
+
+def main() -> None:
+    previous_cards = {}
+    if DATA_PATH.exists():
+        previous_cards = {card["slug"]: card for card in json.loads(DATA_PATH.read_text())["useCases"]}
+    soup = BeautifulSoup(fetch(INDEX_URL).decode("utf-8"), "html.parser")
+    image_urls = extract_image_urls(soup)
+    if not soup.select("[data-codex-use-case-card]"):
+        soup = BeautifulSoup(fetch(find_catalog_url(soup)).decode("utf-8"), "html.parser")
+        image_urls.update(extract_image_urls(soup))
+    cards = parse_cards(soup, previous_cards, image_urls)
     if len(cards) != EXPECTED_COUNT:
         raise RuntimeError(f"Expected {EXPECTED_COUNT} official use cases, found {len(cards)}")
 

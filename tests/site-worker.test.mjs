@@ -40,16 +40,16 @@ test("server-renders the complete bilingual presentation shell", async () => {
   assert.doesNotMatch(html, /codex-preview/i);
 });
 
-test("generated deck data contains 119 complete bilingual use cases", async () => {
+test("generated deck data contains 121 complete bilingual use cases", async () => {
   const source = await readFile(new URL("../data/usecases-data.js", import.meta.url), "utf8");
   const context = { window: {} };
   vm.runInNewContext(source, context);
   const items = context.window.USE_CASES;
 
-  assert.equal(items.length, 119);
+  assert.equal(items.length, 121);
   assert.deepEqual(
     Array.from(items, (item) => item.index),
-    Array.from({ length: 119 }, (_, index) => index),
+    Array.from({ length: 121 }, (_, index) => index),
   );
   const slugs = new Set(items.map((item) => item.slug));
   for (const slug of [
@@ -71,6 +71,8 @@ test("generated deck data contains 119 complete bilingual use cases", async () =
     "set-up-security-context",
     "create-custom-review-workflows-with-github-actions",
     "run-security-reviews-from-the-cli",
+    "fill-out-an-expense-report",
+    "make-a-custom-flyer",
   ]) {
     assert.ok(slugs.has(slug), `${slug}: new official use case must be present`);
   }

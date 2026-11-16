@@ -1,7 +1,7 @@
 {
   "source": "https://learn.chatgpt.com/use-cases",
-  "retrievedAt": "2026-11-09T03:00:21Z",
-  "count": 119,
+  "retrievedAt": "2026-11-16T02:08:24Z",
+  "count": 121,
   "useCases": [
     {
       "index": 0,
@@ -883,8 +883,6 @@
           "paragraphs": [
             "Start by adding Codex code review to your GitHub organization or repository. See Codex code review in GitHub for more details.",
             "You can set up Codex to automatically review every pull request, or you can request a review with @codex review in a pull request comment.",
-            "If Codex flags a regression or potential issue, you can ask it to fix it by commenting on the pull request with a follow-up prompt like @codex fix it .",
-            "This will start a new cloud chat that will fix the issue and update the pull request.",
             "To customize what Codex reviews, add a ## Code Review Rules section to the AGENTS.md closest to the code the rules govern. For example:",
             "Put repository-wide rules in the root AGENTS.md and service-specific rules in a nested file. Keep rules concise, describe the behavior to flag and any safe path or exception, and leave formatting and lint checks in CI. See Customize what Codex reviews for setup and rule-writing guidance."
           ],
@@ -1433,6 +1431,42 @@
     },
     {
       "index": 27,
+      "slug": "make-a-custom-flyer",
+      "title": "Make a custom flyer",
+      "tagline": "Create a flyer from a description or an existing design.",
+      "tags": [
+        "Knowledge Work",
+        "Design"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/make-a-custom-flyer",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/make-a-custom-flyer",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/make-a-custom-flyer.webp",
+      "summary": "Use ChatGPT to generate a flyer for a business, event, or personal project. Describe what you want, add your text and reference images, and refine the design until you're happy with it.",
+      "difficulty": "Easy",
+      "time": "5m",
+      "bestFor": [
+        "Creating a flyer to promote a business, event, or community project.",
+        "Making a new design based on an existing flyer or visual reference."
+      ],
+      "starterPrompt": "Make a flyer for [describe what it's for]. It should include this text: [add your text].\n\nI'd like it to look [describe the style, colors, or illustrations you have in mind]. If I've attached a reference image, use it to guide the design. Make the text easy to read and use a format that works for [printing or sharing online].",
+      "workflow": [
+        {
+          "title": "Create a first version",
+          "paragraphs": [
+            "Tell ChatGPT what the flyer is for and describe the design you have in mind. You can be specific about the colors, illustrations, and layout, or ask ChatGPT to suggest a few directions if you’re unsure.",
+            "If you already have a logo, a previous flyer, or an image you like, attach it as a reference. Include the exact wording you want on the flyer, and mention whether you plan to print it or share it online.",
+            "For example, here’s a prompt you can try for a neighborhood book swap, along with the image ChatGPT generated from it.",
+            "",
+            "Once you have a first version, you can ask for changes in the same chat. For example, ask ChatGPT to enlarge the title, change the colors, or move an illustration to leave more room for the text. You can also upload the image again later and continue editing it.",
+            "When you’re happy with the result, check that all the text and details are correct, then download the flyer."
+          ],
+          "items": []
+        }
+      ],
+      "image": "assets/use-cases/make-a-custom-flyer.webp"
+    },
+    {
+      "index": 28,
       "slug": "slack-coding-tasks",
       "title": "Kick off coding tasks from Slack",
       "tagline": "Delegate repository work from Slack threads.",
@@ -1472,7 +1506,7 @@
       "image": "assets/use-cases/slack-coding-tasks.webp"
     },
     {
-      "index": 28,
+      "index": 29,
       "slug": "new-hire-onboarding",
       "title": "Coordinate new-hire onboarding",
       "tagline": "Prepare onboarding trackers, team summaries, and welcome-space drafts.",
@@ -1532,7 +1566,7 @@
       "image": "assets/use-cases/new-hire-onboarding.webp"
     },
     {
-      "index": 29,
+      "index": 30,
       "slug": "deep-security-scan",
       "title": "Run a deep security scan",
       "tagline": "Search an authorized repository deeply for plausible vulnerabilities.",
@@ -1575,7 +1609,7 @@
       "image": "assets/use-cases/deep-security-scan.webp"
     },
     {
-      "index": 30,
+      "index": 31,
       "slug": "zoom-meeting-follow-ups",
       "title": "Turn meetings into follow-ups",
       "tagline": "Convert Zoom meeting insights into actions across your tools.",
@@ -1633,7 +1667,7 @@
       "image": "assets/use-cases/zoom-meeting-follow-ups.webp"
     },
     {
-      "index": 31,
+      "index": 32,
       "slug": "learn-a-new-concept",
       "title": "Learn a new concept",
       "tagline": "Turn dense source material into a clear, reviewable learning report.",
@@ -1728,7 +1762,7 @@
       "image": "assets/use-cases/learn-a-new-concept.webp"
     },
     {
-      "index": 32,
+      "index": 33,
       "slug": "idea-to-proof-of-concept",
       "title": "Get from idea to proof of concept",
       "tagline": "Explore the concept visually with ImageGen and build a first version of your idea.",
@@ -1769,7 +1803,7 @@
       "image": "assets/use-cases/idea-to-proof-of-concept.webp"
     },
     {
-      "index": 33,
+      "index": 34,
       "slug": "deploy-app-or-website",
       "title": "Deploy an app or website",
       "tagline": "Build or update a web app, deploy a preview, and get a live URL.",
@@ -1811,7 +1845,7 @@
       "image": "assets/use-cases/deploy-app-or-website.webp"
     },
     {
-      "index": 34,
+      "index": 35,
       "slug": "remediate-vulnerability-backlog",
       "title": "Remediate a vulnerability backlog",
       "tagline": "Turn reviewed findings into minimal fixes with regression evidence.",
@@ -1853,7 +1887,7 @@
       "image": "assets/use-cases/remediate-vulnerability-backlog.webp"
     },
     {
-      "index": 35,
+      "index": 36,
       "slug": "scan-code-changes-for-security",
       "title": "Scan code changes for security",
       "tagline": "Review a pull request or local diff for security regressions.",
@@ -1894,7 +1928,7 @@
       "image": "assets/use-cases/scan-code-changes-for-security.webp"
     },
     {
-      "index": 36,
+      "index": 37,
       "slug": "dependency-incident-audits",
       "title": "Audit dependency incidents",
       "tagline": "Turn a public package advisory into a safe repo-audit plan.",
@@ -1944,7 +1978,7 @@
       "image": "assets/use-cases/dependency-incident-audits.webp"
     },
     {
-      "index": 37,
+      "index": 38,
       "slug": "qa-your-app-with-computer-use",
       "title": "QA your app with Computer Use",
       "tagline": "Click through real product flows and log what breaks.",
@@ -1991,7 +2025,7 @@
       "image": "assets/use-cases/qa-your-app-with-computer-use.webp"
     },
     {
-      "index": 38,
+      "index": 39,
       "slug": "api-integration-migrations",
       "title": "Upgrade your API integration",
       "tagline": "Upgrade your app to the latest OpenAI API models.",
@@ -2030,7 +2064,7 @@
       "image": "assets/use-cases/api-integration-migrations.webp"
     },
     {
-      "index": 39,
+      "index": 40,
       "slug": "complete-tasks-from-messages",
       "title": "Complete tasks from messages",
       "tagline": "Turn iMessage threads into completed work across the apps involved.",
@@ -2074,7 +2108,7 @@
       "image": "assets/use-cases/complete-tasks-from-messages.webp"
     },
     {
-      "index": 40,
+      "index": 41,
       "slug": "figma-designs-to-code",
       "title": "Turn Figma designs into code",
       "tagline": "Turn Figma selections into polished UI with structured design context and visual checks.",
@@ -2140,7 +2174,7 @@
       "image": "assets/use-cases/figma-designs-to-code.webp"
     },
     {
-      "index": 41,
+      "index": 42,
       "slug": "browser-games",
       "title": "Create browser-based games",
       "tagline": "Define a game plan and let Codex build and test it in a live browser.",
@@ -2221,7 +2255,7 @@
       "image": "assets/use-cases/browser-games.webp"
     },
     {
-      "index": 42,
+      "index": 43,
       "slug": "reusable-codex-skills",
       "title": "Save workflows as skills",
       "tagline": "Create a skill Codex can keep on hand for work you repeat.",
@@ -2281,7 +2315,7 @@
       "image": "assets/use-cases/reusable-codex-skills.webp"
     },
     {
-      "index": 43,
+      "index": 44,
       "slug": "iterate-on-difficult-problems",
       "title": "Iterate on difficult problems",
       "tagline": "Use Codex as a scored improvement loop to solve hard tasks.",
@@ -2349,7 +2383,7 @@
       "image": "assets/use-cases/iterate-on-difficult-problems.webp"
     },
     {
-      "index": 44,
+      "index": 45,
       "slug": "monthly-business-review-narrative",
       "title": "Prepare a business review",
       "tagline": "Turn recurring KPI, close, and forecast inputs into a sourced performance narrative.",
@@ -2389,7 +2423,7 @@
       "image": "assets/use-cases/monthly-business-review-narrative.webp"
     },
     {
-      "index": 45,
+      "index": 46,
       "slug": "cfo-board-reporting-pack",
       "title": "Prepare a leadership reporting pack",
       "tagline": "Turn company progress, financial metrics, and owner updates into a source-backed reporting pack.",
@@ -2430,7 +2464,7 @@
       "image": "assets/use-cases/cfo-board-reporting-pack.webp"
     },
     {
-      "index": 46,
+      "index": 47,
       "slug": "meeting-prep-briefs",
       "title": "Prepare meeting briefs",
       "tagline": "Turn calendar context into an agenda and notes plan.",
@@ -2479,7 +2513,7 @@
       "image": "assets/use-cases/meeting-prep-briefs.webp"
     },
     {
-      "index": 47,
+      "index": 48,
       "slug": "update-documentation",
       "title": "Keep documentation up-to-date",
       "tagline": "Use code and other sources to automate docs updates.",
@@ -2531,7 +2565,7 @@
       "image": "assets/use-cases/update-documentation.webp"
     },
     {
-      "index": 48,
+      "index": 49,
       "slug": "native-ios-apps",
       "title": "Build for iOS",
       "tagline": "Use Codex to scaffold, build, and debug SwiftUI apps for iPhone and iPad.",
@@ -2624,7 +2658,7 @@
       "image": "assets/use-cases/native-ios-apps.webp"
     },
     {
-      "index": 49,
+      "index": 50,
       "slug": "scan-multiple-repositories",
       "title": "Scan multiple repositories",
       "tagline": "Run security scans across repositories and review the findings and coverage.",
@@ -2676,7 +2710,7 @@
       "image": "assets/use-cases/scan-multiple-repositories.webp"
     },
     {
-      "index": 50,
+      "index": 51,
       "slug": "kpi-root-cause-analysis",
       "title": "Analyze KPI root causes",
       "tagline": "Explain an unexpected metric movement with evidence and next actions.",
@@ -2716,7 +2750,7 @@
       "image": "assets/use-cases/kpi-root-cause-analysis.webp"
     },
     {
-      "index": 51,
+      "index": 52,
       "slug": "dashboard-builder-monitor",
       "title": "Plan a dashboard and monitoring workflow",
       "tagline": "Define metrics, owners, quality checks, and the decisions a dashboard supports.",
@@ -2756,7 +2790,7 @@
       "image": "assets/use-cases/dashboard-builder-monitor.webp"
     },
     {
-      "index": 52,
+      "index": 53,
       "slug": "strategic-initiative-health-update",
       "title": "Prepare an initiative health update",
       "tagline": "Turn recurring initiative context into a clear leadership readout.",
@@ -2796,7 +2830,7 @@
       "image": "assets/use-cases/strategic-initiative-health-update.webp"
     },
     {
-      "index": 53,
+      "index": 54,
       "slug": "prioritize-accounts",
       "title": "Prioritize accounts",
       "tagline": "Rank accounts by risk, upside, urgency, and next action.",
@@ -2836,7 +2870,7 @@
       "image": "assets/use-cases/prioritize-accounts.webp"
     },
     {
-      "index": 54,
+      "index": 55,
       "slug": "forecast-risk-review",
       "title": "Review forecast risk",
       "tagline": "Decide which deals belong in commit, upside, or pull.",
@@ -2876,7 +2910,7 @@
       "image": "assets/use-cases/forecast-risk-review.webp"
     },
     {
-      "index": 55,
+      "index": 56,
       "slug": "run-student-club-project",
       "title": "Run a student club project",
       "tagline": "Coordinate plans, owners, budgets, and follow-ups in one hub.",
@@ -2921,7 +2955,7 @@
       "image": "assets/use-cases/run-student-club-project.webp"
     },
     {
-      "index": 56,
+      "index": 57,
       "slug": "analytics-request-agent",
       "title": "Scope an analytics request",
       "tagline": "Turn an ambiguous stakeholder ask into a validated analysis plan.",
@@ -2961,7 +2995,7 @@
       "image": "assets/use-cases/analytics-request-agent.webp"
     },
     {
-      "index": 57,
+      "index": 58,
       "slug": "research-to-decision-memo",
       "title": "Turn research into a decision memo",
       "tagline": "Combine evidence, tradeoffs, and open questions into one recommendation.",
@@ -3001,7 +3035,7 @@
       "image": "assets/use-cases/research-to-decision-memo.webp"
     },
     {
-      "index": 58,
+      "index": 59,
       "slug": "initiative-off-track-brief",
       "title": "Write an initiative off-track brief",
       "tagline": "Explain what changed, why an initiative slipped, and what decision is needed.",
@@ -3041,7 +3075,7 @@
       "image": "assets/use-cases/initiative-off-track-brief.webp"
     },
     {
-      "index": 59,
+      "index": 60,
       "slug": "refactor-your-codebase",
       "title": "Refactor your codebase",
       "tagline": "Remove dead code and modernize legacy patterns without changing behavior.",
@@ -3087,7 +3121,7 @@
       "image": "assets/use-cases/refactor-your-codebase.webp"
     },
     {
-      "index": 60,
+      "index": 61,
       "slug": "ios-liquid-glass",
       "title": "Adopt liquid glass",
       "tagline": "Use Codex to migrate an existing SwiftUI app to Liquid Glass with iOS 26 APIs and Xcode 26.",
@@ -3167,7 +3201,7 @@
       "image": "assets/use-cases/ios-liquid-glass.webp"
     },
     {
-      "index": 61,
+      "index": 62,
       "slug": "native-macos-apps",
       "title": "Build for macOS",
       "tagline": "Use Codex to scaffold, build, and debug native Mac apps with SwiftUI.",
@@ -3240,7 +3274,7 @@
       "image": "assets/use-cases/native-macos-apps.webp"
     },
     {
-      "index": 62,
+      "index": 63,
       "slug": "ios-simulator-bug-debugging",
       "title": "Debug in iOS simulator",
       "tagline": "Use Codex and XcodeBuildMCP to drive your app in iOS Simulator, capture evidence, and iterate toward a fix.",
@@ -3312,7 +3346,7 @@
       "image": "assets/use-cases/ios-simulator-bug-debugging.webp"
     },
     {
-      "index": 63,
+      "index": 64,
       "slug": "ios-app-intents",
       "title": "Add iOS app intents",
       "tagline": "Use Codex to make your app's actions and content available to Shortcuts, Siri, Spotlight, and newer assistant-driven system experiences.",
@@ -3400,7 +3434,7 @@
       "image": "assets/use-cases/ios-app-intents.webp"
     },
     {
-      "index": 64,
+      "index": 65,
       "slug": "macos-telemetry-logs",
       "title": "Add Mac telemetry",
       "tagline": "Use Codex to instrument one Mac feature with Logger, run the app, and verify the action from unified logs.",
@@ -3479,7 +3513,7 @@
       "image": "assets/use-cases/macos-telemetry-logs.webp"
     },
     {
-      "index": 65,
+      "index": 66,
       "slug": "code-migrations",
       "title": "Run code migrations",
       "tagline": "Migrate legacy stacks in controlled checkpoints.",
@@ -3520,7 +3554,7 @@
       "image": "assets/use-cases/code-migrations.webp"
     },
     {
-      "index": 66,
+      "index": 67,
       "slug": "create-custom-review-workflows-with-github-actions",
       "title": "Create custom review workflows with GitHub Actions",
       "tagline": "Run security checks on your own triggers and keep the results for review.",
@@ -3549,14 +3583,14 @@
           ],
           "items": [],
           "codeBlocks": [
-            "name: Codex Security review\non:\n  workflow_dispatch:\n  schedule:\n    - cron: '23 7 * * 1' # Mondays at 07:23 UTC\n\npermissions:\n  contents: read\n\njobs:\n  security:\n    runs-on: ubuntu-24.04\n    steps:\n      - name: Set up the Ubuntu sandbox\n        run: |\n          sudo apt-get update\n          sudo apt-get install --yes bubblewrap apparmor-profiles\n          sudo apparmor_parser -r /usr/share/apparmor/extra-profiles/bwrap-userns-restrict\n\n      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1\n        with:\n          persist-credentials: false\n      - uses: openai/codex-security@3f61e5150981a5087c32e4395bbaa8ce5ce0c3e3 # action-v0.3.0\n        with:\n          model: gpt-5.6-sol\n          effort: high\n        env:\n          OPENAI_API_KEY: ${{ secrets.CODEX_SECURITY_API_KEY }}"
+            "name: Codex Security review\non:\n  workflow_dispatch:\n  schedule:\n    - cron: '23 7 * * 1' # Mondays at 07:23 UTC\n\npermissions:\n  contents: read\n\njobs:\n  security:\n    runs-on: ubuntu-24.04\n    steps:\n      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1\n        with:\n          persist-credentials: false\n      - uses: openai/codex-security@a98b35d7eef9f85c298c86229445bb64ac427aaf # action-v0.9.1\n        with:\n          model: gpt-5.6-sol\n          effort: high\n        env:\n          OPENAI_API_KEY: ${{ secrets.CODEX_SECURITY_API_KEY }}"
           ]
         }
       ],
       "image": "assets/use-cases/create-custom-review-workflows-with-github-actions.webp"
     },
     {
-      "index": 67,
+      "index": 68,
       "slug": "run-security-reviews-from-the-cli",
       "title": "Run security reviews from the CLI",
       "tagline": "Review selected code changes and inspect security evidence from your terminal.",
@@ -3619,7 +3653,7 @@
       "image": "assets/use-cases/run-security-reviews-from-the-cli.webp"
     },
     {
-      "index": 68,
+      "index": 69,
       "slug": "automate-security-scans-in-ci",
       "title": "Automate security scans in CI",
       "tagline": "Scan pull requests, commits to main, or your repository on a schedule.",
@@ -3684,7 +3718,7 @@
       "image": "assets/use-cases/automate-security-scans-in-ci.webp"
     },
     {
-      "index": 69,
+      "index": 70,
       "slug": "audit-course-section-consistency",
       "title": "Audit course section consistency",
       "tagline": "Compare shared courses while preserving instructor discretion.",
@@ -3728,7 +3762,7 @@
       "image": "assets/use-cases/audit-course-section-consistency.webp"
     },
     {
-      "index": 70,
+      "index": 71,
       "slug": "build-unit-plan-from-sources",
       "title": "Build a unit plan from source files",
       "tagline": "Turn standards, pacing, and prior lessons into a teachable sequence.",
@@ -3772,7 +3806,7 @@
       "image": "assets/use-cases/build-unit-plan-from-sources.webp"
     },
     {
-      "index": 71,
+      "index": 72,
       "slug": "variance-driver-bridge",
       "title": "Build a variance driver bridge",
       "tagline": "Explain movements across actuals, budget, and forecast with source-backed drivers.",
@@ -3812,7 +3846,7 @@
       "image": "assets/use-cases/variance-driver-bridge.webp"
     },
     {
-      "index": 72,
+      "index": 73,
       "slug": "build-interactive-lesson-resource",
       "title": "Build an interactive lesson resource",
       "tagline": "Turn an approved lesson package into a tested student experience.",
@@ -3856,7 +3890,7 @@
       "image": "assets/use-cases/build-interactive-lesson-resource.webp"
     },
     {
-      "index": 73,
+      "index": 74,
       "slug": "calibrate-assessments",
       "title": "Calibrate assessments",
       "tagline": "Review scoring patterns without assigning or changing grades.",
@@ -3900,7 +3934,7 @@
       "image": "assets/use-cases/calibrate-assessments.webp"
     },
     {
-      "index": 74,
+      "index": 75,
       "slug": "finance-model-cleanup",
       "title": "Clean and review a financial model",
       "tagline": "Check formulas, links, tie-outs, and assumptions before a high-stakes review.",
@@ -3940,7 +3974,7 @@
       "image": "assets/use-cases/finance-model-cleanup.webp"
     },
     {
-      "index": 75,
+      "index": 76,
       "slug": "create-classroom-materials-pack",
       "title": "Create a classroom materials pack",
       "tagline": "Produce aligned teaching, practice, and family materials.",
@@ -3983,7 +4017,7 @@
       "image": "assets/use-cases/create-classroom-materials-pack.webp"
     },
     {
-      "index": 76,
+      "index": 77,
       "slug": "create-lesson-deck",
       "title": "Create a lesson deck",
       "tagline": "Turn approved teaching materials into an editable presentation.",
@@ -4029,7 +4063,7 @@
       "image": "assets/use-cases/create-lesson-deck.webp"
     },
     {
-      "index": 77,
+      "index": 78,
       "slug": "stalled-deal-diagnosis",
       "title": "Diagnose a stalled deal",
       "tagline": "Find the real blocker and the next customer-facing move.",
@@ -4069,7 +4103,7 @@
       "image": "assets/use-cases/stalled-deal-diagnosis.webp"
     },
     {
-      "index": 78,
+      "index": 79,
       "slug": "business-impact-readout",
       "title": "Measure business impact",
       "tagline": "Turn experiment or launch results into a scale, change, or stop recommendation.",
@@ -4109,7 +4143,7 @@
       "image": "assets/use-cases/business-impact-readout.webp"
     },
     {
-      "index": 79,
+      "index": 80,
       "slug": "scenario-tradeoff-model",
       "title": "Model strategic scenarios and tradeoffs",
       "tagline": "Compare strategic paths with assumptions, risks, cost, timing, and impact.",
@@ -4149,7 +4183,7 @@
       "image": "assets/use-cases/scenario-tradeoff-model.webp"
     },
     {
-      "index": 80,
+      "index": 81,
       "slug": "organize-lesson-unit-folder",
       "title": "Organize a lesson or unit folder",
       "tagline": "Turn scattered teaching files into a clear, verified structure.",
@@ -4194,7 +4228,7 @@
       "image": "assets/use-cases/organize-lesson-unit-folder.webp"
     },
     {
-      "index": 81,
+      "index": 82,
       "slug": "organize-semester-workspace",
       "title": "Organize a semester workspace",
       "tagline": "Turn scattered course files and deadlines into one verified system.",
@@ -4237,7 +4271,7 @@
       "image": "assets/use-cases/organize-semester-workspace.webp"
     },
     {
-      "index": 82,
+      "index": 83,
       "slug": "plan-budget-and-schedule",
       "title": "Plan a budget and schedule",
       "tagline": "See time conflicts, workload clusters, bills, and budget together.",
@@ -4280,7 +4314,7 @@
       "image": "assets/use-cases/plan-budget-and-schedule.webp"
     },
     {
-      "index": 83,
+      "index": 84,
       "slug": "prepare-committee-packet",
       "title": "Prepare a committee packet",
       "tagline": "Turn governance context into a review-ready meeting packet.",
@@ -4324,7 +4358,7 @@
       "image": "assets/use-cases/prepare-committee-packet.webp"
     },
     {
-      "index": 84,
+      "index": 85,
       "slug": "refresh-forecast-and-plan",
       "title": "Refresh a forecast and plan",
       "tagline": "Update assumptions and compare base, upside, and downside plans.",
@@ -4365,7 +4399,7 @@
       "image": "assets/use-cases/refresh-forecast-and-plan.webp"
     },
     {
-      "index": 85,
+      "index": 86,
       "slug": "strategic-account-plan",
       "title": "Refresh a strategic account plan",
       "tagline": "Turn recent account activity into a current deal strategy pack.",
@@ -4405,7 +4439,7 @@
       "image": "assets/use-cases/strategic-account-plan.webp"
     },
     {
-      "index": 86,
+      "index": 87,
       "slug": "refresh-course-materials",
       "title": "Refresh course materials",
       "tagline": "Review a course as one connected system.",
@@ -4448,7 +4482,7 @@
       "image": "assets/use-cases/refresh-course-materials.webp"
     },
     {
-      "index": 87,
+      "index": 88,
       "slug": "revise-lesson-package",
       "title": "Revise a lesson package",
       "tagline": "Apply approved feedback consistently across connected files.",
@@ -4492,7 +4526,7 @@
       "image": "assets/use-cases/revise-lesson-package.webp"
     },
     {
-      "index": 88,
+      "index": 89,
       "slug": "synthesize-research-evidence",
       "title": "Synthesize research evidence",
       "tagline": "Build a source-linked evidence base for research or proposals.",
@@ -4536,7 +4570,7 @@
       "image": "assets/use-cases/synthesize-research-evidence.webp"
     },
     {
-      "index": 89,
+      "index": 90,
       "slug": "track-course-engagement",
       "title": "Track course engagement",
       "tagline": "Turn de-identified course exports into a faculty review view.",
@@ -4579,7 +4613,7 @@
       "image": "assets/use-cases/track-course-engagement.webp"
     },
     {
-      "index": 90,
+      "index": 91,
       "slug": "track-job-applications",
       "title": "Track job applications",
       "tagline": "Compare roles and manage tailored application materials.",
@@ -4625,7 +4659,7 @@
       "image": "assets/use-cases/track-job-applications.webp"
     },
     {
-      "index": 91,
+      "index": 92,
       "slug": "ios-swiftui-view-refactor",
       "title": "Refactor SwiftUI screens",
       "tagline": "Use Codex to split an oversized SwiftUI screen into small subviews without changing behavior or layout.",
@@ -4697,7 +4731,44 @@
       "image": "assets/use-cases/ios-swiftui-view-refactor.webp"
     },
     {
-      "index": 92,
+      "index": 93,
+      "slug": "fill-out-an-expense-report",
+      "title": "Fill out an expense report",
+      "tagline": "Let ChatGPT fill in your expense report from your receipts.",
+      "tags": [
+        "Knowledge Work",
+        "Workflow"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/fill-out-an-expense-report",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/fill-out-an-expense-report",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/fill-out-an-expense-report.webp",
+      "summary": "Use Computer Use to enter expenses and upload receipts in a browser or desktop app. Review the completed report before submitting it.",
+      "difficulty": "Easy",
+      "time": "5m",
+      "bestFor": [
+        "A work trip with a few receipts to enter in a reimbursement form.",
+        "Expense reports you normally fill in by hand in a website or desktop app."
+      ],
+      "starterPrompt": "Use Computer Use to fill in the expense report I have open in [app or website]. Find my receipts [attached to this chat, in a connected drive, or in a folder on my computer]. Enter the date, merchant, total, and currency for each expense. Match existing expenses where possible and upload each receipt if required.\n\nPick a category from the form when the receipt makes it clear. Ask me about anything missing, including any required business purpose. Leave the filled-in form open for me to review. Do not submit it.",
+      "workflow": [
+        {
+          "title": "Open the form and add your receipts",
+          "paragraphs": [
+            "After a work trip, you might have a few expenses you need to manually reconcile. ChatGPT can use your computer to fill in your expense report based on your receipts.",
+            "If your expense report requires supporting files, ChatGPT can automatically upload your receipts and attach them to the matching expenses.",
+            "Review the amounts, expense categories, and attached receipts before submitting the report. If anything is missing or incorrect, continue in the same thread and ask ChatGPT to fix it. You can provide any remaining details, such as a business purpose, and have ChatGPT update the report for you."
+          ],
+          "items": [
+            "Open your expense report in a browser or desktop app and sign in if needed. Enable Computer Use in the ChatGPT desktop app if you haven’t already.",
+            "Attach receipts to your ChatGPT thread, use a drive plugin such as Google Drive to find them, or point ChatGPT to a folder on your computer. Grant access if prompted.",
+            "Update the starter prompt with the app or website you use and where to find your receipts. Include the business purpose if your form requires one. Ask ChatGPT to use Computer Use to fill in the report and upload the receipts, and approve access when prompted."
+          ]
+        }
+      ],
+      "image": "assets/use-cases/fill-out-an-expense-report.webp"
+    },
+    {
+      "index": 94,
       "slug": "build-student-website",
       "title": "Build a student website",
       "tagline": "Turn an idea and source material into a tested first version.",
@@ -4741,7 +4812,7 @@
       "image": "assets/use-cases/build-student-website.webp"
     },
     {
-      "index": 93,
+      "index": 95,
       "slug": "build-exam-study-system",
       "title": "Build an exam study system",
       "tagline": "Turn course materials into a reusable plan and practice set.",
@@ -4785,7 +4856,7 @@
       "image": "assets/use-cases/build-exam-study-system.webp"
     },
     {
-      "index": 94,
+      "index": 96,
       "slug": "build-and-deploy-internal-apps",
       "title": "Build and deploy internal apps",
       "tagline": "Turn a team workflow into a hosted internal app with Sites.",
@@ -4848,7 +4919,7 @@
       "image": "assets/use-cases/build-and-deploy-internal-apps.webp"
     },
     {
-      "index": 95,
+      "index": 97,
       "slug": "draft-prds-from-sources",
       "title": "Draft PRDs from internal context",
       "tagline": "Create product requirements documents from Linear, Slack, source documents, and meeting notes.",
@@ -4889,7 +4960,7 @@
       "image": "assets/use-cases/draft-prds-from-sources.webp"
     },
     {
-      "index": 96,
+      "index": 98,
       "slug": "follow-goals",
       "title": "Follow a goal",
       "tagline": "Give Codex a durable objective for long-running work.",
@@ -4947,7 +5018,7 @@
       "image": "assets/use-cases/follow-goals.webp"
     },
     {
-      "index": 97,
+      "index": 99,
       "slug": "project-teammate",
       "title": "Set up a project teammate",
       "tagline": "Keep one project moving with a dedicated, context-aware teammate.",
@@ -5004,7 +5075,7 @@
       "image": "assets/use-cases/project-teammate.webp"
     },
     {
-      "index": 98,
+      "index": 100,
       "slug": "build-an-ai-tour-guide",
       "title": "Build an AI tour guide",
       "tagline": "Help users learn your app with a tour that adapts as they go.",
@@ -5074,7 +5145,7 @@
       "image": "assets/use-cases/build-an-ai-tour-guide.webp"
     },
     {
-      "index": 99,
+      "index": 101,
       "slug": "track-bills-subscriptions-and-spending",
       "title": "Track bills, subscriptions, and spending",
       "tagline": "Review the last 30 days and stay ahead of anything unusual.",
@@ -5115,7 +5186,7 @@
       "image": "assets/use-cases/track-bills-subscriptions-and-spending.webp"
     },
     {
-      "index": 100,
+      "index": 102,
       "slug": "ai-app-evals",
       "title": "Add evals to your AI application",
       "tagline": "Use Codex to turn expected behavior into a Promptfoo eval suite.",
@@ -5170,7 +5241,7 @@
       "image": "assets/use-cases/ai-app-evals.webp"
     },
     {
-      "index": 101,
+      "index": 103,
       "slug": "user-stories-to-ui-mocks",
       "title": "Turn user stories into UI mocks",
       "tagline": "Convert product feedback, issue threads, and design context into mockups your team can react to and implement.",
@@ -5208,7 +5279,7 @@
       "image": "assets/use-cases/user-stories-to-ui-mocks.webp"
     },
     {
-      "index": 102,
+      "index": 104,
       "slug": "slack-action-triage",
       "title": "Prioritize Slack action items",
       "tagline": "Turn Slack threads and DMs into a ranked queue of next steps.",
@@ -5261,7 +5332,7 @@
       "image": "assets/use-cases/slack-action-triage.webp"
     },
     {
-      "index": 103,
+      "index": 105,
       "slug": "react-native-expo-apps",
       "title": "Build React Native apps with Expo",
       "tagline": "Go from a mobile-app idea to a working Expo app with the dedicated plugin.",
@@ -5323,7 +5394,7 @@
       "image": "assets/use-cases/react-native-expo-apps.webp"
     },
     {
-      "index": 104,
+      "index": 106,
       "slug": "agent-friendly-clis",
       "title": "Create a CLI Codex can use",
       "tagline": "Give Codex a composable command for an API, log source, export, or team script.",
@@ -5372,7 +5443,7 @@
       "image": "assets/use-cases/agent-friendly-clis.webp"
     },
     {
-      "index": 105,
+      "index": 107,
       "slug": "verified-operations-workflows",
       "title": "Run verified operations",
       "tagline": "Run repeatable workflows and verify the result.",
@@ -5416,7 +5487,7 @@
       "image": "assets/use-cases/verified-operations-workflows.webp"
     },
     {
-      "index": 106,
+      "index": 108,
       "slug": "event-launch-playbooks",
       "title": "Run event playbooks",
       "tagline": "Create repeatable workflows for event program management.",
@@ -5461,7 +5532,7 @@
       "image": "assets/use-cases/event-launch-playbooks.webp"
     },
     {
-      "index": 107,
+      "index": 109,
       "slug": "chatgpt-apps",
       "title": "Bring your app to ChatGPT",
       "tagline": "Turn your use cases into focused apps for ChatGPT.",
@@ -5565,7 +5636,7 @@
       "image": "assets/use-cases/chatgpt-apps.webp"
     },
     {
-      "index": 108,
+      "index": 110,
       "slug": "audit-workflow",
       "title": "Audit a workflow",
       "tagline": "Turn a messy process into a clear audit and automation plan.",
@@ -5605,7 +5676,7 @@
       "image": "assets/use-cases/audit-workflow.webp"
     },
     {
-      "index": 109,
+      "index": 111,
       "slug": "launch-campaign-kit",
       "title": "Build a launch campaign kit",
       "tagline": "Turn launch context into coordinated first-draft campaign assets.",
@@ -5645,7 +5716,7 @@
       "image": "assets/use-cases/launch-campaign-kit.webp"
     },
     {
-      "index": 110,
+      "index": 112,
       "slug": "incident-to-tested-fix",
       "title": "Investigate an incident and test a fix",
       "tagline": "Turn an incident packet into a reproduced bug, a focused patch, and a reviewable handoff.",
@@ -5685,7 +5756,7 @@
             "Ask Codex to continue through implementation only when the evidence supports a code defect. Otherwise, review the investigation and provide the missing input. A plausible explanation, a recent code change, or a successful test on a different release is not enough to establish the cause.",
             "Use the runnable incident sample to practice the investigation. It includes a prepared incident packet, a handler with a reproducible defect, the corrected handler, and PostgreSQL tests.",
             "The service receives an order.created webhook, writes an order, and records that the event has been processed. During an incident, a retry appears to create a second order. The team has already stabilized the service and wants a patch for review.",
-            "The sample uses JavaScript, Node.js’s test runner, and PostgreSQL. Its disposable fixture has an event_receipts table with non-null identity columns and a non-deferrable unique key on (provider, account_id, event_id) .",
+            "The sample uses TypeScript, Node.js’s test runner, and PostgreSQL. Its disposable fixture has an event_receipts table with non-null identity columns and a non-deferrable unique key on (provider, account_id, event_id) .",
             "The schema permits a receipt claim before the order exists and retains the canonical payload fingerprint needed to detect conflicting reuse of the same event key.",
             "If your application instead requires an order foreign key at claim time or lacks this conflict evidence, stop for a separate schema/design decision.",
             "Record the exact runtime, dependency lock, PostgreSQL version, transaction isolation level, and receipt schema in the evidence. The downloadable fixture pins Node.js 24.19.0, PostgreSQL 17.6, and pg 8.23.1.",
@@ -5697,7 +5768,7 @@
             "The baseline command must exit with code 1 : the retry assertion observes two orders and one receipt instead of one of each. The regression command runs the same assertion against the corrected handler and must exit with code 0 .",
             "The final test command exercises the full matrix, including independent connections, database lock contention, and legacy-orphan quarantine.",
             "If your installation provides docker-compose , use that spelling in place of docker compose . Run these commands sequentially; the suite resets only its marked test schema.",
-            "This excerpt comes from main.mjs in the download. Run the complete files after extracting the ZIP; the tests and fixture setup are included there.",
+            "This excerpt comes from main.ts in the download. Run the complete files after extracting the ZIP; the tests and fixture setup are included there.",
             "Use these files as the packet outline:",
             "In this scenario, release.json identifies the example release SHA 4a1c9e7d2b6f8a0c3d5e7f9012a4b6c8d0e2f413 , deployed at 2026-09-22T11:58:00Z . The incident window is 12:03:00Z–12:05:00Z on the same day. The packet reports two internal orders associated with one provider event. When preparing your own packet, include confirmed impact counts and identify any estimates.",
             "The sanitized logs contain these correlated observations:",
@@ -5720,7 +5791,7 @@
             "The demo’s business mutation is entirely within the same database. If the real handler also sends email, charges a card, or calls another service, this transaction alone does not make those external effects idempotent. Identify that boundary and the system’s existing delivery or idempotency mechanism before expanding the fix.",
             "Ask for both the original failure and the post-fix result. Use test-only hooks at named transaction boundaries and inspect committed state from a separate connection. The sample passes eleven local PostgreSQL tests; test-evidence.md in the download records those results and the checks still needed for Cloud execution and deployment. Run the suite in your published environment and test actual connection loss during commit before relying on that recovery path.",
             "Coordinate concurrency with barriers/latches and bounded timeouts, not sleeps or a bare pair of promises. Release blocked workers in test cleanup and use disposable fixtures. An exception test alone does not prove abrupt process death, transport loss, or production concurrency behavior.",
-            "The sample uses node main.mjs baseline , node main.mjs regression , and node main.mjs inside the pinned runner. Its structured output records transaction boundaries, committed row counts, acknowledgment status/body, and observed blocking backend IDs.",
+            "The sample uses node --experimental-strip-types main.ts baseline , node --experimental-strip-types main.ts regression , and node --experimental-strip-types main.ts inside the pinned runner. Its structured output records transaction boundaries, committed row counts, acknowledgment status/body, and observed blocking backend IDs.",
             "When adapting the workflow, use the commands actually defined by your repository and report their real results. A skipped check or unavailable dependency belongs in the handoff, with its impact on confidence.",
             "Use the incident workflow’s evidence format for each acceptance criterion. Populate it from observed output; the fields below are a template, not passing results. For a new test that does not exist at baseline, distinguish “not yet present” from a failed existing check.",
             "Keep red and green runs tied to their actual tested states, including test-only changes on the original revision. Keep the logs, response fixtures, and final diff with the handoff. A changed final revision needs updated evidence; checks that were not run or were blocked cannot count as passing.",
@@ -5754,8 +5825,8 @@
             "deployment-handoff.md : verified schema/isolation/receipt-retention assumptions, named rollout owner, pre-deployment checks, duplicate-order and acknowledgment/error metrics, and the rollout/rollback gates below."
           ],
           "codeBlocks": [
-            "docker compose -p codex-incident-rehearsal up -d --wait postgres\ndocker compose -p codex-incident-rehearsal run --rm runner node main.mjs baseline\ndocker compose -p codex-incident-rehearsal run --rm runner node main.mjs regression\ndocker compose -p codex-incident-rehearsal run --rm runner\ndocker compose -p codex-incident-rehearsal down --volumes",
-            "async function fixed(client, input, hook = async (_boundary) => {}) {\n  await assertNotHeld(client, input);\n  await hook(\"beforeClaim\");\n  await client.query(\"BEGIN ISOLATION LEVEL READ COMMITTED\");\n  let committed = false;\n  try {\n    const claimed = await client.query(\n      `INSERT INTO event_receipts(provider, account_id, event_id, payload_fingerprint)\n       VALUES ($1,$2,$3,$4)\n       ON CONFLICT (provider, account_id, event_id) DO NOTHING RETURNING event_id`,\n      [...key(input), fingerprint(input)]\n    );\n    trace(\"receipt-claim-result\", client, input, {\n      inserted: claimed.rowCount === 1,\n    });\n    if (claimed.rowCount === 1) {\n      await hook(\"afterClaim\");\n      await writeOrder(client, input);\n      await hook(\"afterOrder\");\n    } else {\n      // A new READ COMMITTED statement sees the winner after its commit.\n      await checkReceipt(client, input);\n    }\n    await client.query(\"COMMIT\");\n    committed = true;\n    trace(\"transaction-committed\", client, input);\n    await hook(\"afterCommit\");\n    trace(\"acknowledged\", client, input, acknowledgment);\n    return acknowledgment;\n  } catch (error) {\n    if (!committed) {\n      await client.query(\"ROLLBACK\");\n      trace(\"transaction-rolled-back-no-ack\", client, input);\n    } else {\n      trace(\"committed-response-lost-no-ack\", client, input);\n    }\n    throw error;\n  }\n}",
+            "docker compose -p codex-incident-rehearsal up -d --wait postgres\ndocker compose -p codex-incident-rehearsal run --rm runner node --experimental-strip-types main.ts baseline\ndocker compose -p codex-incident-rehearsal run --rm runner node --experimental-strip-types main.ts regression\ndocker compose -p codex-incident-rehearsal run --rm runner\ndocker compose -p codex-incident-rehearsal down --volumes",
+            "import type { Client } from \"pg\";\n\ntype IncidentEvent = {\n  provider: string;\n  accountId: string;\n  eventId: string;\n  payload: { type: string; orderId: string; amountCents: number };\n};\n\nasync function fixed(\n  client: Client,\n  input: IncidentEvent,\n  hook = async (_boundary: string) => {}\n) {\n  await assertNotHeld(client, input);\n  await hook(\"beforeClaim\");\n  await client.query(\"BEGIN ISOLATION LEVEL READ COMMITTED\");\n  let committed = false;\n  try {\n    const claimed = await client.query(\n      `INSERT INTO event_receipts(provider, account_id, event_id, payload_fingerprint)\n       VALUES ($1,$2,$3,$4)\n       ON CONFLICT (provider, account_id, event_id) DO NOTHING RETURNING event_id`,\n      [...key(input), fingerprint(input)]\n    );\n    trace(\"receipt-claim-result\", client, input, {\n      inserted: claimed.rowCount === 1,\n    });\n    if (claimed.rowCount === 1) {\n      await hook(\"afterClaim\");\n      await writeOrder(client, input);\n      await hook(\"afterOrder\");\n    } else {\n      // A new READ COMMITTED statement sees the winner after its commit.\n      await checkReceipt(client, input);\n    }\n    await client.query(\"COMMIT\");\n    committed = true;\n    trace(\"transaction-committed\", client, input);\n    await hook(\"afterCommit\");\n    trace(\"acknowledged\", client, input, acknowledgment);\n    return acknowledgment;\n  } catch (error) {\n    if (!committed) {\n      await client.query(\"ROLLBACK\");\n      trace(\"transaction-rolled-back-no-ack\", client, input);\n    } else {\n      trace(\"committed-response-lost-no-ack\", client, input);\n    }\n    throw error;\n  }\n}",
             "incidents/INC-DEMO-014/incident.md\nincidents/INC-DEMO-014/logs.ndjson\nincidents/INC-DEMO-014/release.json\nincidents/INC-DEMO-014/order-created.sanitized.json",
             "Criterion / test: [specific behavior and test location]\nEnvironment: [published setup reference; runtime, database and dependency versions]\nBefore: [revision + test-only diff ID; command; exit code; observed assertion; log path]\nAfter: [final revision or base + diff ID; command; exit code; observed assertion; log path]\nStatus: [pass / fail / blocked / not run]\nLimits / reviewer action: [untested behavior, blocker, or decision required]",
             "Review the patch against two concurrent deliveries and a retry after a worker failure. Show which behaviors the tests establish and which remain untested. Keep the change limited to this handler and its regression tests; update the handoff with any remaining risk.",
@@ -5766,7 +5837,7 @@
       "image": "assets/use-cases/incident-to-tested-fix.webp"
     },
     {
-      "index": 111,
+      "index": 113,
       "slug": "migrate-a-validation-module",
       "title": "Migrate a validation module",
       "tagline": "Upgrade one module and prove that its public behavior still holds.",
@@ -5846,7 +5917,7 @@
       "image": "assets/use-cases/migrate-a-validation-module.webp"
     },
     {
-      "index": 112,
+      "index": 114,
       "slug": "build-workshop-practice-site",
       "title": "Build a hackathon site",
       "tagline": "Give participants one place to find the agenda, register, and share what they built.",
@@ -5900,7 +5971,7 @@
       "image": "assets/use-cases/build-workshop-practice-site.webp"
     },
     {
-      "index": 113,
+      "index": 115,
       "slug": "build-personal-onboarding-plan",
       "title": "Build an onboarding portal",
       "tagline": "Help new hires find their next task and practice the work they'll be doing.",
@@ -5956,7 +6027,7 @@
       "image": "assets/use-cases/build-personal-onboarding-plan.webp"
     },
     {
-      "index": 114,
+      "index": 116,
       "slug": "collect-and-schedule-team-requests",
       "title": "Manage creative requests from brief to delivery",
       "tagline": "Collect complete briefs, review drafts, and keep final assets with each request.",
@@ -6011,7 +6082,7 @@
       "image": "assets/use-cases/collect-and-schedule-team-requests.webp"
     },
     {
-      "index": 115,
+      "index": 117,
       "slug": "compare-campaign-performance",
       "title": "See which campaigns bring in leads",
       "tagline": "Compare spend, lead counts, and cost per lead by campaign, channel, and week.",
@@ -6066,7 +6137,7 @@
       "image": "assets/use-cases/compare-campaign-performance.webp"
     },
     {
-      "index": 116,
+      "index": 118,
       "slug": "consolidate-spreadsheets",
       "title": "Consolidate spreadsheets",
       "tagline": "Join spreadsheet exports into one refreshable workbook.",
@@ -6106,7 +6177,7 @@
       "image": "assets/use-cases/consolidate-spreadsheets.webp"
     },
     {
-      "index": 117,
+      "index": 119,
       "slug": "weekly-work-summary",
       "title": "Write a weekly work summary",
       "tagline": "Turn a week of activity into a manager-ready update.",
@@ -6146,7 +6217,7 @@
       "image": "assets/use-cases/weekly-work-summary.webp"
     },
     {
-      "index": 118,
+      "index": 120,
       "slug": "issue-to-tested-pr",
       "title": "Turn an issue into a tested pull request",
       "tagline": "Hand off a small feature with acceptance criteria and review the evidence.",
@@ -6179,9 +6250,9 @@
             "Configure required network destinations and test credentials separately; allowing a destination does not grant service access.",
             "If required checks cannot run, finish setup before using this workflow.",
             "Choose a feature with a written contract and a clear stopping point: a new API endpoint, a validation rule, or a small addition to an existing service. The issue should fit in one pull request and have checks that can run without production access.",
-            "The example adds pagination to a project’s activity feed. The runnable Node.js sample includes authentication, project access, signed cursors, and an existing project-detail route. It uses fixed test records in memory, so you can check the pagination contract without a database or external service.",
+            "The example adds pagination to a project’s activity feed. The runnable TypeScript sample includes authentication, project access, signed cursors, and an existing project-detail route. It uses fixed test records in memory, so you can check the pagination contract without a database or external service.",
             "Download the sample , extract it, and open its issue-to-tested-pr folder. Use Node 22.6 or later . The sample uses the standard library and needs no package installation or API key.",
-            "node api.mjs starts a local HTTP server, requests the first page, prints its public IDs, and closes the server.",
+            "node --experimental-strip-types api.ts starts a local HTTP server, requests the first page, prints its public IDs, and closes the server.",
             "The --seeded test run deliberately exits nonzero: its timestamp-only continuation skips two events tied at the first page boundary. The same tests pass with the corrected timestamp-and-ID tuple continuation.",
             "The reproduction command succeeds only if the seeded state fails and the corrected state passes.",
             "The corrected traversal with limit=2 returns these pages in three requests:",
@@ -6189,7 +6260,7 @@
             "The seeded state returns [evt_105, evt_104] , then [evt_101] , losing evt_103 and evt_102 .",
             "A successful run passes all 36 tests in the corrected state. The seeded state fails three assertions that expose the pagination defect.",
             "To verify your environment, put the files in your selected repository, prepare and publish an environment with a supported Node runtime, then run the commands in a new Cloud task and record its results.",
-            "reproduce.mjs saves red.log , green.log , observed-http.json , and run-manifest.json in the requested evidence directory. The manifest identifies the runtime, commands, exit codes, seeded defect, correction, and SHA-256 source hashes.",
+            "reproduce.ts saves red.log , green.log , observed-http.json , and run-manifest.json in the requested evidence directory. The manifest identifies the runtime, commands, exit codes, seeded defect, correction, and SHA-256 source hashes.",
             "It does not record session tokens or the signing key. Read README.md and openapi.json for the sample’s setup and public contract.",
             "These excerpts come from the files in the download. Run the complete files after extracting the ZIP.",
             "An issue link is useful only if Codex can read it. Paste or attach the relevant content when the source is unavailable. Include the following information with the starter prompt.",
@@ -6213,7 +6284,7 @@
             "Choose the issue and prepare the environment. Confirm that the contract above matches the actual repository. Select the prepared cloud environment and the intended base commit. Supply the issue packet directly in the task; starting this recipe does not depend on an automatic issue-tracker trigger.",
             "Run the starter prompt. Replace its bracketed inputs with your repository, issue packet, boundaries, and checks. Choose whether Codex should return a diff or create an authorized draft PR. The starter prompt on this page contains the full handoff instructions.",
             "Establish the baseline. Codex should read repository instructions and run the approved baseline checks before editing.",
-            "For the sample, run node test.mjs and the syntax checks in README.md ; --seeded is a separate deliberate failure demonstration.",
+            "For the sample, run node --experimental-strip-types test.ts ; --seeded is a separate deliberate failure demonstration.",
             "For your own service, run its existing regression, type, and lint checks. A new endpoint’s focused test file may not exist yet; record that as a test to create. Resolve failing existing checks or unavailable test services before attributing later results to the feature.",
             "Implement and verify the contract. Ask Codex to use the existing access and cursor helpers, implement the endpoint, add the acceptance tests below, and update its API documentation. Where practical, the new tests should fail against the original code and pass after the change. Keep those results with the final verification record. In the downloadable sample, --seeded selects a deliberate defect for this comparison; this comparison is separate from a failing baseline in your repository.",
             "Review the change and its evidence. Read the diff, acceptance checks, check outputs, and remaining risks together. If Codex creates an authorized draft PR, verify that its base and head are correct. If PR tooling is unavailable, use the returned diff and description to prepare the PR through your normal process. List any unresolved checks in the draft PR and keep it unready for merge.",
@@ -6232,7 +6303,7 @@
             "Assert both return the same HTTP 400 invalid_cursor body with no event data or scope details. Test these separately from requests to an inaccessible project, which must return 404.",
             "On an authorized project, assert HTTP 400 invalid_cursor for tokens the helper cannot decode, tokens with modified signatures, and signed tokens that omit required cursor fields or give those fields the wrong type. Use isolated test signing fixtures.",
             "Cover unsupported versions or expired tokens if the shared helper supports those features. Assert that responses match the agreed generic error schema and contain no decoded contents, identifiers, raw errors, or stack traces.",
-            "The sample checks the existing project-detail route with authorized, unauthorized, and inaccessible-project requests. Run syntax checks for its .mjs files. In your service, run its established regression suite, type check, and lint.",
+            "The sample checks the existing project-detail route with authorized, unauthorized, and inaccessible-project requests. In your service, run its established regression suite, type check, and lint.",
             "Validate actual HTTP 200, 400, 401, and 404 response bodies against the agreed OpenAPI schemas. Assert required keys, item field types, timestamp format, whether the cursor allows null , and no extra properties at any object level.",
             "Seed internal fields in stored events and verify they are absent from serialized items; verify every error response contains only its approved generic code and message.",
             "Verify the OpenAPI operation and examples match the implemented parameters, exact success/error schemas, authorization precedence, ordering, final-page rules, and fixed-fixture replay/consistency limits. Run the repository’s API specification validation if one exists.",
@@ -6255,7 +6326,7 @@
             "404 not_found / Project not found.",
             "Choose the issue and prepare the environment. Confirm that the contract above matches the actual repository. Select the prepared cloud environment and the intended base commit. Supply the issue packet directly in the task; starting this recipe does not depend on an automatic issue-tracker trigger.",
             "Run the starter prompt. Replace its bracketed inputs with your repository, issue packet, boundaries, and checks. Choose whether Codex should return a diff or create an authorized draft PR. The starter prompt on this page contains the full handoff instructions.",
-            "Establish the baseline. Codex should read repository instructions and run the approved baseline checks before editing. For the sample, run node test.mjs and the syntax checks in README.md ; --seeded is a separate deliberate failure demonstration. For your own service, run its existing regression, type, and lint checks. A new endpoint’s focused test file may not exist yet; record that as a test to create. Resolve failing existing checks or unavailable test services before attributing later results to the feature.",
+            "Establish the baseline. Codex should read repository instructions and run the approved baseline checks before editing. For the sample, run node --experimental-strip-types test.ts ; --seeded is a separate deliberate failure demonstration. For your own service, run its existing regression, type, and lint checks. A new endpoint’s focused test file may not exist yet; record that as a test to create. Resolve failing existing checks or unavailable test services before attributing later results to the feature.",
             "Implement and verify the contract. Ask Codex to use the existing access and cursor helpers, implement the endpoint, add the acceptance tests below, and update its API documentation. Where practical, the new tests should fail against the original code and pass after the change. Keep those results with the final verification record. In the downloadable sample, --seeded selects a deliberate defect for this comparison; this comparison is separate from a failing baseline in your repository.",
             "Review the change and its evidence. Read the diff, acceptance checks, check outputs, and remaining risks together. If Codex creates an authorized draft PR, verify that its base and head are correct. If PR tooling is unavailable, use the returned diff and description to prepare the PR through your normal process. List any unresolved checks in the draft PR and keep it unready for merge.",
             "Resolve review feedback and merge through your normal process. Give Codex the specific comments to address in the same task, then rerun the affected checks. A reviewer confirms required CI and approves the final commit before merging.",
@@ -6266,12 +6337,12 @@
             "Repository write integration is unavailable. Return the diff, draft PR description, and validation evidence. A teammate can complete the repository handoff."
           ],
           "codeBlocks": [
-            "node --version\nnode api.mjs\nnode test.mjs --seeded\nnode test.mjs\nnode reproduce.mjs ./evidence",
+            "node --version\nnode --experimental-strip-types api.ts\nnode --experimental-strip-types test.ts --seeded\nnode --experimental-strip-types test.ts\nnode --experimental-strip-types reproduce.ts ./evidence",
             "[evt_105, evt_104]\n[evt_103, evt_102]\n[evt_101]",
-            "export function createApi({\n  sessions,\n  projects,\n  events,\n  signingKey,\n  seededBug = false,\n}) {\n  return createServer((request, response) => {\n    const send = (status, body) => {\n      response.writeHead(status, { \"content-type\": \"application/json\" });\n      response.end(JSON.stringify(body));\n    };\n    const fail = (code) => {\n      const [status, message] = errors[code];\n      send(status, { error: { code, message } });\n    };\n    // Authenticate, then authorize. Malformed parameters must not change these results.\n    const authorization = request.headers.authorization ?? \"\";\n    const bearer = /^Bearer ([A-Za-z0-9_-]+)$/.exec(authorization);\n    const tenantId = bearer ? sessions.get(bearer[1]) : undefined;\n    if (!tenantId) return fail(\"unauthenticated\");\n\n    const url = new URL(request.url ?? \"/\", \"http://127.0.0.1\");\n    const route = /^\\/v1\\/projects\\/([^/]+)(\\/events)?$/.exec(url.pathname);\n    let projectId;\n    try {\n      projectId = route ? decodeURIComponent(route[1]) : undefined;\n    } catch {\n      return fail(\"not_found\");\n    }\n    const project = projectId ? projects.get(projectId) : undefined;\n    if (\n      request.method !== \"GET\" ||\n      !project ||\n      project.tenant_id !== tenantId\n    ) {\n      return fail(\"not_found\");\n    }\n    // Existing project-detail behavior remains independent of pagination parameters.\n    if (!route[2]) return send(200, { id: projectId, name: project.name });\n\n    const rawLimit = url.searchParams.get(\"limit\");\n    const limit = rawLimit === null ? 25 : Number(rawLimit);\n    if (\n      url.searchParams.getAll(\"limit\").length > 1 ||\n      (rawLimit !== null && !/^\\d+$/.test(rawLimit)) ||\n      !Number.isInteger(limit) ||\n      limit < 1 ||\n      limit > 100\n    ) {\n      return fail(\"invalid_limit\");\n    }\n    let cursor;\n    if (url.searchParams.has(\"cursor\")) {\n      try {\n        if (url.searchParams.getAll(\"cursor\").length !== 1)\n          throw new Error(\"Invalid cursor\");\n        cursor = decodeCursor(\n          url.searchParams.get(\"cursor\"),\n          tenantId,\n          projectId,\n          signingKey\n        );\n      } catch {\n        return fail(\"invalid_cursor\");\n      }\n    }\n\n    const matching = events\n      .filter(\n        (event) =>\n          event.tenant_id === tenantId && event.project_id === projectId\n      )\n      .sort(compareEvents)\n      .filter((event) => {\n        if (!cursor) return true;\n        // Deliberate baseline defect: timestamp-only continuation loses tied rows.\n        if (seededBug)\n          return (\n            timestampValue(event.created_at) < timestampValue(cursor.created_at)\n          );\n        return compareEvents(event, cursor) > 0;\n      });\n    const selected = matching.slice(0, limit);\n    const items = selected.map(({ id, created_at, type, summary }) => ({\n      id,\n      created_at,\n      type,\n      summary,\n    }));\n    const nextCursor =\n      matching.length > limit\n        ? encodeCursor(selected.at(-1), tenantId, projectId, signingKey)\n        : null;\n    return send(200, { items, next_cursor: nextCursor });\n  });\n}\n\nexport async function startApi(fixtures, options = {}) {\n  const server = createApi({ ...fixtures, ...options });\n  await new Promise((resolve, reject) => {\n    server.once(\"error\", reject);\n    server.listen(0, \"127.0.0.1\", () => resolve(undefined));\n  });\n  const address = server.address();\n  if (!address || typeof address === \"string\")\n    throw new Error(\"No listening address\");\n  return {\n    baseUrl: `http://127.0.0.1:${address.port}`,\n    close: () =>\n      new Promise((resolve, reject) =>\n        server.close((error) => (error ? reject(error) : resolve(undefined)))\n      ),\n  };\n}",
-            "export function createFixtures() {\n  const tokenA = randomBytes(24).toString(\"base64url\");\n  const tokenB = randomBytes(24).toString(\"base64url\");\n  const sessions = new Map([\n    [tokenA, \"tenant_a\"],\n    [tokenB, \"tenant_b\"],\n  ]);\n  const projects = new Map([\n    [\"feed\", { tenant_id: \"tenant_a\", name: \"Activity feed\" }],\n    [\"empty\", { tenant_id: \"tenant_a\", name: \"Empty feed\" }],\n    [\"exact\", { tenant_id: \"tenant_a\", name: \"Four events\" }],\n    [\"large\", { tenant_id: \"tenant_a\", name: \"Large feed\" }],\n    [\"precision\", { tenant_id: \"tenant_a\", name: \"Precise timestamps\" }],\n    [\"other\", { tenant_id: \"tenant_a\", name: \"Another project\" }],\n    [\"private\", { tenant_id: \"tenant_b\", name: \"Private project\" }],\n  ]);\n  const event = (id, created_at, project_id, tenant_id = \"tenant_a\") => ({\n    id,\n    created_at,\n    project_id,\n    tenant_id,\n    type: \"deployment\",\n    summary: `Synthetic event ${id}`,\n    internal_note: \"This field must never enter the HTTP response.\",\n    raw_payload: { synthetic: true },\n  });\n  const feed = [\n    event(\"evt_105\", \"2026-01-15T12:00:03.123456Z\", \"feed\"),\n    event(\"evt_104\", \"2026-01-15T12:00:02.123456Z\", \"feed\"),\n    event(\"evt_103\", \"2026-01-15T12:00:02.123456Z\", \"feed\"),\n    event(\"evt_102\", \"2026-01-15T12:00:02.123456Z\", \"feed\"),\n    event(\"evt_101\", \"2026-01-15T12:00:01.123456Z\", \"feed\"),\n  ];\n  const events = [\n    ...feed,\n    ...feed.slice(0, 4).map((item) => ({ ...item, project_id: \"exact\" })),\n    ...Array.from({ length: 105 }, (_, index) =>\n      event(\n        `large_${String(index).padStart(3, \"0\")}`,\n        new Date(Date.UTC(2026, 0, 15, 12, 0, index))\n          .toISOString()\n          .replace(\".000Z\", \".123456Z\"),\n        \"large\"\n      )\n    ),\n    // Reverse ID order makes timestamp precision observable in the tests.\n    event(\"precise_a\", \"2026-01-15T12:00:00.123999Z\", \"precision\"),\n    event(\"precise_z\", \"2026-01-15T12:00:00.123001Z\", \"precision\"),\n    event(\"other_1\", \"2026-01-15T12:00:00.123456Z\", \"other\"),\n    event(\"other_2\", \"2026-01-15T11:59:59.123456Z\", \"other\"),\n    event(\"private_1\", \"2026-01-15T12:00:00.123456Z\", \"private\", \"tenant_b\"),\n    event(\"private_2\", \"2026-01-15T11:59:59.123456Z\", \"private\", \"tenant_b\"),\n  ];\n  return {\n    sessions,\n    projects,\n    events,\n    signingKey: randomBytes(32),\n    tokenA,\n    tokenB,\n  };\n}",
-            "test(\"five-event traversal crosses a timestamp tie and replays the same continuation\", async () => {\n  const expected = [\"evt_105\", \"evt_104\", \"evt_103\", \"evt_102\", \"evt_101\"];\n  const pages = await traverse(\"feed\", 2, expected);\n  assert.deepEqual(pages.map(ids), [\n    [\"evt_105\", \"evt_104\"],\n    [\"evt_103\", \"evt_102\"],\n    [\"evt_101\"],\n  ]);\n  assert.equal(pages.length, 3);\n  assert.ok(pages[0].next_cursor);\n  assert.ok(pages[1].next_cursor);\n  assert.equal(pages[2].next_cursor, null);\n  const replay = await request(\"feed\", {\n    limit: \"2\",\n    cursor: pages[0].next_cursor,\n  });\n  assert.deepEqual(replay.body.items, pages[1].items);\n  const next = await request(\"feed\", {\n    limit: \"2\",\n    cursor: replay.body.next_cursor,\n  });\n  assert.deepEqual(next.body.items, pages[2].items);\n  assert.equal(next.body.next_cursor, null);\n  console.log(\n    JSON.stringify({\n      fixture: \"five-event-tie\",\n      pages: pages.map(ids),\n      requests: pages.length,\n      replay: ids(replay.body),\n    })\n  );\n});\n\ntest(\"the same tie group traverses correctly with limit three\", async () => {\n  const pages = await traverse(\"feed\", 3, [\n    \"evt_105\",\n    \"evt_104\",\n    \"evt_103\",\n    \"evt_102\",\n    \"evt_101\",\n  ]);\n  assert.deepEqual(pages.map(ids), [\n    [\"evt_105\", \"evt_104\", \"evt_103\"],\n    [\"evt_102\", \"evt_101\"],\n  ]);\n});\n\ntest(\"timestamp ordering and continuation preserve submillisecond precision\", async () => {\n  const pages = await traverse(\"precision\", 1, [\"precise_a\", \"precise_z\"]);\n  assert.equal(pages[0].items[0].created_at, \"2026-01-15T12:00:00.123999Z\");\n  assert.equal(pages[1].items[0].created_at, \"2026-01-15T12:00:00.123001Z\");\n});\n\ntest(\"omitted, minimum, and maximum limits return 25, 1, and 100 of 105 events\", async () => {\n  for (const [parameters, expected] of [\n    [{}, 25],\n    [{ limit: \"1\" }, 1],\n    [{ limit: \"100\" }, 100],\n  ]) {\n    const result = await request(\"large\", parameters);\n    assert.equal(result.status, 200);\n    assert.equal(result.body.items.length, expected);\n    assert.ok(result.body.next_cursor);\n  }\n  const pages = await traverse(\n    \"large\",\n    100,\n    Array.from(\n      { length: 105 },\n      (_, index) => `large_${String(104 - index).padStart(3, \"0\")}`\n    )\n  );\n  assert.deepEqual(\n    pages.map((page) => page.items.length),\n    [100, 5]\n  );\n});\n\ntest(\"invalid and repeated limits return the documented generic error\", async (context) => {\n  for (const limit of [\n    \"0\",\n    \"101\",\n    \"-1\",\n    \"1.5\",\n    \"many\",\n    \"\",\n    \"1e2\",\n    \"Infinity\",\n  ]) {\n    await context.test(`limit ${JSON.stringify(limit)}`, async () => {\n      const result = await request(\"feed\", { limit });\n      assert.equal(result.status, 400);\n      assert.deepEqual(\n        result.body,\n        expectedError(\n          \"invalid_limit\",\n          \"Limit must be an integer from 1 through 100.\"\n        )\n      );\n    });\n  }\n  const repeated = await request(\"feed\", [\n    [\"limit\", \"1\"],\n    [\"limit\", \"2\"],\n  ]);\n  assert.equal(repeated.status, 400);\n});\n\ntest(\"empty, partial, and exactly full final pages have no continuation\", async () => {\n  assert.deepEqual((await request(\"empty\")).body, {\n    items: [],\n    next_cursor: null,\n  });\n  const partial = await traverse(\"feed\", 2, [\n    \"evt_105\",\n    \"evt_104\",\n    \"evt_103\",\n    \"evt_102\",\n    \"evt_101\",\n  ]);\n  assert.equal(partial.at(-1).items.length, 1);\n  const exact = await traverse(\"exact\", 2, [\n    \"evt_105\",\n    \"evt_104\",\n    \"evt_103\",\n    \"evt_102\",\n  ]);\n  assert.deepEqual(\n    exact.map((page) => page.items.length),\n    [2, 2]\n  );\n  assert.equal(exact[1].next_cursor, null);\n});\n\ntest(\"authentication precedes malformed and wrong-scope cursor or limit validation\", async () => {\n  const privateCursor = (\n    await request(\"private\", { limit: \"1\" }, fixtures.tokenB)\n  ).body.next_cursor;\n  for (const token of [null, \"invalid_session\"]) {\n    for (const parameters of [\n      { cursor: \"broken\" },\n      { cursor: privateCursor },\n      { limit: \"0\", cursor: \"broken\" },\n    ]) {\n      const result = await request(\"feed\", parameters, token);\n      assert.equal(result.status, 401);\n      assert.deepEqual(result.body, unauthenticated);\n    }\n  }\n});\n\ntest(\"inaccessible and nonexistent projects return identical 404 before cursor validation\", async () => {\n  const ownCursor = (await request(\"feed\", { limit: \"1\" })).body.next_cursor;\n  for (const project of [\"private\", \"missing\"]) {\n    for (const parameters of [\n      {},\n      { cursor: \"broken\" },\n      { cursor: ownCursor },\n      { limit: \"0\", cursor: \"broken\" },\n    ]) {\n      const result = await request(project, parameters);\n      assert.equal(result.status, 404);\n      assert.deepEqual(result.body, notFound);\n    }\n  }\n});\n\ntest(\"a valid cursor from another project in the same tenant is invalid on an authorized feed\", async () => {\n  const cursor = (await request(\"other\", { limit: \"1\" })).body.next_cursor;\n  assert.ok(cursor);\n  const result = await request(\"feed\", { cursor });\n  assert.equal(result.status, 400);\n  assert.deepEqual(result.body, invalidCursor);\n});\n\ntest(\"a valid cursor from another tenant is invalid on an authorized feed\", async () => {\n  const cursor = (await request(\"private\", { limit: \"1\" }, fixtures.tokenB))\n    .body.next_cursor;\n  assert.ok(cursor);\n  const result = await request(\"feed\", { cursor });\n  assert.equal(result.status, 400);\n  assert.deepEqual(result.body, invalidCursor);\n});\n\ntest(\"undecodable, empty, tampered, and repeated cursor tokens return the same closed error\", async () => {\n  const cursor = (await request(\"feed\", { limit: \"1\" })).body.next_cursor;\n  const [payload, signature] = cursor.split(\".\");\n  const tampered = `${payload}.${signature[0] === \"A\" ? \"B\" : \"A\"}${signature.slice(1)}`;\n  for (const token of [\n    \"broken\",\n    \"\",\n    \"%%%.___\",\n    \"a.b.c\",\n    \"x\".repeat(2049),\n    tampered,\n  ]) {\n    const result = await request(\"feed\", { cursor: token });\n    assert.equal(result.status, 400);\n    assert.deepEqual(result.body, invalidCursor);\n  }\n  const result = await request(\"feed\", [\n    [\"cursor\", cursor],\n    [\"cursor\", cursor],\n  ]);\n  assert.equal(result.status, 400);\n  assert.deepEqual(result.body, invalidCursor);\n});\n\ntest(\"signed structurally invalid payloads and unsupported versions are rejected\", async (context) => {\n  const valid = {\n    version: 1,\n    tenant_id: \"tenant_a\",\n    project_id: \"feed\",\n    created_at: \"2026-01-15T12:00:02.123456Z\",\n    id: \"evt_104\",\n  };\n  const missing = { ...valid };\n  delete missing.id;\n  const cases = [\n    [\"missing ID\", missing],\n    [\"number ID\", { ...valid, id: 104 }],\n    [\"empty ID\", { ...valid, id: \"\" }],\n    [\"number timestamp\", { ...valid, created_at: 0 }],\n    [\"invalid date\", { ...valid, created_at: \"2026-02-30T12:00:00Z\" }],\n    [\"unsupported version\", { ...valid, version: 2 }],\n    [\"extra field\", { ...valid, extra: true }],\n    [\"wrong tenant type\", { ...valid, tenant_id: 1 }],\n    [\"wrong project type\", { ...valid, project_id: null }],\n    [\"null payload\", null],\n    [\"array payload\", []],\n    [\"invalid JSON\", \"not-json\"],\n  ];\n  for (const [name, payload] of cases) {\n    await context.test(name, async () => {\n      const result = await request(\"feed\", { cursor: signFixture(payload) });\n      assert.equal(result.status, 400);\n      assert.deepEqual(result.body, invalidCursor);\n    });\n  }\n});\n\ntest(\"every serialized event omits stored tenant, project, and raw payload fields\", async () => {\n  const result = await request(\"feed\", { limit: \"100\" });\n  assert.equal(result.status, 200);\n  for (const item of result.body.items) {\n    assert.deepEqual(Object.keys(item).sort(), [\n      \"created_at\",\n      \"id\",\n      \"summary\",\n      \"type\",\n    ]);\n  }\n  assert.ok(\n    fixtures.events.some((event) => event.internal_note && event.raw_payload)\n  );\n});\n\ntest(\"the schema oracle rejects extra, missing, incorrectly typed, and malformed public fields\", () => {\n  const schema = specification.components.schemas.EventPage;\n  const page = {\n    items: [\n      {\n        id: \"evt_1\",\n        created_at: \"2026-01-15T12:00:00.123456Z\",\n        type: \"deployment\",\n        summary: \"Synthetic\",\n      },\n    ],\n    next_cursor: null,\n  };\n  assert.ok(conforms(page, schema));\n  assert.equal(conforms({ ...page, tenant_id: \"tenant_a\" }, schema), false);\n  assert.equal(\n    conforms(\n      { ...page, items: [{ ...page.items[0], raw_payload: {} }] },\n      schema\n    ),\n    false\n  );\n  assert.equal(conforms({ items: page.items }, schema), false);\n  assert.equal(conforms({ ...page, next_cursor: \"\" }, schema), false);\n  assert.equal(\n    conforms({ ...page, items: [{ ...page.items[0], id: 1 }] }, schema),\n    false\n  );\n  assert.equal(\n    conforms(\n      { ...page, items: [{ ...page.items[0], created_at: \"yesterday\" }] },\n      schema\n    ),\n    false\n  );\n  const errorSchema = specification.components.schemas.InvalidCursor;\n  assert.equal(\n    conforms(\n      { error: { ...invalidCursor.error, stack: \"internal\" } },\n      errorSchema\n    ),\n    false\n  );\n  assert.equal(\n    conforms(\n      { error: { ...invalidCursor.error, message: \"tenant_a\" } },\n      errorSchema\n    ),\n    false\n  );\n});\n\ntest(\"the existing project-detail route preserves access and ignores pagination parameters\", async () => {\n  const own = await request(\n    \"feed\",\n    { cursor: \"broken\", limit: \"0\" },\n    fixtures.tokenA,\n    true\n  );\n  assert.equal(own.status, 200);\n  assert.deepEqual(own.body, { id: \"feed\", name: \"Activity feed\" });\n  const inaccessible = await request(\"private\", {}, fixtures.tokenA, true);\n  assert.equal(inaccessible.status, 404);\n  assert.deepEqual(inaccessible.body, notFound);\n  const unauthenticatedResult = await request(\"feed\", {}, null, true);\n  assert.equal(unauthenticatedResult.status, 401);\n  assert.deepEqual(unauthenticatedResult.body, unauthenticated);\n});\n\ntest(\"OpenAPI declares operation, limit boundaries, signed cursor, and response statuses\", () => {\n  assert.equal(specification.openapi, \"3.1.0\");\n  const operation = specification.paths[\"/v1/projects/{project_id}/events\"].get;\n  assert.equal(operation.operationId, \"listProjectEvents\");\n  const limit = operation.parameters.find(\n    (parameter) => parameter.name === \"limit\"\n  ).schema;\n  assert.deepEqual(limit, {\n    type: \"integer\",\n    minimum: 1,\n    maximum: 100,\n    default: 25,\n  });\n  assert.deepEqual(Object.keys(operation.responses).sort(), [\n    \"200\",\n    \"400\",\n    \"401\",\n    \"404\",\n  ]);\n  assert.equal(\n    specification.components.securitySchemes.session.scheme,\n    \"bearer\"\n  );\n});",
-            "mkdirSync(output, { recursive: true });\nconst states = [];\nfor (const [name, arguments_] of [\n  [\"red\", [\"--seeded\"]],\n  [\"green\", []],\n]) {\n  const result = spawnSync(\n    process.execPath,\n    [resolve(directory, \"test.mjs\"), ...arguments_],\n    {\n      cwd: directory,\n      encoding: \"utf8\",\n      timeout: 30_000,\n    }\n  );\n  writeFileSync(\n    resolve(output, `${name}.log`),\n    `${result.stdout ?? \"\"}${result.stderr ?? \"\"}`\n  );\n  states.push({\n    name,\n    command: `node test.mjs${arguments_.length ? \" --seeded\" : \"\"}`,\n    exit_code: result.status,\n    signal: result.signal,\n    error: result.error?.message ?? null,\n  });\n}\nconst sources = Object.fromEntries(\n  readdirSync(directory, { withFileTypes: true })\n    .filter((entry) => entry.isFile())\n    .map((entry) => [\n      entry.name,\n      createHash(\"sha256\")\n        .update(readFileSync(resolve(directory, entry.name)))\n        .digest(\"hex\"),\n    ])\n);\nconst observed = { red: await observe(true), green: await observe(false) };\nwriteJson(\"observed-http.json\", observed);\nwriteJson(\"run-manifest.json\", {\n  execution: \"Synthetic loopback HTTP fixture; no external service\",\n  recorded_at: new Date().toISOString(),\n  node: process.version,\n  minimum_node: \"22.6.0\",\n  dependencies: \"Node standard library only; no install step\",\n  baseline:\n    \"Deliberately seeded timestamp-only continuation; not a historical customer defect\",\n  correction:\n    \"Descending timestamp-and-ID tuple continuation using full fractional precision\",\n  source_sha256: sources,\n  states,\n});\nif (\n  states[0].exit_code === null ||\n  states[0].exit_code === 0 ||\n  states[1].exit_code !== 0\n) {\n  throw new Error(\n    \"Expected the unchanged tests to fail on the seeded baseline and pass on the corrected implementation. Inspect red.log and green.log.\"\n  );\n}\nconsole.log(\n  JSON.stringify(\n    {\n      execution: \"synthetic-loopback-http\",\n      red_exit: states[0].exit_code,\n      green_exit: states[1].exit_code,\n      green_pages: observed.green.pages.map((page) =>\n        page.body.items.map((item) => item.id)\n      ),\n      evidence_directory: output,\n    },\n    null,\n    2\n  )\n);",
+            "import { createFixtures } from \"./fixtures.ts\";\ntype Fixtures = ReturnType<typeof createFixtures>;\ntype EventKey = { created_at: string; id: string };\n\nexport function createApi({\n  sessions,\n  projects,\n  events,\n  signingKey,\n  seededBug = false,\n}: Fixtures & { seededBug?: boolean }) {\n  return createServer((request, response) => {\n    const send = (status: number, body: unknown) => {\n      response.writeHead(status, { \"content-type\": \"application/json\" });\n      response.end(JSON.stringify(body));\n    };\n    const fail = (code: string) => {\n      const [status, message] = errors[code];\n      send(status, { error: { code, message } });\n    };\n    // Authenticate, then authorize. Malformed parameters must not change these results.\n    const authorization = request.headers.authorization ?? \"\";\n    const bearer = /^Bearer ([A-Za-z0-9_-]+)$/.exec(authorization);\n    const tenantId = bearer ? sessions.get(bearer[1]) : undefined;\n    if (!tenantId) return fail(\"unauthenticated\");\n\n    const url = new URL(request.url ?? \"/\", \"http://127.0.0.1\");\n    const route = /^\\/v1\\/projects\\/([^/]+)(\\/events)?$/.exec(url.pathname);\n    let projectId;\n    try {\n      projectId = route ? decodeURIComponent(route[1]) : undefined;\n    } catch {\n      return fail(\"not_found\");\n    }\n    const project = projectId ? projects.get(projectId) : undefined;\n    if (\n      request.method !== \"GET\" ||\n      !route ||\n      !project ||\n      project.tenant_id !== tenantId\n    ) {\n      return fail(\"not_found\");\n    }\n    // Existing project-detail behavior remains independent of pagination parameters.\n    if (!route[2]) return send(200, { id: projectId, name: project.name });\n\n    const rawLimit = url.searchParams.get(\"limit\");\n    const limit = rawLimit === null ? 25 : Number(rawLimit);\n    if (\n      url.searchParams.getAll(\"limit\").length > 1 ||\n      (rawLimit !== null && !/^\\d+$/.test(rawLimit)) ||\n      !Number.isInteger(limit) ||\n      limit < 1 ||\n      limit > 100\n    ) {\n      return fail(\"invalid_limit\");\n    }\n    let cursor: EventKey | undefined;\n    if (url.searchParams.has(\"cursor\")) {\n      try {\n        if (url.searchParams.getAll(\"cursor\").length !== 1)\n          throw new Error(\"Invalid cursor\");\n        cursor = decodeCursor(\n          url.searchParams.get(\"cursor\"),\n          tenantId,\n          projectId,\n          signingKey\n        );\n      } catch {\n        return fail(\"invalid_cursor\");\n      }\n    }\n\n    const matching = events\n      .filter(\n        (event) =>\n          event.tenant_id === tenantId && event.project_id === projectId\n      )\n      .sort(compareEvents)\n      .filter((event) => {\n        if (!cursor) return true;\n        // Deliberate baseline defect: timestamp-only continuation loses tied rows.\n        if (seededBug)\n          return (\n            timestampValue(event.created_at) < timestampValue(cursor.created_at)\n          );\n        return compareEvents(event, cursor) > 0;\n      });\n    const selected = matching.slice(0, limit);\n    const items = selected.map(({ id, created_at, type, summary }) => ({\n      id,\n      created_at,\n      type,\n      summary,\n    }));\n    const nextCursor =\n      matching.length > limit\n        ? encodeCursor(\n            selected[selected.length - 1],\n            tenantId,\n            projectId,\n            signingKey\n          )\n        : null;\n    return send(200, { items, next_cursor: nextCursor });\n  });\n}\n\nexport async function startApi(\n  fixtures: Fixtures,\n  options: { seededBug?: boolean } = {}\n) {\n  const server = createApi({ ...fixtures, ...options });\n  await new Promise((resolve, reject) => {\n    server.once(\"error\", reject);\n    server.listen(0, \"127.0.0.1\", () => resolve(undefined));\n  });\n  const address = server.address();\n  if (!address || typeof address === \"string\")\n    throw new Error(\"No listening address\");\n  return {\n    baseUrl: `http://127.0.0.1:${address.port}`,\n    close: () =>\n      new Promise((resolve, reject) =>\n        server.close((error) => (error ? reject(error) : resolve(undefined)))\n      ),\n  };\n}",
+            "export function createFixtures() {\n  const tokenA = randomBytes(24).toString(\"base64url\");\n  const tokenB = randomBytes(24).toString(\"base64url\");\n  const sessions = new Map([\n    [tokenA, \"tenant_a\"],\n    [tokenB, \"tenant_b\"],\n  ]);\n  const projects = new Map([\n    [\"feed\", { tenant_id: \"tenant_a\", name: \"Activity feed\" }],\n    [\"empty\", { tenant_id: \"tenant_a\", name: \"Empty feed\" }],\n    [\"exact\", { tenant_id: \"tenant_a\", name: \"Four events\" }],\n    [\"large\", { tenant_id: \"tenant_a\", name: \"Large feed\" }],\n    [\"precision\", { tenant_id: \"tenant_a\", name: \"Precise timestamps\" }],\n    [\"other\", { tenant_id: \"tenant_a\", name: \"Another project\" }],\n    [\"private\", { tenant_id: \"tenant_b\", name: \"Private project\" }],\n  ]);\n  const event = (\n    id: string,\n    created_at: string,\n    project_id: string,\n    tenant_id = \"tenant_a\"\n  ) => ({\n    id,\n    created_at,\n    project_id,\n    tenant_id,\n    type: \"deployment\",\n    summary: `Synthetic event ${id}`,\n    internal_note: \"This field must never enter the HTTP response.\",\n    raw_payload: { synthetic: true },\n  });\n  const feed = [\n    event(\"evt_105\", \"2026-01-15T12:00:03.123456Z\", \"feed\"),\n    event(\"evt_104\", \"2026-01-15T12:00:02.123456Z\", \"feed\"),\n    event(\"evt_103\", \"2026-01-15T12:00:02.123456Z\", \"feed\"),\n    event(\"evt_102\", \"2026-01-15T12:00:02.123456Z\", \"feed\"),\n    event(\"evt_101\", \"2026-01-15T12:00:01.123456Z\", \"feed\"),\n  ];\n  const events = [\n    ...feed,\n    ...feed.slice(0, 4).map((item) => ({ ...item, project_id: \"exact\" })),\n    ...Array.from({ length: 105 }, (_, index) =>\n      event(\n        `large_${String(index).padStart(3, \"0\")}`,\n        new Date(Date.UTC(2026, 0, 15, 12, 0, index))\n          .toISOString()\n          .replace(\".000Z\", \".123456Z\"),\n        \"large\"\n      )\n    ),\n    // Reverse ID order makes timestamp precision observable in the tests.\n    event(\"precise_a\", \"2026-01-15T12:00:00.123999Z\", \"precision\"),\n    event(\"precise_z\", \"2026-01-15T12:00:00.123001Z\", \"precision\"),\n    event(\"other_1\", \"2026-01-15T12:00:00.123456Z\", \"other\"),\n    event(\"other_2\", \"2026-01-15T11:59:59.123456Z\", \"other\"),\n    event(\"private_1\", \"2026-01-15T12:00:00.123456Z\", \"private\", \"tenant_b\"),\n    event(\"private_2\", \"2026-01-15T11:59:59.123456Z\", \"private\", \"tenant_b\"),\n  ];\n  return {\n    sessions,\n    projects,\n    events,\n    signingKey: randomBytes(32),\n    tokenA,\n    tokenB,\n  };\n}",
+            "test(\"five-event traversal crosses a timestamp tie and replays the same continuation\", async () => {\n  const expected = [\"evt_105\", \"evt_104\", \"evt_103\", \"evt_102\", \"evt_101\"];\n  const pages = await traverse(\"feed\", 2, expected);\n  assert.deepEqual(pages.map(ids), [\n    [\"evt_105\", \"evt_104\"],\n    [\"evt_103\", \"evt_102\"],\n    [\"evt_101\"],\n  ]);\n  assert.equal(pages.length, 3);\n  assert.ok(pages[0].next_cursor);\n  assert.ok(pages[1].next_cursor);\n  assert.equal(pages[2].next_cursor, null);\n  const replay = await request(\"feed\", {\n    limit: \"2\",\n    cursor: pages[0].next_cursor,\n  });\n  assert.deepEqual(replay.body.items, pages[1].items);\n  const next = await request(\"feed\", {\n    limit: \"2\",\n    cursor: replay.body.next_cursor,\n  });\n  assert.deepEqual(next.body.items, pages[2].items);\n  assert.equal(next.body.next_cursor, null);\n  console.log(\n    JSON.stringify({\n      fixture: \"five-event-tie\",\n      pages: pages.map(ids),\n      requests: pages.length,\n      replay: ids(replay.body),\n    })\n  );\n});\n\ntest(\"the same tie group traverses correctly with limit three\", async () => {\n  const pages = await traverse(\"feed\", 3, [\n    \"evt_105\",\n    \"evt_104\",\n    \"evt_103\",\n    \"evt_102\",\n    \"evt_101\",\n  ]);\n  assert.deepEqual(pages.map(ids), [\n    [\"evt_105\", \"evt_104\", \"evt_103\"],\n    [\"evt_102\", \"evt_101\"],\n  ]);\n});\n\ntest(\"timestamp ordering and continuation preserve submillisecond precision\", async () => {\n  const pages = await traverse(\"precision\", 1, [\"precise_a\", \"precise_z\"]);\n  assert.equal(pages[0].items[0].created_at, \"2026-01-15T12:00:00.123999Z\");\n  assert.equal(pages[1].items[0].created_at, \"2026-01-15T12:00:00.123001Z\");\n});\n\ntest(\"omitted, minimum, and maximum limits return 25, 1, and 100 of 105 events\", async () => {\n  for (const [parameters, expected] of [\n    [{}, 25],\n    [{ limit: \"1\" }, 1],\n    [{ limit: \"100\" }, 100],\n  ] as [Record<string, string>, number][]) {\n    const result = await request(\"large\", parameters);\n    assert.equal(result.status, 200);\n    assert.equal(result.body.items.length, expected);\n    assert.ok(result.body.next_cursor);\n  }\n  const pages = await traverse(\n    \"large\",\n    100,\n    Array.from(\n      { length: 105 },\n      (_, index) => `large_${String(104 - index).padStart(3, \"0\")}`\n    )\n  );\n  assert.deepEqual(\n    pages.map((page) => page.items.length),\n    [100, 5]\n  );\n});\n\ntest(\"invalid and repeated limits return the documented generic error\", async (context) => {\n  for (const limit of [\n    \"0\",\n    \"101\",\n    \"-1\",\n    \"1.5\",\n    \"many\",\n    \"\",\n    \"1e2\",\n    \"Infinity\",\n  ]) {\n    await context.test(`limit ${JSON.stringify(limit)}`, async () => {\n      const result = await request(\"feed\", { limit });\n      assert.equal(result.status, 400);\n      assert.deepEqual(\n        result.body,\n        expectedError(\n          \"invalid_limit\",\n          \"Limit must be an integer from 1 through 100.\"\n        )\n      );\n    });\n  }\n  const repeated = await request(\"feed\", [\n    [\"limit\", \"1\"],\n    [\"limit\", \"2\"],\n  ]);\n  assert.equal(repeated.status, 400);\n});\n\ntest(\"empty, partial, and exactly full final pages have no continuation\", async () => {\n  assert.deepEqual((await request(\"empty\")).body, {\n    items: [],\n    next_cursor: null,\n  });\n  const partial = await traverse(\"feed\", 2, [\n    \"evt_105\",\n    \"evt_104\",\n    \"evt_103\",\n    \"evt_102\",\n    \"evt_101\",\n  ]);\n  assert.equal(partial.at(-1).items.length, 1);\n  const exact = await traverse(\"exact\", 2, [\n    \"evt_105\",\n    \"evt_104\",\n    \"evt_103\",\n    \"evt_102\",\n  ]);\n  assert.deepEqual(\n    exact.map((page) => page.items.length),\n    [2, 2]\n  );\n  assert.equal(exact[1].next_cursor, null);\n});\n\ntest(\"authentication precedes malformed and wrong-scope cursor or limit validation\", async () => {\n  const privateCursor = (\n    await request(\"private\", { limit: \"1\" }, fixtures.tokenB)\n  ).body.next_cursor;\n  for (const token of [null, \"invalid_session\"]) {\n    for (const parameters of [\n      { cursor: \"broken\" },\n      { cursor: privateCursor },\n      { limit: \"0\", cursor: \"broken\" },\n    ] as Record<string, string>[]) {\n      const result = await request(\"feed\", parameters, token);\n      assert.equal(result.status, 401);\n      assert.deepEqual(result.body, unauthenticated);\n    }\n  }\n});\n\ntest(\"inaccessible and nonexistent projects return identical 404 before cursor validation\", async () => {\n  const ownCursor = (await request(\"feed\", { limit: \"1\" })).body.next_cursor;\n  for (const project of [\"private\", \"missing\"]) {\n    for (const parameters of [\n      {},\n      { cursor: \"broken\" },\n      { cursor: ownCursor },\n      { limit: \"0\", cursor: \"broken\" },\n    ] as Record<string, string>[]) {\n      const result = await request(project, parameters);\n      assert.equal(result.status, 404);\n      assert.deepEqual(result.body, notFound);\n    }\n  }\n});\n\ntest(\"a valid cursor from another project in the same tenant is invalid on an authorized feed\", async () => {\n  const cursor = (await request(\"other\", { limit: \"1\" })).body.next_cursor;\n  assert.ok(cursor);\n  const result = await request(\"feed\", { cursor });\n  assert.equal(result.status, 400);\n  assert.deepEqual(result.body, invalidCursor);\n});\n\ntest(\"a valid cursor from another tenant is invalid on an authorized feed\", async () => {\n  const cursor = (await request(\"private\", { limit: \"1\" }, fixtures.tokenB))\n    .body.next_cursor;\n  assert.ok(cursor);\n  const result = await request(\"feed\", { cursor });\n  assert.equal(result.status, 400);\n  assert.deepEqual(result.body, invalidCursor);\n});\n\ntest(\"undecodable, empty, tampered, and repeated cursor tokens return the same closed error\", async () => {\n  const cursor = (await request(\"feed\", { limit: \"1\" })).body.next_cursor;\n  const [payload, signature] = cursor.split(\".\");\n  const tampered = `${payload}.${signature[0] === \"A\" ? \"B\" : \"A\"}${signature.slice(1)}`;\n  for (const token of [\n    \"broken\",\n    \"\",\n    \"%%%.___\",\n    \"a.b.c\",\n    \"x\".repeat(2049),\n    tampered,\n  ]) {\n    const result = await request(\"feed\", { cursor: token });\n    assert.equal(result.status, 400);\n    assert.deepEqual(result.body, invalidCursor);\n  }\n  const result = await request(\"feed\", [\n    [\"cursor\", cursor],\n    [\"cursor\", cursor],\n  ]);\n  assert.equal(result.status, 400);\n  assert.deepEqual(result.body, invalidCursor);\n});\n\ntest(\"signed structurally invalid payloads and unsupported versions are rejected\", async (context) => {\n  const valid = {\n    version: 1,\n    tenant_id: \"tenant_a\",\n    project_id: \"feed\",\n    created_at: \"2026-01-15T12:00:02.123456Z\",\n    id: \"evt_104\",\n  };\n  const missing: Partial<typeof valid> = { ...valid };\n  delete missing.id;\n  const cases: [string, unknown][] = [\n    [\"missing ID\", missing],\n    [\"number ID\", { ...valid, id: 104 }],\n    [\"empty ID\", { ...valid, id: \"\" }],\n    [\"number timestamp\", { ...valid, created_at: 0 }],\n    [\"invalid date\", { ...valid, created_at: \"2026-02-30T12:00:00Z\" }],\n    [\"unsupported version\", { ...valid, version: 2 }],\n    [\"extra field\", { ...valid, extra: true }],\n    [\"wrong tenant type\", { ...valid, tenant_id: 1 }],\n    [\"wrong project type\", { ...valid, project_id: null }],\n    [\"null payload\", null],\n    [\"array payload\", []],\n    [\"invalid JSON\", \"not-json\"],\n  ];\n  for (const [name, payload] of cases) {\n    await context.test(name, async () => {\n      const result = await request(\"feed\", { cursor: signFixture(payload) });\n      assert.equal(result.status, 400);\n      assert.deepEqual(result.body, invalidCursor);\n    });\n  }\n});\n\ntest(\"every serialized event omits stored tenant, project, and raw payload fields\", async () => {\n  const result = await request(\"feed\", { limit: \"100\" });\n  assert.equal(result.status, 200);\n  for (const item of result.body.items) {\n    assert.deepEqual(Object.keys(item).sort(), [\n      \"created_at\",\n      \"id\",\n      \"summary\",\n      \"type\",\n    ]);\n  }\n  assert.ok(\n    fixtures.events.some((event) => event.internal_note && event.raw_payload)\n  );\n});\n\ntest(\"the schema oracle rejects extra, missing, incorrectly typed, and malformed public fields\", () => {\n  const schema = specification.components.schemas.EventPage;\n  const page = {\n    items: [\n      {\n        id: \"evt_1\",\n        created_at: \"2026-01-15T12:00:00.123456Z\",\n        type: \"deployment\",\n        summary: \"Synthetic\",\n      },\n    ],\n    next_cursor: null,\n  };\n  assert.ok(conforms(page, schema));\n  assert.equal(conforms({ ...page, tenant_id: \"tenant_a\" }, schema), false);\n  assert.equal(\n    conforms(\n      { ...page, items: [{ ...page.items[0], raw_payload: {} }] },\n      schema\n    ),\n    false\n  );\n  assert.equal(conforms({ items: page.items }, schema), false);\n  assert.equal(conforms({ ...page, next_cursor: \"\" }, schema), false);\n  assert.equal(\n    conforms({ ...page, items: [{ ...page.items[0], id: 1 }] }, schema),\n    false\n  );\n  assert.equal(\n    conforms(\n      { ...page, items: [{ ...page.items[0], created_at: \"yesterday\" }] },\n      schema\n    ),\n    false\n  );\n  const errorSchema = specification.components.schemas.InvalidCursor;\n  assert.equal(\n    conforms(\n      { error: { ...invalidCursor.error, stack: \"internal\" } },\n      errorSchema\n    ),\n    false\n  );\n  assert.equal(\n    conforms(\n      { error: { ...invalidCursor.error, message: \"tenant_a\" } },\n      errorSchema\n    ),\n    false\n  );\n});\n\ntest(\"the existing project-detail route preserves access and ignores pagination parameters\", async () => {\n  const own = await request(\n    \"feed\",\n    { cursor: \"broken\", limit: \"0\" },\n    fixtures.tokenA,\n    true\n  );\n  assert.equal(own.status, 200);\n  assert.deepEqual(own.body, { id: \"feed\", name: \"Activity feed\" });\n  const inaccessible = await request(\"private\", {}, fixtures.tokenA, true);\n  assert.equal(inaccessible.status, 404);\n  assert.deepEqual(inaccessible.body, notFound);\n  const unauthenticatedResult = await request(\"feed\", {}, null, true);\n  assert.equal(unauthenticatedResult.status, 401);\n  assert.deepEqual(unauthenticatedResult.body, unauthenticated);\n});\n\ntest(\"OpenAPI declares operation, limit boundaries, signed cursor, and response statuses\", () => {\n  assert.equal(specification.openapi, \"3.1.0\");\n  const operation = specification.paths[\"/v1/projects/{project_id}/events\"].get;\n  assert.equal(operation.operationId, \"listProjectEvents\");\n  const limit = operation.parameters.find(\n    (parameter: { name: string }) => parameter.name === \"limit\"\n  ).schema;\n  assert.deepEqual(limit, {\n    type: \"integer\",\n    minimum: 1,\n    maximum: 100,\n    default: 25,\n  });\n  assert.deepEqual(Object.keys(operation.responses).sort(), [\n    \"200\",\n    \"400\",\n    \"401\",\n    \"404\",\n  ]);\n  assert.equal(\n    specification.components.securitySchemes.session.scheme,\n    \"bearer\"\n  );\n});",
+            "mkdirSync(output, { recursive: true });\nconst states = [];\nfor (const [name, arguments_] of [\n  [\"red\", [\"--seeded\"]],\n  [\"green\", []],\n]) {\n  const result = spawnSync(\n    process.execPath,\n    [\n      \"--experimental-strip-types\",\n      resolve(directory, \"test.ts\"),\n      ...arguments_,\n    ],\n    {\n      cwd: directory,\n      encoding: \"utf8\",\n      timeout: 30_000,\n    }\n  );\n  writeFileSync(\n    resolve(output, `${name}.log`),\n    `${result.stdout ?? \"\"}${result.stderr ?? \"\"}`\n  );\n  states.push({\n    name,\n    command: `node --experimental-strip-types test.ts${arguments_.length ? \" --seeded\" : \"\"}`,\n    exit_code: result.status,\n    signal: result.signal,\n    error: result.error?.message ?? null,\n  });\n}\nconst sources = Object.fromEntries(\n  readdirSync(directory, { withFileTypes: true })\n    .filter((entry) => entry.isFile())\n    .map((entry) => [\n      entry.name,\n      createHash(\"sha256\")\n        .update(readFileSync(resolve(directory, entry.name)))\n        .digest(\"hex\"),\n    ])\n);\nconst observed = { red: await observe(true), green: await observe(false) };\nwriteJson(\"observed-http.json\", observed);\nwriteJson(\"run-manifest.json\", {\n  execution: \"Synthetic loopback HTTP fixture; no external service\",\n  recorded_at: new Date().toISOString(),\n  node: process.version,\n  minimum_node: \"22.6.0\",\n  dependencies: \"Node standard library only; no install step\",\n  baseline:\n    \"Deliberately seeded timestamp-only continuation; not a historical customer defect\",\n  correction:\n    \"Descending timestamp-and-ID tuple continuation using full fractional precision\",\n  source_sha256: sources,\n  states,\n});\nif (\n  states[0].exit_code === null ||\n  states[0].exit_code === 0 ||\n  states[1].exit_code !== 0\n) {\n  throw new Error(\n    \"Expected the unchanged tests to fail on the seeded baseline and pass on the corrected implementation. Inspect red.log and green.log.\"\n  );\n}\nconsole.log(\n  JSON.stringify(\n    {\n      execution: \"synthetic-loopback-http\",\n      red_exit: states[0].exit_code,\n      green_exit: states[1].exit_code,\n      green_pages: observed.green.pages.map((page) =>\n        page.body.items.map((item: { id: string }) => item.id)\n      ),\n      evidence_directory: output,\n    },\n    null,\n    2\n  )\n);",
             "Criterion / test: [specific behavior and test location]\nEnvironment: [published setup reference; runtime, database and dependency versions]\nBefore: [revision + test-only diff ID; command; exit code; observed assertion; log path]\nAfter: [final revision or base + diff ID; command; exit code; observed assertion; log path]\nStatus: [pass / fail / blocked / not run]\nLimits / reviewer action: [untested behavior, blocker, or decision required]",
             "Title: Add cursor pagination for project events\nIssue: API-142\nBase: [branch and commit]\nTested state: [head commit, or base commit plus attached diff identifier]\n\nChanges\n- Add the project-events endpoint using the existing project access helper.\n- Reuse signed cursors scoped to tenant and project.\n- Add contract tests and update the OpenAPI operation.\n\nAcceptance evidence\n- [One row per criterion above: test, observed result, and log reference.]\n\nValidation\n- Before edits: [command, result, and log reference for each baseline check].\n- New tests against original code: [result, or not run with reason].\n- After edits: [command, result, and log reference for each required check].\n- CI: [check links and actual states, or not available].\n- Remaining checks: [specific checks and blockers, or none with supporting evidence].\n\nReviewer focus\n- [Highest-risk behavior and unresolved criteria.]\n\nRemaining risk and rollback\n- [Observed limitations; distinguish them from untested assumptions.]\n- [How this change can be reverted and whether any callers depend on it.]",
             "Address this review comment in the current change:\n\"Repeat the five-event traversal with limit=3; assert pages\n[evt_105, evt_104, evt_103] and [evt_102, evt_101], then a null cursor.\"\n\nAdd the regression test and change the implementation only if it exposes a\nfailure. Rerun the focused endpoint tests and any other required checks affected\nby the edit. Update the evidence table with the tested state and actual results.\nKeep the same scope. Do not merge or deploy."
