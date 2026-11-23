@@ -1,6 +1,6 @@
 [
   {
-    "index": 74,
+    "index": 76,
     "slug": "calibrate-assessments",
     "titleTh": "ปรับมาตรฐานการประเมินให้สอดคล้องกัน",
     "titleEn": "Calibrate assessments",
@@ -28,7 +28,7 @@
     "checkTh": "ห้ามให้ AI กำหนดหรือเปลี่ยนเกรด ทุกข้อสังเกตต้องผ่านการตัดสินของคณาจารย์"
   },
   {
-    "index": 75,
+    "index": 77,
     "slug": "finance-model-cleanup",
     "titleTh": "จัดระเบียบและตรวจโมเดลการเงิน",
     "titleEn": "Clean and review a financial model",
@@ -56,7 +56,7 @@
     "checkTh": "ห้ามเปลี่ยน Business assumption โดยไม่ได้อนุมัติ และให้ Finance owner ตรวจสูตรกับผลลัพธ์สำคัญทุกจุด"
   },
   {
-    "index": 76,
+    "index": 78,
     "slug": "create-classroom-materials-pack",
     "titleTh": "สร้างชุดสื่อการสอน",
     "titleEn": "Create a classroom materials pack",
@@ -84,7 +84,7 @@
     "checkTh": "เก็บทุกไฟล์เป็น Draft จนกว่าครูจะตรวจความถูกต้อง Accessibility ภาษา และความสอดคล้องกับนโยบายครบถ้วน"
   },
   {
-    "index": 77,
+    "index": 79,
     "slug": "create-lesson-deck",
     "titleTh": "สร้างสไลด์บทเรียน",
     "titleEn": "Create a lesson deck",
@@ -112,7 +112,7 @@
     "checkTh": "ให้ผู้สอนตรวจความถูกต้อง ลำดับการเรียน การเข้าถึง และสิทธิ์ใช้รูปก่อนนำไปสอน"
   },
   {
-    "index": 78,
+    "index": 80,
     "slug": "stalled-deal-diagnosis",
     "titleTh": "หาสาเหตุที่ดีลหยุดชะงัก",
     "titleEn": "Diagnose a stalled deal",
@@ -140,7 +140,7 @@
     "checkTh": "ให้เจ้าของดีลยืนยันหลักฐานและอนุมัติข้อความทุกครั้งก่อนติดต่อลูกค้าหรือแก้ CRM"
   },
   {
-    "index": 79,
+    "index": 81,
     "slug": "business-impact-readout",
     "titleTh": "วัดผลกระทบทางธุรกิจ",
     "titleEn": "Measure business impact",
@@ -168,7 +168,7 @@
     "checkTh": "ให้นักวิเคราะห์หรือเจ้าของการทดลองตรวจตัวเลข วิธีคำนวณ และระดับความมั่นใจก่อนใช้ตัดสินใจ"
   },
   {
-    "index": 80,
+    "index": 68,
     "slug": "scenario-tradeoff-model",
     "titleTh": "จำลองสถานการณ์และเปรียบเทียบ Trade-off เชิงกลยุทธ์",
     "titleEn": "Model strategic scenarios and tradeoffs",
@@ -196,7 +196,7 @@
     "checkTh": "ให้ผู้รับผิดชอบข้อมูลยืนยันสมมติฐานและต้นทุนทุกข้อก่อนนำผลเปรียบเทียบเข้าที่ประชุม"
   },
   {
-    "index": 81,
+    "index": 82,
     "slug": "organize-lesson-unit-folder",
     "titleTh": "จัดระเบียบโฟลเดอร์บทเรียนหรือหน่วยการเรียน",
     "titleEn": "Organize a lesson or unit folder",
@@ -224,7 +224,7 @@
     "checkTh": "ตรวจว่าไม่มีไฟล์ถูกลบ ลิงก์ยังใช้ได้ และไฟล์ฉบับปัจจุบันยังค้นพบง่ายหลังจัดระเบียบ"
   },
   {
-    "index": 82,
+    "index": 83,
     "slug": "organize-semester-workspace",
     "titleTh": "จัดระเบียบพื้นที่ทำงานตลอดภาคเรียน",
     "titleEn": "Organize a semester workspace",
@@ -252,7 +252,7 @@
     "checkTh": "ตรวจทุกกำหนดส่งกับเอกสารทางการและอย่าเลือกวันที่เองเมื่อพบข้อมูลขัดแย้ง"
   },
   {
-    "index": 83,
+    "index": 84,
     "slug": "plan-budget-and-schedule",
     "titleTh": "วางแผนงบประมาณและตารางเวลา",
     "titleEn": "Plan a budget and schedule",
@@ -280,7 +280,7 @@
     "checkTh": "ตรวจยอดและวันครบกำหนดจากแหล่งข้อมูลต้นทาง พร้อมลบเลขบัญชีและข้อมูลการเงินที่ไม่จำเป็นก่อนอัปโหลด"
   },
   {
-    "index": 84,
+    "index": 85,
     "slug": "prepare-committee-packet",
     "titleTh": "เตรียมชุดเอกสารสำหรับคณะกรรมการ",
     "titleEn": "Prepare a committee packet",
@@ -308,7 +308,7 @@
     "checkTh": "ตรวจ citation กฎเกณฑ์ที่เกี่ยวข้อง ข้อมูลลับ และการนำเสนอมุมมองที่เห็นต่างอย่างเป็นธรรมก่อนแจกเอกสาร"
   },
   {
-    "index": 85,
+    "index": 86,
     "slug": "refresh-forecast-and-plan",
     "titleTh": "อัปเดตประมาณการและแผน",
     "titleEn": "Refresh a forecast and plan",
@@ -336,7 +336,7 @@
     "checkTh": "ให้เจ้าของแผนตรวจสูตร ลิงก์ข้อมูล และอนุมัติสมมติฐานที่เปลี่ยนทุกข้อก่อนแชร์ forecast"
   },
   {
-    "index": 86,
+    "index": 87,
     "slug": "strategic-account-plan",
     "titleTh": "อัปเดตแผนบริหารลูกค้ารายสำคัญ",
     "titleEn": "Refresh a strategic account plan",
@@ -364,7 +364,7 @@
     "checkTh": "ให้ account owner ยืนยันข้อมูลและเนื้อหาที่ใช้กับลูกค้าได้ก่อนแก้ CRM หรือส่งต่อภายนอก"
   },
   {
-    "index": 87,
+    "index": 88,
     "slug": "refresh-course-materials",
     "titleTh": "ปรับปรุงสื่อการสอน",
     "titleEn": "Refresh course materials",
@@ -392,7 +392,7 @@
     "checkTh": "ให้ผู้สอนตรวจแหล่งอ้างอิง นโยบาย การเข้าถึง และทุกข้อเสนอที่ต้องใช้ดุลยพินิจทางวิชาการ"
   },
   {
-    "index": 88,
+    "index": 69,
     "slug": "revise-lesson-package",
     "titleTh": "แก้ไขชุดสื่อบทเรียน",
     "titleEn": "Revise a lesson package",

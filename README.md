@@ -1,6 +1,6 @@
 # Codex Field Guide — 121 Use Cases | TH / EN
 
-Web presentation สองภาษา ไทย/อังกฤษ ที่สรุป use case ทั้งหมด 121 รายการจาก [OpenAI Learn: Use cases](https://learn.chatgpt.com/use-cases) ณ วันที่ 16 พฤศจิกายน 2026 แต่ละ use case มีสไลด์เฉพาะ พร้อม workflow 4 ขั้น, Prompt เริ่มต้น, Human checkpoint และลิงก์กลับไปยัง official source
+Web presentation สองภาษา ไทย/อังกฤษ ที่สรุป use case ทั้งหมด 121 รายการจาก [OpenAI Learn: Use cases](https://learn.chatgpt.com/use-cases) ณ วันที่ 23 พฤศจิกายน 2026 แต่ละ use case มีสไลด์เฉพาะ พร้อม workflow 4 ขั้น, Prompt เริ่มต้น, Human checkpoint และลิงก์กลับไปยัง official source
 
 > หน้า official รวมทั้ง ChatGPT และ Codex workflows งานนี้จึงคงชื่อเครื่องมือในแต่ละ use case ให้ตรงกับต้นฉบับ แม้ชื่อ presentation จะเน้น Codex
 
