@@ -1,6 +1,6 @@
 {
   "source": "https://learn.chatgpt.com/use-cases",
-  "retrievedAt": "2026-11-16T02:08:24Z",
+  "retrievedAt": "2026-11-23T02:59:28Z",
   "count": 121,
   "useCases": [
     {
@@ -2384,46 +2384,6 @@
     },
     {
       "index": 45,
-      "slug": "monthly-business-review-narrative",
-      "title": "Prepare a business review",
-      "tagline": "Turn recurring KPI, close, and forecast inputs into a sourced performance narrative.",
-      "tags": [
-        "Data",
-        "Integrations"
-      ],
-      "url": "https://learn.chatgpt.com/use-cases/monthly-business-review-narrative",
-      "canonicalUrl": "https://learn.chatgpt.com/use-cases/monthly-business-review-narrative",
-      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/monthly-business-review-narrative.webp",
-      "summary": "Give ChatGPT KPI dashboards, close workbooks, metric definitions, forecast updates, prior reviews, and owner notes, then ask it to explain material changes, variances, anomalies, risks, data-quality issues, and follow-ups in a review-ready narrative.",
-      "difficulty": "Intermediate",
-      "time": "30m",
-      "bestFor": [
-        "Weekly, monthly, or quarterly business reviews for product, operations, growth, or finance teams.",
-        "Reviews that combine KPI dashboards, workbooks, forecasts, prior reporting, and owner notes.",
-        "Teams that need material changes, anomalies, and every important figure tied to a source before leadership review."
-      ],
-      "starterPrompt": "Use $documents and $spreadsheets to prepare the [weekly, monthly, or quarterly] business review for [business or team].\n\nUse the KPI dashboard, metric definitions, close workbook, revenue and expense tables, forecast update, prior review, and owner notes I provide. If any inputs are in connected plugins, use only the exact @google-drive files or @slack threads I name.\n\nCreate an editable document with a short leadership summary, material KPI changes, key variances, anomalies, changes since forecast, risks, data-quality checks, review questions, and follow-ups by owner. Include supporting charts where useful. Cite the workbook tab, dashboard, or source note behind every material number. Do not fill gaps with invented figures; list unsupported claims and missing inputs for review.",
-      "workflow": [
-        {
-          "title": "Build from the recurring review record",
-          "paragraphs": [
-            "A business review should explain what changed, why it changed, and what the team needs to decide. ChatGPT can assemble the first draft from KPI dashboards, metric definitions, close workbooks, forecast updates, prior reviews, and owner notes while keeping the source trail visible.",
-            "Name the exact files, dashboards, and conversations ChatGPT should use. Include the reporting period, audience, materiality thresholds, prior forecast, and any required sections. Avoid broad searches across a connected workspace when the review should rely on a controlled set of approved inputs.",
-            "A useful draft separates supported conclusions from questions that still need an owner. It should call out material KPI movement and changes since forecast, explain risks in plain language, and make follow-ups easy to assign."
-          ],
-          "items": [
-            "Define the review period, audience, and materiality threshold.",
-            "Attach the KPI dashboard, metric definitions, relevant workbooks, forecast update, prior review, and owner notes.",
-            "Ask ChatGPT to check data quality and trace material numbers before drafting.",
-            "Run the starter prompt and review changes, variances, anomalies, risks, assumptions, and follow-ups.",
-            "Confirm the source links and owner actions before the review enters leadership discussion."
-          ]
-        }
-      ],
-      "image": "assets/use-cases/monthly-business-review-narrative.webp"
-    },
-    {
-      "index": 46,
       "slug": "cfo-board-reporting-pack",
       "title": "Prepare a leadership reporting pack",
       "tagline": "Turn company progress, financial metrics, and owner updates into a source-backed reporting pack.",
@@ -2462,6 +2422,46 @@
         }
       ],
       "image": "assets/use-cases/cfo-board-reporting-pack.webp"
+    },
+    {
+      "index": 46,
+      "slug": "monthly-business-review-narrative",
+      "title": "Prepare a business review",
+      "tagline": "Turn recurring KPI, close, and forecast inputs into a sourced performance narrative.",
+      "tags": [
+        "Data",
+        "Integrations"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/monthly-business-review-narrative",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/monthly-business-review-narrative",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/monthly-business-review-narrative.webp",
+      "summary": "Give ChatGPT KPI dashboards, close workbooks, metric definitions, forecast updates, prior reviews, and owner notes, then ask it to explain material changes, variances, anomalies, risks, data-quality issues, and follow-ups in a review-ready narrative.",
+      "difficulty": "Intermediate",
+      "time": "30m",
+      "bestFor": [
+        "Weekly, monthly, or quarterly business reviews for product, operations, growth, or finance teams.",
+        "Reviews that combine KPI dashboards, workbooks, forecasts, prior reporting, and owner notes.",
+        "Teams that need material changes, anomalies, and every important figure tied to a source before leadership review."
+      ],
+      "starterPrompt": "Use $documents and $spreadsheets to prepare the [weekly, monthly, or quarterly] business review for [business or team].\n\nUse the KPI dashboard, metric definitions, close workbook, revenue and expense tables, forecast update, prior review, and owner notes I provide. If any inputs are in connected plugins, use only the exact @google-drive files or @slack threads I name.\n\nCreate an editable document with a short leadership summary, material KPI changes, key variances, anomalies, changes since forecast, risks, data-quality checks, review questions, and follow-ups by owner. Include supporting charts where useful. Cite the workbook tab, dashboard, or source note behind every material number. Do not fill gaps with invented figures; list unsupported claims and missing inputs for review.",
+      "workflow": [
+        {
+          "title": "Build from the recurring review record",
+          "paragraphs": [
+            "A business review should explain what changed, why it changed, and what the team needs to decide. ChatGPT can assemble the first draft from KPI dashboards, metric definitions, close workbooks, forecast updates, prior reviews, and owner notes while keeping the source trail visible.",
+            "Name the exact files, dashboards, and conversations ChatGPT should use. Include the reporting period, audience, materiality thresholds, prior forecast, and any required sections. Avoid broad searches across a connected workspace when the review should rely on a controlled set of approved inputs.",
+            "A useful draft separates supported conclusions from questions that still need an owner. It should call out material KPI movement and changes since forecast, explain risks in plain language, and make follow-ups easy to assign."
+          ],
+          "items": [
+            "Define the review period, audience, and materiality threshold.",
+            "Attach the KPI dashboard, metric definitions, relevant workbooks, forecast update, prior review, and owner notes.",
+            "Ask ChatGPT to check data quality and trace material numbers before drafting.",
+            "Run the starter prompt and review changes, variances, anomalies, risks, assumptions, and follow-ups.",
+            "Confirm the source links and owner actions before the review enters leadership discussion."
+          ]
+        }
+      ],
+      "image": "assets/use-cases/monthly-business-review-narrative.webp"
     },
     {
       "index": 47,
@@ -3591,6 +3591,90 @@
     },
     {
       "index": 68,
+      "slug": "scenario-tradeoff-model",
+      "title": "Model strategic scenarios and tradeoffs",
+      "tagline": "Compare strategic paths with assumptions, risks, cost, timing, and impact.",
+      "tags": [
+        "Data",
+        "Knowledge Work"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/scenario-tradeoff-model",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/scenario-tradeoff-model",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/scenario-tradeoff-model.webp",
+      "summary": "Give ChatGPT a financial model, KPI dashboard, planning docs, market context, stakeholder notes, operational data, and decision criteria, then ask it to compare options and produce a reviewable tradeoff model.",
+      "difficulty": "Advanced",
+      "time": "1h",
+      "bestFor": [
+        "Strategic choices where leaders need comparable paths and explicit tradeoffs.",
+        "Planning decisions that combine cost, timing, operational capacity, and customer impact.",
+        "Teams that want a recommendation while keeping assumptions inspectable and changeable."
+      ],
+      "starterPrompt": "Compare strategic paths for [decision].\n\nUse the financial model, KPI dashboard, planning docs, market context, stakeholder notes, operational data, and decision criteria I provide. Create a scenario and tradeoff model with:\n\n- options and prioritization matrix\n- recommendation and rationale\n- cost and timing\n- risks and mitigations\n- ownership\n- customer or business impact\n- assumptions to inspect\n\nDo not overwrite the source model or treat unsupported assumptions as facts. Flag inputs that need approval.",
+      "workflow": [
+        {
+          "title": "Make the options comparable",
+          "paragraphs": [
+            "Scenario work is easier to review when every option uses the same assumptions and decision criteria. Give ChatGPT the model, KPI context, planning documents, operational data, and stakeholder constraints before it builds the comparison.",
+            "Keep the source model intact and save scenario outputs separately. The most useful result is not only a recommendation but also a clear explanation of which assumptions would change it.",
+            "Ask ChatGPT to vary the assumptions that matter most and show when the preferred option changes."
+          ],
+          "items": [
+            "State the decision, options, time horizon, and criteria.",
+            "Attach models, dashboards, planning docs, market context, and operational data.",
+            "Ask ChatGPT to identify assumptions that are shared, option-specific, or missing.",
+            "Run the starter prompt and review cost, timing, risk, ownership, and customer impact.",
+            "Change assumptions explicitly and compare the recommendation across scenarios."
+          ]
+        }
+      ],
+      "image": "assets/use-cases/scenario-tradeoff-model.webp"
+    },
+    {
+      "index": 69,
+      "slug": "revise-lesson-package",
+      "title": "Revise a lesson package",
+      "tagline": "Apply approved feedback consistently across connected files.",
+      "tags": [
+        "Integrations",
+        "Knowledge Work"
+      ],
+      "url": "https://learn.chatgpt.com/use-cases/revise-lesson-package",
+      "canonicalUrl": "https://learn.chatgpt.com/use-cases/revise-lesson-package",
+      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/revise-lesson-package.webp",
+      "summary": "Use ChatGPT with a current lesson folder, written or dictated feedback, approved files, and confirmation rules to create a revision plan, update connected materials, preserve prior versions, and return a verified change log.",
+      "difficulty": "Intermediate",
+      "time": "1h",
+      "bestFor": [
+        "Teachers revising a deck, guide, handout, and answer key together.",
+        "Feedback that must be applied consistently across several files.",
+        "Reviews that need an approval checkpoint, archive, and change log."
+      ],
+      "starterPrompt": "Use this feedback to revise the approved lesson files in this folder.\n\nFirst, show me a file-by-file change plan. After I approve it:\n- update the lesson deck, teacher guide, student handout, and answer key\n- preserve prior versions in Archive\n- verify that examples, directions, and answers still match\n- create a concise change log\n- list unresolved questions\n\nDo not change files outside the approved list.",
+      "workflow": [
+        {
+          "title": "Convert feedback into a change plan",
+          "paragraphs": [
+            "Gather the current lesson folder, the feedback, the approved file list, and any changes that require explicit confirmation. Distinguish requested changes from suggestions or open questions.",
+            "Ask ChatGPT to map each feedback item to the files and sections it would affect.",
+            "Review the file-by-file plan before allowing edits. Confirm which prior versions must be preserved and which source file controls shared content such as terminology, examples, or answers.",
+            "After approval, revise connected files in one coordinated pass.",
+            "Compare the updated deck, teacher guide, handout, and answer key. Check that:",
+            "Use the change log to support a final educator review. Do not treat requested edits as approved instructional or policy decisions unless the responsible reviewer confirms them."
+          ],
+          "items": [
+            "examples and answers still match",
+            "instructions use consistent terms",
+            "timing changes appear everywhere they should",
+            "source links remain intact",
+            "prior versions are archived",
+            "unresolved questions remain visible"
+          ]
+        }
+      ],
+      "image": "assets/use-cases/revise-lesson-package.webp"
+    },
+    {
+      "index": 70,
       "slug": "run-security-reviews-from-the-cli",
       "title": "Run security reviews from the CLI",
       "tagline": "Review selected code changes and inspect security evidence from your terminal.",
@@ -3653,7 +3737,7 @@
       "image": "assets/use-cases/run-security-reviews-from-the-cli.webp"
     },
     {
-      "index": 69,
+      "index": 71,
       "slug": "automate-security-scans-in-ci",
       "title": "Automate security scans in CI",
       "tagline": "Scan pull requests, commits to main, or your repository on a schedule.",
@@ -3718,7 +3802,7 @@
       "image": "assets/use-cases/automate-security-scans-in-ci.webp"
     },
     {
-      "index": 70,
+      "index": 72,
       "slug": "audit-course-section-consistency",
       "title": "Audit course section consistency",
       "tagline": "Compare shared courses while preserving instructor discretion.",
@@ -3762,7 +3846,7 @@
       "image": "assets/use-cases/audit-course-section-consistency.webp"
     },
     {
-      "index": 71,
+      "index": 73,
       "slug": "build-unit-plan-from-sources",
       "title": "Build a unit plan from source files",
       "tagline": "Turn standards, pacing, and prior lessons into a teachable sequence.",
@@ -3806,7 +3890,7 @@
       "image": "assets/use-cases/build-unit-plan-from-sources.webp"
     },
     {
-      "index": 72,
+      "index": 74,
       "slug": "variance-driver-bridge",
       "title": "Build a variance driver bridge",
       "tagline": "Explain movements across actuals, budget, and forecast with source-backed drivers.",
@@ -3846,7 +3930,7 @@
       "image": "assets/use-cases/variance-driver-bridge.webp"
     },
     {
-      "index": 73,
+      "index": 75,
       "slug": "build-interactive-lesson-resource",
       "title": "Build an interactive lesson resource",
       "tagline": "Turn an approved lesson package into a tested student experience.",
@@ -3890,7 +3974,7 @@
       "image": "assets/use-cases/build-interactive-lesson-resource.webp"
     },
     {
-      "index": 74,
+      "index": 76,
       "slug": "calibrate-assessments",
       "title": "Calibrate assessments",
       "tagline": "Review scoring patterns without assigning or changing grades.",
@@ -3934,7 +4018,7 @@
       "image": "assets/use-cases/calibrate-assessments.webp"
     },
     {
-      "index": 75,
+      "index": 77,
       "slug": "finance-model-cleanup",
       "title": "Clean and review a financial model",
       "tagline": "Check formulas, links, tie-outs, and assumptions before a high-stakes review.",
@@ -3974,7 +4058,7 @@
       "image": "assets/use-cases/finance-model-cleanup.webp"
     },
     {
-      "index": 76,
+      "index": 78,
       "slug": "create-classroom-materials-pack",
       "title": "Create a classroom materials pack",
       "tagline": "Produce aligned teaching, practice, and family materials.",
@@ -4017,7 +4101,7 @@
       "image": "assets/use-cases/create-classroom-materials-pack.webp"
     },
     {
-      "index": 77,
+      "index": 79,
       "slug": "create-lesson-deck",
       "title": "Create a lesson deck",
       "tagline": "Turn approved teaching materials into an editable presentation.",
@@ -4063,7 +4147,7 @@
       "image": "assets/use-cases/create-lesson-deck.webp"
     },
     {
-      "index": 78,
+      "index": 80,
       "slug": "stalled-deal-diagnosis",
       "title": "Diagnose a stalled deal",
       "tagline": "Find the real blocker and the next customer-facing move.",
@@ -4103,7 +4187,7 @@
       "image": "assets/use-cases/stalled-deal-diagnosis.webp"
     },
     {
-      "index": 79,
+      "index": 81,
       "slug": "business-impact-readout",
       "title": "Measure business impact",
       "tagline": "Turn experiment or launch results into a scale, change, or stop recommendation.",
@@ -4143,47 +4227,7 @@
       "image": "assets/use-cases/business-impact-readout.webp"
     },
     {
-      "index": 80,
-      "slug": "scenario-tradeoff-model",
-      "title": "Model strategic scenarios and tradeoffs",
-      "tagline": "Compare strategic paths with assumptions, risks, cost, timing, and impact.",
-      "tags": [
-        "Data",
-        "Knowledge Work"
-      ],
-      "url": "https://learn.chatgpt.com/use-cases/scenario-tradeoff-model",
-      "canonicalUrl": "https://learn.chatgpt.com/use-cases/scenario-tradeoff-model",
-      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/scenario-tradeoff-model.webp",
-      "summary": "Give ChatGPT a financial model, KPI dashboard, planning docs, market context, stakeholder notes, operational data, and decision criteria, then ask it to compare options and produce a reviewable tradeoff model.",
-      "difficulty": "Advanced",
-      "time": "1h",
-      "bestFor": [
-        "Strategic choices where leaders need comparable paths and explicit tradeoffs.",
-        "Planning decisions that combine cost, timing, operational capacity, and customer impact.",
-        "Teams that want a recommendation while keeping assumptions inspectable and changeable."
-      ],
-      "starterPrompt": "Compare strategic paths for [decision].\n\nUse the financial model, KPI dashboard, planning docs, market context, stakeholder notes, operational data, and decision criteria I provide. Create a scenario and tradeoff model with:\n\n- options and prioritization matrix\n- recommendation and rationale\n- cost and timing\n- risks and mitigations\n- ownership\n- customer or business impact\n- assumptions to inspect\n\nDo not overwrite the source model or treat unsupported assumptions as facts. Flag inputs that need approval.",
-      "workflow": [
-        {
-          "title": "Make the options comparable",
-          "paragraphs": [
-            "Scenario work is easier to review when every option uses the same assumptions and decision criteria. Give ChatGPT the model, KPI context, planning documents, operational data, and stakeholder constraints before it builds the comparison.",
-            "Keep the source model intact and save scenario outputs separately. The most useful result is not only a recommendation but also a clear explanation of which assumptions would change it.",
-            "Ask ChatGPT to vary the assumptions that matter most and show when the preferred option changes."
-          ],
-          "items": [
-            "State the decision, options, time horizon, and criteria.",
-            "Attach models, dashboards, planning docs, market context, and operational data.",
-            "Ask ChatGPT to identify assumptions that are shared, option-specific, or missing.",
-            "Run the starter prompt and review cost, timing, risk, ownership, and customer impact.",
-            "Change assumptions explicitly and compare the recommendation across scenarios."
-          ]
-        }
-      ],
-      "image": "assets/use-cases/scenario-tradeoff-model.webp"
-    },
-    {
-      "index": 81,
+      "index": 82,
       "slug": "organize-lesson-unit-folder",
       "title": "Organize a lesson or unit folder",
       "tagline": "Turn scattered teaching files into a clear, verified structure.",
@@ -4228,7 +4272,7 @@
       "image": "assets/use-cases/organize-lesson-unit-folder.webp"
     },
     {
-      "index": 82,
+      "index": 83,
       "slug": "organize-semester-workspace",
       "title": "Organize a semester workspace",
       "tagline": "Turn scattered course files and deadlines into one verified system.",
@@ -4271,7 +4315,7 @@
       "image": "assets/use-cases/organize-semester-workspace.webp"
     },
     {
-      "index": 83,
+      "index": 84,
       "slug": "plan-budget-and-schedule",
       "title": "Plan a budget and schedule",
       "tagline": "See time conflicts, workload clusters, bills, and budget together.",
@@ -4314,7 +4358,7 @@
       "image": "assets/use-cases/plan-budget-and-schedule.webp"
     },
     {
-      "index": 84,
+      "index": 85,
       "slug": "prepare-committee-packet",
       "title": "Prepare a committee packet",
       "tagline": "Turn governance context into a review-ready meeting packet.",
@@ -4358,7 +4402,7 @@
       "image": "assets/use-cases/prepare-committee-packet.webp"
     },
     {
-      "index": 85,
+      "index": 86,
       "slug": "refresh-forecast-and-plan",
       "title": "Refresh a forecast and plan",
       "tagline": "Update assumptions and compare base, upside, and downside plans.",
@@ -4399,7 +4443,7 @@
       "image": "assets/use-cases/refresh-forecast-and-plan.webp"
     },
     {
-      "index": 86,
+      "index": 87,
       "slug": "strategic-account-plan",
       "title": "Refresh a strategic account plan",
       "tagline": "Turn recent account activity into a current deal strategy pack.",
@@ -4439,7 +4483,7 @@
       "image": "assets/use-cases/strategic-account-plan.webp"
     },
     {
-      "index": 87,
+      "index": 88,
       "slug": "refresh-course-materials",
       "title": "Refresh course materials",
       "tagline": "Review a course as one connected system.",
@@ -4480,50 +4524,6 @@
         }
       ],
       "image": "assets/use-cases/refresh-course-materials.webp"
-    },
-    {
-      "index": 88,
-      "slug": "revise-lesson-package",
-      "title": "Revise a lesson package",
-      "tagline": "Apply approved feedback consistently across connected files.",
-      "tags": [
-        "Integrations",
-        "Knowledge Work"
-      ],
-      "url": "https://learn.chatgpt.com/use-cases/revise-lesson-package",
-      "canonicalUrl": "https://learn.chatgpt.com/use-cases/revise-lesson-package",
-      "imageUrl": "https://learn.chatgpt.com/codex/use-cases/revise-lesson-package.webp",
-      "summary": "Use ChatGPT with a current lesson folder, written or dictated feedback, approved files, and confirmation rules to create a revision plan, update connected materials, preserve prior versions, and return a verified change log.",
-      "difficulty": "Intermediate",
-      "time": "1h",
-      "bestFor": [
-        "Teachers revising a deck, guide, handout, and answer key together.",
-        "Feedback that must be applied consistently across several files.",
-        "Reviews that need an approval checkpoint, archive, and change log."
-      ],
-      "starterPrompt": "Use this feedback to revise the approved lesson files in this folder.\n\nFirst, show me a file-by-file change plan. After I approve it:\n- update the lesson deck, teacher guide, student handout, and answer key\n- preserve prior versions in Archive\n- verify that examples, directions, and answers still match\n- create a concise change log\n- list unresolved questions\n\nDo not change files outside the approved list.",
-      "workflow": [
-        {
-          "title": "Convert feedback into a change plan",
-          "paragraphs": [
-            "Gather the current lesson folder, the feedback, the approved file list, and any changes that require explicit confirmation. Distinguish requested changes from suggestions or open questions.",
-            "Ask ChatGPT to map each feedback item to the files and sections it would affect.",
-            "Review the file-by-file plan before allowing edits. Confirm which prior versions must be preserved and which source file controls shared content such as terminology, examples, or answers.",
-            "After approval, revise connected files in one coordinated pass.",
-            "Compare the updated deck, teacher guide, handout, and answer key. Check that:",
-            "Use the change log to support a final educator review. Do not treat requested edits as approved instructional or policy decisions unless the responsible reviewer confirms them."
-          ],
-          "items": [
-            "examples and answers still match",
-            "instructions use consistent terms",
-            "timing changes appear everywhere they should",
-            "source links remain intact",
-            "prior versions are archived",
-            "unresolved questions remain visible"
-          ]
-        }
-      ],
-      "image": "assets/use-cases/revise-lesson-package.webp"
     },
     {
       "index": 89,
@@ -5768,7 +5768,10 @@
             "The baseline command must exit with code 1 : the retry assertion observes two orders and one receipt instead of one of each. The regression command runs the same assertion against the corrected handler and must exit with code 0 .",
             "The final test command exercises the full matrix, including independent connections, database lock contention, and legacy-orphan quarantine.",
             "If your installation provides docker-compose , use that spelling in place of docker compose . Run these commands sequentially; the suite resets only its marked test schema.",
-            "This excerpt comes from main.ts in the download. Run the complete files after extracting the ZIP; the tests and fixture setup are included there.",
+            "For Ruby, use the complete Ruby sample project and install its dependencies using Ruby 3.3. Start PostgreSQL with the Compose setup in the ZIP archive. From the Ruby project directory, run bundle exec ruby codex-cloud/incident-to-tested-fix/main.rb baseline , then repeat with regression and fixed . These commands use the same disposable database and produce the expected failing and passing results; use them in place of the Node runner commands.",
+            "The TypeScript excerpt comes from main.ts in the ZIP.",
+            "The Ruby examples come from the linked Ruby sample project.",
+            "Run the complete files for the selected language with the supplied database fixture.",
             "Use these files as the packet outline:",
             "In this scenario, release.json identifies the example release SHA 4a1c9e7d2b6f8a0c3d5e7f9012a4b6c8d0e2f413 , deployed at 2026-09-22T11:58:00Z . The incident window is 12:03:00Z–12:05:00Z on the same day. The packet reports two internal orders associated with one provider event. When preparing your own packet, include confirmed impact counts and identify any estimates.",
             "The sanitized logs contain these correlated observations:",
@@ -5827,6 +5830,7 @@
           "codeBlocks": [
             "docker compose -p codex-incident-rehearsal up -d --wait postgres\ndocker compose -p codex-incident-rehearsal run --rm runner node --experimental-strip-types main.ts baseline\ndocker compose -p codex-incident-rehearsal run --rm runner node --experimental-strip-types main.ts regression\ndocker compose -p codex-incident-rehearsal run --rm runner\ndocker compose -p codex-incident-rehearsal down --volumes",
             "import type { Client } from \"pg\";\n\ntype IncidentEvent = {\n  provider: string;\n  accountId: string;\n  eventId: string;\n  payload: { type: string; orderId: string; amountCents: number };\n};\n\nasync function fixed(\n  client: Client,\n  input: IncidentEvent,\n  hook = async (_boundary: string) => {}\n) {\n  await assertNotHeld(client, input);\n  await hook(\"beforeClaim\");\n  await client.query(\"BEGIN ISOLATION LEVEL READ COMMITTED\");\n  let committed = false;\n  try {\n    const claimed = await client.query(\n      `INSERT INTO event_receipts(provider, account_id, event_id, payload_fingerprint)\n       VALUES ($1,$2,$3,$4)\n       ON CONFLICT (provider, account_id, event_id) DO NOTHING RETURNING event_id`,\n      [...key(input), fingerprint(input)]\n    );\n    trace(\"receipt-claim-result\", client, input, {\n      inserted: claimed.rowCount === 1,\n    });\n    if (claimed.rowCount === 1) {\n      await hook(\"afterClaim\");\n      await writeOrder(client, input);\n      await hook(\"afterOrder\");\n    } else {\n      // A new READ COMMITTED statement sees the winner after its commit.\n      await checkReceipt(client, input);\n    }\n    await client.query(\"COMMIT\");\n    committed = true;\n    trace(\"transaction-committed\", client, input);\n    await hook(\"afterCommit\");\n    trace(\"acknowledged\", client, input, acknowledgment);\n    return acknowledgment;\n  } catch (error) {\n    if (!committed) {\n      await client.query(\"ROLLBACK\");\n      trace(\"transaction-rolled-back-no-ack\", client, input);\n    } else {\n      trace(\"committed-response-lost-no-ack\", client, input);\n    }\n    throw error;\n  }\n}",
+            "def self.fixed(client, input, hook = ->(_boundary) {})\n  assert_not_held(client, input)\n  hook.call(\"beforeClaim\")\n  client.exec(\"BEGIN ISOLATION LEVEL READ COMMITTED\")\n  committed = false\n  begin\n    claimed = client.exec_params(<<~SQL, key(input) + [fingerprint(input)])\n      INSERT INTO event_receipts(provider, account_id, event_id, payload_fingerprint)\n      VALUES ($1,$2,$3,$4)\n      ON CONFLICT (provider, account_id, event_id) DO NOTHING RETURNING event_id\n    SQL\n    trace(\"receipt-claim-result\", client, input, inserted: claimed.ntuples == 1)\n    if claimed.ntuples == 1\n      hook.call(\"afterClaim\")\n      write_order(client, input)\n      hook.call(\"afterOrder\")\n    else\n      # A new READ COMMITTED statement sees the winner after its commit.\n      check_receipt(client, input)\n    end\n    client.exec(\"COMMIT\")\n    committed = true\n    trace(\"transaction-committed\", client, input)\n    hook.call(\"afterCommit\")\n    trace(\"acknowledged\", client, input, **ACK)\n    ACK\n  rescue\n    if committed\n      trace(\"committed-response-lost-no-ack\", client, input)\n    else\n      client.exec(\"ROLLBACK\")\n      trace(\"transaction-rolled-back-no-ack\", client, input)\n    end\n    raise\n  end\nend",
             "incidents/INC-DEMO-014/incident.md\nincidents/INC-DEMO-014/logs.ndjson\nincidents/INC-DEMO-014/release.json\nincidents/INC-DEMO-014/order-created.sanitized.json",
             "Criterion / test: [specific behavior and test location]\nEnvironment: [published setup reference; runtime, database and dependency versions]\nBefore: [revision + test-only diff ID; command; exit code; observed assertion; log path]\nAfter: [final revision or base + diff ID; command; exit code; observed assertion; log path]\nStatus: [pass / fail / blocked / not run]\nLimits / reviewer action: [untested behavior, blocker, or decision required]",
             "Review the patch against two concurrent deliveries and a retry after a worker failure. Show which behaviors the tests establish and which remain untested. Keep the change limited to this handler and its regression tests; update the handoff with any remaining risk.",
@@ -6262,7 +6266,10 @@
             "To verify your environment, put the files in your selected repository, prepare and publish an environment with a supported Node runtime, then run the commands in a new Cloud task and record its results.",
             "reproduce.ts saves red.log , green.log , observed-http.json , and run-manifest.json in the requested evidence directory. The manifest identifies the runtime, commands, exit codes, seeded defect, correction, and SHA-256 source hashes.",
             "It does not record session tokens or the signing key. Read README.md and openapi.json for the sample’s setup and public contract.",
-            "These excerpts come from the files in the download. Run the complete files after extracting the ZIP.",
+            "For Ruby, use the complete Ruby sample project with its Gemfile , lockfile, and codex-cloud directory intact. Install its dependencies using Ruby 3.3. From the Ruby project directory, run bundle exec ruby codex-cloud/api/main.rb , bundle exec ruby codex-cloud/test.rb --seeded , bundle exec ruby codex-cloud/test.rb , and bundle exec ruby codex-cloud/reproduce/main.rb ./evidence . The seeded test deliberately fails; the corrected test passes. These Ruby commands replace the TypeScript commands above.",
+            "The TypeScript excerpts come from the ZIP.",
+            "The Ruby examples come from the linked Ruby sample project.",
+            "Run the complete files for the selected language with the supplied database fixture.",
             "An issue link is useful only if Codex can read it. Paste or attach the relevant content when the source is unavailable. Include the following information with the starter prompt.",
             "For the sample, prepare Node 22.6 or later; the tests create their own test sessions and cursor-signing key and bind a temporary HTTP server to the loopback interface. For your own service, also prepare its dependencies, test configuration, and isolated services. Verify that its cursor helper can bind a cursor to the authenticated tenant and requested project before assigning this issue.",
             "Confirm the sample contract below matches your repository before implementation. A successful response is HTTP 200 with exactly { items, next_cursor } .",
@@ -6340,9 +6347,13 @@
             "node --version\nnode --experimental-strip-types api.ts\nnode --experimental-strip-types test.ts --seeded\nnode --experimental-strip-types test.ts\nnode --experimental-strip-types reproduce.ts ./evidence",
             "[evt_105, evt_104]\n[evt_103, evt_102]\n[evt_101]",
             "import { createFixtures } from \"./fixtures.ts\";\ntype Fixtures = ReturnType<typeof createFixtures>;\ntype EventKey = { created_at: string; id: string };\n\nexport function createApi({\n  sessions,\n  projects,\n  events,\n  signingKey,\n  seededBug = false,\n}: Fixtures & { seededBug?: boolean }) {\n  return createServer((request, response) => {\n    const send = (status: number, body: unknown) => {\n      response.writeHead(status, { \"content-type\": \"application/json\" });\n      response.end(JSON.stringify(body));\n    };\n    const fail = (code: string) => {\n      const [status, message] = errors[code];\n      send(status, { error: { code, message } });\n    };\n    // Authenticate, then authorize. Malformed parameters must not change these results.\n    const authorization = request.headers.authorization ?? \"\";\n    const bearer = /^Bearer ([A-Za-z0-9_-]+)$/.exec(authorization);\n    const tenantId = bearer ? sessions.get(bearer[1]) : undefined;\n    if (!tenantId) return fail(\"unauthenticated\");\n\n    const url = new URL(request.url ?? \"/\", \"http://127.0.0.1\");\n    const route = /^\\/v1\\/projects\\/([^/]+)(\\/events)?$/.exec(url.pathname);\n    let projectId;\n    try {\n      projectId = route ? decodeURIComponent(route[1]) : undefined;\n    } catch {\n      return fail(\"not_found\");\n    }\n    const project = projectId ? projects.get(projectId) : undefined;\n    if (\n      request.method !== \"GET\" ||\n      !route ||\n      !project ||\n      project.tenant_id !== tenantId\n    ) {\n      return fail(\"not_found\");\n    }\n    // Existing project-detail behavior remains independent of pagination parameters.\n    if (!route[2]) return send(200, { id: projectId, name: project.name });\n\n    const rawLimit = url.searchParams.get(\"limit\");\n    const limit = rawLimit === null ? 25 : Number(rawLimit);\n    if (\n      url.searchParams.getAll(\"limit\").length > 1 ||\n      (rawLimit !== null && !/^\\d+$/.test(rawLimit)) ||\n      !Number.isInteger(limit) ||\n      limit < 1 ||\n      limit > 100\n    ) {\n      return fail(\"invalid_limit\");\n    }\n    let cursor: EventKey | undefined;\n    if (url.searchParams.has(\"cursor\")) {\n      try {\n        if (url.searchParams.getAll(\"cursor\").length !== 1)\n          throw new Error(\"Invalid cursor\");\n        cursor = decodeCursor(\n          url.searchParams.get(\"cursor\"),\n          tenantId,\n          projectId,\n          signingKey\n        );\n      } catch {\n        return fail(\"invalid_cursor\");\n      }\n    }\n\n    const matching = events\n      .filter(\n        (event) =>\n          event.tenant_id === tenantId && event.project_id === projectId\n      )\n      .sort(compareEvents)\n      .filter((event) => {\n        if (!cursor) return true;\n        // Deliberate baseline defect: timestamp-only continuation loses tied rows.\n        if (seededBug)\n          return (\n            timestampValue(event.created_at) < timestampValue(cursor.created_at)\n          );\n        return compareEvents(event, cursor) > 0;\n      });\n    const selected = matching.slice(0, limit);\n    const items = selected.map(({ id, created_at, type, summary }) => ({\n      id,\n      created_at,\n      type,\n      summary,\n    }));\n    const nextCursor =\n      matching.length > limit\n        ? encodeCursor(\n            selected[selected.length - 1],\n            tenantId,\n            projectId,\n            signingKey\n          )\n        : null;\n    return send(200, { items, next_cursor: nextCursor });\n  });\n}\n\nexport async function startApi(\n  fixtures: Fixtures,\n  options: { seededBug?: boolean } = {}\n) {\n  const server = createApi({ ...fixtures, ...options });\n  await new Promise((resolve, reject) => {\n    server.once(\"error\", reject);\n    server.listen(0, \"127.0.0.1\", () => resolve(undefined));\n  });\n  const address = server.address();\n  if (!address || typeof address === \"string\")\n    throw new Error(\"No listening address\");\n  return {\n    baseUrl: `http://127.0.0.1:${address.port}`,\n    close: () =>\n      new Promise((resolve, reject) =>\n        server.close((error) => (error ? reject(error) : resolve(undefined)))\n      ),\n  };\n}",
+            "require \"base64\"\nrequire \"json\"\nrequire \"net/http\"\nrequire \"openssl\"\nrequire \"time\"\nrequire \"timeout\"\nrequire \"uri\"\nrequire \"webrick\"\nrequire_relative \"../fixtures/main\"\n\nmodule PaginationAPI\n  ERRORS = {\n    \"invalid_cursor\" => [400, \"Invalid cursor.\"],\n    \"invalid_limit\" => [400, \"Limit must be an integer from 1 through 100.\"],\n    \"unauthenticated\" => [401, \"Authentication required.\"],\n    \"not_found\" => [404, \"Project not found.\"]\n  }.freeze\n\n  def self.timestamp(value)\n    match = value.is_a?(String) && value.match(/\\A(\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2})(?:\\.(\\d{1,9}))?Z\\z/)\n    raise ArgumentError, \"Invalid timestamp\" unless match\n\n    parsed = Time.iso8601(value)\n    raise ArgumentError, \"Invalid timestamp\" unless parsed.utc.strftime(\"%Y-%m-%dT%H:%M:%S\") == match[1]\n\n    (parsed.to_r * 1_000_000_000).to_i\n  end\n\n  def self.compare(left, right)\n    [timestamp(right.fetch(\"created_at\")), right.fetch(\"id\")] <=> [timestamp(left.fetch(\"created_at\")), left.fetch(\"id\")]\n  end\n\n  def self.encode_cursor(event, tenant, project, key)\n    payload = Base64.urlsafe_encode64(\n      JSON.generate(\n        version: 1, tenant_id: tenant, project_id: project,\n        created_at: event.fetch(\"created_at\"), id: event.fetch(\"id\")\n      ), padding: false\n    )\n    signature = Base64.urlsafe_encode64(OpenSSL::HMAC.digest(\"SHA256\", key, payload), padding: false)\n    \"#{payload}.#{signature}\"\n  end\n\n  def self.decode_cursor(token, tenant, project, key)\n    raise ArgumentError, \"Invalid cursor\" unless token.is_a?(String) && token.bytesize <= 2048\n\n    parts = token.split(\".\", -1)\n    raise ArgumentError, \"Invalid cursor\" unless parts.length == 2 && parts.all? { |part| part.match?(/\\A[A-Za-z0-9_-]+\\z/) }\n\n    payload, signature = parts\n    decoded, actual = Base64.urlsafe_decode64(payload), Base64.urlsafe_decode64(signature)\n    expected = OpenSSL::HMAC.digest(\"SHA256\", key, payload)\n    unless Base64.urlsafe_encode64(decoded, padding: false) == payload && Base64.urlsafe_encode64(actual, padding: false) == signature &&\n           actual.bytesize == expected.bytesize && OpenSSL.fixed_length_secure_compare(actual, expected)\n      raise ArgumentError, \"Invalid cursor\"\n    end\n\n    cursor = JSON.parse(decoded, allow_duplicate_key: false)\n    fields = %w[version tenant_id project_id created_at id]\n    unless cursor.is_a?(Hash) && cursor.keys.sort == fields.sort && cursor[\"version\"].is_a?(Integer) && cursor[\"version\"] == 1 &&\n           cursor[\"tenant_id\"] == tenant && cursor[\"project_id\"] == project && cursor[\"id\"].is_a?(String) && !cursor[\"id\"].empty?\n      raise ArgumentError, \"Invalid cursor\"\n    end\n\n    timestamp(cursor[\"created_at\"])\n    cursor\n  end\n\n  def self.failure(code)\n    status, message = ERRORS.fetch(code)\n    [\n      status, {\n        error: {\n          code: code,\n          message: message\n        }\n      }\n    ]\n  end\n\n  def self.handle(request, fixtures, seeded_bug)\n    bearer = request[\"authorization\"].to_s.match(/\\ABearer ([A-Za-z0-9_-]+)\\z/)\n    tenant = bearer && fixtures[:sessions][bearer[1]]\n    return failure(\"unauthenticated\") unless tenant\n\n    begin\n      url = URI.parse(request.unparsed_uri)\n      route = url.path.to_s.match(%r{\\A/v1/projects/([^/]+)(/events)?\\z})\n      project_id = route && URI.decode_www_form_component(route[1])\n    rescue ArgumentError, URI::InvalidURIError\n      return failure(\"not_found\")\n    end\n    project = project_id && fixtures[:projects][project_id]\n    return failure(\"not_found\") unless request.request_method == \"GET\" && route && project && project[\"tenant_id\"] == tenant\n    unless route[2]\n      return [\n        200, {\n          id: project_id,\n          name: project[\"name\"]\n        }\n      ]\n    end\n\n    begin\n      parameters = URI.decode_www_form(url.query.to_s)\n    rescue ArgumentError\n      return failure(\"invalid_cursor\")\n    end\n    limits = parameters.filter_map { |key, value| value if key == \"limit\" }\n    return failure(\"invalid_limit\") if limits.length > 1 || (!limits.empty? && !limits.fetch(0).match?(/\\A\\d+\\z/))\n\n    limit = limits.empty? ? 25 : limits.fetch(0).to_i\n    return failure(\"invalid_limit\") unless (1..100).cover?(limit)\n\n    cursors = parameters.filter_map { |key, value| value if key == \"cursor\" }\n    cursor = nil\n    unless cursors.empty?\n      begin\n        raise ArgumentError, \"Repeated cursor\" unless cursors.length == 1\n\n        cursor = decode_cursor(cursors.first, tenant, project_id, fixtures[:signing_key])\n      rescue ArgumentError, JSON::ParserError\n        return failure(\"invalid_cursor\")\n      end\n    end\n    matching = fixtures[:events].select { |event| event[\"tenant_id\"] == tenant && event[\"project_id\"] == project_id }\n                                .sort { |left, right| compare(left, right) }.select do |event|\n      !cursor || (seeded_bug ? timestamp(event[\"created_at\"]) < timestamp(cursor[\"created_at\"]) : compare(event, cursor).positive?)\n    end\n    selected = matching.take(limit)\n    items = selected.map { |event| event.slice(\"id\", \"created_at\", \"type\", \"summary\") }\n    next_cursor = (matching.length > limit) ? encode_cursor(selected.last, tenant, project_id, fixtures[:signing_key]) : nil\n    [\n      200, {\n        items: items,\n        next_cursor: next_cursor\n      }\n    ]\n  end\n\n  def self.start(fixtures, seeded_bug: false)\n    ready = Queue.new\n    server = WEBrick::HTTPServer.new(\n      Port: 0, BindAddress: \"127.0.0.1\", AccessLog: [],\n      Logger: WEBrick::Log.new(File::NULL), StartCallback: -> { ready << true }\n    )\n    server.mount_proc(\"/\") do |request, response|\n      status, body = handle(request, fixtures, seeded_bug)\n      response.status = status\n      response[\"content-type\"] = \"application/json\"\n      response.body = JSON.generate(body)\n    end\n    worker = Thread.new { server.start }\n    Timeout.timeout(5) { ready.pop }\n    {\n      url: \"http://127.0.0.1:#{server.config[:Port]}\",\n\n      close: -> {\n        server.shutdown\n        worker.join\n      }\n    }\n  # Always close the owned listener if startup is interrupted.\n  rescue Exception # standard:disable Lint/RescueException\n    server&.shutdown\n    worker&.join\n    raise\n  end\n\n  def self.fetch(base, path, token)\n    request = Net::HTTP::Get.new(URI(\"#{base}#{path}\"))\n    request[\"Authorization\"] = \"Bearer #{token}\" if token\n    response = Net::HTTP.start(request.uri.host, request.uri.port, open_timeout: 5, read_timeout: 5) { |http| http.request(request) }\n    [response.code.to_i, JSON.parse(response.body)]\n  end\nend\n\nif $PROGRAM_NAME == __FILE__\n  fixtures = PaginationFixtures.create\n  api = PaginationAPI.start(fixtures)\n  begin\n    status, body = PaginationAPI.fetch(api[:url], \"/v1/projects/feed/events?limit=2\", fixtures[:token_a])\n    puts JSON.generate(status: status, ids: body.fetch(\"items\").map { |item| item.fetch(\"id\") }, has_next_page: !body[\"next_cursor\"].nil?)\n  ensure\n    api[:close].call\n  end\nend",
             "export function createFixtures() {\n  const tokenA = randomBytes(24).toString(\"base64url\");\n  const tokenB = randomBytes(24).toString(\"base64url\");\n  const sessions = new Map([\n    [tokenA, \"tenant_a\"],\n    [tokenB, \"tenant_b\"],\n  ]);\n  const projects = new Map([\n    [\"feed\", { tenant_id: \"tenant_a\", name: \"Activity feed\" }],\n    [\"empty\", { tenant_id: \"tenant_a\", name: \"Empty feed\" }],\n    [\"exact\", { tenant_id: \"tenant_a\", name: \"Four events\" }],\n    [\"large\", { tenant_id: \"tenant_a\", name: \"Large feed\" }],\n    [\"precision\", { tenant_id: \"tenant_a\", name: \"Precise timestamps\" }],\n    [\"other\", { tenant_id: \"tenant_a\", name: \"Another project\" }],\n    [\"private\", { tenant_id: \"tenant_b\", name: \"Private project\" }],\n  ]);\n  const event = (\n    id: string,\n    created_at: string,\n    project_id: string,\n    tenant_id = \"tenant_a\"\n  ) => ({\n    id,\n    created_at,\n    project_id,\n    tenant_id,\n    type: \"deployment\",\n    summary: `Synthetic event ${id}`,\n    internal_note: \"This field must never enter the HTTP response.\",\n    raw_payload: { synthetic: true },\n  });\n  const feed = [\n    event(\"evt_105\", \"2026-01-15T12:00:03.123456Z\", \"feed\"),\n    event(\"evt_104\", \"2026-01-15T12:00:02.123456Z\", \"feed\"),\n    event(\"evt_103\", \"2026-01-15T12:00:02.123456Z\", \"feed\"),\n    event(\"evt_102\", \"2026-01-15T12:00:02.123456Z\", \"feed\"),\n    event(\"evt_101\", \"2026-01-15T12:00:01.123456Z\", \"feed\"),\n  ];\n  const events = [\n    ...feed,\n    ...feed.slice(0, 4).map((item) => ({ ...item, project_id: \"exact\" })),\n    ...Array.from({ length: 105 }, (_, index) =>\n      event(\n        `large_${String(index).padStart(3, \"0\")}`,\n        new Date(Date.UTC(2026, 0, 15, 12, 0, index))\n          .toISOString()\n          .replace(\".000Z\", \".123456Z\"),\n        \"large\"\n      )\n    ),\n    // Reverse ID order makes timestamp precision observable in the tests.\n    event(\"precise_a\", \"2026-01-15T12:00:00.123999Z\", \"precision\"),\n    event(\"precise_z\", \"2026-01-15T12:00:00.123001Z\", \"precision\"),\n    event(\"other_1\", \"2026-01-15T12:00:00.123456Z\", \"other\"),\n    event(\"other_2\", \"2026-01-15T11:59:59.123456Z\", \"other\"),\n    event(\"private_1\", \"2026-01-15T12:00:00.123456Z\", \"private\", \"tenant_b\"),\n    event(\"private_2\", \"2026-01-15T11:59:59.123456Z\", \"private\", \"tenant_b\"),\n  ];\n  return {\n    sessions,\n    projects,\n    events,\n    signingKey: randomBytes(32),\n    tokenA,\n    tokenB,\n  };\n}",
+            "require \"json\"\nrequire \"securerandom\"\nrequire \"time\"\n\nmodule PaginationFixtures\n  def self.event(id, created_at, project_id, tenant_id = \"tenant_a\")\n    {\n      \"id\" => id,\n\n      \"created_at\" => created_at,\n\n      \"project_id\" => project_id,\n      \"tenant_id\" => tenant_id,\n\n      \"type\" => \"deployment\",\n\n      \"summary\" => \"Synthetic event #{id}\",\n      \"internal_note\" => \"This field must never enter the HTTP response.\",\n\n      \"raw_payload\" => { \"synthetic\" => true }\n    }\n  end\n\n  def self.create\n    token_a, token_b = SecureRandom.urlsafe_base64(24), SecureRandom.urlsafe_base64(24)\n    projects = {\n      \"feed\" => \"Activity feed\",\n\n      \"empty\" => \"Empty feed\",\n\n      \"exact\" => \"Four events\",\n      \"large\" => \"Large feed\",\n\n      \"precision\" => \"Precise timestamps\",\n\n      \"other\" => \"Another project\",\n      \"private\" => \"Private project\"\n    }.to_h do |id, name|\n      [\n        id, {\n          \"tenant_id\" => (id == \"private\") ? \"tenant_b\" : \"tenant_a\",\n          \"name\" => name\n        }\n      ]\n    end\n    feed = [[\"evt_105\", \"03\"], [\"evt_104\", \"02\"], [\"evt_103\", \"02\"], [\"evt_102\", \"02\"], [\"evt_101\", \"01\"]].map do |id, second|\n      event(id, \"2026-01-15T12:00:#{second}.123456Z\", \"feed\")\n    end\n    events = feed + feed.take(4).map { |item| item.merge(\"project_id\" => \"exact\") }\n    105.times do |index|\n      events << event(format(\"large_%03d\", index), (Time.utc(2026, 1, 15, 12) + index).strftime(\"%Y-%m-%dT%H:%M:%S.123456Z\"), \"large\")\n    end\n    events.concat(\n      [\n        event(\"precise_a\", \"2026-01-15T12:00:00.123999Z\", \"precision\"),\n        event(\"precise_z\", \"2026-01-15T12:00:00.123001Z\", \"precision\"),\n        event(\"other_1\", \"2026-01-15T12:00:00.123456Z\", \"other\"),\n        event(\"other_2\", \"2026-01-15T11:59:59.123456Z\", \"other\"),\n        event(\"private_1\", \"2026-01-15T12:00:00.123456Z\", \"private\", \"tenant_b\"),\n        event(\"private_2\", \"2026-01-15T11:59:59.123456Z\", \"private\", \"tenant_b\")\n      ]\n    )\n    {\n      sessions: {\n        token_a => \"tenant_a\",\n        token_b => \"tenant_b\"\n      },\n\n      projects: projects,\n      events: events,\n\n      signing_key: SecureRandom.random_bytes(32),\n\n      token_a: token_a,\n\n      token_b: token_b\n    }\n  end\nend\n\nif $PROGRAM_NAME == __FILE__\n  fixtures = PaginationFixtures.create\n  puts JSON.generate(projects: fixtures[:projects].length, events: fixtures[:events].length)\nend",
             "test(\"five-event traversal crosses a timestamp tie and replays the same continuation\", async () => {\n  const expected = [\"evt_105\", \"evt_104\", \"evt_103\", \"evt_102\", \"evt_101\"];\n  const pages = await traverse(\"feed\", 2, expected);\n  assert.deepEqual(pages.map(ids), [\n    [\"evt_105\", \"evt_104\"],\n    [\"evt_103\", \"evt_102\"],\n    [\"evt_101\"],\n  ]);\n  assert.equal(pages.length, 3);\n  assert.ok(pages[0].next_cursor);\n  assert.ok(pages[1].next_cursor);\n  assert.equal(pages[2].next_cursor, null);\n  const replay = await request(\"feed\", {\n    limit: \"2\",\n    cursor: pages[0].next_cursor,\n  });\n  assert.deepEqual(replay.body.items, pages[1].items);\n  const next = await request(\"feed\", {\n    limit: \"2\",\n    cursor: replay.body.next_cursor,\n  });\n  assert.deepEqual(next.body.items, pages[2].items);\n  assert.equal(next.body.next_cursor, null);\n  console.log(\n    JSON.stringify({\n      fixture: \"five-event-tie\",\n      pages: pages.map(ids),\n      requests: pages.length,\n      replay: ids(replay.body),\n    })\n  );\n});\n\ntest(\"the same tie group traverses correctly with limit three\", async () => {\n  const pages = await traverse(\"feed\", 3, [\n    \"evt_105\",\n    \"evt_104\",\n    \"evt_103\",\n    \"evt_102\",\n    \"evt_101\",\n  ]);\n  assert.deepEqual(pages.map(ids), [\n    [\"evt_105\", \"evt_104\", \"evt_103\"],\n    [\"evt_102\", \"evt_101\"],\n  ]);\n});\n\ntest(\"timestamp ordering and continuation preserve submillisecond precision\", async () => {\n  const pages = await traverse(\"precision\", 1, [\"precise_a\", \"precise_z\"]);\n  assert.equal(pages[0].items[0].created_at, \"2026-01-15T12:00:00.123999Z\");\n  assert.equal(pages[1].items[0].created_at, \"2026-01-15T12:00:00.123001Z\");\n});\n\ntest(\"omitted, minimum, and maximum limits return 25, 1, and 100 of 105 events\", async () => {\n  for (const [parameters, expected] of [\n    [{}, 25],\n    [{ limit: \"1\" }, 1],\n    [{ limit: \"100\" }, 100],\n  ] as [Record<string, string>, number][]) {\n    const result = await request(\"large\", parameters);\n    assert.equal(result.status, 200);\n    assert.equal(result.body.items.length, expected);\n    assert.ok(result.body.next_cursor);\n  }\n  const pages = await traverse(\n    \"large\",\n    100,\n    Array.from(\n      { length: 105 },\n      (_, index) => `large_${String(104 - index).padStart(3, \"0\")}`\n    )\n  );\n  assert.deepEqual(\n    pages.map((page) => page.items.length),\n    [100, 5]\n  );\n});\n\ntest(\"invalid and repeated limits return the documented generic error\", async (context) => {\n  for (const limit of [\n    \"0\",\n    \"101\",\n    \"-1\",\n    \"1.5\",\n    \"many\",\n    \"\",\n    \"1e2\",\n    \"Infinity\",\n  ]) {\n    await context.test(`limit ${JSON.stringify(limit)}`, async () => {\n      const result = await request(\"feed\", { limit });\n      assert.equal(result.status, 400);\n      assert.deepEqual(\n        result.body,\n        expectedError(\n          \"invalid_limit\",\n          \"Limit must be an integer from 1 through 100.\"\n        )\n      );\n    });\n  }\n  const repeated = await request(\"feed\", [\n    [\"limit\", \"1\"],\n    [\"limit\", \"2\"],\n  ]);\n  assert.equal(repeated.status, 400);\n});\n\ntest(\"empty, partial, and exactly full final pages have no continuation\", async () => {\n  assert.deepEqual((await request(\"empty\")).body, {\n    items: [],\n    next_cursor: null,\n  });\n  const partial = await traverse(\"feed\", 2, [\n    \"evt_105\",\n    \"evt_104\",\n    \"evt_103\",\n    \"evt_102\",\n    \"evt_101\",\n  ]);\n  assert.equal(partial.at(-1).items.length, 1);\n  const exact = await traverse(\"exact\", 2, [\n    \"evt_105\",\n    \"evt_104\",\n    \"evt_103\",\n    \"evt_102\",\n  ]);\n  assert.deepEqual(\n    exact.map((page) => page.items.length),\n    [2, 2]\n  );\n  assert.equal(exact[1].next_cursor, null);\n});\n\ntest(\"authentication precedes malformed and wrong-scope cursor or limit validation\", async () => {\n  const privateCursor = (\n    await request(\"private\", { limit: \"1\" }, fixtures.tokenB)\n  ).body.next_cursor;\n  for (const token of [null, \"invalid_session\"]) {\n    for (const parameters of [\n      { cursor: \"broken\" },\n      { cursor: privateCursor },\n      { limit: \"0\", cursor: \"broken\" },\n    ] as Record<string, string>[]) {\n      const result = await request(\"feed\", parameters, token);\n      assert.equal(result.status, 401);\n      assert.deepEqual(result.body, unauthenticated);\n    }\n  }\n});\n\ntest(\"inaccessible and nonexistent projects return identical 404 before cursor validation\", async () => {\n  const ownCursor = (await request(\"feed\", { limit: \"1\" })).body.next_cursor;\n  for (const project of [\"private\", \"missing\"]) {\n    for (const parameters of [\n      {},\n      { cursor: \"broken\" },\n      { cursor: ownCursor },\n      { limit: \"0\", cursor: \"broken\" },\n    ] as Record<string, string>[]) {\n      const result = await request(project, parameters);\n      assert.equal(result.status, 404);\n      assert.deepEqual(result.body, notFound);\n    }\n  }\n});\n\ntest(\"a valid cursor from another project in the same tenant is invalid on an authorized feed\", async () => {\n  const cursor = (await request(\"other\", { limit: \"1\" })).body.next_cursor;\n  assert.ok(cursor);\n  const result = await request(\"feed\", { cursor });\n  assert.equal(result.status, 400);\n  assert.deepEqual(result.body, invalidCursor);\n});\n\ntest(\"a valid cursor from another tenant is invalid on an authorized feed\", async () => {\n  const cursor = (await request(\"private\", { limit: \"1\" }, fixtures.tokenB))\n    .body.next_cursor;\n  assert.ok(cursor);\n  const result = await request(\"feed\", { cursor });\n  assert.equal(result.status, 400);\n  assert.deepEqual(result.body, invalidCursor);\n});\n\ntest(\"undecodable, empty, tampered, and repeated cursor tokens return the same closed error\", async () => {\n  const cursor = (await request(\"feed\", { limit: \"1\" })).body.next_cursor;\n  const [payload, signature] = cursor.split(\".\");\n  const tampered = `${payload}.${signature[0] === \"A\" ? \"B\" : \"A\"}${signature.slice(1)}`;\n  for (const token of [\n    \"broken\",\n    \"\",\n    \"%%%.___\",\n    \"a.b.c\",\n    \"x\".repeat(2049),\n    tampered,\n  ]) {\n    const result = await request(\"feed\", { cursor: token });\n    assert.equal(result.status, 400);\n    assert.deepEqual(result.body, invalidCursor);\n  }\n  const result = await request(\"feed\", [\n    [\"cursor\", cursor],\n    [\"cursor\", cursor],\n  ]);\n  assert.equal(result.status, 400);\n  assert.deepEqual(result.body, invalidCursor);\n});\n\ntest(\"signed structurally invalid payloads and unsupported versions are rejected\", async (context) => {\n  const valid = {\n    version: 1,\n    tenant_id: \"tenant_a\",\n    project_id: \"feed\",\n    created_at: \"2026-01-15T12:00:02.123456Z\",\n    id: \"evt_104\",\n  };\n  const missing: Partial<typeof valid> = { ...valid };\n  delete missing.id;\n  const cases: [string, unknown][] = [\n    [\"missing ID\", missing],\n    [\"number ID\", { ...valid, id: 104 }],\n    [\"empty ID\", { ...valid, id: \"\" }],\n    [\"number timestamp\", { ...valid, created_at: 0 }],\n    [\"invalid date\", { ...valid, created_at: \"2026-02-30T12:00:00Z\" }],\n    [\"unsupported version\", { ...valid, version: 2 }],\n    [\"extra field\", { ...valid, extra: true }],\n    [\"wrong tenant type\", { ...valid, tenant_id: 1 }],\n    [\"wrong project type\", { ...valid, project_id: null }],\n    [\"null payload\", null],\n    [\"array payload\", []],\n    [\"invalid JSON\", \"not-json\"],\n  ];\n  for (const [name, payload] of cases) {\n    await context.test(name, async () => {\n      const result = await request(\"feed\", { cursor: signFixture(payload) });\n      assert.equal(result.status, 400);\n      assert.deepEqual(result.body, invalidCursor);\n    });\n  }\n});\n\ntest(\"every serialized event omits stored tenant, project, and raw payload fields\", async () => {\n  const result = await request(\"feed\", { limit: \"100\" });\n  assert.equal(result.status, 200);\n  for (const item of result.body.items) {\n    assert.deepEqual(Object.keys(item).sort(), [\n      \"created_at\",\n      \"id\",\n      \"summary\",\n      \"type\",\n    ]);\n  }\n  assert.ok(\n    fixtures.events.some((event) => event.internal_note && event.raw_payload)\n  );\n});\n\ntest(\"the schema oracle rejects extra, missing, incorrectly typed, and malformed public fields\", () => {\n  const schema = specification.components.schemas.EventPage;\n  const page = {\n    items: [\n      {\n        id: \"evt_1\",\n        created_at: \"2026-01-15T12:00:00.123456Z\",\n        type: \"deployment\",\n        summary: \"Synthetic\",\n      },\n    ],\n    next_cursor: null,\n  };\n  assert.ok(conforms(page, schema));\n  assert.equal(conforms({ ...page, tenant_id: \"tenant_a\" }, schema), false);\n  assert.equal(\n    conforms(\n      { ...page, items: [{ ...page.items[0], raw_payload: {} }] },\n      schema\n    ),\n    false\n  );\n  assert.equal(conforms({ items: page.items }, schema), false);\n  assert.equal(conforms({ ...page, next_cursor: \"\" }, schema), false);\n  assert.equal(\n    conforms({ ...page, items: [{ ...page.items[0], id: 1 }] }, schema),\n    false\n  );\n  assert.equal(\n    conforms(\n      { ...page, items: [{ ...page.items[0], created_at: \"yesterday\" }] },\n      schema\n    ),\n    false\n  );\n  const errorSchema = specification.components.schemas.InvalidCursor;\n  assert.equal(\n    conforms(\n      { error: { ...invalidCursor.error, stack: \"internal\" } },\n      errorSchema\n    ),\n    false\n  );\n  assert.equal(\n    conforms(\n      { error: { ...invalidCursor.error, message: \"tenant_a\" } },\n      errorSchema\n    ),\n    false\n  );\n});\n\ntest(\"the existing project-detail route preserves access and ignores pagination parameters\", async () => {\n  const own = await request(\n    \"feed\",\n    { cursor: \"broken\", limit: \"0\" },\n    fixtures.tokenA,\n    true\n  );\n  assert.equal(own.status, 200);\n  assert.deepEqual(own.body, { id: \"feed\", name: \"Activity feed\" });\n  const inaccessible = await request(\"private\", {}, fixtures.tokenA, true);\n  assert.equal(inaccessible.status, 404);\n  assert.deepEqual(inaccessible.body, notFound);\n  const unauthenticatedResult = await request(\"feed\", {}, null, true);\n  assert.equal(unauthenticatedResult.status, 401);\n  assert.deepEqual(unauthenticatedResult.body, unauthenticated);\n});\n\ntest(\"OpenAPI declares operation, limit boundaries, signed cursor, and response statuses\", () => {\n  assert.equal(specification.openapi, \"3.1.0\");\n  const operation = specification.paths[\"/v1/projects/{project_id}/events\"].get;\n  assert.equal(operation.operationId, \"listProjectEvents\");\n  const limit = operation.parameters.find(\n    (parameter: { name: string }) => parameter.name === \"limit\"\n  ).schema;\n  assert.deepEqual(limit, {\n    type: \"integer\",\n    minimum: 1,\n    maximum: 100,\n    default: 25,\n  });\n  assert.deepEqual(Object.keys(operation.responses).sort(), [\n    \"200\",\n    \"400\",\n    \"401\",\n    \"404\",\n  ]);\n  assert.equal(\n    specification.components.securitySchemes.session.scheme,\n    \"bearer\"\n  );\n});",
+            "require \"minitest/autorun\"\nrequire_relative \"api/main\"\n\nSEEDED_PAGINATION_BUG = !!ARGV.delete(\"--seeded\")\nARGV << \"--verbose\"\n\nclass PaginationTest < Minitest::Test\n  def setup\n    @fixtures = PaginationFixtures.create\n    @spec = JSON.parse(File.read(File.expand_path(\"support/openapi.json\", __dir__)))\n    @api = PaginationAPI.start(@fixtures, seeded_bug: SEEDED_PAGINATION_BUG)\n  end\n\n  def teardown\n    @api&.fetch(:close)&.call\n  end\n\n  # This oracle implements only the keywords in this fixture's closed schemas.\n  def conforms?(value, schema)\n    if schema[\"$ref\"]\n      resolved = schema[\"$ref\"].delete_prefix(\"#/\").split(\"/\").reduce(@spec) { |item, key| item.fetch(key) }\n      return conforms?(value, resolved)\n    end\n    return schema[\"oneOf\"].count { |choice| conforms?(value, choice) } == 1 if schema[\"oneOf\"]\n\n    case schema[\"type\"]\n    when \"null\"\n      return value.nil?\n    when \"array\"\n      return value.is_a?(Array) && value.all? { |item| conforms?(item, schema.fetch(\"items\", {})) }\n    when \"object\"\n      return false unless value.is_a?(Hash)\n\n      properties = schema.fetch(\"properties\", {})\n      return false unless schema.fetch(\"required\", []).all? { |key| value.key?(key) }\n      return false if schema[\"additionalProperties\"] == false && (value.keys - properties.keys).any?\n\n      return properties.all? { |key, child| !value.key?(key) || conforms?(value[key], child) }\n    when \"string\"\n      return false unless value.is_a?(String)\n      return false if value.length < schema.fetch(\"minLength\", 0)\n      return false if schema[\"pattern\"] && !Regexp.new(schema[\"pattern\"]).match?(value)\n\n      if schema[\"format\"] == \"date-time\"\n        begin\n          Time.iso8601(value)\n        rescue ArgumentError\n          return false\n        end\n      end\n    end\n    !schema[\"enum\"] || schema[\"enum\"].include?(value)\n  end\n\n  def request(project = \"feed\", parameters = {}, token: @fixtures[:token_a], detail: false)\n    path = \"/v1/projects/#{project}#{\"/events\" unless detail}?#{URI.encode_www_form(parameters)}\"\n    status, body = PaginationAPI.fetch(@api[:url], path, token)\n    route = detail ? \"/v1/projects/{project_id}\" : \"/v1/projects/{project_id}/events\"\n    schema = @spec.fetch(\"paths\").fetch(route).fetch(\"get\").fetch(\"responses\").fetch(status.to_s).fetch(\"content\").fetch(\"application/json\").fetch(\"schema\")\n    assert conforms?(body, schema), \"HTTP #{status} must match its closed public schema\"\n    [status, body]\n  end\n\n  def ids(body)\n    body.fetch(\"items\").map { |item| item.fetch(\"id\") }\n  end\n\n  def page(project = \"feed\", parameters = {})\n    status, body = request(project, parameters)\n    assert_equal 200, status\n    body\n  end\n\n  def error(code, project = \"feed\", parameters = {}, token: @fixtures[:token_a], detail: false, **query)\n    parameters = parameters.merge(query) unless query.empty?\n    status, body = request(project, parameters, token: token, detail: detail)\n    expected_status, expected_body = PaginationAPI.failure(code)\n    assert_equal expected_status, status\n    assert_equal JSON.parse(JSON.generate(expected_body)), body\n    body\n  end\n\n  def test_tuple_pagination_and_replay\n    first = page(\"feed\", limit: 2)\n    assert_equal %w[evt_105 evt_104], ids(first)\n    second = page(\"feed\", limit: 2, cursor: first.fetch(\"next_cursor\"))\n    assert_equal %w[evt_103 evt_102], ids(second)\n    assert_equal second, page(\"feed\", limit: 2, cursor: first.fetch(\"next_cursor\"))\n    third = page(\"feed\", limit: 2, cursor: second.fetch(\"next_cursor\"))\n    assert_equal [\"evt_101\"], ids(third)\n    assert_nil third[\"next_cursor\"]\n  end\n\n  def test_ties_with_limit_three\n    first = page(\"feed\", limit: 3)\n    assert_equal %w[evt_105 evt_104 evt_103], ids(first)\n    last = page(\"feed\", limit: 3, cursor: first.fetch(\"next_cursor\"))\n    assert_equal %w[evt_102 evt_101], ids(last)\n    assert_nil last[\"next_cursor\"]\n  end\n\n  def test_submillisecond_precision\n    first = page(\"precision\", limit: 1)\n    assert_equal [\"precise_a\"], ids(first)\n    assert_equal [\"precise_z\"], ids(page(\"precision\", limit: 1, cursor: first.fetch(\"next_cursor\")))\n  end\n\n  def test_limit_boundaries\n    assert_equal 25, ids(page(\"large\")).length\n    assert_equal 1, ids(page(\"large\", limit: 1)).length\n    assert_equal 100, ids(page(\"large\", limit: 100)).length\n  end\n\n  def test_invalid_limits\n    [\"\", \"0\", \"101\", \"-1\", \"1.5\", \"1e2\", \" 2\", \"NaN\", \"Infinity\"].each do |limit|\n      error(\"invalid_limit\", \"feed\", limit: limit)\n    end\n    error(\"invalid_limit\", \"feed\", [[\"limit\", \"2\"], [\"limit\", \"3\"]])\n  end\n\n  def test_final_pages\n    assert_empty ids(page(\"empty\"))\n    assert_nil page(\"empty\")[\"next_cursor\"]\n    assert_nil page(\"feed\", limit: 100)[\"next_cursor\"]\n    first = page(\"exact\", limit: 2)\n    last = page(\"exact\", limit: 2, cursor: first.fetch(\"next_cursor\"))\n    assert_equal 2, ids(last).length\n    assert_nil last[\"next_cursor\"]\n  end\n\n  def test_authentication_precedence\n    [nil, \"wrong\", \"invalid token\"].each do |token|\n      error(\n        \"unauthenticated\", \"feed\", {\n          cursor: \"broken\",\n          limit: \"0\"\n        }, token: token\n      )\n    end\n  end\n\n  def test_authorization_precedence\n    private_error = error(\"not_found\", \"private\", cursor: \"broken\", limit: \"0\")\n    assert_equal private_error, error(\"not_found\", \"missing\", cursor: \"broken\", limit: \"0\")\n  end\n\n  def test_project_cursor_scope\n    cursor = page(\"other\", limit: 1).fetch(\"next_cursor\")\n    error(\"invalid_cursor\", \"feed\", cursor: cursor)\n  end\n\n  def test_tenant_cursor_scope\n    _, body = request(\"private\", { limit: 1 }, token: @fixtures[:token_b])\n    error(\"invalid_cursor\", \"feed\", cursor: body.fetch(\"next_cursor\"))\n  end\n\n  def test_malformed_cursors\n    cursor = page(\"feed\", limit: 2).fetch(\"next_cursor\")\n    [\"\", \"broken\", \"a.b.c\", cursor + \"=\", \"!\" + cursor, cursor.sub(/.$/, cursor.end_with?(\"A\") ? \"B\" : \"A\")].each do |token|\n      error(\"invalid_cursor\", \"feed\", cursor: token)\n    end\n    error(\"invalid_cursor\", \"feed\", [[\"cursor\", cursor], [\"cursor\", cursor]])\n  end\n\n  def test_signed_invalid_cursors\n    valid = {\n      \"version\" => 1,\n      \"tenant_id\" => \"tenant_a\",\n      \"project_id\" => \"feed\",\n      \"created_at\" => \"2026-01-15T12:00:02.123456Z\",\n      \"id\" => \"evt_104\"\n    }\n    [\n      valid.merge(\"version\" => 2), valid.merge(\"version\" => 1.0), valid.merge(\"extra\" => true), valid.except(\"id\"),\n      valid.merge(\"id\" => \"\"), valid.merge(\"id\" => 5), valid.merge(\"created_at\" => \"2026-02-30T00:00:00Z\"), nil, []\n    ].each do |value|\n      payload = Base64.urlsafe_encode64(JSON.generate(value), padding: false)\n      signature = Base64.urlsafe_encode64(OpenSSL::HMAC.digest(\"SHA256\", @fixtures[:signing_key], payload), padding: false)\n      error(\"invalid_cursor\", \"feed\", cursor: \"#{payload}.#{signature}\")\n    end\n  end\n\n  def test_public_event_fields\n    page(\"large\", limit: 100).fetch(\"items\").each do |event|\n      assert_equal %w[created_at id summary type], event.keys.sort\n    end\n  end\n\n  def test_schema_oracle\n    schema = @spec.fetch(\"components\").fetch(\"schemas\").fetch(\"Event\")\n    valid = page.fetch(\"items\").first\n    assert conforms?(valid, schema)\n    [valid.merge(\"tenant_id\" => \"secret\"), valid.except(\"id\"), valid.merge(\"id\" => 1), valid.merge(\"created_at\" => \"bad-date\")].each do |event|\n      refute conforms?(event, schema)\n    end\n  end\n\n  def test_project_detail\n    status, body = request(\n      \"feed\", {\n        cursor: \"broken\",\n        limit: \"0\"\n      }, detail: true\n    )\n    assert_equal 200, status\n    assert_equal(\n      {\n        \"id\" => \"feed\",\n        \"name\" => \"Activity feed\"\n      }, body\n    )\n    error(\"not_found\", \"private\", {}, detail: true)\n    error(\"unauthenticated\", \"feed\", {}, token: nil, detail: true)\n  end\n\n  def test_openapi_contract\n    assert_equal \"3.1.0\", @spec[\"openapi\"]\n    operation = @spec.fetch(\"paths\").fetch(\"/v1/projects/{project_id}/events\").fetch(\"get\")\n    assert_equal \"listProjectEvents\", operation[\"operationId\"]\n    limit = operation.fetch(\"parameters\").find { |parameter| parameter[\"name\"] == \"limit\" }.fetch(\"schema\")\n    assert_equal(\n      {\n        \"type\" => \"integer\",\n        \"minimum\" => 1,\n        \"maximum\" => 100,\n        \"default\" => 25\n      }, limit\n    )\n    assert_equal %w[200 400 401 404], operation.fetch(\"responses\").keys.sort\n    assert_equal \"bearer\", @spec.dig(\"components\", \"securitySchemes\", \"session\", \"scheme\")\n  end\nend",
             "mkdirSync(output, { recursive: true });\nconst states = [];\nfor (const [name, arguments_] of [\n  [\"red\", [\"--seeded\"]],\n  [\"green\", []],\n]) {\n  const result = spawnSync(\n    process.execPath,\n    [\n      \"--experimental-strip-types\",\n      resolve(directory, \"test.ts\"),\n      ...arguments_,\n    ],\n    {\n      cwd: directory,\n      encoding: \"utf8\",\n      timeout: 30_000,\n    }\n  );\n  writeFileSync(\n    resolve(output, `${name}.log`),\n    `${result.stdout ?? \"\"}${result.stderr ?? \"\"}`\n  );\n  states.push({\n    name,\n    command: `node --experimental-strip-types test.ts${arguments_.length ? \" --seeded\" : \"\"}`,\n    exit_code: result.status,\n    signal: result.signal,\n    error: result.error?.message ?? null,\n  });\n}\nconst sources = Object.fromEntries(\n  readdirSync(directory, { withFileTypes: true })\n    .filter((entry) => entry.isFile())\n    .map((entry) => [\n      entry.name,\n      createHash(\"sha256\")\n        .update(readFileSync(resolve(directory, entry.name)))\n        .digest(\"hex\"),\n    ])\n);\nconst observed = { red: await observe(true), green: await observe(false) };\nwriteJson(\"observed-http.json\", observed);\nwriteJson(\"run-manifest.json\", {\n  execution: \"Synthetic loopback HTTP fixture; no external service\",\n  recorded_at: new Date().toISOString(),\n  node: process.version,\n  minimum_node: \"22.6.0\",\n  dependencies: \"Node standard library only; no install step\",\n  baseline:\n    \"Deliberately seeded timestamp-only continuation; not a historical customer defect\",\n  correction:\n    \"Descending timestamp-and-ID tuple continuation using full fractional precision\",\n  source_sha256: sources,\n  states,\n});\nif (\n  states[0].exit_code === null ||\n  states[0].exit_code === 0 ||\n  states[1].exit_code !== 0\n) {\n  throw new Error(\n    \"Expected the unchanged tests to fail on the seeded baseline and pass on the corrected implementation. Inspect red.log and green.log.\"\n  );\n}\nconsole.log(\n  JSON.stringify(\n    {\n      execution: \"synthetic-loopback-http\",\n      red_exit: states[0].exit_code,\n      green_exit: states[1].exit_code,\n      green_pages: observed.green.pages.map((page) =>\n        page.body.items.map((item: { id: string }) => item.id)\n      ),\n      evidence_directory: output,\n    },\n    null,\n    2\n  )\n);",
+            "require \"digest\"\nrequire \"fileutils\"\nrequire \"rbconfig\"\nrequire \"timeout\"\nrequire_relative \"../api/main\"\n\noutput = File.expand_path(ARGV.fetch(0, \"evidence\"))\nFileUtils.mkdir_p(output)\ntest_path = File.expand_path(\"../test.rb\", __dir__)\nstates = [[\"red\", [\"--seeded\"]], [\"green\", []]].map do |name, arguments|\n  log_path = File.join(output, \"#{name}.log\")\n  pid = if arguments.empty?\n          Process.spawn(RbConfig.ruby, test_path, out: log_path, err: [:child, :out])\n        else\n          Process.spawn(RbConfig.ruby, test_path, \"--seeded\", out: log_path, err: [:child, :out])\n        end\n  begin\n    status = Timeout.timeout(30) { (Process.wait2(pid) or raise \"Child process was not reaped\").last }\n  rescue Timeout::Error\n    Process.kill(\"KILL\", pid)\n    Process.wait(pid)\n    raise\n  end\n  {\n    name: name,\n    command: [RbConfig.ruby, test_path, *arguments],\n    exit_code: status.exitstatus,\n    signal: status.termsig\n  }\nend\n\nobserved = [true, false].to_h do |seeded|\n  fixtures = PaginationFixtures.create\n  api = PaginationAPI.start(fixtures, seeded_bug: seeded)\n  begin\n    pages = []\n    state = { cursor: nil }\n    loop do\n      raise \"Traversal exceeded fixture bound\" if pages.length >= 3\n\n      parameters = { limit: 2 }\n      parameters[:cursor] = state[:cursor] if state[:cursor]\n      status, body = PaginationAPI.fetch(api[:url], \"/v1/projects/feed/events?#{URI.encode_www_form(parameters)}\", fixtures[:token_a])\n      pages << {\n        status: status,\n        body: body\n      }\n      state[:cursor] = body.fetch(\"next_cursor\")\n      break unless state[:cursor]\n    end\n    errors = [[\"feed\", fixtures[:token_a]], [\"feed\", nil], [\"private\", fixtures[:token_a]]].map do |project, token|\n      status, body = PaginationAPI.fetch(api[:url], \"/v1/projects/#{project}/events?cursor=broken\", token)\n      {\n        status: status,\n        body: body\n      }\n    end\n    [\n      seeded ? :red : :green, {\n        pages: pages,\n        errors: errors\n      }\n    ]\n  ensure\n    api[:close].call\n  end\nend\nsources = %w[api/main.rb fixtures/main.rb test.rb reproduce/main.rb support/openapi.json].to_h do |name|\n  [name, Digest::SHA256.file(File.expand_path(\"../#{name}\", __dir__)).hexdigest]\nend\nFile.write(File.join(output, \"observed-http.json\"), JSON.pretty_generate(observed))\nFile.write(\n  File.join(output, \"run-manifest.json\"),\n  JSON.pretty_generate(\n    execution: \"Synthetic loopback HTTP fixture; no external service\", recorded_at: Time.now.utc.iso8601,\n    ruby: RUBY_VERSION, source_sha256: sources, states: states,\n    baseline: \"Deliberately seeded timestamp-only continuation; not a historical customer defect\",\n    correction: \"Descending timestamp-and-ID continuation retaining fractional precision\"\n  )\n)\nunless states.fetch(0)[:exit_code] == 1 && states.fetch(1)[:exit_code] == 0\n  raise \"Expected seeded failure and corrected success; inspect red.log and green.log\"\nend\n\nputs JSON.generate(\n  execution: \"synthetic-loopback-http\", red_exit: states.fetch(0)[:exit_code], green_exit: states.fetch(1)[:exit_code],\n  green_pages: observed.fetch(:green)[:pages].map { |page| page[:body].fetch(\"items\").map { |item| item.fetch(\"id\") } }, evidence_directory: output\n)",
             "Criterion / test: [specific behavior and test location]\nEnvironment: [published setup reference; runtime, database and dependency versions]\nBefore: [revision + test-only diff ID; command; exit code; observed assertion; log path]\nAfter: [final revision or base + diff ID; command; exit code; observed assertion; log path]\nStatus: [pass / fail / blocked / not run]\nLimits / reviewer action: [untested behavior, blocker, or decision required]",
             "Title: Add cursor pagination for project events\nIssue: API-142\nBase: [branch and commit]\nTested state: [head commit, or base commit plus attached diff identifier]\n\nChanges\n- Add the project-events endpoint using the existing project access helper.\n- Reuse signed cursors scoped to tenant and project.\n- Add contract tests and update the OpenAPI operation.\n\nAcceptance evidence\n- [One row per criterion above: test, observed result, and log reference.]\n\nValidation\n- Before edits: [command, result, and log reference for each baseline check].\n- New tests against original code: [result, or not run with reason].\n- After edits: [command, result, and log reference for each required check].\n- CI: [check links and actual states, or not available].\n- Remaining checks: [specific checks and blockers, or none with supporting evidence].\n\nReviewer focus\n- [Highest-risk behavior and unresolved criteria.]\n\nRemaining risk and rollback\n- [Observed limitations; distinguish them from untested assumptions.]\n- [How this change can be reverted and whether any callers depend on it.]",
             "Address this review comment in the current change:\n\"Repeat the five-event traversal with limit=3; assert pages\n[evt_105, evt_104, evt_103] and [evt_102, evt_101], then a null cursor.\"\n\nAdd the regression test and change the implementation only if it exposes a\nfailure. Rerun the focused endpoint tests and any other required checks affected\nby the edit. Update the evidence table with the tested state and actual results.\nKeep the same scope. Do not merge or deploy."

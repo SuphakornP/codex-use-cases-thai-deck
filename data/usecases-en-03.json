@@ -1,6 +1,6 @@
 [
   {
-    "index": 74,
+    "index": 76,
     "slug": "calibrate-assessments",
     "workflowEn": [
       { "label": "Remove identifying data", "detail": "Strip names and personal information from submissions and grading exports." },
@@ -11,7 +11,7 @@
     "checkEn": "AI must not assign or change grades; faculty must judge every observation."
   },
   {
-    "index": 75,
+    "index": 77,
     "slug": "finance-model-cleanup",
     "workflowEn": [
       { "label": "Preserve the original", "detail": "Attach the model and sources while keeping the original file for comparison." },
@@ -22,7 +22,7 @@
     "checkEn": "Never change business assumptions without approval; finance owners must review formulas and key outputs."
   },
   {
-    "index": 76,
+    "index": 78,
     "slug": "create-classroom-materials-pack",
     "workflowEn": [
       { "label": "Set shared source material", "detail": "Use a reviewed lesson deck and unit plan with school guidance and accessibility needs." },
@@ -33,7 +33,7 @@
     "checkEn": "Keep every file as a draft until a teacher has reviewed accuracy, accessibility, language, and policy."
   },
   {
-    "index": 77,
+    "index": 79,
     "slug": "create-lesson-deck",
     "workflowEn": [
       { "label": "Gather materials", "detail": "Prepare the lesson plan, template, approved images, and accessibility requirements." },
@@ -44,7 +44,7 @@
     "checkEn": "Have the instructor verify accuracy, learning sequence, accessibility, and image rights before teaching."
   },
   {
-    "index": 78,
+    "index": 80,
     "slug": "stalled-deal-diagnosis",
     "workflowEn": [
       { "label": "Gather the history", "detail": "Import stage history, call notes, emails, and any security, legal, or procurement issues." },
@@ -55,7 +55,7 @@
     "checkEn": "Have the deal owner validate the evidence and approve every message before customer contact or CRM changes."
   },
   {
-    "index": 79,
+    "index": 81,
     "slug": "business-impact-readout",
     "workflowEn": [
       { "label": "Frame the question", "detail": "State the initiative, target outcome, measurement period, and decision to be made." },
@@ -66,7 +66,7 @@
     "checkEn": "Have an analyst or experiment owner verify the figures, calculations, and confidence level before deciding."
   },
   {
-    "index": 80,
+    "index": 68,
     "slug": "scenario-tradeoff-model",
     "workflowEn": [
       { "label": "Define the options", "detail": "State the decision, available options, time horizon, and key comparison criteria." },
@@ -77,7 +77,7 @@
     "checkEn": "Have the data owners confirm every assumption and cost before presenting the comparison in a meeting."
   },
   {
-    "index": 81,
+    "index": 82,
     "slug": "organize-lesson-unit-folder",
     "workflowEn": [
       { "label": "Identify core files", "detail": "Mark which files are authoritative, which are drafts, and which must not be moved." },
@@ -88,7 +88,7 @@
     "checkEn": "Confirm no files were deleted, links still work, and current versions remain easy to find after organizing."
   },
   {
-    "index": 82,
+    "index": 83,
     "slug": "organize-semester-workspace",
     "workflowEn": [
       { "label": "Gather official materials", "detail": "Collect each course's syllabus, assignments, readings, calendar, and existing folders." },
@@ -99,7 +99,7 @@
     "checkEn": "Verify every deadline against official documents, and do not choose a date when sources conflict."
   },
   {
-    "index": 83,
+    "index": 84,
     "slug": "plan-budget-and-schedule",
     "workflowEn": [
       { "label": "Prepare the inputs", "detail": "Gather calendars, work shifts, commitments, income, expenses, and bills for the planning period." },
@@ -110,7 +110,7 @@
     "checkEn": "Verify amounts and due dates at the source, and remove account numbers or unnecessary financial details before uploading."
   },
   {
-    "index": 84,
+    "index": 85,
     "slug": "prepare-committee-packet",
     "workflowEn": [
       { "label": "Frame the decision", "detail": "State the question, governing rules, evaluation criteria, decision owner, and deadline." },
@@ -121,7 +121,7 @@
     "checkEn": "Verify citations, governing rules, confidential data, and fair treatment of differing views before distribution."
   },
   {
-    "index": 85,
+    "index": 86,
     "slug": "refresh-forecast-and-plan",
     "workflowEn": [
       { "label": "Prepare the model", "detail": "Attach the operating model, latest actuals, approved assumptions, owner inputs, and prior forecast." },
@@ -132,7 +132,7 @@
     "checkEn": "Have the plan owner verify formulas and data links, then approve every changed assumption before sharing the forecast."
   },
   {
-    "index": 86,
+    "index": 87,
     "slug": "strategic-account-plan",
     "workflowEn": [
       { "label": "Gather account signals", "detail": "Attach account records, calls, email threads, usage notes, and the previous plan." },
@@ -143,7 +143,7 @@
     "checkEn": "Have the account owner confirm the data and customer-safe content before updating CRM or sharing externally."
   },
   {
-    "index": 87,
+    "index": 88,
     "slug": "refresh-course-materials",
     "workflowEn": [
       { "label": "Set sources of truth", "detail": "Gather the syllabus, outcomes, slides, readings, assignments, rubrics, and calendar; mark official versions." },
@@ -154,7 +154,7 @@
     "checkEn": "Have the instructor verify sources, policies, accessibility, and every recommendation requiring academic judgment."
   },
   {
-    "index": 88,
+    "index": 69,
     "slug": "revise-lesson-package",
     "workflowEn": [
       { "label": "Sort the feedback", "detail": "Gather feedback, the approved file list, and any points needing confirmation before edits." },

@@ -168,7 +168,7 @@
     "checkTh": "ตรวจทั้งคะแนนและชิ้นงานจริงด้วยมนุษย์ เพราะ Eval อาจไม่ครอบคลุมคุณภาพทุกด้าน"
   },
   {
-    "index": 45,
+    "index": 46,
     "slug": "monthly-business-review-narrative",
     "titleTh": "เตรียมรายงานทบทวนธุรกิจ",
     "titleEn": "Prepare a business review",
@@ -196,7 +196,7 @@
     "checkTh": "ห้ามเติมตัวเลขที่ไม่มีหลักฐาน และให้เจ้าของข้อมูลยืนยันตัวเลขสำคัญก่อนนำเสนอ"
   },
   {
-    "index": 46,
+    "index": 45,
     "slug": "cfo-board-reporting-pack",
     "titleTh": "เตรียมชุดรายงานสำหรับผู้บริหาร",
     "titleEn": "Prepare a leadership reporting pack",
@@ -812,7 +812,7 @@
     "checkTh": "ตรวจโค้ดที่เชื่อถือได้ revision และ base ล่าสุด พร้อม required check ของ branch เป้าหมาย การข้ามสแกนหรือ diff ว่างยังไม่ใช่การสแกนที่เสร็จสมบูรณ์"
   },
   {
-    "index": 68,
+    "index": 70,
     "slug": "run-security-reviews-from-the-cli",
     "titleTh": "ตรวจความปลอดภัยของโค้ดจาก CLI",
     "titleEn": "Run security reviews from the CLI",
@@ -840,7 +840,7 @@
     "checkTh": "ยืนยัน revision หลักฐาน และส่วนที่ไม่ได้ตรวจ เมื่อประเมินไลบรารีที่ใช้ร่วมกัน ให้แยกผลตรวจโค้ดที่เปลี่ยนออกจากผลตรวจแต่ละส่วนของระบบ"
   },
   {
-    "index": 69,
+    "index": 71,
     "slug": "automate-security-scans-in-ci",
     "titleTh": "ทำ Security Scan อัตโนมัติใน CI",
     "titleEn": "Automate security scans in CI",
@@ -868,7 +868,7 @@
     "checkTh": "ให้เจ้าของความปลอดภัยตรวจ runner permissions, trigger scope, manifest, evidence และ coverage งานที่ผ่านหรือไม่พบ finding ไม่ใช่หลักฐานว่าระบบปลอดภัย"
   },
   {
-    "index": 70,
+    "index": 72,
     "slug": "audit-course-section-consistency",
     "titleTh": "ตรวจความสอดคล้องของรายวิชาหลายกลุ่ม",
     "titleEn": "Audit course section consistency",
@@ -896,7 +896,7 @@
     "checkTh": "ให้ผู้สอนยืนยันว่าความต่างเป็นข้อผิดพลาดหรือทางเลือกที่อนุมัติแล้วก่อนแก้เอกสารต้นฉบับ"
   },
   {
-    "index": 71,
+    "index": 73,
     "slug": "build-unit-plan-from-sources",
     "titleTh": "สร้างแผนหน่วยการเรียนจากไฟล์ต้นฉบับ",
     "titleEn": "Build a unit plan from source files",
@@ -924,7 +924,7 @@
     "checkTh": "อย่าแต่งข้อกำหนดโรงเรียนหรือข้อมูลผู้เรียนที่ไม่มีในแหล่ง และให้ครูอนุมัติก่อนนำไปใช้"
   },
   {
-    "index": 72,
+    "index": 74,
     "slug": "variance-driver-bridge",
     "titleTh": "สร้าง Variance Bridge อธิบายส่วนต่าง",
     "titleEn": "Build a variance driver bridge",
@@ -952,7 +952,7 @@
     "checkTh": "อย่าเขียนคำอธิบายเป็นข้อสรุปเมื่อข้อมูลรองรับเพียงสมมติฐาน และให้ Finance owner ยืนยันก่อนเผยแพร่"
   },
   {
-    "index": 73,
+    "index": 75,
     "slug": "build-interactive-lesson-resource",
     "titleTh": "สร้างสื่อบทเรียนแบบโต้ตอบ",
     "titleEn": "Build an interactive lesson resource",
